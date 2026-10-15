@@ -1,0 +1,22 @@
+{
+ "timeout": 180,
+ "steps": [
+  {"intro_entry": true},
+  {"session": {"mode": "versus2p", "players": [{"claimed": true, "device": "kb1", "fighter": 10004, "special": 20001}, {"claimed": true, "device": "kb2", "fighter": 10005, "special": 23005}]}},
+  {"go": "fight", "style": "cut"},
+  {"wait": 0.1},
+  {"shot": "export/intro_hud/first_a.png"},
+  {"wait": 1.0},
+  {"shot": "export/intro_hud/first_b.png"},
+  {"wait": 1.0},
+  {"shot": "export/intro_hud/first_c.png"},
+  {"wait": 1.0},
+  {"shot": "export/intro_hud/first_d.png"},
+  {"wait": 0.3},
+  {"print": true},
+  {"shot": "export/intro_hud/last_before_wide.png"},
+  {"wait": 0.9},
+  {"print": true},
+  {"shot": "export/intro_hud/wide_ignite.png"}
+ ]
+}

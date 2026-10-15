@@ -1,0 +1,247 @@
+{
+ "version": 1,
+ "notes": "tools/sfx_ui_assets.py writes this. db is the playback gain after the -1 dBFS normalisation.",
+ "sounds": {
+  "tick": {
+   "clips": [
+    "ui/tick_1.wav",
+    "ui/tick_2.wav",
+    "ui/tick_3.wav"
+   ],
+   "db": -13.0
+  },
+  "confirm": {
+   "clips": [
+    "ui/confirm_1.wav"
+   ],
+   "db": -7.0
+  },
+  "back": {
+   "clips": [
+    "ui/back_1.wav"
+   ],
+   "db": -9.0
+  },
+  "whoosh": {
+   "clips": [
+    "ui/whoosh_1.wav"
+   ],
+   "db": -12.0
+  },
+  "pop": {
+   "clips": [
+    "ui/pop_1.wav",
+    "ui/pop_2.wav"
+   ],
+   "db": -9.0
+  },
+  "claim": {
+   "clips": [
+    "ui/claim_1.wav",
+    "ui/claim_2.wav",
+    "ui/claim_3.wav",
+    "ui/claim_4.wav"
+   ],
+   "db": -9.0
+  },
+  "crest": {
+   "clips": [
+    "ui/crest_1.wav"
+   ],
+   "db": -10.0
+  },
+  "error": {
+   "clips": [
+    "ui/error_1.wav"
+   ],
+   "db": -7.0
+  },
+  "lock": {
+   "clips": [
+    "ui/lock_1.wav"
+   ],
+   "db": -9.0
+  },
+  "slam": {
+   "clips": [
+    "ui/slam_1.wav"
+   ],
+   "db": -4.0
+  },
+  "fight": {
+   "clips": [
+    "ui/fight_1.wav"
+   ],
+   "db": -4.0
+  },
+  "hit_l": {
+   "clips": [
+    "ui/hit_l_1.wav",
+    "ui/hit_l_2.wav",
+    "ui/hit_l_3.wav",
+    "ui/hit_l_4.wav"
+   ],
+   "db": -6.0
+  },
+  "hit_h": {
+   "clips": [
+    "ui/hit_h_1.wav",
+    "ui/hit_h_2.wav",
+    "ui/hit_h_3.wav",
+    "ui/hit_h_4.wav"
+   ],
+   "db": -3.0
+  },
+  "block": {
+   "clips": [
+    "ui/block_1.wav"
+   ],
+   "db": -6.0
+  },
+  "just_guard": {
+   "clips": [
+    "ui/just_guard_1.wav"
+   ],
+   "db": -5.0
+  },
+  "guard_crush": {
+   "clips": [
+    "ui/guard_crush_1.wav"
+   ],
+   "db": -4.0
+  },
+  "shot": {
+   "clips": [
+    "ui/shot_1.wav",
+    "ui/shot_2.wav",
+    "ui/shot_3.wav"
+   ],
+   "db": -8.0
+  },
+  "shot_big": {
+   "clips": [
+    "ui/shot_big_1.wav",
+    "ui/shot_big_2.wav"
+   ],
+   "db": -5.0
+  },
+  "beam": {
+   "clips": [
+    "ui/beam_1.wav",
+    "ui/beam_2.wav"
+   ],
+   "db": -8.0
+  },
+  "launch": {
+   "clips": [
+    "ui/launch_1.wav",
+    "ui/launch_2.wav"
+   ],
+   "db": -6.0
+  },
+  "boom": {
+   "clips": [
+    "ui/boom_1.wav",
+    "ui/boom_2.wav",
+    "ui/boom_3.wav"
+   ],
+   "db": -3.0
+  },
+  "flame": {
+   "clips": [
+    "ui/flame_1.wav"
+   ],
+   "db": -9.0
+  },
+  "charge": {
+   "clips": [
+    "ui/charge_1.wav"
+   ],
+   "db": -10.0
+  },
+  "super": {
+   "clips": [
+    "ui/super_1.wav"
+   ],
+   "db": -4.0
+  },
+  "ko": {
+   "clips": [
+    "ui/ko_1.wav"
+   ],
+   "db": -3.0
+  },
+  "jump": {
+   "clips": [
+    "ui/jump_1.wav"
+   ],
+   "db": -10.0
+  },
+  "land": {
+   "clips": [
+    "ui/land_1.wav",
+    "ui/land_2.wav",
+    "ui/land_3.wav",
+    "ui/land_4.wav"
+   ],
+   "db": -12.0
+  },
+  "dash": {
+   "clips": [
+    "ui/dash_1.wav",
+    "ui/dash_2.wav"
+   ],
+   "db": -10.0
+  },
+  "throw": {
+   "clips": [
+    "ui/throw_1.wav"
+   ],
+   "db": -6.0
+  },
+  "tech": {
+   "clips": [
+    "ui/tech_1.wav"
+   ],
+   "db": -9.0
+  },
+  "grab": {
+   "clips": [
+    "ui/grab_1.wav",
+    "ui/grab_2.wav"
+   ],
+   "db": -10.0
+  },
+  "swing": {
+   "clips": [
+    "ui/swing_1.wav",
+    "ui/swing_2.wav"
+   ],
+   "db": -8.0
+  },
+  "ex_ready": {
+   "clips": [
+    "ui/ex_ready_1.wav"
+   ],
+   "db": -8.0
+  },
+  "ult_rise": {
+   "clips": [
+    "ui/ult_rise_1.wav"
+   ],
+   "db": -6.0
+  },
+  "ult_stamp": {
+   "clips": [
+    "ui/ult_stamp_1.wav"
+   ],
+   "db": -3.0
+  },
+  "ult_release": {
+   "clips": [
+    "ui/ult_release_1.wav"
+   ],
+   "db": -2.0
+  }
+ }
+}

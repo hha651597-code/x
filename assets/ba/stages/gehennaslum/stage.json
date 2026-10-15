@@ -1,0 +1,16 @@
+{
+ "schema": 1,
+ "id": "gehennaslum",
+ "name": "Gehenna Slum Streets",
+ "school": "gehenna",
+ "page": 1,
+ "times": {
+  "day": "p01_d",
+  "night": "p01_n"
+ },
+ "variants": {
+  "day": "p01_d.json",
+  "night": "p01_n.json"
+ },
+ "art": null
+}

@@ -1,0 +1,613 @@
+{
+"timeout": 180,
+"steps": [
+{
+"session": {
+"mode": "training",
+"players": [
+{
+"claimed": true,
+"device": "kb1",
+"fighter": 10004,
+"special": 20001
+},
+{
+"claimed": true,
+"device": "kb2",
+"fighter": 10005,
+"special": 23005,
+"cpu": true
+}
+],
+"stage": "gehenna-night"
+}
+},
+{
+"go": "fight",
+"style": "cut"
+},
+{
+"wait": 1.4
+},
+{
+"fighter": {
+"slot": 1,
+"pos": [
+110,
+560
+],
+"vel": [
+0,
+0
+],
+"meter": 100
+}
+},
+{
+"fighter": {
+"slot": 2,
+"pos": [
+0,
+560
+],
+"vel": [
+0,
+0
+],
+"gap": 46
+}
+},
+{},
+{
+"shot": "/tmp/ba-hud-out/facade/training_start.png"
+},
+{
+"tap": [
+[
+"kb1",
+"confirm"
+]
+],
+"frames": 2
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb1",
+"confirm"
+]
+],
+"frames": 2
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb1",
+"confirm"
+]
+],
+"frames": 2
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb1",
+"confirm"
+]
+],
+"frames": 2
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb1",
+"confirm"
+]
+],
+"frames": 2
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb1",
+"confirm"
+]
+],
+"frames": 2
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb1",
+"confirm"
+]
+],
+"frames": 2
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb1",
+"back"
+]
+],
+"frames": 2
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb1",
+"back"
+]
+],
+"frames": 2
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb1",
+"back"
+]
+],
+"frames": 2
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"shot": "/tmp/ba-hud-out/facade/training_combo4.png"
+},
+{
+"tap": [
+[
+"kb1",
+"aux"
+]
+],
+"frames": 2
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb1",
+"aux"
+]
+],
+"frames": 2
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb1",
+"aux"
+]
+],
+"frames": 2
+},
+{
+"hold": [
+"kb1",
+"aux"
+]
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"shot": "/tmp/ba-hud-out/facade/training_combo11.png"
+},
+{
+"tap": [
+"kb9",
+"confirm"
+],
+"frames": 1
+},
+{
+"wait": 3.0
+},
+{
+"shot": "/tmp/ba-hud-out/facade/training_history.png"
+}
+]
+}

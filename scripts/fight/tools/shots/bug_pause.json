@@ -1,0 +1,108 @@
+{
+ "timeout": 240,
+ "steps": [
+  {
+   "session": {
+    "mode": "training",
+    "stage": "gehenna-night",
+    "stage_time": "day",
+    "players": [
+     {
+      "claimed": true,
+      "device": "kb1",
+      "fighter": 10004,
+      "special": 10017
+     },
+     {
+      "claimed": false,
+      "device": "",
+      "fighter": 10005,
+      "special": 10017
+     }
+    ]
+   }
+  },
+  {
+   "go": "fight",
+   "style": "cut"
+  },
+  {
+   "wait": 3.0
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "mem": "pause_before"
+  },
+  {
+   "shot": ".dev/out/bug/pause_1_before.png",
+   "scale": 0.5
+  },
+  {
+   "press": [
+    "shared",
+    "start"
+   ]
+  },
+  {
+   "frames": 2
+  },
+  {
+   "shot": ".dev/out/bug/pause_2_during.png",
+   "scale": 0.5
+  },
+  {
+   "print": true
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "frames": 30
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "frames": 30
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "mem": "pause_during"
+  },
+  {
+   "press": [
+    "shared",
+    "start"
+   ]
+  },
+  {
+   "frames": 3
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "print": true
+  },
+  {
+   "frames": 30
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "mem": "pause_after"
+  },
+  {
+   "shot": ".dev/out/bug/pause_3_after.png",
+   "scale": 0.5
+  },
+  {
+   "quit": true
+  }
+ ]
+}

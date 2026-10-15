@@ -1,0 +1,34 @@
+{
+ "timeout": 120,
+ "steps": [
+  {"session": {"mode": "versus2p", "stage": "gehenna-night", "stage_time": "night", "players": [
+    {"claimed": true, "device": "kb1", "fighter": 10004, "special": 10017},
+    {"claimed": true, "device": "kb2", "fighter": 10005, "special": 10017}]}},
+  {"intro_entry": true},
+  {"go": "fight", "style": "slam"},
+  {"stage_trace": 300},
+  {"frames": 1}, {"shot": ".dev/out/stage3d/introreal_night_001.png", "scale": 0.5},
+  {"frames": 7}, {"shot": ".dev/out/stage3d/introreal_night_008.png", "scale": 0.5},
+  {"frames": 40}, {"shot": ".dev/out/stage3d/introreal_night_048.png", "scale": 0.5},
+  {"frames": 48}, {"shot": ".dev/out/stage3d/introreal_night_096.png", "scale": 0.5},
+  {"frames": 1}, {"shot": ".dev/out/stage3d/introreal_night_097.png", "scale": 0.5},
+  {"frames": 3}, {"shot": ".dev/out/stage3d/introreal_night_100.png", "scale": 0.5},
+  {"frames": 4}, {"shot": ".dev/out/stage3d/introreal_night_104.png", "scale": 0.5},
+  {"frames": 4}, {"shot": ".dev/out/stage3d/introreal_night_108.png", "scale": 0.5},
+  {"frames": 4}, {"shot": ".dev/out/stage3d/introreal_night_112.png", "scale": 0.5},
+  {"frames": 2}, {"shot": ".dev/out/stage3d/introreal_night_114.png", "scale": 0.5},
+  {"frames": 2}, {"shot": ".dev/out/stage3d/introreal_night_116.png", "scale": 0.5},
+  {"frames": 4}, {"shot": ".dev/out/stage3d/introreal_night_120.png", "scale": 0.5},
+  {"frames": 4}, {"shot": ".dev/out/stage3d/introreal_night_124.png", "scale": 0.5},
+  {"frames": 4}, {"shot": ".dev/out/stage3d/introreal_night_128.png", "scale": 0.5},
+  {"frames": 4}, {"shot": ".dev/out/stage3d/introreal_night_132.png", "scale": 0.5},
+  {"frames": 1}, {"shot": ".dev/out/stage3d/introreal_night_133.png", "scale": 0.5},
+  {"frames": 47}, {"shot": ".dev/out/stage3d/introreal_night_180.png", "scale": 0.5},
+  {"frames": 48}, {"shot": ".dev/out/stage3d/introreal_night_228.png", "scale": 0.5},
+  {"frames": 1}, {"shot": ".dev/out/stage3d/introreal_night_229.png", "scale": 0.5},
+  {"frames": 1}, {"shot": ".dev/out/stage3d/introreal_night_230.png", "scale": 0.5},
+  {"frames": 30}, {"shot": ".dev/out/stage3d/introreal_night_260.png", "scale": 0.5},
+  {"frames": 40},
+  {"quit": true}
+ ]
+}

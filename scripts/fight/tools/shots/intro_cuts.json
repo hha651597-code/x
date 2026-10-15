@@ -1,0 +1,288 @@
+{
+ "timeout": 300,
+ "steps": [
+  {
+   "intro_entry": true
+  },
+  {
+   "session": {
+    "mode": "versus2p",
+    "players": [
+     {
+      "claimed": true,
+      "device": "kb1",
+      "fighter": 10004,
+      "special": 10017
+     },
+     {
+      "claimed": true,
+      "device": "kb2",
+      "fighter": 10005,
+      "special": 10017
+     }
+    ]
+   }
+  },
+  {
+   "go": "fight",
+   "style": "cut"
+  },
+  {
+   "frames": 1
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": "export/intro_cuts/hina_first_001.png"
+  },
+  {
+   "frames": 47
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": "export/intro_cuts/hina_first_048.png"
+  },
+  {
+   "frames": 48
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": "export/intro_cuts/hina_first_096.png"
+  },
+  {
+   "frames": 1
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": "export/intro_cuts/hina_first_097.png"
+  },
+  {
+   "frames": 17
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": "export/intro_cuts/hina_first_114.png"
+  },
+  {
+   "frames": 18
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": "export/intro_cuts/hina_first_132.png"
+  },
+  {
+   "frames": 1
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": "export/intro_cuts/hina_first_133.png"
+  },
+  {
+   "frames": 47
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": "export/intro_cuts/hina_first_180.png"
+  },
+  {
+   "frames": 48
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": "export/intro_cuts/hina_first_228.png"
+  },
+  {
+   "frames": 1
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": "export/intro_cuts/hina_first_229.png"
+  },
+  {
+   "frames": 35
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": "export/intro_cuts/hina_first_264.png"
+  },
+  {
+   "frames": 72
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": "export/intro_cuts/hina_first_336.png"
+  },
+  {
+   "frames": 24
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": "export/intro_cuts/hina_first_360.png"
+  },
+  {
+   "session": {
+    "mode": "versus2p",
+    "players": [
+     {
+      "claimed": true,
+      "device": "kb1",
+      "fighter": 10005,
+      "special": 10017
+     },
+     {
+      "claimed": true,
+      "device": "kb2",
+      "fighter": 10004,
+      "special": 10017
+     }
+    ]
+   }
+  },
+  {
+   "go": "fight",
+   "style": "cut"
+  },
+  {
+   "frames": 1
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": "export/intro_cuts/hoshino_first_001.png"
+  },
+  {
+   "frames": 47
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": "export/intro_cuts/hoshino_first_048.png"
+  },
+  {
+   "frames": 48
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": "export/intro_cuts/hoshino_first_096.png"
+  },
+  {
+   "frames": 1
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": "export/intro_cuts/hoshino_first_097.png"
+  },
+  {
+   "frames": 17
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": "export/intro_cuts/hoshino_first_114.png"
+  },
+  {
+   "frames": 18
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": "export/intro_cuts/hoshino_first_132.png"
+  },
+  {
+   "frames": 1
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": "export/intro_cuts/hoshino_first_133.png"
+  },
+  {
+   "frames": 47
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": "export/intro_cuts/hoshino_first_180.png"
+  },
+  {
+   "frames": 48
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": "export/intro_cuts/hoshino_first_228.png"
+  },
+  {
+   "frames": 1
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": "export/intro_cuts/hoshino_first_229.png"
+  },
+  {
+   "frames": 35
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": "export/intro_cuts/hoshino_first_264.png"
+  },
+  {
+   "frames": 72
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": "export/intro_cuts/hoshino_first_336.png"
+  },
+  {
+   "frames": 24
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": "export/intro_cuts/hoshino_first_360.png"
+  }
+ ]
+}

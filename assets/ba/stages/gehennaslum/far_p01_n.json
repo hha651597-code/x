@@ -1,0 +1,1256 @@
+{
+ "name": "far_p01_n",
+ "variant": "p01_n",
+ "group": "far",
+ "color_scale": 34.0,
+ "materials": {
+  "card": {
+   "kind": "card",
+   "shader": "card",
+   "tex": "tex/fx_card_5253cc38.png",
+   "color_mul": [
+    1,
+    1,
+    1
+   ],
+   "cutoff": 0.5,
+   "cull": 0,
+   "params": {
+    "color_scale": 1.424
+   }
+  },
+  "crop_dirt": {
+   "kind": "opaque",
+   "shader": "crop",
+   "tex": "tex/crop_dirt_94d71081.png",
+   "color_mul": [
+    1.50943,
+    1.41805,
+    1.31719
+   ],
+   "cutoff": 0.5,
+   "cull": 2,
+   "params": {
+    "color_scale": 0.628
+   }
+  },
+  "crop_rust": {
+   "kind": "opaque",
+   "shader": "crop",
+   "tex": "tex/crop_rust_5221ebf8.png",
+   "color_mul": [
+    1.50943,
+    1.41805,
+    1.31719
+   ],
+   "cutoff": 0.5,
+   "cull": 2,
+   "params": {
+    "color_scale": 0.995
+   }
+  },
+  "glow": {
+   "kind": "glow",
+   "shader": "glow",
+   "tex": "tex/fx_glow_4fc6107c.png",
+   "color_mul": [
+    1,
+    1,
+    1
+   ],
+   "cutoff": 0.5,
+   "cull": 0,
+   "params": {
+    "color_scale": 1.4
+   }
+  },
+  "sb_02_harbor_01_atlas_n_5edfec": {
+   "kind": "opaque",
+   "shader": "MX/E-Standard",
+   "tex": "tex/sb_02_harbor_atlas_72b4941f.png",
+   "color_mul": [
+    0.61963,
+    0.74409,
+    0.993
+   ],
+   "cutoff": 0.5,
+   "cull": 2,
+   "params": {
+    "color_scale": 0.424
+   }
+  },
+  "sb_ruins_01_atlas_01_874e5c": {
+   "kind": "opaque",
+   "shader": "MX/E-Standard",
+   "tex": "tex/sb_ruins_01_atlas_01_51890829.png",
+   "color_mul": [
+    1.50943,
+    1.41805,
+    1.31719
+   ],
+   "cutoff": 0.661,
+   "cull": 2,
+   "emis": "tex/emis_sb_ruins_01_atlas_01_f62f49e9.png",
+   "emis_rect": [
+    0.00244,
+    0.69824,
+    0.78809,
+    0.24463
+   ],
+   "params": {
+    "emis_gain": 0.9,
+    "color_scale": 0.891
+   }
+  },
+  "sb_slum_gehenna_01_atlas_9b7ef5": {
+   "kind": "opaque",
+   "shader": "MX/E-Standard",
+   "tex": "tex/sb_slum_gehenna_01_552d45d7.png",
+   "color_mul": [
+    1.50943,
+    1.41805,
+    1.31719
+   ],
+   "cutoff": 0.661,
+   "cull": 2,
+   "params": {
+    "color_scale": 1.157
+   }
+  },
+  "smoke": {
+   "kind": "smoke",
+   "shader": "smoke",
+   "tex": "tex/fx_smoke_08e8facf.png",
+   "color_mul": [
+    1,
+    1,
+    1
+   ],
+   "cutoff": 0.5,
+   "cull": 0,
+   "params": {
+    "smoke_life": 18.0,
+    "smoke_drift": [
+     6.0,
+     2.0
+    ],
+    "smoke_lit": [
+     0.22,
+     0.2,
+     0.3
+    ],
+    "smoke_shade": [
+     0.08,
+     0.08,
+     0.14
+    ],
+    "smoke_alpha": 0.6,
+    "color_scale": 34.0
+   }
+  }
+ },
+ "chunks": {
+  "ff_b0s3_card": {
+   "chunk": "b0s3",
+   "material": "card",
+   "tris": 18,
+   "aabb": [
+    [
+     40.68004,
+     0.65642,
+     -3.16155
+    ],
+    [
+     47.76666,
+     15.10925,
+     4.79112
+    ]
+   ]
+  },
+  "ff_b0s3_sb_slum_gehenna_01_atlas_9b7ef5": {
+   "chunk": "b0s3",
+   "material": "sb_slum_gehenna_01_atlas_9b7ef5",
+   "tris": 2163,
+   "aabb": [
+    [
+     23.78614,
+     0.0,
+     -3.37548
+    ],
+    [
+     48.74348,
+     15.49352,
+     33.02008
+    ]
+   ]
+  },
+  "ff_b0s4_glow": {
+   "chunk": "b0s4",
+   "material": "glow",
+   "tris": 6,
+   "aabb": [
+    [
+     52.0,
+     9.03941,
+     40.0
+    ],
+    [
+     60.0,
+     10.84729,
+     46.0
+    ]
+   ]
+  },
+  "ff_b0s4_sb_ruins_01_atlas_01_874e5c": {
+   "chunk": "b0s4",
+   "material": "sb_ruins_01_atlas_01_874e5c",
+   "tris": 894,
+   "aabb": [
+    [
+     49.75895,
+     0.0,
+     37.31074
+    ],
+    [
+     61.67663,
+     10.84729,
+     48.68926
+    ]
+   ]
+  },
+  "ff_b0s4_sb_slum_gehenna_01_atlas_9b7ef5": {
+   "chunk": "b0s4",
+   "material": "sb_slum_gehenna_01_atlas_9b7ef5",
+   "tris": 4882,
+   "aabb": [
+    [
+     24.0,
+     0.0,
+     21.78813
+    ],
+    [
+     77.0,
+     13.88602,
+     52.86721
+    ]
+   ]
+  },
+  "ff_b0s5_sb_slum_gehenna_01_atlas_9b7ef5": {
+   "chunk": "b0s5",
+   "material": "sb_slum_gehenna_01_atlas_9b7ef5",
+   "tris": 3612,
+   "aabb": [
+    [
+     42.58662,
+     0.0,
+     59.52101
+    ],
+    [
+     51.44837,
+     11.22823,
+     68.47899
+    ]
+   ]
+  },
+  "ff_b1s2_card": {
+   "chunk": "b1s2",
+   "material": "card",
+   "tris": 34,
+   "aabb": [
+    [
+     34.63458,
+     -0.28989,
+     -55.54529
+    ],
+    [
+     40.06716,
+     21.34983,
+     -46.31251
+    ]
+   ]
+  },
+  "ff_b1s2_glow": {
+   "chunk": "b1s2",
+   "material": "glow",
+   "tris": 6,
+   "aabb": [
+    [
+     60.0,
+     10.84729,
+     -141.25
+    ],
+    [
+     60.0,
+     10.84729,
+     -68.75
+    ]
+   ]
+  },
+  "ff_b1s2_sb_02_harbor_01_atlas_n_5edfec": {
+   "chunk": "b1s2",
+   "material": "sb_02_harbor_01_atlas_n_5edfec",
+   "tris": 1128,
+   "aabb": [
+    [
+     37.07262,
+     7.53354,
+     -57.57936
+    ],
+    [
+     41.68578,
+     11.46409,
+     -45.75766
+    ]
+   ]
+  },
+  "ff_b1s2_sb_ruins_01_atlas_01_874e5c": {
+   "chunk": "b1s2",
+   "material": "sb_ruins_01_atlas_01_874e5c",
+   "tris": 894,
+   "aabb": [
+    [
+     58.32337,
+     0.0,
+     -143.93925
+    ],
+    [
+     61.67663,
+     10.84729,
+     -66.06074
+    ]
+   ]
+  },
+  "ff_b1s2_sb_slum_gehenna_01_atlas_9b7ef5": {
+   "chunk": "b1s2",
+   "material": "sb_slum_gehenna_01_atlas_9b7ef5",
+   "tris": 4578,
+   "aabb": [
+    [
+     34.63457,
+     0.0,
+     -55.21622
+    ],
+    [
+     43.37246,
+     20.81216,
+     -46.51803
+    ]
+   ]
+  },
+  "ff_b1s2_smoke": {
+   "chunk": "b1s2",
+   "material": "smoke",
+   "tris": 14,
+   "aabb": [
+    [
+     38.03357,
+     20.58855,
+     -52.69321
+    ],
+    [
+     40.3358,
+     20.58855,
+     -49.77204
+    ]
+   ],
+   "cull_margin": 36.89346
+  },
+  "ff_b1s3_card": {
+   "chunk": "b1s3",
+   "material": "card",
+   "tris": 40,
+   "aabb": [
+    [
+     97.7823,
+     -0.46953,
+     -62.67357
+    ],
+    [
+     121.84088,
+     16.17255,
+     0.54743
+    ]
+   ]
+  },
+  "ff_b1s3_glow": {
+   "chunk": "b1s3",
+   "material": "glow",
+   "tris": 4,
+   "aabb": [
+    [
+     60.0,
+     10.84729,
+     -32.5
+    ],
+    [
+     60.0,
+     10.84729,
+     3.75
+    ]
+   ]
+  },
+  "ff_b1s3_sb_02_harbor_01_atlas_n_5edfec": {
+   "chunk": "b1s3",
+   "material": "sb_02_harbor_01_atlas_n_5edfec",
+   "tris": 5205,
+   "aabb": [
+    [
+     99.76448,
+     0.01056,
+     -64.19347
+    ],
+    [
+     131.3759,
+     12.94392,
+     -44.95451
+    ]
+   ]
+  },
+  "ff_b1s3_sb_ruins_01_atlas_01_874e5c": {
+   "chunk": "b1s3",
+   "material": "sb_ruins_01_atlas_01_874e5c",
+   "tris": 596,
+   "aabb": [
+    [
+     58.32337,
+     0.0,
+     -35.18926
+    ],
+    [
+     61.67663,
+     10.84729,
+     6.43926
+    ]
+   ]
+  },
+  "ff_b1s3_sb_slum_gehenna_01_atlas_9b7ef5": {
+   "chunk": "b1s3",
+   "material": "sb_slum_gehenna_01_atlas_9b7ef5",
+   "tris": 5557,
+   "aabb": [
+    [
+     97.79353,
+     0.0,
+     -62.25323
+    ],
+    [
+     128.0992,
+     18.89116,
+     0.45427
+    ]
+   ]
+  },
+  "ff_b1s4_card": {
+   "chunk": "b1s4",
+   "material": "card",
+   "tris": 118,
+   "aabb": [
+    [
+     97.5601,
+     -0.46078,
+     -18.87557
+    ],
+    [
+     180.95282,
+     32.03498,
+     83.92125
+    ]
+   ]
+  },
+  "ff_b1s4_glow": {
+   "chunk": "b1s4",
+   "material": "glow",
+   "tris": 8,
+   "aabb": [
+    [
+     82.0,
+     9.03941,
+     40.5
+    ],
+    [
+     172.0,
+     9.03941,
+     40.5
+    ]
+   ]
+  },
+  "ff_b1s4_sb_02_harbor_01_atlas_n_5edfec": {
+   "chunk": "b1s4",
+   "material": "sb_02_harbor_01_atlas_n_5edfec",
+   "tris": 4448,
+   "aabb": [
+    [
+     93.64924,
+     0.00857,
+     22.80299
+    ],
+    [
+     176.82291,
+     11.37683,
+     85.59312
+    ]
+   ]
+  },
+  "ff_b1s4_sb_ruins_01_atlas_01_874e5c": {
+   "chunk": "b1s4",
+   "material": "sb_ruins_01_atlas_01_874e5c",
+   "tris": 1192,
+   "aabb": [
+    [
+     79.75895,
+     0.0,
+     39.10281
+    ],
+    [
+     174.24106,
+     9.03941,
+     41.89719
+    ]
+   ]
+  },
+  "ff_b1s4_sb_slum_gehenna_01_atlas_9b7ef5": {
+   "chunk": "b1s4",
+   "material": "sb_slum_gehenna_01_atlas_9b7ef5",
+   "tris": 22123,
+   "aabb": [
+    [
+     54.85714,
+     0.0,
+     -19.13629
+    ],
+    [
+     209.14285,
+     34.741,
+     90.31781
+    ]
+   ]
+  },
+  "ff_b1s4_smoke": {
+   "chunk": "b1s4",
+   "material": "smoke",
+   "tris": 28,
+   "aabb": [
+    [
+     98.30376,
+     13.12883,
+     23.59364
+    ],
+    [
+     127.24069,
+     15.39364,
+     55.55502
+    ]
+   ],
+   "cull_margin": 37.9844
+  },
+  "ff_b1s5_card": {
+   "chunk": "b1s5",
+   "material": "card",
+   "tris": 60,
+   "aabb": [
+    [
+     70.98194,
+     0.73343,
+     127.5477
+    ],
+    [
+     175.06628,
+     24.61927,
+     149.61632
+    ]
+   ]
+  },
+  "ff_b1s5_glow": {
+   "chunk": "b1s5",
+   "material": "glow",
+   "tris": 4,
+   "aabb": [
+    [
+     60.0,
+     10.84729,
+     81.5
+    ],
+    [
+     60.0,
+     10.84729,
+     117.0
+    ]
+   ]
+  },
+  "ff_b1s5_sb_02_harbor_01_atlas_n_5edfec": {
+   "chunk": "b1s5",
+   "material": "sb_02_harbor_01_atlas_n_5edfec",
+   "tris": 3268,
+   "aabb": [
+    [
+     102.78703,
+     0.0103,
+     123.32944
+    ],
+    [
+     182.33086,
+     12.18725,
+     152.36198
+    ]
+   ]
+  },
+  "ff_b1s5_sb_ruins_01_atlas_01_874e5c": {
+   "chunk": "b1s5",
+   "material": "sb_ruins_01_atlas_01_874e5c",
+   "tris": 596,
+   "aabb": [
+    [
+     58.32337,
+     0.0,
+     78.81074
+    ],
+    [
+     61.67663,
+     10.84729,
+     119.68926
+    ]
+   ]
+  },
+  "ff_b1s5_sb_slum_gehenna_01_atlas_9b7ef5": {
+   "chunk": "b1s5",
+   "material": "sb_slum_gehenna_01_atlas_9b7ef5",
+   "tris": 6248,
+   "aabb": [
+    [
+     69.30425,
+     0.0,
+     126.93937
+    ],
+    [
+     132.61389,
+     15.77522,
+     153.19395
+    ]
+   ]
+  },
+  "ff_b1s5_smoke": {
+   "chunk": "b1s5",
+   "material": "smoke",
+   "tris": 14,
+   "aabb": [
+    [
+     105.85287,
+     14.11844,
+     132.78117
+    ],
+    [
+     108.28654,
+     14.11844,
+     135.1241
+    ]
+   ],
+   "cull_margin": 37.99621
+  },
+  "ff_b1s6_card": {
+   "chunk": "b1s6",
+   "material": "card",
+   "tris": 46,
+   "aabb": [
+    [
+     24.92783,
+     -0.46828,
+     131.16283
+    ],
+    [
+     47.10114,
+     22.96903,
+     153.96753
+    ]
+   ]
+  },
+  "ff_b1s6_glow": {
+   "chunk": "b1s6",
+   "material": "glow",
+   "tris": 6,
+   "aabb": [
+    [
+     60.0,
+     10.84729,
+     152.5
+    ],
+    [
+     60.0,
+     10.84729,
+     223.5
+    ]
+   ]
+  },
+  "ff_b1s6_sb_02_harbor_01_atlas_n_5edfec": {
+   "chunk": "b1s6",
+   "material": "sb_02_harbor_01_atlas_n_5edfec",
+   "tris": 2256,
+   "aabb": [
+    [
+     27.0189,
+     0.01161,
+     125.54116
+    ],
+    [
+     48.72991,
+     14.86522,
+     157.93098
+    ]
+   ]
+  },
+  "ff_b1s6_sb_ruins_01_atlas_01_874e5c": {
+   "chunk": "b1s6",
+   "material": "sb_ruins_01_atlas_01_874e5c",
+   "tris": 894,
+   "aabb": [
+    [
+     58.32337,
+     0.0,
+     149.81075
+    ],
+    [
+     61.67663,
+     10.84729,
+     226.18925
+    ]
+   ]
+  },
+  "ff_b1s6_sb_slum_gehenna_01_atlas_9b7ef5": {
+   "chunk": "b1s6",
+   "material": "sb_slum_gehenna_01_atlas_9b7ef5",
+   "tris": 7274,
+   "aabb": [
+    [
+     24.96235,
+     0.0,
+     130.53134
+    ],
+    [
+     49.30359,
+     25.47201,
+     154.62897
+    ]
+   ]
+  },
+  "ff_b1s6_smoke": {
+   "chunk": "b1s6",
+   "material": "smoke",
+   "tris": 14,
+   "aabb": [
+    [
+     44.07721,
+     11.40463,
+     132.42708
+    ],
+    [
+     47.55214,
+     11.40463,
+     135.01576
+    ]
+   ],
+   "cull_margin": 37.97661
+  },
+  "ff_b2s2_glow": {
+   "chunk": "b2s2",
+   "material": "glow",
+   "tris": 6,
+   "aabb": [
+    [
+     60.0,
+     10.84729,
+     -250.0
+    ],
+    [
+     60.0,
+     10.84729,
+     -177.5
+    ]
+   ]
+  },
+  "ff_b2s2_sb_ruins_01_atlas_01_874e5c": {
+   "chunk": "b2s2",
+   "material": "sb_ruins_01_atlas_01_874e5c",
+   "tris": 894,
+   "aabb": [
+    [
+     58.32337,
+     0.0,
+     -252.68925
+    ],
+    [
+     61.67663,
+     10.84729,
+     -174.81075
+    ]
+   ]
+  },
+  "ff_b2s3_card": {
+   "chunk": "b2s3",
+   "material": "card",
+   "tris": 40,
+   "aabb": [
+    [
+     186.93036,
+     -0.05265,
+     -144.4601
+    ],
+    [
+     270.00275,
+     17.77613,
+     -68.25229
+    ]
+   ]
+  },
+  "ff_b2s3_sb_02_harbor_01_atlas_n_5edfec": {
+   "chunk": "b2s3",
+   "material": "sb_02_harbor_01_atlas_n_5edfec",
+   "tris": 7504,
+   "aabb": [
+    [
+     181.82495,
+     0.02003,
+     -141.4357
+    ],
+    [
+     280.01559,
+     34.74623,
+     -67.339
+    ]
+   ]
+  },
+  "ff_b2s3_sb_ruins_01_atlas_01_874e5c": {
+   "chunk": "b2s3",
+   "material": "sb_ruins_01_atlas_01_874e5c",
+   "tris": 1972,
+   "aabb": [
+    [
+     323.24887,
+     0.0,
+     -346.61972
+    ],
+    [
+     440.40634,
+     46.78135,
+     -112.02267
+    ]
+   ]
+  },
+  "ff_b2s3_sb_slum_gehenna_01_atlas_9b7ef5": {
+   "chunk": "b2s3",
+   "material": "sb_slum_gehenna_01_atlas_9b7ef5",
+   "tris": 2232,
+   "aabb": [
+    [
+     186.43933,
+     0.0,
+     -145.89932
+    ],
+    [
+     271.50076,
+     17.33168,
+     -65.86966
+    ]
+   ]
+  },
+  "ff_b2s3_smoke": {
+   "chunk": "b2s3",
+   "material": "smoke",
+   "tris": 98,
+   "aabb": [
+    [
+     331.52878,
+     33.3014,
+     -339.93219
+    ],
+    [
+     434.66275,
+     53.66916,
+     -112.86337
+    ]
+   ],
+   "cull_margin": 42.94532
+  },
+  "ff_b2s4_card": {
+   "chunk": "b2s4",
+   "material": "card",
+   "tris": 132,
+   "aabb": [
+    [
+     255.76709,
+     -1.35334,
+     -136.87959
+    ],
+    [
+     534.99622,
+     40.05012,
+     149.56018
+    ]
+   ]
+  },
+  "ff_b2s4_glow": {
+   "chunk": "b2s4",
+   "material": "glow",
+   "tris": 12,
+   "aabb": [
+    [
+     202.0,
+     9.03941,
+     40.5
+    ],
+    [
+     352.0,
+     9.03941,
+     40.5
+    ]
+   ]
+  },
+  "ff_b2s4_sb_02_harbor_01_atlas_n_5edfec": {
+   "chunk": "b2s4",
+   "material": "sb_02_harbor_01_atlas_n_5edfec",
+   "tris": 7536,
+   "aabb": [
+    [
+     259.52267,
+     0.0,
+     -121.01488
+    ],
+    [
+     483.92661,
+     70.95206,
+     173.71727
+    ]
+   ]
+  },
+  "ff_b2s4_sb_ruins_01_atlas_01_874e5c": {
+   "chunk": "b2s4",
+   "material": "sb_ruins_01_atlas_01_874e5c",
+   "tris": 4621,
+   "aabb": [
+    [
+     192.56512,
+     0.0,
+     -89.39398
+    ],
+    [
+     611.43622,
+     86.43446,
+     170.62549
+    ]
+   ]
+  },
+  "ff_b2s4_sb_slum_gehenna_01_atlas_9b7ef5": {
+   "chunk": "b2s4",
+   "material": "sb_slum_gehenna_01_atlas_9b7ef5",
+   "tris": 9245,
+   "aabb": [
+    [
+     199.58157,
+     0.0,
+     -136.79605
+    ],
+    [
+     547.1795,
+     39.44692,
+     151.69337
+    ]
+   ]
+  },
+  "ff_b2s4_smoke": {
+   "chunk": "b2s4",
+   "material": "smoke",
+   "tris": 56,
+   "aabb": [
+    [
+     335.69705,
+     39.34459,
+     -71.9314
+    ],
+    [
+     593.00079,
+     97.49896,
+     143.43222
+    ]
+   ],
+   "cull_margin": 42.98287
+  },
+  "ff_b2s5_card": {
+   "chunk": "b2s5",
+   "material": "card",
+   "tris": 20,
+   "aabb": [
+    [
+     250.55986,
+     0.84293,
+     202.95314
+    ],
+    [
+     262.16553,
+     41.8632,
+     297.77298
+    ]
+   ]
+  },
+  "ff_b2s5_sb_02_harbor_01_atlas_n_5edfec": {
+   "chunk": "b2s5",
+   "material": "sb_02_harbor_01_atlas_n_5edfec",
+   "tris": 6240,
+   "aabb": [
+    [
+     176.2847,
+     0.01615,
+     122.85469
+    ],
+    [
+     269.89972,
+     21.68662,
+     302.26791
+    ]
+   ]
+  },
+  "ff_b2s5_sb_ruins_01_atlas_01_874e5c": {
+   "chunk": "b2s5",
+   "material": "sb_ruins_01_atlas_01_874e5c",
+   "tris": 4270,
+   "aabb": [
+    [
+     353.16101,
+     0.0,
+     291.60153
+    ],
+    [
+     406.83899,
+     51.57161,
+     308.39847
+    ]
+   ]
+  },
+  "ff_b2s5_sb_slum_gehenna_01_atlas_9b7ef5": {
+   "chunk": "b2s5",
+   "material": "sb_slum_gehenna_01_atlas_9b7ef5",
+   "tris": 4167,
+   "aabb": [
+    [
+     173.84549,
+     0.02033,
+     128.04601
+    ],
+    [
+     268.01068,
+     40.73388,
+     297.9295
+    ]
+   ]
+  },
+  "ff_b2s6_glow": {
+   "chunk": "b2s6",
+   "material": "glow",
+   "tris": 6,
+   "aabb": [
+    [
+     60.0,
+     10.84729,
+     259.0
+    ],
+    [
+     60.0,
+     10.84729,
+     330.0
+    ]
+   ]
+  },
+  "ff_b2s6_sb_ruins_01_atlas_01_874e5c": {
+   "chunk": "b2s6",
+   "material": "sb_ruins_01_atlas_01_874e5c",
+   "tris": 894,
+   "aabb": [
+    [
+     58.32337,
+     0.0,
+     256.31073
+    ],
+    [
+     61.67663,
+     10.84729,
+     332.68927
+    ]
+   ]
+  },
+  "ff_b3s3_crop_rust": {
+   "chunk": "b3s3",
+   "material": "crop_rust",
+   "tris": 80,
+   "aabb": [
+    [
+     719.77911,
+     0.0,
+     -1289.69727
+    ],
+    [
+     1451.73621,
+     45.6077,
+     -420.46329
+    ]
+   ]
+  },
+  "ff_b3s3_sb_ruins_01_atlas_01_874e5c": {
+   "chunk": "b3s3",
+   "material": "sb_ruins_01_atlas_01_874e5c",
+   "tris": 5553,
+   "aabb": [
+    [
+     422.97391,
+     0.0,
+     -1014.55304
+    ],
+    [
+     1155.82886,
+     66.19376,
+     -256.33536
+    ]
+   ]
+  },
+  "ff_b3s3_smoke": {
+   "chunk": "b3s3",
+   "material": "smoke",
+   "tris": 28,
+   "aabb": [
+    [
+     450.53574,
+     70.64432,
+     -411.91699
+    ],
+    [
+     458.39127,
+     70.64432,
+     -397.78558
+    ]
+   ],
+   "cull_margin": 42.54789
+  },
+  "ff_b3s4_crop_rust": {
+   "chunk": "b3s4",
+   "material": "crop_rust",
+   "tris": 80,
+   "aabb": [
+    [
+     1389.3136,
+     0.0,
+     -443.41367
+    ],
+    [
+     1531.38586,
+     44.80901,
+     544.81885
+    ]
+   ]
+  },
+  "ff_b3s4_sb_ruins_01_atlas_01_874e5c": {
+   "chunk": "b3s4",
+   "material": "sb_ruins_01_atlas_01_874e5c",
+   "tris": 5834,
+   "aabb": [
+    [
+     589.77863,
+     0.0,
+     -400.0289
+    ],
+    [
+     1272.2948,
+     89.47223,
+     457.55157
+    ]
+   ]
+  },
+  "ff_b3s5_crop_rust": {
+   "chunk": "b3s5",
+   "material": "crop_rust",
+   "tris": 80,
+   "aabb": [
+    [
+     787.38873,
+     0.0,
+     491.61792
+    ],
+    [
+     1458.30701,
+     39.43891,
+     1337.00171
+    ]
+   ]
+  },
+  "ff_b3s5_sb_ruins_01_atlas_01_874e5c": {
+   "chunk": "b3s5",
+   "material": "sb_ruins_01_atlas_01_874e5c",
+   "tris": 3974,
+   "aabb": [
+    [
+     490.34695,
+     0.0,
+     338.83475
+    ],
+    [
+     1187.97754,
+     64.76262,
+     1092.44006
+    ]
+   ]
+  },
+  "ff_ground_crop_dirt": {
+   "chunk": "ground",
+   "material": "crop_dirt",
+   "tris": 6396,
+   "aabb": [
+    [
+     18.8,
+     -0.02,
+     -1305.19958
+    ],
+    [
+     1588.81116,
+     -0.02,
+     1394.81958
+    ]
+   ]
+  }
+ },
+ "stats": {
+  "tris": 150198,
+  "nodes": 62,
+  "items": 353,
+  "dropped": 0,
+  "layers": {
+   "near": 46054,
+   "cards": 508,
+   "mid": 33233,
+   "slabs_mid": 2302,
+   "slabs_far": 4291,
+   "horizon": 13573,
+   "far": 4251,
+   "hero_fight_a": 3342,
+   "hero_fight_b": 2782,
+   "hero_house_a": 3612,
+   "hero_house_b": 2848,
+   "crane_a": 2166,
+   "crane_b": 2166,
+   "arch_a": 4270,
+   "poles_a": 5696,
+   "poles_b": 3516,
+   "lamps_a": 3278,
+   "lamps_b": 2682,
+   "lamps_c": 2682,
+   "props_lot": 11155
+  }
+ },
+ "haze": {
+  "density": 0.0024,
+  "power": 1.4,
+  "amount": 0.72,
+  "low": 0.35,
+  "low_scale": 38.0,
+  "color": [
+   0.07,
+   0.08,
+   0.2
+  ]
+ },
+ "ground_colour": null
+}

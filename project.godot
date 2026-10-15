@@ -1,0 +1,75 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Blue Archive Fighting Game (Tentative)"
+config/description="Fan-made Blue Archive fighting game."
+run/main_scene="res://scenes/main.tscn"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="Godot/app_userdata/Blue Archive Fighting Game"
+config/features=PackedStringArray("4.7", "Forward Plus")
+boot_splash/bg_color=Color(0.121569, 0.352941, 0.65098, 1)
+boot_splash/show_image=false
+
+[autoload]
+
+Game="*res://scripts/core/game.gd"
+Controls="*res://scripts/core/controls.gd"
+Sfx="*res://scripts/core/sfx.gd"
+Bgm="*res://scripts/core/bgm.gd"
+Dbg="*res://scripts/core/dbg.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="canvas_items"
+
+[editor_plugins]
+
+enabled=PackedStringArray()
+
+[importer_defaults]
+
+wav={
+"compress/mode": 0
+}
+
+[rendering]
+
+textures/vram_compression/import_etc2_astc=true
+anti_aliasing/quality/msaa_2d=2
+environment/defaults/default_clear_color=Color(0.121569, 0.352941, 0.65098, 1)
+
+[shader_globals]
+
+ba_light_dir={
+"type": "vec3",
+"value": Vector3(-0.342381, 0.733674, 0.586939)
+}
+ba_light_tone={
+"type": "vec3",
+"value": Vector3(1, 0.988, 0.97)
+}
+ba_shadow_tone={
+"type": "vec3",
+"value": Vector3(1, 1, 1)
+}
+ba_light_data={
+"type": "vec4",
+"value": Vector4(1, 1, 0, 0)
+}
+ba_ambient={
+"type": "vec3",
+"value": Vector3(0.07, 0.07, 0.07)
+}

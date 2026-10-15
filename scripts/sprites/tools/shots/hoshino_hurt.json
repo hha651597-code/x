@@ -1,0 +1,15 @@
+{"timeout": 150, "steps": [
+ {"session": {"mode": "versus2p", "players": [{"claimed": true, "device": "kb1", "fighter": 10005, "special": 10017}, {"claimed": true, "device": "kb2", "fighter": 10004, "special": 10005}]}},
+ {"go": "fight", "style": "cut"},
+ {"wait": 1.8},
+ {"hold": ["kb2", "left"]}, {"wait": 1.2}, {"release": ["kb2", "left"]}, {"print": true},
+ {"timescale": 0.15},
+ {"tap": ["kb2", "confirm"], "frames": 1}, {"frames": 90}, {"shot": ".dev/out/sr_hit.png"},
+ {"frames": 300},
+ {"hold": ["kb1", "left"]}, {"tap": ["kb2", "confirm"], "frames": 1}, {"frames": 90}, {"shot": ".dev/out/sr_block.png"}, {"release": ["kb1", "left"]},
+ {"frames": 300},
+ {"tap": ["kb2", "back"], "frames": 1}, {"frames": 160}, {"shot": ".dev/out/sr_hit_heavy_or_air.png"},
+ {"frames": 300}, {"shot": ".dev/out/sr_down.png"}, {"print": true},
+ {"timescale": 1.0}, {"wait": 1.0}, {"shot": ".dev/out/sr_after_getup.png"},
+ {"hold": ["kb1", "right"]}, {"wait": 2.0}, {"release": ["kb1", "right"]}, {"shot": ".dev/out/sr_side_switch_check.png"}, {"print": true}
+]}

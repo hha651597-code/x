@@ -1,0 +1,84 @@
+{
+"timeout": 120,
+"steps": [
+{
+"session": {
+"mode": "versus2p",
+"players": [
+{
+"claimed": true,
+"device": "kb1",
+"fighter": 10004,
+"special": 20001
+},
+{
+"claimed": true,
+"device": "kb2",
+"fighter": 10005,
+"special": 23005,
+"cpu": false
+}
+],
+"stage": "gehenna-night"
+}
+},
+{
+"go_async": "fight",
+"style": "cut"
+},
+{
+"frames": 1
+},
+{
+"shot": "/tmp/ba-hud-out/facade/start_a.png"
+},
+{
+"frames": 2
+},
+{
+"shot": "/tmp/ba-hud-out/facade/start_b.png"
+},
+{
+"frames": 2
+},
+{
+"shot": "/tmp/ba-hud-out/facade/start_c.png"
+},
+{
+"frames": 3
+},
+{
+"shot": "/tmp/ba-hud-out/facade/start_d.png"
+},
+{
+"frames": 10
+},
+{
+"shot": "/tmp/ba-hud-out/facade/start_e.png"
+},
+{
+"frames": 18
+},
+{
+"shot": "/tmp/ba-hud-out/facade/start_f.png"
+},
+{
+"wait": 0.62
+},
+{
+"shot": "/tmp/ba-hud-out/facade/fight_call_a.png"
+},
+{
+"frames": 8
+},
+{
+"shot": "/tmp/ba-hud-out/facade/fight_call_b.png"
+},
+{
+"wait": 1.2
+},
+{
+"shot": "/tmp/ba-hud-out/facade/mid_fight.png"
+}
+]
+}

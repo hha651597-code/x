@@ -1,0 +1,1869 @@
+{
+  "source": "Blue Archive PC client, Steam install, copied out and unpacked 2026-10-14",
+  "tools": {
+    "voices": "BA-AX v3.0.0, baax extract media",
+    "sfx": "UnityPy 1.25.4 with fmod_toolkit",
+    "tables": "arisu-archive/bluearchive-data and the local ExcelDB (AudioAnimatorExcel, CostumeExcel)",
+    "loudness": "ffmpeg -af ebur128=peak=true"
+  },
+  "scope": "Local fan project. Redistribution permission is not inferred.",
+  "extraction_scripts": "export/ba_audio and the earlier extraction scripts are not tracked",
+  "notes": [
+    "SFX source is the bundle (path under the client's StreamingAssets), CAB and path_id of the clip, found with tools/ba_sfx_sources.py; path_id is a string because it is a signed 64-bit id. 43 of 43 SFX clips were found and 43 of those re-extract byte for byte (same sha256) with UnityPy and fmod_toolkit.",
+    "Voices are Ogg as extracted from the JP packs; SFX are WAV as extracted. Nothing was re-encoded. The sfx .import files set compress/mode=0 (PCM) because Godot 4.7 defaults to lossy QOA.",
+    "true_peak_db and lufs are measured on the committed file. lufs is null where the clip is too short for ebur128 to gate (under 400 ms).",
+    "confirmed_by lists every AudioAnimatorExcel row that names the clip. The Hoshino SG clips appear in a Normal and a Stand row.",
+    "Voice lines were matched to roles by their names in the pack, not by listening. method says how each entry was matched; confirmed_by is the evidence it points at.",
+    "Credits: Hina is voiced by Hirohashi Ryo and Hoshino by Hanamori Yumiri (look at relevant docs). Show this line wherever the game credits its sources."
+  ],
+  "files": [
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Common_HMG_01.wav",
+      "source_name": "SFX_Common_HMG_01",
+      "source": {
+        "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+        "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+        "path_id": "8434731248699592196"
+      },
+      "sha256": "516c816884767dbfa19169ed25a3e9d6f030ea875f564d53a26e3d2da7481a11",
+      "bytes": 35722,
+      "seconds": 0.809,
+      "lufs": -9.2,
+      "true_peak_db": 0.3,
+      "gain_db": -1.9,
+      "confirmed_by": [
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hina_Original_Controller",
+          "hash": 3880485920,
+          "state": "Base Layer.Normal.AttackIng",
+          "volume": 0.7,
+          "delay": 0.0,
+          "pitch": [
+            -1,
+            1
+          ],
+          "priority": 100
+        }
+      ],
+      "method": "AudioAnimatorExcel row"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Common_HMG_02.wav",
+      "source_name": "SFX_Common_HMG_02",
+      "source": {
+        "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+        "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+        "path_id": "-5244418396837093514"
+      },
+      "sha256": "37ebcf4b74a7069eaf9b97fb247dded1e827c5da6c67dba72ca36b30b5c3a46b",
+      "bytes": 33534,
+      "seconds": 0.759,
+      "lufs": -9.1,
+      "true_peak_db": 0.8,
+      "gain_db": -2.4,
+      "confirmed_by": [
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hina_Original_Controller",
+          "hash": 3880485920,
+          "state": "Base Layer.Normal.AttackIng",
+          "volume": 0.7,
+          "delay": 0.0,
+          "pitch": [
+            -1,
+            1
+          ],
+          "priority": 100
+        }
+      ],
+      "method": "AudioAnimatorExcel row"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Common_HMG_03.wav",
+      "source_name": "SFX_Common_HMG_03",
+      "source": {
+        "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+        "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+        "path_id": "-2342071168268790107"
+      },
+      "sha256": "82a18b205510769b0611a3bbc8b111662589120fe271bc0aba8fe954f71dac0a",
+      "bytes": 33516,
+      "seconds": 0.759,
+      "lufs": -8.8,
+      "true_peak_db": 0.4,
+      "gain_db": -2.0,
+      "confirmed_by": [
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hina_Original_Controller",
+          "hash": 3880485920,
+          "state": "Base Layer.Normal.AttackIng",
+          "volume": 0.7,
+          "delay": 0.0,
+          "pitch": [
+            -1,
+            1
+          ],
+          "priority": 100
+        }
+      ],
+      "method": "AudioAnimatorExcel row"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Common_HMG_04.wav",
+      "source_name": "SFX_Common_HMG_04",
+      "source": {
+        "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+        "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+        "path_id": "-2918627805738343113"
+      },
+      "sha256": "d9b6caeb8ec04083fcdc214f547fe186479c7864facce1654a8e4a3ec08a821b",
+      "bytes": 33046,
+      "seconds": 0.748,
+      "lufs": -8.4,
+      "true_peak_db": 0.2,
+      "gain_db": -1.8,
+      "confirmed_by": [
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hina_Original_Controller",
+          "hash": 3880485920,
+          "state": "Base Layer.Normal.AttackIng",
+          "volume": 0.7,
+          "delay": 0.0,
+          "pitch": [
+            -1,
+            1
+          ],
+          "priority": 100
+        }
+      ],
+      "method": "AudioAnimatorExcel row"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Common_HMG_05.wav",
+      "source_name": "SFX_Common_HMG_05",
+      "source": {
+        "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+        "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+        "path_id": "5785439615653940574"
+      },
+      "sha256": "8f2d315d53c3f9eab2121e3d7228e786c7c0cca12af308da69d3934b45f1e9fb",
+      "bytes": 35602,
+      "seconds": 0.806,
+      "lufs": -8.6,
+      "true_peak_db": 0.8,
+      "gain_db": -2.4,
+      "confirmed_by": [
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hina_Original_Controller",
+          "hash": 3880485920,
+          "state": "Base Layer.Normal.AttackIng",
+          "volume": 0.7,
+          "delay": 0.0,
+          "pitch": [
+            -1,
+            1
+          ],
+          "priority": 100
+        }
+      ],
+      "method": "AudioAnimatorExcel row"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Common_HMG_Reload_Hina_01.wav",
+      "source_name": "SFX_Common_HMG_Reload_Hina_01",
+      "source": {
+        "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+        "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+        "path_id": "-8702619697507475716"
+      },
+      "sha256": "fc9583001f5367cfcfebb21a2e9468cbb1acd06498101a78e1de9a01da0529f5",
+      "bytes": 90158,
+      "seconds": 2.043,
+      "lufs": -17.6,
+      "true_peak_db": 0.3,
+      "gain_db": -1.9,
+      "confirmed_by": [
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hina_Original_Controller",
+          "hash": 3880485920,
+          "state": "Base Layer.Normal.Reload",
+          "volume": 0.8,
+          "delay": 0.02,
+          "pitch": [
+            -1,
+            1
+          ],
+          "priority": 100
+        }
+      ],
+      "method": "AudioAnimatorExcel row"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Common_HMG_Reload_Hina_02.wav",
+      "source_name": "SFX_Common_HMG_Reload_Hina_02",
+      "source": {
+        "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+        "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+        "path_id": "-3541834738215010658"
+      },
+      "sha256": "da109e34645946c3b59c8c9e739fd4999260afd706a2bd8ca48c0fb7d4e19391",
+      "bytes": 90158,
+      "seconds": 2.043,
+      "lufs": -17.4,
+      "true_peak_db": 0.2,
+      "gain_db": -1.8,
+      "confirmed_by": [
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hina_Original_Controller",
+          "hash": 3880485920,
+          "state": "Base Layer.Normal.Reload",
+          "volume": 0.8,
+          "delay": 0.02,
+          "pitch": [
+            -1,
+            1
+          ],
+          "priority": 100
+        }
+      ],
+      "method": "AudioAnimatorExcel row"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Common_HMG_Reload_Hina_03.wav",
+      "source_name": "SFX_Common_HMG_Reload_Hina_03",
+      "source": {
+        "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+        "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+        "path_id": "6082830220308576587"
+      },
+      "sha256": "d91d02283d5c95ee004831ecad6f97828629d3067b0bdc94493b09260a040dc2",
+      "bytes": 90158,
+      "seconds": 2.043,
+      "lufs": -18.1,
+      "true_peak_db": 0.2,
+      "gain_db": -1.8,
+      "confirmed_by": [
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hina_Original_Controller",
+          "hash": 3880485920,
+          "state": "Base Layer.Normal.Reload",
+          "volume": 0.8,
+          "delay": 0.02,
+          "pitch": [
+            -1,
+            1
+          ],
+          "priority": 100
+        }
+      ],
+      "method": "AudioAnimatorExcel row"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Common_HMG_Start_Hina_01.wav",
+      "source_name": "SFX_Common_HMG_Start_Hina_01",
+      "source": {
+        "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+        "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+        "path_id": "5186571532839515981"
+      },
+      "sha256": "0a26f77fd599a1158e2514fd45088afb66c0cd7cdf4ff9b718bec2c833d8db1f",
+      "bytes": 36986,
+      "seconds": 0.838,
+      "lufs": -19.9,
+      "true_peak_db": 0.4,
+      "gain_db": -2.0,
+      "confirmed_by": [
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hina_Original_Controller",
+          "hash": 3880485920,
+          "state": "Base Layer.Normal.AttackStart",
+          "volume": 0.6,
+          "delay": 0.02,
+          "pitch": [
+            0,
+            0
+          ],
+          "priority": 100
+        }
+      ],
+      "method": "AudioAnimatorExcel row"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Common_HMG_Start_Hina_02.wav",
+      "source_name": "SFX_Common_HMG_Start_Hina_02",
+      "source": {
+        "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+        "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+        "path_id": "-4246317015541410594"
+      },
+      "sha256": "17b42e754635d2ceb532dae107d3dac1d59c91d8e01e5213cfd2152b7a7549cb",
+      "bytes": 36986,
+      "seconds": 0.838,
+      "lufs": -19.3,
+      "true_peak_db": 0.8,
+      "gain_db": -2.4,
+      "confirmed_by": [
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hina_Original_Controller",
+          "hash": 3880485920,
+          "state": "Base Layer.Normal.AttackStart",
+          "volume": 0.6,
+          "delay": 0.02,
+          "pitch": [
+            0,
+            0
+          ],
+          "priority": 100
+        }
+      ],
+      "method": "AudioAnimatorExcel row"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Common_HMG_Start_Hina_03.wav",
+      "source_name": "SFX_Common_HMG_Start_Hina_03",
+      "source": {
+        "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+        "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+        "path_id": "-6459694405513827563"
+      },
+      "sha256": "3470df7ffd2314d79cc97469436ec2153b57add22e088ff0e401362b90c6e93f",
+      "bytes": 36986,
+      "seconds": 0.838,
+      "lufs": -20.8,
+      "true_peak_db": 0.5,
+      "gain_db": -2.1,
+      "confirmed_by": [
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hina_Original_Controller",
+          "hash": 3880485920,
+          "state": "Base Layer.Normal.AttackStart",
+          "volume": 0.6,
+          "delay": 0.02,
+          "pitch": [
+            0,
+            0
+          ],
+          "priority": 100
+        }
+      ],
+      "method": "AudioAnimatorExcel row"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Common_Regen_Ing.wav",
+      "source_name": "SFX_Common_Regen_Ing",
+      "source": {
+        "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common_buff-_mxprolog-2024-11-18_assets_all_3659498674.bundle",
+        "cab": "CAB-65ae803bd45dc44d3c561ecefa268d5f",
+        "path_id": "-3617033160602870602"
+      },
+      "sha256": "67b2775e99756c09967b7be389a573d8804327324bee853a095daa1ad15b222e",
+      "bytes": 47922,
+      "seconds": 1.086,
+      "lufs": -26.8,
+      "true_peak_db": -9.1,
+      "gain_db": 0.0,
+      "confirmed_by": [
+        {
+          "basis": "no table row; picked by name for Hoshino's heal"
+        }
+      ],
+      "method": "picked by file name"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Common_SG_01.wav",
+      "source_name": "SFX_Common_SG_01",
+      "source": {
+        "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+        "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+        "path_id": "7972239070382248428"
+      },
+      "sha256": "b510a94756fd09ceab2180dee5efa027bd2a7760de43b7d7c210bab51edba1e9",
+      "bytes": 29562,
+      "seconds": 0.669,
+      "lufs": -10.0,
+      "true_peak_db": 0.2,
+      "gain_db": -1.8,
+      "confirmed_by": [
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hoshino_Original_Controller",
+          "hash": 3462899617,
+          "state": "Base Layer.Normal.AttackIng",
+          "volume": 0.65,
+          "delay": 0.0,
+          "pitch": [
+            -1,
+            0
+          ],
+          "priority": 100
+        },
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hoshino_Original_Controller",
+          "hash": 3462899617,
+          "state": "Base Layer.Stand.AttackIng",
+          "volume": 0.65,
+          "delay": 0.0,
+          "pitch": [
+            -1,
+            0
+          ],
+          "priority": 100
+        }
+      ],
+      "method": "AudioAnimatorExcel row"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Common_SG_02.wav",
+      "source_name": "SFX_Common_SG_02",
+      "source": {
+        "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+        "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+        "path_id": "-3414738034558801513"
+      },
+      "sha256": "9f02ff3bdf42b00e005257d406089f608bcf72485693672934ac7e6ed78f2831",
+      "bytes": 29562,
+      "seconds": 0.669,
+      "lufs": -9.8,
+      "true_peak_db": 0.6,
+      "gain_db": -2.2,
+      "confirmed_by": [
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hoshino_Original_Controller",
+          "hash": 3462899617,
+          "state": "Base Layer.Normal.AttackIng",
+          "volume": 0.65,
+          "delay": 0.0,
+          "pitch": [
+            -1,
+            0
+          ],
+          "priority": 100
+        },
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hoshino_Original_Controller",
+          "hash": 3462899617,
+          "state": "Base Layer.Stand.AttackIng",
+          "volume": 0.65,
+          "delay": 0.0,
+          "pitch": [
+            -1,
+            0
+          ],
+          "priority": 100
+        }
+      ],
+      "method": "AudioAnimatorExcel row"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Common_SG_03.wav",
+      "source_name": "SFX_Common_SG_03",
+      "source": {
+        "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+        "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+        "path_id": "-3173972477670263533"
+      },
+      "sha256": "097c43fb7bfcd83391bebe6128cdaa1ae6a8fb7cd40cf1041324803bfd93c631",
+      "bytes": 29562,
+      "seconds": 0.669,
+      "lufs": -9.8,
+      "true_peak_db": 0.3,
+      "gain_db": -1.9,
+      "confirmed_by": [
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hoshino_Original_Controller",
+          "hash": 3462899617,
+          "state": "Base Layer.Normal.AttackIng",
+          "volume": 0.65,
+          "delay": 0.0,
+          "pitch": [
+            -1,
+            0
+          ],
+          "priority": 100
+        },
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hoshino_Original_Controller",
+          "hash": 3462899617,
+          "state": "Base Layer.Stand.AttackIng",
+          "volume": 0.65,
+          "delay": 0.0,
+          "pitch": [
+            -1,
+            0
+          ],
+          "priority": 100
+        }
+      ],
+      "method": "AudioAnimatorExcel row"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Common_SG_04.wav",
+      "source_name": "SFX_Common_SG_04",
+      "source": {
+        "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+        "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+        "path_id": "2501904827269164678"
+      },
+      "sha256": "8a52428986c1086739b75b5d19b9e0a3fe9eaf4b12186c88f0652fe6cdc93855",
+      "bytes": 29562,
+      "seconds": 0.669,
+      "lufs": -11.3,
+      "true_peak_db": 0.0,
+      "gain_db": -1.6,
+      "confirmed_by": [
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hoshino_Original_Controller",
+          "hash": 3462899617,
+          "state": "Base Layer.Normal.AttackIng",
+          "volume": 0.65,
+          "delay": 0.0,
+          "pitch": [
+            -1,
+            0
+          ],
+          "priority": 100
+        },
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hoshino_Original_Controller",
+          "hash": 3462899617,
+          "state": "Base Layer.Stand.AttackIng",
+          "volume": 0.65,
+          "delay": 0.0,
+          "pitch": [
+            -1,
+            0
+          ],
+          "priority": 100
+        }
+      ],
+      "method": "AudioAnimatorExcel row"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Common_SG_05.wav",
+      "source_name": "SFX_Common_SG_05",
+      "source": {
+        "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+        "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+        "path_id": "-8299144995444384018"
+      },
+      "sha256": "f88146be129b10cbc9ff094a5c5f3eba4fe1b34ea0cadbf9cdfbf5c5f17bd95a",
+      "bytes": 29562,
+      "seconds": 0.669,
+      "lufs": -10.6,
+      "true_peak_db": 0.2,
+      "gain_db": -1.8,
+      "confirmed_by": [
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hoshino_Original_Controller",
+          "hash": 3462899617,
+          "state": "Base Layer.Normal.AttackIng",
+          "volume": 0.65,
+          "delay": 0.0,
+          "pitch": [
+            -1,
+            0
+          ],
+          "priority": 100
+        },
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hoshino_Original_Controller",
+          "hash": 3462899617,
+          "state": "Base Layer.Stand.AttackIng",
+          "volume": 0.65,
+          "delay": 0.0,
+          "pitch": [
+            -1,
+            0
+          ],
+          "priority": 100
+        }
+      ],
+      "method": "AudioAnimatorExcel row"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Common_SG_06.wav",
+      "source_name": "SFX_Common_SG_06",
+      "source": {
+        "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+        "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+        "path_id": "8765075743495047746"
+      },
+      "sha256": "e2fcea5fdcf3afb80e77552e421e5a9f9c6322208faac183e84ebda5bef3b2e3",
+      "bytes": 29562,
+      "seconds": 0.669,
+      "lufs": -10.1,
+      "true_peak_db": 0.1,
+      "gain_db": -1.7,
+      "confirmed_by": [
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hoshino_Original_Controller",
+          "hash": 3462899617,
+          "state": "Base Layer.Normal.AttackIng",
+          "volume": 0.65,
+          "delay": 0.0,
+          "pitch": [
+            -1,
+            0
+          ],
+          "priority": 100
+        },
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hoshino_Original_Controller",
+          "hash": 3462899617,
+          "state": "Base Layer.Stand.AttackIng",
+          "volume": 0.65,
+          "delay": 0.0,
+          "pitch": [
+            -1,
+            0
+          ],
+          "priority": 100
+        }
+      ],
+      "method": "AudioAnimatorExcel row"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Common_SG_07.wav",
+      "source_name": "SFX_Common_SG_07",
+      "source": {
+        "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+        "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+        "path_id": "2268597353363266204"
+      },
+      "sha256": "94a84bb5f89089f4c6c08e0281f9a4003f304ec7b09bbfde519ff408323d5606",
+      "bytes": 29562,
+      "seconds": 0.669,
+      "lufs": -10.1,
+      "true_peak_db": -0.1,
+      "gain_db": -1.5,
+      "confirmed_by": [
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hoshino_Original_Controller",
+          "hash": 3462899617,
+          "state": "Base Layer.Normal.AttackIng",
+          "volume": 0.65,
+          "delay": 0.0,
+          "pitch": [
+            -1,
+            0
+          ],
+          "priority": 100
+        },
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hoshino_Original_Controller",
+          "hash": 3462899617,
+          "state": "Base Layer.Stand.AttackIng",
+          "volume": 0.65,
+          "delay": 0.0,
+          "pitch": [
+            -1,
+            0
+          ],
+          "priority": 100
+        }
+      ],
+      "method": "AudioAnimatorExcel row"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Common_SG_08.wav",
+      "source_name": "SFX_Common_SG_08",
+      "source": {
+        "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+        "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+        "path_id": "-3781909483395534958"
+      },
+      "sha256": "f6f3114d2b19c9f61752bd3ffa5efa5f370b8b8d88c3f3ac881ccb081b4fc7e8",
+      "bytes": 29562,
+      "seconds": 0.669,
+      "lufs": -10.1,
+      "true_peak_db": -0.1,
+      "gain_db": -1.5,
+      "confirmed_by": [
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hoshino_Original_Controller",
+          "hash": 3462899617,
+          "state": "Base Layer.Normal.AttackIng",
+          "volume": 0.65,
+          "delay": 0.0,
+          "pitch": [
+            -1,
+            0
+          ],
+          "priority": 100
+        },
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hoshino_Original_Controller",
+          "hash": 3462899617,
+          "state": "Base Layer.Stand.AttackIng",
+          "volume": 0.65,
+          "delay": 0.0,
+          "pitch": [
+            -1,
+            0
+          ],
+          "priority": 100
+        }
+      ],
+      "method": "AudioAnimatorExcel row"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Common_SG_Delay_01.wav",
+      "source_name": "SFX_Common_SG_Delay_01",
+      "source": {
+        "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+        "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+        "path_id": "1759504971473004181"
+      },
+      "sha256": "1bc7071bdc4d6f0c027a72f30086c6204ca6252160029ab3b421c455f84d8c7e",
+      "bytes": 16828,
+      "seconds": 0.381,
+      "lufs": null,
+      "true_peak_db": -2.8,
+      "gain_db": 0.0,
+      "confirmed_by": [
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hoshino_Original_Controller",
+          "hash": 3462899617,
+          "state": "Base Layer.Normal.AttackEnd",
+          "volume": 0.5,
+          "delay": 0.0,
+          "pitch": [
+            -1,
+            1
+          ],
+          "priority": 100
+        }
+      ],
+      "method": "AudioAnimatorExcel row"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Common_SG_Delay_02.wav",
+      "source_name": "SFX_Common_SG_Delay_02",
+      "source": {
+        "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+        "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+        "path_id": "3050202410627986843"
+      },
+      "sha256": "f658f6de59ba8a71d4cc7cdf365c8f46c425e979d8091d0dd05a3aa7077749e8",
+      "bytes": 16828,
+      "seconds": 0.381,
+      "lufs": null,
+      "true_peak_db": -2.6,
+      "gain_db": 0.0,
+      "confirmed_by": [
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hoshino_Original_Controller",
+          "hash": 3462899617,
+          "state": "Base Layer.Normal.AttackEnd",
+          "volume": 0.5,
+          "delay": 0.0,
+          "pitch": [
+            -1,
+            1
+          ],
+          "priority": 100
+        }
+      ],
+      "method": "AudioAnimatorExcel row"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Common_SG_Delay_03.wav",
+      "source_name": "SFX_Common_SG_Delay_03",
+      "source": {
+        "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+        "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+        "path_id": "8150425602811642196"
+      },
+      "sha256": "9658af3513b1f67f34feb64b355244e0bcf73912afbc145688a33841e80641c3",
+      "bytes": 16828,
+      "seconds": 0.381,
+      "lufs": null,
+      "true_peak_db": -3.0,
+      "gain_db": 0.0,
+      "confirmed_by": [
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hoshino_Original_Controller",
+          "hash": 3462899617,
+          "state": "Base Layer.Normal.AttackEnd",
+          "volume": 0.5,
+          "delay": 0.0,
+          "pitch": [
+            -1,
+            1
+          ],
+          "priority": 100
+        }
+      ],
+      "method": "AudioAnimatorExcel row"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Common_SG_Delay_04.wav",
+      "source_name": "SFX_Common_SG_Delay_04",
+      "source": {
+        "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+        "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+        "path_id": "2156185550740784118"
+      },
+      "sha256": "ed1b2d3e5a83e2d025e06a67e6a2ccdc3c8273e2c53f5215a983df0d49aca95f",
+      "bytes": 16828,
+      "seconds": 0.381,
+      "lufs": null,
+      "true_peak_db": -2.8,
+      "gain_db": 0.0,
+      "confirmed_by": [
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hoshino_Original_Controller",
+          "hash": 3462899617,
+          "state": "Base Layer.Normal.AttackEnd",
+          "volume": 0.5,
+          "delay": 0.0,
+          "pitch": [
+            -1,
+            1
+          ],
+          "priority": 100
+        }
+      ],
+      "method": "AudioAnimatorExcel row"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Common_SG_Delay_05.wav",
+      "source_name": "SFX_Common_SG_Delay_05",
+      "source": {
+        "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+        "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+        "path_id": "2528900760480344964"
+      },
+      "sha256": "46ff7f5e5d5e2431de14417ee04c0b8cdfeeed4c66067049e23e51b2dc2e09d9",
+      "bytes": 16828,
+      "seconds": 0.381,
+      "lufs": null,
+      "true_peak_db": -2.6,
+      "gain_db": 0.0,
+      "confirmed_by": [
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hoshino_Original_Controller",
+          "hash": 3462899617,
+          "state": "Base Layer.Normal.AttackEnd",
+          "volume": 0.5,
+          "delay": 0.0,
+          "pitch": [
+            -1,
+            1
+          ],
+          "priority": 100
+        }
+      ],
+      "method": "AudioAnimatorExcel row"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Common_SG_Delay_06.wav",
+      "source_name": "SFX_Common_SG_Delay_06",
+      "source": {
+        "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+        "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+        "path_id": "6086807798884883268"
+      },
+      "sha256": "fae92fa706302542e4cc0d014b409bbddcc7ebf989241de90a1bee9ddb780689",
+      "bytes": 16828,
+      "seconds": 0.381,
+      "lufs": null,
+      "true_peak_db": -6.1,
+      "gain_db": 0.0,
+      "confirmed_by": [
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hoshino_Original_Controller",
+          "hash": 3462899617,
+          "state": "Base Layer.Normal.AttackEnd",
+          "volume": 0.5,
+          "delay": 0.0,
+          "pitch": [
+            -1,
+            1
+          ],
+          "priority": 100
+        }
+      ],
+      "method": "AudioAnimatorExcel row"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Common_SG_Delay_07.wav",
+      "source_name": "SFX_Common_SG_Delay_07",
+      "source": {
+        "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+        "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+        "path_id": "8993951658746992548"
+      },
+      "sha256": "f173ed9550df7ab1e0ec18f8d688777444f7ff31af3b86690e9dd39150ed06a6",
+      "bytes": 16828,
+      "seconds": 0.381,
+      "lufs": null,
+      "true_peak_db": -5.4,
+      "gain_db": 0.0,
+      "confirmed_by": [
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hoshino_Original_Controller",
+          "hash": 3462899617,
+          "state": "Base Layer.Normal.AttackEnd",
+          "volume": 0.5,
+          "delay": 0.0,
+          "pitch": [
+            -1,
+            1
+          ],
+          "priority": 100
+        }
+      ],
+      "method": "AudioAnimatorExcel row"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Common_SG_Delay_08.wav",
+      "source_name": "SFX_Common_SG_Delay_08",
+      "source": {
+        "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+        "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+        "path_id": "-1849326834591175299"
+      },
+      "sha256": "10853c0c655b4e7c4e2ccc6be4c68b79410d006ed8b6c6172d1714179b631daa",
+      "bytes": 16828,
+      "seconds": 0.381,
+      "lufs": null,
+      "true_peak_db": -6.2,
+      "gain_db": 0.0,
+      "confirmed_by": [
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hoshino_Original_Controller",
+          "hash": 3462899617,
+          "state": "Base Layer.Normal.AttackEnd",
+          "volume": 0.5,
+          "delay": 0.0,
+          "pitch": [
+            -1,
+            1
+          ],
+          "priority": 100
+        }
+      ],
+      "method": "AudioAnimatorExcel row"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Common_SG_Reload_01.wav",
+      "source_name": "SFX_Common_SG_Reload_01",
+      "source": {
+        "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+        "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+        "path_id": "-8068596657349448471"
+      },
+      "sha256": "2a3903ec1fa6eb4a0c95effc82a104f73381e1ba4e8e828863f6b26702549374",
+      "bytes": 48944,
+      "seconds": 1.109,
+      "lufs": -11.2,
+      "true_peak_db": 2.7,
+      "gain_db": -4.3,
+      "confirmed_by": [
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hoshino_Original_Controller",
+          "hash": 3462899617,
+          "state": "Base Layer.Normal.Reload",
+          "volume": 0.4,
+          "delay": 0.3,
+          "pitch": [
+            -1,
+            0
+          ],
+          "priority": 100
+        },
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hoshino_Original_Controller",
+          "hash": 3462899617,
+          "state": "Base Layer.Stand.Reload",
+          "volume": 0.4,
+          "delay": 0.3,
+          "pitch": [
+            -1,
+            0
+          ],
+          "priority": 100
+        }
+      ],
+      "method": "AudioAnimatorExcel row"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Common_SG_Reload_02.wav",
+      "source_name": "SFX_Common_SG_Reload_02",
+      "source": {
+        "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+        "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+        "path_id": "-1245636098071446909"
+      },
+      "sha256": "58f3a8b1443d433611a68bf81c7a953c590a74fc2518839161f1a5dae7ca1d05",
+      "bytes": 48944,
+      "seconds": 1.109,
+      "lufs": -11.8,
+      "true_peak_db": 2.0,
+      "gain_db": -3.6,
+      "confirmed_by": [
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hoshino_Original_Controller",
+          "hash": 3462899617,
+          "state": "Base Layer.Normal.Reload",
+          "volume": 0.4,
+          "delay": 0.3,
+          "pitch": [
+            -1,
+            0
+          ],
+          "priority": 100
+        },
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hoshino_Original_Controller",
+          "hash": 3462899617,
+          "state": "Base Layer.Stand.Reload",
+          "volume": 0.4,
+          "delay": 0.3,
+          "pitch": [
+            -1,
+            0
+          ],
+          "priority": 100
+        }
+      ],
+      "method": "AudioAnimatorExcel row"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Common_SG_Reload_03.wav",
+      "source_name": "SFX_Common_SG_Reload_03",
+      "source": {
+        "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+        "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+        "path_id": "-6718356923770445917"
+      },
+      "sha256": "e0611d22500912118b227328e2270438fb323df65efdf831dbd4de75ba2623e7",
+      "bytes": 48944,
+      "seconds": 1.109,
+      "lufs": -11.5,
+      "true_peak_db": 2.0,
+      "gain_db": -3.6,
+      "confirmed_by": [
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hoshino_Original_Controller",
+          "hash": 3462899617,
+          "state": "Base Layer.Normal.Reload",
+          "volume": 0.4,
+          "delay": 0.3,
+          "pitch": [
+            -1,
+            0
+          ],
+          "priority": 100
+        },
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hoshino_Original_Controller",
+          "hash": 3462899617,
+          "state": "Base Layer.Stand.Reload",
+          "volume": 0.4,
+          "delay": 0.3,
+          "pitch": [
+            -1,
+            0
+          ],
+          "priority": 100
+        }
+      ],
+      "method": "AudioAnimatorExcel row"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Common_SG_Reload_04.wav",
+      "source_name": "SFX_Common_SG_Reload_04",
+      "source": {
+        "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+        "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+        "path_id": "-4390753597301169574"
+      },
+      "sha256": "6e8e1a0adeca4dcd5bb65fdcf470d7f6a06caaddf48eb92258b98f2beaf23179",
+      "bytes": 48944,
+      "seconds": 1.109,
+      "lufs": -11.0,
+      "true_peak_db": 1.9,
+      "gain_db": -3.5,
+      "confirmed_by": [
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hoshino_Original_Controller",
+          "hash": 3462899617,
+          "state": "Base Layer.Normal.Reload",
+          "volume": 0.4,
+          "delay": 0.3,
+          "pitch": [
+            -1,
+            0
+          ],
+          "priority": 100
+        },
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hoshino_Original_Controller",
+          "hash": 3462899617,
+          "state": "Base Layer.Stand.Reload",
+          "volume": 0.4,
+          "delay": 0.3,
+          "pitch": [
+            -1,
+            0
+          ],
+          "priority": 100
+        }
+      ],
+      "method": "AudioAnimatorExcel row"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Common_SG_Reload_05.wav",
+      "source_name": "SFX_Common_SG_Reload_05",
+      "source": {
+        "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+        "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+        "path_id": "-2467271783982123237"
+      },
+      "sha256": "0e05a44af5c1dfc97acc2180692bfb4ced338dd8381515da0396266168396774",
+      "bytes": 48944,
+      "seconds": 1.109,
+      "lufs": -11.6,
+      "true_peak_db": 2.1,
+      "gain_db": -3.7,
+      "confirmed_by": [
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hoshino_Original_Controller",
+          "hash": 3462899617,
+          "state": "Base Layer.Normal.Reload",
+          "volume": 0.4,
+          "delay": 0.3,
+          "pitch": [
+            -1,
+            0
+          ],
+          "priority": 100
+        },
+        {
+          "table": "AudioAnimatorExcel",
+          "controller": "Hoshino_Original_Controller",
+          "hash": 3462899617,
+          "state": "Base Layer.Stand.Reload",
+          "volume": 0.4,
+          "delay": 0.3,
+          "pitch": [
+            -1,
+            0
+          ],
+          "priority": 100
+        }
+      ],
+      "method": "AudioAnimatorExcel row"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_JSD_Laser_02.wav",
+      "source_name": "SFX_JSD_Laser_02",
+      "source": {
+        "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+        "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+        "path_id": "1355990131968339233"
+      },
+      "sha256": "abdb4854fec20d6424120a938c3593d6aec1dc93219f44ad1a929c73fc9f2c29",
+      "bytes": 30796,
+      "seconds": 0.697,
+      "lufs": -21.6,
+      "true_peak_db": -8.4,
+      "gain_db": 0.0,
+      "confirmed_by": [
+        {
+          "basis": "no table row; picked by name for Hoshino's heal"
+        }
+      ],
+      "method": "picked by file name"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Public_Hina.wav",
+      "source_name": "SFX_Public_Hina",
+      "source": {
+        "bundle": "PUB/Resource/GameData/Windows/assets-_mx-characters-hina_original-_mxdependency-2024-11-18_002_assets_all_1012396359.bundle",
+        "cab": "CAB-76f13d3b32ba7362be92de238c26addc",
+        "path_id": "172335668319037710"
+      },
+      "sha256": "e6ca37b1d8e6ee5aa4230a67f119c8eb4e1cd27ffac9dd57b36880db3acb29a0",
+      "bytes": 78514,
+      "seconds": 1.779,
+      "lufs": -11.9,
+      "true_peak_db": 0.0,
+      "gain_db": -1.6,
+      "confirmed_by": [
+        {
+          "basis": "named for the student; no table row"
+        }
+      ],
+      "method": "picked by file name"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Shot_Impact_Hit_01.wav",
+      "source_name": "SFX_Shot_Impact_Hit_01",
+      "source": {
+        "bundle": "PUB/Resource/GameData/Windows/assets-_mx-characters-_mxcommon-.wav-_mxdependency-2025-02-11_assets_all_2941046645.bundle",
+        "cab": "CAB-c242235371e2f7fc33c570209b72b00a",
+        "path_id": "-805794154285252873"
+      },
+      "sha256": "f74b3975781d7045338d57c9b38bd800f2af6b60f7948329129694a53b7c7781",
+      "bytes": 21382,
+      "seconds": 0.484,
+      "lufs": -13.4,
+      "true_peak_db": 1.4,
+      "gain_db": -3.0,
+      "confirmed_by": [
+        {
+          "basis": "generic, no table link"
+        }
+      ],
+      "method": "picked by file name"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Shot_Impact_Hit_02.wav",
+      "source_name": "SFX_Shot_Impact_Hit_02",
+      "source": {
+        "bundle": "PUB/Resource/GameData/Windows/assets-_mx-characters-_mxcommon-.wav-_mxdependency-2025-02-11_assets_all_2941046645.bundle",
+        "cab": "CAB-c242235371e2f7fc33c570209b72b00a",
+        "path_id": "-644738521056750127"
+      },
+      "sha256": "9980fe01f2f53b139f35e879c0affe85d6a2b77802bd1ac870344e2257845672",
+      "bytes": 21382,
+      "seconds": 0.484,
+      "lufs": -13.6,
+      "true_peak_db": 1.3,
+      "gain_db": -2.9,
+      "confirmed_by": [
+        {
+          "basis": "generic, no table link"
+        }
+      ],
+      "method": "picked by file name"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Shot_Impact_Hit_03.wav",
+      "source_name": "SFX_Shot_Impact_Hit_03",
+      "source": {
+        "bundle": "PUB/Resource/GameData/Windows/assets-_mx-characters-_mxcommon-.wav-_mxdependency-2025-02-11_assets_all_2941046645.bundle",
+        "cab": "CAB-c242235371e2f7fc33c570209b72b00a",
+        "path_id": "5580885622942619999"
+      },
+      "sha256": "f7c2556b087c2009815d751304fbe29f9703af786b02c0dc4c2a5e9069afe4b7",
+      "bytes": 21382,
+      "seconds": 0.484,
+      "lufs": -13.8,
+      "true_peak_db": 1.1,
+      "gain_db": -2.7,
+      "confirmed_by": [
+        {
+          "basis": "generic, no table link"
+        }
+      ],
+      "method": "picked by file name"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Skill_Hina_Ex.wav",
+      "source_name": "SFX_Skill_Hina_Ex",
+      "source": {
+        "bundle": "PUB/Resource/GameData/Windows/assets-_mx-characters-hina_original-_mxdependency-2024-11-18_002_assets_all_1012396359.bundle",
+        "cab": "CAB-76f13d3b32ba7362be92de238c26addc",
+        "path_id": "-4606595403853338523"
+      },
+      "sha256": "6fe150e53da6950f03de9819fbc8b609bf204d41e97b2bda27ec54040c5db7f4",
+      "bytes": 243860,
+      "seconds": 5.529,
+      "lufs": -5.5,
+      "true_peak_db": 2.0,
+      "gain_db": -3.6,
+      "confirmed_by": [
+        {
+          "basis": "named for the student; no table row"
+        }
+      ],
+      "method": "picked by file name"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Skill_Hina_Ex_Cut_in.wav",
+      "source_name": "SFX_Skill_Hina_Ex_Cut_in",
+      "source": {
+        "bundle": "PUB/Resource/GameData/Windows/assets-_mx-characters-hina_original-_mxdependency-2024-11-18_002_assets_all_1012396359.bundle",
+        "cab": "CAB-76f13d3b32ba7362be92de238c26addc",
+        "path_id": "5494148057153393054"
+      },
+      "sha256": "a3dc6a6a3c34fde11b8a0bbc516925769dea49564b312253bf88ebfcb6bc66eb",
+      "bytes": 249768,
+      "seconds": 2.831,
+      "lufs": -6.1,
+      "true_peak_db": 1.4,
+      "gain_db": -3.0,
+      "confirmed_by": [
+        {
+          "basis": "named for the student; no table row"
+        }
+      ],
+      "method": "picked by file name"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Skill_Hoshino_Ex_Activate.wav",
+      "source_name": "SFX_Skill_Hoshino_Ex_Activate",
+      "source": {
+        "bundle": "PUB/Resource/GameData/Windows/assets-_mx-characters-hoshino_original-_mxdependency-2024-11-18_002_assets_all_4134869737.bundle",
+        "cab": "CAB-54c3e9c5d9486983ced6ef6ad144b29e",
+        "path_id": "6512285437451810958"
+      },
+      "sha256": "2670b6ebea4be9e17d5e87dfddc4537c9877e9778bf209e0a5ee6a416b6d28a2",
+      "bytes": 71734,
+      "seconds": 1.626,
+      "lufs": -14.0,
+      "true_peak_db": 1.9,
+      "gain_db": -3.5,
+      "confirmed_by": [
+        {
+          "basis": "named for the student; no table row"
+        }
+      ],
+      "method": "picked by file name"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Skill_Hoshino_Ex_Cut_in.wav",
+      "source_name": "SFX_Skill_Hoshino_Ex_Cut_in",
+      "source": {
+        "bundle": "PUB/Resource/GameData/Windows/assets-_mx-characters-hoshino_original-_mxdependency-2024-11-18_002_assets_all_4134869737.bundle",
+        "cab": "CAB-54c3e9c5d9486983ced6ef6ad144b29e",
+        "path_id": "5139250246356818473"
+      },
+      "sha256": "e60991f6efd4c68781bf6cdf34fb5ecb02fd1dc3b5a3b0ec1f43c9fa0f0285e2",
+      "bytes": 338592,
+      "seconds": 3.838,
+      "lufs": -8.7,
+      "true_peak_db": 1.6,
+      "gain_db": -3.2,
+      "confirmed_by": [
+        {
+          "basis": "named for the student; no table row"
+        }
+      ],
+      "method": "picked by file name"
+    },
+    {
+      "runtime_path": "assets/audio/ba/sfx/SFX_Skill_Hoshino_Ex_Reload.wav",
+      "source_name": "SFX_Skill_Hoshino_Ex_Reload",
+      "source": {
+        "bundle": "PUB/Resource/GameData/Windows/assets-_mx-characters-hoshino_original-_mxdependency-2024-11-18_002_assets_all_4134869737.bundle",
+        "cab": "CAB-54c3e9c5d9486983ced6ef6ad144b29e",
+        "path_id": "8950239416190285898"
+      },
+      "sha256": "7a4c434e42b4b67df1aafe73291f96a17a2e2f609ce47e81df82424a6070872c",
+      "bytes": 41934,
+      "seconds": 0.95,
+      "lufs": -13.9,
+      "true_peak_db": -0.5,
+      "gain_db": -1.1,
+      "confirmed_by": [
+        {
+          "basis": "named for the student; no table row"
+        }
+      ],
+      "method": "picked by file name"
+    },
+    {
+      "runtime_path": "assets/audio/ba/voice/hina/Hina_Battle_Damage_1.ogg",
+      "source_name": "Hina_Battle_Damage_1",
+      "source": "GameData/MediaResources/Audio/VOC_JP/JP_Hina.molru",
+      "sha256": "eb7bb18ada9fc5bed5b06a0a51599217b710cc6823b8d4a41feeea45f12591d6",
+      "bytes": 11402,
+      "seconds": 1.292,
+      "lufs": -21.2,
+      "true_peak_db": -6.9,
+      "gain_db": 5.2,
+      "confirmed_by": [
+        {
+          "pack": "JP_Hina.molru",
+          "line": "Battle_Damage_1",
+          "wiki": "bluearchive.wiki/wiki/Hina/audio"
+        }
+      ],
+      "method": "pack file name, role matched by name (not by listening)"
+    },
+    {
+      "runtime_path": "assets/audio/ba/voice/hina/Hina_Battle_Damage_2.ogg",
+      "source_name": "Hina_Battle_Damage_2",
+      "source": "GameData/MediaResources/Audio/VOC_JP/JP_Hina.molru",
+      "sha256": "3e1e0edf6f414fe7e6fcfdab5f9f27927232aaf1d1e381082c9b77edd6a75067",
+      "bytes": 14599,
+      "seconds": 1.681,
+      "lufs": -15.1,
+      "true_peak_db": -4.7,
+      "gain_db": -0.9,
+      "confirmed_by": [
+        {
+          "pack": "JP_Hina.molru",
+          "line": "Battle_Damage_2",
+          "wiki": "bluearchive.wiki/wiki/Hina/audio"
+        }
+      ],
+      "method": "pack file name, role matched by name (not by listening)"
+    },
+    {
+      "runtime_path": "assets/audio/ba/voice/hina/Hina_Battle_Damage_3.ogg",
+      "source_name": "Hina_Battle_Damage_3",
+      "source": "GameData/MediaResources/Audio/VOC_JP/JP_Hina.molru",
+      "sha256": "d1a266dc99c391d72793951e60a9b463b0357091874ba975f5c38d42b8dc7d59",
+      "bytes": 6059,
+      "seconds": 0.423,
+      "lufs": -21.3,
+      "true_peak_db": -5.3,
+      "gain_db": 3.7,
+      "confirmed_by": [
+        {
+          "pack": "JP_Hina.molru",
+          "line": "Battle_Damage_3",
+          "wiki": "bluearchive.wiki/wiki/Hina/audio"
+        }
+      ],
+      "method": "pack file name, role matched by name (not by listening)"
+    },
+    {
+      "runtime_path": "assets/audio/ba/voice/hina/Hina_Battle_In_1.ogg",
+      "source_name": "Hina_Battle_In_1",
+      "source": "GameData/MediaResources/Audio/VOC_JP/JP_Hina.molru",
+      "sha256": "86da19c2d89e32c532536b9bd9dc539e8b75e1b9e47d98b7aac204d05f856903",
+      "bytes": 25100,
+      "seconds": 3.191,
+      "lufs": -14.1,
+      "true_peak_db": -1.1,
+      "gain_db": -1.9,
+      "confirmed_by": [
+        {
+          "pack": "JP_Hina.molru",
+          "line": "Battle_In_1",
+          "wiki": "bluearchive.wiki/wiki/Hina/audio"
+        }
+      ],
+      "method": "pack file name, role matched by name (not by listening)"
+    },
+    {
+      "runtime_path": "assets/audio/ba/voice/hina/Hina_Battle_In_2.ogg",
+      "source_name": "Hina_Battle_In_2",
+      "source": "GameData/MediaResources/Audio/VOC_JP/JP_Hina.molru",
+      "sha256": "631805267e142d12a165e19fea52826e3e10c9789258ff8e8c267c032ff15142",
+      "bytes": 10231,
+      "seconds": 1.052,
+      "lufs": -16.1,
+      "true_peak_db": -0.8,
+      "gain_db": -0.8,
+      "confirmed_by": [
+        {
+          "pack": "JP_Hina.molru",
+          "line": "Battle_In_2",
+          "wiki": "bluearchive.wiki/wiki/Hina/audio"
+        }
+      ],
+      "method": "pack file name, role matched by name (not by listening)"
+    },
+    {
+      "runtime_path": "assets/audio/ba/voice/hina/Hina_Battle_Retire.ogg",
+      "source_name": "Hina_Battle_Retire",
+      "source": "GameData/MediaResources/Audio/VOC_JP/JP_Hina.molru",
+      "sha256": "0f401a89f1ffe649e15a083f1dc077f51c9053323d44a6d5113033acb82e00f6",
+      "bytes": 26260,
+      "seconds": 3.655,
+      "lufs": -18.2,
+      "true_peak_db": -3.8,
+      "gain_db": 2.2,
+      "confirmed_by": [
+        {
+          "pack": "JP_Hina.molru",
+          "line": "Battle_Retire",
+          "wiki": "bluearchive.wiki/wiki/Hina/audio"
+        }
+      ],
+      "method": "pack file name, role matched by name (not by listening)"
+    },
+    {
+      "runtime_path": "assets/audio/ba/voice/hina/Hina_Battle_Victory_1.ogg",
+      "source_name": "Hina_Battle_Victory_1",
+      "source": "GameData/MediaResources/Audio/VOC_JP/JP_Hina.molru",
+      "sha256": "86f4b97519a9412c4206068f51a4509c1f8d992acce58454a70cd17c0a51f6a6",
+      "bytes": 22786,
+      "seconds": 2.892,
+      "lufs": -15.8,
+      "true_peak_db": -2.9,
+      "gain_db": -0.2,
+      "confirmed_by": [
+        {
+          "pack": "JP_Hina.molru",
+          "line": "Battle_Victory_1",
+          "wiki": "bluearchive.wiki/wiki/Hina/audio"
+        }
+      ],
+      "method": "pack file name, role matched by name (not by listening)"
+    },
+    {
+      "runtime_path": "assets/audio/ba/voice/hina/Hina_Battle_Victory_2.ogg",
+      "source_name": "Hina_Battle_Victory_2",
+      "source": "GameData/MediaResources/Audio/VOC_JP/JP_Hina.molru",
+      "sha256": "092e3bf4d41dca5e7bb4f6b08bce59f70dfa37723e3bef4f61ecd7ab2f434f7c",
+      "bytes": 21778,
+      "seconds": 2.849,
+      "lufs": -14.5,
+      "true_peak_db": -1.7,
+      "gain_db": -1.5,
+      "confirmed_by": [
+        {
+          "pack": "JP_Hina.molru",
+          "line": "Battle_Victory_2",
+          "wiki": "bluearchive.wiki/wiki/Hina/audio"
+        }
+      ],
+      "method": "pack file name, role matched by name (not by listening)"
+    },
+    {
+      "runtime_path": "assets/audio/ba/voice/hina/Hina_CommonSkill.ogg",
+      "source_name": "Hina_CommonSkill",
+      "source": "GameData/MediaResources/Audio/VOC_JP/JP_Hina.molru",
+      "sha256": "6716aae043d27109bb02bb48008510b72892cbb58222da84bb560f44f44b30a7",
+      "bytes": 9465,
+      "seconds": 0.912,
+      "lufs": -13.7,
+      "true_peak_db": -2.4,
+      "gain_db": -2.3,
+      "confirmed_by": [
+        {
+          "pack": "JP_Hina.molru",
+          "line": "CommonSkill",
+          "wiki": "bluearchive.wiki/wiki/Hina/audio"
+        }
+      ],
+      "method": "pack file name, role matched by name (not by listening)"
+    },
+    {
+      "runtime_path": "assets/audio/ba/voice/hina/Hina_ExSkill_1.ogg",
+      "source_name": "Hina_ExSkill_1",
+      "source": "GameData/MediaResources/Audio/VOC_JP/JP_Hina.molru",
+      "sha256": "f76a1e674fee4f046992ac90ff558e5079f1c61df636b879c1e0452d11aeb27f",
+      "bytes": 16217,
+      "seconds": 1.697,
+      "lufs": -15.5,
+      "true_peak_db": -1.9,
+      "gain_db": -0.5,
+      "confirmed_by": [
+        {
+          "pack": "JP_Hina.molru",
+          "line": "ExSkill_1",
+          "wiki": "bluearchive.wiki/wiki/Hina/audio"
+        }
+      ],
+      "method": "pack file name, role matched by name (not by listening)"
+    },
+    {
+      "runtime_path": "assets/audio/ba/voice/hina/Hina_ExSkill_2.ogg",
+      "source_name": "Hina_ExSkill_2",
+      "source": "GameData/MediaResources/Audio/VOC_JP/JP_Hina.molru",
+      "sha256": "0019ae83d0d18d2bd939214c6de5f3612b6dd8b1c53eeeff167e07cf26b2c017",
+      "bytes": 12571,
+      "seconds": 1.309,
+      "lufs": -16.0,
+      "true_peak_db": -3.7,
+      "gain_db": 0.0,
+      "confirmed_by": [
+        {
+          "pack": "JP_Hina.molru",
+          "line": "ExSkill_2",
+          "wiki": "bluearchive.wiki/wiki/Hina/audio"
+        }
+      ],
+      "method": "pack file name, role matched by name (not by listening)"
+    },
+    {
+      "runtime_path": "assets/audio/ba/voice/hina/Hina_ExSkill_3.ogg",
+      "source_name": "Hina_ExSkill_3",
+      "source": "GameData/MediaResources/Audio/VOC_JP/JP_Hina.molru",
+      "sha256": "1b60a275e3d080f8c18ab7e6fc8655e07dc5ecaa0cd5378754281579c4ac608b",
+      "bytes": 15568,
+      "seconds": 1.685,
+      "lufs": -15.6,
+      "true_peak_db": -1.5,
+      "gain_db": -0.4,
+      "confirmed_by": [
+        {
+          "pack": "JP_Hina.molru",
+          "line": "ExSkill_3",
+          "wiki": "bluearchive.wiki/wiki/Hina/audio"
+        }
+      ],
+      "method": "pack file name, role matched by name (not by listening)"
+    },
+    {
+      "runtime_path": "assets/audio/ba/voice/hoshino/Hoshino_Battle_Damage_1.ogg",
+      "source_name": "Hoshino_Battle_Damage_1",
+      "source": "GameData/MediaResources/Audio/VOC_JP/JP_Hoshino.molru",
+      "sha256": "c951caff7197cb949c409f86f6366a85c6106a88b7670103c7da972588b37298",
+      "bytes": 10884,
+      "seconds": 1.143,
+      "lufs": -16.2,
+      "true_peak_db": 0.1,
+      "gain_db": -1.7,
+      "confirmed_by": [
+        {
+          "pack": "JP_Hoshino.molru",
+          "line": "Battle_Damage_1",
+          "wiki": "bluearchive.wiki/wiki/Hoshino/audio"
+        }
+      ],
+      "method": "pack file name, role matched by name (not by listening)"
+    },
+    {
+      "runtime_path": "assets/audio/ba/voice/hoshino/Hoshino_Battle_Damage_2.ogg",
+      "source_name": "Hoshino_Battle_Damage_2",
+      "source": "GameData/MediaResources/Audio/VOC_JP/JP_Hoshino.molru",
+      "sha256": "e51b4e45819b3f0ea7f0652c43518c5ac0b0300c0a7ea886dc940901699e9c7e",
+      "bytes": 6269,
+      "seconds": 0.465,
+      "lufs": -16.2,
+      "true_peak_db": -0.2,
+      "gain_db": -1.4,
+      "confirmed_by": [
+        {
+          "pack": "JP_Hoshino.molru",
+          "line": "Battle_Damage_2",
+          "wiki": "bluearchive.wiki/wiki/Hoshino/audio"
+        }
+      ],
+      "method": "pack file name, role matched by name (not by listening)"
+    },
+    {
+      "runtime_path": "assets/audio/ba/voice/hoshino/Hoshino_Battle_Damage_3.ogg",
+      "source_name": "Hoshino_Battle_Damage_3",
+      "source": "GameData/MediaResources/Audio/VOC_JP/JP_Hoshino.molru",
+      "sha256": "fb9d57ac0a19a6440320c70fdbe697f37bf66d4c490ea99528a630efba103a6d",
+      "bytes": 8530,
+      "seconds": 0.791,
+      "lufs": -14.1,
+      "true_peak_db": 0.1,
+      "gain_db": -1.9,
+      "confirmed_by": [
+        {
+          "pack": "JP_Hoshino.molru",
+          "line": "Battle_Damage_3",
+          "wiki": "bluearchive.wiki/wiki/Hoshino/audio"
+        }
+      ],
+      "method": "pack file name, role matched by name (not by listening)"
+    },
+    {
+      "runtime_path": "assets/audio/ba/voice/hoshino/Hoshino_Battle_In_1.ogg",
+      "source_name": "Hoshino_Battle_In_1",
+      "source": "GameData/MediaResources/Audio/VOC_JP/JP_Hoshino.molru",
+      "sha256": "8f0d5b8c5496a90997f0c53768f39af2a8cbc8fb956f377106f2d18bd3a4a362",
+      "bytes": 25125,
+      "seconds": 3.394,
+      "lufs": -14.0,
+      "true_peak_db": -0.0,
+      "gain_db": -2.0,
+      "confirmed_by": [
+        {
+          "pack": "JP_Hoshino.molru",
+          "line": "Battle_In_1",
+          "wiki": "bluearchive.wiki/wiki/Hoshino/audio"
+        }
+      ],
+      "method": "pack file name, role matched by name (not by listening)"
+    },
+    {
+      "runtime_path": "assets/audio/ba/voice/hoshino/Hoshino_Battle_In_2.ogg",
+      "source_name": "Hoshino_Battle_In_2",
+      "source": "GameData/MediaResources/Audio/VOC_JP/JP_Hoshino.molru",
+      "sha256": "999aae62fb08c953145c6706588613551c7f0c250fdf69db3f0dbf0f7344f8a2",
+      "bytes": 15218,
+      "seconds": 1.772,
+      "lufs": -13.9,
+      "true_peak_db": 0.2,
+      "gain_db": -2.1,
+      "confirmed_by": [
+        {
+          "pack": "JP_Hoshino.molru",
+          "line": "Battle_In_2",
+          "wiki": "bluearchive.wiki/wiki/Hoshino/audio"
+        }
+      ],
+      "method": "pack file name, role matched by name (not by listening)"
+    },
+    {
+      "runtime_path": "assets/audio/ba/voice/hoshino/Hoshino_Battle_Retire.ogg",
+      "source_name": "Hoshino_Battle_Retire",
+      "source": "GameData/MediaResources/Audio/VOC_JP/JP_Hoshino.molru",
+      "sha256": "cc1996ddfb9a853c997b5241ce9925c6de0385df969bd06393a7f1fa03732dc6",
+      "bytes": 18324,
+      "seconds": 2.348,
+      "lufs": -21.1,
+      "true_peak_db": -7.9,
+      "gain_db": 5.1,
+      "confirmed_by": [
+        {
+          "pack": "JP_Hoshino.molru",
+          "line": "Battle_Retire",
+          "wiki": "bluearchive.wiki/wiki/Hoshino/audio"
+        }
+      ],
+      "method": "pack file name, role matched by name (not by listening)"
+    },
+    {
+      "runtime_path": "assets/audio/ba/voice/hoshino/Hoshino_Battle_Victory_1.ogg",
+      "source_name": "Hoshino_Battle_Victory_1",
+      "source": "GameData/MediaResources/Audio/VOC_JP/JP_Hoshino.molru",
+      "sha256": "4704e230262ea4170c3524708d8785c07406a2337685069fc57ccc96c5376d2d",
+      "bytes": 41018,
+      "seconds": 5.607,
+      "lufs": -15.8,
+      "true_peak_db": -0.9,
+      "gain_db": -0.7,
+      "confirmed_by": [
+        {
+          "pack": "JP_Hoshino.molru",
+          "line": "Battle_Victory_1",
+          "wiki": "bluearchive.wiki/wiki/Hoshino/audio"
+        }
+      ],
+      "method": "pack file name, role matched by name (not by listening)"
+    },
+    {
+      "runtime_path": "assets/audio/ba/voice/hoshino/Hoshino_Battle_Victory_2.ogg",
+      "source_name": "Hoshino_Battle_Victory_2",
+      "source": "GameData/MediaResources/Audio/VOC_JP/JP_Hoshino.molru",
+      "sha256": "cb723c8b3e55576842672e4c01ab9635721b178ec92780bdbc4d8d92105d4d3c",
+      "bytes": 38087,
+      "seconds": 5.217,
+      "lufs": -11.8,
+      "true_peak_db": -0.2,
+      "gain_db": -4.2,
+      "confirmed_by": [
+        {
+          "pack": "JP_Hoshino.molru",
+          "line": "Battle_Victory_2",
+          "wiki": "bluearchive.wiki/wiki/Hoshino/audio"
+        }
+      ],
+      "method": "pack file name, role matched by name (not by listening)"
+    },
+    {
+      "runtime_path": "assets/audio/ba/voice/hoshino/Hoshino_CommonSkill.ogg",
+      "source_name": "Hoshino_CommonSkill",
+      "source": "GameData/MediaResources/Audio/VOC_JP/JP_Hoshino.molru",
+      "sha256": "516c98eaf9b80ccff21955c61fab095772c374f141294099d200f6c3d156d186",
+      "bytes": 16071,
+      "seconds": 1.751,
+      "lufs": -13.0,
+      "true_peak_db": -0.2,
+      "gain_db": -3.0,
+      "confirmed_by": [
+        {
+          "pack": "JP_Hoshino.molru",
+          "line": "CommonSkill",
+          "wiki": "bluearchive.wiki/wiki/Hoshino/audio"
+        }
+      ],
+      "method": "pack file name, role matched by name (not by listening)"
+    },
+    {
+      "runtime_path": "assets/audio/ba/voice/hoshino/Hoshino_ExSkill_1.ogg",
+      "source_name": "Hoshino_ExSkill_1",
+      "source": "GameData/MediaResources/Audio/VOC_JP/JP_Hoshino.molru",
+      "sha256": "bdda7e784773d351b56d637e29214136e4579321e28a04c39570d6e7a5703e32",
+      "bytes": 12309,
+      "seconds": 1.292,
+      "lufs": -11.6,
+      "true_peak_db": 0.4,
+      "gain_db": -4.4,
+      "confirmed_by": [
+        {
+          "pack": "JP_Hoshino.molru",
+          "line": "ExSkill_1",
+          "wiki": "bluearchive.wiki/wiki/Hoshino/audio"
+        }
+      ],
+      "method": "pack file name, role matched by name (not by listening)"
+    },
+    {
+      "runtime_path": "assets/audio/ba/voice/hoshino/Hoshino_ExSkill_2.ogg",
+      "source_name": "Hoshino_ExSkill_2",
+      "source": "GameData/MediaResources/Audio/VOC_JP/JP_Hoshino.molru",
+      "sha256": "776ee8d7557c60fb84effa23478e2c7a8b30b603abfb88da36e3d58bce5808ff",
+      "bytes": 16706,
+      "seconds": 2.001,
+      "lufs": -12.0,
+      "true_peak_db": 0.6,
+      "gain_db": -4.0,
+      "confirmed_by": [
+        {
+          "pack": "JP_Hoshino.molru",
+          "line": "ExSkill_2",
+          "wiki": "bluearchive.wiki/wiki/Hoshino/audio"
+        }
+      ],
+      "method": "pack file name, role matched by name (not by listening)"
+    },
+    {
+      "runtime_path": "assets/audio/ba/voice/hoshino/Hoshino_ExSkill_3.ogg",
+      "source_name": "Hoshino_ExSkill_3",
+      "source": "GameData/MediaResources/Audio/VOC_JP/JP_Hoshino.molru",
+      "sha256": "3944a36a922b8b309ac4ffad6e85e0def9233b8729cc58f33a3c95eae08768b1",
+      "bytes": 17316,
+      "seconds": 1.985,
+      "lufs": -12.9,
+      "true_peak_db": 0.2,
+      "gain_db": -3.1,
+      "confirmed_by": [
+        {
+          "pack": "JP_Hoshino.molru",
+          "line": "ExSkill_3",
+          "wiki": "bluearchive.wiki/wiki/Hoshino/audio"
+        }
+      ],
+      "method": "pack file name, role matched by name (not by listening)"
+    }
+  ]
+}

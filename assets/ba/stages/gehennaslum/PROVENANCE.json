@@ -1,0 +1,893 @@
+{
+ "stage": "gehennaslum",
+ "scenes": [
+  "sb_01_gehennaslum_p01_d",
+  "sb_01_gehennaslum_p01_n"
+ ],
+ "converter_tree": "45d4ecdbc971203036355641d46fce96b5b3ed09",
+ "install": "BlueArchive_Data, read only, bundles copied out and never modified",
+ "bundles": [
+  {
+   "file": "6befbbb5c811cb1575f22145d4f0a954_unitybuiltinshaders_3925052273.bundle",
+   "sha256": "4a1cac6c94502d4b53096b46773defa71ba7abf619162cb11277cffdb3cad4f1",
+   "bytes": 98322,
+   "install_path": "StreamingAssets/PUB/Resource/Preload/Windows/6befbbb5c811cb1575f22145d4f0a954_unitybuiltinshaders_3925052273.bundle"
+  },
+  {
+   "file": "assets-_mx-3dobject-dron-_mxdependency-2024-11-18_003_assets_all_3564619613.bundle",
+   "sha256": "278c5357358cab34115ed3153d63b842b28a777e8b8c27ccbe822934716b5782",
+   "bytes": 26437,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-3dobject-dron-_mxdependency-2024-11-18_003_assets_all_3564619613.bundle"
+  },
+  {
+   "file": "assets-_mx-characters-_mxcommon-.png-_mxdependency-2025-02-11_assets_all_3603727043.bundle",
+   "sha256": "4fb40443048778268a3d6bcc8b1be05733e7fdc37d38f1374250ddbe6b090add",
+   "bytes": 237957,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-characters-_mxcommon-.png-_mxdependency-2025-02-11_assets_all_3603727043.bundle"
+  },
+  {
+   "file": "assets-_mx-characters-_mxcommon-.tga-_mxdependency-2025-02-11_assets_all_3636162615.bundle",
+   "sha256": "704e94f049c797fd480e3406bee6ea8895c845f0a116b8719a086dbf539967b4",
+   "bytes": 2203954,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-characters-_mxcommon-.tga-_mxdependency-2025-02-11_assets_all_3636162615.bundle"
+  },
+  {
+   "file": "assets-_mx-characters-azusa_original-_mxdependency-2024-11-18_005_assets_all_1199757112.bundle",
+   "sha256": "270edc37aeccab7ad2384ccf31a393476778668c336b2dd3539ff0c21b2cea43",
+   "bytes": 310627,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-characters-azusa_original-_mxdependency-2024-11-18_005_assets_all_1199757112.bundle"
+  },
+  {
+   "file": "assets-_mx-characters-ch0060-_mxdependency-2024-11-18_006_assets_all_2386664762.bundle",
+   "sha256": "b688544ca007ce381340340905b90c6b8cc102b2a39ed401169918822a9d8dcd",
+   "bytes": 513846,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-characters-ch0060-_mxdependency-2024-11-18_006_assets_all_2386664762.bundle"
+  },
+  {
+   "file": "assets-_mx-characters-ch0064-_mxdependency-2024-11-18_003_assets_all_3983718806.bundle",
+   "sha256": "babc4705f11fda9df9e1f993e679afd477776a3de878423069369649ca4613ad",
+   "bytes": 9628,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-characters-ch0064-_mxdependency-2024-11-18_003_assets_all_3983718806.bundle"
+  },
+  {
+   "file": "assets-_mx-characters-ch0064-_mxdependency-2024-11-18_004_assets_all_127627045.bundle",
+   "sha256": "29b319a712c50d0d99dd7c2a07a88aad626be75125c5fc3c4c1b08711553d27e",
+   "bytes": 1202550,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-characters-ch0064-_mxdependency-2024-11-18_004_assets_all_127627045.bundle"
+  },
+  {
+   "file": "assets-_mx-characters-ch0064-_mxdependency-2024-11-18_006_assets_all_1395669278.bundle",
+   "sha256": "886908b2d719b39a9c4d812226e6919cb14e267fe682d0aebee9d1f1139e5013",
+   "bytes": 425237,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-characters-ch0064-_mxdependency-2024-11-18_006_assets_all_1395669278.bundle"
+  },
+  {
+   "file": "assets-_mx-characters-ch0064-_mxdependency-2025-07-25_000_assets_all_789574908.bundle",
+   "sha256": "d359dd78726cc6b2c9d8dbc41dc9abbb353197d6220950b5e5d513dade833144",
+   "bytes": 3073,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-characters-ch0064-_mxdependency-2025-07-25_000_assets_all_789574908.bundle"
+  },
+  {
+   "file": "assets-_mx-characters-ch0064-_mxdependency-2025-07-25_001_assets_all_2492832848.bundle",
+   "sha256": "bd3a3df5e45e8f5be8313d8a8cd714c17d53eae543a28f91e14157dd9192cf47",
+   "bytes": 7225,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-characters-ch0064-_mxdependency-2025-07-25_001_assets_all_2492832848.bundle"
+  },
+  {
+   "file": "assets-_mx-characters-ch0066-_mxdependency-2024-11-18_006_assets_all_3857307407.bundle",
+   "sha256": "af9e8333c6752036fd06b700967f42960930c59ffd168120ea95341cbcfcf8ac",
+   "bytes": 923765,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-characters-ch0066-_mxdependency-2024-11-18_006_assets_all_3857307407.bundle"
+  },
+  {
+   "file": "assets-_mx-characters-ch0088-_mxdependency-2024-11-18_006_assets_all_3302361891.bundle",
+   "sha256": "77adaf1c5495e220326ca86fd2a9961618fdde225f7121afc55e0661b20ad710",
+   "bytes": 2088145,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-characters-ch0088-_mxdependency-2024-11-18_006_assets_all_3302361891.bundle"
+  },
+  {
+   "file": "assets-_mx-characters-ch0099-_mxdependency-2024-11-18_006_assets_all_137442892.bundle",
+   "sha256": "abb096f26b174699e21f9bc3ff59178cc8ffa44a8cab11db919dd64b0a0b7ec8",
+   "bytes": 558421,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-characters-ch0099-_mxdependency-2024-11-18_006_assets_all_137442892.bundle"
+  },
+  {
+   "file": "assets-_mx-characters-ch0152-_mxdependency-2024-11-18_006_assets_all_2172828613.bundle",
+   "sha256": "d812714d85f9eaae18e1385aee2ae0e6efbaeff7ff1e96d39cf2a3f3392b4353",
+   "bytes": 1122527,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-characters-ch0152-_mxdependency-2024-11-18_006_assets_all_2172828613.bundle"
+  },
+  {
+   "file": "assets-_mx-characters-ch0156-_mxdependency-2024-11-18_006_assets_all_34927093.bundle",
+   "sha256": "cc97106350a9071e58ed2e63de6302926313e2561b28b2266e97aa93cb16ad56",
+   "bytes": 890859,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-characters-ch0156-_mxdependency-2024-11-18_006_assets_all_34927093.bundle"
+  },
+  {
+   "file": "assets-_mx-characters-ch0160-_mxdependency-2024-11-18_006_assets_all_515108554.bundle",
+   "sha256": "53e98f95b1463ea32755686630567de80af09c6e1b113a0848023c57e0cd3143",
+   "bytes": 568030,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-characters-ch0160-_mxdependency-2024-11-18_006_assets_all_515108554.bundle"
+  },
+  {
+   "file": "assets-_mx-characters-ch0164-_mxdependency-2024-11-18_006_assets_all_3421997831.bundle",
+   "sha256": "d947f98095c5e8bb7589871d09d341a8927f1390e7f7017fcd1c8a540c1bf9f0",
+   "bytes": 985999,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-characters-ch0164-_mxdependency-2024-11-18_006_assets_all_3421997831.bundle"
+  },
+  {
+   "file": "assets-_mx-characters-ch0175-_mxdependency-2024-11-18_006_assets_all_3147092422.bundle",
+   "sha256": "f0ca42da9cb4b09405460c0c9d4619cee599be0bf3316340a6fb4f40612769ed",
+   "bytes": 898324,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-characters-ch0175-_mxdependency-2024-11-18_006_assets_all_3147092422.bundle"
+  },
+  {
+   "file": "assets-_mx-characters-ch0176-_mxdependency-2024-11-18_006_assets_all_1109914751.bundle",
+   "sha256": "0946f3989fa0cc1bfd1e0e966be96d93538f7a9dfd4361b8d8866f1eb0e404a2",
+   "bytes": 631016,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-characters-ch0176-_mxdependency-2024-11-18_006_assets_all_1109914751.bundle"
+  },
+  {
+   "file": "assets-_mx-characters-ch0179-_mxdependency-2024-11-18_006_assets_all_1217107106.bundle",
+   "sha256": "e33100481c2d087037b075e22081d6b6ed11e9ce7a9ea10e3633797f5a4555ad",
+   "bytes": 1053675,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-characters-ch0179-_mxdependency-2024-11-18_006_assets_all_1217107106.bundle"
+  },
+  {
+   "file": "assets-_mx-characters-ch0181-_mxdependency-2024-11-18_003_assets_all_4290019443.bundle",
+   "sha256": "668df870c1e97b7cffcfaedd8a75a4404eac5e71f07473939be4eeb25ba63873",
+   "bytes": 10391,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-characters-ch0181-_mxdependency-2024-11-18_003_assets_all_4290019443.bundle"
+  },
+  {
+   "file": "assets-_mx-characters-ch0181-_mxdependency-2024-11-18_006_assets_all_4166158034.bundle",
+   "sha256": "d1c28cca5694d631048a51da52b3d229eccbfe4b201783001fb0bf3e7fdc20ab",
+   "bytes": 292627,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-characters-ch0181-_mxdependency-2024-11-18_006_assets_all_4166158034.bundle"
+  },
+  {
+   "file": "assets-_mx-characters-ch0190-_mxdependency-2024-11-18_006_assets_all_2243321395.bundle",
+   "sha256": "75dc9e53df688356b848b9c4ebf5cadc612ddc880beb1e36f0decb1ea57d0ffa",
+   "bytes": 791160,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-characters-ch0190-_mxdependency-2024-11-18_006_assets_all_2243321395.bundle"
+  },
+  {
+   "file": "assets-_mx-characters-ch0218-_mxdependency-2024-11-18_006_assets_all_383015814.bundle",
+   "sha256": "b56e45263b09db1980176d824e003000596fe6b67ce24245411b12675b64e847",
+   "bytes": 1402462,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-characters-ch0218-_mxdependency-2024-11-18_006_assets_all_383015814.bundle"
+  },
+  {
+   "file": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-2024-11-18_006_assets_all_3713689915.bundle",
+   "sha256": "163ba946d26b1ba2d90cdf5d2245da1913eeea5dee0ce79376ff73eb8b3a6db0",
+   "bytes": 1911455,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-characters-hoshino_swimsuit-_mxdependency-2024-11-18_006_assets_all_3713689915.bundle"
+  },
+  {
+   "file": "assets-_mx-characters-iori_original-_mxdependency-2024-11-18_002_assets_all_965354162.bundle",
+   "sha256": "cedc23dbda6b40d9810ddfe5ec54e426a6d1ead235edfda40e65a54de483a3b4",
+   "bytes": 4768,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-characters-iori_original-_mxdependency-2024-11-18_002_assets_all_965354162.bundle"
+  },
+  {
+   "file": "assets-_mx-characters-iori_original-_mxdependency-2024-11-18_005_assets_all_237609187.bundle",
+   "sha256": "c142700227057274672eaee813cc266a1bdbeb76812b06d6f2e8915b631855be",
+   "bytes": 387868,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-characters-iori_original-_mxdependency-2024-11-18_005_assets_all_237609187.bundle"
+  },
+  {
+   "file": "assets-_mx-characters-kazusa_original-_mxdependency-2024-11-18_006_assets_all_4126661844.bundle",
+   "sha256": "f0ab46a0a84bb30d7d77d51706f1119c0d4ee762eb318e5e7c7368286c28f54a",
+   "bytes": 385274,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-characters-kazusa_original-_mxdependency-2024-11-18_006_assets_all_4126661844.bundle"
+  },
+  {
+   "file": "assets-_mx-characters-marina_original-_mxdependency-2024-11-18_006_assets_all_2947090721.bundle",
+   "sha256": "460f2c7846878f4e4f75f32bdabc9964f6d934a5ed47b2c99cb7a8f1c16d649e",
+   "bytes": 507211,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-characters-marina_original-_mxdependency-2024-11-18_006_assets_all_2947090721.bundle"
+  },
+  {
+   "file": "assets-_mx-characters-mutsuki_original-_mxdependency-2024-11-18_006_assets_all_1889898722.bundle",
+   "sha256": "46f16dfc4d41bb1f7d87fbaa2298cb07ec7457c59bee9a8dbeff91be11b97878",
+   "bytes": 299987,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-characters-mutsuki_original-_mxdependency-2024-11-18_006_assets_all_1889898722.bundle"
+  },
+  {
+   "file": "assets-_mx-characters-neru_original-_mxdependency-2024-11-18_005_assets_all_1852455944.bundle",
+   "sha256": "0591381425ab316d85e0cf0fd49182be0cb48f42fab6dbb983c551203531af8e",
+   "bytes": 1280830,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-characters-neru_original-_mxdependency-2024-11-18_005_assets_all_1852455944.bundle"
+  },
+  {
+   "file": "assets-_mx-effectsfreezed-material-_mxdependency-2024-11-18_000_assets_all_3075775260.bundle",
+   "sha256": "36d38ebba809c11fb36c81efad4c7e1b416ba898074c6c6ff56994647f62daef",
+   "bytes": 182882,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-effectsfreezed-material-_mxdependency-2024-11-18_000_assets_all_3075775260.bundle"
+  },
+  {
+   "file": "assets-_mx-effectsfreezed-texture-_mxdependency-2024-11-18_001_assets_all_3681797415.bundle",
+   "sha256": "85277720e7732f6768266e42a493d0a8d2be6bc12154df0c785b4afca867ab73",
+   "bytes": 23785393,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-effectsfreezed-texture-_mxdependency-2024-11-18_001_assets_all_3681797415.bundle"
+  },
+  {
+   "file": "assets-_mx-effectsfreezed-texture-gacha-_mxdependency-2024-11-18_assets_all_3060015320.bundle",
+   "sha256": "041b96bddc62a22efd4f82c21fc2cbcc7da18236fc4ec13bef29b3588f56ccab",
+   "bytes": 1012110,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-effectsfreezed-texture-gacha-_mxdependency-2024-11-18_assets_all_3060015320.bundle"
+  },
+  {
+   "file": "assets-_mx-effectsfreezed-texture-system-_mxdependency-2024-11-18_assets_all_2514021822.bundle",
+   "sha256": "eac7be8b4cfd6b2676ea73ab95b48bd5f1ba033a4ea202ce9c07e668de6cb316",
+   "bytes": 233708,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-effectsfreezed-texture-system-_mxdependency-2024-11-18_assets_all_2514021822.bundle"
+  },
+  {
+   "file": "assets-_mx-effectsfreezed-texture-text-_mxdependency-2024-11-18_assets_all_2208340812.bundle",
+   "sha256": "7d6fc03a570f7a4ea1f15cc6a6c195888370f79b35af7f5907e0e46cbacfd443",
+   "bytes": 933356,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-effectsfreezed-texture-text-_mxdependency-2024-11-18_assets_all_2208340812.bundle"
+  },
+  {
+   "file": "assets-_mx-effectsfreezed-ui-uicraftduration-_mxdependency-2024-11-18_003_assets_all_324587784.bundle",
+   "sha256": "d789b0e92151f10dbbbff7559470ba21fe3a41003cb788746805e2e49fb8721a",
+   "bytes": 58339,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-effectsfreezed-ui-uicraftduration-_mxdependency-2024-11-18_003_assets_all_324587784.bundle"
+  },
+  {
+   "file": "assets-_mx-etceffects-scenariofx-ui_fx_bg_flash-_mxdependency-2024-11-18_001_assets_all_952778060.bundle",
+   "sha256": "747ab1d8425beec2cb1e1ae5798ea907486aef7de3c90e2399d7aaad59b569a7",
+   "bytes": 13511,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-etceffects-scenariofx-ui_fx_bg_flash-_mxdependency-2024-11-18_001_assets_all_952778060.bundle"
+  },
+  {
+   "file": "assets-_mx-etceffects-uifx-uicraftduration-_mxdependency-2024-11-18_001_assets_all_3222966891.bundle",
+   "sha256": "e8334911b9418af4934dfdda34b11eef27a66ed0ddb3488c427ea84e9c68792d",
+   "bytes": 21934,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-etceffects-uifx-uicraftduration-_mxdependency-2024-11-18_001_assets_all_3222966891.bundle"
+  },
+  {
+   "file": "assets-_mx-minigame-rhythm-_mxdependency-2024-11-18_005_assets_all_350679095.bundle",
+   "sha256": "7d72dd85470c9b445ab22bbc66cd0329c44ec7d7f423b4c28c91a51dd1eb9398",
+   "bytes": 98944,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-minigame-rhythm-_mxdependency-2024-11-18_005_assets_all_350679095.bundle"
+  },
+  {
+   "file": "assets-_mx-minigame-rhythm0002-_mxdependency-2024-11-18_006_assets_all_2875220406.bundle",
+   "sha256": "65a28a7a37a300a15d6c038bcb8cb6f07e8e333eee7af8022fa57afff4def51a",
+   "bytes": 335748,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-minigame-rhythm0002-_mxdependency-2024-11-18_006_assets_all_2875220406.bundle"
+  },
+  {
+   "file": "assets-_mx-npcs-_mxcommon-.psd-_mxdependency-2025-02-11_assets_all_2328494262.bundle",
+   "sha256": "49ed4cc18841fead112e63039a8f01b04a2b4688aada957d83b82f0233d77449",
+   "bytes": 346930,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-npcs-_mxcommon-.psd-_mxdependency-2025-02-11_assets_all_2328494262.bundle"
+  },
+  {
+   "file": "assets-_mx-npcs-aev_yoheki_vulcan-_mxdependency-2024-11-18_004_assets_all_605948116.bundle",
+   "sha256": "eed53573b7109db3b6fbed9790af6d32c0d909c6b5517a00d0cdff746a8bba9e",
+   "bytes": 1117924,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-npcs-aev_yoheki_vulcan-_mxdependency-2024-11-18_004_assets_all_605948116.bundle"
+  },
+  {
+   "file": "assets-_mx-npcs-armoredcar_wakamo_mg-_mxdependency-2024-11-18_004_assets_all_1459092602.bundle",
+   "sha256": "01a8f055ca5c83b500bc0e633d6c09cc1fddf9d4c87143d381a6494af803bf4c",
+   "bytes": 891355,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-npcs-armoredcar_wakamo_mg-_mxdependency-2024-11-18_004_assets_all_1459092602.bundle"
+  },
+  {
+   "file": "assets-_mx-npcs-avantgardekun_millenium_ar-_mxdependency-2024-11-18_004_assets_all_745386509.bundle",
+   "sha256": "8d5554205e78d14ad26895397f9002a0bd562b282e77c54730f3fc1644a2c0c7",
+   "bytes": 23785,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-npcs-avantgardekun_millenium_ar-_mxdependency-2024-11-18_004_assets_all_745386509.bundle"
+  },
+  {
+   "file": "assets-_mx-npcs-droid_helmet_ar-_mxdependency-2024-11-18_004_assets_all_2312324149.bundle",
+   "sha256": "c067e5851ae42fa6d6d1055337c56ae614dadfcd507e0b761e56cb340a26c2ff",
+   "bytes": 22973,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-npcs-droid_helmet_ar-_mxdependency-2024-11-18_004_assets_all_2312324149.bundle"
+  },
+  {
+   "file": "assets-_mx-npcs-en0003-_mxdependency-2024-11-18_003_assets_all_81002964.bundle",
+   "sha256": "f7fcebb355d68a11aef8e66cf9ec1cbc6f67a720e8423430ad5178e1af8f66ca",
+   "bytes": 54977,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-npcs-en0003-_mxdependency-2024-11-18_003_assets_all_81002964.bundle"
+  },
+  {
+   "file": "assets-_mx-npcs-en0003-_mxdependency-2024-11-18_006_assets_all_958852357.bundle",
+   "sha256": "d173624388ee3eccafd3787d0fbbd35e2e4cb8d282075d7d1185fbd509ed309c",
+   "bytes": 3341171,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-npcs-en0003-_mxdependency-2024-11-18_006_assets_all_958852357.bundle"
+  },
+  {
+   "file": "assets-_mx-npcs-goz_original-_mxdependency-2024-11-18_006_assets_all_3898871533.bundle",
+   "sha256": "b3891f76058bf51d47c9aaa77f26891a6f21e0b4613adfee2e6e232a9c661412",
+   "bytes": 1094359,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-npcs-goz_original-_mxdependency-2024-11-18_006_assets_all_3898871533.bundle"
+  },
+  {
+   "file": "assets-_mx-npcs-hod_original-_mxdependency-2024-11-18_006_assets_all_2582954892.bundle",
+   "sha256": "52dc71f7d675a94a492a7e1814382814e738103ae0674c0f25773bc72763aaa8",
+   "bytes": 2602098,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-npcs-hod_original-_mxdependency-2024-11-18_006_assets_all_2582954892.bundle"
+  },
+  {
+   "file": "assets-_mx-npcs-kaitenfx_mk0-_mxdependency-2024-11-18_006_assets_all_1484658867.bundle",
+   "sha256": "d9374ab548cf129eddd98de86db5f10443bda23fa069cb664df197bfed6cfee8",
+   "bytes": 485838,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-npcs-kaitenfx_mk0-_mxdependency-2024-11-18_006_assets_all_1484658867.bundle"
+  },
+  {
+   "file": "assets-_mx-npcs-kaitenranger_pink_rl-_mxdependency-2024-11-18_004_assets_all_27675036.bundle",
+   "sha256": "c710448de6dce900710c5b89a0080d4a364d3afd08842dbb49854ea2e8b8b031",
+   "bytes": 21215,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-npcs-kaitenranger_pink_rl-_mxdependency-2024-11-18_004_assets_all_27675036.bundle"
+  },
+  {
+   "file": "assets-_mx-npcs-kether_decagram_vulcan-_mxdependency-2024-11-18_005_assets_all_1339672971.bundle",
+   "sha256": "ba36f1f0e50c2e59cc38bb9c3f156375c62b4d9f2ebc7f92eb350e7c20ca52af",
+   "bytes": 157365,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-npcs-kether_decagram_vulcan-_mxdependency-2024-11-18_005_assets_all_1339672971.bundle"
+  },
+  {
+   "file": "assets-_mx-npcs-perorozilla_colour-_mxdependency-2024-11-18_004_assets_all_4289138178.bundle",
+   "sha256": "d4994f524f7d568ef3e9f95e89f697e97cca8bb83b0ef0e98e26c533f099cd7d",
+   "bytes": 25426,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-npcs-perorozilla_colour-_mxdependency-2024-11-18_004_assets_all_4289138178.bundle"
+  },
+  {
+   "file": "assets-_mx-npcs-perorozilla_original-_mxdependency-2024-11-18_006_assets_all_2149623240.bundle",
+   "sha256": "c67e3b9c14c634c03882e38d77400fd91ce8e72b1cf897d72fc7f4a4af273094",
+   "bytes": 1735252,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-npcs-perorozilla_original-_mxdependency-2024-11-18_006_assets_all_2149623240.bundle"
+  },
+  {
+   "file": "assets-_mx-npcs-wakamo_hovercraft_original-_mxdependency-2024-11-18_006_assets_all_2163838618.bundle",
+   "sha256": "8dc43ea24828175f5282a3e34e5b3d125d0da7352292fc847ba9a7e735e716c8",
+   "bytes": 2383262,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-npcs-wakamo_hovercraft_original-_mxdependency-2024-11-18_006_assets_all_2163838618.bundle"
+  },
+  {
+   "file": "assets-_mx-obstacles-prop_seagull-_mxdependency-2024-11-18_000_assets_all_1686665921.bundle",
+   "sha256": "d87b64d264af28d7d54375301c2e142168d53a6942094ab08e87441c37cbbbc6",
+   "bytes": 611523,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-obstacles-prop_seagull-_mxdependency-2024-11-18_000_assets_all_1686665921.bundle"
+  },
+  {
+   "file": "assets-_mx-obstacles-prop_seagull-_mxdependency-2024-11-18_001_assets_all_1393802284.bundle",
+   "sha256": "2e109f9b0c063af6fd7c1927e65f50f7c2109004d9040e1c005dbaa7c634f1bc",
+   "bytes": 3377,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-obstacles-prop_seagull-_mxdependency-2024-11-18_001_assets_all_1393802284.bundle"
+  },
+  {
+   "file": "assets-_mx-obstacles-prop_seagull-_mxdependency-2024-11-18_002_assets_all_3081452928.bundle",
+   "sha256": "4338bc3f29f19f5c8c06cb8655f0a5ca12b0b531184d22ab51a1e93b15a4bc2d",
+   "bytes": 38324,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-obstacles-prop_seagull-_mxdependency-2024-11-18_002_assets_all_3081452928.bundle"
+  },
+  {
+   "file": "assets-_mx-obstacles-prop_seagull-_mxdependency-2024-11-18_004_assets_all_2035533974.bundle",
+   "sha256": "4e85d2a3c32e73ee72584fdfd88249aefd65e7b5f7a088aeff80267ae5bd9a74",
+   "bytes": 11581,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-obstacles-prop_seagull-_mxdependency-2024-11-18_004_assets_all_2035533974.bundle"
+  },
+  {
+   "file": "assets-_mx-obstacles-sb_03_harbor_p01-_mxdependency-2024-11-18_000_assets_all_1625486552.bundle",
+   "sha256": "3f774a3b699b2df2c9a08c58c61da047dca02b04db98903a56f7aedee2feb619",
+   "bytes": 12376,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-obstacles-sb_03_harbor_p01-_mxdependency-2024-11-18_000_assets_all_1625486552.bundle"
+  },
+  {
+   "file": "assets-_mx-obstacles-sb_03_harbor_p01-_mxdependency-2024-11-18_001_assets_all_764719751.bundle",
+   "sha256": "212857895f45d8eb984c008a7a3cea2f0ebaa0cfbe5b53a96fd80bac21aeb0f5",
+   "bytes": 361990,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-obstacles-sb_03_harbor_p01-_mxdependency-2024-11-18_001_assets_all_764719751.bundle"
+  },
+  {
+   "file": "assets-_mx-obstacles-sb_03_harbor_p02-_mxdependency-2024-11-18_000_assets_all_819937124.bundle",
+   "sha256": "a17cc1b338a1cc87570b15bf5493db19265aad673b0860b6affdb6590b2bd437",
+   "bytes": 12360,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-obstacles-sb_03_harbor_p02-_mxdependency-2024-11-18_000_assets_all_819937124.bundle"
+  },
+  {
+   "file": "assets-_mx-obstacles-sb_03_harbor_p02-_mxdependency-2024-11-18_001_assets_all_3238715011.bundle",
+   "sha256": "a8d24b39f66150e692c9837cdc44e849470491de477545a47c0b0303783ad992",
+   "bytes": 305992,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-obstacles-sb_03_harbor_p02-_mxdependency-2024-11-18_001_assets_all_3238715011.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-_mxcommon-.asset-_mxdependency-2025-02-11_assets_all_2952683517.bundle",
+   "sha256": "73916227c54ce73aa97c68957eadec95dbe6e1996651fa389cbb26b52274064d",
+   "bytes": 2791,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-_mxcommon-.asset-_mxdependency-2025-02-11_assets_all_2952683517.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-_mxcommon-.fbx-_mxdependency-2025-02-11_assets_all_2064197558.bundle",
+   "sha256": "fba5eef56ee4fcdbdcf3195cec2519d76eafefcbef942fdb9cbdca172a3ff061",
+   "bytes": 4337631,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-_mxcommon-.fbx-_mxdependency-2025-02-11_assets_all_2064197558.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-_mxcommon-.mat-_mxdependency-2025-02-11_assets_all_2303645054.bundle",
+   "sha256": "a227ee35d9df96fbd88fbe43313d6d89190caf4a0cd3a822f2f4bc6843aed293",
+   "bytes": 37033,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-_mxcommon-.mat-_mxdependency-2025-02-11_assets_all_2303645054.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-_mxcommon-.png-_mxdependency-2025-08-22_assets_all_2078193374.bundle",
+   "sha256": "3bb06a355195a9706a92685b5b75cee67b83cd787f0a3ac614c547a0aa4583d5",
+   "bytes": 2025,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-_mxcommon-.png-_mxdependency-2025-08-22_assets_all_2078193374.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-_mxcommon-.psd-_mxdependency-2025-02-11_assets_all_558720545.bundle",
+   "sha256": "00c307f18af378e000101014ca0138d43ce623c3b20e9f4529dd4abbc5536aa0",
+   "bytes": 900496,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-_mxcommon-.psd-_mxdependency-2025-02-11_assets_all_558720545.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-_mxcommon-.tga-_mxdependency-2025-02-11_assets_all_3778430178.bundle",
+   "sha256": "aa94f69aa13bb43b06011894fe1aa7b672d6e220b89761f56742546272d7c675",
+   "bytes": 303090,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-_mxcommon-.tga-_mxdependency-2025-02-11_assets_all_3778430178.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-beach-_mxdependency-2024-11-18_001_assets_all_2097696946.bundle",
+   "sha256": "b2bf82b31a32fab60a7c964b0f3b03715c140b1077fa71cfce832f93ef92284e",
+   "bytes": 5390,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-beach-_mxdependency-2024-11-18_001_assets_all_2097696946.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-beach-_mxdependency-2024-11-18_004_assets_all_4019550338.bundle",
+   "sha256": "ea0b5becd709fda77443a4c07ec324d6c9896cd1b4d42141480f6a15ed8a7ec1",
+   "bytes": 7088613,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-beach-_mxdependency-2024-11-18_004_assets_all_4019550338.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-destroyedhighway-_mxdependency-2024-11-18_005_assets_all_1572525752.bundle",
+   "sha256": "d1ea21d467ffb7fd1b1e3dfb851cb0701fac791c345913458d7fd17d4f76bf88",
+   "bytes": 8082895,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-destroyedhighway-_mxdependency-2024-11-18_005_assets_all_1572525752.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-destroyedstreet-_mxdependency-2024-11-18_000_assets_all_3406170997.bundle",
+   "sha256": "ddcc392d3c98b4a536fa1a2ed341486c7abc919035c4f21ed3df021a89af3607",
+   "bytes": 2905,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-destroyedstreet-_mxdependency-2024-11-18_000_assets_all_3406170997.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-destroyedstreet-_mxdependency-2024-11-18_001_assets_all_4120922320.bundle",
+   "sha256": "80b6940ed9d98a83230bf4c825019ee38b3aacd3e08914a9c32c3bac93236d4b",
+   "bytes": 1495,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-destroyedstreet-_mxdependency-2024-11-18_001_assets_all_4120922320.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-destroyedstreet-_mxdependency-2024-11-18_002_assets_all_2679433473.bundle",
+   "sha256": "930f33948a1c0dcdfbeb235a336a02404c742d857685a4f8b97fb6613165683c",
+   "bytes": 6619,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-destroyedstreet-_mxdependency-2024-11-18_002_assets_all_2679433473.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-destroyedstreet-_mxdependency-2024-11-18_003_assets_all_4222159914.bundle",
+   "sha256": "4e8e5b198b9f1e67087436f6e9139ab24119a9349475202ee8e34fed7822ba06",
+   "bytes": 930558,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-destroyedstreet-_mxdependency-2024-11-18_003_assets_all_4222159914.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-destroyedstreet-_mxdependency-2024-11-18_004_assets_all_666499087.bundle",
+   "sha256": "6a68584932d3b3b5d18cdac1fb0f6a6a70ac86b2245a43b2a9f515e018a9a0b9",
+   "bytes": 285937,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-destroyedstreet-_mxdependency-2024-11-18_004_assets_all_666499087.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-destroyedstreet-_mxdependency-2024-11-18_005_assets_all_1230681641.bundle",
+   "sha256": "98d8935bac17608da56311b98543c34a6614edbff8721c805ae8b7f2ae514836",
+   "bytes": 5309151,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-destroyedstreet-_mxdependency-2024-11-18_005_assets_all_1230681641.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-floodedruins-_mxdependency-2024-11-18_000_assets_all_1114482244.bundle",
+   "sha256": "605d8f49cf78ce1ad8a316d7fb433999d44faef96b61d94345df28bee56b487a",
+   "bytes": 3896,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-floodedruins-_mxdependency-2024-11-18_000_assets_all_1114482244.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-floodedruins-_mxdependency-2024-11-18_001_assets_all_413858158.bundle",
+   "sha256": "11ab1106ff28d184e185195a5fa432acb516f4a22700f24359d64c73a781b770",
+   "bytes": 6560,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-floodedruins-_mxdependency-2024-11-18_001_assets_all_413858158.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-floodedruins-_mxdependency-2024-11-18_002_assets_all_861317158.bundle",
+   "sha256": "2e5b99afc57a137246f7c39e56eab5b0900cde3b07b2e97b5cd31e41853a86e0",
+   "bytes": 3093918,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-floodedruins-_mxdependency-2024-11-18_002_assets_all_861317158.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-floodedruins-_mxdependency-2024-11-18_003_assets_all_648897504.bundle",
+   "sha256": "c799423eac8e4d9b182f285f200a557e8ba6b09bdd4c1b6772e06268263113e6",
+   "bytes": 418254,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-floodedruins-_mxdependency-2024-11-18_003_assets_all_648897504.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-floodedruins-_mxdependency-2024-11-18_004_assets_all_3406152352.bundle",
+   "sha256": "db10e2b05a0846fb8618b5043d86192d2de3268b6d12d9269776fc7ea488ad5b",
+   "bytes": 9122910,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-floodedruins-_mxdependency-2024-11-18_004_assets_all_3406152352.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-gehennaslum-_mxdependency-2024-11-18_000_assets_all_3313879897.bundle",
+   "sha256": "8b718b4d4a1763dc2910b068b3c9a65d4be585629068fb6b1a0f865baf47c2f2",
+   "bytes": 3023,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-gehennaslum-_mxdependency-2024-11-18_000_assets_all_3313879897.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-gehennaslum-_mxdependency-2024-11-18_001_assets_all_4282818743.bundle",
+   "sha256": "77c3ea395818235c313401fa6a514d137026ca765fcb5c4908c0f7a7a27ab6f0",
+   "bytes": 1447,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-gehennaslum-_mxdependency-2024-11-18_001_assets_all_4282818743.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-gehennaslum-_mxdependency-2024-11-18_002_assets_all_1204486185.bundle",
+   "sha256": "f063192cc873f53ceefc03d716e099309f7df921713d18fe73222ea1149efa65",
+   "bytes": 3910,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-gehennaslum-_mxdependency-2024-11-18_002_assets_all_1204486185.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-gehennaslum-_mxdependency-2024-11-18_003_assets_all_2634010889.bundle",
+   "sha256": "e4bc151710fef5b7c639e98e1f2a673705c0bff322e7968a3db9afa46ba58b21",
+   "bytes": 1745433,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-gehennaslum-_mxdependency-2024-11-18_003_assets_all_2634010889.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-gehennaslum-_mxdependency-2024-11-18_004_assets_all_2640452822.bundle",
+   "sha256": "45993dce22c00fe14f7d2cc0caf8b3a1bc841b2e8fff1096614e329ab0373bf0",
+   "bytes": 508216,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-gehennaslum-_mxdependency-2024-11-18_004_assets_all_2640452822.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-gehennaslum-_mxdependency-2024-11-18_005_assets_all_1257776031.bundle",
+   "sha256": "b0786d85d5870da4fb1c279efa0d967439810d23f7b1d6447e70c69e4f9a6863",
+   "bytes": 8291976,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-gehennaslum-_mxdependency-2024-11-18_005_assets_all_1257776031.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-harbor-_mxdependency-2024-11-18_000_assets_all_3713808418.bundle",
+   "sha256": "a2eb544a5521818b03d3e063043ecd07c3f9ee16ea892656c81db2912ca66f36",
+   "bytes": 4328,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-harbor-_mxdependency-2024-11-18_000_assets_all_3713808418.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-harbor-_mxdependency-2024-11-18_001_assets_all_2901520662.bundle",
+   "sha256": "70b0ebb9991e444b6ef7709ee257c290bc014e5d60c793fb6996a55168f6fc39",
+   "bytes": 1433,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-harbor-_mxdependency-2024-11-18_001_assets_all_2901520662.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-harbor-_mxdependency-2024-11-18_002_assets_all_1939998278.bundle",
+   "sha256": "950b5af37083e87fa27bfa34eebe2ae3cf03a29dffc3cb10f4b106b8fd2bcee2",
+   "bytes": 8160,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-harbor-_mxdependency-2024-11-18_002_assets_all_1939998278.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-harbor-_mxdependency-2024-11-18_003_assets_all_2888008792.bundle",
+   "sha256": "159fc098c582197f511b2c3191578c1a1e4823037ce9879519c87e3238077dd4",
+   "bytes": 1974056,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-harbor-_mxdependency-2024-11-18_003_assets_all_2888008792.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-harbor-_mxdependency-2024-11-18_005_assets_all_1407062276.bundle",
+   "sha256": "c82442ec40c842caede6185d52d1bb502c3946956c2daf5db8ee08ff5d67439c",
+   "bytes": 12859556,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-harbor-_mxdependency-2024-11-18_005_assets_all_1407062276.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-mainstreet-_mxdependency-2024-11-18_004_assets_all_453537171.bundle",
+   "sha256": "6183fa97b142d41e1c7ec2ac65043fab0d95b5c8bc1fdf8e5d9ec2b903575b78",
+   "bytes": 13455387,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-mainstreet-_mxdependency-2024-11-18_004_assets_all_453537171.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-riverside-_mxdependency-2024-11-18_000_assets_all_432674313.bundle",
+   "sha256": "92f7796179191fbae77e0a3c4c6ca467c8e80d80c569af4f63f7e5ed32773f66",
+   "bytes": 2982,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-riverside-_mxdependency-2024-11-18_000_assets_all_432674313.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-riverside-_mxdependency-2024-11-18_001_assets_all_3326802215.bundle",
+   "sha256": "23fc8ca1002a2c4c52f1ba036c2c161219a12620e5f9915402acdf5d83794d63",
+   "bytes": 5135,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-riverside-_mxdependency-2024-11-18_001_assets_all_3326802215.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-riverside-_mxdependency-2024-11-18_002_assets_all_3797125118.bundle",
+   "sha256": "08f62c2603cb0424581f181d0171c85c27692fbbe22e959697b807515186ce25",
+   "bytes": 2032019,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-riverside-_mxdependency-2024-11-18_002_assets_all_3797125118.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-riverside-_mxdependency-2024-11-18_003_assets_all_3629808447.bundle",
+   "sha256": "c338ec08dc2077112d3f04dc14677f2786904ac544cc86aa103425c2d9d759e0",
+   "bytes": 961996,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-riverside-_mxdependency-2024-11-18_003_assets_all_3629808447.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-riverside-_mxdependency-2024-11-18_004_assets_all_1375743606.bundle",
+   "sha256": "6e1ace1338245e3baf9febf071cd777521261afc1dca7bf9987ffd014baddb98",
+   "bytes": 4665756,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-riverside-_mxdependency-2024-11-18_004_assets_all_1375743606.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-ruins-_mxdependency-2024-11-18_000_assets_all_3661063309.bundle",
+   "sha256": "5231c84965ae619bc38c5aec788104a281c10cfa8e6d429da56ab4adf6a90906",
+   "bytes": 2975,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-ruins-_mxdependency-2024-11-18_000_assets_all_3661063309.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-ruins-_mxdependency-2024-11-18_001_assets_all_1520188032.bundle",
+   "sha256": "9c83e9fe05a16260b59d43bd3002eb462a99b86993a42c1f26fcd1e81802a7d8",
+   "bytes": 5266,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-ruins-_mxdependency-2024-11-18_001_assets_all_1520188032.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-ruins-_mxdependency-2024-11-18_002_assets_all_3099197080.bundle",
+   "sha256": "e03759aea5f6204128c8b8b098e8b5f0b84c2d37a8792a48ed64b3f74d0cfb4f",
+   "bytes": 736259,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-ruins-_mxdependency-2024-11-18_002_assets_all_3099197080.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-battle-ruins-_mxdependency-2024-11-18_004_assets_all_2259996142.bundle",
+   "sha256": "e5e849a05d453a959e63c896035716b527ff521a32f8c8b312a3746449429069",
+   "bytes": 5169981,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-battle-ruins-_mxdependency-2024-11-18_004_assets_all_2259996142.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-raid-52102-_mxdependency-2024-11-18_004_assets_all_2086151552.bundle",
+   "sha256": "9dddf500d24f5a147dfa9d729aac9e4d8dc61886051b285467e202b1575bd9f2",
+   "bytes": 1908503,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-raid-52102-_mxdependency-2024-11-18_004_assets_all_2086151552.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-raid-hieronymus-_mxdependency-2024-11-18_006_assets_all_1370151492.bundle",
+   "sha256": "ab94012238aa020d475d3661e524097c4ba7ba552e1a35e8ac4afa6d319d7c6e",
+   "bytes": 6319096,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-raid-hieronymus-_mxdependency-2024-11-18_006_assets_all_1370151492.bundle"
+  },
+  {
+   "file": "assets-_mx-scenes-raid-shirokuro-_mxcommon-.psd-_mxdependency-2025-02-11_assets_all_1921502574.bundle",
+   "sha256": "a74a008018ef14837959e318742ed6cc7f0fe6d6256fd233502ec8ba0f9c8971",
+   "bytes": 70441,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-scenes-raid-shirokuro-_mxcommon-.psd-_mxdependency-2025-02-11_assets_all_1921502574.bundle"
+  },
+  {
+   "file": "assets-_mx-shaders-_mxdependency-2024-11-18_001_assets_all_2621647296.bundle",
+   "sha256": "ccc3c93a909c885be6377dcd361ad7fa37ed682a9349ec181c8f488c29f50727",
+   "bytes": 634924,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-shaders-_mxdependency-2024-11-18_001_assets_all_2621647296.bundle"
+  },
+  {
+   "file": "assets-_mx-shaders-_mxdependency-2025-07-10_assets_all_3391120252.bundle",
+   "sha256": "14986d279dd47fdc84e9c5aeaa205fa6a04d521268de32669243c4a164217799",
+   "bytes": 18113,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-shaders-_mxdependency-2025-07-10_assets_all_3391120252.bundle"
+  },
+  {
+   "file": "assets-_mx-spinelobbies-_mxcommon-.png-_mxdependency-2025-02-11_assets_all_161120548.bundle",
+   "sha256": "ae52ae2574266dca7fc81492b4b3b4ca916881169329b9632f6b1e95311e6e8e",
+   "bytes": 982316,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-spinelobbies-_mxcommon-.png-_mxdependency-2025-02-11_assets_all_161120548.bundle"
+  },
+  {
+   "file": "assets-_mx-spinelobbies-_mxcommon-.tga-_mxdependency-2025-02-11_assets_all_1299030451.bundle",
+   "sha256": "958837c7ed25ae539f684f2cb2ad3d3711a6437506b0c4dde68205cfb5aa97e8",
+   "bytes": 2256710,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-spinelobbies-_mxcommon-.tga-_mxdependency-2025-02-11_assets_all_1299030451.bundle"
+  },
+  {
+   "file": "assets-_mx-spinelobbies-ch9999_home-_mxdependency-2024-11-18_004_assets_all_544266438.bundle",
+   "sha256": "678280b239dd703ab7f44cc79a588c13559d3ecb0423430e9ed9fcd53b7265be",
+   "bytes": 8793700,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/assets-_mx-spinelobbies-ch9999_home-_mxdependency-2024-11-18_004_assets_all_544266438.bundle"
+  },
+  {
+   "file": "effect-ui-popup_skill_lvupfx-_mxload-2024-11-18_003_assets_all_3634066934.bundle",
+   "sha256": "f45f420692e1334ec7185cce1a1ccd626444565d8e076cea6aa9196312b3d151",
+   "bytes": 186784,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/effect-ui-popup_skill_lvupfx-_mxload-2024-11-18_003_assets_all_3634066934.bundle"
+  },
+  {
+   "file": "packages-com.unity.render-pipelines.universal-runtime-materials-_mxdependency-2023-12-27_assets_all_4212363245.bundle",
+   "sha256": "a40bfd8edb8270255a2d193fb573a041c625d55b78546d4b39da79ef573d023c",
+   "bytes": 3752,
+   "install_path": "StreamingAssets/PUB/Resource/Preload/Windows/packages-com.unity.render-pipelines.universal-runtime-materials-_mxdependency-2023-12-27_assets_all_4212363245.bundle"
+  },
+  {
+   "file": "packages-com.unity.render-pipelines.universal-shaders-particles-_mxdependency-2023-12-21_assets_all_2365084156.bundle",
+   "sha256": "9b8f4e2cddfb62dde4d3834d33f3c3f331571d48c8cf1313abd9d7d5c1682e09",
+   "bytes": 52021,
+   "install_path": "StreamingAssets/PUB/Resource/Preload/Windows/packages-com.unity.render-pipelines.universal-shaders-particles-_mxdependency-2023-12-21_assets_all_2365084156.bundle"
+  },
+  {
+   "file": "prologdepengroup-assets-_mx-addressableasset-audio-_mxprolog-2024-11-18_assets_all_2568782127.bundle",
+   "sha256": "46453ec9681c0020605e698f6b15c1168b51175f711f031b4d964d8f5ebf86d7",
+   "bytes": 1697394,
+   "install_path": "StreamingAssets/PUB/Resource/Preload/Windows/prologdepengroup-assets-_mx-addressableasset-audio-_mxprolog-2024-11-18_assets_all_2568782127.bundle"
+  },
+  {
+   "file": "prologdepengroup-assets-_mx-characters-_mxcommon-_mxprolog-2024-11-18_001_assets_all_2844183944.bundle",
+   "sha256": "93acbde08cff6d7f8b6727d32436d7fa3756facac5354571547621b73071bcd4",
+   "bytes": 279305,
+   "install_path": "StreamingAssets/PUB/Resource/Preload/Windows/prologdepengroup-assets-_mx-characters-_mxcommon-_mxprolog-2024-11-18_001_assets_all_2844183944.bundle"
+  },
+  {
+   "file": "prologdepengroup-assets-_mx-effectsfreezed-material-_mxprolog-2024-11-18_assets_all_2795506591.bundle",
+   "sha256": "6467cbb80fed42f62c872e081e25555e38c300ab1cc713ed2e24f8716cdaf249",
+   "bytes": 13128,
+   "install_path": "StreamingAssets/PUB/Resource/Preload/Windows/prologdepengroup-assets-_mx-effectsfreezed-material-_mxprolog-2024-11-18_assets_all_2795506591.bundle"
+  },
+  {
+   "file": "prologdepengroup-assets-_mx-effectsfreezed-mesh-_mxprolog-2024-11-18_assets_all_1591984242.bundle",
+   "sha256": "569ac239bddfeadb31ccaadc81220747e421a5cae9915a2f7ff590010dc7b869",
+   "bytes": 235473,
+   "install_path": "StreamingAssets/PUB/Resource/Preload/Windows/prologdepengroup-assets-_mx-effectsfreezed-mesh-_mxprolog-2024-11-18_assets_all_1591984242.bundle"
+  },
+  {
+   "file": "prologdepengroup-assets-_mx-effectsfreezed-texture-_mxprolog-2021-10-29_001_assets_all_4212061579.bundle",
+   "sha256": "8b6aa86a27935cb8221fa7b27f11824f3f166f612dd65ea50076968d1e868ffe",
+   "bytes": 617485,
+   "install_path": "StreamingAssets/PUB/Resource/Preload/Windows/prologdepengroup-assets-_mx-effectsfreezed-texture-_mxprolog-2021-10-29_001_assets_all_4212061579.bundle"
+  },
+  {
+   "file": "prologdepengroup-assets-_mx-effectsfreezed-texture-_mxprolog-2021-10-29_assets_all_2607785637.bundle",
+   "sha256": "47548d1638ef6271c8a9f745a5ee803ee7317a2bd7751951fc1c88d156b649f4",
+   "bytes": 127761,
+   "install_path": "StreamingAssets/PUB/Resource/Preload/Windows/prologdepengroup-assets-_mx-effectsfreezed-texture-_mxprolog-2021-10-29_assets_all_2607785637.bundle"
+  },
+  {
+   "file": "prologdepengroup-assets-_mx-effectsfreezed-texture-_mxprolog-2022-08-24_assets_all_214117831.bundle",
+   "sha256": "6bff0e2544adc5af0fbe80aa677081237e8f972198ef53bbdbe12eb188276f36",
+   "bytes": 23106,
+   "install_path": "StreamingAssets/PUB/Resource/Preload/Windows/prologdepengroup-assets-_mx-effectsfreezed-texture-_mxprolog-2022-08-24_assets_all_214117831.bundle"
+  },
+  {
+   "file": "prologdepengroup-assets-_mx-effectsfreezed-texture-_mxprolog-2024-06-13_assets_all_2721279413.bundle",
+   "sha256": "85b79548518384110167a9ac90a3c4127d8c236ab92807d1302f0b5d8f876f67",
+   "bytes": 4728,
+   "install_path": "StreamingAssets/PUB/Resource/Preload/Windows/prologdepengroup-assets-_mx-effectsfreezed-texture-_mxprolog-2024-06-13_assets_all_2721279413.bundle"
+  },
+  {
+   "file": "prologdepengroup-assets-_mx-effectsfreezed-texture-_mxprolog-2024-11-18_assets_all_1621163271.bundle",
+   "sha256": "510c1091f14c400b4c8be20027505cc3b7dfc3a7640a932c5254e0a01ff83e66",
+   "bytes": 1948095,
+   "install_path": "StreamingAssets/PUB/Resource/Preload/Windows/prologdepengroup-assets-_mx-effectsfreezed-texture-_mxprolog-2024-11-18_assets_all_1621163271.bundle"
+  },
+  {
+   "file": "prologdepengroup-assets-_mx-effectsfreezed-texture-_mxprolog-2025-02-18_assets_all_2561272258.bundle",
+   "sha256": "18011e94651cf8340d89b2f34a56e2c0819f1f02f0fa342009158b2f2f181242",
+   "bytes": 7506,
+   "install_path": "StreamingAssets/PUB/Resource/Preload/Windows/prologdepengroup-assets-_mx-effectsfreezed-texture-_mxprolog-2025-02-18_assets_all_2561272258.bundle"
+  },
+  {
+   "file": "prologdepengroup-assets-_mx-effectsfreezed-texture-_mxprolog-2025-07-10_assets_all_1257016530.bundle",
+   "sha256": "8fa615c77a2a72826988e0f36a23f2871540333a29593398ac145ba1bd9d6ab5",
+   "bytes": 41371,
+   "install_path": "StreamingAssets/PUB/Resource/Preload/Windows/prologdepengroup-assets-_mx-effectsfreezed-texture-_mxprolog-2025-07-10_assets_all_1257016530.bundle"
+  },
+  {
+   "file": "prologdepengroup-assets-_mx-effectsfreezed-ui-uicraftduration-_mxprolog-2024-11-18_assets_all_1412834472.bundle",
+   "sha256": "cfd12538c3f03b410a31f7ddaaeadc3e528f0b9923d389c4c433d0c11cd23a35",
+   "bytes": 6850,
+   "install_path": "StreamingAssets/PUB/Resource/Preload/Windows/prologdepengroup-assets-_mx-effectsfreezed-ui-uicraftduration-_mxprolog-2024-11-18_assets_all_1412834472.bundle"
+  },
+  {
+   "file": "prologdepengroup-assets-_mx-scenes-_mxcommon-fbx-_mxprolog-2024-11-18_assets_all_812170791.bundle",
+   "sha256": "8d790fb919a9d6d0dd9afbab13c5613bf50e3d32915b4789d6c07c980751ef64",
+   "bytes": 491920,
+   "install_path": "StreamingAssets/PUB/Resource/Preload/Windows/prologdepengroup-assets-_mx-scenes-_mxcommon-fbx-_mxprolog-2024-11-18_assets_all_812170791.bundle"
+  },
+  {
+   "file": "prologdepengroup-assets-_mx-scenes-_mxcommon-materials-_mxprolog-2024-11-18_assets_all_2675434148.bundle",
+   "sha256": "e1ce053e29a3736f6e26c6c09e36d4d351a80a76b962654bccc0c3eecb6afa0f",
+   "bytes": 3409,
+   "install_path": "StreamingAssets/PUB/Resource/Preload/Windows/prologdepengroup-assets-_mx-scenes-_mxcommon-materials-_mxprolog-2024-11-18_assets_all_2675434148.bundle"
+  },
+  {
+   "file": "prologdepengroup-assets-_mx-scenes-_mxcommon-textures-_mxprolog-2024-11-18_assets_all_156791079.bundle",
+   "sha256": "3e3c4b13856214cd9610e1c50d3abe14215b9abdf80b5b929088ac26900a25b2",
+   "bytes": 106686,
+   "install_path": "StreamingAssets/PUB/Resource/Preload/Windows/prologdepengroup-assets-_mx-scenes-_mxcommon-textures-_mxprolog-2024-11-18_assets_all_156791079.bundle"
+  },
+  {
+   "file": "prologdepengroup-assets-_mx-shaders-_mxprolog-2021-10-29_assets_all_2772868383.bundle",
+   "sha256": "a182247a5a915f871ef19163ca99b8731051f7c70196baa1c916594bf8b837ef",
+   "bytes": 85949,
+   "install_path": "StreamingAssets/PUB/Resource/Preload/Windows/prologdepengroup-assets-_mx-shaders-_mxprolog-2021-10-29_assets_all_2772868383.bundle"
+  },
+  {
+   "file": "prologdepengroup-assets-_mx-shaders-_mxprolog-2023-01-10_assets_all_3189631364.bundle",
+   "sha256": "8802b6d1d2fedc3b1abbfbe79e08979578528dc108f2fdf83a3c3669f3b32f76",
+   "bytes": 17724,
+   "install_path": "StreamingAssets/PUB/Resource/Preload/Windows/prologdepengroup-assets-_mx-shaders-_mxprolog-2023-01-10_assets_all_3189631364.bundle"
+  },
+  {
+   "file": "prologdepengroup-assets-_mx-shaders-_mxprolog-2023-05-31_assets_all_1363631383.bundle",
+   "sha256": "b7fdd3548b3e0110ab22cd99630ff2acbb35b8ed35d57ba935712dca11bf8cca",
+   "bytes": 18026,
+   "install_path": "StreamingAssets/PUB/Resource/Preload/Windows/prologdepengroup-assets-_mx-shaders-_mxprolog-2023-05-31_assets_all_1363631383.bundle"
+  },
+  {
+   "file": "prologdepengroup-assets-_mx-shaders-_mxprolog-2024-06-13_assets_all_1925310687.bundle",
+   "sha256": "48bc46a24a4cda1a8ac0bc36af5e6cd7a7e2ad742eaae8ce5b2d31c53a556493",
+   "bytes": 20314,
+   "install_path": "StreamingAssets/PUB/Resource/Preload/Windows/prologdepengroup-assets-_mx-shaders-_mxprolog-2024-06-13_assets_all_1925310687.bundle"
+  },
+  {
+   "file": "prologdepengroup-assets-_mx-shaders-_mxprolog-2024-11-18_assets_all_1690106043.bundle",
+   "sha256": "5095b9f5205e94550a30147f7e74b8359f2d5b2f7b544b4f8ec7fe42464bf497",
+   "bytes": 373751,
+   "install_path": "StreamingAssets/PUB/Resource/Preload/Windows/prologdepengroup-assets-_mx-shaders-_mxprolog-2024-11-18_assets_all_1690106043.bundle"
+  },
+  {
+   "file": "prologdepengroup-assets-_mx-shaders-_mxprolog-2026-07-02_assets_all_1777090744.bundle",
+   "sha256": "a237b24d3ac26fce0070896fe28d097a8b91cd001250a1183698356e14b136c6",
+   "bytes": 19334,
+   "install_path": "StreamingAssets/PUB/Resource/Preload/Windows/prologdepengroup-assets-_mx-shaders-_mxprolog-2026-07-02_assets_all_1777090744.bundle"
+  },
+  {
+   "file": "prologgroup-assets-_mx-addressableasset-audio-audiomixer-_mxprolog-2024-11-18_assets_all_1078098862.bundle",
+   "sha256": "52c20cb87e088d5c3ebbb27f7241f0f98eb985f630d53322131868e0966ca1a7",
+   "bytes": 7416,
+   "install_path": "StreamingAssets/PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-audiomixer-_mxprolog-2024-11-18_assets_all_1078098862.bundle"
+  },
+  {
+   "file": "sb_01_gehennaslum_p01_d_mxload-2024-11-18_scenes_all_3366289794.bundle",
+   "sha256": "0fe64e3dcc5627337477eef5a024b4bf6aca4685cd370bfd799db20df2b23722",
+   "bytes": 8902708,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/sb_01_gehennaslum_p01_d_mxload-2024-11-18_scenes_all_3366289794.bundle"
+  },
+  {
+   "file": "sb_01_gehennaslum_p01_n_mxload-2024-11-18_scenes_all_1291405662.bundle",
+   "sha256": "4fe16e6c52479a0b5ecd24b4ace3564541ca022aa2e11ea3ad917b5a96025719",
+   "bytes": 8866109,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/sb_01_gehennaslum_p01_n_mxload-2024-11-18_scenes_all_1291405662.bundle"
+  },
+  {
+   "file": "sb_01_ruins_p01_d_mxload-2024-11-18_scenes_all_1749580447.bundle",
+   "sha256": "ebf71a38f70b7a2d2bcba3fea11efbd5c368ba44331575377eebe87c81190eb6",
+   "bytes": 2695275,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/sb_01_ruins_p01_d_mxload-2024-11-18_scenes_all_1749580447.bundle"
+  },
+  {
+   "file": "sb_01_ruins_p01_n_mxload-2024-11-18_scenes_all_1143832334.bundle",
+   "sha256": "62c821c2338d399b720665a6b7c867e7aaff1c6cef27c8f60d6e84fa9b07c7af",
+   "bytes": 2695079,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/sb_01_ruins_p01_n_mxload-2024-11-18_scenes_all_1143832334.bundle"
+  },
+  {
+   "file": "sb_01_ruins_p02_d_mxload-2024-11-18_scenes_all_1423630461.bundle",
+   "sha256": "01d8b91b38c28f7dec4bbb82f5e8c3d0db7df3d6afab2c721583c39fbd1d4e00",
+   "bytes": 4258176,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/sb_01_ruins_p02_d_mxload-2024-11-18_scenes_all_1423630461.bundle"
+  },
+  {
+   "file": "sb_01_ruins_p02_n_mxload-2024-11-18_scenes_all_1990041432.bundle",
+   "sha256": "7500591771a887d08ac2a4c402055277daf3981a4a2b7110412c0ca69caaecb3",
+   "bytes": 4244945,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/sb_01_ruins_p02_n_mxload-2024-11-18_scenes_all_1990041432.bundle"
+  },
+  {
+   "file": "sb_02_harbor_p01_d_mxload-2024-11-18_scenes_all_4276576788.bundle",
+   "sha256": "00773bef8252cc05a77f02a4cbe0cf2a852ca61898d68e63110f1027a819c7c1",
+   "bytes": 5066778,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/sb_02_harbor_p01_d_mxload-2024-11-18_scenes_all_4276576788.bundle"
+  },
+  {
+   "file": "sb_02_harbor_p01_n_mxload-2024-11-18_scenes_all_2824823255.bundle",
+   "sha256": "7db66f6190bec8c04977cc534acbf0b0576227e5726d38bf058d71e82f205c16",
+   "bytes": 5059942,
+   "install_path": "StreamingAssets/PUB/Resource/GameData/Windows/sb_02_harbor_p01_n_mxload-2024-11-18_scenes_all_2824823255.bundle"
+  }
+ ]
+}

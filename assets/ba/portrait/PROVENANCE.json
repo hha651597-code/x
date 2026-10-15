@@ -1,0 +1,51 @@
+{
+  "source": "Blue Archive PC client (Steam install), Spine rigs read with UnityPy and SkelToJson",
+  "extraction_scripts": "tools/hud_expressions.py (build), tools/hud_expressions_fit.py (crops)",
+  "files": [
+    {
+      "kind": "baked",
+      "source_name": "10004_lose",
+      "derived_from": "tools/hud_expressions.py: hina_spr rig bundles assets-_mx-spinecharacters-hina_spr-_mxdependency-2024-11-18_002_assets_all_3485614718.bundle, assets-_mx-spinecharacters-hina_spr-_mxdependency-2024-11-18_003_assets_all_3540191238.bundle (GameData), face animation 11, patched onto portrait/10004.webp, SkelToJson c2c7cae9",
+      "entries": "expressions",
+      "runtime_path": "assets/ba/portrait/10004_lose.webp",
+      "width": 1400,
+      "height": 927,
+      "sha256": "48e328c22d5a6b241761bd6eef472b2b58ec0737c3e780a9663b45ec987b1f28",
+      "bytes": 150146
+    },
+    {
+      "kind": "baked",
+      "source_name": "10004_win",
+      "derived_from": "tools/hud_expressions.py: hina_spr rig bundles assets-_mx-spinecharacters-hina_spr-_mxdependency-2024-11-18_002_assets_all_3485614718.bundle, assets-_mx-spinecharacters-hina_spr-_mxdependency-2024-11-18_003_assets_all_3540191238.bundle (GameData), face animation 08, patched onto portrait/10004.webp, SkelToJson c2c7cae9",
+      "entries": "expressions",
+      "runtime_path": "assets/ba/portrait/10004_win.webp",
+      "width": 1400,
+      "height": 927,
+      "sha256": "5f896eed77845e9d402dd704545d0b611535373a6e6255d5c03a8ecef25bc504",
+      "bytes": 149970
+    },
+    {
+      "kind": "baked",
+      "source_name": "10005_lose",
+      "derived_from": "tools/hud_expressions.py: hoshino_spr rig bundles assets-_mx-spinecharacters-hoshino_spr-_mxdependency-2024-11-18_002_assets_all_516802053.bundle, assets-_mx-spinecharacters-hoshino_spr-_mxdependency-2024-11-18_003_assets_all_1331032409.bundle (GameData), face animation 13, patched onto portrait/10005.webp, SkelToJson c2c7cae9",
+      "entries": "expressions",
+      "runtime_path": "assets/ba/portrait/10005_lose.webp",
+      "width": 673,
+      "height": 1024,
+      "sha256": "85d6f94bbaed7eb7e1f33791bff8e50b5e6143eb019da49b9aa4f20d8cfd1ad0",
+      "bytes": 93958
+    },
+    {
+      "kind": "baked",
+      "source_name": "10005_win",
+      "derived_from": "tools/hud_expressions.py: hoshino_spr rig bundles assets-_mx-spinecharacters-hoshino_spr-_mxdependency-2024-11-18_002_assets_all_516802053.bundle, assets-_mx-spinecharacters-hoshino_spr-_mxdependency-2024-11-18_003_assets_all_1331032409.bundle (GameData), face animation 03, patched onto portrait/10005.webp, SkelToJson c2c7cae9",
+      "entries": "expressions",
+      "runtime_path": "assets/ba/portrait/10005_win.webp",
+      "width": 673,
+      "height": 1024,
+      "sha256": "2fc73a9ffbfe633e3b09a8a68c19f45241ce68ca46ba4b8cd61ad60fdb6f748c",
+      "bytes": 93816
+    }
+  ],
+  "scope": "Local fan project. Redistribution permission is not inferred."
+}

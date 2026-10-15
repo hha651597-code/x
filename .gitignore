@@ -1,0 +1,17 @@
+export/*
+!export/.gdignore
+.DS_Store
+.dev/
+node_modules
+dist/
+output/
+.env
+
+.godot/
+*.translation
+.mono/
+/tmp/
+tmp/*
+!tmp/.gdignore
+__pycache__/
+*.pyc

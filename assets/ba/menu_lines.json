@@ -1,0 +1,125 @@
+{
+ "note": "What the student on the main menu says: a real Blue Archive voice line and its English subtitle. tools/menu_voice_assets.py writes this.",
+ "lines": {
+  "10005": {
+   "calm": [
+    {
+     "clip": "10005_calm_1.ogg",
+     "text": "Welcome, Sensei. I see that you're still working as hard as ever."
+    },
+    {
+     "clip": "10005_calm_2.ogg",
+     "text": "Yo! Welcome. You've got a lot of work waiting for you."
+    },
+    {
+     "clip": "10005_calm_3.ogg",
+     "text": "This place is cool. I like it."
+    },
+    {
+     "clip": "10005_calm_4.ogg",
+     "text": "I imagine you have it rough, Sensei."
+    },
+    {
+     "clip": "10005_calm_5.ogg",
+     "text": "You need me? Heh, thanks for the empty compliment."
+    },
+    {
+     "clip": "10005_calm_6.ogg",
+     "text": "There's no shame in pacing yourself. It's important to take your time."
+    }
+   ],
+   "win": [
+    {
+     "clip": "10005_win_1.ogg",
+     "text": "*yawn* An easy victory."
+    },
+    {
+     "clip": "10005_win_2.ogg",
+     "text": "*yawn* Victory, victory!"
+    },
+    {
+     "clip": "10005_win_3.ogg",
+     "text": "Yep, these are exactly the results I expected."
+    },
+    {
+     "clip": "10005_win_4.ogg",
+     "text": "Don't the results speak for themselves?"
+    }
+   ],
+   "lose": [
+    {
+     "clip": "10005_lose_1.ogg",
+     "text": "There's no use!"
+    },
+    {
+     "clip": "10005_lose_2.ogg",
+     "text": "Well, I should put in at least one person's worth."
+    },
+    {
+     "clip": "10005_lose_3.ogg",
+     "text": "Now, it's time to work. Psych yourself up, and let's go!"
+    }
+   ]
+  },
+  "10004": {
+   "calm": [
+    {
+     "clip": "10004_calm_1.ogg",
+     "text": "Ah, I've been waiting for you, Sensei."
+    },
+    {
+     "clip": "10004_calm_2.ogg",
+     "text": "There's no need to treat me any differently."
+    },
+    {
+     "clip": "10004_calm_3.ogg",
+     "text": "Hey... C-Can you not pet me like that?"
+    },
+    {
+     "clip": "10004_calm_4.ogg",
+     "text": "No cutting corners! Do your job properly!"
+    },
+    {
+     "clip": "10004_calm_5.ogg",
+     "text": "I will aid you to the best of my ability. Call on me if need be."
+    },
+    {
+     "clip": "10004_calm_6.ogg",
+     "text": "(I want Sensei to spoil me. I wish I could have some fun... Maybe whine a little too...)"
+    }
+   ],
+   "win": [
+    {
+     "clip": "10004_win_1.ogg",
+     "text": "Yep. That was the obvious outcome."
+    },
+    {
+     "clip": "10004_win_2.ogg",
+     "text": "We won. Now what?"
+    },
+    {
+     "clip": "10004_win_3.ogg",
+     "text": "A mission like this is nothing."
+    },
+    {
+     "clip": "10004_win_4.ogg",
+     "text": "It was a simple task, but you did well, Sensei."
+    }
+   ],
+   "lose": [
+    {
+     "clip": "10004_lose_1.ogg",
+     "text": "It's no use."
+    },
+    {
+     "clip": "10004_lose_2.ogg",
+     "text": "*sigh* I guess I don't have a choice."
+    },
+    {
+     "clip": "10004_lose_3.ogg",
+     "text": "What a pain... Well, you have to do what you have to do."
+    }
+   ]
+  }
+ }
+}

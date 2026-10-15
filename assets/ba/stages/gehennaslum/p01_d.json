@@ -1,0 +1,525 @@
+{
+ "schema": 1,
+ "id": "p01_d",
+ "source_scene": "sb_01_gehennaslum_p01_d",
+ "night": false,
+ "files": {
+  "glb": "p01_d.glb",
+  "materials": "p01_d.materials.json",
+  "lightmaps": {
+   "0": "p01_d_lm0.dds"
+  },
+  "far": "far_p01_d",
+  "props": "props_p01_d",
+  "fx": "fx_p01_d.json",
+  "dressing": "dressing",
+  "sky": "sky/bank_p01_d.json"
+ },
+ "lane": {
+  "origin": [
+   0.0,
+   0.0,
+   44.81
+  ],
+  "axis": [
+   0.0,
+   0.0,
+   1.0
+  ],
+  "up": [
+   0.0,
+   1.0,
+   0.0
+  ],
+  "ground_y": 0.0,
+  "flat_length": 76.9,
+  "flat_range": [
+   -9.55,
+   67.35
+  ],
+  "corridor": [
+   -5.15,
+   3.35
+  ],
+  "z_band": [
+   32.81,
+   56.81
+  ],
+  "fight_half_px": 760.0
+ },
+ "camera": {
+  "fov": 40.0,
+  "pitch": 5.0,
+  "px_per_unit": 210.0,
+  "feet_row": 612.0,
+  "view": [
+   1280,
+   720
+  ],
+  "near": 0.05,
+  "zooms": [
+   0.7,
+   1.0,
+   1.24
+  ],
+  "far": 2200.0
+ },
+ "clip": {
+  "plane": null,
+  "needed": false
+ },
+ "light": {
+  "night": false,
+  "key_color": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "key_dir": [
+   0.5964,
+   0.4964,
+   0.6308
+  ],
+  "ambient": {
+   "sky": [
+    0.545,
+    0.723,
+    0.973
+   ],
+   "equator": [
+    0.723,
+    0.723,
+    0.723
+   ],
+   "ground": [
+    0.059,
+    0.074,
+    0.104
+   ]
+  },
+  "shadow": [
+   0.5307,
+   0.5807,
+   0.7075
+  ],
+  "points": [],
+  "under": [
+   0.7704,
+   0.7756,
+   0.786
+  ],
+  "published": {
+   "night": false,
+   "key_color": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "key_dir": [
+    -0.4438,
+    0.8951,
+    0.0423
+   ],
+   "ambient": [
+    0.723,
+    0.723,
+    0.723
+   ]
+  }
+ },
+ "render": {
+  "ambient": {
+   "sky": [
+    0.545,
+    0.723,
+    0.973
+   ],
+   "equator": [
+    0.723,
+    0.723,
+    0.723
+   ],
+   "ground": [
+    0.059,
+    0.074,
+    0.104
+   ]
+  },
+  "subtractive_shadow_color": [
+   0.53066,
+   0.58072,
+   0.70755
+  ],
+  "main_light_shadow_strength": 0.88,
+  "fog": {
+   "enabled": false
+  }
+ },
+ "sky": {
+  "gradient": {
+   "sky_color": [
+    0.38679,
+    0.183,
+    0.06386
+   ],
+   "equator_color": [
+    0.15398,
+    0.0801,
+    0.22642
+   ],
+   "sky_gradient": 2.0,
+   "equator_offset": -0.27
+  },
+  "palette": {
+   "haze": {
+    "color": [
+     0.42,
+     0.22,
+     0.24
+    ],
+    "height": 0.15,
+    "strength": 0.3
+   },
+   "glow": {
+    "color": [
+     1.0,
+     0.52,
+     0.22
+    ],
+    "strength": 0.5,
+    "size": 0.42,
+    "horizon": 0.35
+   },
+   "sun_disc": [
+    1.0,
+    0.93,
+    0.72
+   ],
+   "stars": 0.0,
+   "cloud": {
+    "tint": [
+     0.38679,
+     0.35943,
+     0.35943
+    ],
+    "alpha": 0.63137,
+    "lit": [
+     1.0,
+     0.84,
+     0.72
+    ],
+    "mid": [
+     0.8,
+     0.6,
+     0.6
+    ],
+    "shade": [
+     0.46,
+     0.31,
+     0.43
+    ],
+    "sun": [
+     1.0,
+     0.62,
+     0.3
+    ]
+   }
+  },
+  "celestial": {
+   "az": -29.0,
+   "el": 10.6,
+   "dist": 480.0,
+   "sun_deg": 3.8,
+   "moon_deg": 4.4,
+   "note": "BA's real light is at about 64 deg elevation on the -Z side, off screen at the fight camera. The visible sun and moon sit in frame on the left instead, and the glow and the clouds' lit side use this one direction.",
+   "sun_mesh": "Sky_Sun_Prop_01",
+   "moon_mesh": "Sky_Moon_Prop_01"
+  },
+  "layers": [
+   {
+    "name": "bank",
+    "follow": 0.0,
+    "world": true,
+    "priority": -1,
+    "alpha": 1.0,
+    "haze": 0.0,
+    "drift": 0.0
+   },
+   {
+    "name": "far",
+    "follow": 0.7,
+    "dist": 380.0,
+    "priority": -4,
+    "alpha": 0.9,
+    "haze": 0.55,
+    "drift": 0.02,
+    "items": [
+     [
+      "Binah_Cloud_06",
+      -30,
+      1.4,
+      38,
+      0,
+      0
+     ],
+     [
+      "Binah_Cloud_16",
+      12,
+      1.9,
+      34,
+      1,
+      0
+     ],
+     [
+      "Sky_Cloud_Prop_04",
+      -6,
+      0.7,
+      34,
+      0,
+      0
+     ],
+     [
+      "Binah_Cloud_10",
+      42,
+      1.2,
+      30,
+      0,
+      0
+     ],
+     [
+      "Binah_Cloud_16",
+      -56,
+      1.0,
+      36,
+      1,
+      0
+     ],
+     [
+      "Binah_Cloud_06",
+      110,
+      1.5,
+      40,
+      1,
+      0
+     ],
+     [
+      "Sky_Cloud_Prop_04",
+      165,
+      1.0,
+      36,
+      0,
+      0
+     ],
+     [
+      "Binah_Cloud_10",
+      -115,
+      1.3,
+      34,
+      1,
+      0
+     ]
+    ]
+   },
+   {
+    "name": "mid",
+    "follow": 0.35,
+    "dist": 270.0,
+    "priority": -3,
+    "alpha": 1.0,
+    "haze": 0.25,
+    "drift": 0.04,
+    "items": [
+     [
+      "Binah_Cloud_07",
+      -36,
+      4.2,
+      16,
+      0,
+      0
+     ],
+     [
+      "Muk_Cloud_01",
+      17,
+      4.6,
+      15,
+      0,
+      0
+     ],
+     [
+      "Binah_Cloud_05",
+      40,
+      6.5,
+      19,
+      1,
+      0
+     ],
+     [
+      "Binah_Cloud_03",
+      -6,
+      12.5,
+      12,
+      1,
+      0
+     ],
+     [
+      "Binah_Cloud_09",
+      27,
+      10.2,
+      13,
+      0,
+      0
+     ],
+     [
+      "Sky_Cloud_Prop_03",
+      -52,
+      2.5,
+      22,
+      0,
+      0
+     ],
+     [
+      "Binah_Cloud_10",
+      56,
+      3.6,
+      14,
+      1,
+      0
+     ],
+     [
+      "Muk_Cloud_02",
+      -14,
+      2.4,
+      10,
+      1,
+      0
+     ],
+     [
+      "Binah_Cloud_05",
+      150,
+      5,
+      22,
+      0,
+      0
+     ],
+     [
+      "Binah_Cloud_07",
+      -140,
+      7,
+      20,
+      1,
+      0
+     ],
+     [
+      "Muk_Cloud_01",
+      105,
+      3,
+      16,
+      1,
+      0
+     ],
+     [
+      "Binah_Cloud_09",
+      205,
+      9,
+      18,
+      0,
+      0
+     ]
+    ]
+   },
+   {
+    "name": "high",
+    "follow": 0.8,
+    "dist": 420.0,
+    "priority": -5,
+    "alpha": 0.85,
+    "haze": 0.1,
+    "drift": 0.03,
+    "items": [
+     [
+      "Binah_Cloud_17",
+      -30,
+      12.5,
+      26,
+      0,
+      0
+     ],
+     [
+      "Binah_Cloud_02",
+      6,
+      13.3,
+      30,
+      0,
+      0
+     ],
+     [
+      "Sky_Cloud_Prop_05",
+      24,
+      12.2,
+      26,
+      0,
+      0
+     ],
+     [
+      "Binah_Cloud_04",
+      36,
+      9.0,
+      20,
+      0,
+      0
+     ],
+     [
+      "Binah_Cloud_14",
+      -8,
+      8.5,
+      22,
+      1,
+      0
+     ],
+     [
+      "Binah_Cloud_12",
+      -46,
+      9.5,
+      22,
+      0,
+      0
+     ],
+     [
+      "Binah_Cloud_17",
+      130,
+      12,
+      30,
+      1,
+      0
+     ],
+     [
+      "Binah_Cloud_02",
+      -160,
+      11,
+      32,
+      0,
+      0
+     ]
+    ]
+   }
+  ],
+  "planes": {
+   "xz": [
+    "Binah_Cloud_",
+    "Sky_Cloud_Prop_01",
+    "Sky_Cloud_Prop_03",
+    "Sky_Cloud_Prop_04",
+    "Sky_Cloud_Prop_05",
+    "Sky_Sun_Prop_01",
+    "Sky_Star_Prop_01"
+   ],
+   "xy": [
+    "Muk_Cloud_",
+    "Sky_Cloud_Prop_02",
+    "Sky_Moon_Prop_01"
+   ]
+  },
+  "meshes": "res://assets/ba/stages/gehennaslum/sky/sky_meshes.glb",
+  "bank": "sky/bank_p01_d.json"
+ }
+}

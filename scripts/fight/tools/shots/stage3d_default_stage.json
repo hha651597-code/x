@@ -1,0 +1,13 @@
+{
+ "timeout": 90,
+ "steps": [
+  {"session": {"mode": "training", "players": [
+    {"claimed": true, "device": "kb1", "fighter": 10004, "special": 10017},
+    {"claimed": false, "device": "", "fighter": 10005, "special": 10017}]}},
+  {"go": "fight", "style": "cut"},
+  {"frames": 20},
+  {"stage_print": true},
+  {"shot": ".dev/out/stage3d/default_stage.png", "scale": 0.5},
+  {"quit": true}
+ ]
+}

@@ -1,0 +1,94 @@
+{
+"timeout": 120,
+"steps": [
+{
+"session": {
+"mode": "training",
+"players": [
+{
+"claimed": true,
+"device": "kb1",
+"fighter": 10004,
+"special": 20001
+},
+{
+"claimed": false,
+"fighter": 10005,
+"special": 23005
+}
+],
+"stage": "gehenna-night"
+}
+},
+{
+"go": "fight",
+"style": "cut"
+},
+{
+"wait": 1.3
+},
+{
+"shot": "/tmp/ba-hud-out/facade/training_tip_a.png"
+},
+{
+"hold": [
+"kb1",
+"right"
+]
+},
+{
+"wait": 0.25
+},
+{
+"release": [
+"kb1",
+"right"
+]
+},
+{
+"tap": [
+"kb1",
+"confirm"
+],
+"frames": 3
+},
+{
+"wait": 0.2
+},
+{
+"tap": [
+"kb1",
+"up"
+],
+"frames": 4
+},
+{
+"wait": 0.3
+},
+{
+"tap": [
+[
+"kb1",
+"down"
+],
+[
+"kb1",
+"back"
+]
+],
+"frames": 3
+},
+{
+"wait": 0.4
+},
+{
+"shot": "/tmp/ba-hud-out/facade/training_history_tip.png"
+},
+{
+"wait": 4.5
+},
+{
+"shot": "/tmp/ba-hud-out/facade/training_history.png"
+}
+]
+}

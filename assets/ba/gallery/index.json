@@ -1,0 +1,50 @@
+{
+ "sprites": {
+  "Common__Card_Item_Bg_N": {
+   "w": 256,
+   "h": 210,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Common__Common_Deco_DotLine": {
+   "w": 9,
+   "h": 4,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Common__Common_Icon_Formation_Star": {
+   "w": 67,
+   "h": 64,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Common__Common_Icon_Formation_Star_Disable": {
+   "w": 67,
+   "h": 64,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ]
+  }
+ },
+ "tex": {
+  "UIs__00_Images__Image_Normal_Empty2": {
+   "w": 1152,
+   "h": 1149
+  }
+ }
+}

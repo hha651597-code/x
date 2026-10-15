@@ -1,0 +1,303 @@
+{
+  "SFX_Common_HMG_01": {
+    "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+    "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+    "path_id": "8434731248699592196",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Common_HMG_02": {
+    "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+    "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+    "path_id": "-5244418396837093514",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Common_HMG_03": {
+    "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+    "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+    "path_id": "-2342071168268790107",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Common_HMG_04": {
+    "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+    "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+    "path_id": "-2918627805738343113",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Common_HMG_05": {
+    "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+    "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+    "path_id": "5785439615653940574",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Common_HMG_Reload_Hina_01": {
+    "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+    "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+    "path_id": "-8702619697507475716",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Common_HMG_Reload_Hina_02": {
+    "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+    "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+    "path_id": "-3541834738215010658",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Common_HMG_Reload_Hina_03": {
+    "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+    "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+    "path_id": "6082830220308576587",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Common_HMG_Start_Hina_01": {
+    "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+    "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+    "path_id": "5186571532839515981",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Common_HMG_Start_Hina_02": {
+    "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+    "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+    "path_id": "-4246317015541410594",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Common_HMG_Start_Hina_03": {
+    "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+    "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+    "path_id": "-6459694405513827563",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Common_Regen_Ing": {
+    "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common_buff-_mxprolog-2024-11-18_assets_all_3659498674.bundle",
+    "cab": "CAB-65ae803bd45dc44d3c561ecefa268d5f",
+    "path_id": "-3617033160602870602",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Common_SG_01": {
+    "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+    "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+    "path_id": "7972239070382248428",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Common_SG_02": {
+    "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+    "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+    "path_id": "-3414738034558801513",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Common_SG_03": {
+    "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+    "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+    "path_id": "-3173972477670263533",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Common_SG_04": {
+    "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+    "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+    "path_id": "2501904827269164678",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Common_SG_05": {
+    "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+    "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+    "path_id": "-8299144995444384018",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Common_SG_06": {
+    "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+    "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+    "path_id": "8765075743495047746",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Common_SG_07": {
+    "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+    "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+    "path_id": "2268597353363266204",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Common_SG_08": {
+    "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+    "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+    "path_id": "-3781909483395534958",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Common_SG_Delay_01": {
+    "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+    "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+    "path_id": "1759504971473004181",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Common_SG_Delay_02": {
+    "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+    "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+    "path_id": "3050202410627986843",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Common_SG_Delay_03": {
+    "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+    "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+    "path_id": "8150425602811642196",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Common_SG_Delay_04": {
+    "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+    "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+    "path_id": "2156185550740784118",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Common_SG_Delay_05": {
+    "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+    "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+    "path_id": "2528900760480344964",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Common_SG_Delay_06": {
+    "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+    "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+    "path_id": "6086807798884883268",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Common_SG_Delay_07": {
+    "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+    "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+    "path_id": "8993951658746992548",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Common_SG_Delay_08": {
+    "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+    "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+    "path_id": "-1849326834591175299",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Common_SG_Reload_01": {
+    "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+    "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+    "path_id": "-8068596657349448471",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Common_SG_Reload_02": {
+    "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+    "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+    "path_id": "-1245636098071446909",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Common_SG_Reload_03": {
+    "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+    "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+    "path_id": "-6718356923770445917",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Common_SG_Reload_04": {
+    "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+    "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+    "path_id": "-4390753597301169574",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Common_SG_Reload_05": {
+    "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+    "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+    "path_id": "-2467271783982123237",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_JSD_Laser_02": {
+    "bundle": "PUB/Resource/Preload/Windows/prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+    "cab": "CAB-b58ac03fa1e99baa267fe4f115d8dcf5",
+    "path_id": "1355990131968339233",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Public_Hina": {
+    "bundle": "PUB/Resource/GameData/Windows/assets-_mx-characters-hina_original-_mxdependency-2024-11-18_002_assets_all_1012396359.bundle",
+    "cab": "CAB-76f13d3b32ba7362be92de238c26addc",
+    "path_id": "172335668319037710",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Shot_Impact_Hit_01": {
+    "bundle": "PUB/Resource/GameData/Windows/assets-_mx-characters-_mxcommon-.wav-_mxdependency-2025-02-11_assets_all_2941046645.bundle",
+    "cab": "CAB-c242235371e2f7fc33c570209b72b00a",
+    "path_id": "-805794154285252873",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Shot_Impact_Hit_02": {
+    "bundle": "PUB/Resource/GameData/Windows/assets-_mx-characters-_mxcommon-.wav-_mxdependency-2025-02-11_assets_all_2941046645.bundle",
+    "cab": "CAB-c242235371e2f7fc33c570209b72b00a",
+    "path_id": "-644738521056750127",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Shot_Impact_Hit_03": {
+    "bundle": "PUB/Resource/GameData/Windows/assets-_mx-characters-_mxcommon-.wav-_mxdependency-2025-02-11_assets_all_2941046645.bundle",
+    "cab": "CAB-c242235371e2f7fc33c570209b72b00a",
+    "path_id": "5580885622942619999",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Skill_Hina_Ex": {
+    "bundle": "PUB/Resource/GameData/Windows/assets-_mx-characters-hina_original-_mxdependency-2024-11-18_002_assets_all_1012396359.bundle",
+    "cab": "CAB-76f13d3b32ba7362be92de238c26addc",
+    "path_id": "-4606595403853338523",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Skill_Hina_Ex_Cut_in": {
+    "bundle": "PUB/Resource/GameData/Windows/assets-_mx-characters-hina_original-_mxdependency-2024-11-18_002_assets_all_1012396359.bundle",
+    "cab": "CAB-76f13d3b32ba7362be92de238c26addc",
+    "path_id": "5494148057153393054",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Skill_Hoshino_Ex_Activate": {
+    "bundle": "PUB/Resource/GameData/Windows/assets-_mx-characters-hoshino_original-_mxdependency-2024-11-18_002_assets_all_4134869737.bundle",
+    "cab": "CAB-54c3e9c5d9486983ced6ef6ad144b29e",
+    "path_id": "6512285437451810958",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Skill_Hoshino_Ex_Cut_in": {
+    "bundle": "PUB/Resource/GameData/Windows/assets-_mx-characters-hoshino_original-_mxdependency-2024-11-18_002_assets_all_4134869737.bundle",
+    "cab": "CAB-54c3e9c5d9486983ced6ef6ad144b29e",
+    "path_id": "5139250246356818473",
+    "sha256_match": true,
+    "pcm_identical": true
+  },
+  "SFX_Skill_Hoshino_Ex_Reload": {
+    "bundle": "PUB/Resource/GameData/Windows/assets-_mx-characters-hoshino_original-_mxdependency-2024-11-18_002_assets_all_4134869737.bundle",
+    "cab": "CAB-54c3e9c5d9486983ced6ef6ad144b29e",
+    "path_id": "8950239416190285898",
+    "sha256_match": true,
+    "pcm_identical": true
+  }
+}

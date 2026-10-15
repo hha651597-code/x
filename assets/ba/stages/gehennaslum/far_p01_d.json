@@ -1,0 +1,911 @@
+{
+ "name": "far_p01_d",
+ "variant": "p01_d",
+ "group": "far",
+ "color_scale": 34.0,
+ "materials": {
+  "crop_dirt": {
+   "kind": "opaque",
+   "shader": "crop",
+   "tex": "tex/crop_dirt_94d71081.png",
+   "color_mul": [
+    1.50943,
+    1.41805,
+    1.31719
+   ],
+   "cutoff": 0.5,
+   "cull": 2,
+   "params": {
+    "color_scale": 0.987
+   }
+  },
+  "crop_rust": {
+   "kind": "opaque",
+   "shader": "crop",
+   "tex": "tex/crop_rust_5221ebf8.png",
+   "color_mul": [
+    1.50943,
+    1.41805,
+    1.31719
+   ],
+   "cutoff": 0.5,
+   "cull": 2,
+   "params": {
+    "color_scale": 1.564
+   }
+  },
+  "sb_02_harbor_01_atlas_5edfec": {
+   "kind": "opaque",
+   "shader": "MX/E-Standard",
+   "tex": "tex/sb_02_harbor_atlas_72b4941f.png",
+   "color_mul": [
+    1.49804,
+    1.49804,
+    1.49804
+   ],
+   "cutoff": 0.5,
+   "cull": 2,
+   "params": {
+    "color_scale": 0.657
+   }
+  },
+  "sb_ruins_01_atlas_01_874e5c": {
+   "kind": "opaque",
+   "shader": "MX/E-Standard",
+   "tex": "tex/sb_ruins_01_atlas_01_51890829.png",
+   "color_mul": [
+    1.50943,
+    1.41805,
+    1.31719
+   ],
+   "cutoff": 0.661,
+   "cull": 2,
+   "params": {
+    "color_scale": 1.187
+   }
+  },
+  "sb_slum_gehenna_01_atlas_9b7ef5": {
+   "kind": "opaque",
+   "shader": "MX/E-Standard",
+   "tex": "tex/sb_slum_gehenna_01_552d45d7.png",
+   "color_mul": [
+    1.50943,
+    1.41805,
+    1.31719
+   ],
+   "cutoff": 0.661,
+   "cull": 2,
+   "params": {
+    "color_scale": 1.332
+   }
+  },
+  "smoke": {
+   "kind": "smoke",
+   "shader": "smoke",
+   "tex": "tex/fx_smoke_08e8facf.png",
+   "color_mul": [
+    1,
+    1,
+    1
+   ],
+   "cutoff": 0.5,
+   "cull": 0,
+   "params": {
+    "smoke_life": 18.0,
+    "smoke_drift": [
+     6.0,
+     2.0
+    ],
+    "smoke_lit": [
+     0.62,
+     0.44,
+     0.4
+    ],
+    "smoke_shade": [
+     0.26,
+     0.2,
+     0.27
+    ],
+    "smoke_alpha": 0.6,
+    "color_scale": 34.0
+   }
+  }
+ },
+ "chunks": {
+  "ff_b0s3_sb_slum_gehenna_01_atlas_9b7ef5": {
+   "chunk": "b0s3",
+   "material": "sb_slum_gehenna_01_atlas_9b7ef5",
+   "tris": 2139,
+   "aabb": [
+    [
+     23.94098,
+     0.0,
+     -4.74962
+    ],
+    [
+     49.47965,
+     15.49352,
+     33.50205
+    ]
+   ]
+  },
+  "ff_b0s4_sb_ruins_01_atlas_01_874e5c": {
+   "chunk": "b0s4",
+   "material": "sb_ruins_01_atlas_01_874e5c",
+   "tris": 894,
+   "aabb": [
+    [
+     49.75895,
+     0.0,
+     37.31074
+    ],
+    [
+     61.67663,
+     10.84729,
+     48.68926
+    ]
+   ]
+  },
+  "ff_b0s4_sb_slum_gehenna_01_atlas_9b7ef5": {
+   "chunk": "b0s4",
+   "material": "sb_slum_gehenna_01_atlas_9b7ef5",
+   "tris": 4886,
+   "aabb": [
+    [
+     29.05971,
+     0.0,
+     21.62291
+    ],
+    [
+     67.4788,
+     13.88602,
+     57.83814
+    ]
+   ]
+  },
+  "ff_b0s5_sb_slum_gehenna_01_atlas_9b7ef5": {
+   "chunk": "b0s5",
+   "material": "sb_slum_gehenna_01_atlas_9b7ef5",
+   "tris": 3612,
+   "aabb": [
+    [
+     42.58662,
+     0.0,
+     59.52101
+    ],
+    [
+     51.44837,
+     11.22823,
+     68.47899
+    ]
+   ]
+  },
+  "ff_b1s2_sb_02_harbor_01_atlas_5edfec": {
+   "chunk": "b1s2",
+   "material": "sb_02_harbor_01_atlas_5edfec",
+   "tris": 1128,
+   "aabb": [
+    [
+     37.07262,
+     7.53354,
+     -57.57936
+    ],
+    [
+     41.68578,
+     11.46409,
+     -45.75766
+    ]
+   ]
+  },
+  "ff_b1s2_sb_ruins_01_atlas_01_874e5c": {
+   "chunk": "b1s2",
+   "material": "sb_ruins_01_atlas_01_874e5c",
+   "tris": 894,
+   "aabb": [
+    [
+     58.32337,
+     0.0,
+     -143.93925
+    ],
+    [
+     61.67663,
+     10.84729,
+     -66.06074
+    ]
+   ]
+  },
+  "ff_b1s2_sb_slum_gehenna_01_atlas_9b7ef5": {
+   "chunk": "b1s2",
+   "material": "sb_slum_gehenna_01_atlas_9b7ef5",
+   "tris": 4578,
+   "aabb": [
+    [
+     34.63457,
+     0.0,
+     -55.21622
+    ],
+    [
+     43.61948,
+     20.81216,
+     -46.78909
+    ]
+   ]
+  },
+  "ff_b1s2_smoke": {
+   "chunk": "b1s2",
+   "material": "smoke",
+   "tris": 14,
+   "aabb": [
+    [
+     38.03357,
+     20.58855,
+     -52.69321
+    ],
+    [
+     40.3358,
+     20.58855,
+     -49.77204
+    ]
+   ],
+   "cull_margin": 36.89346
+  },
+  "ff_b1s3_sb_02_harbor_01_atlas_5edfec": {
+   "chunk": "b1s3",
+   "material": "sb_02_harbor_01_atlas_5edfec",
+   "tris": 5205,
+   "aabb": [
+    [
+     100.34856,
+     0.01056,
+     -66.98574
+    ],
+    [
+     131.3759,
+     12.94392,
+     -44.95451
+    ]
+   ]
+  },
+  "ff_b1s3_sb_ruins_01_atlas_01_874e5c": {
+   "chunk": "b1s3",
+   "material": "sb_ruins_01_atlas_01_874e5c",
+   "tris": 596,
+   "aabb": [
+    [
+     58.32337,
+     0.0,
+     -35.18926
+    ],
+    [
+     61.67663,
+     10.84729,
+     6.43926
+    ]
+   ]
+  },
+  "ff_b1s3_sb_slum_gehenna_01_atlas_9b7ef5": {
+   "chunk": "b1s3",
+   "material": "sb_slum_gehenna_01_atlas_9b7ef5",
+   "tris": 5525,
+   "aabb": [
+    [
+     97.93799,
+     0.0,
+     -63.88918
+    ],
+    [
+     129.15022,
+     18.89116,
+     2.05466
+    ]
+   ]
+  },
+  "ff_b1s4_sb_02_harbor_01_atlas_5edfec": {
+   "chunk": "b1s4",
+   "material": "sb_02_harbor_01_atlas_5edfec",
+   "tris": 4280,
+   "aabb": [
+    [
+     93.64924,
+     0.00857,
+     22.80299
+    ],
+    [
+     183.24875,
+     11.37683,
+     79.72253
+    ]
+   ]
+  },
+  "ff_b1s4_sb_ruins_01_atlas_01_874e5c": {
+   "chunk": "b1s4",
+   "material": "sb_ruins_01_atlas_01_874e5c",
+   "tris": 1192,
+   "aabb": [
+    [
+     79.75895,
+     0.0,
+     39.10281
+    ],
+    [
+     174.24106,
+     9.03941,
+     41.89719
+    ]
+   ]
+  },
+  "ff_b1s4_sb_slum_gehenna_01_atlas_9b7ef5": {
+   "chunk": "b1s4",
+   "material": "sb_slum_gehenna_01_atlas_9b7ef5",
+   "tris": 22043,
+   "aabb": [
+    [
+     59.91685,
+     0.0,
+     -21.69387
+    ],
+    [
+     204.08315,
+     34.741,
+     90.40761
+    ]
+   ]
+  },
+  "ff_b1s4_smoke": {
+   "chunk": "b1s4",
+   "material": "smoke",
+   "tris": 28,
+   "aabb": [
+    [
+     98.30376,
+     13.12883,
+     23.59364
+    ],
+    [
+     127.24069,
+     15.39364,
+     55.55502
+    ]
+   ],
+   "cull_margin": 37.9844
+  },
+  "ff_b1s5_sb_02_harbor_01_atlas_5edfec": {
+   "chunk": "b1s5",
+   "material": "sb_02_harbor_01_atlas_5edfec",
+   "tris": 3268,
+   "aabb": [
+    [
+     102.78703,
+     0.0103,
+     123.32944
+    ],
+    [
+     182.33086,
+     12.18725,
+     152.36198
+    ]
+   ]
+  },
+  "ff_b1s5_sb_ruins_01_atlas_01_874e5c": {
+   "chunk": "b1s5",
+   "material": "sb_ruins_01_atlas_01_874e5c",
+   "tris": 596,
+   "aabb": [
+    [
+     58.32337,
+     0.0,
+     78.81074
+    ],
+    [
+     61.67663,
+     10.84729,
+     119.68926
+    ]
+   ]
+  },
+  "ff_b1s5_sb_slum_gehenna_01_atlas_9b7ef5": {
+   "chunk": "b1s5",
+   "material": "sb_slum_gehenna_01_atlas_9b7ef5",
+   "tris": 6866,
+   "aabb": [
+    [
+     69.17579,
+     0.0,
+     124.97472
+    ],
+    [
+     183.47231,
+     18.44292,
+     153.23064
+    ]
+   ]
+  },
+  "ff_b1s5_smoke": {
+   "chunk": "b1s5",
+   "material": "smoke",
+   "tris": 14,
+   "aabb": [
+    [
+     105.85287,
+     14.11844,
+     132.78117
+    ],
+    [
+     108.28654,
+     14.11844,
+     135.1241
+    ]
+   ],
+   "cull_margin": 37.99621
+  },
+  "ff_b1s6_sb_02_harbor_01_atlas_5edfec": {
+   "chunk": "b1s6",
+   "material": "sb_02_harbor_01_atlas_5edfec",
+   "tris": 2256,
+   "aabb": [
+    [
+     22.75232,
+     0.01161,
+     130.15091
+    ],
+    [
+     53.49599,
+     14.86522,
+     153.54596
+    ]
+   ]
+  },
+  "ff_b1s6_sb_ruins_01_atlas_01_874e5c": {
+   "chunk": "b1s6",
+   "material": "sb_ruins_01_atlas_01_874e5c",
+   "tris": 894,
+   "aabb": [
+    [
+     58.32337,
+     0.0,
+     149.81075
+    ],
+    [
+     61.67663,
+     10.84729,
+     226.18925
+    ]
+   ]
+  },
+  "ff_b1s6_sb_slum_gehenna_01_atlas_9b7ef5": {
+   "chunk": "b1s6",
+   "material": "sb_slum_gehenna_01_atlas_9b7ef5",
+   "tris": 7266,
+   "aabb": [
+    [
+     24.96235,
+     0.0,
+     129.77113
+    ],
+    [
+     50.32598,
+     25.47201,
+     155.13934
+    ]
+   ]
+  },
+  "ff_b1s6_smoke": {
+   "chunk": "b1s6",
+   "material": "smoke",
+   "tris": 14,
+   "aabb": [
+    [
+     44.07721,
+     13.15007,
+     132.42708
+    ],
+    [
+     47.55214,
+     13.15007,
+     135.01576
+    ]
+   ],
+   "cull_margin": 37.97661
+  },
+  "ff_b2s2_sb_ruins_01_atlas_01_874e5c": {
+   "chunk": "b2s2",
+   "material": "sb_ruins_01_atlas_01_874e5c",
+   "tris": 894,
+   "aabb": [
+    [
+     58.32337,
+     0.0,
+     -252.68925
+    ],
+    [
+     61.67663,
+     10.84729,
+     -174.81075
+    ]
+   ]
+  },
+  "ff_b2s3_sb_02_harbor_01_atlas_5edfec": {
+   "chunk": "b2s3",
+   "material": "sb_02_harbor_01_atlas_5edfec",
+   "tris": 7084,
+   "aabb": [
+    [
+     185.58769,
+     0.02003,
+     -148.36967
+    ],
+    [
+     280.01559,
+     34.74624,
+     -61.50108
+    ]
+   ]
+  },
+  "ff_b2s3_sb_ruins_01_atlas_01_874e5c": {
+   "chunk": "b2s3",
+   "material": "sb_ruins_01_atlas_01_874e5c",
+   "tris": 1972,
+   "aabb": [
+    [
+     323.24887,
+     0.0,
+     -346.61972
+    ],
+    [
+     440.40634,
+     46.78135,
+     -112.02267
+    ]
+   ]
+  },
+  "ff_b2s3_sb_slum_gehenna_01_atlas_9b7ef5": {
+   "chunk": "b2s3",
+   "material": "sb_slum_gehenna_01_atlas_9b7ef5",
+   "tris": 2232,
+   "aabb": [
+    [
+     186.43933,
+     0.0,
+     -145.89932
+    ],
+    [
+     271.50076,
+     17.33168,
+     -65.86966
+    ]
+   ]
+  },
+  "ff_b2s3_smoke": {
+   "chunk": "b2s3",
+   "material": "smoke",
+   "tris": 98,
+   "aabb": [
+    [
+     331.52878,
+     33.3014,
+     -339.93219
+    ],
+    [
+     434.66275,
+     53.66916,
+     -112.86337
+    ]
+   ],
+   "cull_margin": 42.94532
+  },
+  "ff_b2s4_sb_02_harbor_01_atlas_5edfec": {
+   "chunk": "b2s4",
+   "material": "sb_02_harbor_01_atlas_5edfec",
+   "tris": 7368,
+   "aabb": [
+    [
+     254.56636,
+     0.0,
+     -121.01488
+    ],
+    [
+     483.92661,
+     70.95206,
+     173.71727
+    ]
+   ]
+  },
+  "ff_b2s4_sb_ruins_01_atlas_01_874e5c": {
+   "chunk": "b2s4",
+   "material": "sb_ruins_01_atlas_01_874e5c",
+   "tris": 4621,
+   "aabb": [
+    [
+     192.56512,
+     0.0,
+     -89.394
+    ],
+    [
+     611.43622,
+     86.43456,
+     170.62552
+    ]
+   ]
+  },
+  "ff_b2s4_sb_slum_gehenna_01_atlas_9b7ef5": {
+   "chunk": "b2s4",
+   "material": "sb_slum_gehenna_01_atlas_9b7ef5",
+   "tris": 9245,
+   "aabb": [
+    [
+     199.58157,
+     0.0,
+     -141.61433
+    ],
+    [
+     547.1795,
+     39.44692,
+     152.73967
+    ]
+   ]
+  },
+  "ff_b2s4_smoke": {
+   "chunk": "b2s4",
+   "material": "smoke",
+   "tris": 56,
+   "aabb": [
+    [
+     335.69705,
+     39.34463,
+     -71.9314
+    ],
+    [
+     593.00079,
+     97.49905,
+     143.43222
+    ]
+   ],
+   "cull_margin": 42.98287
+  },
+  "ff_b2s5_sb_02_harbor_01_atlas_5edfec": {
+   "chunk": "b2s5",
+   "material": "sb_02_harbor_01_atlas_5edfec",
+   "tris": 6072,
+   "aabb": [
+    [
+     176.2847,
+     0.01615,
+     122.85469
+    ],
+    [
+     270.00531,
+     21.68663,
+     302.26791
+    ]
+   ]
+  },
+  "ff_b2s5_sb_ruins_01_atlas_01_874e5c": {
+   "chunk": "b2s5",
+   "material": "sb_ruins_01_atlas_01_874e5c",
+   "tris": 4270,
+   "aabb": [
+    [
+     353.16101,
+     0.0,
+     291.60153
+    ],
+    [
+     406.83899,
+     51.57161,
+     308.39847
+    ]
+   ]
+  },
+  "ff_b2s5_sb_slum_gehenna_01_atlas_9b7ef5": {
+   "chunk": "b2s5",
+   "material": "sb_slum_gehenna_01_atlas_9b7ef5",
+   "tris": 3549,
+   "aabb": [
+    [
+     176.88885,
+     0.02033,
+     126.284
+    ],
+    [
+     269.93509,
+     40.73388,
+     295.05667
+    ]
+   ]
+  },
+  "ff_b2s6_sb_ruins_01_atlas_01_874e5c": {
+   "chunk": "b2s6",
+   "material": "sb_ruins_01_atlas_01_874e5c",
+   "tris": 894,
+   "aabb": [
+    [
+     58.32337,
+     0.0,
+     256.31073
+    ],
+    [
+     61.67663,
+     10.84729,
+     332.68927
+    ]
+   ]
+  },
+  "ff_b3s3_crop_rust": {
+   "chunk": "b3s3",
+   "material": "crop_rust",
+   "tris": 80,
+   "aabb": [
+    [
+     719.77911,
+     0.0,
+     -1289.69727
+    ],
+    [
+     1451.73621,
+     45.6077,
+     -420.46329
+    ]
+   ]
+  },
+  "ff_b3s3_sb_ruins_01_atlas_01_874e5c": {
+   "chunk": "b3s3",
+   "material": "sb_ruins_01_atlas_01_874e5c",
+   "tris": 5553,
+   "aabb": [
+    [
+     422.97394,
+     0.0,
+     -1014.55304
+    ],
+    [
+     1155.82874,
+     66.19376,
+     -256.33557
+    ]
+   ]
+  },
+  "ff_b3s3_smoke": {
+   "chunk": "b3s3",
+   "material": "smoke",
+   "tris": 28,
+   "aabb": [
+    [
+     450.53574,
+     70.64438,
+     -411.91699
+    ],
+    [
+     458.39127,
+     70.64438,
+     -397.78555
+    ]
+   ],
+   "cull_margin": 42.54789
+  },
+  "ff_b3s4_crop_rust": {
+   "chunk": "b3s4",
+   "material": "crop_rust",
+   "tris": 80,
+   "aabb": [
+    [
+     1389.3136,
+     0.0,
+     -443.41367
+    ],
+    [
+     1531.38586,
+     44.80901,
+     544.81885
+    ]
+   ]
+  },
+  "ff_b3s4_sb_ruins_01_atlas_01_874e5c": {
+   "chunk": "b3s4",
+   "material": "sb_ruins_01_atlas_01_874e5c",
+   "tris": 5834,
+   "aabb": [
+    [
+     589.77863,
+     0.0,
+     -400.02921
+    ],
+    [
+     1272.2948,
+     89.47223,
+     457.55106
+    ]
+   ]
+  },
+  "ff_b3s5_crop_rust": {
+   "chunk": "b3s5",
+   "material": "crop_rust",
+   "tris": 80,
+   "aabb": [
+    [
+     787.38873,
+     0.0,
+     491.61792
+    ],
+    [
+     1458.30701,
+     39.43891,
+     1337.00171
+    ]
+   ]
+  },
+  "ff_b3s5_sb_ruins_01_atlas_01_874e5c": {
+   "chunk": "b3s5",
+   "material": "sb_ruins_01_atlas_01_874e5c",
+   "tris": 3974,
+   "aabb": [
+    [
+     490.34763,
+     0.0,
+     338.83417
+    ],
+    [
+     1187.97766,
+     64.76262,
+     1092.43958
+    ]
+   ]
+  },
+  "ff_ground_crop_dirt": {
+   "chunk": "ground",
+   "material": "crop_dirt",
+   "tris": 6396,
+   "aabb": [
+    [
+     18.8,
+     -0.02,
+     -1305.19958
+    ],
+    [
+     1588.81116,
+     -0.02,
+     1394.81958
+    ]
+   ]
+  }
+ },
+ "stats": {
+  "tris": 148568,
+  "nodes": 44,
+  "items": 324,
+  "dropped": 0,
+  "layers": {
+   "near": 45966,
+   "mid": 32261,
+   "slabs_mid": 2302,
+   "slabs_far": 4291,
+   "horizon": 13573,
+   "far": 4251,
+   "hero_fight_a": 3346,
+   "hero_fight_b": 2782,
+   "hero_house_a": 3612,
+   "hero_house_b": 2840,
+   "crane_a": 2166,
+   "crane_b": 2166,
+   "arch_a": 4270,
+   "poles_a": 5696,
+   "poles_b": 3516,
+   "lamps_a": 3278,
+   "lamps_b": 2682,
+   "lamps_c": 2682,
+   "props_lot": 11155
+  }
+ },
+ "haze": {
+  "density": 0.0024,
+  "power": 1.4,
+  "amount": 0.72,
+  "low": 0.35,
+  "low_scale": 38.0,
+  "color": [
+   0.42,
+   0.22,
+   0.24
+  ]
+ },
+ "ground_colour": null
+}

@@ -1,0 +1,39 @@
+{
+ "timeout": 120,
+ "steps": [
+  {
+   "session": {
+    "mode": "versus2p",
+    "players": [
+     {
+      "claimed": true,
+      "device": "kb1",
+      "fighter": 10004
+     },
+     {
+      "claimed": true,
+      "device": "kb2",
+      "fighter": 10005
+     }
+    ]
+   }
+  },
+  {
+   "go": "gallery",
+   "params": {
+    "tab": "characters"
+   },
+   "style": "cut"
+  },
+  {
+   "wait": 2.4
+  },
+  {
+   "shot": "/tmp/ba-ui-out/extras/12_wide_1600x900.png",
+   "scale": 1.25
+  },
+  {
+   "quit": true
+  }
+ ]
+}

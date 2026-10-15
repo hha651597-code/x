@@ -1,0 +1,131 @@
+{
+ "timeout": 120,
+ "steps": [
+  {
+   "session": {
+    "mode": "versus2p",
+    "players": [
+     {
+      "claimed": true,
+      "device": "kb1",
+      "fighter": 10005,
+      "special": 10017
+     },
+     {
+      "claimed": true,
+      "device": "kb2",
+      "fighter": 10004,
+      "special": 10017
+     }
+    ]
+   }
+  },
+  {
+   "go": "fight",
+   "style": "cut"
+  },
+  {
+   "frames": 150
+  },
+  {
+   "timescale": 0.25
+  },
+  {
+   "print": true
+  },
+  {
+   "tap": [
+    [
+     "kb1",
+     "aux2"
+    ],
+    [
+     "kb2",
+     "aux2"
+    ]
+   ],
+   "frames": 3
+  },
+  {
+   "frames": 2
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": ".dev/out/ult_both_01_p1_flash.png"
+  },
+  {
+   "frames": 120
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": ".dev/out/ult_both_02_p1_mid.png"
+  },
+  {
+   "frames": 170
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": ".dev/out/ult_both_03_p1_spot.png"
+  },
+  {
+   "frames": 16
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": ".dev/out/ult_both_04_p2_flash.png"
+  },
+  {
+   "frames": 120
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": ".dev/out/ult_both_05_p2_mid.png"
+  },
+  {
+   "frames": 170
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": ".dev/out/ult_both_06_p2_spot.png"
+  },
+  {
+   "frames": 20
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": ".dev/out/ult_both_07_resume.png"
+  },
+  {
+   "frames": 40
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": ".dev/out/ult_both_08_both_ult.png"
+  },
+  {
+   "timescale": 1.0
+  },
+  {
+   "frames": 60
+  },
+  {
+   "print": true
+  }
+ ]
+}

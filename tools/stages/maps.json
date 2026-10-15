@@ -1,0 +1,41 @@
+{
+ "version": 1,
+ "defaults": {
+  "camera": {
+   "fov": 40.0,
+   "pitch": 5.0,
+   "px_per_unit": 210.0,
+   "feet_row": 612.0,
+   "view": [
+    1280,
+    720
+   ],
+   "near": 0.05
+  },
+  "fight_half_px": 760.0,
+  "zooms": [
+   0.7,
+   1.0,
+   1.24
+  ]
+ },
+ "maps": {
+  "gehennaslum": {
+   "name": "Gehenna Slum Streets",
+   "school": "gehenna",
+   "page": 1,
+   "variants": {
+    "day": "sb_01_gehennaslum_p01_d",
+    "night": "sb_01_gehennaslum_p01_n"
+   },
+   "lane": null,
+   "bundles": [
+    "assets-_mx-scenes-_mxcommon-.fbx-*",
+    "prologdepengroup-assets-_mx-scenes-_mxcommon-fbx-*"
+   ],
+   "art": null,
+   "far_kit": "gehenna-city",
+   "data": "maps/gehennaslum"
+  }
+ }
+}

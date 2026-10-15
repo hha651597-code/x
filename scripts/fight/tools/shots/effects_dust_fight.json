@@ -1,0 +1,115 @@
+{
+ "timeout": 120,
+ "steps": [
+  {
+   "session": {
+    "mode": "versus2p",
+    "players": [
+     {
+      "claimed": true,
+      "device": "kb1",
+      "fighter": 10004,
+      "special": 20001
+     },
+     {
+      "claimed": true,
+      "device": "kb2",
+      "fighter": 10005,
+      "special": 23005,
+      "cpu": false
+     }
+    ],
+    "stage": "gehenna-night"
+   }
+  },
+  {
+   "go": "fight",
+   "style": "cut"
+  },
+  {
+   "wait": 2.2
+  },
+  {
+   "fighter": {
+    "slot": 1,
+    "pos": [
+     300,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "fighter": {
+    "slot": 2,
+    "pos": [
+     900,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "hold": [
+    "kb1",
+    "right"
+   ]
+  },
+  {
+   "wait": 0.25
+  },
+  {
+   "tap": [
+    "kb1",
+    "dash"
+   ],
+   "frames": 2
+  },
+  {
+   "wait": 0.12
+  },
+  {
+   "shot": "/tmp/ba-ui-out/effects_cutin/real_fight/dash_0.png"
+  },
+  {
+   "wait": 0.1
+  },
+  {
+   "shot": "/tmp/ba-ui-out/effects_cutin/real_fight/dash_1.png"
+  },
+  {
+   "release_all": true
+  },
+  {
+   "tap": [
+    "kb1",
+    "up"
+   ],
+   "frames": 3
+  },
+  {
+   "wait": 0.75
+  },
+  {
+   "shot": "/tmp/ba-ui-out/effects_cutin/real_fight/land_0.png"
+  },
+  {
+   "wait": 0.08
+  },
+  {
+   "shot": "/tmp/ba-ui-out/effects_cutin/real_fight/land_1.png"
+  },
+  {
+   "wait": 0.1
+  },
+  {
+   "shot": "/tmp/ba-ui-out/effects_cutin/real_fight/land_2.png"
+  }
+ ]
+}

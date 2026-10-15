@@ -1,0 +1,2033 @@
+{
+"timeout": 180,
+"steps": [
+{
+"session": {
+"mode": "versus2p",
+"players": [
+{
+"claimed": true,
+"device": "kb1",
+"fighter": 10005,
+"special": 23005
+},
+{
+"claimed": true,
+"device": "kb2",
+"fighter": 10004,
+"special": 20001,
+"cpu": false
+}
+],
+"stage": "gehenna-night"
+}
+},
+{
+"go": "fight",
+"style": "cut"
+},
+{
+"wait": 2.2
+},
+{
+"fighter": {
+"slot": 2,
+"pos": [
+230,
+560
+],
+"vel": [
+0,
+0
+],
+"meter": 100
+}
+},
+{
+"fighter": {
+"slot": 1,
+"pos": [
+0,
+560
+],
+"vel": [
+0,
+0
+],
+"gap": 46
+}
+},
+{},
+{
+"tap": [
+[
+"kb2",
+"confirm"
+]
+],
+"frames": 2
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb2",
+"confirm"
+]
+],
+"frames": 2
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb2",
+"confirm"
+]
+],
+"frames": 2
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb2",
+"confirm"
+]
+],
+"frames": 2
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb2",
+"confirm"
+]
+],
+"frames": 2
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb2",
+"confirm"
+]
+],
+"frames": 2
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb2",
+"confirm"
+]
+],
+"frames": 2
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb2",
+"back"
+]
+],
+"frames": 2
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb2",
+"back"
+]
+],
+"frames": 2
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb2",
+"back"
+]
+],
+"frames": 2
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb2",
+"aux"
+]
+],
+"frames": 2
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb2",
+"aux"
+]
+],
+"frames": 2
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb2",
+"aux"
+]
+],
+"frames": 2
+},
+{
+"hold": [
+"kb2",
+"aux"
+]
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"shot": "/tmp/ba-hud-out/facade/combo_p2_5hits.png"
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"shot": "/tmp/ba-hud-out/facade/combo_p2_13hits.png"
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"release": [
+"kb2",
+"aux"
+]
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+},
+{
+"tap": [
+[
+"kb9",
+"confirm"
+]
+],
+"frames": 1
+}
+]
+}

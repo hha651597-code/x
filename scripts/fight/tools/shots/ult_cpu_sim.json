@@ -1,0 +1,46 @@
+{
+ "timeout": 400,
+ "steps": [
+  {
+   "cpu_vs_cpu": true
+  },
+  {
+   "session": {
+    "mode": "versus-cpu",
+    "players": [
+     {
+      "claimed": true,
+      "device": "kb1",
+      "fighter": 10005,
+      "special": 10017
+     },
+     {
+      "claimed": false,
+      "fighter": 10004,
+      "special": 10017
+     }
+    ]
+   }
+  },
+  {
+   "go": "fight",
+   "style": "cut"
+  },
+  {
+   "sim_mult": 6
+  },
+  {
+   "until_screen": "result",
+   "max": 300
+  },
+  {
+   "print": true
+  },
+  {
+   "sim_mult": 1
+  },
+  {
+   "cpu_vs_cpu": false
+  }
+ ]
+}

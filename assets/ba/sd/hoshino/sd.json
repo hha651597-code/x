@@ -1,0 +1,118 @@
+{
+	"model": "res://assets/ba/sd/hoshino/Hoshino.glb",
+	"bones": {"grip": "Bip001 R Hand"},
+	"crown": 0.63,
+	"hide": ["Shield"],
+	"extra_clips": "res://assets/ba/sd/hoshino/Hoshino_extra.glb",
+	"hide_shield_fx": true,
+	"anims": {
+		"idle": {"clip": "Normal_Idle"},
+		"intro_idle": {"clip": "Normal_Idle", "blend": 16},
+		"walk": {"clip": "Move_Ing", "turn": -53, "stride": [11.45, 9.2]},
+		"walk_back": {"clip": "Move_Ing", "turn": -53, "stride": [11.45, 9.2]},
+		"dash": {"clip": "Move_Ing", "tilt": 8, "turn": -53, "stride": [8.5, 7.5]},
+		"backdash": {"clip": "Normal_Idle", "frames": 18, "tilt_pivot": "hips", "tilt": [[0, 0], [0.3, -14], [1, 0]], "lift": [[0, 0.1], [0.3, 0.24], [0.75, 0.2], [1, 0.1]], "overlays": [
+			{"clip": "Move_Jump", "at": 0.36, "bones": ["Bip001 ? Thigh", "Bip001 ? Calf", "Bip001 ? Foot"]}
+		]},
+		"jump": {"clip": "Normal_Idle", "frames": 39, "overlays": [
+			{"clip": "Move_Jump", "mode": "fit", "from": 0.05, "to": 0.68, "bones": ["Bip001 ? Thigh", "Bip001 ? Calf", "Bip001 ? Foot"]}
+		]},
+		"crouch": {"clip": "Normal_Idle", "crouch": 0.2},
+		"block": {"blend": 0, "clip": "Normal_Reload", "mode": "hold", "from": 1.27, "speed": 0, "crouch": 0.15, "tilt": -2},
+		"block_low": {"blend": 0, "clip": "Normal_Reload", "mode": "hold", "from": 1.27, "speed": 0, "crouch": 0.25, "tilt": -2},
+		"block_air": {"blend": 0, "clip": "Normal_Reload", "mode": "hold", "from": 1.27, "speed": 0, "tilt": -2, "tilt_pivot": "hips", "overlays": [
+			{"clip": "Move_Jump", "at": 0.36, "bones": ["Bip001 ? Thigh", "Bip001 ? Calf", "Bip001 ? Foot"]}
+		]},
+		"hit": {"blend": 0, "clip": "Vital_Panic", "mode": "fit", "to": 0.3, "frames": 14, "tilt": [[0, -4], [0.3, -10], [1, -4]]},
+		"airhit": {"blend": 0, "clip": "Vital_Panic", "tilt": -25, "tilt_pivot": "hips"},
+		"carried": {"clip": "Vital_Dying_Ing", "mode": "hold", "from": 0.5, "speed": 0, "frames": 40, "blend": 0},
+		"down": {"clip": "Vital_Death", "mode": "hold", "from": 0.6, "speed": 2},
+		"getup": {"clip": "Normal_Idle", "frames": 12, "blend": 6, "crouch": [[0, 0.2], [1, 0]]},
+		"ko": {"clip": "Vital_Death", "mode": "hold"},
+		"win": {"phases": [{"clip": "Victory_Start", "mode": "hold", "over": 200}, {"clip": "Victory_End"}]},
+		"intro": {"clip": "Normal_Callsign", "mode": "fit", "from": 0.6, "frames": 60, "blend": 0},
+		"intro_cut": {"clip": "Normal_Callsign", "mode": "fit", "from": 0.05, "to": 1.5, "frames": 96, "blend": 0, "turn": [[0.0, 5], [0.0345, 20], [0.069, 27], [0.1034, 32], [0.1379, 37], [0.1724, 43], [0.2069, 45], [0.2414, 45], [0.2759, 44], [0.3103, 39], [0.3448, 19], [0.3793, 0], [0.4483, 0], [0.4828, -4], [0.5172, -6], [0.5517, -5], [0.5862, -4], [0.6207, -3], [0.6552, -2], [0.6897, -1], [1, -1]]},
+		"intro_run": {"clip": "Move_Ing", "speed": 1.15, "frames": 57, "tilt": 8, "turn": -53, "blend": 6},
+		"intro_stop": {"clip": "Move_End_Normal", "mode": "hold", "to": 0.5, "frames": 40, "tilt": [[0, 8], [0.4, 0]], "turn": [[0, -39], [0.3, -26.6], [0.75, -8.1], [1, -8.1]], "blend": 6}
+	},
+	"moves": {
+		"5L": {"phases": [
+			{"clip": "Normal_Attack_Start", "mode": "fit", "over": "startup"},
+			{"clip": "Normal_Attack_Ing", "mode": "fit", "from": 0.1, "over": 10},
+			{"clip": "Normal_Attack_End", "mode": "fit"}
+		]},
+		"5H": {"phases": [
+			{"clip": "Normal_Attack_Start", "mode": "fit", "over": 11},
+			{"clip": "Normal_Attack_Ing", "mode": "fit", "from": 0.1, "over": 9},
+			{"clip": "Normal_Attack_Ing", "mode": "fit", "from": 0.1, "over": 10},
+			{"clip": "Normal_Attack_End", "mode": "fit"}
+		]},
+		"2L": {"crouch": 0.2, "tilt": 6, "phases": [
+			{"clip": "Normal_Attack_Start", "mode": "fit", "over": "startup"},
+			{"clip": "Normal_Attack_Ing", "mode": "fit", "from": 0.1, "over": 8},
+			{"clip": "Normal_Attack_End", "mode": "fit"}
+		]},
+		"2H": {"phases": [
+			{"clip": "Normal_Attack_Start", "mode": "fit", "over": "startup", "crouch": [[0, 0.2], [1, 0.05]], "tilt": [[0, 0], [1, -6]], "aim": [[0, 0], [1, -30]]},
+			{"clip": "Normal_Attack_Ing", "mode": "fit", "from": 0.1, "over": 10, "crouch": 0.05, "tilt": -6, "aim": -30},
+			{"clip": "Normal_Attack_End", "mode": "fit", "crouch": [[0, 0.05], [1, 0.17]], "tilt": [[0, -6], [1, -2]], "aim": [[0, -30], [1, -4]]}
+		]},
+		"jL": {"tilt": 4, "aim": 33, "aim_spine": 0.4, "tilt_pivot": "hips",
+			"overlays": [{"clip": "Move_Jump", "at": 0.36, "bones": ["Bip001 ? Thigh", "Bip001 ? Calf", "Bip001 ? Foot"]}],
+			"phases": [{"clip": "Normal_Attack_Delay", "over": "startup"}, {"clip": "Normal_Attack_Ing", "from": 0.133}]},
+		"jH": {"tilt": 5, "aim": 47, "aim_spine": 0.4, "tilt_pivot": "hips",
+			"overlays": [{"clip": "Move_Jump", "at": 0.36, "bones": ["Bip001 ? Thigh", "Bip001 ? Calf", "Bip001 ? Foot"]}],
+			"phases": [{"clip": "Normal_Attack_Delay", "over": "startup"}, {"clip": "Normal_Attack_Ing", "from": 0.133}]},
+		"skill": {"phases": [
+			{"clip": "Normal_Attack_Start", "mode": "fit", "over": 14},
+			{"clip": "Normal_Attack_Delay", "over": 2},
+			{"clip": "Normal_Attack_Ing", "mode": "fit", "from": 0.1, "over": 10},
+			{"clip": "Normal_Attack_End", "mode": "fit"}
+		]},
+		"skill_air": {"tilt": 3, "aim": 14, "aim_spine": 0.4, "tilt_pivot": "hips",
+			"overlays": [{"clip": "Move_Jump", "at": 0.36, "bones": ["Bip001 ? Thigh", "Bip001 ? Calf", "Bip001 ? Foot"]}],
+			"phases": [{"clip": "Normal_Attack_Delay", "over": "startup"}, {"clip": "Normal_Attack_Ing", "from": 0.1}]},
+		"ex": {"blend": 0, "phases": [
+			{"clip": "Exs", "mode": "fit", "from": 0.58, "to": 1.767, "over": "startup"},
+			{"clip": "Exs", "mode": "fit", "from": 1.767, "to": 2.733, "over": 14},
+			{"clip": "Exs", "mode": "fit", "from": 2.733, "to": 3.233, "over": 14},
+			{"clip": "Exs", "mode": "fit", "from": 3.233, "to": 3.833, "over": 14},
+			{"clip": "Exs", "mode": "fit", "from": 3.833, "to": 4.433, "over": 8},
+			{"clip": "Exs", "mode": "fit", "from": 4.867, "to": 5.3, "over": 6},
+			{"clip": "Exs", "mode": "fit", "from": 5.3, "to": 6.0}
+		]},
+		"close_L": {"clip": "Shoulder_Bump", "phases": [
+			{"over": "startup", "mode": "fit", "from": 0.0, "to": 0.083, "crouch": [[0, 0], [1, 0.08]], "tilt": [[0, 0], [0.5, -4], [1, 6]], "kick": [[0, 0], [1, 0.12]]},
+			{"over": "active", "mode": "fit", "from": 0.083, "to": 0.133, "crouch": 0.08, "tilt": 6, "kick": 0.12},
+			{"mode": "fit", "from": 0.133, "to": 0.33, "crouch": [[0, 0.08], [1, 0]], "tilt": [[0, 6], [1, 0]], "kick": [[0, 0.12], [1, 0]]}
+		]},
+		"close_H": {"clip": "Stock_Bash", "phases": [
+			{"over": "startup", "mode": "fit", "from": 0.0, "to": 0.2, "crouch": [[0, 0], [0.55, 0.03], [1, 0.07]], "tilt": [[0, 0], [0.55, -4], [1, 6]], "kick": [[0, 0], [0.55, 0], [1, 0.15]]},
+			{"over": "active", "mode": "fit", "from": 0.2, "to": 0.27, "crouch": 0.07, "tilt": 6, "kick": 0.15},
+			{"mode": "fit", "from": 0.27, "to": 0.65, "crouch": [[0, 0.07], [1, 0]], "tilt": [[0, 6], [1, 0]], "kick": [[0, 0.15], [1, 0]]}
+		]},
+		"6L": {"clip": "Muzzle_Jab", "phases": [
+			{"over": "startup", "mode": "fit", "from": 0.0, "to": 0.15, "crouch": [[0, 0], [0.5, 0.04], [1, 0.06]], "tilt": [[0, 0], [0.5, -3], [1, 5]], "kick": [[0, 0], [0.5, 0], [1, 0.3]]},
+			{"over": "active", "mode": "fit", "from": 0.15, "to": 0.2, "crouch": 0.06, "tilt": 5, "kick": 0.3},
+			{"mode": "fit", "from": 0.2, "to": 0.43, "crouch": [[0, 0.06], [1, 0]], "tilt": [[0, 5], [1, 0]], "kick": [[0, 0.3], [1, 0]]}
+		]},
+		"6H": {"clip": "Stock_Drop", "phases": [
+			{"over": "startup", "mode": "fit", "from": 0.0, "to": 0.367, "crouch": [[0, 0], [0.7, -0.02], [1, 0.07]], "tilt": [[0, 0], [0.7, -6], [1, 6]], "kick": [[0, 0], [0.8, 0], [1, 0.2]]},
+			{"over": "active", "mode": "fit", "from": 0.367, "to": 0.433, "crouch": 0.07, "tilt": 6, "kick": 0.2},
+			{"mode": "fit", "from": 0.433, "to": 0.87, "crouch": [[0, 0.07], [1, 0]], "tilt": [[0, 6], [1, 0]], "kick": [[0, 0.2], [1, 0]]}
+		]},
+		"throw": {"clip": "Shoulder_Toss", "phases": [
+			{"over": "startup", "mode": "fit", "from": 0.0, "to": 0.133, "crouch": [[0, 0], [1, 0.08]], "kick": [[0, 0], [1, 0.18]]},
+			{"over": "active", "mode": "fit", "from": 0.133, "to": 0.183, "crouch": 0.08, "kick": 0.18},
+			{"mode": "fit", "from": 0.183, "to": 0.683, "crouch": [[0, 0.08], [0.2, 0.12], [0.35, 0.06], [0.6, 0.06], [1, 0]], "kick": [[0, 0.18], [0.6, 0.18], [1, 0]]}
+		]},
+		"super": {"clip": "Public01", "mode": "fit"},
+		"super_down": {"phases": [
+			{"clip": "Normal_Attack_Start", "mode": "fit", "over": 14},
+			{"clip": "Normal_Attack_Delay", "over": 2},
+			{"clip": "Normal_Attack_Ing", "mode": "fit", "from": 0.1, "over": 10},
+			{"clip": "Normal_Attack_End", "mode": "fit"}
+		]}
+	},
+	"move_default": {"clip": "Normal_Idle", "mode": "hold", "speed": 0}
+}

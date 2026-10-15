@@ -1,0 +1,22 @@
+{
+ "timeout": 150,
+ "steps": [
+  {"session": {"mode": "training", "players": [
+    {"claimed": true, "device": "kb1", "fighter": 10004, "special": 20001},
+    {"claimed": true, "device": "kb2", "fighter": 10005, "special": 23005, "cpu": true}], "stage": "gehenna-night"}},
+  {"go": "fight", "style": "cut"},
+  {"wait": 2.4},
+  {"hold": ["kb1", "right"]}, {"wait": 0.9}, {"release": ["kb1", "right"]},
+  {"tap": ["kb1", "confirm"], "frames": 3}, {"wait": 0.12},
+  {"shot": "tmp/fx_kinds_light.png"},
+  {"wait": 0.5},
+  {"tap": ["kb1", "back"], "frames": 3}, {"wait": 0.25},
+  {"shot": "tmp/fx_kinds_heavy.png"},
+  {"wait": 0.8},
+  {"tap": ["kb1", "aux"], "frames": 3}, {"wait": 0.2},
+  {"shot": "tmp/fx_kinds_skill.png"},
+  {"wait": 1.0},
+  {"tap": [["kb1", "aux"], ["kb1", "aux2"]], "frames": 3}, {"wait": 0.3},
+  {"shot": "tmp/fx_kinds_super.png"}
+ ]
+}

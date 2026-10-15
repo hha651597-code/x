@@ -1,0 +1,97 @@
+{
+ "name": "props_p01_d",
+ "variant": "p01_d",
+ "group": "props",
+ "color_scale": 2.135,
+ "materials": {
+  "sb_slum_gehenna_01_atlas_9b7ef5": {
+   "kind": "opaque",
+   "shader": "MX/E-Standard",
+   "tex": "tex/sb_slum_gehenna_01_552d45d7.png",
+   "color_mul": [
+    1.50943,
+    1.41805,
+    1.31719
+   ],
+   "cutoff": 0.661,
+   "cull": 2,
+   "params": {
+    "color_scale": 2.135
+   }
+  }
+ },
+ "chunks": {
+  "ff_b0s4_sb_slum_gehenna_01_atlas_9b7ef5": {
+   "chunk": "b0s4",
+   "material": "sb_slum_gehenna_01_atlas_9b7ef5",
+   "tris": 5428,
+   "aabb": [
+    [
+     22.30441,
+     0.0,
+     36.90671
+    ],
+    [
+     41.30145,
+     2.77251,
+     54.80146
+    ]
+   ]
+  },
+  "ff_b0s5_sb_slum_gehenna_01_atlas_9b7ef5": {
+   "chunk": "b0s5",
+   "material": "sb_slum_gehenna_01_atlas_9b7ef5",
+   "tris": 5727,
+   "aabb": [
+    [
+     22.08625,
+     0.0,
+     54.78551
+    ],
+    [
+     34.35979,
+     2.61612,
+     63.40422
+    ]
+   ]
+  }
+ },
+ "stats": {
+  "tris": 11155,
+  "nodes": 2,
+  "items": 324,
+  "dropped": 0,
+  "layers": {
+   "near": 45966,
+   "mid": 32261,
+   "slabs_mid": 2302,
+   "slabs_far": 4291,
+   "horizon": 13573,
+   "far": 4251,
+   "hero_fight_a": 3346,
+   "hero_fight_b": 2782,
+   "hero_house_a": 3612,
+   "hero_house_b": 2840,
+   "crane_a": 2166,
+   "crane_b": 2166,
+   "arch_a": 4270,
+   "poles_a": 5696,
+   "poles_b": 3516,
+   "lamps_a": 3278,
+   "lamps_b": 2682,
+   "lamps_c": 2682,
+   "props_lot": 11155
+  }
+ },
+ "haze": {
+  "density": 0.0025,
+  "power": 1.2,
+  "amount": 0.9,
+  "color": [
+   0.42,
+   0.22,
+   0.24
+  ]
+ },
+ "ground_colour": null
+}

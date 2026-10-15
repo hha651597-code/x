@@ -1,0 +1,31 @@
+{
+ "timeout": 60,
+ "steps": [
+  {"session": {"mode": "versus2p", "players": [
+   {"claimed": true, "device": "kb1", "fighter": 10004, "special": 10017},
+   {"claimed": true, "device": "kb2", "fighter": 10005, "special": 10017}
+  ], "stage": "gehenna-night"}},
+  {"go": "fight", "style": "cut"},
+  {"wait": 2.4},
+  {"fighter": {"slot": 1, "pos": [-330, 560]}},
+  {"fighter": {"slot": 2, "pos": [330, 560]}},
+  {"fighter": {"slot": 1, "state": "BLOCK", "blockstun": 100}},
+  {"fighter": {"slot": 2, "state": "BLOCK", "blockstun": 100}},
+  {"wait": 0.5},
+  {"print": true},
+  {"wait": 0.9},
+  {"hold": [["kb1", "down"], ["kb2", "down"]]},
+  {"fighter": {"slot": 1, "state": "BLOCK", "blockstun": 100}},
+  {"fighter": {"slot": 2, "state": "BLOCK", "blockstun": 100}},
+  {"wait": 0.5},
+  {"print": true},
+  {"wait": 0.9},
+  {"release": ["kb1", "down"]},
+  {"release": ["kb2", "down"]},
+  {"fighter": {"slot": 1, "state": "BLOCK", "pos": [-330, 360], "blockstun": 100}},
+  {"fighter": {"slot": 2, "state": "BLOCK", "pos": [330, 360], "blockstun": 100}},
+  {"wait": 0.5},
+  {"print": true},
+  {"wait": 0.9}
+ ]
+}

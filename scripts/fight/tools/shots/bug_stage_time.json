@@ -1,0 +1,173 @@
+{
+ "timeout": 240,
+ "steps": [
+  {
+   "session": {
+    "mode": "training",
+    "stage": "gehenna-night",
+    "stage_time": "day",
+    "players": [
+     {
+      "claimed": true,
+      "device": "kb1",
+      "fighter": 10004,
+      "special": 10017
+     },
+     {
+      "claimed": false,
+      "device": "",
+      "fighter": 10005,
+      "special": 10017
+     }
+    ]
+   }
+  },
+  {
+   "mem": "time_baseline"
+  },
+  {
+   "go": "fight",
+   "style": "cut"
+  },
+  {
+   "frames": 30
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "mem": "time_1_day_in"
+  },
+  {
+   "shot": ".dev/out/bug/time_1_day.png",
+   "scale": 0.5
+  },
+  {
+   "frames": 60
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "go": "menu",
+   "style": "cut"
+  },
+  {
+   "frames": 30
+  },
+  {
+   "mem": "time_1_day_left"
+  },
+  {
+   "session": {
+    "mode": "training",
+    "stage": "gehenna-night",
+    "stage_time": "night",
+    "players": [
+     {
+      "claimed": true,
+      "device": "kb1",
+      "fighter": 10004,
+      "special": 10017
+     },
+     {
+      "claimed": false,
+      "device": "",
+      "fighter": 10005,
+      "special": 10017
+     }
+    ]
+   }
+  },
+  {
+   "go": "fight",
+   "style": "cut"
+  },
+  {
+   "frames": 30
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "mem": "time_2_night_in"
+  },
+  {
+   "shot": ".dev/out/bug/time_2_night.png",
+   "scale": 0.5
+  },
+  {
+   "frames": 60
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "go": "menu",
+   "style": "cut"
+  },
+  {
+   "frames": 30
+  },
+  {
+   "mem": "time_2_night_left"
+  },
+  {
+   "session": {
+    "mode": "training",
+    "stage": "gehenna-night",
+    "stage_time": "day",
+    "players": [
+     {
+      "claimed": true,
+      "device": "kb1",
+      "fighter": 10004,
+      "special": 10017
+     },
+     {
+      "claimed": false,
+      "device": "",
+      "fighter": 10005,
+      "special": 10017
+     }
+    ]
+   }
+  },
+  {
+   "go": "fight",
+   "style": "cut"
+  },
+  {
+   "frames": 30
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "mem": "time_3_day_in"
+  },
+  {
+   "shot": ".dev/out/bug/time_3_day.png",
+   "scale": 0.5
+  },
+  {
+   "frames": 60
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "go": "menu",
+   "style": "cut"
+  },
+  {
+   "frames": 30
+  },
+  {
+   "mem": "time_3_day_left"
+  },
+  {
+   "quit": true
+  }
+ ]
+}

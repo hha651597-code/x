@@ -1,0 +1,7 @@
+{"timeout": 90, "steps": [
+ {"session": {"mode": ""}},
+ {"go": "menu", "params": {}, "style": "cut"}, {"wait": 0.25}, {"shot": "/tmp/ba-ui-out/menu/menu_enter_a.png"},
+ {"wait": 0.2}, {"shot": "/tmp/ba-ui-out/menu/menu_enter_b.png"},
+ {"wait": 2.2}, {"shot": "/tmp/ba-ui-out/menu/menu_settled.png"},
+ {"quit": true}
+]}

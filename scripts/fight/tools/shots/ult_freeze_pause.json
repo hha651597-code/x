@@ -1,0 +1,131 @@
+{
+ "timeout": 120,
+ "steps": [
+  {
+   "session": {
+    "mode": "training",
+    "players": [
+     {
+      "claimed": true,
+      "device": "kb1",
+      "fighter": 10005,
+      "special": 10017
+     },
+     {
+      "claimed": false,
+      "fighter": 10004,
+      "special": 10017
+     }
+    ]
+   }
+  },
+  {
+   "go": "fight",
+   "style": "cut"
+  },
+  {
+   "frames": 150
+  },
+  {
+   "tap": [
+    "kb1",
+    "aux2"
+   ],
+   "frames": 3
+  },
+  {
+   "frames": 30
+  },
+  {
+   "print": true
+  },
+  {
+   "press": [
+    "shared",
+    "start"
+   ]
+  },
+  {
+   "frames": 90
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": ".dev/out/ult_pause_01_paused_mid_freeze.png"
+  },
+  {
+   "press": [
+    "shared",
+    "start"
+   ]
+  },
+  {
+   "frames": 20
+  },
+  {
+   "print": true
+  },
+  {
+   "frames": 60
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": ".dev/out/ult_pause_02_after.png"
+  },
+  {
+   "frames": 60
+  },
+  {
+   "fighter": {
+    "slot": 1,
+    "meter": 100
+   }
+  },
+  {
+   "tap": [
+    "kb1",
+    "aux2"
+   ],
+   "frames": 3
+  },
+  {
+   "frames": 20
+  },
+  {
+   "press": [
+    "shared",
+    "start"
+   ]
+  },
+  {
+   "press": [
+    "kb1",
+    "down"
+   ]
+  },
+  {
+   "press": [
+    "kb1",
+    "confirm"
+   ]
+  },
+  {
+   "frames": 10
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": ".dev/out/ult_pause_03_restart_mid_freeze.png"
+  },
+  {
+   "frames": 90
+  },
+  {
+   "print": true
+  }
+ ]
+}

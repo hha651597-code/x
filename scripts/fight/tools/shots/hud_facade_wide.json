@@ -1,0 +1,52 @@
+{
+"timeout": 120,
+"steps": [
+{
+"session": {
+"mode": "versus2p",
+"players": [
+{
+"claimed": true,
+"device": "kb1",
+"fighter": 10004,
+"special": 20001
+},
+{
+"claimed": true,
+"device": "kb2",
+"fighter": 10005,
+"special": 23005,
+"cpu": false
+}
+],
+"stage": "gehenna-night"
+}
+},
+{
+"go": "fight",
+"style": "cut"
+},
+{
+"wait": 2.4
+},
+{
+"fighter": {
+"slot": 1,
+"meter": 100
+}
+},
+{
+"fighter": {
+"slot": 2,
+"meter": 60
+}
+},
+{
+"frames": 10
+},
+{
+"shot": "/tmp/ba-hud-out/facade/wide_1600x900.png",
+"scale": 1.25
+}
+]
+}

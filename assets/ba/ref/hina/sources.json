@@ -1,0 +1,134 @@
+{
+ "character": "Sorasaki Hina (\u7a7a\u5d0e\u30d2\u30ca), roster id 10004, standard Gehenna Academy Prefect Team version (NOT Dress / Swimsuit / Nightwear)",
+ "rebuild": "python3 assets/ba/ref/hina/tools/build_refs.py  (re-creates every png + palette.json from the official inputs below)",
+ "verification": "official_assembled_hires.png (re-assembled from the game's Spine textures) was scaled onto official_portrait_10004.png (SchaleDB) -> mean absolute difference 5.3/255 per channel: two mirrors of the game files show the same art, at the same pose, pixel for pixel (differences = resampling + glow). The collection and icon textures show the same face, hairpins, horns and collar.",
+ "kept": [
+  {
+   "file": "official_portrait_10004.png",
+   "source": "https://schaledb.com/images/student/portrait/10004.webp (assets/ba/portrait/10004.webp; decoded losslessly)",
+   "what": "full official standing illustration, 1400x927, transparent: halo, 4 horns, wings, coat, MG",
+   "why_official": "SchaleDB serves the game's own student portrait texture (a render of the in-game Spine standing sprite hina_spr, illustrator DoReMi). Matches the Spine re-assembly to 5/255."
+  },
+  {
+   "file": "official_collection_10004.png",
+   "source": "https://schaledb.com/images/student/collection/10004.webp (assets/ba/collection/10004.webp)",
+   "what": "in-game bust card 200x226 (face, hairpins + ring chain, horn cracks, collar clasp)",
+   "why_official": "game UI texture (student collection card) mirrored by SchaleDB"
+  },
+  {
+   "file": "official_icon_10004.png",
+   "source": "https://schaledb.com/images/student/icon/10004.webp (assets/ba/icon/10004.webp)",
+   "what": "in-game head icon 120x120",
+   "why_official": "game UI texture mirrored by SchaleDB"
+  },
+  {
+   "file": "official_assembled_hires.png",
+   "source": "game Spine standing sprite hina_spr (hina_spr.skel/.atlas/.png) from https://github.com/kiraio-moe/Schale-Archive Spine_Characters/hina_spr (tree 4172f080), local copy .dev/spine/hina_spr/, parts in assets/ba/rig/hina/*.png, setup-pose placement .dev/rig/hina/assembly.json",
+   "what": "clean re-assembly of the official setup pose at the texture's NATIVE scale (2776x1857, ~2x the SchaleDB portrait), default face 01_nomal, halo glow copy baked at 60%",
+   "why_official": "only the game's own texture pixels, placed by the game's own Spine mesh coordinates (affine residual 0.00 px); no repainting"
+  },
+  {
+   "file": "official_part_upper_body.png",
+   "source": "Spine region hina_04 (assets/ba/rig/hina/hina_04__hina_04.png) masked with the original Spine mesh triangles",
+   "what": "head (blank face plate - eyes are separate overlays), horns, ribbon, hairpins, fur, collar, gloves, upper uniform, armband top, gun muzzle + prism",
+   "why_official": "game texture; atlas-packing debris (stray eye pieces) removed by the mesh mask only"
+  },
+  {
+   "file": "official_part_lower_body.png",
+   "source": "Spine region hina_02 (assets/ba/rig/hina/hina_02__hina_02.png), mesh-masked",
+   "what": "skirt + medals, thighs, stockings, boots, coat lining + outer, dangling sleeve, gun receiver/bipod/stock",
+   "why_official": "game texture"
+  },
+  {
+   "file": "official_part_wing_right.png",
+   "source": "Spine region hina_01, mesh-masked",
+   "what": "her left wing (viewer right) with gold claw cap, ivory talon, crystal drops, black trailing panel",
+   "why_official": "game texture"
+  },
+  {
+   "file": "official_part_wing_left.png",
+   "source": "Spine region hina_03, mesh-masked",
+   "what": "her right wing (viewer left)",
+   "why_official": "game texture"
+  },
+  {
+   "file": "official_faces_sheet.png",
+   "source": "the 22 face overlays of hina_spr (assets/ba/rig/hina/00_defalt__*.png, eyeclose__eyeclose.png) on the skin base colour",
+   "what": "every official expression the game ships for the standing sprite (names = Spine attachment names)",
+   "why_official": "game textures, unmodified, laid out side by side"
+  },
+  {
+   "file": "official_halo_layers.png",
+   "source": "Spine regions 01_halo, 02_halo, halo (assets/ba/rig/hina/01_halo2__01_halo.png, 02_halo__02_halo.png, halo__halo.png)",
+   "what": "the three halo textures (crown + blades; black under-ring; magenta ring + crystal)",
+   "why_official": "game textures"
+  },
+  {
+   "file": "chart_proportions_165px.png",
+   "source": "DERIVED from official_assembled_hires.png",
+   "what": "landmark lines with px values at a 165 px standing height + the official art at 1x and 3x of that size",
+   "why_official": "measurement chart over official pixels (annotations are ours)"
+  },
+  {
+   "file": "chart_palette.png",
+   "source": "DERIVED: palette.json",
+   "what": "the 32-colour palette as swatches with roles",
+   "why_official": "colours sampled from the official textures (k-means + pixel picks)"
+  }
+ ],
+ "crops": {
+  "dir": "crops/",
+  "scale": "native texture resolution (1 px = 1 texel of the game's Spine atlas) unless noted",
+  "files": {
+   "face_default.png": "hina_04 + face overlay 01_nomal (the setup face): half-lidded deadpan, iris rings, hairpins + ring chain",
+   "face_serious.png": "hina_04 + face overlay 05_serious",
+   "horns_and_ribbon.png": "all 4 horns with glowing crack veins + the crimson-striped ribbon behind",
+   "hands_gloves.png": "black gloves, gold-striped navy cuffs, the sling strap she holds",
+   "collar_chain_hairpins.png": "standing collar + gold clasp, gold chain from the hairpin ring, aiguillette",
+   "armband_fuuki.png": "the Prefect Team armband \u98a8\u7d00 (from the assembly)",
+   "coat_sleeve_armband.png": "the EMPTY coat sleeve with armband, cuff and buttons (from the assembly)",
+   "torso_medals_skirt.png": "gold chain belt, 8-point gold star medal, red cross medal, asymmetric skirt + slit",
+   "stockings_legs.png": "thigh-highs, boot tops",
+   "boots.png": "knee-high lace-up boots, gold buckles, lugged sole",
+   "wing_right.png": "full wing (her left) with claw cap, talon, crystals",
+   "weapon_full.png": "the whole MG 'Destroyer of Denouement' in one piece (from the assembly; body/hair overlap it)",
+   "weapon_muzzle_prism.png": "muzzle, violet prism block with magenta slits, perforated barrel jacket",
+   "weapon_rear_stock_bipod.png": "receiver, folded violet bipod, violet box, axe-shaped stock with gold chain",
+   "halo_assembled.png": "halo layers composed exactly as in the setup pose (crown + blades + under-ring + crystal)"
+  }
+ },
+ "text_sources": [
+  {
+   "what": "profile: 17 y/o, 3rd year, 142 cm, birthday 2/19, hobby 'sleeping, rest and relaxation', illustrator + designer DoReMi, weapon MG 'Destroyer of Denouement' (\u7d42\u5e55\uff1a\u30c7\u30b9\u30c8\u30ed\u30a4\u30e4\u30fc), Heavy armor, Explosive, Back/Striker, does not use cover, unique gear = 'Hina's Prefect Team armband' (\u30d2\u30ca\u306e\u98a8\u7d00\u59d4\u54e1\u4f1a\u306e\u8155\u7ae0), EX 'Denouement: Ishbosheth' = fan-shaped area damage, skill icons COMMON_SKILLICON_FAN / RELOAD / WEAPONBUFF / EXTRADAMAGE",
+   "source": "SchaleDB data/en/students.json (local copy .dev/data/students.json, = https://raw.githubusercontent.com/SchaleDB/SchaleDB/main/data/en/students.json) - the game's own data tables"
+  },
+  {
+   "what": "same profile + official wiki gallery list (Portrait_Hina.png, Hina_00.png chibi, Memorial_Lobby_Hina.jpg, Weapon_Icon_Hina.png)",
+   "source": "https://bluearchive.wiki/wiki/Hina (community wiki that hosts the game's own files)"
+  }
+ ],
+ "not_used": [
+  {
+   "what": "Hina (Dress) 10022, Hina (Swimsuit), Hina (Nightwear), Hina (Wounded) art",
+   "why": "official, but other outfits; the fighter is the standard prefect version 10004 only"
+  },
+  {
+   "what": "Nendoroid / scale-figure photos (e.g. premium.gamepedia.jp nendoroid Hina (Dress))",
+   "why": "merchandise: a 3D redesign in a different (SD figure) style, and a different outfit"
+  },
+  {
+   "what": "moegirl.org.cn, game8.jp, touchtapplay.com guide images",
+   "why": "third-party pages; images are resized/cropped copies or fan art that cannot be traced to a specific game file; nothing they show is not already in the game textures above"
+  },
+  {
+   "what": "pixiv / X / Danbooru fan art",
+   "why": "not official; never used"
+  }
+ ],
+ "official_weapon_icon_10004.png": {
+  "file": "official_weapon_icon_10004.png",
+  "source": "https://raw.githubusercontent.com/SchaleDB/SchaleDB/main/images/weapon/weapon_icon_10004.webp (SchaleDB mirror of the game's own weapon icon texture)",
+  "what": "the OFFICIAL SIDE VIEW of the weapon, drawn facing right (stock left, muzzle right), 800x205",
+  "official": "game texture served by SchaleDB; weapon name/profile text from SchaleDB students.json"
+ }
+}

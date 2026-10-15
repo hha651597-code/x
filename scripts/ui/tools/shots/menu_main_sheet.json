@@ -1,0 +1,172 @@
+{
+ "timeout": 120,
+ "steps": [
+  {
+   "session": {
+    "mode": ""
+   }
+  },
+  {
+   "timescale": 0.1
+  },
+  {
+   "go": "menu",
+   "params": {},
+   "style": "cut"
+  },
+  {
+   "wait": 0.12
+  },
+  {
+   "shot": "/tmp/ba-ui-out/menu/_menu_in_a.png",
+   "scale": 0.5
+  },
+  {
+   "wait": 0.08
+  },
+  {
+   "shot": "/tmp/ba-ui-out/menu/_menu_in_b.png",
+   "scale": 0.5
+  },
+  {
+   "wait": 0.08
+  },
+  {
+   "shot": "/tmp/ba-ui-out/menu/_menu_in_c.png",
+   "scale": 0.5
+  },
+  {
+   "wait": 0.1
+  },
+  {
+   "shot": "/tmp/ba-ui-out/menu/_menu_in_d.png",
+   "scale": 0.5
+  },
+  {
+   "wait": 0.14
+  },
+  {
+   "shot": "/tmp/ba-ui-out/menu/_menu_in_e.png",
+   "scale": 0.5
+  },
+  {
+   "timescale": 1
+  },
+  {
+   "wait": 1.0
+  },
+  {
+   "mouse": [
+    5,
+    5
+   ]
+  },
+  {
+   "mouse": [
+    790,
+    258
+   ]
+  },
+  {
+   "wait": 0.5
+  },
+  {
+   "shot": "/tmp/ba-ui-out/menu/_menu_sel_story.png",
+   "scale": 0.5
+  },
+  {
+   "mouse": [
+    1086,
+    187
+   ]
+  },
+  {
+   "wait": 0.5
+  },
+  {
+   "shot": "/tmp/ba-ui-out/menu/_menu_sel_versus2p.png",
+   "scale": 0.5
+  },
+  {
+   "mouse": [
+    1076,
+    304
+   ]
+  },
+  {
+   "wait": 0.5
+  },
+  {
+   "shot": "/tmp/ba-ui-out/menu/_menu_sel_versuscpu.png",
+   "scale": 0.5
+  },
+  {
+   "mouse": [
+    719,
+    409
+   ]
+  },
+  {
+   "wait": 0.5
+  },
+  {
+   "shot": "/tmp/ba-ui-out/menu/_menu_sel_single.png",
+   "scale": 0.5
+  },
+  {
+   "mouse": [
+    708,
+    501
+   ]
+  },
+  {
+   "wait": 0.5
+  },
+  {
+   "shot": "/tmp/ba-ui-out/menu/_menu_sel_extras.png",
+   "scale": 0.5
+  },
+  {
+   "mouse": [
+    701,
+    594
+   ]
+  },
+  {
+   "wait": 0.5
+  },
+  {
+   "shot": "/tmp/ba-ui-out/menu/_menu_sel_options.png",
+   "scale": 0.5
+  },
+  {
+   "mouse": [
+    915,
+    524
+   ]
+  },
+  {
+   "wait": 0.5
+  },
+  {
+   "shot": "/tmp/ba-ui-out/menu/_menu_sel_training.png",
+   "scale": 0.5
+  },
+  {
+   "mouse": [
+    1108,
+    524
+   ]
+  },
+  {
+   "wait": 0.5
+  },
+  {
+   "shot": "/tmp/ba-ui-out/menu/_menu_sel_network.png",
+   "scale": 0.5
+  },
+  {
+   "quit": true
+  }
+ ]
+}

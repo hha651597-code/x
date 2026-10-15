@@ -1,0 +1,184 @@
+{
+ "10004_calm_1.ogg": {
+  "clip": "Hina_LogIn_1.ogg",
+  "group": "UILobbyEnter1",
+  "pack": "JP_Hina.molru",
+  "sha256": "edcccb7e1b71c2d622152f983a69f88b7a18d4458024f1c34cc610ac1cb12c49",
+  "subtitle": "SchaleDB voice.json (English)"
+ },
+ "10004_calm_2.ogg": {
+  "clip": "Hina_Lobby_1.ogg",
+  "group": "UILobbyIdle1",
+  "pack": "JP_Hina.molru",
+  "sha256": "866ac45a83746aab15cd7ea7e8c5fcb181967a3f7a0a9e48ea646483227c8bae",
+  "subtitle": "SchaleDB voice.json (English)"
+ },
+ "10004_calm_3.ogg": {
+  "clip": "Hina_Lobby_3.ogg",
+  "group": "UILobbyIdle2",
+  "pack": "JP_Hina.molru",
+  "sha256": "b6f8a3ec91bc5de846998c946930c6d34529276358466f020738275da011d919",
+  "subtitle": "SchaleDB voice.json (English)"
+ },
+ "10004_calm_4.ogg": {
+  "clip": "Hina_Lobby_6.ogg",
+  "group": "UILobbyIdle3",
+  "pack": "JP_Hina.molru",
+  "sha256": "6252a304835f845d3a44de10720072b608debe82c5f228441fcf54b90b080bcd",
+  "subtitle": "SchaleDB voice.json (English)"
+ },
+ "10004_calm_5.ogg": {
+  "clip": "Hina_Lobby_7.ogg",
+  "group": "UILobbyIdle4",
+  "pack": "JP_Hina.molru",
+  "sha256": "dfc1d8110bb2c2f6eaa30dea57ab989a21c1893e29185d0f2a21ce3bfabda7f6",
+  "subtitle": "SchaleDB voice.json (English)"
+ },
+ "10004_calm_6.ogg": {
+  "clip": "Hina_Lobby_8.ogg",
+  "group": "UILobbyIdle5",
+  "pack": "JP_Hina.molru",
+  "sha256": "42b77cedf0e20387020a06d51b893316e78799fd43a8c44abb88b84b28164233",
+  "subtitle": "SchaleDB voice.json (English)"
+ },
+ "10004_lose_1.ogg": {
+  "clip": "Hina_Battle_Defense_1.ogg",
+  "group": "BattleDefense1",
+  "pack": "JP_Hina.molru",
+  "sha256": "7cfa5d3be5c7b0fcc8c52e91e3a1214c29759aa76159e3d0021412f8653a33d3",
+  "subtitle": "SchaleDB voice.json (English)"
+ },
+ "10004_lose_2.ogg": {
+  "clip": "Hina_Formation_In_1.ogg",
+  "group": "FormationIn1",
+  "pack": "JP_Hina.molru",
+  "sha256": "21178d788f8571a06e59980b5db9f3c89a1c390795354f852e738fbe4169f3dd",
+  "subtitle": "SchaleDB voice.json (English)"
+ },
+ "10004_lose_3.ogg": {
+  "clip": "Hina_Tactic_In_1.ogg",
+  "group": "TacticIn1",
+  "pack": "JP_Hina.molru",
+  "sha256": "b76db17cf984043d9d175e5c7246ccf656549ebeda9b76552ead678675137a48",
+  "subtitle": "SchaleDB voice.json (English)"
+ },
+ "10004_win_1.ogg": {
+  "clip": "Hina_Battle_Victory_1.ogg",
+  "group": "BattleVictory1",
+  "pack": "JP_Hina.molru",
+  "sha256": "86f4b97519a9412c4206068f51a4509c1f8d992acce58454a70cd17c0a51f6a6",
+  "subtitle": "SchaleDB voice.json (English)"
+ },
+ "10004_win_2.ogg": {
+  "clip": "Hina_Battle_Victory_2.ogg",
+  "group": "BattleVictory2",
+  "pack": "JP_Hina.molru",
+  "sha256": "092e3bf4d41dca5e7bb4f6b08bce59f70dfa37723e3bef4f61ecd7ab2f434f7c",
+  "subtitle": "SchaleDB voice.json (English)"
+ },
+ "10004_win_3.ogg": {
+  "clip": "Hina_Tactic_Victory_1.ogg",
+  "group": "TacticVictory1",
+  "pack": "JP_Hina.molru",
+  "sha256": "e721781e40011ac1411635d7ed4fd584c9bd02ef9d4dac634eceb92219a74677",
+  "subtitle": "SchaleDB voice.json (English)"
+ },
+ "10004_win_4.ogg": {
+  "clip": "Hina_Tactic_Victory_2.ogg",
+  "group": "TacticVictory2",
+  "pack": "JP_Hina.molru",
+  "sha256": "3b0a1cfaa8fc7100ff97c23741971999fa7683dab6a763cb7b1fb4a2fa4389ad",
+  "subtitle": "SchaleDB voice.json (English)"
+ },
+ "10005_calm_1.ogg": {
+  "clip": "Hoshino_LogIn_1.ogg",
+  "group": "UILobbyEnter1",
+  "pack": "JP_Hoshino.molru",
+  "sha256": "409d5ee7a651c4d7b4ea8a230c9c7990ee374310c48c0dba4745756e7e95c658",
+  "subtitle": "SchaleDB voice.json (English)"
+ },
+ "10005_calm_2.ogg": {
+  "clip": "Hoshino_LogIn_2.ogg",
+  "group": "UILobbyEnter2",
+  "pack": "JP_Hoshino.molru",
+  "sha256": "b697acda35b425ff53bebc2427e7d9ccd36e6bef73d5e0499751dcfc14ae2c2f",
+  "subtitle": "SchaleDB voice.json (English)"
+ },
+ "10005_calm_3.ogg": {
+  "clip": "Hoshino_Lobby_1.ogg",
+  "group": "UILobbyIdle1",
+  "pack": "JP_Hoshino.molru",
+  "sha256": "ffdddd815748ed8b1ebf9ab28b1cff355517fc7fd70336c3745e8f8d89e0a7ea",
+  "subtitle": "SchaleDB voice.json (English)"
+ },
+ "10005_calm_4.ogg": {
+  "clip": "Hoshino_Lobby_2.ogg",
+  "group": "UILobbyIdle2",
+  "pack": "JP_Hoshino.molru",
+  "sha256": "226a2d9322e6bc4e5758e51a852afb2a32b80ad2b2e1235e914d0011e05b6a88",
+  "subtitle": "SchaleDB voice.json (English)"
+ },
+ "10005_calm_5.ogg": {
+  "clip": "Hoshino_Lobby_3.ogg",
+  "group": "UILobbyIdle3",
+  "pack": "JP_Hoshino.molru",
+  "sha256": "11a744486a12de4a09cb497f7ca0e6808bdbb186960f872cf48c57db44d92eb4",
+  "subtitle": "SchaleDB voice.json (English)"
+ },
+ "10005_calm_6.ogg": {
+  "clip": "Hoshino_Lobby_5.ogg",
+  "group": "UILobbyIdle4",
+  "pack": "JP_Hoshino.molru",
+  "sha256": "078d26ea60aeedcab4670085f5eb3f2557d14ecdc98bf4574073fc539a464f93",
+  "subtitle": "SchaleDB voice.json (English)"
+ },
+ "10005_lose_1.ogg": {
+  "clip": "Hoshino_Battle_Defense_1.ogg",
+  "group": "BattleDefense1",
+  "pack": "JP_Hoshino.molru",
+  "sha256": "683071e32cddb5d1ad4c063001c8287edc8f6f1302d5aabe6ee23a4b17047dbb",
+  "subtitle": "SchaleDB voice.json (English)"
+ },
+ "10005_lose_2.ogg": {
+  "clip": "Hoshino_Formation_In_1.ogg",
+  "group": "FormationIn1",
+  "pack": "JP_Hoshino.molru",
+  "sha256": "266755422c87643e05166a52de46df9135c7ec0254115dbe1f26fab4efa88926",
+  "subtitle": "SchaleDB voice.json (English)"
+ },
+ "10005_lose_3.ogg": {
+  "clip": "Hoshino_Tactic_In_1.ogg",
+  "group": "TacticIn1",
+  "pack": "JP_Hoshino.molru",
+  "sha256": "6bcd4e4bc2fa292bf22b9274ee30adfc92e6ead3ba43efbb31529a303666e2fd",
+  "subtitle": "SchaleDB voice.json (English)"
+ },
+ "10005_win_1.ogg": {
+  "clip": "Hoshino_Battle_Victory_1.ogg",
+  "group": "BattleVictory1",
+  "pack": "JP_Hoshino.molru",
+  "sha256": "4704e230262ea4170c3524708d8785c07406a2337685069fc57ccc96c5376d2d",
+  "subtitle": "SchaleDB voice.json (English)"
+ },
+ "10005_win_2.ogg": {
+  "clip": "Hoshino_Battle_Victory_2.ogg",
+  "group": "BattleVictory2",
+  "pack": "JP_Hoshino.molru",
+  "sha256": "cb723c8b3e55576842672e4c01ab9635721b178ec92780bdbc4d8d92105d4d3c",
+  "subtitle": "SchaleDB voice.json (English)"
+ },
+ "10005_win_3.ogg": {
+  "clip": "Hoshino_Tactic_Victory_1.ogg",
+  "group": "TacticVictory1",
+  "pack": "JP_Hoshino.molru",
+  "sha256": "a832ab1e493a41e5798695f9a6b29a41acf2c8f62158f0e1cb9c7cc194b588d1",
+  "subtitle": "SchaleDB voice.json (English)"
+ },
+ "10005_win_4.ogg": {
+  "clip": "Hoshino_Tactic_Victory_2.ogg",
+  "group": "TacticVictory2",
+  "pack": "JP_Hoshino.molru",
+  "sha256": "1ed750a990b3e16941c645ff17fbe6ed6aa3881d41e942e9f6e5bad6d5a6b40c",
+  "subtitle": "SchaleDB voice.json (English)"
+ }
+}

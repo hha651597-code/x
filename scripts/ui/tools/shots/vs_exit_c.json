@@ -1,0 +1,8 @@
+{"timeout": 120, "steps": [
+ {"session": {"mode": "versus-cpu", "players": [{"claimed": true, "device": "kb1", "fighter": 10005, "special": 10040}, {"claimed": false, "device": "", "fighter": 10004, "special": 26005}], "stage": "gehenna-night"}},
+ {"go": "vs", "params": {}, "style": "cut"},
+ {"wait": 1.62}, {"shot": "/tmp/ba-ui-out/vs_select/vs_c_exit_a.png"},
+ {"wait": 0.3}, {"shot": "/tmp/ba-ui-out/vs_select/vs_c_exit_b.png"},
+ {"wait": 0.1}, {"shot": "/tmp/ba-ui-out/vs_select/vs_c_exit_c.png"},
+ {"quit": true}
+]}

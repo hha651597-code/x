@@ -1,0 +1,270 @@
+{
+ "timeout": 120,
+ "steps": [
+  {
+   "session": {
+    "mode": "training",
+    "players": [
+     {
+      "claimed": true,
+      "device": "kb1",
+      "fighter": 10004,
+      "special": 20001
+     },
+     {
+      "claimed": true,
+      "device": "kb2",
+      "fighter": 10005,
+      "special": 23005,
+      "cpu": true
+     }
+    ],
+    "stage": "gehenna-night"
+   }
+  },
+  {
+   "go": "fight",
+   "style": "cut"
+  },
+  {
+   "wait": 2.2
+  },
+  {
+   "hold": [
+    "kb1",
+    "right"
+   ]
+  },
+  {
+   "wait": 0.8
+  },
+  {
+   "release": [
+    "kb1",
+    "right"
+   ]
+  },
+  {
+   "wait": 0.2
+  },
+  {
+   "tap": [
+    "kb1",
+    "confirm"
+   ],
+   "frames": 3
+  },
+  {
+   "wait": 0.08
+  },
+  {
+   "print": true
+  },
+  {
+   "wait": 0.6
+  },
+  {
+   "tap": [
+    "kb1",
+    "back"
+   ],
+   "frames": 3
+  },
+  {
+   "wait": 0.1
+  },
+  {
+   "print": true
+  },
+  {
+   "wait": 0.9
+  },
+  {
+   "hold": [
+    "kb1",
+    "down"
+   ]
+  },
+  {
+   "wait": 0.1
+  },
+  {
+   "tap": [
+    "kb1",
+    "confirm"
+   ],
+   "frames": 3
+  },
+  {
+   "wait": 0.08
+  },
+  {
+   "print": true
+  },
+  {
+   "wait": 0.5
+  },
+  {
+   "tap": [
+    "kb1",
+    "back"
+   ],
+   "frames": 3
+  },
+  {
+   "wait": 0.1
+  },
+  {
+   "print": true
+  },
+  {
+   "release": [
+    "kb1",
+    "down"
+   ]
+  },
+  {
+   "wait": 0.9
+  },
+  {
+   "tap": [
+    "kb1",
+    "up"
+   ],
+   "frames": 3
+  },
+  {
+   "wait": 0.15
+  },
+  {
+   "tap": [
+    "kb1",
+    "confirm"
+   ],
+   "frames": 3
+  },
+  {
+   "wait": 0.08
+  },
+  {
+   "print": true
+  },
+  {
+   "wait": 1.0
+  },
+  {
+   "tap": [
+    "kb1",
+    "up"
+   ],
+   "frames": 3
+  },
+  {
+   "wait": 0.15
+  },
+  {
+   "tap": [
+    "kb1",
+    "back"
+   ],
+   "frames": 3
+  },
+  {
+   "wait": 0.1
+  },
+  {
+   "print": true
+  },
+  {
+   "wait": 1.0
+  },
+  {
+   "tap": [
+    "kb1",
+    "up"
+   ],
+   "frames": 3
+  },
+  {
+   "wait": 0.15
+  },
+  {
+   "tap": [
+    "kb1",
+    "aux"
+   ],
+   "frames": 3
+  },
+  {
+   "wait": 0.1
+  },
+  {
+   "print": true
+  },
+  {
+   "wait": 1.0
+  },
+  {
+   "tap": [
+    "kb1",
+    "aux"
+   ],
+   "frames": 3
+  },
+  {
+   "wait": 0.1
+  },
+  {
+   "print": true
+  },
+  {
+   "wait": 0.8
+  },
+  {
+   "hold": [
+    "kb1",
+    "aux"
+   ]
+  },
+  {
+   "wait": 0.7
+  },
+  {
+   "print": true
+  },
+  {
+   "release": [
+    "kb1",
+    "aux"
+   ]
+  },
+  {
+   "wait": 0.8
+  },
+  {
+   "fighter": {
+    "slot": 1,
+    "meter": 100
+   }
+  },
+  {
+   "tap": [
+    "kb1",
+    "aux2"
+   ],
+   "frames": 3
+  },
+  {
+   "wait": 0.1
+  },
+  {
+   "print": true
+  },
+  {
+   "wait": 3.0
+  },
+  {
+   "print": true
+  }
+ ]
+}

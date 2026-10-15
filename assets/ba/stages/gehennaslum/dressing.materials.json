@@ -1,0 +1,627 @@
+{
+ "materials": {
+  "slum_plant_0": {
+   "shader": "MX/E-Standard",
+   "keywords": [
+    "_SPECULAR_SETUP"
+   ],
+   "blend": {
+    "src": 1.0,
+    "dst": 0.0,
+    "cull": 2.0,
+    "zoffset_factor": 0.0
+   },
+   "floats": {
+    "_Cutoff": 0.661,
+    "_LightmapStrength": 1.0,
+    "_ReflectBaseAmount": 0.06,
+    "_ReflectAnglePower": 1.0,
+    "_ShadowAttenRefl": 0.0,
+    "_ReflectStrength": 0.5,
+    "_EmissionStrength": 0.0,
+    "_SpecPower": 195.0,
+    "_ShadowAttenSpec": 0.064
+   },
+   "colors": {
+    "_Color": [
+     1.50943,
+     1.41805,
+     1.31719,
+     1.0
+    ],
+    "_SpecLightColor": [
+     0.74902,
+     0.74902,
+     0.74902,
+     1.0
+    ],
+    "_SpecLightDir": [
+     0.0,
+     0.93974,
+     0.3419,
+     0.0
+    ]
+   },
+   "textures": {
+    "_MainTex": {
+     "file": "tex/dressing_atlas_d4f04782.png",
+     "scale": [
+      1.0,
+      1.0
+     ],
+     "offset": [
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  "gold_tuft_0": {
+   "shader": "MX/E-Standard",
+   "keywords": [
+    "_SPECULAR_SETUP"
+   ],
+   "blend": {
+    "src": 1.0,
+    "dst": 0.0,
+    "cull": 2.0,
+    "zoffset_factor": 1.0
+   },
+   "floats": {
+    "_Cutoff": 0.661,
+    "_LightmapStrength": 1.0,
+    "_ReflectBaseAmount": 0.06,
+    "_ReflectAnglePower": 1.0,
+    "_ShadowAttenRefl": 0.0,
+    "_ReflectStrength": 0.5,
+    "_EmissionStrength": 0.0,
+    "_SpecPower": 195.0,
+    "_ShadowAttenSpec": 0.064
+   },
+   "colors": {
+    "_Color": [
+     1.49804,
+     1.49804,
+     1.49804,
+     1.0
+    ],
+    "_SpecLightColor": [
+     0.74902,
+     0.74902,
+     0.74902,
+     1.0
+    ],
+    "_SpecLightDir": [
+     0.0,
+     0.93974,
+     0.3419,
+     0.0
+    ]
+   },
+   "textures": {
+    "_MainTex": {
+     "file": "tex/dressing_atlas_d4f04782.png",
+     "scale": [
+      1.0,
+      1.0
+     ],
+     "offset": [
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  "gold_grass_0": {
+   "shader": "MX/E-Standard",
+   "keywords": [
+    "_SPECULAR_SETUP"
+   ],
+   "blend": {
+    "src": 1.0,
+    "dst": 0.0,
+    "cull": 2.0,
+    "zoffset_factor": 1.0
+   },
+   "floats": {
+    "_Cutoff": 0.661,
+    "_LightmapStrength": 1.0,
+    "_ReflectBaseAmount": 0.06,
+    "_ReflectAnglePower": 1.0,
+    "_ShadowAttenRefl": 0.0,
+    "_ReflectStrength": 0.5,
+    "_EmissionStrength": 0.0,
+    "_SpecPower": 195.0,
+    "_ShadowAttenSpec": 0.064
+   },
+   "colors": {
+    "_Color": [
+     1.49804,
+     1.49804,
+     1.49804,
+     1.0
+    ],
+    "_SpecLightColor": [
+     0.74902,
+     0.74902,
+     0.74902,
+     1.0
+    ],
+    "_SpecLightDir": [
+     0.0,
+     0.93974,
+     0.3419,
+     0.0
+    ]
+   },
+   "textures": {
+    "_MainTex": {
+     "file": "tex/dressing_atlas_d4f04782.png",
+     "scale": [
+      1.0,
+      1.0
+     ],
+     "offset": [
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  "gold_grass_1": {
+   "shader": "MX/E-Standard",
+   "keywords": [
+    "_ENV_CUTOUT_MODE",
+    "_SPECULAR_SETUP"
+   ],
+   "blend": {
+    "src": 1.0,
+    "dst": 0.0,
+    "cull": 2.0,
+    "zoffset_factor": 0.0
+   },
+   "floats": {
+    "_Cutoff": 0.661,
+    "_LightmapStrength": 1.0,
+    "_ReflectBaseAmount": 0.06,
+    "_ReflectAnglePower": 1.0,
+    "_ShadowAttenRefl": 0.0,
+    "_ReflectStrength": 0.5,
+    "_EmissionStrength": 0.0,
+    "_SpecPower": 195.0,
+    "_ShadowAttenSpec": 0.064
+   },
+   "colors": {
+    "_Color": [
+     1.49804,
+     1.49804,
+     1.49804,
+     1.0
+    ],
+    "_SpecLightColor": [
+     0.74902,
+     0.74902,
+     0.74902,
+     1.0
+    ],
+    "_SpecLightDir": [
+     0.0,
+     0.93974,
+     0.3419,
+     0.0
+    ]
+   },
+   "textures": {
+    "_MainTex": {
+     "file": "tex/dressing_atlas_d4f04782.png",
+     "scale": [
+      1.0,
+      1.0
+     ],
+     "offset": [
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  "dry_crown_0": {
+   "shader": "MX/E-Standard",
+   "keywords": [
+    "_ENV_CUTOUT_MODE",
+    "_SPECULAR_SETUP"
+   ],
+   "blend": {
+    "src": 1.0,
+    "dst": 0.0,
+    "cull": 2.0,
+    "zoffset_factor": 1.0
+   },
+   "floats": {
+    "_Cutoff": 0.661,
+    "_LightmapStrength": 1.0,
+    "_ReflectBaseAmount": 0.06,
+    "_ReflectAnglePower": 1.0,
+    "_ShadowAttenRefl": 0.0,
+    "_ReflectStrength": 0.5,
+    "_EmissionStrength": 0.0,
+    "_SpecPower": 195.0,
+    "_ShadowAttenSpec": 0.064
+   },
+   "colors": {
+    "_Color": [
+     1.50943,
+     1.41805,
+     1.31719,
+     1.0
+    ],
+    "_SpecLightColor": [
+     0.74902,
+     0.74902,
+     0.74902,
+     1.0
+    ],
+    "_SpecLightDir": [
+     0.0,
+     0.93974,
+     0.3419,
+     0.0
+    ]
+   },
+   "textures": {
+    "_MainTex": {
+     "file": "tex/dressing_atlas_d4f04782.png",
+     "scale": [
+      1.0,
+      1.0
+     ],
+     "offset": [
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  "fringe_0": {
+   "shader": "MX/E-Standard",
+   "keywords": [
+    "_ENV_CUTOUT_MODE",
+    "_SPECULAR_SETUP"
+   ],
+   "blend": {
+    "src": 1.0,
+    "dst": 0.0,
+    "cull": 0.0,
+    "zoffset_factor": -1.0
+   },
+   "floats": {
+    "_Cutoff": 0.5,
+    "_LightmapStrength": 1.0,
+    "_ReflectBaseAmount": 0.0,
+    "_ReflectAnglePower": 2.0,
+    "_ShadowAttenRefl": 0.0,
+    "_ReflectStrength": 0.0,
+    "_EmissionStrength": 1.0,
+    "_SpecPower": 1.0,
+    "_ShadowAttenSpec": 0.2
+   },
+   "colors": {
+    "_Color": [
+     0.67144,
+     0.67144,
+     0.67144,
+     1.0
+    ],
+    "_SpecLightColor": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "_SpecLightDir": [
+     0.0,
+     0.93974,
+     0.3419,
+     0.0
+    ]
+   },
+   "textures": {
+    "_MainTex": {
+     "file": "tex/dressing_atlas_d4f04782.png",
+     "scale": [
+      1.0,
+      1.0
+     ],
+     "offset": [
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  "ivy_a_0": {
+   "shader": "MX/E-Standard",
+   "keywords": [
+    "_ENV_CUTOUT_MODE",
+    "_SPECULAR_SETUP"
+   ],
+   "blend": {
+    "src": 1.0,
+    "dst": 0.0,
+    "cull": 0.0,
+    "zoffset_factor": -1.0
+   },
+   "floats": {
+    "_Cutoff": 0.5,
+    "_LightmapStrength": 1.0,
+    "_ReflectBaseAmount": 0.0,
+    "_ReflectAnglePower": 2.0,
+    "_ShadowAttenRefl": 0.0,
+    "_ReflectStrength": 0.0,
+    "_EmissionStrength": 1.0,
+    "_SpecPower": 1.0,
+    "_ShadowAttenSpec": 0.2
+   },
+   "colors": {
+    "_Color": [
+     0.67144,
+     0.67144,
+     0.67144,
+     1.0
+    ],
+    "_SpecLightColor": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "_SpecLightDir": [
+     0.0,
+     0.93974,
+     0.3419,
+     0.0
+    ]
+   },
+   "textures": {
+    "_MainTex": {
+     "file": "tex/dressing_atlas_d4f04782.png",
+     "scale": [
+      1.0,
+      1.0
+     ],
+     "offset": [
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  "ivy_b_0": {
+   "shader": "MX/E-Standard",
+   "keywords": [
+    "_ENV_CUTOUT_MODE",
+    "_SPECULAR_SETUP"
+   ],
+   "blend": {
+    "src": 1.0,
+    "dst": 0.0,
+    "cull": 0.0,
+    "zoffset_factor": -1.0
+   },
+   "floats": {
+    "_Cutoff": 0.5,
+    "_LightmapStrength": 1.0,
+    "_ReflectBaseAmount": 0.0,
+    "_ReflectAnglePower": 2.0,
+    "_ShadowAttenRefl": 0.0,
+    "_ReflectStrength": 0.0,
+    "_EmissionStrength": 1.0,
+    "_SpecPower": 1.0,
+    "_ShadowAttenSpec": 0.2
+   },
+   "colors": {
+    "_Color": [
+     0.67144,
+     0.67144,
+     0.67144,
+     1.0
+    ],
+    "_SpecLightColor": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "_SpecLightDir": [
+     0.0,
+     0.93974,
+     0.3419,
+     0.0
+    ]
+   },
+   "textures": {
+    "_MainTex": {
+     "file": "tex/dressing_atlas_d4f04782.png",
+     "scale": [
+      1.0,
+      1.0
+     ],
+     "offset": [
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  "ivy_c_0": {
+   "shader": "MX/E-Standard",
+   "keywords": [
+    "_ENV_CUTOUT_MODE",
+    "_SPECULAR_SETUP"
+   ],
+   "blend": {
+    "src": 1.0,
+    "dst": 0.0,
+    "cull": 0.0,
+    "zoffset_factor": -1.0
+   },
+   "floats": {
+    "_Cutoff": 0.5,
+    "_LightmapStrength": 1.0,
+    "_ReflectBaseAmount": 0.0,
+    "_ReflectAnglePower": 2.0,
+    "_ShadowAttenRefl": 0.0,
+    "_ReflectStrength": 0.0,
+    "_EmissionStrength": 1.0,
+    "_SpecPower": 1.0,
+    "_ShadowAttenSpec": 0.2
+   },
+   "colors": {
+    "_Color": [
+     0.67144,
+     0.67144,
+     0.67144,
+     1.0
+    ],
+    "_SpecLightColor": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "_SpecLightDir": [
+     0.0,
+     0.93974,
+     0.3419,
+     0.0
+    ]
+   },
+   "textures": {
+    "_MainTex": {
+     "file": "tex/dressing_atlas_d4f04782.png",
+     "scale": [
+      1.0,
+      1.0
+     ],
+     "offset": [
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  "dead_tree_0": {
+   "shader": "MX/E-Standard",
+   "keywords": [
+    "_SPECULAR_SETUP"
+   ],
+   "blend": {
+    "src": 1.0,
+    "dst": 0.0,
+    "cull": 2.0,
+    "zoffset_factor": 0.0
+   },
+   "floats": {
+    "_Cutoff": 0.661,
+    "_LightmapStrength": 1.0,
+    "_ReflectBaseAmount": 0.06,
+    "_ReflectAnglePower": 1.0,
+    "_ShadowAttenRefl": 0.0,
+    "_ReflectStrength": 0.5,
+    "_EmissionStrength": 0.0,
+    "_SpecPower": 195.0,
+    "_ShadowAttenSpec": 0.064
+   },
+   "colors": {
+    "_Color": [
+     1.50943,
+     1.41805,
+     1.31719,
+     1.0
+    ],
+    "_SpecLightColor": [
+     0.74902,
+     0.74902,
+     0.74902,
+     1.0
+    ],
+    "_SpecLightDir": [
+     0.0,
+     0.93974,
+     0.3419,
+     0.0
+    ]
+   },
+   "textures": {
+    "_MainTex": {
+     "file": "tex/dressing_atlas_d4f04782.png",
+     "scale": [
+      1.0,
+      1.0
+     ],
+     "offset": [
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  "dead_tree_1": {
+   "shader": "MX/E-Standard",
+   "keywords": [
+    "_ENV_CUTOUT_MODE",
+    "_SPECULAR_SETUP"
+   ],
+   "blend": {
+    "src": 1.0,
+    "dst": 0.0,
+    "cull": 2.0,
+    "zoffset_factor": 1.0
+   },
+   "floats": {
+    "_Cutoff": 0.661,
+    "_LightmapStrength": 1.0,
+    "_ReflectBaseAmount": 0.06,
+    "_ReflectAnglePower": 1.0,
+    "_ShadowAttenRefl": 0.0,
+    "_ReflectStrength": 0.5,
+    "_EmissionStrength": 0.0,
+    "_SpecPower": 195.0,
+    "_ShadowAttenSpec": 0.064
+   },
+   "colors": {
+    "_Color": [
+     1.50943,
+     1.41805,
+     1.31719,
+     1.0
+    ],
+    "_SpecLightColor": [
+     0.74902,
+     0.74902,
+     0.74902,
+     1.0
+    ],
+    "_SpecLightDir": [
+     0.0,
+     0.93974,
+     0.3419,
+     0.0
+    ]
+   },
+   "textures": {
+    "_MainTex": {
+     "file": "tex/dressing_atlas_d4f04782.png",
+     "scale": [
+      1.0,
+      1.0
+     ],
+     "offset": [
+      0.0,
+      0.0
+     ]
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,689 @@
+{
+  "version": 1,
+  "notes": [
+    "RandomPitchMin/Max has no stated unit. Semitones are assumed: pitch_scale = 2^(n/12) * scale. Unverified; listen before trusting it.",
+    "vol, gap, delay and channel were set from the table rows and from waveforms, not by ear.",
+    "Entries with guess: true have no AudioAnimatorExcel row; their vol is a first guess.",
+    "gap and delay are sim ticks (60 per second). delay is a hint for the fighter hook-up; Sfx ignores it.",
+    "mute_in lists move keys during which the event is silent.",
+    "gain_db is added to volume_db after the 0 dB clamp. SFX only pull true peaks down to -1.5 dB. Voices aim at -16 LUFS and never pass the -1.5 dB true-peak ceiling.",
+    "Voice events: priority 5 wins; cuts_all plays through any voice, busy time and gap."
+  ],
+  "clips": {
+    "sfx/SFX_Common_HMG_01.wav": {
+      "sha256": "516c816884767dbfa19169ed25a3e9d6f030ea875f564d53a26e3d2da7481a11",
+      "seconds": 0.809,
+      "gain_db": -1.9
+    },
+    "sfx/SFX_Common_HMG_02.wav": {
+      "sha256": "37ebcf4b74a7069eaf9b97fb247dded1e827c5da6c67dba72ca36b30b5c3a46b",
+      "seconds": 0.759,
+      "gain_db": -2.4
+    },
+    "sfx/SFX_Common_HMG_03.wav": {
+      "sha256": "82a18b205510769b0611a3bbc8b111662589120fe271bc0aba8fe954f71dac0a",
+      "seconds": 0.759,
+      "gain_db": -2.0
+    },
+    "sfx/SFX_Common_HMG_04.wav": {
+      "sha256": "d9b6caeb8ec04083fcdc214f547fe186479c7864facce1654a8e4a3ec08a821b",
+      "seconds": 0.748,
+      "gain_db": -1.8
+    },
+    "sfx/SFX_Common_HMG_05.wav": {
+      "sha256": "8f2d315d53c3f9eab2121e3d7228e786c7c0cca12af308da69d3934b45f1e9fb",
+      "seconds": 0.806,
+      "gain_db": -2.4
+    },
+    "sfx/SFX_Common_HMG_Reload_Hina_01.wav": {
+      "sha256": "fc9583001f5367cfcfebb21a2e9468cbb1acd06498101a78e1de9a01da0529f5",
+      "seconds": 2.043,
+      "gain_db": -1.9
+    },
+    "sfx/SFX_Common_HMG_Reload_Hina_02.wav": {
+      "sha256": "da109e34645946c3b59c8c9e739fd4999260afd706a2bd8ca48c0fb7d4e19391",
+      "seconds": 2.043,
+      "gain_db": -1.8
+    },
+    "sfx/SFX_Common_HMG_Reload_Hina_03.wav": {
+      "sha256": "d91d02283d5c95ee004831ecad6f97828629d3067b0bdc94493b09260a040dc2",
+      "seconds": 2.043,
+      "gain_db": -1.8
+    },
+    "sfx/SFX_Common_HMG_Start_Hina_01.wav": {
+      "sha256": "0a26f77fd599a1158e2514fd45088afb66c0cd7cdf4ff9b718bec2c833d8db1f",
+      "seconds": 0.838,
+      "gain_db": -2.0
+    },
+    "sfx/SFX_Common_HMG_Start_Hina_02.wav": {
+      "sha256": "17b42e754635d2ceb532dae107d3dac1d59c91d8e01e5213cfd2152b7a7549cb",
+      "seconds": 0.838,
+      "gain_db": -2.4
+    },
+    "sfx/SFX_Common_HMG_Start_Hina_03.wav": {
+      "sha256": "3470df7ffd2314d79cc97469436ec2153b57add22e088ff0e401362b90c6e93f",
+      "seconds": 0.838,
+      "gain_db": -2.1
+    },
+    "sfx/SFX_Common_Regen_Ing.wav": {
+      "sha256": "67b2775e99756c09967b7be389a573d8804327324bee853a095daa1ad15b222e",
+      "seconds": 1.086,
+      "gain_db": 0.0
+    },
+    "sfx/SFX_Common_SG_01.wav": {
+      "sha256": "b510a94756fd09ceab2180dee5efa027bd2a7760de43b7d7c210bab51edba1e9",
+      "seconds": 0.669,
+      "gain_db": -1.8
+    },
+    "sfx/SFX_Common_SG_02.wav": {
+      "sha256": "9f02ff3bdf42b00e005257d406089f608bcf72485693672934ac7e6ed78f2831",
+      "seconds": 0.669,
+      "gain_db": -2.2
+    },
+    "sfx/SFX_Common_SG_03.wav": {
+      "sha256": "097c43fb7bfcd83391bebe6128cdaa1ae6a8fb7cd40cf1041324803bfd93c631",
+      "seconds": 0.669,
+      "gain_db": -1.9
+    },
+    "sfx/SFX_Common_SG_04.wav": {
+      "sha256": "8a52428986c1086739b75b5d19b9e0a3fe9eaf4b12186c88f0652fe6cdc93855",
+      "seconds": 0.669,
+      "gain_db": -1.6
+    },
+    "sfx/SFX_Common_SG_05.wav": {
+      "sha256": "f88146be129b10cbc9ff094a5c5f3eba4fe1b34ea0cadbf9cdfbf5c5f17bd95a",
+      "seconds": 0.669,
+      "gain_db": -1.8
+    },
+    "sfx/SFX_Common_SG_06.wav": {
+      "sha256": "e2fcea5fdcf3afb80e77552e421e5a9f9c6322208faac183e84ebda5bef3b2e3",
+      "seconds": 0.669,
+      "gain_db": -1.7
+    },
+    "sfx/SFX_Common_SG_07.wav": {
+      "sha256": "94a84bb5f89089f4c6c08e0281f9a4003f304ec7b09bbfde519ff408323d5606",
+      "seconds": 0.669,
+      "gain_db": -1.5
+    },
+    "sfx/SFX_Common_SG_08.wav": {
+      "sha256": "f6f3114d2b19c9f61752bd3ffa5efa5f370b8b8d88c3f3ac881ccb081b4fc7e8",
+      "seconds": 0.669,
+      "gain_db": -1.5
+    },
+    "sfx/SFX_Common_SG_Delay_01.wav": {
+      "sha256": "1bc7071bdc4d6f0c027a72f30086c6204ca6252160029ab3b421c455f84d8c7e",
+      "seconds": 0.381,
+      "gain_db": 0.0
+    },
+    "sfx/SFX_Common_SG_Delay_02.wav": {
+      "sha256": "f658f6de59ba8a71d4cc7cdf365c8f46c425e979d8091d0dd05a3aa7077749e8",
+      "seconds": 0.381,
+      "gain_db": 0.0
+    },
+    "sfx/SFX_Common_SG_Delay_03.wav": {
+      "sha256": "9658af3513b1f67f34feb64b355244e0bcf73912afbc145688a33841e80641c3",
+      "seconds": 0.381,
+      "gain_db": 0.0
+    },
+    "sfx/SFX_Common_SG_Delay_04.wav": {
+      "sha256": "ed1b2d3e5a83e2d025e06a67e6a2ccdc3c8273e2c53f5215a983df0d49aca95f",
+      "seconds": 0.381,
+      "gain_db": 0.0
+    },
+    "sfx/SFX_Common_SG_Delay_05.wav": {
+      "sha256": "46ff7f5e5d5e2431de14417ee04c0b8cdfeeed4c66067049e23e51b2dc2e09d9",
+      "seconds": 0.381,
+      "gain_db": 0.0
+    },
+    "sfx/SFX_Common_SG_Delay_06.wav": {
+      "sha256": "fae92fa706302542e4cc0d014b409bbddcc7ebf989241de90a1bee9ddb780689",
+      "seconds": 0.381,
+      "gain_db": 0.0
+    },
+    "sfx/SFX_Common_SG_Delay_07.wav": {
+      "sha256": "f173ed9550df7ab1e0ec18f8d688777444f7ff31af3b86690e9dd39150ed06a6",
+      "seconds": 0.381,
+      "gain_db": 0.0
+    },
+    "sfx/SFX_Common_SG_Delay_08.wav": {
+      "sha256": "10853c0c655b4e7c4e2ccc6be4c68b79410d006ed8b6c6172d1714179b631daa",
+      "seconds": 0.381,
+      "gain_db": 0.0
+    },
+    "sfx/SFX_Common_SG_Reload_01.wav": {
+      "sha256": "2a3903ec1fa6eb4a0c95effc82a104f73381e1ba4e8e828863f6b26702549374",
+      "seconds": 1.109,
+      "gain_db": -4.3
+    },
+    "sfx/SFX_Common_SG_Reload_02.wav": {
+      "sha256": "58f3a8b1443d433611a68bf81c7a953c590a74fc2518839161f1a5dae7ca1d05",
+      "seconds": 1.109,
+      "gain_db": -3.6
+    },
+    "sfx/SFX_Common_SG_Reload_03.wav": {
+      "sha256": "e0611d22500912118b227328e2270438fb323df65efdf831dbd4de75ba2623e7",
+      "seconds": 1.109,
+      "gain_db": -3.6
+    },
+    "sfx/SFX_Common_SG_Reload_04.wav": {
+      "sha256": "6e8e1a0adeca4dcd5bb65fdcf470d7f6a06caaddf48eb92258b98f2beaf23179",
+      "seconds": 1.109,
+      "gain_db": -3.5
+    },
+    "sfx/SFX_Common_SG_Reload_05.wav": {
+      "sha256": "0e05a44af5c1dfc97acc2180692bfb4ced338dd8381515da0396266168396774",
+      "seconds": 1.109,
+      "gain_db": -3.7
+    },
+    "sfx/SFX_JSD_Laser_02.wav": {
+      "sha256": "abdb4854fec20d6424120a938c3593d6aec1dc93219f44ad1a929c73fc9f2c29",
+      "seconds": 0.697,
+      "gain_db": 0.0
+    },
+    "sfx/SFX_Public_Hina.wav": {
+      "sha256": "e6ca37b1d8e6ee5aa4230a67f119c8eb4e1cd27ffac9dd57b36880db3acb29a0",
+      "seconds": 1.779,
+      "gain_db": -1.6
+    },
+    "sfx/SFX_Shot_Impact_Hit_01.wav": {
+      "sha256": "f74b3975781d7045338d57c9b38bd800f2af6b60f7948329129694a53b7c7781",
+      "seconds": 0.484,
+      "gain_db": -3.0
+    },
+    "sfx/SFX_Shot_Impact_Hit_02.wav": {
+      "sha256": "9980fe01f2f53b139f35e879c0affe85d6a2b77802bd1ac870344e2257845672",
+      "seconds": 0.484,
+      "gain_db": -2.9
+    },
+    "sfx/SFX_Shot_Impact_Hit_03.wav": {
+      "sha256": "f7c2556b087c2009815d751304fbe29f9703af786b02c0dc4c2a5e9069afe4b7",
+      "seconds": 0.484,
+      "gain_db": -2.7
+    },
+    "sfx/SFX_Skill_Hina_Ex.wav": {
+      "sha256": "6fe150e53da6950f03de9819fbc8b609bf204d41e97b2bda27ec54040c5db7f4",
+      "seconds": 5.529,
+      "gain_db": -3.6
+    },
+    "sfx/SFX_Skill_Hina_Ex_Cut_in.wav": {
+      "sha256": "a3dc6a6a3c34fde11b8a0bbc516925769dea49564b312253bf88ebfcb6bc66eb",
+      "seconds": 2.831,
+      "gain_db": -3.0
+    },
+    "sfx/SFX_Skill_Hoshino_Ex_Activate.wav": {
+      "sha256": "2670b6ebea4be9e17d5e87dfddc4537c9877e9778bf209e0a5ee6a416b6d28a2",
+      "seconds": 1.626,
+      "gain_db": -3.5
+    },
+    "sfx/SFX_Skill_Hoshino_Ex_Cut_in.wav": {
+      "sha256": "e60991f6efd4c68781bf6cdf34fb5ecb02fd1dc3b5a3b0ec1f43c9fa0f0285e2",
+      "seconds": 3.838,
+      "gain_db": -3.2
+    },
+    "sfx/SFX_Skill_Hoshino_Ex_Reload.wav": {
+      "sha256": "7a4c434e42b4b67df1aafe73291f96a17a2e2f609ce47e81df82424a6070872c",
+      "seconds": 0.95,
+      "gain_db": -1.1
+    },
+    "voice/hina/Hina_Battle_Damage_1.ogg": {
+      "sha256": "eb7bb18ada9fc5bed5b06a0a51599217b710cc6823b8d4a41feeea45f12591d6",
+      "seconds": 1.292,
+      "gain_db": 5.2
+    },
+    "voice/hina/Hina_Battle_Damage_2.ogg": {
+      "sha256": "3e1e0edf6f414fe7e6fcfdab5f9f27927232aaf1d1e381082c9b77edd6a75067",
+      "seconds": 1.681,
+      "gain_db": -0.9
+    },
+    "voice/hina/Hina_Battle_Damage_3.ogg": {
+      "sha256": "d1a266dc99c391d72793951e60a9b463b0357091874ba975f5c38d42b8dc7d59",
+      "seconds": 0.423,
+      "gain_db": 3.7
+    },
+    "voice/hina/Hina_Battle_In_1.ogg": {
+      "sha256": "86da19c2d89e32c532536b9bd9dc539e8b75e1b9e47d98b7aac204d05f856903",
+      "seconds": 3.191,
+      "gain_db": -1.9
+    },
+    "voice/hina/Hina_Battle_In_2.ogg": {
+      "sha256": "631805267e142d12a165e19fea52826e3e10c9789258ff8e8c267c032ff15142",
+      "seconds": 1.052,
+      "gain_db": -0.8
+    },
+    "voice/hina/Hina_Battle_Retire.ogg": {
+      "sha256": "0f401a89f1ffe649e15a083f1dc077f51c9053323d44a6d5113033acb82e00f6",
+      "seconds": 3.655,
+      "gain_db": 2.2
+    },
+    "voice/hina/Hina_Battle_Victory_1.ogg": {
+      "sha256": "86f4b97519a9412c4206068f51a4509c1f8d992acce58454a70cd17c0a51f6a6",
+      "seconds": 2.892,
+      "gain_db": -0.2
+    },
+    "voice/hina/Hina_Battle_Victory_2.ogg": {
+      "sha256": "092e3bf4d41dca5e7bb4f6b08bce59f70dfa37723e3bef4f61ecd7ab2f434f7c",
+      "seconds": 2.849,
+      "gain_db": -1.5
+    },
+    "voice/hina/Hina_CommonSkill.ogg": {
+      "sha256": "6716aae043d27109bb02bb48008510b72892cbb58222da84bb560f44f44b30a7",
+      "seconds": 0.912,
+      "gain_db": -2.3
+    },
+    "voice/hina/Hina_ExSkill_1.ogg": {
+      "sha256": "f76a1e674fee4f046992ac90ff558e5079f1c61df636b879c1e0452d11aeb27f",
+      "seconds": 1.697,
+      "gain_db": -0.5
+    },
+    "voice/hina/Hina_ExSkill_2.ogg": {
+      "sha256": "0019ae83d0d18d2bd939214c6de5f3612b6dd8b1c53eeeff167e07cf26b2c017",
+      "seconds": 1.309,
+      "gain_db": 0.0
+    },
+    "voice/hina/Hina_ExSkill_3.ogg": {
+      "sha256": "1b60a275e3d080f8c18ab7e6fc8655e07dc5ecaa0cd5378754281579c4ac608b",
+      "seconds": 1.685,
+      "gain_db": -0.4
+    },
+    "voice/hoshino/Hoshino_Battle_Damage_1.ogg": {
+      "sha256": "c951caff7197cb949c409f86f6366a85c6106a88b7670103c7da972588b37298",
+      "seconds": 1.143,
+      "gain_db": -1.7
+    },
+    "voice/hoshino/Hoshino_Battle_Damage_2.ogg": {
+      "sha256": "e51b4e45819b3f0ea7f0652c43518c5ac0b0300c0a7ea886dc940901699e9c7e",
+      "seconds": 0.465,
+      "gain_db": -1.4
+    },
+    "voice/hoshino/Hoshino_Battle_Damage_3.ogg": {
+      "sha256": "fb9d57ac0a19a6440320c70fdbe697f37bf66d4c490ea99528a630efba103a6d",
+      "seconds": 0.791,
+      "gain_db": -1.9
+    },
+    "voice/hoshino/Hoshino_Battle_In_1.ogg": {
+      "sha256": "8f0d5b8c5496a90997f0c53768f39af2a8cbc8fb956f377106f2d18bd3a4a362",
+      "seconds": 3.394,
+      "gain_db": -2.0
+    },
+    "voice/hoshino/Hoshino_Battle_In_2.ogg": {
+      "sha256": "999aae62fb08c953145c6706588613551c7f0c250fdf69db3f0dbf0f7344f8a2",
+      "seconds": 1.772,
+      "gain_db": -2.1
+    },
+    "voice/hoshino/Hoshino_Battle_Retire.ogg": {
+      "sha256": "cc1996ddfb9a853c997b5241ce9925c6de0385df969bd06393a7f1fa03732dc6",
+      "seconds": 2.348,
+      "gain_db": 5.1
+    },
+    "voice/hoshino/Hoshino_Battle_Victory_1.ogg": {
+      "sha256": "4704e230262ea4170c3524708d8785c07406a2337685069fc57ccc96c5376d2d",
+      "seconds": 5.607,
+      "gain_db": -0.7
+    },
+    "voice/hoshino/Hoshino_Battle_Victory_2.ogg": {
+      "sha256": "cb723c8b3e55576842672e4c01ab9635721b178ec92780bdbc4d8d92105d4d3c",
+      "seconds": 5.217,
+      "gain_db": -4.2
+    },
+    "voice/hoshino/Hoshino_CommonSkill.ogg": {
+      "sha256": "516c98eaf9b80ccff21955c61fab095772c374f141294099d200f6c3d156d186",
+      "seconds": 1.751,
+      "gain_db": -3.0
+    },
+    "voice/hoshino/Hoshino_ExSkill_1.ogg": {
+      "sha256": "bdda7e784773d351b56d637e29214136e4579321e28a04c39570d6e7a5703e32",
+      "seconds": 1.292,
+      "gain_db": -4.4
+    },
+    "voice/hoshino/Hoshino_ExSkill_2.ogg": {
+      "sha256": "776ee8d7557c60fb84effa23478e2c7a8b30b603abfb88da36e3d58bce5808ff",
+      "seconds": 2.001,
+      "gain_db": -4.0
+    },
+    "voice/hoshino/Hoshino_ExSkill_3.ogg": {
+      "sha256": "3944a36a922b8b309ac4ffad6e85e0def9233b8729cc58f33a3c95eae08768b1",
+      "seconds": 1.985,
+      "gain_db": -3.1
+    }
+  },
+  "sets": {
+    "hina": {
+      "sfx": {
+        "shot": {
+          "clips": [
+            "sfx/SFX_Common_HMG_01.wav",
+            "sfx/SFX_Common_HMG_02.wav",
+            "sfx/SFX_Common_HMG_03.wav",
+            "sfx/SFX_Common_HMG_04.wav",
+            "sfx/SFX_Common_HMG_05.wav"
+          ],
+          "vol": 0.7,
+          "pitch": [
+            -1,
+            1
+          ],
+          "channel": "move",
+          "gap": 36,
+          "mute_in": [
+            "ex"
+          ]
+        },
+        "spool": {
+          "clips": [
+            "sfx/SFX_Common_HMG_Start_Hina_01.wav",
+            "sfx/SFX_Common_HMG_Start_Hina_02.wav",
+            "sfx/SFX_Common_HMG_Start_Hina_03.wav"
+          ],
+          "vol": 0.6,
+          "pitch": [
+            0,
+            0
+          ],
+          "channel": "long",
+          "gap": 45
+        },
+        "reload": {
+          "clips": [
+            "sfx/SFX_Common_HMG_Reload_Hina_01.wav",
+            "sfx/SFX_Common_HMG_Reload_Hina_02.wav",
+            "sfx/SFX_Common_HMG_Reload_Hina_03.wav"
+          ],
+          "vol": 0.8,
+          "pitch": [
+            -1,
+            1
+          ],
+          "channel": "long"
+        },
+        "lock_and_load": {
+          "clips": [
+            "sfx/SFX_Public_Hina.wav"
+          ],
+          "vol": 0.8,
+          "channel": "long",
+          "gap": 120,
+          "guess": true
+        },
+        "cutin": {
+          "clips": [
+            "sfx/SFX_Skill_Hina_Ex_Cut_in.wav"
+          ],
+          "vol": 0.9,
+          "channel": "cut",
+          "guess": true
+        },
+        "ult": {
+          "clips": [
+            "sfx/SFX_Skill_Hina_Ex.wav"
+          ],
+          "vol": 0.8,
+          "channel": "move",
+          "guess": true
+        },
+        "hit_l": {
+          "clips": [
+            "sfx/SFX_Shot_Impact_Hit_01.wav",
+            "sfx/SFX_Shot_Impact_Hit_02.wav",
+            "sfx/SFX_Shot_Impact_Hit_03.wav"
+          ],
+          "vol": 0.7,
+          "scale": 1.1,
+          "channel": "pool",
+          "guess": true
+        },
+        "hit_h": {
+          "clips": [
+            "sfx/SFX_Shot_Impact_Hit_01.wav",
+            "sfx/SFX_Shot_Impact_Hit_02.wav",
+            "sfx/SFX_Shot_Impact_Hit_03.wav"
+          ],
+          "vol": 1.0,
+          "scale": 0.9,
+          "channel": "pool",
+          "guess": true
+        }
+      },
+      "voice": {
+        "ult": {
+          "priority": 5,
+          "clips": [
+            "voice/hina/Hina_ExSkill_1.ogg",
+            "voice/hina/Hina_ExSkill_2.ogg",
+            "voice/hina/Hina_ExSkill_3.ogg"
+          ],
+          "vol": 1.0
+        },
+        "ko": {
+          "priority": 4,
+          "cuts_all": true,
+          "clips": [
+            "voice/hina/Hina_Battle_Retire.ogg"
+          ],
+          "vol": 1.0
+        },
+        "skill": {
+          "priority": 3,
+          "clips": [
+            "voice/hina/Hina_CommonSkill.ogg"
+          ],
+          "vol": 1.0
+        },
+        "skill_auto": {
+          "priority": 3,
+          "gap": 600,
+          "clips": [
+            "voice/hina/Hina_CommonSkill.ogg"
+          ],
+          "vol": 1.0
+        },
+        "intro": {
+          "priority": 2,
+          "clips": [
+            "voice/hina/Hina_Battle_In_1.ogg",
+            "voice/hina/Hina_Battle_In_2.ogg"
+          ],
+          "vol": 1.0
+        },
+        "victory": {
+          "priority": 2,
+          "clips": [
+            "voice/hina/Hina_Battle_Victory_1.ogg",
+            "voice/hina/Hina_Battle_Victory_2.ogg"
+          ],
+          "vol": 1.0
+        },
+        "big_hit": {
+          "priority": 1,
+          "gap": 180,
+          "clips": [
+            "voice/hina/Hina_Battle_Damage_1.ogg",
+            "voice/hina/Hina_Battle_Damage_2.ogg",
+            "voice/hina/Hina_Battle_Damage_3.ogg"
+          ],
+          "vol": 1.0
+        }
+      }
+    },
+    "hoshino": {
+      "sfx": {
+        "shot": {
+          "clips": [
+            "sfx/SFX_Common_SG_01.wav",
+            "sfx/SFX_Common_SG_02.wav",
+            "sfx/SFX_Common_SG_03.wav",
+            "sfx/SFX_Common_SG_04.wav",
+            "sfx/SFX_Common_SG_05.wav",
+            "sfx/SFX_Common_SG_06.wav",
+            "sfx/SFX_Common_SG_07.wav",
+            "sfx/SFX_Common_SG_08.wav"
+          ],
+          "vol": 0.65,
+          "pitch": [
+            -1,
+            0
+          ],
+          "channel": "pool",
+          "gap": 6
+        },
+        "pump": {
+          "clips": [
+            "sfx/SFX_Common_SG_Delay_01.wav",
+            "sfx/SFX_Common_SG_Delay_02.wav",
+            "sfx/SFX_Common_SG_Delay_03.wav",
+            "sfx/SFX_Common_SG_Delay_04.wav",
+            "sfx/SFX_Common_SG_Delay_05.wav",
+            "sfx/SFX_Common_SG_Delay_06.wav",
+            "sfx/SFX_Common_SG_Delay_07.wav",
+            "sfx/SFX_Common_SG_Delay_08.wav"
+          ],
+          "vol": 0.5,
+          "pitch": [
+            -1,
+            1
+          ],
+          "channel": "pool",
+          "delay": 12
+        },
+        "reload": {
+          "clips": [
+            "sfx/SFX_Common_SG_Reload_01.wav",
+            "sfx/SFX_Common_SG_Reload_02.wav",
+            "sfx/SFX_Common_SG_Reload_03.wav",
+            "sfx/SFX_Common_SG_Reload_04.wav",
+            "sfx/SFX_Common_SG_Reload_05.wav"
+          ],
+          "vol": 0.4,
+          "pitch": [
+            -1,
+            0
+          ],
+          "channel": "long",
+          "delay": 18
+        },
+        "first_aid": {
+          "clips": [
+            "sfx/SFX_JSD_Laser_02.wav"
+          ],
+          "vol": 0.7,
+          "channel": "long",
+          "guess": true
+        },
+        "heal_tick": {
+          "clips": [
+            "sfx/SFX_Common_Regen_Ing.wav"
+          ],
+          "vol": 0.7,
+          "channel": "long",
+          "guess": true
+        },
+        "cutin": {
+          "clips": [
+            "sfx/SFX_Skill_Hoshino_Ex_Cut_in.wav"
+          ],
+          "vol": 0.9,
+          "channel": "cut",
+          "guess": true
+        },
+        "ult": {
+          "clips": [
+            "sfx/SFX_Skill_Hoshino_Ex_Activate.wav"
+          ],
+          "vol": 0.8,
+          "channel": "move",
+          "guess": true
+        },
+        "ult_reload": {
+          "clips": [
+            "sfx/SFX_Skill_Hoshino_Ex_Reload.wav"
+          ],
+          "vol": 0.8,
+          "channel": "long",
+          "delay": 20,
+          "guess": true
+        },
+        "hit_l": {
+          "clips": [
+            "sfx/SFX_Shot_Impact_Hit_01.wav",
+            "sfx/SFX_Shot_Impact_Hit_02.wav",
+            "sfx/SFX_Shot_Impact_Hit_03.wav"
+          ],
+          "vol": 0.7,
+          "scale": 1.1,
+          "channel": "pool",
+          "guess": true
+        },
+        "hit_h": {
+          "clips": [
+            "sfx/SFX_Shot_Impact_Hit_01.wav",
+            "sfx/SFX_Shot_Impact_Hit_02.wav",
+            "sfx/SFX_Shot_Impact_Hit_03.wav"
+          ],
+          "vol": 1.0,
+          "scale": 0.9,
+          "channel": "pool",
+          "guess": true
+        }
+      },
+      "voice": {
+        "ult": {
+          "priority": 5,
+          "clips": [
+            "voice/hoshino/Hoshino_ExSkill_1.ogg",
+            "voice/hoshino/Hoshino_ExSkill_2.ogg",
+            "voice/hoshino/Hoshino_ExSkill_3.ogg"
+          ],
+          "vol": 1.0
+        },
+        "ko": {
+          "priority": 4,
+          "cuts_all": true,
+          "clips": [
+            "voice/hoshino/Hoshino_Battle_Retire.ogg"
+          ],
+          "vol": 1.0
+        },
+        "skill": {
+          "priority": 3,
+          "clips": [
+            "voice/hoshino/Hoshino_CommonSkill.ogg"
+          ],
+          "vol": 1.0
+        },
+        "skill_auto": {
+          "priority": 3,
+          "gap": 600,
+          "clips": [
+            "voice/hoshino/Hoshino_CommonSkill.ogg"
+          ],
+          "vol": 1.0
+        },
+        "intro": {
+          "priority": 2,
+          "clips": [
+            "voice/hoshino/Hoshino_Battle_In_1.ogg",
+            "voice/hoshino/Hoshino_Battle_In_2.ogg"
+          ],
+          "vol": 1.0
+        },
+        "victory": {
+          "priority": 2,
+          "clips": [
+            "voice/hoshino/Hoshino_Battle_Victory_1.ogg",
+            "voice/hoshino/Hoshino_Battle_Victory_2.ogg"
+          ],
+          "vol": 1.0
+        },
+        "big_hit": {
+          "priority": 1,
+          "gap": 180,
+          "clips": [
+            "voice/hoshino/Hoshino_Battle_Damage_1.ogg",
+            "voice/hoshino/Hoshino_Battle_Damage_2.ogg",
+            "voice/hoshino/Hoshino_Battle_Damage_3.ogg"
+          ],
+          "vol": 1.0
+        }
+      }
+    }
+  }
+}

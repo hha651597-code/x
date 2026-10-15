@@ -1,0 +1,254 @@
+{
+ "Mini_Chapter_10_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2025-11-07_001_assets_all_2806081472.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "95e4fd1f88e4ea899fd2d45c860e7e4d03448b7485fea5da7f1fa486d7609e7b",
+  "texture": "Mini_Chapter_10_1"
+ },
+ "Mini_Chapter_11_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2026-02-10_000_assets_all_4140218895.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "9dbfd9dce30b4229b920d1ccf1d68603d78115912fc01c581d8c0040d8e6df84",
+  "texture": "Mini_Chapter_11_1"
+ },
+ "Mini_Chapter_12_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-textures-2026-04-06_assets_all_1956555828.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "4294ea9c6ed45100f142bdc99f4341e05d2f4aa84ca1bdbfec15e1c69554f4e4",
+  "texture": "Mini_Chapter_12_1"
+ },
+ "Mini_Chapter_13_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-textures-2026-07-02_assets_all_468791210.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "67faa84eaee729d22a3c41b52ea6dc94ef7f6fa3dc171604905b5dbb615b2f0e",
+  "texture": "Mini_Chapter_13_1"
+ },
+ "Mini_Chapter_14_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-textures-2026-07-02_assets_all_468791210.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "c93a3cd7262191185924fbfa5e091e96b7f20aacc3fae22ba96a683ef0b0e43f",
+  "texture": "Mini_Chapter_14_1"
+ },
+ "Mini_Chapter_15_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-textures-2026-07-02_assets_all_468791210.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "f0471764bfba3c664c5037c76cc64a7eb9475423d83207425fbfebb3de2794f7",
+  "texture": "Mini_Chapter_15_1"
+ },
+ "Mini_Chapter_1_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2024-11-18_000_assets_all_1224846330.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "6d85a0a7a965aab88af9b0d6497dead44a7262eb66e96db8495f237972f2adaa",
+  "texture": "Mini_Chapter_1_1"
+ },
+ "Mini_Chapter_2_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2024-11-18_000_assets_all_1224846330.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "22a56af1bb4385049e25a6684dd805e9ca05e9717935beed3d34d2eaf9379e0a",
+  "texture": "Mini_Chapter_2_1"
+ },
+ "Mini_Chapter_3_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2024-11-18_000_assets_all_1224846330.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "a10a5ede3b6bafd8120cd104805767e97c22dd91919517e9cb2c15e633638490",
+  "texture": "Mini_Chapter_3_1"
+ },
+ "Mini_Chapter_4_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2025-02-18_assets_all_3095661044.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "82cdf93741fc9f3caa7fb240e7e329ae5ff90a559f341469f55231c60df02acf",
+  "texture": "Mini_Chapter_4_1"
+ },
+ "Mini_Chapter_5_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2025-02-18_assets_all_3095661044.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "5ddbe4cd4aa67f6eda2df6dfe4137eee8abdb5a2076e708c0459d9c47235bf6e",
+  "texture": "Mini_Chapter_5_1"
+ },
+ "Mini_Chapter_6_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2025-02-18_assets_all_3095661044.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "de59870a119b5a3328fb0251ef6a62b36a68a1612a01171b8920f27adde82590",
+  "texture": "Mini_Chapter_6_1"
+ },
+ "Mini_Chapter_7_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2025-07-10_assets_all_993234530.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "42ce5f7bb63af305340371064a61734d5a63fc13f1fe9aeb8a3ae150618950f0",
+  "texture": "Mini_Chapter_7_1"
+ },
+ "Mini_Chapter_9_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2025-07-25_assets_all_2363473080.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "5dc23b7dd628000a65c833933e338ed41e72385749e2db37be58b6656f24cd61",
+  "texture": "Mini_Chapter_9_1"
+ },
+ "Replay_Contents_Prologue_EpisodeSelect.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2024-11-18_000_assets_all_1224846330.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "09bcf99df370bdee66742be0a70dcb32a31cb54fad94078323aa5cb29342fc72",
+  "texture": "Replay_Contents_Prologue_EpisodeSelect"
+ },
+ "Replay_Contents_Shop_EpisodeSelect.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2024-11-18_000_assets_all_1224846330.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "c2be1069f6d774369336006e96bc2be9e98b7f7d11a4161c6dbec13dde1a4232",
+  "texture": "Replay_Contents_Shop_EpisodeSelect"
+ },
+ "Sub_Chapter_10_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2024-11-18_000_assets_all_1224846330.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "2dbb4ebfdf0093a289488baa94558970879f5f1c8eeb6d2c2e9eae85f1ec90a5",
+  "texture": "Sub_Chapter_10_1"
+ },
+ "Sub_Chapter_11_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2024-11-18_000_assets_all_1224846330.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "f0fd29ab0c2406f3306e8ee82a9cd90b512915a9700d40100cad1002525f104e",
+  "texture": "Sub_Chapter_11_1"
+ },
+ "Sub_Chapter_12_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2024-11-18_000_assets_all_1224846330.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "78d0883feccf3478db6237161d5926ac3ffbcd23131fc0daacf521930c417141",
+  "texture": "Sub_Chapter_12_1"
+ },
+ "Sub_Chapter_13_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2024-11-18_000_assets_all_1224846330.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "c515d5c80fa6e6d9dab22989d90ca881b3b1b3442f24f7d74ec7139f2a3c959d",
+  "texture": "Sub_Chapter_13_1"
+ },
+ "Sub_Chapter_14_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2024-11-18_000_assets_all_1224846330.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "13b81dfc3145640f6bc96e9bcc5423b1b34c9fc92764b750fbcae9869efc633d",
+  "texture": "Sub_Chapter_14_1"
+ },
+ "Sub_Chapter_15_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2024-11-18_000_assets_all_1224846330.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "fea5c7a2d77ee30328b08ed165f0fc4186cf0915516cda11d9c3771209776452",
+  "texture": "Sub_Chapter_15_1"
+ },
+ "Sub_Chapter_16_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2024-11-18_000_assets_all_1224846330.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "40dc0ea908987ea2aa9546094c6a98ddc7077cd68e9fd8abdc4a4fe4b355bce6",
+  "texture": "Sub_Chapter_16_1"
+ },
+ "Sub_Chapter_17_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2024-11-18_000_assets_all_1224846330.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "10603784cb545d3ef1a2c44fd575c777100bb13a608c4eeca696f4d9988ea109",
+  "texture": "Sub_Chapter_17_1"
+ },
+ "Sub_Chapter_18_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2024-11-18_000_assets_all_1224846330.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "0ac2a633cfb79eb93a1abae7c4de2f0c409ba2b19860971b0fc06c5487430b73",
+  "texture": "Sub_Chapter_18_1"
+ },
+ "Sub_Chapter_19_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2024-11-18_000_assets_all_1224846330.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "d6bba18bc1afff2413fee918e486368c07f54aad0f0ff4398227f20e96c35551",
+  "texture": "Sub_Chapter_19_1"
+ },
+ "Sub_Chapter_1_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2024-11-18_000_assets_all_1224846330.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "8aa54e152d5b6ea95b6fbc4e45caccaf7921bc0cde6ac3a3c827d66e42f41931",
+  "texture": "Sub_Chapter_1_1"
+ },
+ "Sub_Chapter_20_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2024-11-18_000_assets_all_1224846330.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "e3f498a105d83c0d1da0fb5c957aa859f620434e539477aa56968675f738007d",
+  "texture": "Sub_Chapter_20_1"
+ },
+ "Sub_Chapter_21_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2024-11-18_000_assets_all_1224846330.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "75d9a34f82a6db944703afaeedffa1522d8ad6385e919a8b7ca98b14feced5ab",
+  "texture": "Sub_Chapter_21_1"
+ },
+ "Sub_Chapter_22_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2024-11-18_000_assets_all_1224846330.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "683ade36307cc74ca876609e2a0082fbf6df74d5d1c287f3207d1749718d496a",
+  "texture": "Sub_Chapter_22_1"
+ },
+ "Sub_Chapter_23_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2024-11-18_000_assets_all_1224846330.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "e478ef8dce88e763edfa85695eec8697686c72c6f66c862a91f06b242b4709bb",
+  "texture": "Sub_Chapter_23_1"
+ },
+ "Sub_Chapter_24_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2024-11-18_000_assets_all_1224846330.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "6a9aff982962c0860bdfb1d77de8dcc430e05d486646b315c7b2eb1d6efbdb6c",
+  "texture": "Sub_Chapter_24_1"
+ },
+ "Sub_Chapter_25_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2025-02-18_assets_all_3095661044.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "51d7e90ca920d6b6a4272617057282e6e99bcc26cfa379fcf9454558e34174d3",
+  "texture": "Sub_Chapter_25_1"
+ },
+ "Sub_Chapter_26_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2025-08-08_assets_all_2601672122.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "3dbb09d1c46a1afd9ebdf6a5605004a6191643d4e8b14852fc8f94418f959cae",
+  "texture": "Sub_Chapter_26_1"
+ },
+ "Sub_Chapter_2_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2024-11-18_000_assets_all_1224846330.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "390ec46cafebc68598ee92d0cdc1cfcbfa4233b943a276282cbb61ba605304b6",
+  "texture": "Sub_Chapter_2_1"
+ },
+ "Sub_Chapter_3_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2024-11-18_000_assets_all_1224846330.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "9173a47ec7e8a8a658ac7b8a6f4454b5cbcba136e0951f5614291f17fa462a57",
+  "texture": "Sub_Chapter_3_1"
+ },
+ "Sub_Chapter_4_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2024-11-18_000_assets_all_1224846330.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "3285e04adb9d71ebbdce9f2d289f9d60707334fd280d93aaaa04c0fddb4a3de6",
+  "texture": "Sub_Chapter_4_1"
+ },
+ "Sub_Chapter_5_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2024-11-18_000_assets_all_1224846330.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "5c59f1416f43943486514481f928da23d93ce3f937fdf13a1785c4da7aaadc99",
+  "texture": "Sub_Chapter_5_1"
+ },
+ "Sub_Chapter_6_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2024-11-18_000_assets_all_1224846330.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "42894f12c47ac98450aae6a89734dc6e0e101251016708686cbf0bd53da5977d",
+  "texture": "Sub_Chapter_6_1"
+ },
+ "Sub_Chapter_7_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2024-11-18_000_assets_all_1224846330.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "47ec8ca0a6e591fea20a0c9276be8855f995bbbf1e800e6079433d44ed43a9c6",
+  "texture": "Sub_Chapter_7_1"
+ },
+ "Sub_Chapter_8_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2024-11-18_000_assets_all_1224846330.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "039d2bdb5c0cb0919da88bcf7ecde00e90c62fb48218b332d161721586b94121",
+  "texture": "Sub_Chapter_8_1"
+ },
+ "Sub_Chapter_9_1.jpg": {
+  "bundle": "uis-03_scenario-05_mode-_mxload-2024-11-18_000_assets_all_1224846330.bundle",
+  "derived_from": "tools/menu_cg_assets.py: resized to 1024 px wide, JPEG q84",
+  "sha256": "42d192e80fffee3d3e0a811c9f34e2bae35bd1b0dca0de2633fe89022929f6ca",
+  "texture": "Sub_Chapter_9_1"
+ }
+}

@@ -1,0 +1,52 @@
+{
+"timeout": 120,
+"steps": [
+{
+"session": {
+"mode": "training",
+"players": [
+{
+"claimed": true,
+"device": "kb1",
+"fighter": 10004,
+"special": 20001
+},
+{
+"claimed": false,
+"fighter": 10005,
+"special": 23005
+}
+],
+"stage": "gehenna-night"
+}
+},
+{
+"go": "fight",
+"style": "cut"
+},
+{
+"wait": 2.4
+},
+{
+"press": [
+"shared",
+"start"
+]
+},
+{
+"wait": 0.5
+},
+{
+"shot": "/tmp/ba-hud-out/facade/pause_training.png"
+},
+{
+"press": [
+"shared",
+"start"
+]
+},
+{
+"wait": 0.3
+}
+]
+}

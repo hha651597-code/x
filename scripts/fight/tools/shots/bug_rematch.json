@@ -1,0 +1,104 @@
+{
+ "timeout": 240,
+ "steps": [
+  {
+   "session": {
+    "mode": "versus-cpu",
+    "stage": "gehenna-night",
+    "stage_time": "day",
+    "players": [
+     {
+      "claimed": true,
+      "device": "kb1",
+      "fighter": 10004,
+      "special": 10017
+     },
+     {
+      "claimed": true,
+      "device": "kb2",
+      "fighter": 10005,
+      "special": 10017,
+      "cpu": true
+     }
+    ]
+   }
+  },
+  {
+   "cpu_vs_cpu": true
+  },
+  {
+   "mem": "rematch_baseline"
+  },
+  {
+   "go": "fight",
+   "style": "cut"
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "mem": "rematch_first_fight"
+  },
+  {
+   "sim_mult": 12
+  },
+  {
+   "until_screen": "result",
+   "max": 150
+  },
+  {
+   "sim_mult": 1
+  },
+  {
+   "wait": 1.5
+  },
+  {
+   "mem": "rematch_result"
+  },
+  {
+   "print": true
+  },
+  {
+   "press": [
+    "kb1",
+    "confirm"
+   ]
+  },
+  {
+   "wait": 2.5
+  },
+  {
+   "until_screen": "fight",
+   "max": 20
+  },
+  {
+   "frames": 90
+  },
+  {
+   "print": true
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "mem": "rematch_second_fight"
+  },
+  {
+   "shot": ".dev/out/bug/rematch_second.png",
+   "scale": 0.5
+  },
+  {
+   "go": "menu",
+   "style": "cut"
+  },
+  {
+   "frames": 30
+  },
+  {
+   "mem": "rematch_menu"
+  },
+  {
+   "quit": true
+  }
+ ]
+}

@@ -1,0 +1,71 @@
+{
+  "source": "Blue Archive PC client (Steam install), extracted with UnityPy 2026-10-14 (through the research export)",
+  "extraction_scripts": "tools/gallery_assets.py; research export export/ba_research/research2 (not tracked)",
+  "files": [
+    {
+      "kind": "extracted",
+      "source_name": "Card_Item_Bg_N",
+      "atlas": "Common",
+      "bundle": "prologdepengroup-assets-_mx-uis-atlas-_mxprolog-2024-11-18_assets_all_1735253868.bundle",
+      "container": "Assets/_MX/UIs/Atlas/Common.png",
+      "use": "facet card behind every portrait tile and the art stage",
+      "runtime_path": "assets/ba/gallery/sprites/Common__Card_Item_Bg_N.png",
+      "width": 256,
+      "height": 210,
+      "sha256": "b79761a451b337502ef43c8da3f2f4405f48de9b019ae3b51842cc38fc1352bd",
+      "bytes": 24306
+    },
+    {
+      "kind": "extracted",
+      "source_name": "Common_Deco_DotLine",
+      "atlas": "Common",
+      "bundle": "prologdepengroup-assets-_mx-uis-atlas-_mxprolog-2024-11-18_assets_all_1735253868.bundle",
+      "container": "Assets/_MX/UIs/Atlas/Common.png",
+      "use": "dotted row divider",
+      "runtime_path": "assets/ba/gallery/sprites/Common__Common_Deco_DotLine.png",
+      "width": 9,
+      "height": 4,
+      "sha256": "e578c73bf2872789463d0f791429be73c50bc8170bdd9b4e49f2857c62649646",
+      "bytes": 79
+    },
+    {
+      "kind": "extracted",
+      "source_name": "Common_Icon_Formation_Star",
+      "atlas": "Common",
+      "bundle": "prologdepengroup-assets-_mx-uis-atlas-_mxprolog-2024-11-18_assets_all_1735253868.bundle",
+      "container": "Assets/_MX/UIs/Atlas/Common.png",
+      "use": "rarity stars, lit",
+      "runtime_path": "assets/ba/gallery/sprites/Common__Common_Icon_Formation_Star.png",
+      "width": 67,
+      "height": 64,
+      "sha256": "765418799c4bc65b53656984116a9ee3aee30074a521e2dcb3a879205c9f87dd",
+      "bytes": 5763
+    },
+    {
+      "kind": "extracted",
+      "source_name": "Common_Icon_Formation_Star_Disable",
+      "atlas": "Common",
+      "bundle": "prologdepengroup-assets-_mx-uis-atlas-_mxprolog-2024-11-18_assets_all_1735253868.bundle",
+      "container": "Assets/_MX/UIs/Atlas/Common.png",
+      "use": "rarity stars, unlit",
+      "runtime_path": "assets/ba/gallery/sprites/Common__Common_Icon_Formation_Star_Disable.png",
+      "width": 67,
+      "height": 64,
+      "sha256": "510668b160db2b6a3f7cba3ded6f353071e37d741896c3f96e7a3044b0fcbead",
+      "bytes": 4470
+    },
+    {
+      "kind": "extracted",
+      "source_name": "Image_Normal_Empty2",
+      "bundle": "uis-00_images-_mxload-textures-2026-07-02_assets_all_1747478708.bundle",
+      "container": "Assets/_MX/AddressableAsset/UIs/00_Images/Image_Normal_Empty2.png",
+      "use": "records empty state",
+      "runtime_path": "assets/ba/gallery/tex/UIs__00_Images__Image_Normal_Empty2.png",
+      "width": 1152,
+      "height": 1149,
+      "sha256": "de9ec40c1aa046fe3d7c9995961f07513a2a7512a9b9f99e68f1e9d5bfda41ca",
+      "bytes": 195514
+    }
+  ],
+  "scope": "Local fan project. Redistribution permission is not inferred."
+}

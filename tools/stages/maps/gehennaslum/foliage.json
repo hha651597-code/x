@@ -1,0 +1,278 @@
+{
+ "name": "gehenna",
+ "wind": {
+  "amp": 0.07,
+  "speed": 1.6,
+  "dir": [
+   1.0,
+   0.35
+  ]
+ },
+ "light_gain": 1.0,
+ "donors": [
+  {
+   "id": "slum_plant",
+   "wind": 0.3,
+   "parts": [
+    {
+     "group": "scenes-battle-gehennaslum",
+     "mesh": "sb_slum_plant_01",
+     "materials": [
+      "sb_slum_gehenna_01_atlas"
+     ],
+     "up": "y"
+    }
+   ]
+  },
+  {
+   "id": "gold_tuft",
+   "wind": 1.0,
+   "parts": [
+    {
+     "group": "scenes-battle-riverside",
+     "mesh": "sb_Riverside_01_plant_05",
+     "materials": [
+      "sb_riverside_01_Atlas"
+     ],
+     "up": "z"
+    }
+   ]
+  },
+  {
+   "id": "gold_grass",
+   "wind": 1.0,
+   "parts": [
+    {
+     "group": "scenes-battle-riverside",
+     "mesh": "sb_Riverside_01_plant_04",
+     "materials": [
+      "sb_riverside_01_Atlas",
+      "sb_riverside_01_Atlas_Cutout"
+     ],
+     "up": "z"
+    }
+   ]
+  },
+  {
+   "id": "dry_crown",
+   "wind": 0.5,
+   "parts": [
+    {
+     "group": "scenes-battle-destroyedstreet",
+     "mesh": "city_01_tree_05",
+     "materials": [
+      "db_city_01_atlas_Cutout_01"
+     ],
+     "up": "z"
+    }
+   ]
+  },
+  {
+   "id": "fringe",
+   "wind": 0.9,
+   "double_sided": true,
+   "hanging": true,
+   "parts": [
+    {
+     "group": "scenes-battle-floodedruins",
+     "mesh": "floodedruins_p01_plant_06",
+     "materials": [
+      "sb_01_floodedruins_p01_plant_01"
+     ],
+     "up": "y"
+    }
+   ]
+  },
+  {
+   "id": "ivy_a",
+   "wind": 0.3,
+   "double_sided": true,
+   "parts": [
+    {
+     "group": "scenes-battle-floodedruins",
+     "mesh": "floodedruins_p01_plant_02",
+     "materials": [
+      "sb_01_floodedruins_p01_plant_01"
+     ],
+     "up": "y"
+    }
+   ]
+  },
+  {
+   "id": "ivy_b",
+   "wind": 0.3,
+   "double_sided": true,
+   "parts": [
+    {
+     "group": "scenes-battle-floodedruins",
+     "mesh": "floodedruins_p01_plant_00",
+     "materials": [
+      "sb_01_floodedruins_p01_plant_01"
+     ],
+     "up": "y"
+    }
+   ]
+  },
+  {
+   "id": "ivy_c",
+   "wind": 0.3,
+   "double_sided": true,
+   "parts": [
+    {
+     "group": "scenes-battle-floodedruins",
+     "mesh": "floodedruins_p01_plant_14",
+     "materials": [
+      "sb_01_floodedruins_p01_plant_01"
+     ],
+     "up": "y"
+    }
+   ]
+  },
+  {
+   "id": "dead_tree",
+   "wind": 0.4,
+   "parts": [
+    {
+     "group": "scenes-battle-destroyedstreet",
+     "mesh": "city_01_tree_04",
+     "materials": [
+      "db_city_01_atlas_none_01"
+     ],
+     "up": "z"
+    },
+    {
+     "group": "scenes-battle-destroyedstreet",
+     "mesh": "city_01_tree_03",
+     "materials": [
+      "db_city_01_atlas_Cutout_01"
+     ],
+     "up": "z"
+    }
+   ]
+  }
+ ],
+ "placements": [
+  {
+   "mesh": "dead_tree",
+   "scale": 1.5,
+   "yaw": 40,
+   "x": 12.6,
+   "z": 50.4,
+   "ymax": 1.0
+  },
+  {
+   "mesh": "dry_crown",
+   "scale": 0.5,
+   "yaw": 20,
+   "x": 8.6,
+   "z": 51.2,
+   "ymax": 1.0
+  },
+  {
+   "mesh": "dry_crown",
+   "scale": 0.4,
+   "yaw": 140,
+   "x": 6.2,
+   "z": 38.4,
+   "ymax": 1.0
+  },
+  {
+   "mesh": "slum_plant",
+   "scale": 0.9,
+   "yaw": 160,
+   "pick": {
+    "pan": 0,
+    "px": 200,
+    "py": 300
+   }
+  },
+  {
+   "mesh": "slum_plant",
+   "scale": 0.7,
+   "yaw": 60,
+   "pick": {
+    "pan": 0,
+    "px": 330,
+    "py": 350
+   }
+  },
+  {
+   "mesh": "ivy_c",
+   "x": 7.25,
+   "z": 40.4,
+   "y": 1.0,
+   "scale": 1.0,
+   "yaw": 90
+  },
+  {
+   "mesh": "fringe",
+   "x": 7.1,
+   "z": 39.9,
+   "y": 2.25,
+   "scale": 0.5,
+   "yaw": 90
+  },
+  {
+   "mesh": "ivy_c",
+   "x": 5.83,
+   "z": 46.9,
+   "y": 0.5,
+   "scale": 0.7,
+   "yaw": 90
+  },
+  {
+   "mesh": "ivy_a",
+   "x": 5.83,
+   "z": 42.75,
+   "y": 0.5,
+   "scale": 0.55,
+   "yaw": 90
+  },
+  {
+   "mesh": "gold_tuft",
+   "x": 4.2,
+   "z": 46.0,
+   "scale": 0.7,
+   "yaw": 10
+  },
+  {
+   "mesh": "gold_grass",
+   "x": 3.7,
+   "z": 44.3,
+   "scale": 0.65,
+   "yaw": 80
+  },
+  {
+   "mesh": "gold_tuft",
+   "x": 10.7,
+   "z": 48.0,
+   "scale": 0.7,
+   "yaw": 150
+  },
+  {
+   "mesh": "gold_grass",
+   "x": 10.7,
+   "z": 50.2,
+   "scale": 0.7,
+   "yaw": 30
+  },
+  {
+   "mesh": "gold_tuft",
+   "x": 10.6,
+   "z": 52.0,
+   "scale": 0.7,
+   "yaw": 250
+  },
+  {
+   "mesh": "fringe",
+   "scale": 0.7,
+   "yaw": 90,
+   "pick": {
+    "pan": 3.6,
+    "px": 700,
+    "py": 262,
+    "at_x": 10.7
+   }
+  }
+ ]
+}

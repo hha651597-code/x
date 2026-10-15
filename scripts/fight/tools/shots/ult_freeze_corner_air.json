@@ -1,0 +1,186 @@
+{
+ "timeout": 120,
+ "steps": [
+  {
+   "session": {
+    "mode": "versus2p",
+    "players": [
+     {
+      "claimed": true,
+      "device": "kb1",
+      "fighter": 10004,
+      "special": 10017
+     },
+     {
+      "claimed": true,
+      "device": "kb2",
+      "fighter": 10005,
+      "special": 10017
+     }
+    ]
+   }
+  },
+  {
+   "go": "fight",
+   "style": "cut"
+  },
+  {
+   "frames": 150
+  },
+  {
+   "hold": [
+    "kb1",
+    "left"
+   ]
+  },
+  {
+   "frames": 150
+  },
+  {
+   "release": [
+    "kb1",
+    "left"
+   ]
+  },
+  {
+   "hold": [
+    "kb2",
+    "left"
+   ]
+  },
+  {
+   "frames": 40
+  },
+  {
+   "release": [
+    "kb2",
+    "left"
+   ]
+  },
+  {
+   "tap": [
+    "kb2",
+    "up"
+   ],
+   "frames": 2
+  },
+  {
+   "frames": 10
+  },
+  {
+   "timescale": 0.25
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": ".dev/out/ult_corner_p1_00_before.png"
+  },
+  {
+   "tap": [
+    "kb1",
+    "aux2"
+   ],
+   "frames": 3
+  },
+  {
+   "frames": 1
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": ".dev/out/ult_corner_p1_01_trigger_flash.png"
+  },
+  {
+   "frames": 8
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": ".dev/out/ult_corner_p1_02_burst.png"
+  },
+  {
+   "frames": 40
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": ".dev/out/ult_corner_p1_03_mid_a.png"
+  },
+  {
+   "frames": 60
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": ".dev/out/ult_corner_p1_04_mid_b_stamp.png"
+  },
+  {
+   "frames": 60
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": ".dev/out/ult_corner_p1_05_mid_c.png"
+  },
+  {
+   "frames": 60
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": ".dev/out/ult_corner_p1_06_mid_d.png"
+  },
+  {
+   "frames": 46
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": ".dev/out/ult_corner_p1_07_spotlight.png"
+  },
+  {
+   "frames": 24
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": ".dev/out/ult_corner_p1_08_resume_shockwave.png"
+  },
+  {
+   "frames": 24
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": ".dev/out/ult_corner_p1_09_ult_active.png"
+  },
+  {
+   "frames": 60
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": ".dev/out/ult_corner_p1_10_ult_active.png"
+  },
+  {
+   "timescale": 1.0
+  },
+  {
+   "frames": 30
+  },
+  {
+   "print": true
+  }
+ ]
+}

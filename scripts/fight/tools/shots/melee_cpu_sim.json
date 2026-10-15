@@ -1,0 +1,10 @@
+{"timeout": 170, "steps": [
+{"cpu_vs_cpu": true},
+{"session": {"mode": "versus-cpu", "players": [{"claimed": true, "device": "kb1", "fighter": 10004, "special": 20001}, {"claimed": true, "device": "kb2", "fighter": 10005, "special": 23005, "cpu": true}], "stage": "gehenna-night"}},
+{"go": "fight", "style": "cut"},
+{"sim_mult": 12},
+{"until_screen": "result", "max": 150},
+{"print": true},
+{"sim_mult": 1},
+{"cpu_vs_cpu": false}
+]}

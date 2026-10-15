@@ -1,0 +1,65 @@
+{
+ "timeout": 600,
+ "steps": [
+  {
+   "cpu_vs_cpu": true
+  },
+  {
+   "intro_entry": true
+  },
+  {
+   "session": {
+    "mode": "versus-cpu",
+    "players": [
+     {
+      "claimed": true,
+      "device": "kb1",
+      "fighter": 10004,
+      "special": 20001
+     },
+     {
+      "claimed": true,
+      "device": "kb2",
+      "fighter": 10005,
+      "special": 23005,
+      "cpu": true
+     }
+    ],
+    "stage": "gehenna-night",
+    "bgm_volume": 0.7
+   }
+  },
+  {
+   "go": "fight",
+   "style": "cut"
+  },
+  {
+   "wait": 6.4
+  },
+  {
+   "print": true
+  },
+  {
+   "fighter": {
+    "slot": 1,
+    "meter": 100
+   }
+  },
+  {
+   "fighter": {
+    "slot": 2,
+    "meter": 100
+   }
+  },
+  {
+   "until_screen": "result",
+   "max": 300
+  },
+  {
+   "wait": 7.0
+  },
+  {
+   "print": true
+  }
+ ]
+}

@@ -1,0 +1,138 @@
+{
+ "timeout": 120,
+ "steps": [
+  {
+   "session": {
+    "mode": "training",
+    "stage": "gehenna-night",
+    "stage_time": "night",
+    "players": [
+     {
+      "claimed": true,
+      "device": "kb1",
+      "fighter": 10004,
+      "special": 10017
+     },
+     {
+      "claimed": false,
+      "device": "",
+      "fighter": 10005,
+      "special": 10017
+     }
+    ]
+   }
+  },
+  {
+   "go": "fight",
+   "style": "cut"
+  },
+  {
+   "wait": 3.0
+  },
+  {
+   "fighter": {
+    "slot": 1,
+    "pos": [
+     150,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "fighter": {
+    "slot": 2,
+    "pos": [
+     -150,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "frames": 100
+  },
+  {
+   "stage_shot": ".dev/out/stage3d/night_freeze_ctrl_a.png"
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "frames": 20
+  },
+  {
+   "stage_shot": ".dev/out/stage3d/night_freeze_ctrl_b.png"
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "tap": [
+    "kb1",
+    "aux2"
+   ],
+   "frames": 3
+  },
+  {
+   "frames": 44
+  },
+  {
+   "stage_shot": ".dev/out/stage3d/night_freeze_a.png"
+  },
+  {
+   "print": true
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "frames": 2
+  },
+  {
+   "stage_shot": ".dev/out/stage3d/night_freeze_b.png"
+  },
+  {
+   "print": true
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "frames": 2
+  },
+  {
+   "stage_shot": ".dev/out/stage3d/night_freeze_c.png"
+  },
+  {
+   "print": true
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "frames": 140
+  },
+  {
+   "stage_shot": ".dev/out/stage3d/night_freeze_after_a.png"
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "frames": 20
+  },
+  {
+   "stage_shot": ".dev/out/stage3d/night_freeze_after_b.png"
+  },
+  {
+   "stage_print": true
+  }
+ ]
+}

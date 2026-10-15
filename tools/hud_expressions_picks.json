@@ -1,0 +1,22 @@
+{
+ "hoshino": {
+  "calm": "01",
+  "scratched": "13",
+  "hurt": "07",
+  "critical": "12",
+  "flinch": "04",
+  "win": "03",
+  "lose": "13",
+  "ko": "Eye_Close_01@0.05"
+ },
+ "hina": {
+  "calm": "00",
+  "scratched": "04",
+  "hurt": "10",
+  "critical": "15",
+  "flinch": "06",
+  "win": "08",
+  "lose": "11",
+  "ko": "Eye_Close_01@0.05"
+ }
+}

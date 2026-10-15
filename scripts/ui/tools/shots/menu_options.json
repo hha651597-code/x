@@ -1,0 +1,9 @@
+{"timeout": 90, "steps": [
+ {"session": {"mode": ""}},
+ {"go": "menu", "params": {}, "style": "cut"}, {"wait": 1.5},
+ {"push": "options"}, {"wait": 1.2}, {"shot": "/tmp/ba-ui-out/menu/options_main.png"},
+ {"press": ["kb1", "down"], "times": 2}, {"press": ["kb1", "confirm"]}, {"wait": 0.6}, {"shot": "/tmp/ba-ui-out/menu/options_flashes_on.png"},
+ {"press": ["kb1", "down"]}, {"press": ["kb1", "confirm"]}, {"wait": 0.6}, {"shot": "/tmp/ba-ui-out/menu/options_controls.png"},
+ {"print": true},
+ {"quit": true}
+]}

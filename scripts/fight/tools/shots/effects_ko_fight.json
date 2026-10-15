@@ -1,0 +1,127 @@
+{
+ "timeout": 120,
+ "steps": [
+  {
+   "session": {
+    "mode": "versus2p",
+    "players": [
+     {
+      "claimed": true,
+      "device": "kb1",
+      "fighter": 10004,
+      "special": 20001
+     },
+     {
+      "claimed": true,
+      "device": "kb2",
+      "fighter": 10005,
+      "special": 23005,
+      "cpu": false
+     }
+    ],
+    "stage": "gehenna-night"
+   }
+  },
+  {
+   "go": "fight",
+   "style": "cut"
+  },
+  {
+   "wait": 2.2
+  },
+  {
+   "fighter": {
+    "slot": 1,
+    "pos": [
+     110,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "fighter": {
+    "slot": 2,
+    "pos": [
+     0,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ],
+    "gap": 46
+   }
+  },
+  {
+   "fighter": {
+    "slot": 2,
+    "hp": 6
+   }
+  },
+  {
+   "fighter": {
+    "slot": 1,
+    "meter": 0
+   }
+  },
+  {
+   "frames": 10
+  },
+  {
+   "tap": [
+    "kb1",
+    "confirm"
+   ],
+   "frames": 2
+  },
+  {
+   "wait": 0.07
+  },
+  {
+   "shot": "/tmp/ba-ui-out/effects_cutin/real_fight/ko_0.png"
+  },
+  {
+   "wait": 0.07
+  },
+  {
+   "shot": "/tmp/ba-ui-out/effects_cutin/real_fight/ko_1.png"
+  },
+  {
+   "wait": 0.07
+  },
+  {
+   "shot": "/tmp/ba-ui-out/effects_cutin/real_fight/ko_2.png"
+  },
+  {
+   "wait": 0.07
+  },
+  {
+   "shot": "/tmp/ba-ui-out/effects_cutin/real_fight/ko_3.png"
+  },
+  {
+   "wait": 0.07
+  },
+  {
+   "shot": "/tmp/ba-ui-out/effects_cutin/real_fight/ko_4.png"
+  },
+  {
+   "wait": 0.07
+  },
+  {
+   "shot": "/tmp/ba-ui-out/effects_cutin/real_fight/ko_5.png"
+  },
+  {
+   "wait": 0.07
+  },
+  {
+   "shot": "/tmp/ba-ui-out/effects_cutin/real_fight/ko_6.png"
+  },
+  {
+   "timescale": 1.0
+  }
+ ]
+}

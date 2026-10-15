@@ -1,0 +1,23 @@
+{
+ "10005": {
+  "calm": "Student_Portrait_Hoshino_calm.webp",
+  "scratched": "Student_Portrait_Hoshino_scratched.webp",
+  "hurt": "Student_Portrait_Hoshino_hurt.webp",
+  "critical": "Student_Portrait_Hoshino_critical.webp",
+  "flinch": "Student_Portrait_Hoshino_flinch.webp",
+  "win": "Student_Portrait_Hoshino_win.webp",
+  "lose": "Student_Portrait_Hoshino_lose.webp",
+  "ko": "Student_Portrait_Hoshino_ko.webp"
+ },
+ "10004": {
+  "calm": "Student_Portrait_Hina.png",
+  "scratched": "Student_Portrait_Hina_scratched.webp",
+  "hurt": "Student_Portrait_Hina_hurt.webp",
+  "critical": "Student_Portrait_Hina_critical.webp",
+  "flinch": "Student_Portrait_Hina_flinch.webp",
+  "win": "Student_Portrait_Hina_win.webp",
+  "lose": "Student_Portrait_Hina_lose.webp",
+  "ko": "Student_Portrait_Hina_ko.webp"
+ },
+ "_overlays": {}
+}

@@ -1,0 +1,37 @@
+{
+ "generic.jpg": {
+  "derived_from": "tools/jukebox_assets.py generic_cover()",
+  "sha256": "d34b1361e701c66407d2ba75e1f98b001e98a729343b85226705e92bd8addb7e",
+  "source": "assets/ba/title/Title_Logo.png on BaTokens.SKY_TOP to SKY_BOT"
+ },
+ "vol1.jpg": {
+  "derived_from": "tools/jukebox_assets.py: scaled to 512x512, JPEG q90",
+  "sha256": "4dec946d79e2f065905e83dcb3c780d7cfe1963d97935d624f24be26dc54b0a5",
+  "source": "https://static.wikitide.net/bluearchivewiki/f/f2/Blue_Archive_Original_Soundtrack_Vol.1_%EF%BD%9ELonging_for_the_Memorable_Days%EF%BD%9E.jpg",
+  "source_sha256": "754864938eb00ef7c31cd87d3dd80d07c430283a620d756c0b5445ede67aca73"
+ },
+ "vol3.jpg": {
+  "derived_from": "tools/jukebox_assets.py: scaled to 512x512, JPEG q90",
+  "sha256": "3c236c46f4a161bbaeffb60f15102b9e8ce0ad6f6cb5aebcca3df2220fa05814",
+  "source": "https://static.wikitide.net/bluearchivewiki/e/e6/Blue_Archive_Original_Soundtrack_Vol.3_%EF%BD%9EReaching_for_the_precious_time%EF%BD%9E.jpg",
+  "source_sha256": "3d2dddeea72415ed72d35d8e879e56766132dd3f368cb0b38d95af8bc5de3501"
+ },
+ "vol4.jpg": {
+  "derived_from": "tools/jukebox_assets.py: scaled to 512x512, JPEG q90",
+  "sha256": "9dfd106d2dcb83a38cfe76a8602ca9f43d4ea3c11d3ef0ead1cdc8a6a14d0af7",
+  "source": "https://static.wikitide.net/bluearchivewiki/7/7d/Blue_Archive_Original_Soundtrack_Vol.4_%EF%BD%9EAiming_for_the_ideal_freedom%EF%BD%9E.jpg",
+  "source_sha256": "ca6b461f85ed76e8691d1398ebb063557a5869af70cd74dfd8eba7663e697a1f"
+ },
+ "vol5.jpg": {
+  "derived_from": "tools/jukebox_assets.py: scaled to 512x512, JPEG q90",
+  "sha256": "f52ed23da508a845e8a944e5e1368583866f6b7bf723adcac2e17d18ef0482bc",
+  "source": "https://static.wikitide.net/bluearchivewiki/a/af/Blue_Archive_Original_Soundtrack_Vol.5_%EF%BD%9EStriving_for_the_bloomy_festival%EF%BD%9E.jpg",
+  "source_sha256": "28dcde0e52c504082c0520f8e2626793d892b16e688a278e657e90c0b0670ae4"
+ },
+ "vol7.jpg": {
+  "derived_from": "tools/jukebox_assets.py: scaled to 512x512, JPEG q90",
+  "sha256": "9e7ba03aa5e73777bfa86f235d16c24f3b4dee9bbc2241a492cefaeb49127f7f",
+  "source": "https://static.wikitide.net/bluearchivewiki/a/a7/Blue_Archive_Original_Soundtrack_Vol.7_%EF%BD%9EHarmonizing_for_the_Hearts_of_Each%EF%BD%9E.jpg",
+  "source_sha256": "ab663d5e70a8703f5b9f32ab0023b38a05520e2b6efcddab68fa6cd145af1493"
+ }
+}

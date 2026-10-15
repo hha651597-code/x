@@ -1,0 +1,479 @@
+{
+ "kit": "desert",
+ "sources": {
+  "self": "self",
+  "ruins": {
+   "d": "sb_01_ruins_p01_d",
+   "n": "sb_01_ruins_p01_n"
+  },
+  "desert": {
+   "d": "sb_02_desertcity_p01_d",
+   "n": "sb_02_desertcity_p01_n"
+  }
+ },
+ "assets": {
+  "ru_slab9": {
+   "src": "ruins",
+   "go": "sb_ruins_01_obj_12 (9)",
+   "face": "auto"
+  },
+  "ru_slab61": {
+   "src": "ruins",
+   "go": "sb_ruins_01_obj_12 (61)",
+   "face": "auto"
+  },
+  "ru_slab29": {
+   "src": "ruins",
+   "go": "sb_ruins_01_obj_12 (29)",
+   "face": "auto"
+  },
+  "ru_slab7": {
+   "src": "ruins",
+   "go": "sb_ruins_01_obj_12 (7)",
+   "face": "auto"
+  },
+  "ru_slab6": {
+   "src": "ruins",
+   "go": "sb_ruins_01_obj_12 (6)",
+   "face": "auto"
+  },
+  "ru_slab11": {
+   "src": "ruins",
+   "go": "sb_ruins_01_obj_12 (11)",
+   "face": "auto"
+  },
+  "ru_slab62": {
+   "src": "ruins",
+   "go": "sb_ruins_01_obj_12 (62)",
+   "face": "auto"
+  },
+  "ru_slab16": {
+   "src": "ruins",
+   "go": "sb_ruins_01_obj_12 (16)",
+   "face": "auto"
+  },
+  "de_dune1": {
+   "src": "desert",
+   "go": "sb_desert_01_ter_01 (1)"
+  },
+  "de_dune6": {
+   "src": "desert",
+   "go": "sb_desert_01_ter_01 (6)"
+  },
+  "de_dune7": {
+   "src": "desert",
+   "go": "sb_desert_01_ter_01 (7)"
+  },
+  "de_dune9": {
+   "src": "desert",
+   "go": "sb_desert_01_ter_01 (9)"
+  },
+  "de_dune2": {
+   "src": "desert",
+   "go": "sb_desert_01_ter_01 (2)"
+  },
+  "de_tower": {
+   "src": "desert",
+   "go": "sb_desert_prop_48 (1)"
+  }
+ },
+ "chunks": {
+  "dist_edges": [
+   45,
+   130,
+   300,
+   700
+  ],
+  "sector_deg": 30
+ },
+ "rules": {
+  "min_x": 21.0,
+  "lane_strip": [
+   -1.0,
+   1.0
+  ],
+  "z_range": [
+   -1000000000.0,
+   1000000000.0
+  ]
+ },
+ "haze": {
+  "density": 0.006,
+  "power": 1.4,
+  "amount": 0.97,
+  "low": 0.5,
+  "low_scale": 38.0
+ },
+ "props_haze": {
+  "density": 0.0025,
+  "power": 1.2,
+  "amount": 0.9
+ },
+ "texture_downscale": 2,
+ "windows": {
+  "sb_ruins_01_atlas_01": {
+   "grids": [
+    {
+     "xs": [
+      [
+       25,
+       93
+      ],
+      [
+       125,
+       195
+      ],
+      [
+       233,
+       301
+      ],
+      [
+       338,
+       407
+      ]
+     ],
+     "ys": [
+      [
+       1431,
+       1487
+      ],
+      [
+       1552,
+       1605
+      ]
+     ]
+    },
+    {
+     "xs": [
+      [
+       11,
+       85
+      ],
+      [
+       90,
+       158
+      ],
+      [
+       162,
+       226
+      ],
+      [
+       231,
+       300
+      ],
+      [
+       305,
+       356
+      ],
+      [
+       360,
+       427
+      ]
+     ],
+     "ys": [
+      [
+       1721,
+       1789
+      ]
+     ]
+    },
+    {
+     "xs": [
+      [
+       5,
+       85
+      ],
+      [
+       90,
+       155
+      ],
+      [
+       160,
+       225
+      ],
+      [
+       231,
+       300
+      ],
+      [
+       305,
+       356
+      ],
+      [
+       360,
+       427
+      ]
+     ],
+     "ys": [
+      [
+       1865,
+       1931
+      ]
+     ]
+    },
+    {
+     "xs": [
+      [
+       433,
+       510
+      ],
+      [
+       512,
+       585
+      ]
+     ],
+     "ys": [
+      [
+       1472,
+       1521
+      ],
+      [
+       1583,
+       1633
+      ],
+      [
+       1689,
+       1737
+      ]
+     ]
+    },
+    {
+     "xs": [
+      [
+       612,
+       693
+      ],
+      [
+       746,
+       826
+      ],
+      [
+       879,
+       959
+      ]
+     ],
+     "ys": [
+      [
+       1447,
+       1494
+      ],
+      [
+       1560,
+       1610
+      ],
+      [
+       1672,
+       1722
+      ]
+     ]
+    },
+    {
+     "xs": [
+      [
+       1001,
+       1070
+      ],
+      [
+       1085,
+       1202
+      ],
+      [
+       1220,
+       1300
+      ],
+      [
+       1321,
+       1389
+      ],
+      [
+       1411,
+       1523
+      ],
+      [
+       1542,
+       1619
+      ]
+     ],
+     "ys": [
+      [
+       1430,
+       1491
+      ],
+      [
+       1553,
+       1630
+      ]
+     ]
+    },
+    {
+     "xs": [
+      [
+       451,
+       539
+      ],
+      [
+       573,
+       662
+      ],
+      [
+       697,
+       783
+      ]
+     ],
+     "ys": [
+      [
+       1783,
+       1827
+      ],
+      [
+       1881,
+       1923
+      ]
+     ]
+    }
+   ],
+   "gain": 0.9,
+   "seed": 5
+  }
+ },
+ "lit": [
+  0.15,
+  0.5
+ ],
+ "layers": [
+  {
+   "id": "skirt",
+   "type": "ground",
+   "x": [
+    18.8,
+    900
+   ],
+   "z": [
+    -700,
+    800
+   ],
+   "step0": 6,
+   "grow": 1.18,
+   "y": -0.02,
+   "noise": 0.03,
+   "seed": 3,
+   "from": {
+    "src": "self",
+    "go": "@ground",
+    "xmin": 14.0,
+    "z": [
+     30,
+     60
+    ]
+   }
+  },
+  {
+   "id": "blocks",
+   "type": "scatter",
+   "seed": 5,
+   "region": {
+    "x": [
+     190,
+     430
+    ],
+    "z": [
+     -260,
+     360
+    ]
+   },
+   "spacing": [
+    55,
+    45
+   ],
+   "fill": 0.7,
+   "jitter": 0.8,
+   "assets": [
+    "ru_slab9",
+    "ru_slab61",
+    "ru_slab29",
+    "ru_slab7",
+    "ru_slab6",
+    "ru_slab11",
+    "ru_slab62",
+    "ru_slab16"
+   ],
+   "scale": [
+    1.3,
+    2.2
+   ],
+   "yaw": [
+    -12,
+    12
+   ],
+   "gain": 2.2,
+   "scale_y": [
+    0.65,
+    1.3
+   ]
+  },
+  {
+   "id": "dunes",
+   "type": "scatter",
+   "seed": 9,
+   "region": {
+    "x": [
+     70,
+     650
+    ],
+    "z": [
+     -520,
+     620
+    ]
+   },
+   "spacing": [
+    120,
+    100
+   ],
+   "fill": 0.9,
+   "jitter": 0.9,
+   "assets": [
+    "de_dune1",
+    "de_dune6",
+    "de_dune7",
+    "de_dune9",
+    "de_dune2"
+   ],
+   "scale": [
+    2.0,
+    4.5
+   ],
+   "yaw": [
+    0,
+    360
+   ],
+   "gain": 0.9,
+   "y": -0.5
+  },
+  {
+   "type": "place",
+   "id": "tower_a",
+   "asset": "de_tower",
+   "pos": [
+    150,
+    0,
+    18
+   ],
+   "yaw": 0,
+   "scale": 2.6,
+   "gain": 1.0
+  },
+  {
+   "type": "place",
+   "id": "tower_b",
+   "asset": "de_tower",
+   "pos": [
+    235,
+    0,
+    112
+   ],
+   "yaw": 30,
+   "scale": 3.4,
+   "gain": 1.0
+  }
+ ]
+}

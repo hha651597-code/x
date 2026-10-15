@@ -1,0 +1,3 @@
+# Roster ids with no Student_Portrait in the install bundles. Each one uses a baked parallelogram fallback
+# (tools/hud_fallback.py) from the bust card in assets/ba/collection, named Student_Portrait_<name>_fallback.png.
+# One line per id: <id> <name> <kind>

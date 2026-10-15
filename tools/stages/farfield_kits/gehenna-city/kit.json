@@ -1,0 +1,616 @@
+{
+ "kit": "gehenna-city",
+ "sources": {
+  "gehenna": "self",
+  "ruins": {
+   "d": "sb_01_ruins_p01_d",
+   "n": "sb_01_ruins_p01_n"
+  },
+  "ruins2": {
+   "d": "sb_01_ruins_p02_d",
+   "n": "sb_01_ruins_p02_n"
+  },
+  "harbor": {
+   "d": "sb_02_harbor_p01_d",
+   "n": "sb_02_harbor_p01_n"
+  }
+ },
+ "assets": {
+  "gh_b01": {
+   "src": "gehenna",
+   "go": "sb_01_slum_building_01"
+  },
+  "gh_b02": {
+   "src": "gehenna",
+   "go": "sb_01_slum_building_02"
+  },
+  "gh_b03": {
+   "src": "gehenna",
+   "go": "sb_01_slum_building_03"
+  },
+  "gh_b04": {
+   "src": "gehenna",
+   "go": "sb_01_slum_building_04"
+  },
+  "gh_b05": {
+   "src": "gehenna",
+   "go": "sb_01_slum_building_05"
+  },
+  "gh_b06": {
+   "src": "gehenna",
+   "go": "sb_01_slum_building_06"
+  },
+  "gh_b07": {
+   "src": "gehenna",
+   "go": "sb_01_slum_building_07"
+  },
+  "gh_tank": {
+   "src": "gehenna",
+   "go": "sb_01_slum_prop_15"
+  },
+  "gh_pole_a": {
+   "src": "gehenna",
+   "go": "sb_01_slum_prop_07"
+  },
+  "gh_pole_b": {
+   "src": "gehenna",
+   "go": "sb_01_slum_prop_08"
+  },
+  "gh_wire": {
+   "src": "gehenna",
+   "go": "sb_01_slum_prop_19"
+  },
+  "hb_cont_red": {
+   "src": "harbor",
+   "go": "sb_harbor_container_red",
+   "alpha": "drop",
+   "gain": 0.6
+  },
+  "hb_cont_green": {
+   "src": "harbor",
+   "go": "sb_harbor_container_green",
+   "alpha": "drop",
+   "gain": 0.6
+  },
+  "hb_cont_yellow": {
+   "src": "harbor",
+   "go": "sb_harbor_container_yellow",
+   "alpha": "drop",
+   "gain": 0.6
+  },
+  "hb_cont_white": {
+   "src": "harbor",
+   "go": "sb_harbor_container_white",
+   "alpha": "drop",
+   "gain": 0.6
+  },
+  "hb_half_orange": {
+   "src": "harbor",
+   "go": "sb_harbor_half_open_container_orange",
+   "alpha": "drop",
+   "gain": 0.6
+  },
+  "hb_crane": {
+   "src": "harbor",
+   "go": "sb_02_harbor_crain_06",
+   "alpha": "drop",
+   "gain": 0.6
+  },
+  "hb_gantry": {
+   "src": "harbor",
+   "go": "sb_02_harbor_crain_04",
+   "alpha": "drop",
+   "gain": 0.6
+  },
+  "ru_slab9": {
+   "src": "ruins",
+   "go": "sb_ruins_01_obj_12 (9)",
+   "face": "auto"
+  },
+  "ru_slab61": {
+   "src": "ruins",
+   "go": "sb_ruins_01_obj_12 (61)",
+   "face": "auto"
+  },
+  "ru_slab29": {
+   "src": "ruins",
+   "go": "sb_ruins_01_obj_12 (29)",
+   "face": "auto"
+  },
+  "ru_slab7": {
+   "src": "ruins",
+   "go": "sb_ruins_01_obj_12 (7)",
+   "face": "auto"
+  },
+  "ru_slab6": {
+   "src": "ruins",
+   "go": "sb_ruins_01_obj_12 (6)",
+   "face": "auto"
+  },
+  "ru_slab11": {
+   "src": "ruins",
+   "go": "sb_ruins_01_obj_12 (11)",
+   "face": "auto"
+  },
+  "ru_slab62": {
+   "src": "ruins",
+   "go": "sb_ruins_01_obj_12 (62)",
+   "face": "auto"
+  },
+  "ru_slab16": {
+   "src": "ruins",
+   "go": "sb_ruins_01_obj_12 (16)",
+   "face": "auto"
+  },
+  "ru2_arch": {
+   "src": "ruins2",
+   "go": "sb_ruins_01_obj_27"
+  },
+  "ru2_frame_a": {
+   "src": "ruins2",
+   "go": "sb_ruins_01_obj_03"
+  },
+  "ru2_frame_b": {
+   "src": "ruins2",
+   "go": "sb_ruins_01_obj_59"
+  },
+  "ru2_frame_c": {
+   "src": "ruins2",
+   "go": "sb_ruins_01_obj_60"
+  },
+  "ru2_roof_box": {
+   "src": "ruins2",
+   "go": "sb_ruins_01_obj_13"
+  },
+  "ru2_roof_shed": {
+   "src": "ruins2",
+   "go": "sb_ruins_01_obj_14"
+  },
+  "ru2_roof_vent": {
+   "src": "ruins2",
+   "go": "sb_ruins_01_obj_16"
+  },
+  "ru2_roof_pipe": {
+   "src": "ruins2",
+   "go": "sb_ruins_01_obj_17"
+  },
+  "ru2_roof_tank": {
+   "src": "ruins2",
+   "go": "sb_ruins_01_obj_18"
+  },
+  "ru2_roof_duct": {
+   "src": "ruins2",
+   "go": "sb_ruins_01_obj_21"
+  },
+  "ru2_roof_ac": {
+   "src": "ruins2",
+   "go": "sb_ruins_01_obj_20"
+  },
+  "ru2_roof_platform": {
+   "src": "ruins2",
+   "go": "sb_ruins_01_obj_06"
+  },
+  "ru2_lamp": {
+   "src": "ruins2",
+   "go": "sb_ruins_01_obj_38"
+  },
+  "pr_barrel_blk": {
+   "src": "gehenna",
+   "go": "sb_01_slum_prop_05",
+   "pick": "brightest"
+  },
+  "pr_barrel_org": {
+   "src": "gehenna",
+   "go": "sb_01_slum_prop_06",
+   "pick": "brightest"
+  },
+  "pr_barrel_gry": {
+   "src": "gehenna",
+   "go": "sb_01_slum_prop_04",
+   "pick": "brightest"
+  },
+  "pr_tire": {
+   "src": "gehenna",
+   "go": "sb_01_slum_prop_12",
+   "pick": "brightest"
+  },
+  "pr_aframe_a": {
+   "src": "gehenna",
+   "go": "sb_01_slum_prop_01",
+   "pick": "brightest"
+  },
+  "pr_aframe_b": {
+   "src": "gehenna",
+   "go": "sb_01_slum_prop_02",
+   "pick": "brightest"
+  },
+  "pr_boards": {
+   "src": "gehenna",
+   "go": "sb_01_slum_prop_03",
+   "pick": "brightest"
+  },
+  "pr_pole_a": {
+   "src": "gehenna",
+   "go": "sb_01_slum_prop_07",
+   "pick": "brightest"
+  },
+  "pr_pole_b": {
+   "src": "gehenna",
+   "go": "sb_01_slum_prop_08",
+   "pick": "brightest"
+  },
+  "pr_cart": {
+   "src": "gehenna",
+   "go": "sb_01_slum_prop_14",
+   "pick": "brightest"
+  },
+  "pr_tank": {
+   "src": "gehenna",
+   "go": "sb_01_slum_prop_15",
+   "pick": "brightest"
+  },
+  "pr_shed": {
+   "src": "gehenna",
+   "go": "sb_01_slum_prop_16",
+   "pick": "brightest"
+  },
+  "pr_plank": {
+   "src": "gehenna",
+   "go": "sb_01_slum_prop_11",
+   "pick": "brightest"
+  },
+  "pr_rack": {
+   "src": "gehenna",
+   "go": "sb_01_slum_prop_09",
+   "pick": "brightest"
+  },
+  "pr_panel": {
+   "src": "gehenna",
+   "go": "sb_01_slum_prop_27",
+   "pick": "brightest"
+  }
+ },
+ "crops": {
+  "dirt": {
+   "src": "gehenna",
+   "material": "sb_slum_gehenna_01_atlas",
+   "rect": [
+    1540,
+    1040,
+    500,
+    500
+   ]
+  },
+  "rust": {
+   "src": "gehenna",
+   "material": "sb_slum_gehenna_01_atlas",
+   "rect": [
+    4,
+    304,
+    296,
+    296
+   ]
+  }
+ },
+ "windows": {
+  "sb_ruins_01_atlas_01": {
+   "grids": [
+    {
+     "xs": [
+      [
+       25,
+       93
+      ],
+      [
+       125,
+       195
+      ],
+      [
+       233,
+       301
+      ],
+      [
+       338,
+       407
+      ]
+     ],
+     "ys": [
+      [
+       1431,
+       1487
+      ],
+      [
+       1552,
+       1605
+      ]
+     ]
+    },
+    {
+     "xs": [
+      [
+       11,
+       85
+      ],
+      [
+       90,
+       158
+      ],
+      [
+       162,
+       226
+      ],
+      [
+       231,
+       300
+      ],
+      [
+       305,
+       356
+      ],
+      [
+       360,
+       427
+      ]
+     ],
+     "ys": [
+      [
+       1721,
+       1789
+      ]
+     ]
+    },
+    {
+     "xs": [
+      [
+       5,
+       85
+      ],
+      [
+       90,
+       155
+      ],
+      [
+       160,
+       225
+      ],
+      [
+       231,
+       300
+      ],
+      [
+       305,
+       356
+      ],
+      [
+       360,
+       427
+      ]
+     ],
+     "ys": [
+      [
+       1865,
+       1931
+      ]
+     ]
+    },
+    {
+     "xs": [
+      [
+       433,
+       510
+      ],
+      [
+       512,
+       585
+      ]
+     ],
+     "ys": [
+      [
+       1472,
+       1521
+      ],
+      [
+       1583,
+       1633
+      ],
+      [
+       1689,
+       1737
+      ]
+     ]
+    },
+    {
+     "xs": [
+      [
+       612,
+       693
+      ],
+      [
+       746,
+       826
+      ],
+      [
+       879,
+       959
+      ]
+     ],
+     "ys": [
+      [
+       1447,
+       1494
+      ],
+      [
+       1560,
+       1610
+      ],
+      [
+       1672,
+       1722
+      ]
+     ]
+    },
+    {
+     "xs": [
+      [
+       1001,
+       1070
+      ],
+      [
+       1085,
+       1202
+      ],
+      [
+       1220,
+       1300
+      ],
+      [
+       1321,
+       1389
+      ],
+      [
+       1411,
+       1523
+      ],
+      [
+       1542,
+       1619
+      ]
+     ],
+     "ys": [
+      [
+       1430,
+       1491
+      ],
+      [
+       1553,
+       1630
+      ]
+     ]
+    },
+    {
+     "xs": [
+      [
+       451,
+       539
+      ],
+      [
+       573,
+       662
+      ],
+      [
+       697,
+       783
+      ]
+     ],
+     "ys": [
+      [
+       1783,
+       1827
+      ],
+      [
+       1881,
+       1923
+      ]
+     ]
+    }
+   ],
+   "gain": 0.9,
+   "seed": 5
+  }
+ },
+ "fx": {
+  "smoke": {
+   "tex": "FX_TEX_Smoke_RGB_05.png",
+   "params_d": {
+    "smoke_life": 18.0,
+    "smoke_drift": [
+     6.0,
+     2.0
+    ],
+    "smoke_lit": [
+     0.62,
+     0.44,
+     0.4
+    ],
+    "smoke_shade": [
+     0.26,
+     0.2,
+     0.27
+    ],
+    "smoke_alpha": 0.6
+   },
+   "params_n": {
+    "smoke_life": 18.0,
+    "smoke_drift": [
+     6.0,
+     2.0
+    ],
+    "smoke_lit": [
+     0.22,
+     0.2,
+     0.3
+    ],
+    "smoke_shade": [
+     0.08,
+     0.08,
+     0.14
+    ],
+    "smoke_alpha": 0.6
+   }
+  },
+  "glow": {
+   "tex": "FX_TEX_Circle_Glow_01.png"
+  }
+ },
+ "chunks": {
+  "dist_edges": [
+   70,
+   200,
+   600
+  ],
+  "sector_deg": 40
+ },
+ "rules": {
+  "min_x": 21.0,
+  "lane_strip": [
+   -1.0,
+   1.0
+  ],
+  "z_range": [
+   -1000000000.0,
+   1000000000.0
+  ]
+ },
+ "haze": {
+  "density": 0.0024,
+  "power": 1.4,
+  "amount": 0.72,
+  "low": 0.35,
+  "low_scale": 38.0
+ },
+ "props_haze": {
+  "density": 0.0025,
+  "power": 1.2,
+  "amount": 0.9
+ },
+ "texture_downscale": {
+  "default": 2,
+  "gehenna": 1
+ },
+ "lit": [
+  0.15,
+  0.5
+ ],
+ "night_floor": [
+  0.06,
+  0.065,
+  0.09
+ ],
+ "cards": {
+  "src": "ruins",
+  "material": "sb_ruins_01_atlas_01",
+  "cols": 4,
+  "rows": 4,
+  "seed": 3
+ }
+}

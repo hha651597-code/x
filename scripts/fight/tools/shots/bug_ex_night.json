@@ -1,0 +1,187 @@
+{
+ "timeout": 240,
+ "steps": [
+  {
+   "session": {
+    "mode": "training",
+    "stage": "gehenna-night",
+    "stage_time": "night",
+    "players": [
+     {
+      "claimed": true,
+      "device": "kb1",
+      "fighter": 10004,
+      "special": 10017
+     },
+     {
+      "claimed": false,
+      "device": "",
+      "fighter": 10005,
+      "special": 10017
+     }
+    ]
+   }
+  },
+  {
+   "go": "fight",
+   "style": "cut"
+  },
+  {
+   "wait": 3.5
+  },
+  {
+   "fighter": {
+    "slot": 1,
+    "pos": [
+     -150,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "fighter": {
+    "slot": 2,
+    "pos": [
+     150,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "frames": 60
+  },
+  {
+   "fighter": {
+    "slot": 1,
+    "pos": [
+     -150,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ],
+    "meter": 100
+   }
+  },
+  {
+   "fighter": {
+    "slot": 2,
+    "pos": [
+     150,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ],
+    "meter": 100
+   }
+  },
+  {
+   "frames": 10
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "mem": "ex_before"
+  },
+  {
+   "stage_trace": 175
+  },
+  {
+   "tap": [
+    "kb1",
+    "aux2"
+   ],
+   "frames": 3
+  },
+  {
+   "frames": 2
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "frames": 6
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "frames": 8
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "frames": 10
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "frames": 10
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "frames": 10
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "frames": 10
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "frames": 10
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "frames": 10
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "frames": 20
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "frames": 40
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "frames": 33
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "mem": "ex_after"
+  },
+  {
+   "quit": true
+  }
+ ]
+}

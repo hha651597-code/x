@@ -1,0 +1,17 @@
+{
+ "timeout": 120,
+ "steps": [
+  {"session": {"mode": "versus-cpu", "stage": "gehenna-night", "stage_time": "day", "players": [
+    {"claimed": true, "device": "kb1", "fighter": 10004, "special": 20001},
+    {"claimed": true, "device": "kb2", "fighter": 10005, "special": 23005, "cpu": true}]}},
+  {"go": "fight", "style": "cut"},
+  {"frames": 5}, {"stage_print": true}, {"shot": ".dev/out/stage3d/intro_01.png", "scale": 0.5},
+  {"frames": 25}, {"stage_print": true}, {"shot": ".dev/out/stage3d/intro_02.png", "scale": 0.5},
+  {"frames": 25}, {"stage_print": true}, {"shot": ".dev/out/stage3d/intro_03.png", "scale": 0.5},
+  {"frames": 25}, {"stage_print": true}, {"shot": ".dev/out/stage3d/intro_04.png", "scale": 0.5},
+  {"frames": 25}, {"stage_print": true}, {"shot": ".dev/out/stage3d/intro_05.png", "scale": 0.5},
+  {"frames": 25}, {"stage_print": true}, {"shot": ".dev/out/stage3d/intro_06.png", "scale": 0.5},
+  {"frames": 40}, {"stage_print": true}, {"shot": ".dev/out/stage3d/intro_07.png", "scale": 0.5},
+  {"quit": true}
+ ]
+}

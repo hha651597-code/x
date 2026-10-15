@@ -1,0 +1,275 @@
+{
+ "timeout": 240,
+ "steps": [
+  {
+   "session": {
+    "mode": "training",
+    "stage": "gehenna-night",
+    "stage_time": "day",
+    "players": [
+     {
+      "claimed": true,
+      "device": "kb1",
+      "fighter": 10004,
+      "special": 10017
+     },
+     {
+      "claimed": false,
+      "device": "",
+      "fighter": 10005,
+      "special": 10017
+     }
+    ]
+   }
+  },
+  {
+   "mem": "repeat_baseline"
+  },
+  {
+   "go": "fight",
+   "style": "cut"
+  },
+  {
+   "frames": 90
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "mem": "repeat_c1_fight"
+  },
+  {
+   "go": "menu",
+   "style": "cut"
+  },
+  {
+   "frames": 30
+  },
+  {
+   "mem": "repeat_c1_menu"
+  },
+  {
+   "session": {
+    "mode": "training",
+    "stage": "gehenna-night",
+    "stage_time": "day",
+    "players": [
+     {
+      "claimed": true,
+      "device": "kb1",
+      "fighter": 10004,
+      "special": 10017
+     },
+     {
+      "claimed": false,
+      "device": "",
+      "fighter": 10005,
+      "special": 10017
+     }
+    ]
+   }
+  },
+  {
+   "go": "fight",
+   "style": "cut"
+  },
+  {
+   "frames": 90
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "mem": "repeat_c2_fight"
+  },
+  {
+   "go": "menu",
+   "style": "cut"
+  },
+  {
+   "frames": 30
+  },
+  {
+   "mem": "repeat_c2_menu"
+  },
+  {
+   "session": {
+    "mode": "training",
+    "stage": "gehenna-night",
+    "stage_time": "day",
+    "players": [
+     {
+      "claimed": true,
+      "device": "kb1",
+      "fighter": 10004,
+      "special": 10017
+     },
+     {
+      "claimed": false,
+      "device": "",
+      "fighter": 10005,
+      "special": 10017
+     }
+    ]
+   }
+  },
+  {
+   "go": "fight",
+   "style": "cut"
+  },
+  {
+   "frames": 90
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "mem": "repeat_c3_fight"
+  },
+  {
+   "go": "menu",
+   "style": "cut"
+  },
+  {
+   "frames": 30
+  },
+  {
+   "mem": "repeat_c3_menu"
+  },
+  {
+   "session": {
+    "mode": "training",
+    "stage": "gehenna-night",
+    "stage_time": "day",
+    "players": [
+     {
+      "claimed": true,
+      "device": "kb1",
+      "fighter": 10004,
+      "special": 10017
+     },
+     {
+      "claimed": false,
+      "device": "",
+      "fighter": 10005,
+      "special": 10017
+     }
+    ]
+   }
+  },
+  {
+   "go": "fight",
+   "style": "cut"
+  },
+  {
+   "frames": 90
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "mem": "repeat_c4_fight"
+  },
+  {
+   "go": "menu",
+   "style": "cut"
+  },
+  {
+   "frames": 30
+  },
+  {
+   "mem": "repeat_c4_menu"
+  },
+  {
+   "session": {
+    "mode": "training",
+    "stage": "gehenna-night",
+    "stage_time": "day",
+    "players": [
+     {
+      "claimed": true,
+      "device": "kb1",
+      "fighter": 10004,
+      "special": 10017
+     },
+     {
+      "claimed": false,
+      "device": "",
+      "fighter": 10005,
+      "special": 10017
+     }
+    ]
+   }
+  },
+  {
+   "go": "fight",
+   "style": "cut"
+  },
+  {
+   "frames": 90
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "mem": "repeat_c5_fight"
+  },
+  {
+   "go": "menu",
+   "style": "cut"
+  },
+  {
+   "frames": 30
+  },
+  {
+   "mem": "repeat_c5_menu"
+  },
+  {
+   "session": {
+    "mode": "training",
+    "stage": "gehenna-night",
+    "stage_time": "day",
+    "players": [
+     {
+      "claimed": true,
+      "device": "kb1",
+      "fighter": 10004,
+      "special": 10017
+     },
+     {
+      "claimed": false,
+      "device": "",
+      "fighter": 10005,
+      "special": 10017
+     }
+    ]
+   }
+  },
+  {
+   "go": "fight",
+   "style": "cut"
+  },
+  {
+   "frames": 90
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "mem": "repeat_c6_fight"
+  },
+  {
+   "go": "menu",
+   "style": "cut"
+  },
+  {
+   "frames": 30
+  },
+  {
+   "mem": "repeat_c6_menu"
+  },
+  {
+   "quit": true
+  }
+ ]
+}

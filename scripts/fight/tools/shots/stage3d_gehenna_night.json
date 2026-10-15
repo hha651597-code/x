@@ -1,0 +1,575 @@
+{
+ "timeout": 240,
+ "steps": [
+  {
+   "session": {
+    "mode": "training",
+    "stage": "gehenna-night",
+    "stage_time": "night",
+    "players": [
+     {
+      "claimed": true,
+      "device": "kb1",
+      "fighter": 10004,
+      "special": 10017
+     },
+     {
+      "claimed": false,
+      "device": "",
+      "fighter": 10005,
+      "special": 10017
+     }
+    ]
+   }
+  },
+  {
+   "go": "fight",
+   "style": "cut"
+  },
+  {
+   "frames": 12
+  },
+  {
+   "shot": ".dev/out/stage3d/night_01_start_first_frames.png"
+  },
+  {
+   "wait": 3.0
+  },
+  {
+   "shot": ".dev/out/stage3d/night_02_round_start.png"
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "fighter": {
+    "slot": 1,
+    "pos": [
+     -700,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "fighter": {
+    "slot": 2,
+    "pos": [
+     700,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "frames": 90
+  },
+  {
+   "shot": ".dev/out/stage3d/night_03_apart_zoom_out.png"
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "fighter": {
+    "slot": 1,
+    "pos": [
+     -60,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "fighter": {
+    "slot": 2,
+    "pos": [
+     60,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "frames": 60
+  },
+  {
+   "shot": ".dev/out/stage3d/night_04_close.png"
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "fighter": {
+    "slot": 1,
+    "pos": [
+     -640,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "fighter": {
+    "slot": 2,
+    "pos": [
+     -420,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "frames": 80
+  },
+  {
+   "shot": ".dev/out/stage3d/night_05_left_edge.png"
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "fighter": {
+    "slot": 1,
+    "pos": [
+     420,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "fighter": {
+    "slot": 2,
+    "pos": [
+     640,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "frames": 80
+  },
+  {
+   "shot": ".dev/out/stage3d/night_06_right_edge.png"
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "fighter": {
+    "slot": 1,
+    "pos": [
+     -230,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "fighter": {
+    "slot": 2,
+    "pos": [
+     230,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "frames": 80
+  },
+  {
+   "timescale": 0.25
+  },
+  {
+   "tap": [
+    "kb1",
+    "up"
+   ],
+   "frames": 3
+  },
+  {
+   "frames": 14
+  },
+  {
+   "shot": ".dev/out/stage3d/night_07_jump_1.png"
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "frames": 14
+  },
+  {
+   "shot": ".dev/out/stage3d/night_08_jump_2.png"
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "frames": 14
+  },
+  {
+   "shot": ".dev/out/stage3d/night_09_jump_3.png"
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "timescale": 1.0
+  },
+  {
+   "frames": 120
+  },
+  {
+   "frames": 20
+  },
+  {
+   "shot": ".dev/out/stage3d/night_10_ex_before.png"
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "print": true
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "tap": [
+    "kb1",
+    "aux2"
+   ],
+   "frames": 3
+  },
+  {
+   "frames": 2
+  },
+  {
+   "print": true
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "shot": ".dev/out/stage3d/night_11_ex_trigger.png"
+  },
+  {
+   "frames": 4
+  },
+  {
+   "print": true
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "shot": ".dev/out/stage3d/night_12_ex_burst.png"
+  },
+  {
+   "frames": 8
+  },
+  {
+   "print": true
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "shot": ".dev/out/stage3d/night_13_ex_freeze_a.png"
+  },
+  {
+   "frames": 10
+  },
+  {
+   "print": true
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "shot": ".dev/out/stage3d/night_14_ex_freeze_b.png"
+  },
+  {
+   "frames": 10
+  },
+  {
+   "print": true
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "shot": ".dev/out/stage3d/night_15_ex_freeze_c.png"
+  },
+  {
+   "frames": 10
+  },
+  {
+   "print": true
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "shot": ".dev/out/stage3d/night_16_ex_freeze_d.png"
+  },
+  {
+   "frames": 10
+  },
+  {
+   "print": true
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "shot": ".dev/out/stage3d/night_17_ex_freeze_e.png"
+  },
+  {
+   "frames": 8
+  },
+  {
+   "print": true
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "shot": ".dev/out/stage3d/night_18_ex_spotlight.png"
+  },
+  {
+   "frames": 6
+  },
+  {
+   "print": true
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "shot": ".dev/out/stage3d/night_19_ex_resume.png"
+  },
+  {
+   "frames": 6
+  },
+  {
+   "print": true
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "shot": ".dev/out/stage3d/night_20_ex_after_a.png"
+  },
+  {
+   "frames": 20
+  },
+  {
+   "print": true
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "shot": ".dev/out/stage3d/night_21_ex_after_b.png"
+  },
+  {
+   "frames": 40
+  },
+  {
+   "print": true
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "shot": ".dev/out/stage3d/night_22_ex_after_c.png"
+  },
+  {
+   "frames": 30
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "session": {
+    "mode": "versus-cpu",
+    "stage": "gehenna-night",
+    "stage_time": "night",
+    "players": [
+     {
+      "claimed": true,
+      "device": "kb1",
+      "fighter": 10004,
+      "special": 10017
+     },
+     {
+      "claimed": true,
+      "device": "kb2",
+      "fighter": 10005,
+      "special": 10017,
+      "cpu": true
+     }
+    ]
+   }
+  },
+  {
+   "go": "fight",
+   "style": "cut"
+  },
+  {
+   "wait": 3.5
+  },
+  {
+   "fighter": {
+    "slot": 2,
+    "hp": 1,
+    "pos": [
+     60,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "fighter": {
+    "slot": 1,
+    "pos": [
+     -60,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "frames": 20
+  },
+  {
+   "shot": ".dev/out/stage3d/night_ko_01_before_hit.png"
+  },
+  {
+   "fighter": {
+    "slot": 2,
+    "hp": 0,
+    "state": "AIRHIT",
+    "pos": [
+     60,
+     470
+    ],
+    "vel": [
+     6,
+     -4
+    ]
+   }
+  },
+  {
+   "frames": 8
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": ".dev/out/stage3d/night_ko_02_airborne.png"
+  },
+  {
+   "frames": 14
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": ".dev/out/stage3d/night_ko_03_ko_a.png"
+  },
+  {
+   "frames": 24
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": ".dev/out/stage3d/night_ko_04_ko_b.png"
+  },
+  {
+   "frames": 40
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": ".dev/out/stage3d/night_ko_05_ko_c.png"
+  },
+  {
+   "frames": 60
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": ".dev/out/stage3d/night_ko_06_ko_d.png"
+  },
+  {
+   "frames": 90
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": ".dev/out/stage3d/night_ko_07_ko_e.png"
+  },
+  {
+   "frames": 120
+  },
+  {
+   "print": true
+  },
+  {
+   "shot": ".dev/out/stage3d/night_ko_08_ko_f.png"
+  }
+ ]
+}

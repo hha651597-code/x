@@ -1,0 +1,62 @@
+{
+ "Title_FightingGame.png": {
+  "derived_from": "'Fighting' #00D0F8 and 'Game' #F8F8F8 (the logo's colours), sheared 0.25",
+  "font": "Orbitron variable, wght 900, Google Fonts, SIL OFL 1.1",
+  "sha256": "9d6cdfb3ab0244a35412726b8966c4e3295beec5b2bb50b56c8a8e674446f146",
+  "source": "tools/title_assets.py lettering"
+ },
+ "Title_Logo.png": {
+  "derived_from": "UnityPy Texture2D export, unchanged",
+  "sha256": "f4539fd2a310e63a5f9270c67a701edec6833b48b8defd464c55dd9e31d1b21e",
+  "source": "UIs/00_Images/ImageFont/Title_Logo",
+  "source_bundle": "prologgroup-assets-_mx-addressableasset-uis-00_images-imagefont-_mxprolog-2024-11-18_000_assets_all_1023186989.bundle"
+ },
+ "video/2nd.ogv": {
+  "derived_from": "tools/title_assets.py: VP9 -> Theora q6, centre 1920x1080, audio dropped",
+  "sha256": "ea40a534a84b83cdcdf72ee732f361acdbb6502d5ea66e48a19951080fa364c6",
+  "source": "title_2nd_1.mp4",
+  "source_sha256": "99d1bba2ce702c9a1074b280ecaa3b38cd7366562cf7cd911af85ee1c4821310"
+ },
+ "video/3rd.ogv": {
+  "derived_from": "tools/title_assets.py: VP9 -> Theora q6, centre 1920x1080, audio dropped",
+  "sha256": "ab4377f4ab8a330417d2ab1dda6ec511e8319b87c1c6f64af65c71874f3f5382",
+  "source": "title_3rd_1.mp4",
+  "source_sha256": "369f0282d80877b93a9373d3106546eb745f3bc9dc8b6cc9168d90374dc8487f"
+ },
+ "video/4th.ogv": {
+  "derived_from": "tools/title_assets.py: VP9 -> Theora q6, centre 1920x1080, audio dropped",
+  "sha256": "d85d0cc57cf91b0c173e73f271a9f58d29515ade9d752f9dabff67f377ac730d",
+  "source": "title_4nd_2.mp4",
+  "source_sha256": "107547e578e2eaf84cf00d18ea52f2b44f0c89b755ea95199308a7b5a1c49f30"
+ },
+ "video/4th_ep.ogv": {
+  "derived_from": "tools/title_assets.py: VP9 -> Theora q6, centre 1920x1080, audio dropped",
+  "sha256": "0e733dbd7b0116cc20c3ddb619dd4aa817fe0ebb6384b259ea251469c3be6eeb",
+  "source": "title_4nd_Ep.mp4",
+  "source_sha256": "7f4ffb981b28811edf2ef9001492abe6651cfa49d6f20da410947860f837efec"
+ },
+ "video/5th.ogv": {
+  "derived_from": "tools/title_assets.py: VP9 -> Theora q6, centre 1920x1080, audio dropped",
+  "sha256": "eddc37cc29d3ea18961ef4efec79daacbde3b4531d1090f34bd6834f7ebb497e",
+  "source": "title_5th_1.mp4",
+  "source_sha256": "6ef2b9384ad5f3a854e2d2c849a8c6bb98e3283160240af05fbe7aafe5d36323"
+ },
+ "video/6th.ogv": {
+  "derived_from": "tools/title_assets.py: VP9 -> Theora q6, centre 1920x1080, audio dropped",
+  "sha256": "95619c2d93630d76fec5b516551ede7f443ae9ece0581293403dd1633dcb2991",
+  "source": "title_6th_1.mp4",
+  "source_sha256": "4515e627efef1ef20f614d9df86b545c6e67996888df2a80c9a91b3e6ccc0a30"
+ },
+ "video/7th.ogv": {
+  "derived_from": "tools/title_assets.py: VP9 -> Theora q6, centre 1920x1080, audio dropped",
+  "sha256": "e0871a801248461db757e76ad760b811e6c915ca2ed901639a3c359030603301",
+  "source": "title_7th_1.mp4",
+  "source_sha256": "aaa20769320cec7b67a358bd1fcb4efa04ad387dd1a3daf6d237ce21b2e1053e"
+ },
+ "video/opening.ogv": {
+  "derived_from": "tools/title_assets.py: VP9 -> Theora q6, centre 1920x1080, audio dropped",
+  "sha256": "e0798c87dddbe1590295d7dd8aff5c95ea9fad8a91aa66b2653c3260726eae73",
+  "source": "title_0.mp4",
+  "source_sha256": "5c19a93997c9d83de2cc1b4d6ec96fa628cf032eebb02f201a5bcf616ab136fb"
+ }
+}

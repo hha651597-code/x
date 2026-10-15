@@ -1,0 +1,496 @@
+{
+ "timeout": 120,
+ "steps": [
+  {
+   "session": {
+    "mode": "training",
+    "players": [
+     {
+      "claimed": true,
+      "device": "kb1",
+      "fighter": 10005,
+      "special": 20001
+     },
+     {
+      "claimed": true,
+      "device": "kb2",
+      "fighter": 10004,
+      "special": 23005,
+      "cpu": true
+     }
+    ],
+    "stage": "gehenna-night"
+   }
+  },
+  {
+   "go": "fight",
+   "style": "cut"
+  },
+  {
+   "wait": 2.2
+  },
+  {
+   "fighter": {
+    "slot": 1,
+    "pos": [
+     110,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ],
+    "meter": 100
+   }
+  },
+  {
+   "fighter": {
+    "slot": 2,
+    "pos": [
+     0,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ],
+    "gap": 46
+   }
+  },
+  {
+   "tap": [
+    "kb1",
+    "confirm"
+   ],
+   "frames": 3
+  },
+  {
+   "wait": 0.04
+  },
+  {
+   "print": true
+  },
+  {
+   "wait": 0.6
+  },
+  {
+   "fighter": {
+    "slot": 1,
+    "pos": [
+     110,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ],
+    "meter": 100
+   }
+  },
+  {
+   "fighter": {
+    "slot": 2,
+    "pos": [
+     0,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ],
+    "gap": 46
+   }
+  },
+  {
+   "tap": [
+    "kb1",
+    "back"
+   ],
+   "frames": 3
+  },
+  {
+   "wait": 0.22
+  },
+  {
+   "print": true
+  },
+  {
+   "wait": 0.9
+  },
+  {
+   "fighter": {
+    "slot": 1,
+    "pos": [
+     110,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ],
+    "meter": 100
+   }
+  },
+  {
+   "fighter": {
+    "slot": 2,
+    "pos": [
+     0,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ],
+    "gap": 46
+   }
+  },
+  {
+   "hold": [
+    "kb1",
+    "down"
+   ]
+  },
+  {
+   "tap": [
+    "kb1",
+    "confirm"
+   ],
+   "frames": 3
+  },
+  {
+   "wait": 0.04
+  },
+  {
+   "print": true
+  },
+  {
+   "release": [
+    "kb1",
+    "down"
+   ]
+  },
+  {
+   "wait": 0.6
+  },
+  {
+   "fighter": {
+    "slot": 1,
+    "pos": [
+     110,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ],
+    "meter": 100
+   }
+  },
+  {
+   "fighter": {
+    "slot": 2,
+    "pos": [
+     0,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ],
+    "gap": 46
+   }
+  },
+  {
+   "hold": [
+    "kb1",
+    "down"
+   ]
+  },
+  {
+   "tap": [
+    "kb1",
+    "back"
+   ],
+   "frames": 3
+  },
+  {
+   "wait": 0.06
+  },
+  {
+   "print": true
+  },
+  {
+   "release": [
+    "kb1",
+    "down"
+   ]
+  },
+  {
+   "wait": 1.2
+  },
+  {
+   "fighter": {
+    "slot": 1,
+    "pos": [
+     110,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ],
+    "meter": 100
+   }
+  },
+  {
+   "fighter": {
+    "slot": 2,
+    "pos": [
+     0,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ],
+    "gap": 46
+   }
+  },
+  {
+   "tap": [
+    "kb1",
+    "up"
+   ],
+   "frames": 3
+  },
+  {
+   "wait": 0.15
+  },
+  {
+   "tap": [
+    "kb1",
+    "confirm"
+   ],
+   "frames": 3
+  },
+  {
+   "wait": 0.04
+  },
+  {
+   "print": true
+  },
+  {
+   "wait": 1.2
+  },
+  {
+   "fighter": {
+    "slot": 1,
+    "pos": [
+     110,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ],
+    "meter": 100
+   }
+  },
+  {
+   "fighter": {
+    "slot": 2,
+    "pos": [
+     0,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ],
+    "gap": 46
+   }
+  },
+  {
+   "tap": [
+    "kb1",
+    "up"
+   ],
+   "frames": 3
+  },
+  {
+   "wait": 0.15
+  },
+  {
+   "tap": [
+    "kb1",
+    "back"
+   ],
+   "frames": 3
+  },
+  {
+   "wait": 0.06
+  },
+  {
+   "print": true
+  },
+  {
+   "wait": 1.2
+  },
+  {
+   "fighter": {
+    "slot": 1,
+    "pos": [
+     110,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ],
+    "meter": 100
+   }
+  },
+  {
+   "fighter": {
+    "slot": 2,
+    "pos": [
+     330,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "hold": [
+    "kb1",
+    "aux"
+   ]
+  },
+  {
+   "wait": 0.7
+  },
+  {
+   "print": true
+  },
+  {
+   "release": [
+    "kb1",
+    "aux"
+   ]
+  },
+  {
+   "wait": 0.08
+  },
+  {
+   "print": true
+  },
+  {
+   "wait": 1.0
+  },
+  {
+   "fighter": {
+    "slot": 1,
+    "pos": [
+     110,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ],
+    "meter": 100
+   }
+  },
+  {
+   "fighter": {
+    "slot": 2,
+    "pos": [
+     0,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ],
+    "gap": 46
+   }
+  },
+  {
+   "tap": [
+    "kb1",
+    "up"
+   ],
+   "frames": 3
+  },
+  {
+   "wait": 0.15
+  },
+  {
+   "tap": [
+    "kb1",
+    "aux"
+   ],
+   "frames": 3
+  },
+  {
+   "wait": 0.06
+  },
+  {
+   "print": true
+  },
+  {
+   "wait": 1.2
+  },
+  {
+   "fighter": {
+    "slot": 1,
+    "pos": [
+     110,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ],
+    "meter": 100
+   }
+  },
+  {
+   "fighter": {
+    "slot": 2,
+    "pos": [
+     0,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ],
+    "gap": 46
+   }
+  },
+  {
+   "tap": [
+    "kb1",
+    "aux2"
+   ],
+   "frames": 3
+  },
+  {
+   "wait": 0.3
+  },
+  {
+   "print": true
+  },
+  {
+   "wait": 2.6
+  },
+  {
+   "print": true
+  }
+ ]
+}

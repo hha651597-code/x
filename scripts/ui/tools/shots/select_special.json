@@ -1,0 +1,70 @@
+{
+ "timeout": 120,
+ "steps": [
+  {
+   "session": {
+    "mode": "versus2p",
+    "players": [
+     {
+      "claimed": true,
+      "device": "kb1",
+      "fighter": 10004
+     },
+     {
+      "claimed": true,
+      "device": "kb2",
+      "fighter": 10005
+     }
+    ]
+   }
+  },
+  {
+   "go": "select",
+   "params": {},
+   "style": "cut"
+  },
+  {
+   "wait": 3.5
+  },
+  {
+   "press": [
+    "kb1",
+    "confirm"
+   ]
+  },
+  {
+   "wait": 1.6
+  },
+  {
+   "shot": "/tmp/ba-ui-out/extras/special_open.png"
+  },
+  {
+   "press": [
+    "kb1",
+    "down"
+   ],
+   "times": 2,
+   "gap": 0.15
+  },
+  {
+   "press": [
+    "kb1",
+    "right"
+   ],
+   "times": 2,
+   "gap": 0.15
+  },
+  {
+   "wait": 0.8
+  },
+  {
+   "shot": "/tmp/ba-ui-out/extras/special_moved.png"
+  },
+  {
+   "print": true
+  },
+  {
+   "quit": true
+  }
+ ]
+}

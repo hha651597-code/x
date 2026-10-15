@@ -1,0 +1,74 @@
+{
+ "extras": [
+  {
+   "pos": [
+    9.63,
+    0.74,
+    49.08
+   ],
+   "glow": "fire",
+   "light": {
+    "range": 4.3,
+    "color": [
+     1.0,
+     0.8353,
+     0.7123
+    ],
+    "intensity": 0.8
+   }
+  },
+  {
+   "pos": [
+    9.14,
+    0.74,
+    51.49
+   ],
+   "glow": "fire",
+   "light": {
+    "range": 4.3,
+    "color": [
+     1.0,
+     0.8353,
+     0.7123
+    ],
+    "intensity": 0.8
+   }
+  }
+ ],
+ "glow_presets": {
+  "fire": [
+   {
+    "offset": [
+     -0.15,
+     0.25,
+     0.0
+    ],
+    "size": 1.4,
+    "tint": [
+     1.0,
+     0.55,
+     0.22
+    ],
+    "intensity": 0.9,
+    "flicker": 0.12
+   },
+   {
+    "offset": [
+     -0.2,
+     0.05,
+     0.0
+    ],
+    "size": 0.35,
+    "tint": [
+     1.0,
+     0.85,
+     0.5
+    ],
+    "intensity": 0.8,
+    "flicker": 0.2
+   }
+  ]
+ },
+ "ba_glow": false,
+ "glow_texture": "FX_TEX_Circle_Glow_01"
+}

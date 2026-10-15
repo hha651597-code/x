@@ -1,0 +1,408 @@
+{
+  "repository": "https://github.com/lihaohong6/BlueArchiveModels",
+  "commit": "525ae0faeb0a89f54ef4023f3be3692dcb529e51",
+  "models": [
+    {
+      "character": "hina",
+      "runtime_path": "assets/ba/sd/hina/Hina.glb",
+      "source": "BlueArchiveModels/525ae0faeb0a89f54ef4023f3be3692dcb529e51/Hina.glb",
+      "sha256": "0bbffb3f2e498974ae82c2d9660376d6165bf9b25c0a5e2c3fbbceb451e0d8ff",
+      "bytes": 6712016
+    },
+    {
+      "character": "hoshino",
+      "runtime_path": "assets/ba/sd/hoshino/Hoshino.glb",
+      "source": "BlueArchiveModels/525ae0faeb0a89f54ef4023f3be3692dcb529e51/Hoshino.glb",
+      "sha256": "3e4f1c378541ba1261352003f61c79aae94ef3c584e9e63d74856af1c672fe2a",
+      "bytes": 5806092
+    }
+  ],
+  "scope": "Fan project. The source repository has no license file, so no redistribution rights are claimed.",
+  "textures": [
+    {
+      "kind": "mask",
+      "character": "hina",
+      "runtime_path": "assets/ba/sd/hina/Hina_Original_Body_Mask.png",
+      "source": "Blue Archive Steam install, Texture2D Hina_Original_Body_Mask, copied out of the asset bundle with UnityPy",
+      "sha256": "578083e0c10517a9d5ee79acc98d05914bab4247f66dda473b86ae78e09406e0",
+      "bytes": 25247
+    },
+    {
+      "kind": "mask",
+      "character": "hina",
+      "runtime_path": "assets/ba/sd/hina/Hina_Original_Face_Mask.png",
+      "source": "Blue Archive Steam install, Texture2D Hina_Original_Face_Mask, copied out of the asset bundle with UnityPy",
+      "sha256": "5d7dc6bd00f6c6e052e26fc19fc486f5657d6e54e739688194177da0aa501865",
+      "bytes": 2701
+    },
+    {
+      "kind": "mask",
+      "character": "hina",
+      "runtime_path": "assets/ba/sd/hina/Hina_Original_Hair_Mask.png",
+      "source": "Blue Archive Steam install, Texture2D Hina_Original_Hair_Mask, copied out of the asset bundle with UnityPy",
+      "sha256": "e14bb2a74da451f6181430dd76381741172394b8fbe01846201e6063c0946df4",
+      "bytes": 72773
+    },
+    {
+      "kind": "hair_spec",
+      "character": "hina",
+      "runtime_path": "assets/ba/sd/hina/Hina_Original_Hair_Spec.png",
+      "source": "Blue Archive Steam install, Texture2D Hina_Original_Hair_Spec, copied out of the asset bundle with UnityPy",
+      "sha256": "f902a663a25dfbb6dde681096f98e186cd05f2f4e213a63bd274d5d989a1c389",
+      "bytes": 98658
+    },
+    {
+      "kind": "mask",
+      "character": "hoshino",
+      "runtime_path": "assets/ba/sd/hoshino/Hoshino_Original_Body_Mask.png",
+      "source": "Blue Archive Steam install, Texture2D Hoshino_Original_Body_Mask, copied out of the asset bundle with UnityPy",
+      "sha256": "e484087bed4e032e119658a8a10d8a99592bedea17ac458c07b2563cb2543173",
+      "bytes": 61693
+    },
+    {
+      "kind": "mask",
+      "character": "hoshino",
+      "runtime_path": "assets/ba/sd/hoshino/Hoshino_Original_Face_Mask.png",
+      "source": "Blue Archive Steam install, Texture2D Hoshino_Original_Face_Mask, copied out of the asset bundle with UnityPy",
+      "sha256": "22ce87f54d81f6dd6bc24931f8a9b1c3166dcab04f631f1194c4331ef1439474",
+      "bytes": 2200
+    },
+    {
+      "kind": "mask",
+      "character": "hoshino",
+      "runtime_path": "assets/ba/sd/hoshino/Hoshino_Original_Hair_Mask.png",
+      "source": "Blue Archive Steam install, Texture2D Hoshino_Original_Hair_Mask, copied out of the asset bundle with UnityPy",
+      "sha256": "0cdf893f3115104a2bffe50ad735dc46985da053c94d23546576f05d694cb36c",
+      "bytes": 91355
+    },
+    {
+      "kind": "hair_spec",
+      "character": "hoshino",
+      "runtime_path": "assets/ba/sd/hoshino/Hoshino_Original_Hair_Spec.png",
+      "source": "Blue Archive Steam install, Texture2D Hoshino_Original_Hair_Spec, copied out of the asset bundle with UnityPy",
+      "sha256": "60c2e85c6eef652562afde1b641c764ca2cb54a28d06af5b5c571162d5ac490c",
+      "bytes": 287382
+    },
+    {
+      "kind": "extracted",
+      "character": "hina",
+      "runtime_path": "assets/ba/sd/hina/Hina_Hina_Halo.png",
+      "source": "extracted by Godot's glTF importer from Hina.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "dc72357ac6546ff922a36bb5115388cd71115bcc65c905011f0d75beb77f3030",
+      "bytes": 13737
+    },
+    {
+      "kind": "extracted",
+      "character": "hina",
+      "runtime_path": "assets/ba/sd/hina/Hina_Hina_Mouth_0_1.png",
+      "source": "extracted by Godot's glTF importer from Hina.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "499be562acd4198a5c475664ac8be6a67777517dc06b731ae18a62c0fee186f7",
+      "bytes": 963
+    },
+    {
+      "kind": "extracted",
+      "character": "hina",
+      "runtime_path": "assets/ba/sd/hina/Hina_Hina_Mouth_0_3.png",
+      "source": "extracted by Godot's glTF importer from Hina.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "2f651fdf6500bbe7da87b10ccf58a1254e94c613daadf69aed78dfaffd09fef9",
+      "bytes": 585
+    },
+    {
+      "kind": "extracted",
+      "character": "hina",
+      "runtime_path": "assets/ba/sd/hina/Hina_Hina_Mouth_1_1.png",
+      "source": "extracted by Godot's glTF importer from Hina.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "7676e66678a4f22175e1d628a00ff63919afa2fd2f1e08e80920ac66a703103c",
+      "bytes": 894
+    },
+    {
+      "kind": "extracted",
+      "character": "hina",
+      "runtime_path": "assets/ba/sd/hina/Hina_Hina_Mouth_1_3.png",
+      "source": "extracted by Godot's glTF importer from Hina.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "56f7f773978655e72ce9a124971c1d8ca95cf09c50ee4510d6caf9d525aad05b",
+      "bytes": 726
+    },
+    {
+      "kind": "extracted",
+      "character": "hina",
+      "runtime_path": "assets/ba/sd/hina/Hina_Hina_Mouth_2_0.png",
+      "source": "extracted by Godot's glTF importer from Hina.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "7901109c769cdc2abc5cfec31c45df6db542a9ce8c49b47fe6482ec7d3df8b33",
+      "bytes": 1202
+    },
+    {
+      "kind": "extracted",
+      "character": "hina",
+      "runtime_path": "assets/ba/sd/hina/Hina_Hina_Mouth_2_1.png",
+      "source": "extracted by Godot's glTF importer from Hina.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "999bc9457e60dea11af1a0b7ec444dc6a94359529de028e241f63796eeb2c61d",
+      "bytes": 679
+    },
+    {
+      "kind": "extracted",
+      "character": "hina",
+      "runtime_path": "assets/ba/sd/hina/Hina_Hina_Mouth_2_2.png",
+      "source": "extracted by Godot's glTF importer from Hina.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "410e04e97ec4e0dbbe9900c841ae7de63f39a4ec7ce1b4434c9d4e5631581004",
+      "bytes": 2892
+    },
+    {
+      "kind": "extracted",
+      "character": "hina",
+      "runtime_path": "assets/ba/sd/hina/Hina_Hina_Mouth_2_3.png",
+      "source": "extracted by Godot's glTF importer from Hina.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "4d72ae2cfd12bebb30243d33feb7ba76100d2b241788c6489fb6bbe8a1431e1c",
+      "bytes": 796
+    },
+    {
+      "kind": "extracted",
+      "character": "hina",
+      "runtime_path": "assets/ba/sd/hina/Hina_Hina_Original_Body.png",
+      "source": "extracted by Godot's glTF importer from Hina.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "6d05b41b1da4173f19296014a87c17fd41fab194ad71f551c94a513fcd266050",
+      "bytes": 86703
+    },
+    {
+      "kind": "extracted",
+      "character": "hina",
+      "runtime_path": "assets/ba/sd/hina/Hina_Hina_Original_EyeMouth.png",
+      "source": "extracted by Godot's glTF importer from Hina.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "dcc59c5dd843e0c870c9489c08993fa7c0167bba1a51b5b1b681c56472d9eed3",
+      "bytes": 8644
+    },
+    {
+      "kind": "extracted",
+      "character": "hina",
+      "runtime_path": "assets/ba/sd/hina/Hina_Hina_Original_Face.png",
+      "source": "extracted by Godot's glTF importer from Hina.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "f756d3afd4b1d692aa826e13525ff298a80e93b708156813061170b00daccd40",
+      "bytes": 5986
+    },
+    {
+      "kind": "extracted",
+      "character": "hina",
+      "runtime_path": "assets/ba/sd/hina/Hina_Hina_Original_Hair.png",
+      "source": "extracted by Godot's glTF importer from Hina.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "c0e612355fbf677c88a755a8bd78b0ad42237ed3a4358db9a70fa7d8541cf274",
+      "bytes": 2341
+    },
+    {
+      "kind": "extracted",
+      "character": "hina",
+      "runtime_path": "assets/ba/sd/hina/Hina_Hina_Original_Weapon.png",
+      "source": "extracted by Godot's glTF importer from Hina.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "b4e6d7ff3736efc98d870b374a793e8dac6f7432063f21dc5e4c1f20795f213c",
+      "bytes": 11965
+    },
+    {
+      "kind": "extracted",
+      "character": "hoshino",
+      "runtime_path": "assets/ba/sd/hoshino/Hoshino_Character_Mouth_0_6.png",
+      "source": "extracted by Godot's glTF importer from Hoshino.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "2816525a358b57a1a0580f9e38a3ea5b50aabb812da944a55a76b2ea1f201cdc",
+      "bytes": 3074
+    },
+    {
+      "kind": "extracted",
+      "character": "hoshino",
+      "runtime_path": "assets/ba/sd/hoshino/Hoshino_Character_Mouth_0_7.png",
+      "source": "extracted by Godot's glTF importer from Hoshino.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "a519b667c09987ebc9be48d3ee13ea1787bef19adb101bd543eb8644fe9c9ba8",
+      "bytes": 1610
+    },
+    {
+      "kind": "extracted",
+      "character": "hoshino",
+      "runtime_path": "assets/ba/sd/hoshino/Hoshino_Character_Mouth_1_4.png",
+      "source": "extracted by Godot's glTF importer from Hoshino.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "c9e3e377e74eba0687eb864460a9a2b731fd2d1801ac436403fe55e1ac849385",
+      "bytes": 423
+    },
+    {
+      "kind": "extracted",
+      "character": "hoshino",
+      "runtime_path": "assets/ba/sd/hoshino/Hoshino_Character_Mouth_1_6.png",
+      "source": "extracted by Godot's glTF importer from Hoshino.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "c9da6a42a2d6629bb51c0aba7352d1259cd5f819831f2209464cf4886996d0dd",
+      "bytes": 3535
+    },
+    {
+      "kind": "extracted",
+      "character": "hoshino",
+      "runtime_path": "assets/ba/sd/hoshino/Hoshino_Character_Mouth_1_7.png",
+      "source": "extracted by Godot's glTF importer from Hoshino.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "3aa2fc3cbd9125d08f9b60e294230d3ec0ad378c1f8164eb0268387d53996ca1",
+      "bytes": 2739
+    },
+    {
+      "kind": "extracted",
+      "character": "hoshino",
+      "runtime_path": "assets/ba/sd/hoshino/Hoshino_Character_Mouth_2_4.png",
+      "source": "extracted by Godot's glTF importer from Hoshino.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "2c1377a78db760382d9d26d6e3a976cc065de8c8825184ff3987fafbca186de3",
+      "bytes": 746
+    },
+    {
+      "kind": "extracted",
+      "character": "hoshino",
+      "runtime_path": "assets/ba/sd/hoshino/Hoshino_Character_Mouth_2_6.png",
+      "source": "extracted by Godot's glTF importer from Hoshino.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "1d18555f8513212fd3d79f23c634038c8997b86fccdd5b911e104c20b7f1b971",
+      "bytes": 782
+    },
+    {
+      "kind": "extracted",
+      "character": "hoshino",
+      "runtime_path": "assets/ba/sd/hoshino/Hoshino_Character_Mouth_2_7.png",
+      "source": "extracted by Godot's glTF importer from Hoshino.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "2d82e32e71e988dd18399bb29bccc07780b9ecd156bdfd19af8209aaa041fcf6",
+      "bytes": 2184
+    },
+    {
+      "kind": "extracted",
+      "character": "hoshino",
+      "runtime_path": "assets/ba/sd/hoshino/Hoshino_Character_Mouth_3_7.png",
+      "source": "extracted by Godot's glTF importer from Hoshino.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "191a7f7365a23b01f3c14bf705f143d9d63a10460170773d20f6fb37f02bcfd4",
+      "bytes": 2755
+    },
+    {
+      "kind": "extracted",
+      "character": "hoshino",
+      "runtime_path": "assets/ba/sd/hoshino/Hoshino_Character_Mouth_4_4.png",
+      "source": "extracted by Godot's glTF importer from Hoshino.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "1ef014604be4363a8f3c155cfe5312c389587d63e971a6d8321c792abfb67edf",
+      "bytes": 953
+    },
+    {
+      "kind": "extracted",
+      "character": "hoshino",
+      "runtime_path": "assets/ba/sd/hoshino/Hoshino_Character_Mouth_4_5.png",
+      "source": "extracted by Godot's glTF importer from Hoshino.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "d3f6b2ec6dfc07d59cd2a974014515a9160936a8352955f21b06e8fdd2c36f0d",
+      "bytes": 1558
+    },
+    {
+      "kind": "extracted",
+      "character": "hoshino",
+      "runtime_path": "assets/ba/sd/hoshino/Hoshino_Character_Mouth_4_7.png",
+      "source": "extracted by Godot's glTF importer from Hoshino.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "6ab26163d41e1d1ac188305e85bdf1d9d01fcb8f6385b3a94da50e98499ed1b6",
+      "bytes": 953
+    },
+    {
+      "kind": "extracted",
+      "character": "hoshino",
+      "runtime_path": "assets/ba/sd/hoshino/Hoshino_Character_Mouth_5_4.png",
+      "source": "extracted by Godot's glTF importer from Hoshino.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "aa2a92707697553dca73fd19498c4a35281ad3f0a978690611b51bab22a6d8e8",
+      "bytes": 1842
+    },
+    {
+      "kind": "extracted",
+      "character": "hoshino",
+      "runtime_path": "assets/ba/sd/hoshino/Hoshino_Character_Mouth_5_7.png",
+      "source": "extracted by Godot's glTF importer from Hoshino.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "2b2e5e0c7148b6beff27d75404358ef32a1b4f294f07a3ea9d4be98faacc3c8f",
+      "bytes": 1614
+    },
+    {
+      "kind": "extracted",
+      "character": "hoshino",
+      "runtime_path": "assets/ba/sd/hoshino/Hoshino_Character_Mouth_6_5.png",
+      "source": "extracted by Godot's glTF importer from Hoshino.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "0d44290eab1fd44363327c45b82d119e25b22eb13443967216d496de0e006b30",
+      "bytes": 1052
+    },
+    {
+      "kind": "extracted",
+      "character": "hoshino",
+      "runtime_path": "assets/ba/sd/hoshino/Hoshino_Character_Mouth_7_5.png",
+      "source": "extracted by Godot's glTF importer from Hoshino.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "5008096a05a5ccf66660749d0d980d72cdf9086223b2f00157fd536cdeb2e82a",
+      "bytes": 2864
+    },
+    {
+      "kind": "extracted",
+      "character": "hoshino",
+      "runtime_path": "assets/ba/sd/hoshino/Hoshino_Hoshino_Original_Body.png",
+      "source": "extracted by Godot's glTF importer from Hoshino.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "fa007b221fac761565ccd76715a011d279dc9e859881c912b51cf91032ed4bbc",
+      "bytes": 114200
+    },
+    {
+      "kind": "extracted",
+      "character": "hoshino",
+      "runtime_path": "assets/ba/sd/hoshino/Hoshino_Hoshino_Original_EyeMouth.png",
+      "source": "extracted by Godot's glTF importer from Hoshino.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "6252ccb6db21dd0d9c8cd5a2290070884f358d299ba3ace71674d264c5f5ed8e",
+      "bytes": 11898
+    },
+    {
+      "kind": "extracted",
+      "character": "hoshino",
+      "runtime_path": "assets/ba/sd/hoshino/Hoshino_Hoshino_Original_Face.png",
+      "source": "extracted by Godot's glTF importer from Hoshino.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "c5b99683c5a3efbeeeb1aaa1f6066e3d3a7d24852cdeaefbfc2e9e81ff36e268",
+      "bytes": 13745
+    },
+    {
+      "kind": "extracted",
+      "character": "hoshino",
+      "runtime_path": "assets/ba/sd/hoshino/Hoshino_Hoshino_Original_Hair.png",
+      "source": "extracted by Godot's glTF importer from Hoshino.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "3d8fe3d88992f0d59e0ff8d3097520c669b9a4e0d4c86c3f20291858737e085b",
+      "bytes": 2680
+    },
+    {
+      "kind": "extracted",
+      "character": "hoshino",
+      "runtime_path": "assets/ba/sd/hoshino/Hoshino_Hoshino_Original_Halo.png",
+      "source": "extracted by Godot's glTF importer from Hoshino.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "c4e22c2008a33d3cacfc6fb58a694a78606e8c4096919559d528b72d956b5b8f",
+      "bytes": 13378
+    },
+    {
+      "kind": "extracted",
+      "character": "hoshino",
+      "runtime_path": "assets/ba/sd/hoshino/Hoshino_Hoshino_Original_Shield.png",
+      "source": "extracted by Godot's glTF importer from Hoshino.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "1c6039129b5cd94eac7a5cdfe2b4d718db9fd8363dddc95dd3a6efdd1fbd0808",
+      "bytes": 9885
+    },
+    {
+      "kind": "extracted",
+      "character": "hoshino",
+      "runtime_path": "assets/ba/sd/hoshino/Hoshino_Hoshino_Original_Weapon.png",
+      "source": "extracted by Godot's glTF importer from Hoshino.glb (gltf/embedded_image_handling=1); the importer rewrites it identically on every import, so deleting it changes nothing",
+      "sha256": "d2345701de554f94e63e80b89d2649c4d45ce945d17e04cba85c21199ba665f4",
+      "bytes": 10174
+    }
+  ],
+  "parameters": [
+    {
+      "kind": "shader parameters",
+      "runtime_path": "assets/ba/sd/ba_char_params.json",
+      "source": "Hina_Original_*.mat and Hoshino_Original_*.mat materials (MX/C-General/Layer4, C-Hair, C-Face and Outline properties) in the same install, read with UnityPy; numbers unchanged",
+      "sha256": "4bcb9381d9ad07a67789809502c9e48fa669189ef9d22aa57258b12c89f32ffd",
+      "bytes": 4870
+    }
+  ],
+  "clips": [
+    {
+      "kind": "authored clips",
+      "character": "hina",
+      "runtime_path": "assets/ba/sd/hina/Hina_extra.glb",
+      "made_by": "tools/sd_author/wing_guard.py and air_shot.py over Hina.glb (Blender, armature only, no meshes or materials)",
+      "note": "no sha256: the author tools regenerate it"
+    },
+    {
+      "kind": "authored clips",
+      "character": "hoshino",
+      "runtime_path": "assets/ba/sd/hoshino/Hoshino_extra.glb",
+      "made_by": "tools/sd_author/stock_bash.py over Hoshino.glb (Blender, armature only, no meshes or materials)",
+      "note": "no sha256: the author tools regenerate it"
+    }
+  ]
+}

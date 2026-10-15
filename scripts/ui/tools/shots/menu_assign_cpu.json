@@ -1,0 +1,9 @@
+{"timeout": 90, "steps": [
+ {"session": {"mode": ""}},
+ {"go": "menu", "params": {}, "style": "cut"}, {"wait": 1.5},
+ {"press": ["kb1", "down"]}, {"press": ["kb1", "down"]}, {"press": ["kb1", "left"]}, {"press": ["kb1", "down"]}, {"press": ["kb1", "right"]},
+ {"print": true},
+ {"press": ["kb1", "confirm"]}, {"wait": 1.5}, {"shot": "/tmp/ba-ui-out/menu/assign_cpu0.png"},
+ {"press": ["kb1", "confirm"]}, {"wait": 0.35}, {"shot": "/tmp/ba-ui-out/menu/assign_cpu1.png"},
+ {"quit": true}
+]}

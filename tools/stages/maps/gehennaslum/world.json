@@ -1,0 +1,1260 @@
+{
+ "layers": [
+  {
+   "type": "ground_cells",
+   "id": "streets",
+   "x": [
+    18.8,
+    1700.0
+   ],
+   "z": [
+    -1500.0,
+    1600.0
+   ],
+   "step0": 4.0,
+   "grow": 1.16,
+   "crop": "dirt",
+   "tile_m": 8.0,
+   "grid": {
+    "x": {
+     "o": 60.0,
+     "p": 84.0,
+     "w": 10.0,
+     "range": [
+      40.0,
+      480.0
+     ]
+    },
+    "z": {
+     "o": 38.5,
+     "p": 68.0,
+     "w": 10.0,
+     "range": [
+      -420.0,
+      500.0
+     ]
+    }
+   },
+   "street": 0.74,
+   "lot": 1.0,
+   "noise": 0.03,
+   "seed": 3,
+   "from": {
+    "src": "gehenna",
+    "go": "sb_01_slum_ground_01",
+    "xmin": 14.0,
+    "z": [
+     30,
+     60
+    ]
+   },
+   "y": -0.02,
+   "tint": [
+    0.9,
+    0.78,
+    0.68
+   ],
+   "block": [
+    0.78,
+    1.15
+   ]
+  },
+  {
+   "type": "stacks",
+   "id": "near",
+   "seed": 11,
+   "region": {
+    "x": [
+     30.0,
+     130.0
+    ],
+    "z": [
+     -60.0,
+     160.0
+    ]
+   },
+   "spacing": [
+    30,
+    26
+   ],
+   "fill": 0.7,
+   "jitter": 0.6,
+   "avoid_grid": {
+    "x": {
+     "o": 60.0,
+     "p": 84.0,
+     "w": 10.0,
+     "range": [
+      40.0,
+      480.0
+     ]
+    },
+    "z": {
+     "o": 38.5,
+     "p": 68.0,
+     "w": 10.0,
+     "range": [
+      -420.0,
+      500.0
+     ]
+    }
+   },
+   "avoid_margin": 8.0,
+   "lod": 0.2,
+   "tiers": [
+    2,
+    4
+   ],
+   "scale": [
+    1.5,
+    2.1
+   ],
+   "base": [
+    "gh_b03",
+    "gh_b01",
+    "gh_b02",
+    "gh_b03",
+    "gh_b01",
+    "hb_cont_red",
+    "hb_cont_green",
+    "hb_cont_yellow"
+   ],
+   "mid": [
+    "gh_b03",
+    "gh_b01",
+    "gh_b02",
+    "gh_b03",
+    "gh_b01",
+    "hb_cont_red",
+    "hb_cont_green",
+    "hb_cont_yellow",
+    "gh_b07",
+    "hb_half_orange"
+   ],
+   "top": [
+    "gh_b05",
+    "gh_b04",
+    "gh_b07",
+    "gh_b06",
+    "gh_b01",
+    "gh_b02"
+   ],
+   "top_p": 0.7,
+   "yaw_choice": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "yaw_jitter": 3.0,
+   "tint_var": 0.08,
+   "cards": {
+    "assets": [
+     "gh_b01",
+     "gh_b02",
+     "gh_b03",
+     "gh_b04",
+     "gh_b05",
+     "gh_b06",
+     "gh_b07"
+    ],
+    "n": [
+     3,
+     7
+    ],
+    "size": [
+     0.9,
+     0.7
+    ],
+    "gain": 1.1
+   },
+   "smoke": 0.18,
+   "smoke_cfg": {
+    "puffs": 7,
+    "size": [
+     4.0,
+     8.0
+    ],
+    "rise": 30.0,
+    "spread": 1.0
+   }
+  },
+  {
+   "type": "stacks",
+   "id": "mid",
+   "seed": 12,
+   "region": {
+    "x": [
+     130.0,
+     300.0
+    ],
+    "z": [
+     -160.0,
+     280.0
+    ]
+   },
+   "spacing": [
+    42,
+    36
+   ],
+   "fill": 0.8,
+   "jitter": 0.6,
+   "avoid_grid": {
+    "x": {
+     "o": 60.0,
+     "p": 84.0,
+     "w": 10.0,
+     "range": [
+      40.0,
+      480.0
+     ]
+    },
+    "z": {
+     "o": 38.5,
+     "p": 68.0,
+     "w": 10.0,
+     "range": [
+      -420.0,
+      500.0
+     ]
+    }
+   },
+   "avoid_margin": 12.0,
+   "lod": 0.28,
+   "tiers": [
+    3,
+    5
+   ],
+   "scale": [
+    2.4,
+    3.4
+   ],
+   "base": [
+    "gh_b03",
+    "gh_b01",
+    "gh_b02",
+    "gh_b03",
+    "gh_b01",
+    "hb_cont_red",
+    "hb_cont_green",
+    "hb_cont_yellow"
+   ],
+   "mid": [
+    "gh_b03",
+    "gh_b01",
+    "gh_b02",
+    "gh_b03",
+    "gh_b01",
+    "hb_cont_red",
+    "hb_cont_green",
+    "hb_cont_yellow"
+   ],
+   "top": [
+    "gh_b05",
+    "gh_b04",
+    "gh_b07",
+    "gh_b06",
+    "gh_b01",
+    "gh_b02"
+   ],
+   "top_p": 0.3,
+   "yaw_choice": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "yaw_jitter": 3.0,
+   "tint_var": 0.08,
+   "cards": {
+    "assets": [
+     "gh_b01",
+     "gh_b02",
+     "gh_b03",
+     "gh_b04",
+     "gh_b05",
+     "gh_b06",
+     "gh_b07"
+    ],
+    "n": [
+     3,
+     7
+    ],
+    "size": [
+     0.9,
+     0.7
+    ],
+    "gain": 1.1
+   },
+   "smoke": 0.18,
+   "smoke_cfg": {
+    "puffs": 7,
+    "size": [
+     4.0,
+     8.0
+    ],
+    "rise": 30.0,
+    "spread": 1.0
+   }
+  },
+  {
+   "type": "scatter",
+   "id": "slabs_mid",
+   "seed": 5,
+   "region": {
+    "x": [
+     160.0,
+     360.0
+    ],
+    "z": [
+     -220.0,
+     320.0
+    ]
+   },
+   "spacing": [
+    56,
+    50
+   ],
+   "fill": 0.65,
+   "jitter": 0.8,
+   "assets": [
+    "ru_slab9",
+    "ru_slab61",
+    "ru_slab29",
+    "ru_slab7",
+    "ru_slab6",
+    "ru_slab11",
+    "ru_slab62",
+    "ru_slab16"
+   ],
+   "scale": [
+    0.9,
+    1.4
+   ],
+   "yaw": [
+    -12,
+    12
+   ],
+   "gain": 1.0,
+   "tint_var": 0.14,
+   "lit": [
+    0.2,
+    0.5
+   ],
+   "scale_y": [
+    0.8,
+    1.3
+   ],
+   "avoid_grid": {
+    "x": {
+     "o": 60.0,
+     "p": 84.0,
+     "w": 10.0,
+     "range": [
+      40.0,
+      480.0
+     ]
+    },
+    "z": {
+     "o": 38.5,
+     "p": 68.0,
+     "w": 10.0,
+     "range": [
+      -420.0,
+      500.0
+     ]
+    }
+   },
+   "avoid_margin": 16.0,
+   "avoid": [
+    {
+     "x": [
+      110.0,
+      200.0
+     ],
+     "z": [
+      -85.0,
+      5.0
+     ]
+    },
+    {
+     "x": [
+      190.0,
+      300.0
+     ],
+     "z": [
+      -135.0,
+      -45.0
+     ]
+    }
+   ],
+   "roof": {
+    "pool": [
+     "ru2_roof_ac",
+     "ru2_roof_tank",
+     "ru2_roof_duct",
+     "ru2_roof_box",
+     "ru2_roof_pipe"
+    ],
+    "n": [
+     1,
+     3
+    ],
+    "scale": [
+     0.5,
+     0.9
+    ],
+    "lit": [
+     0.2,
+     0.5
+    ],
+    "smoke": 0.25,
+    "smoke_cfg": {
+     "puffs": 7,
+     "size": [
+      5.0,
+      9.0
+     ],
+     "rise": 34.0,
+     "spread": 1.2
+    },
+    "smoke_lift": 5.0
+   }
+  },
+  {
+   "type": "scatter",
+   "id": "slabs_far",
+   "seed": 6,
+   "region": {
+    "x": [
+     340.0,
+     760.0
+    ],
+    "z": [
+     -440.0,
+     540.0
+    ]
+   },
+   "spacing": [
+    80,
+    72
+   ],
+   "fill": 0.85,
+   "jitter": 0.8,
+   "assets": [
+    "ru_slab9",
+    "ru_slab61",
+    "ru_slab29",
+    "ru_slab7",
+    "ru_slab6",
+    "ru_slab11",
+    "ru_slab62",
+    "ru_slab16"
+   ],
+   "scale": [
+    1.5,
+    2.7
+   ],
+   "yaw": [
+    -12,
+    12
+   ],
+   "gain": 1.0,
+   "tint_var": 0.14,
+   "lit": [
+    0.2,
+    0.5
+   ],
+   "scale_y": [
+    0.8,
+    1.4
+   ],
+   "avoid_grid": {
+    "x": {
+     "o": 60.0,
+     "p": 84.0,
+     "w": 10.0,
+     "range": [
+      40.0,
+      480.0
+     ]
+    },
+    "z": {
+     "o": 38.5,
+     "p": 68.0,
+     "w": 10.0,
+     "range": [
+      -420.0,
+      500.0
+     ]
+    }
+   },
+   "avoid_margin": 20.0,
+   "roof": {
+    "pool": [
+     "ru2_roof_ac",
+     "ru2_roof_tank",
+     "ru2_roof_duct",
+     "ru2_roof_box",
+     "ru2_roof_pipe"
+    ],
+    "n": [
+     1,
+     3
+    ],
+    "scale": [
+     0.5,
+     0.9
+    ],
+    "lit": [
+     0.2,
+     0.5
+    ],
+    "smoke": 0.3,
+    "smoke_cfg": {
+     "puffs": 7,
+     "size": [
+      5.0,
+      9.0
+     ],
+     "rise": 34.0,
+     "spread": 1.2
+    },
+    "smoke_lift": 5.0
+   }
+  },
+  {
+   "type": "ring",
+   "id": "horizon",
+   "seed": 8,
+   "centre": [
+    0.0,
+    44.81
+   ],
+   "radii": [
+    960.0,
+    1220.0
+   ],
+   "arc": [
+    -58.0,
+    58.0
+   ],
+   "assets": [
+    "ru_slab9",
+    "ru_slab61",
+    "ru_slab29",
+    "ru_slab7",
+    "ru_slab6",
+    "ru_slab11",
+    "ru_slab62",
+    "ru_slab16"
+   ],
+   "scale": [
+    3.4,
+    5.0
+   ],
+   "scale_y": [
+    0.3,
+    0.55
+   ],
+   "yaw": [
+    -8,
+    8
+   ],
+   "overlap": 0.8,
+   "gain": 1.0,
+   "tint_var": 0.14,
+   "lit": [
+    0.2,
+    0.5
+   ]
+  },
+  {
+   "type": "skyline",
+   "id": "skyline",
+   "seed": 9,
+   "centre": [
+    0.0,
+    44.81
+   ],
+   "radius": 1500.0,
+   "arc": [
+    -58.0,
+    58.0
+   ],
+   "width": [
+    70.0,
+    150.0
+   ],
+   "height": [
+    14.0,
+    46.0
+   ],
+   "depth": 60.0,
+   "crop": "rust",
+   "tile_m": 30.0,
+   "overlap": 0.9,
+   "gain": 1.0,
+   "from": {
+    "src": "gehenna",
+    "go": "sb_01_slum_ground_01",
+    "xmin": 14.0,
+    "z": [
+     30,
+     60
+    ]
+   }
+  },
+  {
+   "type": "stacks",
+   "id": "far",
+   "seed": 13,
+   "region": {
+    "x": [
+     300.0,
+     560.0
+    ],
+    "z": [
+     -320.0,
+     420.0
+    ]
+   },
+   "spacing": [
+    90,
+    76
+   ],
+   "fill": 0.7,
+   "jitter": 0.6,
+   "avoid_grid": {
+    "x": {
+     "o": 60.0,
+     "p": 84.0,
+     "w": 10.0,
+     "range": [
+      40.0,
+      480.0
+     ]
+    },
+    "z": {
+     "o": 38.5,
+     "p": 68.0,
+     "w": 10.0,
+     "range": [
+      -420.0,
+      500.0
+     ]
+    }
+   },
+   "avoid_margin": 20.0,
+   "lod": 0.36,
+   "tiers": [
+    2,
+    4
+   ],
+   "scale": [
+    4.0,
+    5.5
+   ],
+   "base": [
+    "gh_b03",
+    "gh_b01",
+    "gh_b02"
+   ],
+   "mid": [
+    "gh_b03",
+    "gh_b01",
+    "gh_b02"
+   ],
+   "top": [
+    "gh_b01",
+    "gh_b02"
+   ],
+   "top_p": 0.5,
+   "yaw_choice": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "yaw_jitter": 3.0,
+   "tint_var": 0.08,
+   "cards": {
+    "assets": [
+     "gh_b01",
+     "gh_b02",
+     "gh_b03",
+     "gh_b04",
+     "gh_b05",
+     "gh_b06",
+     "gh_b07"
+    ],
+    "n": [
+     3,
+     7
+    ],
+    "size": [
+     0.9,
+     0.7
+    ],
+    "gain": 1.1
+   }
+  },
+  {
+   "type": "place",
+   "id": "hero_fight_a",
+   "asset": "gh_b04",
+   "pos": [
+    52.0,
+    0.0,
+    26.0
+   ],
+   "yaw": 90,
+   "scale": 1.8,
+   "lod": 0.1
+  },
+  {
+   "type": "place",
+   "id": "hero_fight_b",
+   "asset": "gh_b04",
+   "pos": [
+    112.0,
+    0.0,
+    84.0
+   ],
+   "yaw": 90,
+   "scale": 2.7,
+   "lod": 0.2
+  },
+  {
+   "type": "place",
+   "id": "hero_house_a",
+   "asset": "gh_b05",
+   "pos": [
+    47.0,
+    0.0,
+    64.0
+   ],
+   "yaw": 90,
+   "scale": 2.0,
+   "lod": 0.1
+  },
+  {
+   "type": "place",
+   "id": "hero_house_b",
+   "asset": "gh_b06",
+   "pos": [
+    150.0,
+    0.0,
+    12.0
+   ],
+   "yaw": 90,
+   "scale": 2.6,
+   "lod": 0.2
+  },
+  {
+   "type": "place",
+   "id": "crane_a",
+   "asset": "hb_crane",
+   "pos": [
+    330.0,
+    0.0,
+    150.0
+   ],
+   "yaw": 90,
+   "scale": 2.6,
+   "lit": 0
+  },
+  {
+   "type": "place",
+   "id": "crane_b",
+   "asset": "hb_crane",
+   "pos": [
+    470.0,
+    0.0,
+    -90.0
+   ],
+   "yaw": 90,
+   "scale": 3.4,
+   "lit": 0
+  },
+  {
+   "type": "place",
+   "id": "arch_a",
+   "asset": "ru2_arch",
+   "pos": [
+    380.0,
+    0.0,
+    300.0
+   ],
+   "yaw": 0,
+   "scale": 3.6,
+   "lit": 0
+  },
+  {
+   "type": "line",
+   "id": "poles_a",
+   "from": [
+    24.0,
+    0.0,
+    33.0
+   ],
+   "to": [
+    240.0,
+    0.0,
+    33.0
+   ],
+   "spacing": 30.0,
+   "pole": "gh_pole_a",
+   "wire": "gh_wire",
+   "scale": 1.7,
+   "yaw": 90,
+   "wires": [
+    0.0
+   ],
+   "lit": 0,
+   "lod": 0.35
+  },
+  {
+   "type": "line",
+   "id": "poles_b",
+   "from": [
+    36.0,
+    0.0,
+    52.0
+   ],
+   "to": [
+    200.0,
+    0.0,
+    52.0
+   ],
+   "spacing": 34.0,
+   "pole": "gh_pole_b",
+   "wire": "gh_wire",
+   "scale": 1.8,
+   "yaw": 90,
+   "wires": [
+    0.0
+   ],
+   "lit": 0,
+   "lod": 0.35
+  },
+  {
+   "type": "line",
+   "id": "lamps_a",
+   "from": [
+    52.0,
+    0.0,
+    40.5
+   ],
+   "to": [
+    352.0,
+    0.0,
+    40.5
+   ],
+   "spacing": 30.0,
+   "pole": "ru2_lamp",
+   "wire": "gh_wire",
+   "scale": 2.0,
+   "yaw": 90,
+   "wires": [],
+   "lit": 0,
+   "glow": {
+    "color": [
+     1.0,
+     0.62,
+     0.28
+    ],
+    "intensity": 1.4,
+    "size0": 0.9,
+    "size_per_m": 0.012,
+    "lift": 0.0
+   }
+  },
+  {
+   "type": "line",
+   "id": "lamps_b",
+   "from": [
+    60.0,
+    0.0,
+    46.0
+   ],
+   "to": [
+    60.0,
+    0.0,
+    330.0
+   ],
+   "spacing": 34.0,
+   "pole": "ru2_lamp",
+   "wire": "gh_wire",
+   "scale": 2.4,
+   "yaw": 0,
+   "wires": [],
+   "lit": 0,
+   "glow": {
+    "color": [
+     1.0,
+     0.62,
+     0.28
+    ],
+    "intensity": 1.4,
+    "size0": 0.9,
+    "size_per_m": 0.012,
+    "lift": 0.0
+   }
+  },
+  {
+   "type": "line",
+   "id": "lamps_c",
+   "from": [
+    60.0,
+    0.0,
+    40.0
+   ],
+   "to": [
+    60.0,
+    0.0,
+    -250.0
+   ],
+   "spacing": 34.0,
+   "pole": "ru2_lamp",
+   "wire": "gh_wire",
+   "scale": 2.4,
+   "yaw": 0,
+   "wires": [],
+   "lit": 0,
+   "glow": {
+    "color": [
+     1.0,
+     0.62,
+     0.28
+    ],
+    "intensity": 1.4,
+    "size0": 0.9,
+    "size_per_m": 0.012,
+    "lift": 0.0
+   }
+  },
+  {
+   "type": "place",
+   "group": "props",
+   "id": "props_lot",
+   "asset": "pr_barrel_org",
+   "pos": [
+    23.0,
+    0.0,
+    49.0
+   ],
+   "yaw": 10,
+   "scale": 1.0,
+   "gain": 1.6
+  },
+  {
+   "type": "place",
+   "group": "props",
+   "id": "props_lot",
+   "asset": "pr_barrel_org",
+   "pos": [
+    23.9,
+    0.0,
+    50.2
+   ],
+   "yaw": 80,
+   "scale": 1.0,
+   "gain": 1.6
+  },
+  {
+   "type": "place",
+   "group": "props",
+   "id": "props_lot",
+   "asset": "pr_barrel_blk",
+   "pos": [
+    22.6,
+    0.0,
+    51.0
+   ],
+   "yaw": 200,
+   "scale": 1.0,
+   "gain": 1.6
+  },
+  {
+   "type": "place",
+   "group": "props",
+   "id": "props_lot",
+   "asset": "pr_barrel_gry",
+   "pos": [
+    24.4,
+    0.0,
+    48.3
+   ],
+   "yaw": 30,
+   "scale": 1.0,
+   "gain": 1.6
+  },
+  {
+   "type": "place",
+   "group": "props",
+   "id": "props_lot",
+   "asset": "pr_barrel_blk",
+   "pos": [
+    23.5,
+    0.0,
+    57.5
+   ],
+   "yaw": 120,
+   "scale": 1.0,
+   "gain": 1.6
+  },
+  {
+   "type": "place",
+   "group": "props",
+   "id": "props_lot",
+   "asset": "pr_barrel_org",
+   "pos": [
+    24.3,
+    0.0,
+    58.4
+   ],
+   "yaw": 300,
+   "scale": 1.0,
+   "gain": 1.6
+  },
+  {
+   "type": "place",
+   "group": "props",
+   "id": "props_lot",
+   "asset": "pr_tire",
+   "pos": [
+    22.5,
+    0.0,
+    55.2
+   ],
+   "yaw": 15,
+   "scale": 1.0,
+   "gain": 1.6
+  },
+  {
+   "type": "place",
+   "group": "props",
+   "id": "props_lot",
+   "asset": "pr_tire",
+   "pos": [
+    22.6,
+    0.0,
+    55.2
+   ],
+   "yaw": 70,
+   "scale": 1.0,
+   "gain": 1.6
+  },
+  {
+   "type": "place",
+   "group": "props",
+   "id": "props_lot",
+   "asset": "pr_aframe_a",
+   "pos": [
+    27.0,
+    0.0,
+    44.5
+   ],
+   "yaw": 95,
+   "scale": 1.0,
+   "gain": 1.6
+  },
+  {
+   "type": "place",
+   "group": "props",
+   "id": "props_lot",
+   "asset": "pr_aframe_b",
+   "pos": [
+    27.5,
+    0.0,
+    60.0
+   ],
+   "yaw": 70,
+   "scale": 1.0,
+   "gain": 1.6
+  },
+  {
+   "type": "place",
+   "group": "props",
+   "id": "props_lot",
+   "asset": "pr_boards",
+   "pos": [
+    29.0,
+    0.0,
+    52.5
+   ],
+   "yaw": 100,
+   "scale": 1.0,
+   "gain": 1.6
+  },
+  {
+   "type": "place",
+   "group": "props",
+   "id": "props_lot",
+   "asset": "pr_boards",
+   "pos": [
+    31.0,
+    0.0,
+    41.0
+   ],
+   "yaw": 85,
+   "scale": 1.0,
+   "gain": 1.6
+  },
+  {
+   "type": "place",
+   "group": "props",
+   "id": "props_lot",
+   "asset": "pr_pole_a",
+   "pos": [
+    33.0,
+    0.0,
+    47.0
+   ],
+   "yaw": 0,
+   "scale": 1.0,
+   "gain": 1.6
+  },
+  {
+   "type": "place",
+   "group": "props",
+   "id": "props_lot",
+   "asset": "pr_pole_b",
+   "pos": [
+    34.0,
+    0.0,
+    58.0
+   ],
+   "yaw": 0,
+   "scale": 1.0,
+   "gain": 1.6
+  },
+  {
+   "type": "place",
+   "group": "props",
+   "id": "props_lot",
+   "asset": "pr_cart",
+   "pos": [
+    31.5,
+    0.0,
+    62.5
+   ],
+   "yaw": 250,
+   "scale": 1.0,
+   "gain": 1.6
+  },
+  {
+   "type": "place",
+   "group": "props",
+   "id": "props_lot",
+   "asset": "pr_barrel_org",
+   "pos": [
+    41.0,
+    0.0,
+    54.5
+   ],
+   "yaw": 25,
+   "scale": 1.0,
+   "gain": 1.6
+  },
+  {
+   "type": "place",
+   "group": "props",
+   "id": "props_lot",
+   "asset": "pr_rack",
+   "pos": [
+    37.0,
+    0.0,
+    40.0
+   ],
+   "yaw": 110,
+   "scale": 1.0,
+   "gain": 1.6
+  },
+  {
+   "type": "place",
+   "group": "props",
+   "id": "props_lot",
+   "asset": "pr_plank",
+   "pos": [
+    26.0,
+    0.0,
+    53.5
+   ],
+   "yaw": 40,
+   "scale": 1.0,
+   "gain": 1.6
+  },
+  {
+   "type": "place",
+   "group": "props",
+   "id": "props_lot",
+   "asset": "pr_rack",
+   "pos": [
+    28.5,
+    0.0,
+    47.0
+   ],
+   "yaw": 90,
+   "scale": 1.0,
+   "gain": 1.6
+  },
+  {
+   "type": "place",
+   "group": "props",
+   "id": "props_lot",
+   "asset": "pr_panel",
+   "pos": [
+    26.3,
+    0.0,
+    61.2
+   ],
+   "yaw": 100,
+   "scale": 1.0,
+   "gain": 1.6
+  },
+  {
+   "type": "place",
+   "group": "props",
+   "id": "props_lot",
+   "asset": "pr_barrel_gry",
+   "pos": [
+    22.8,
+    0.0,
+    38.5
+   ],
+   "yaw": 0,
+   "scale": 1.0,
+   "gain": 1.6
+  },
+  {
+   "type": "place",
+   "group": "props",
+   "id": "props_lot",
+   "asset": "pr_tire",
+   "pos": [
+    24.0,
+    0.0,
+    38.0
+   ],
+   "yaw": 40,
+   "scale": 1.0,
+   "gain": 1.6
+  },
+  {
+   "type": "place",
+   "group": "props",
+   "id": "props_lot",
+   "asset": "pr_barrel_org",
+   "pos": [
+    25.5,
+    0.0,
+    37.2
+   ],
+   "yaw": 10,
+   "scale": 1.0,
+   "gain": 1.6
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+{"timeout": 90, "steps": [
+ {"session": {"mode": ""}},
+ {"go": "menu", "params": {}, "style": "cut"}, {"wait": 1.5},
+ {"press": ["kb1", "confirm"]}, {"wait": 0.3}, {"shot": "/tmp/ba-ui-out/menu/assign_enter.png"},
+ {"wait": 1.2}, {"shot": "/tmp/ba-ui-out/menu/assign0.png"},
+ {"press": ["kb1", "confirm"]}, {"wait": 1.0}, {"shot": "/tmp/ba-ui-out/menu/assign1.png"},
+ {"press": ["kb2", "confirm"]}, {"wait": 0.3}, {"shot": "/tmp/ba-ui-out/menu/assign2.png"},
+ {"print": true},
+ {"quit": true}
+]}

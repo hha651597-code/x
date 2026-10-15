@@ -1,0 +1,9 @@
+{"timeout": 120, "steps": [
+ {"session": {"mode": "versus2p", "players": [{"claimed": true, "device": "kb1", "fighter": 10004, "special": 10061}, {"claimed": true, "device": "kb2", "fighter": 10005, "special": 26000}], "stage": "gehenna-night"}},
+ {"go": "vs", "params": {"hold": true}, "style": "cut"},
+ {"wait": 1.75}, {"shot": "/tmp/ba-ui-out/vs_select/vs_wide_1600x900.png", "scale": 1.25},
+ {"session": {"mode": "versus2p", "players": [{"claimed": true, "device": "kb1", "fighter": 10004}, {"claimed": true, "device": "kb2", "fighter": 10005}]}},
+ {"go": "select", "params": {}, "style": "cut"},
+ {"wait": 2.6}, {"shot": "/tmp/ba-ui-out/vs_select/select_wide_1600x900.png", "scale": 1.25},
+ {"quit": true}
+]}

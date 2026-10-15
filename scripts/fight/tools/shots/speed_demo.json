@@ -1,0 +1,414 @@
+{
+ "timeout": 120,
+ "steps": [
+  {
+   "session": {
+    "mode": "versus2p",
+    "players": [
+     {
+      "claimed": true,
+      "device": "kb1",
+      "fighter": 10004,
+      "special": 20001
+     },
+     {
+      "claimed": true,
+      "device": "kb2",
+      "fighter": 10005,
+      "special": 23005
+     }
+    ],
+    "stage": "gehenna-night"
+   }
+  },
+  {
+   "go": "fight",
+   "style": "cut"
+  },
+  {
+   "frames": 100
+  },
+  {
+   "hold": [
+    "kb1",
+    "right"
+   ]
+  },
+  {
+   "frames": 45
+  },
+  {
+   "release": [
+    "kb1",
+    "right"
+   ]
+  },
+  {
+   "frames": 10
+  },
+  {
+   "hold": [
+    "kb1",
+    "left"
+   ]
+  },
+  {
+   "frames": 45
+  },
+  {
+   "release": [
+    "kb1",
+    "left"
+   ]
+  },
+  {
+   "frames": 15
+  },
+  {
+   "hold": [
+    "kb1",
+    "right"
+   ]
+  },
+  {
+   "tap": [
+    "kb1",
+    "rb"
+   ],
+   "frames": 2
+  },
+  {
+   "frames": 30
+  },
+  {
+   "release": [
+    "kb1",
+    "right"
+   ]
+  },
+  {
+   "frames": 20
+  },
+  {
+   "hold": [
+    "kb1",
+    "left"
+   ]
+  },
+  {
+   "tap": [
+    "kb1",
+    "rb"
+   ],
+   "frames": 2
+  },
+  {
+   "frames": 30
+  },
+  {
+   "release": [
+    "kb1",
+    "left"
+   ]
+  },
+  {
+   "frames": 30
+  },
+  {
+   "hold": [
+    "kb2",
+    "left"
+   ]
+  },
+  {
+   "frames": 45
+  },
+  {
+   "release": [
+    "kb2",
+    "left"
+   ]
+  },
+  {
+   "frames": 10
+  },
+  {
+   "hold": [
+    "kb2",
+    "right"
+   ]
+  },
+  {
+   "frames": 45
+  },
+  {
+   "release": [
+    "kb2",
+    "right"
+   ]
+  },
+  {
+   "frames": 15
+  },
+  {
+   "hold": [
+    "kb2",
+    "left"
+   ]
+  },
+  {
+   "tap": [
+    "kb2",
+    "rb"
+   ],
+   "frames": 2
+  },
+  {
+   "frames": 30
+  },
+  {
+   "release": [
+    "kb2",
+    "left"
+   ]
+  },
+  {
+   "frames": 20
+  },
+  {
+   "hold": [
+    "kb2",
+    "right"
+   ]
+  },
+  {
+   "tap": [
+    "kb2",
+    "rb"
+   ],
+   "frames": 2
+  },
+  {
+   "frames": 30
+  },
+  {
+   "release": [
+    "kb2",
+    "right"
+   ]
+  },
+  {
+   "frames": 30
+  },
+  {
+   "fighter": {
+    "slot": 1,
+    "pos": [
+     300,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "fighter": {
+    "slot": 2,
+    "pos": [
+     -300,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "frames": 40
+  },
+  {
+   "hold": [
+    "kb1",
+    "left"
+   ]
+  },
+  {
+   "frames": 45
+  },
+  {
+   "release": [
+    "kb1",
+    "left"
+   ]
+  },
+  {
+   "frames": 10
+  },
+  {
+   "hold": [
+    "kb1",
+    "right"
+   ]
+  },
+  {
+   "frames": 45
+  },
+  {
+   "release": [
+    "kb1",
+    "right"
+   ]
+  },
+  {
+   "frames": 15
+  },
+  {
+   "hold": [
+    "kb1",
+    "left"
+   ]
+  },
+  {
+   "tap": [
+    "kb1",
+    "rb"
+   ],
+   "frames": 2
+  },
+  {
+   "frames": 30
+  },
+  {
+   "release": [
+    "kb1",
+    "left"
+   ]
+  },
+  {
+   "frames": 20
+  },
+  {
+   "hold": [
+    "kb1",
+    "right"
+   ]
+  },
+  {
+   "tap": [
+    "kb1",
+    "rb"
+   ],
+   "frames": 2
+  },
+  {
+   "frames": 30
+  },
+  {
+   "release": [
+    "kb1",
+    "right"
+   ]
+  },
+  {
+   "frames": 30
+  },
+  {
+   "hold": [
+    "kb2",
+    "right"
+   ]
+  },
+  {
+   "frames": 45
+  },
+  {
+   "release": [
+    "kb2",
+    "right"
+   ]
+  },
+  {
+   "frames": 10
+  },
+  {
+   "hold": [
+    "kb2",
+    "left"
+   ]
+  },
+  {
+   "frames": 45
+  },
+  {
+   "release": [
+    "kb2",
+    "left"
+   ]
+  },
+  {
+   "frames": 15
+  },
+  {
+   "hold": [
+    "kb2",
+    "right"
+   ]
+  },
+  {
+   "tap": [
+    "kb2",
+    "rb"
+   ],
+   "frames": 2
+  },
+  {
+   "frames": 30
+  },
+  {
+   "release": [
+    "kb2",
+    "right"
+   ]
+  },
+  {
+   "frames": 20
+  },
+  {
+   "hold": [
+    "kb2",
+    "left"
+   ]
+  },
+  {
+   "tap": [
+    "kb2",
+    "rb"
+   ],
+   "frames": 2
+  },
+  {
+   "frames": 30
+  },
+  {
+   "release": [
+    "kb2",
+    "left"
+   ]
+  },
+  {
+   "frames": 30
+  },
+  {
+   "frames": 30
+  },
+  {
+   "print": true
+  },
+  {
+   "quit": true
+  }
+ ]
+}

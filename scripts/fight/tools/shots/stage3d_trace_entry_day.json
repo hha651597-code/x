@@ -1,0 +1,13 @@
+{
+ "timeout": 120,
+ "steps": [
+  {"session": {"mode": "versus-cpu", "stage": "gehenna-night", "stage_time": "day", "players": [
+    {"claimed": true, "device": "kb1", "fighter": 10004, "special": 20001},
+    {"claimed": true, "device": "kb2", "fighter": 10005, "special": 23005, "cpu": true}]}},
+  {"intro_entry": true},
+  {"go": "fight", "style": "slam"},
+  {"stage_trace": 310},
+  {"frames": 310},
+  {"quit": true}
+ ]
+}

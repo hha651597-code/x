@@ -1,0 +1,173 @@
+{
+ "char": "hoshino",
+ "id": 10005,
+ "_about": "Every reference kept for Takanashi Hoshino. ONLY official Blue Archive art (Nexon Games / Yostar; character illustrator & designer: 9ml per the game's own profile data). 'official' = the game's own texture or a lossless re-composition of the game's own Spine parts in their setup pose; nothing here is redrawn, upscaled or fan-made. Rebuild: python3 assets/ba/ref/hoshino/_build/build_refs.py <repo-root> <dev-root>. This folder has a .gdignore so Godot does not import it.",
+ "files": [
+  {
+   "file": "official_portrait_10005.png",
+   "source": "https://schaledb.com/images/student/portrait/10005.webp (local: assets/ba/portrait/10005.webp)",
+   "what": "Full-body standing illustration, 673x1024, transparent. Yawning wink pose, shotgun in right hand, folded shield-case slung at left hip.",
+   "why_official": "SchaleDB serves the game's own student portrait texture (same image as the in-game student info / recruitment art); it is the same illustration as the game's Spine standing sprite below (a flattened render of it with face 00_default; ~1.4 % smaller, so not pixel-identical)."
+  },
+  {
+   "file": "official_standing_eyes_open.png",
+   "source": "re-assembled from the game's Spine standing sprite 'hoshino_spr' (atlas .dev/spine/hoshino_spr/hoshino_spr.png + slot placement .dev/rig/hoshino/assembly.json extracted from hoshino_spr.skel) using face '01_normal'",
+   "what": "Same illustration with the official neutral face (both eyes open: gold RIGHT eye, blue LEFT eye), fringe overlay and halo layers in their setup positions. 580x1037.",
+   "why_official": "Every pixel comes from the game's Spine atlas; only placed (no scaling of the body, faces / halo placed at the skeleton's setup coordinates)."
+  },
+  {
+   "file": "official_spine_atlas.png",
+   "source": "game file Spine_Characters/hoshino_spr/hoshino_spr.png (as mirrored in the kiraio-moe/Schale-Archive extraction; local copy .dev/spine/hoshino_spr/hoshino_spr.png)",
+   "what": "Untouched 1024x1024 atlas: faceless body (rotated), 18 face parts, eyeclose overlay, 3 halo layers, front-hair overlay. The shotgun appears HORIZONTAL here (best side-view gun reference).",
+   "why_official": "It is the game's texture file itself."
+  },
+  {
+   "file": "official_faces_sheet.png",
+   "source": "all 18 face attachments + the 'eyeclose' blink overlay of hoshino_spr, each composited on the official head in setup pose; label strips added",
+   "what": "00_default ... 17_boring at native resolution, for expressions. The last tile is the blink overlay laid over 01_normal (in-game it is animated; at setup pose it reads as half-lidded).",
+   "why_official": "Game pixels only; the dark label strips are the only added pixels."
+  },
+  {
+   "file": "official_halo.png",
+   "source": "halo 1/2/3 layers of hoshino_spr in setup pose (additive glow copies omitted)",
+   "what": "The halo: outer split ellipse with side bars and long horizontal spikes, a thin middle ellipse, a thick inner ring. 257x77.",
+   "why_official": "Game pixels only."
+  },
+  {
+   "file": "official_collection_10005.png",
+   "source": "https://schaledb.com/images/student/collection/10005.webp (local: assets/ba/collection/10005.webp)",
+   "what": "Bust card 200x226 (the game's collection / roster card crop of the standing art on a sky background).",
+   "why_official": "Game UI texture via SchaleDB."
+  },
+  {
+   "file": "official_icon_10005.png",
+   "source": "https://schaledb.com/images/student/icon/10005.webp (local: assets/ba/icon/10005.webp)",
+   "what": "Head icon 120x120 (yawning wink, gloved left hand).",
+   "why_official": "Game UI texture via SchaleDB."
+  },
+  {
+   "file": "official_memorial_lobby_thumb_10005.png",
+   "source": "https://schaledb.com/images/student/lobby/10005.webp (local: .dev/samples/hoshino_lobby.webp)",
+   "what": "Memorial-lobby thumbnail 182x144: aquarium scene, calm smile, both eyes open, RIGHT hand raised in a navy fingerless glove with a white band. The only official view of her right glove we have.",
+   "why_official": "Game UI texture via SchaleDB (thumbnail of the official Memorial Lobby illustration)."
+  },
+  {
+   "file": "official_abydos_crest.png",
+   "source": "https://schaledb.com/images/schoolicon/Abydos.png (local: assets/ba/school_color/abydos.png)",
+   "what": "Abydos school crest (the triangle emblem printed on the shotgun stock and the ID badge).",
+   "why_official": "Game UI texture via SchaleDB."
+  },
+  {
+   "file": "proportions_165px.png",
+   "source": "derived: official_portrait_10005.png Lanczos-scaled so crown->ground = 165 px, shown x4 nearest with measured landmark lines",
+   "what": "Measurement sheet for the pixel artists (numbers = px below the crown at a 165 px standing height).",
+   "why_official": "Derived from the official portrait; the guide lines and labels are annotations, not art."
+  },
+  {
+   "file": "palette_swatches.png",
+   "source": "derived: palette.json rendered as swatches",
+   "what": "Visual of the 28-colour palette with roles.",
+   "why_official": "Colours sampled from the official textures (see palette.json 'sampled')."
+  },
+  {
+   "file": "palette.json",
+   "source": "measured from official_portrait_10005.png, official_spine_atlas.png and the face parts (luminance quantiles / k-means per material)",
+   "what": "28 colours with roles.",
+   "why_official": "Sampled, not invented."
+  },
+  {
+   "file": "sources.json",
+   "source": "this file",
+   "what": "provenance list",
+   "why_official": "-"
+  },
+  {
+   "file": "official_weapon_icon_10005.png",
+   "source": "https://raw.githubusercontent.com/SchaleDB/SchaleDB/main/images/weapon/weapon_icon_10005.webp (SchaleDB mirror of the game's own weapon icon texture)",
+   "what": "the OFFICIAL SIDE VIEW of the weapon, drawn facing right (stock left, muzzle right), 800x205",
+   "official": "game texture served by SchaleDB; weapon name/profile text from SchaleDB students.json"
+  }
+ ],
+ "crops": [
+  {
+   "file": "crops/face_wink_portrait.png",
+   "from": "official_portrait_10005.png (240,60)-(460,300)",
+   "what": "official default face: yawning, right (gold) eye open, left eye shut, fang, gloved fingers at the mouth"
+  },
+  {
+   "file": "crops/face_eyes_open_spine.png",
+   "from": "official_standing_eyes_open.png head",
+   "what": "official neutral face 01_normal: gold right eye (viewer's left), blue left eye"
+  },
+  {
+   "file": "crops/eyes_01_normal_part.png",
+   "from": "assets/ba/rig/hoshino/00_default__01_normal.png (game face part, untouched)",
+   "what": "eyes, brows, mouth of the neutral face at native resolution"
+  },
+  {
+   "file": "crops/hair_ahoge.png",
+   "from": "portrait (325,25)-(455,140)",
+   "what": "the looped ahoge (halo overlaps it)"
+  },
+  {
+   "file": "crops/hair_tips_left.png",
+   "from": "portrait (30,400)-(260,720)",
+   "what": "hair lengths: pink fading to pale lilac-white tapered tips; coloured rose line art"
+  },
+  {
+   "file": "crops/hand_left_glove.png",
+   "from": "portrait (330,225)-(420,305)",
+   "what": "LEFT hand: navy fingerless glove, white slit band across the back, bare finger segments"
+  },
+  {
+   "file": "crops/hand_right_on_grip.png",
+   "from": "official_spine_atlas.png (505,440)-(600,520)",
+   "what": "RIGHT hand wrapped on the stock wrist (mostly hidden; bare fingertips visible) + side-saddle shells"
+  },
+  {
+   "file": "crops/hand_right_glove_lobby_thumb.png",
+   "from": "official_memorial_lobby_thumb_10005.png (8,85)-(60,135)",
+   "what": "RIGHT hand gloved: navy fingerless glove with white band (proof the gloves are a pair)"
+  },
+  {
+   "file": "crops/torso_harness_tie_badge.png",
+   "from": "portrait (220,250)-(470,425)",
+   "what": "open collar, loose cyan tie with dark X stripes, navy harness (2 shoulder straps + chest belt with buckle), ID badge on a black clip, white sling"
+  },
+  {
+   "file": "crops/skirt_plaid.png",
+   "from": "portrait (200,385)-(450,600)",
+   "what": "charcoal pleated skirt with light-grey + black plaid"
+  },
+  {
+   "file": "crops/legs_socks_shoes.png",
+   "from": "portrait (245,590)-(400,1024)",
+   "what": "legs, calf socks, high-tops (proportions of shin vs sock vs shoe)"
+  },
+  {
+   "file": "crops/shoes.png",
+   "from": "portrait (255,835)-(395,1024)",
+   "what": "navy canvas high-top sneakers, white criss-cross laces, white sole + toe band, tan inner collar"
+  },
+  {
+   "file": "crops/shotgun_side_view.png",
+   "from": "official_spine_atlas.png (375,425)-(920,550)",
+   "what": "the shotgun 'Eye of Horus' lying horizontal (stock left, muzzle right): white stock with ABYDOS + crest, black butt pad with pink band, 6-shell side saddle, white handguard with pink stripe, black barrel + magazine tube, white muzzle caps"
+  },
+  {
+   "file": "crops/shotgun_in_hand.png",
+   "from": "portrait (130,400)-(250,945)",
+   "what": "the shotgun as officially carried: hanging muzzle-down from the right hand"
+  },
+  {
+   "file": "crops/shield_case.png",
+   "from": "portrait (300,385)-(590,685)",
+   "what": "the folded shield-case: matte-black near-square slab, stepped bevels, hinge spine with 2 steel knobs, white webbing sling + white bar fitting, red mark, white stencil"
+  },
+  {
+   "file": "crops/portrait_at_165px.png",
+   "from": "portrait Lanczos-scaled to crown->ground 165 px (119x181)",
+   "what": "what the official art looks like at the sprite's size (a front view, for colour-count / detail-budget reference)"
+  }
+ ]
+}

@@ -1,0 +1,283 @@
+{
+ "timeout": 240,
+ "steps": [
+  {
+   "session": {
+    "mode": "versus2p",
+    "players": [
+     {
+      "claimed": true,
+      "device": "kb1",
+      "fighter": 10004
+     },
+     {
+      "claimed": true,
+      "device": "kb2",
+      "fighter": 10005
+     }
+    ]
+   }
+  },
+  {
+   "go": "gallery",
+   "params": {
+    "tab": "characters"
+   },
+   "style": "cut"
+  },
+  {
+   "wait": 2.2
+  },
+  {
+   "shot": "/tmp/ba-ui-out/extras/01_fighters_first.png"
+  },
+  {
+   "press": [
+    "kb1",
+    "down"
+   ],
+   "times": 5,
+   "gap": 0.1
+  },
+  {
+   "press": [
+    "kb1",
+    "right"
+   ],
+   "times": 2,
+   "gap": 0.1
+  },
+  {
+   "wait": 0.9
+  },
+  {
+   "shot": "/tmp/ba-ui-out/extras/02_fighters_late.png"
+  },
+  {
+   "press": [
+    "kb1",
+    "aux"
+   ]
+  },
+  {
+   "wait": 1.6
+  },
+  {
+   "shot": "/tmp/ba-ui-out/extras/03_specials_first.png"
+  },
+  {
+   "press": [
+    "kb1",
+    "right"
+   ],
+   "times": 2,
+   "gap": 0.1
+  },
+  {
+   "wait": 0.9
+  },
+  {
+   "shot": "/tmp/ba-ui-out/extras/04_specials_longest_intro.png"
+  },
+  {
+   "press": [
+    "kb1",
+    "down"
+   ],
+   "times": 16,
+   "gap": 0.08
+  },
+  {
+   "press": [
+    "kb1",
+    "right"
+   ],
+   "times": 3,
+   "gap": 0.1
+  },
+  {
+   "wait": 1.0
+  },
+  {
+   "shot": "/tmp/ba-ui-out/extras/05_specials_end.png"
+  },
+  {
+   "press": [
+    "kb1",
+    "up"
+   ]
+  },
+  {
+   "wait": 0.5
+  },
+  {
+   "go": "gallery",
+   "params": {
+    "tab": "characters"
+   },
+   "style": "cut"
+  },
+  {
+   "wait": 1.5
+  },
+  {
+   "press": [
+    "kb1",
+    "up"
+   ]
+  },
+  {
+   "wait": 0.5
+  },
+  {
+   "shot": "/tmp/ba-ui-out/extras/06_tab_bar_focus.png"
+  },
+  {
+   "go": "gallery",
+   "params": {
+    "tab": "jukebox"
+   },
+   "style": "cut"
+  },
+  {
+   "wait": 1.5
+  },
+  {
+   "press": [
+    "kb1",
+    "down"
+   ],
+   "times": 3,
+   "gap": 0.1
+  },
+  {
+   "press": [
+    "kb1",
+    "confirm"
+   ]
+  },
+  {
+   "wait": 3.0
+  },
+  {
+   "shot": "/tmp/ba-ui-out/extras/07_jukebox_playing.png"
+  },
+  {
+   "press": [
+    "kb1",
+    "down"
+   ],
+   "times": 9,
+   "gap": 0.08
+  },
+  {
+   "wait": 1.0
+  },
+  {
+   "shot": "/tmp/ba-ui-out/extras/08_jukebox_scrolled.png"
+  },
+  {
+   "go": "gallery",
+   "params": {
+    "tab": "records",
+    "records": {
+     "matches": 42,
+     "human_wins": 27,
+     "best_combo": 31,
+     "total_damage": 83240.0,
+     "arcade_clears": 3,
+     "by_mode": {
+      "versus2p": 18,
+      "versus-cpu": 14,
+      "training": 7,
+      "arcade": 3
+     },
+     "per_fighter": {
+      "10004": {
+       "wins": 9,
+       "losses": 4
+      },
+      "10005": {
+       "wins": 7,
+       "losses": 6
+      },
+      "20001": {
+       "wins": 5,
+       "losses": 1
+      }
+     }
+    }
+   },
+   "style": "cut"
+  },
+  {
+   "wait": 2.8
+  },
+  {
+   "shot": "/tmp/ba-ui-out/extras/09_records_data.png"
+  },
+  {
+   "go": "gallery",
+   "params": {
+    "tab": "records",
+    "records": {
+     "matches": 0
+    }
+   },
+   "style": "cut"
+  },
+  {
+   "wait": 2.0
+  },
+  {
+   "shot": "/tmp/ba-ui-out/extras/10_records_empty.png"
+  },
+  {
+   "go": "gallery",
+   "params": {
+    "tab": "records",
+    "records": {
+     "matches": 9999999,
+     "human_wins": 7654321,
+     "best_combo": 123456,
+     "total_damage": 9876543210.0,
+     "arcade_clears": 999999,
+     "by_mode": {
+      "versus2p": 5000000,
+      "versus-cpu": 4999999,
+      "training": 123456,
+      "arcade": 99
+     },
+     "per_fighter": {
+      "10004": {
+       "wins": 999999,
+       "losses": 888888
+      },
+      "10005": {
+       "wins": 777777,
+       "losses": 666666
+      },
+      "10017": {
+       "wins": 12345,
+       "losses": 6789
+      },
+      "20001": {
+       "wins": 5,
+       "losses": 5
+      }
+     }
+    }
+   },
+   "style": "cut"
+  },
+  {
+   "wait": 2.8
+  },
+  {
+   "shot": "/tmp/ba-ui-out/extras/11_records_long.png"
+  },
+  {
+   "quit": true
+  }
+ ]
+}

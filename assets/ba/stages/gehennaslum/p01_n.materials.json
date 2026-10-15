@@ -1,0 +1,353 @@
+{
+ "materials": {
+  "sb_slum_gehenna_01_atlas": {
+   "shader": "MX/E-Standard",
+   "keywords": [
+    "_SPECULAR_SETUP"
+   ],
+   "blend": {
+    "src": 1.0,
+    "dst": 0.0,
+    "cull": 2.0,
+    "zoffset_factor": 0.0
+   },
+   "floats": {
+    "_Cutoff": 0.661,
+    "_LightmapStrength": 1.0,
+    "_ReflectBaseAmount": 0.06,
+    "_ReflectAnglePower": 1.0,
+    "_ShadowAttenRefl": 0.0,
+    "_ReflectStrength": 0.5,
+    "_EmissionStrength": 0.0,
+    "_SpecPower": 195.0,
+    "_ShadowAttenSpec": 0.064
+   },
+   "colors": {
+    "_Color": [
+     1.50943,
+     1.41805,
+     1.31719,
+     1.0
+    ],
+    "_SpecLightColor": [
+     0.74902,
+     0.74902,
+     0.74902,
+     1.0
+    ],
+    "_SpecLightDir": [
+     0.0,
+     0.93974,
+     0.3419,
+     0.0
+    ]
+   },
+   "textures": {
+    "_MainTex": {
+     "file": "tex/sb_slum_gehenna_01_552d45d7.png",
+     "scale": [
+      1.0,
+      1.0
+     ],
+     "offset": [
+      0.0,
+      0.0
+     ]
+    },
+    "_ReflectTex": {
+     "file": null,
+     "scale": [
+      0.2,
+      0.2
+     ],
+     "offset": [
+      0.0,
+      0.0
+     ]
+    },
+    "_EmissionTex": {
+     "file": null,
+     "scale": [
+      1.0,
+      1.0
+     ],
+     "offset": [
+      0.0,
+      0.0
+     ]
+    },
+    "_SpecTex": {
+     "file": null,
+     "scale": [
+      1.0,
+      1.0
+     ],
+     "offset": [
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  "sb_slum_crack_01": {
+   "shader": "FX/General Unlit Texture",
+   "keywords": [],
+   "blend": {
+    "src": 2.0,
+    "dst": 3.0,
+    "cull": 2.0,
+    "zoffset_factor": -1.0
+   },
+   "floats": {
+    "_Cutoff": 0.5
+   },
+   "colors": {
+    "_Color": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   "textures": {
+    "_MainTex": {
+     "file": "tex/sb_slum_gehenna_01_552d45d7.png",
+     "scale": [
+      1.0,
+      1.0
+     ],
+     "offset": [
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  "Common_Cloud_07": {
+   "shader": "MX/VertexColor",
+   "keywords": [],
+   "blend": {
+    "src": 5.0,
+    "dst": 10.0,
+    "cull": 2.0,
+    "zoffset_factor": null
+   },
+   "floats": {
+    "_Cutoff": 0.5,
+    "_ReflectBaseAmount": 0.0,
+    "_ReflectAnglePower": 2.0,
+    "_ShadowAttenRefl": 0.0,
+    "_ReflectStrength": 0.0,
+    "_EmissionStrength": 1.0,
+    "_SpecPower": 1.0,
+    "_ShadowAttenSpec": 0.2
+   },
+   "colors": {
+    "_Color": [
+     1.97667,
+     1.97667,
+     1.97667,
+     1.0
+    ],
+    "_TintColor": [
+     0.11147,
+     0.12099,
+     0.14151,
+     0.63137
+    ],
+    "_SpecLightColor": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "_SpecLightDir": [
+     0.0,
+     0.94,
+     0.342,
+     0.0
+    ]
+   },
+   "textures": {}
+  },
+  "sb_slum_gehenna_01_alpha": {
+   "shader": "MX/E-Standard",
+   "keywords": [
+    "_ENV_ALPHA_MODE",
+    "_SPECULAR_SETUP"
+   ],
+   "blend": {
+    "src": 5.0,
+    "dst": 10.0,
+    "cull": 2.0,
+    "zoffset_factor": -1.0
+   },
+   "floats": {
+    "_Cutoff": 0.661,
+    "_LightmapStrength": 1.0,
+    "_ReflectBaseAmount": 0.06,
+    "_ReflectAnglePower": 1.0,
+    "_ShadowAttenRefl": 0.0,
+    "_ReflectStrength": 0.5,
+    "_EmissionStrength": 0.0,
+    "_SpecPower": 195.0,
+    "_ShadowAttenSpec": 0.064
+   },
+   "colors": {
+    "_Color": [
+     1.50943,
+     1.41805,
+     1.31719,
+     1.0
+    ],
+    "_SpecLightColor": [
+     0.74902,
+     0.74902,
+     0.74902,
+     1.0
+    ],
+    "_SpecLightDir": [
+     0.0,
+     0.93974,
+     0.3419,
+     0.0
+    ]
+   },
+   "textures": {
+    "_MainTex": {
+     "file": "tex/sb_slum_gehenna_01_552d45d7.png",
+     "scale": [
+      1.0,
+      1.0
+     ],
+     "offset": [
+      0.0,
+      0.0
+     ]
+    },
+    "_ReflectTex": {
+     "file": null,
+     "scale": [
+      0.2,
+      0.2
+     ],
+     "offset": [
+      0.0,
+      0.0
+     ]
+    },
+    "_EmissionTex": {
+     "file": null,
+     "scale": [
+      1.0,
+      1.0
+     ],
+     "offset": [
+      0.0,
+      0.0
+     ]
+    },
+    "_SpecTex": {
+     "file": null,
+     "scale": [
+      1.0,
+      1.0
+     ],
+     "offset": [
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  "sb_slum_gehenna_01_atlas_up": {
+   "shader": "MX/E-Standard",
+   "keywords": [
+    "_SPECULAR_SETUP"
+   ],
+   "blend": {
+    "src": 1.0,
+    "dst": 0.0,
+    "cull": 2.0,
+    "zoffset_factor": 1.0
+   },
+   "floats": {
+    "_Cutoff": 0.661,
+    "_LightmapStrength": 1.0,
+    "_ReflectBaseAmount": 0.06,
+    "_ReflectAnglePower": 1.0,
+    "_ShadowAttenRefl": 0.0,
+    "_ReflectStrength": 0.5,
+    "_EmissionStrength": 0.0,
+    "_SpecPower": 195.0,
+    "_ShadowAttenSpec": 0.064
+   },
+   "colors": {
+    "_Color": [
+     1.50943,
+     1.41805,
+     1.31719,
+     1.0
+    ],
+    "_SpecLightColor": [
+     0.74902,
+     0.74902,
+     0.74902,
+     1.0
+    ],
+    "_SpecLightDir": [
+     0.0,
+     0.93974,
+     0.3419,
+     0.0
+    ]
+   },
+   "textures": {
+    "_MainTex": {
+     "file": "tex/sb_slum_gehenna_01_552d45d7.png",
+     "scale": [
+      1.0,
+      1.0
+     ],
+     "offset": [
+      0.0,
+      0.0
+     ]
+    },
+    "_ReflectTex": {
+     "file": null,
+     "scale": [
+      0.2,
+      0.2
+     ],
+     "offset": [
+      0.0,
+      0.0
+     ]
+    },
+    "_EmissionTex": {
+     "file": null,
+     "scale": [
+      1.0,
+      1.0
+     ],
+     "offset": [
+      0.0,
+      0.0
+     ]
+    },
+    "_SpecTex": {
+     "file": null,
+     "scale": [
+      1.0,
+      1.0
+     ],
+     "offset": [
+      0.0,
+      0.0
+     ]
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,101 @@
+{
+ "timeout": 120,
+ "steps": [
+  {
+   "session": {
+    "mode": "training",
+    "stage": "gehenna-night",
+    "stage_time": "day",
+    "players": [
+     {
+      "claimed": true,
+      "device": "kb1",
+      "fighter": 10004,
+      "special": 10017
+     },
+     {
+      "claimed": false,
+      "device": "",
+      "fighter": 10005,
+      "special": 10017
+     }
+    ]
+   }
+  },
+  {
+   "go": "fight",
+   "style": "cut"
+  },
+  {
+   "frames": 20
+  },
+  {
+   "mem": "aspect_start"
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "shot": ".dev/out/stage3d/aspect_01_start.png"
+  },
+  {
+   "stage_shot": ".dev/out/stage3d/aspect_02_start_stage.png"
+  },
+  {
+   "wait": 2.5
+  },
+  {
+   "fighter": {
+    "slot": 1,
+    "pos": [
+     420,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "fighter": {
+    "slot": 2,
+    "pos": [
+     640,
+     560
+    ],
+    "vel": [
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "hold": [
+    "kb1",
+    "right"
+   ]
+  },
+  {
+   "frames": 60
+  },
+  {
+   "stage_print": true
+  },
+  {
+   "shot": ".dev/out/stage3d/aspect_03_edge.png"
+  },
+  {
+   "stage_shot": ".dev/out/stage3d/aspect_04_edge_stage.png"
+  },
+  {
+   "release": [
+    "kb1",
+    "right"
+   ]
+  },
+  {
+   "quit": true
+  }
+ ]
+}

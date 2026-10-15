@@ -1,0 +1,4 @@
+SkelToJson, Spine 4.2/4.3 binary .skel to JSON converter, MIT (see LICENSE).
+Upstream: https://github.com/BastienGimbert/SkelToJson
+Commit:   c2c7cae90b0deb063ef23fbd808430cd1a462356
+Copied unchanged from src/SkelToJson, minus __pycache__. Used by tools/hud_expressions.py.

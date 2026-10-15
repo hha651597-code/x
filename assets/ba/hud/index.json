@@ -1,0 +1,1872 @@
+{
+ "sprites": {
+  "Combat__Combat_Balloon_Sup": {
+   "w": 69,
+   "h": 95,
+   "borders": [
+    46,
+    20,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Combat__Combat_Bg_Hp": {
+   "w": 25,
+   "h": 26,
+   "borders": [
+    12,
+    12,
+    10,
+    14
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "source_borders": [
+    13,
+    13,
+    10,
+    14
+   ],
+   "note": "NGUI borders 13/13/10/14 leave no centre pixel on 25x26; use margins l=12 r=12 t=10 b=14 (one stretched pixel) in a Godot nine-patch"
+  },
+  "Combat__Combat_CardBg_EX": {
+   "w": 246,
+   "h": 203,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Combat__Combat_CardBg_EX_CostTag": {
+   "w": 72,
+   "h": 72,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Combat__Combat_CardBg_Tactice_Support": {
+   "w": 292,
+   "h": 271,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Combat__Combat_CostBg": {
+   "w": 117,
+   "h": 123,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Combat__Combat_Cost_Gauge": {
+   "w": 66,
+   "h": 36,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Combat__Combat_Gauge_Hp": {
+   "w": 9,
+   "h": 9,
+   "borders": [
+    2,
+    2,
+    3,
+    3
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Combat__Combat_Icon_Arrow": {
+   "w": 13,
+   "h": 17,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Combat__Combat_Icon_Buff_ATK": {
+   "w": 47,
+   "h": 54,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Combat__Combat_Icon_Buff_AmmoCount": {
+   "w": 47,
+   "h": 54,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Combat__Combat_Icon_Buff_BlockRate": {
+   "w": 47,
+   "h": 54,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Combat__Combat_Icon_Buff_DEF": {
+   "w": 47,
+   "h": 54,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Combat__Combat_Icon_Buff_Shield": {
+   "w": 47,
+   "h": 54,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Combat__Combat_Icon_CC_Stunned": {
+   "w": 47,
+   "h": 54,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Combat__Combat_Icon_Debuff_ATK": {
+   "w": 47,
+   "h": 54,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Combat__Combat_Icon_Special_Fury": {
+   "w": 47,
+   "h": 54,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Combat__Combat_Time_Icon": {
+   "w": 39,
+   "h": 43,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Combat__Combat_Title_Bg": {
+   "w": 58,
+   "h": 58,
+   "borders": [
+    28,
+    28,
+    28,
+    28
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Combat__Common_Bg_Raius5px": {
+   "w": 12,
+   "h": 12,
+   "borders": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Combat__Common_Btn_BG": {
+   "w": 68,
+   "h": 70,
+   "borders": [
+    29,
+    29,
+    25,
+    38
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Combat__Common_Line_Dot": {
+   "w": 10,
+   "h": 10,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Combat__Ingame_Emo_NearlyDead": {
+   "w": 114,
+   "h": 97,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Combat__Ingame_Operater_Text_Bg": {
+   "w": 101,
+   "h": 122,
+   "borders": [
+    50,
+    40,
+    50,
+    50
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Common__Card_Role_Bg": {
+   "w": 64,
+   "h": 61,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Common__Card_Select_Line": {
+   "w": 138,
+   "h": 87,
+   "borders": [
+    68,
+    69,
+    42,
+    42
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "source_borders": [
+    69,
+    69,
+    42,
+    42
+   ],
+   "note": "NGUI borders 69/69/42/42 leave no centre pixel on 138x87; use margins l=68 r=69 t=42 b=42 (one stretched pixel) in a Godot nine-patch"
+  },
+  "Common__Common_Attack_Icon": {
+   "w": 112,
+   "h": 117,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Common__Common_Bg_Raius10px": {
+   "w": 24,
+   "h": 24,
+   "borders": [
+    10,
+    10,
+    10,
+    10
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Common__Common_Btn_Normal_B_S_Pt": {
+   "w": 251,
+   "h": 140,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Common__Common_Btn_Normal_Y_S_Pt": {
+   "w": 251,
+   "h": 140,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Common__Common_Defense_Icon": {
+   "w": 112,
+   "h": 117,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Common__Common_Icon_DamageDealer": {
+   "w": 67,
+   "h": 66,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Common__Common_Icon_Healer": {
+   "w": 67,
+   "h": 66,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Common__Common_Icon_Supporter": {
+   "w": 67,
+   "h": 66,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Common__Common_Icon_Tanker": {
+   "w": 67,
+   "h": 66,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Common__Common_Icon_Vehicle": {
+   "w": 67,
+   "h": 66,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Common__Common_Nonoutline_W_Bg": {
+   "w": 31,
+   "h": 34,
+   "borders": [
+    12,
+    12,
+    10,
+    22
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Common__Common_Popup_Bg": {
+   "w": 118,
+   "h": 215,
+   "borders": [
+    48,
+    48,
+    145,
+    65
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Common__Common_Top_Menu_Bg": {
+   "w": 343,
+   "h": 105,
+   "borders": [
+    310,
+    20,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    61
+   ]
+  },
+  "Emoji__Emoji_Exclamation": {
+   "w": 60,
+   "h": 149,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Emoji__Emoji_Sweat_1": {
+   "w": 74,
+   "h": 114,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Emoji__Emoji_Sweat_2": {
+   "w": 46,
+   "h": 65,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Emoji__Emoji_Tear_1": {
+   "w": 68,
+   "h": 87,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Emoji__Emoji_Twinkle": {
+   "w": 121,
+   "h": 134,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Floater__Imagefont_Block": {
+   "w": 136,
+   "h": 42,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Floater__Imagefont_Block_Resist": {
+   "w": 136,
+   "h": 42,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Floater__Imagefont_Cri_Bg": {
+   "w": 230,
+   "h": 104,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    6,
+    11,
+    3,
+    5
+   ]
+  },
+  "Floater__Imagefont_Immune_Unit": {
+   "w": 174,
+   "h": 44,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Floater__Imagefont_Miss_Unit": {
+   "w": 113,
+   "h": 44,
+   "borders": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "padding": [
+    19,
+    22,
+    0,
+    0
+   ]
+  }
+ },
+ "tex": {
+  "UIs__00_Images__BG__Tactic_Result_Bg": {
+   "w": 512,
+   "h": 256
+  },
+  "UIs__00_Images__Formation__UITex_BGBlueLight": {
+   "w": 729,
+   "h": 269,
+   "blend": "add"
+  },
+  "UIs__00_Images__ImageFont__ImgFont_BestRecord": {
+   "w": 512,
+   "h": 64
+  },
+  "UIs__00_Images__ImageFont__ImgFont_Lose_Arena_Result": {
+   "w": 512,
+   "h": 256
+  },
+  "UIs__00_Images__ImageFont__ImgFont_MinigameRhythm_Combo": {
+   "w": 159,
+   "h": 44
+  },
+  "UIs__00_Images__ImageFont__ImgFont_VS": {
+   "w": 128,
+   "h": 64
+  },
+  "UIs__00_Images__ImageFont__ImgFont_Win_ArenaResult": {
+   "w": 512,
+   "h": 256
+  },
+  "UIs__00_Images__ImageFont__Ingame_Image_Fight": {
+   "w": 1024,
+   "h": 256
+  },
+  "UIs__00_Images__ImageFont__Ingame_Image_Start": {
+   "w": 1024,
+   "h": 256
+  },
+  "UIs__00_Images__ImageFont__Ingame_Warning_Text_1": {
+   "w": 1024,
+   "h": 128
+  },
+  "UIs__00_Images__Image_Deco_Circle": {
+   "w": 325,
+   "h": 325
+  },
+  "UIs__00_Images__Image_Triangle_Pattern_Deco_1": {
+   "w": 1024,
+   "h": 1024
+  },
+  "UIs__00_Images__Ingame_Start_Light": {
+   "w": 824,
+   "h": 792,
+   "blend": "add"
+  },
+  "UIs__00_Images__Ingame_Warning_Deco_1": {
+   "w": 1191,
+   "h": 46
+  },
+  "UIs__00_Images__Ingame_Warning_Deco_3": {
+   "w": 1191,
+   "h": 46
+  },
+  "UIs__01_Common__11_SchoolIcon__School_Icon_ABYDOS": {
+   "w": 688,
+   "h": 624
+  },
+  "UIs__01_Common__11_SchoolIcon__School_Icon_Arius": {
+   "w": 688,
+   "h": 624
+  },
+  "UIs__01_Common__11_SchoolIcon__School_Icon_GEHENNA": {
+   "w": 688,
+   "h": 624
+  },
+  "UIs__01_Common__11_SchoolIcon__School_Icon_HYAKKIYAKO": {
+   "w": 688,
+   "h": 624
+  },
+  "UIs__01_Common__11_SchoolIcon__School_Icon_MILLENNIUM": {
+   "w": 688,
+   "h": 624
+  },
+  "UIs__01_Common__11_SchoolIcon__School_Icon_REDWINTER": {
+   "w": 688,
+   "h": 624
+  },
+  "UIs__01_Common__11_SchoolIcon__School_Icon_SHANHAIJING": {
+   "w": 688,
+   "h": 624
+  },
+  "UIs__01_Common__11_SchoolIcon__School_Icon_SRT": {
+   "w": 688,
+   "h": 624
+  },
+  "UIs__01_Common__11_SchoolIcon__School_Icon_TRINITY": {
+   "w": 688,
+   "h": 624
+  },
+  "UIs__01_Common__11_SchoolIcon__School_Icon_VALKYRIE": {
+   "w": 688,
+   "h": 624
+  }
+ },
+ "portraits": {
+  "10005": {
+   "name": "Hoshino",
+   "kind": "fighter",
+   "dev_name": "Hoshino",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Hoshino",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Hoshino.png",
+   "small": "portraits/Student_Portrait_Hoshino_Small.png"
+  },
+  "10004": {
+   "name": "Hina",
+   "kind": "fighter",
+   "dev_name": "Hina",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Hina",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Hina.png",
+   "small": "portraits/Student_Portrait_Hina_Small.png"
+  },
+  "10003": {
+   "name": "Hifumi",
+   "kind": "special",
+   "dev_name": "Hihumi",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Hihumi",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Hihumi.png",
+   "small": "portraits/Student_Portrait_Hihumi_Small.png"
+  },
+  "10009": {
+   "name": "Izumi",
+   "kind": "special",
+   "dev_name": "Izumi",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Izumi",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Izumi.png",
+   "small": "portraits/Student_Portrait_Izumi_Small.png"
+  },
+  "13000": {
+   "name": "Akane",
+   "kind": "special",
+   "dev_name": "Akane",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Akane",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Akane.png",
+   "small": "portraits/Student_Portrait_Akane_Small.png"
+  },
+  "13001": {
+   "name": "Chise",
+   "kind": "special",
+   "dev_name": "Chise",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Chise",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Chise.png",
+   "small": "portraits/Student_Portrait_Chise_Small.png"
+  },
+  "13002": {
+   "name": "Akari",
+   "kind": "special",
+   "dev_name": "Akari",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Akari",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Akari.png",
+   "small": "portraits/Student_Portrait_Akari_Small.png"
+  },
+  "13004": {
+   "name": "Nonomi",
+   "kind": "special",
+   "dev_name": "Nonomi",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Nonomi",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Nonomi.png",
+   "small": "portraits/Student_Portrait_Nonomi_Small.png"
+  },
+  "13005": {
+   "name": "Kayoko",
+   "kind": "special",
+   "dev_name": "Kayoko",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Kayoko",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Kayoko.png",
+   "small": "portraits/Student_Portrait_Kayoko_Small.png"
+  },
+  "13007": {
+   "name": "Junko",
+   "kind": "special",
+   "dev_name": "Zunko",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Zunko",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Zunko.png",
+   "small": "portraits/Student_Portrait_Zunko_Small.png"
+  },
+  "13008": {
+   "name": "Serika",
+   "kind": "special",
+   "dev_name": "Serika",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Serika",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Serika.png",
+   "small": "portraits/Student_Portrait_Serika_Small.png"
+  },
+  "13009": {
+   "name": "Tsubaki",
+   "kind": "special",
+   "dev_name": "Tsubaki",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Tsubaki",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Tsubaki.png",
+   "small": "portraits/Student_Portrait_Tsubaki_Small.png"
+  },
+  "16000": {
+   "name": "Haruka",
+   "kind": "special",
+   "dev_name": "Haruka",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Haruka",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Haruka.png",
+   "small": "portraits/Student_Portrait_Haruka_Small.png"
+  },
+  "16001": {
+   "name": "Asuna",
+   "kind": "special",
+   "dev_name": "Asuna",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Asuna",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Asuna.png",
+   "small": "portraits/Student_Portrait_Asuna_Small.png"
+  },
+  "16002": {
+   "name": "Kotori",
+   "kind": "special",
+   "dev_name": "Kotori",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Kotori",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Kotori.png",
+   "small": "portraits/Student_Portrait_Kotori_Small.png"
+  },
+  "16003": {
+   "name": "Suzumi",
+   "kind": "special",
+   "dev_name": "Suzumi",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Suzumi",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Suzumi.png",
+   "small": "portraits/Student_Portrait_Suzumi_Small.png"
+  },
+  "16004": {
+   "name": "Pina",
+   "kind": "special",
+   "dev_name": "Pina",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Pina",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Pina.png",
+   "small": "portraits/Student_Portrait_Pina_Small.png"
+  },
+  "20000": {
+   "name": "Hibiki",
+   "kind": "special",
+   "dev_name": "Hibiki",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Hibiki",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Hibiki.png",
+   "small": "portraits/Student_Portrait_Hibiki_Small.png"
+  },
+  "20001": {
+   "name": "Karin",
+   "kind": "special",
+   "dev_name": "karin",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Karin",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Karin.png",
+   "small": "portraits/Student_Portrait_Karin_Small.png"
+  },
+  "20002": {
+   "name": "Saya",
+   "kind": "special",
+   "dev_name": "Saya",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Saya",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Saya.png",
+   "small": "portraits/Student_Portrait_Saya_Small.png"
+  },
+  "23000": {
+   "name": "Airi",
+   "kind": "special",
+   "dev_name": "Airi",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Airi",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Airi.png",
+   "small": "portraits/Student_Portrait_Airi_Small.png"
+  },
+  "23001": {
+   "name": "Fuuka",
+   "kind": "special",
+   "dev_name": "Fuuka",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Fuuka",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Fuuka.png",
+   "small": "portraits/Student_Portrait_Fuuka_Small.png"
+  },
+  "23002": {
+   "name": "Hanae",
+   "kind": "special",
+   "dev_name": "Hanae",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Hanae",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Hanae.png",
+   "small": "portraits/Student_Portrait_Hanae_Small.png"
+  },
+  "23003": {
+   "name": "Hare",
+   "kind": "special",
+   "dev_name": "Hare",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Hare",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Hare.png",
+   "small": "portraits/Student_Portrait_Hare_Small.png"
+  },
+  "23004": {
+   "name": "Utaha",
+   "kind": "special",
+   "dev_name": "Utaha",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Utaha",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Utaha.png",
+   "small": "portraits/Student_Portrait_Utaha_Small.png"
+  },
+  "23005": {
+   "name": "Ayane",
+   "kind": "special",
+   "dev_name": "Ayane",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Ayane",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Ayane.png",
+   "small": "portraits/Student_Portrait_Ayane_Small.png"
+  },
+  "26000": {
+   "name": "Chinatsu",
+   "kind": "special",
+   "dev_name": "Chinatsu",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Chinatsu",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Chinatsu.png",
+   "small": "portraits/Student_Portrait_Chinatsu_Small.png"
+  },
+  "26001": {
+   "name": "Kotama",
+   "kind": "special",
+   "dev_name": "Kotama",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Kotama",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Kotama.png",
+   "small": "portraits/Student_Portrait_Kotama_Small.png"
+  },
+  "26002": {
+   "name": "Juri",
+   "kind": "special",
+   "dev_name": "Juri",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Juri",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Juri.png",
+   "small": "portraits/Student_Portrait_Juri_Small.png"
+  },
+  "26003": {
+   "name": "Serina",
+   "kind": "special",
+   "dev_name": "Serina",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Serina",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Serina.png",
+   "small": "portraits/Student_Portrait_Serina_Small.png"
+  },
+  "26004": {
+   "name": "Shimiko",
+   "kind": "special",
+   "dev_name": "Shimiko",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Shimiko",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Shimiko.png",
+   "small": "portraits/Student_Portrait_Shimiko_Small.png"
+  },
+  "26005": {
+   "name": "Yoshimi",
+   "kind": "special",
+   "dev_name": "Yoshimi",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Yoshimi",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Yoshimi.png",
+   "small": "portraits/Student_Portrait_Yoshimi_Small.png"
+  },
+  "20003": {
+   "name": "Mashiro",
+   "kind": "special",
+   "dev_name": "Mashiro",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Mashiro",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Mashiro.png",
+   "small": "portraits/Student_Portrait_Mashiro_Small.png"
+  },
+  "23006": {
+   "name": "Shizuko",
+   "kind": "special",
+   "dev_name": "Shizuko",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Shizuko",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Shizuko.png",
+   "small": "portraits/Student_Portrait_Shizuko_Small.png"
+  },
+  "13011": {
+   "name": "Momoi",
+   "kind": "special",
+   "dev_name": "Momoi",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Momoi",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Momoi.png",
+   "small": "portraits/Student_Portrait_Momoi_Small.png"
+  },
+  "10017": {
+   "name": "Cherino",
+   "kind": "special",
+   "dev_name": "Cherino",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Cherino",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Cherino.png",
+   "small": "portraits/Student_Portrait_Cherino_Small.png"
+  },
+  "26006": {
+   "name": "Nodoka",
+   "kind": "special",
+   "dev_name": "Nodoka",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Nodoka",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Nodoka.png",
+   "small": "portraits/Student_Portrait_Nodoka_Small.png"
+  },
+  "23007": {
+   "name": "Hanako",
+   "kind": "special",
+   "dev_name": "Hanako",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Hanako",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Hanako.png",
+   "small": "portraits/Student_Portrait_Hanako_Small.png"
+  },
+  "13012": {
+   "name": "Kirino",
+   "kind": "special",
+   "dev_name": "Kirino",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Kirino",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Kirino.png",
+   "small": "portraits/Student_Portrait_Kirino_Small.png"
+  },
+  "10029": {
+   "name": "Natsu",
+   "kind": "special",
+   "dev_name": "CH0155",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_CH0155",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_CH0155.png",
+   "small": "portraits/Student_Portrait_CH0155_Small.png"
+  },
+  "23008": {
+   "name": "Mari",
+   "kind": "special",
+   "dev_name": "Mari",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Mari",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Mari.png",
+   "small": "portraits/Student_Portrait_Mari_Small.png"
+  },
+  "20008": {
+   "name": "Ako",
+   "kind": "special",
+   "dev_name": "Ako",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Ako",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Ako.png",
+   "small": "portraits/Student_Portrait_Ako_Small.png"
+  },
+  "16007": {
+   "name": "Tomoe",
+   "kind": "special",
+   "dev_name": "Tomoe",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Tomoe",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Tomoe.png",
+   "small": "portraits/Student_Portrait_Tomoe_Small.png"
+  },
+  "16008": {
+   "name": "Fubuki",
+   "kind": "special",
+   "dev_name": "CH0141",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_CH0141",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_CH0141.png",
+   "small": "portraits/Student_Portrait_CH0141_Small.png"
+  },
+  "20012": {
+   "name": "Sena",
+   "kind": "special",
+   "dev_name": "CH0081",
+   "matched_by": "name",
+   "texture": "Student_Portrait_Sena",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Sena.png",
+   "small": "portraits/Student_Portrait_Sena_Small.png"
+  },
+  "20013": {
+   "name": "Chihiro",
+   "kind": "special",
+   "dev_name": "CH0160",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_CH0160",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_CH0160.png",
+   "small": "portraits/Student_Portrait_CH0160_Small.png"
+  },
+  "10034": {
+   "name": "Mimori",
+   "kind": "special",
+   "dev_name": "Mimori",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Mimori",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Mimori.png",
+   "small": "portraits/Student_Portrait_Mimori_Small.png"
+  },
+  "10035": {
+   "name": "Ui",
+   "kind": "special",
+   "dev_name": "CH0169",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_CH0169",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_CH0169.png",
+   "small": "portraits/Student_Portrait_CH0169_Small.png"
+  },
+  "10036": {
+   "name": "Hinata",
+   "kind": "special",
+   "dev_name": "Hinata",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Hinata",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Hinata.png",
+   "small": "portraits/Student_Portrait_Hinata_Small.png"
+  },
+  "10037": {
+   "name": "Marina",
+   "kind": "special",
+   "dev_name": "Marina",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Marina",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Marina.png",
+   "small": "portraits/Student_Portrait_Marina_Small.png"
+  },
+  "10038": {
+   "name": "Miyako",
+   "kind": "special",
+   "dev_name": "miyako",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Miyako",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Miyako.png",
+   "small": "portraits/Student_Portrait_Miyako_Small.png"
+  },
+  "20014": {
+   "name": "Saki",
+   "kind": "special",
+   "dev_name": "CH0144",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_CH0144",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_CH0144.png",
+   "small": "portraits/Student_Portrait_CH0144_Small.png"
+  },
+  "10039": {
+   "name": "Miyu",
+   "kind": "special",
+   "dev_name": "CH0145",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_CH0145",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_CH0145.png",
+   "small": "portraits/Student_Portrait_CH0145_Small.png"
+  },
+  "20015": {
+   "name": "Kaede",
+   "kind": "special",
+   "dev_name": "Kaede",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Kaede",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Kaede.png",
+   "small": "portraits/Student_Portrait_Kaede_Small.png"
+  },
+  "20016": {
+   "name": "Iroha",
+   "kind": "special",
+   "dev_name": "CH0156",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_CH0156",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_CH0156.png",
+   "small": "portraits/Student_Portrait_CH0156_Small.png"
+  },
+  "16009": {
+   "name": "Michiru",
+   "kind": "special",
+   "dev_name": "CH0113",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_CH0113",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_CH0113.png",
+   "small": "portraits/Student_Portrait_CH0113_Small.png"
+  },
+  "10040": {
+   "name": "Tsukuyo",
+   "kind": "special",
+   "dev_name": "CH0114",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_CH0114",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_CH0114.png",
+   "small": "portraits/Student_Portrait_CH0114_Small.png"
+  },
+  "10041": {
+   "name": "Misaki",
+   "kind": "special",
+   "dev_name": "Misaki",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Misaki",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Misaki.png",
+   "small": "portraits/Student_Portrait_Misaki_Small.png"
+  },
+  "20017": {
+   "name": "Hiyori",
+   "kind": "special",
+   "dev_name": "Hiyori",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Hiyori",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Hiyori.png",
+   "small": "portraits/Student_Portrait_Hiyori_Small.png"
+  },
+  "10042": {
+   "name": "Atsuko",
+   "kind": "special",
+   "dev_name": "Atsuko",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Atsuko",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Atsuko.png",
+   "small": "portraits/Student_Portrait_Atsuko_Small.png"
+  },
+  "20018": {
+   "name": "Moe",
+   "kind": "special",
+   "dev_name": "Moe",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Moe",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Moe.png",
+   "small": "portraits/Student_Portrait_Moe_Small.png"
+  },
+  "10050": {
+   "name": "Kokona",
+   "kind": "special",
+   "dev_name": "CH0137",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_CH0137",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_CH0137.png",
+   "small": "portraits/Student_Portrait_CH0137_Small.png"
+  },
+  "20020": {
+   "name": "Himari",
+   "kind": "special",
+   "dev_name": "CH0159",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_CH0159",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_CH0159.png",
+   "small": "portraits/Student_Portrait_CH0159_Small.png"
+  },
+  "10055": {
+   "name": "Shigure",
+   "kind": "special",
+   "dev_name": "Shigure",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Shigure",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Shigure.png",
+   "small": "portraits/Student_Portrait_Shigure_Small.png"
+  },
+  "10060": {
+   "name": "Megu",
+   "kind": "special",
+   "dev_name": "CH0088",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_CH0088",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_CH0088.png",
+   "small": "portraits/Student_Portrait_CH0088_Small.png"
+  },
+  "20023": {
+   "name": "Kanna",
+   "kind": "special",
+   "dev_name": "CH0170",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_CH0170",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_CH0170.png",
+   "small": "portraits/Student_Portrait_CH0170_Small.png"
+  },
+  "10061": {
+   "name": "Sakurako",
+   "kind": "special",
+   "dev_name": "Sakurako",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Sakurako",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Sakurako.png",
+   "small": "portraits/Student_Portrait_Sakurako_Small.png"
+  },
+  "20024": {
+   "name": "Nagisa",
+   "kind": "special",
+   "dev_name": "Nagisa",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Nagisa",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Nagisa.png",
+   "small": "portraits/Student_Portrait_Nagisa_Small.png"
+  },
+  "10065": {
+   "name": "Kaho",
+   "kind": "special",
+   "dev_name": "CH0107",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_CH0107",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_CH0107.png",
+   "small": "portraits/Student_Portrait_CH0107_Small.png"
+  },
+  "10068": {
+   "name": "Reisa",
+   "kind": "special",
+   "dev_name": "CH0167",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_CH0167",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_CH0167.png",
+   "small": "portraits/Student_Portrait_CH0167_Small.png"
+  },
+  "10069": {
+   "name": "Rumi",
+   "kind": "special",
+   "dev_name": "CH0135",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_CH0135",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_CH0135.png",
+   "small": "portraits/Student_Portrait_CH0135_Small.png"
+  },
+  "20026": {
+   "name": "Minori",
+   "kind": "special",
+   "dev_name": "CH0214",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_CH0214",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_CH0214.png",
+   "small": "portraits/Student_Portrait_CH0214_Small.png"
+  },
+  "10075": {
+   "name": "Meru",
+   "kind": "special",
+   "dev_name": "CH0124",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_CH0124",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_CH0124.png",
+   "small": "portraits/Student_Portrait_CH0124_Small.png"
+  },
+  "13013": {
+   "name": "Momiji",
+   "kind": "special",
+   "dev_name": "Momiji",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Momiji",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Momiji.png",
+   "small": "portraits/Student_Portrait_Momiji_Small.png"
+  },
+  "10077": {
+   "name": "Ichika",
+   "kind": "special",
+   "dev_name": "CH0071",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_CH0071",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_CH0071.png",
+   "small": "portraits/Student_Portrait_CH0071_Small.png"
+  },
+  "10078": {
+   "name": "Kasumi",
+   "kind": "special",
+   "dev_name": "CH0089",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_CH0089",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_CH0089.png",
+   "small": "portraits/Student_Portrait_CH0089_Small.png"
+  },
+  "10081": {
+   "name": "Yukari",
+   "kind": "special",
+   "dev_name": "CH0161",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_CH0161",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_CH0161.png",
+   "small": "portraits/Student_Portrait_CH0161_Small.png"
+  },
+  "10082": {
+   "name": "Renge",
+   "kind": "special",
+   "dev_name": "CH0224",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_CH0224",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_CH0224.png",
+   "small": "portraits/Student_Portrait_CH0224_Small.png"
+  },
+  "10083": {
+   "name": "Kikyou",
+   "kind": "special",
+   "dev_name": "CH0225",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_CH0225",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_CH0225.png",
+   "small": "portraits/Student_Portrait_CH0225_Small.png"
+  },
+  "16014": {
+   "name": "Ibuki",
+   "kind": "special",
+   "dev_name": "CH0077",
+   "matched_by": "name",
+   "texture": "Student_Portrait_Ibuki",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Ibuki.png",
+   "small": "portraits/Student_Portrait_Ibuki_Small.png"
+  },
+  "20033": {
+   "name": "Makoto",
+   "kind": "special",
+   "dev_name": "CH0079",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_CH0079",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_CH0079.png",
+   "small": "portraits/Student_Portrait_CH0079_Small.png"
+  },
+  "10090": {
+   "name": "Umika",
+   "kind": "special",
+   "dev_name": "CH0110",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_CH0110",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_CH0110.png",
+   "small": "portraits/Student_Portrait_CH0110_Small.png"
+  },
+  "10093": {
+   "name": "Kirara",
+   "kind": "special",
+   "dev_name": "kirara",
+   "matched_by": "dev_name",
+   "texture": "Student_Portrait_Kirara",
+   "fallback": false,
+   "file": "portraits/Student_Portrait_Kirara.png",
+   "small": "portraits/Student_Portrait_Kirara_Small.png"
+  }
+ },
+ "words": {
+  "fight": {
+   "kind": "ba",
+   "texture": "UIs__00_Images__ImageFont__Ingame_Image_Fight"
+  },
+  "start": {
+   "kind": "ba",
+   "texture": "UIs__00_Images__ImageFont__Ingame_Image_Start"
+  },
+  "win": {
+   "kind": "ba",
+   "texture": "UIs__00_Images__ImageFont__ImgFont_Win_ArenaResult"
+  },
+  "lose": {
+   "kind": "ba",
+   "texture": "UIs__00_Images__ImageFont__ImgFont_Lose_Arena_Result"
+  },
+  "vs": {
+   "kind": "ba",
+   "texture": "UIs__00_Images__ImageFont__ImgFont_VS"
+  },
+  "warning": {
+   "kind": "ba",
+   "texture": "UIs__00_Images__ImageFont__Ingame_Warning_Text_1"
+  },
+  "block": {
+   "kind": "ba",
+   "texture": "Floater__Imagefont_Block"
+  },
+  "block_resist": {
+   "kind": "ba",
+   "texture": "Floater__Imagefont_Block_Resist"
+  },
+  "miss": {
+   "kind": "ba",
+   "texture": "Floater__Imagefont_Miss_Unit"
+  },
+  "immune": {
+   "kind": "ba",
+   "texture": "Floater__Imagefont_Immune_Unit"
+  },
+  "combo": {
+   "kind": "ba",
+   "texture": "UIs__00_Images__ImageFont__ImgFont_MinigameRhythm_Combo"
+  },
+  "best_record": {
+   "kind": "ba",
+   "texture": "UIs__00_Images__ImageFont__ImgFont_BestRecord"
+  },
+  "round_1": {
+   "kind": "baked",
+   "file": "words/round_1.png"
+  },
+  "round_2": {
+   "kind": "baked",
+   "file": "words/round_2.png"
+  },
+  "round_3": {
+   "kind": "baked",
+   "file": "words/round_3.png"
+  },
+  "final": {
+   "kind": "baked",
+   "file": "words/final.png"
+  },
+  "ko": {
+   "kind": "baked",
+   "file": "words/ko.png"
+  },
+  "super": {
+   "kind": "baked",
+   "file": "words/super.png"
+  },
+  "ex_ready": {
+   "kind": "baked",
+   "file": "words/ex_ready.png"
+  },
+  "just_guard": {
+   "kind": "baked",
+   "file": "words/just_guard.png"
+  },
+  "guard_crush": {
+   "kind": "baked",
+   "file": "words/guard_crush.png"
+  },
+  "training": {
+   "kind": "baked",
+   "file": "words/training.png"
+  },
+  "draw": {
+   "kind": "baked",
+   "file": "words/draw.png"
+  },
+  "time_up": {
+   "kind": "baked",
+   "file": "words/time_up.png"
+  },
+  "round_4": {
+   "kind": "baked",
+   "file": "words/round_4.png"
+  },
+  "round_5": {
+   "kind": "baked",
+   "file": "words/round_5.png"
+  },
+  "round_6": {
+   "kind": "baked",
+   "file": "words/round_6.png"
+  },
+  "round_7": {
+   "kind": "baked",
+   "file": "words/round_7.png"
+  },
+  "round_8": {
+   "kind": "baked",
+   "file": "words/round_8.png"
+  },
+  "round_9": {
+   "kind": "baked",
+   "file": "words/round_9.png"
+  }
+ },
+ "crests": {
+  "abydos": "UIs__01_Common__11_SchoolIcon__School_Icon_ABYDOS",
+  "arius": "UIs__01_Common__11_SchoolIcon__School_Icon_Arius",
+  "gehenna": "UIs__01_Common__11_SchoolIcon__School_Icon_GEHENNA",
+  "hyakkiyako": "UIs__01_Common__11_SchoolIcon__School_Icon_HYAKKIYAKO",
+  "millennium": "UIs__01_Common__11_SchoolIcon__School_Icon_MILLENNIUM",
+  "redwinter": "UIs__01_Common__11_SchoolIcon__School_Icon_REDWINTER",
+  "shanhaijing": "UIs__01_Common__11_SchoolIcon__School_Icon_SHANHAIJING",
+  "srt": "UIs__01_Common__11_SchoolIcon__School_Icon_SRT",
+  "trinity": "UIs__01_Common__11_SchoolIcon__School_Icon_TRINITY",
+  "valkyrie": "UIs__01_Common__11_SchoolIcon__School_Icon_VALKYRIE"
+ }
+}

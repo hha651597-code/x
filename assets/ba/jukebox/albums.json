@@ -1,0 +1,50 @@
+{
+ "albums": {
+  "vol1": {
+   "name": "Blue Archive Original Soundtrack Vol.1",
+   "subtitle": "Longing for the Memorable Days",
+   "cover": "vol1.jpg"
+  },
+  "vol3": {
+   "name": "Blue Archive Original Soundtrack Vol.3",
+   "subtitle": "Reaching for the Precious Time",
+   "cover": "vol3.jpg"
+  },
+  "vol4": {
+   "name": "Blue Archive Original Soundtrack Vol.4",
+   "subtitle": "Aiming for the Ideal Freedom",
+   "cover": "vol4.jpg"
+  },
+  "vol5": {
+   "name": "Blue Archive Original Soundtrack Vol.5",
+   "subtitle": "Striving for the Bloomy Festival",
+   "cover": "vol5.jpg"
+  },
+  "vol7": {
+   "name": "Blue Archive Original Soundtrack Vol.7",
+   "subtitle": "Harmonizing for the Hearts of Each",
+   "cover": "vol7.jpg"
+  },
+  "generic": {
+   "name": "Blue Archive Original Soundtrack",
+   "subtitle": "",
+   "cover": "generic.jpg"
+  }
+ },
+ "tracks": {
+  "constant-moderato": "vol1",
+  "signal-of-abydos": "vol1",
+  "mechanical-jungle": "vol1",
+  "virtual-storm": "vol1",
+  "alert": "vol1",
+  "crossfire": "vol1",
+  "out-of-control": "vol1",
+  "aoharu": "vol3",
+  "unwelcome-school": "vol4",
+  "final-destination-of-ark": "vol4",
+  "step-of-terror": "vol4",
+  "dark-shadows": "vol5",
+  "fury-of-set": "vol7",
+  "pachad": null
+ }
+}

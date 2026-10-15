@@ -1,0 +1,368 @@
+{
+ "hina": {
+  "body": {
+   "shadow_threshold": [
+    0.15,
+    0.5,
+    0.91,
+    0.4
+   ],
+   "shadow_tints": [
+    [
+     1.0,
+     0.78824,
+     0.72157
+    ],
+    [
+     0.36994,
+     0.29873,
+     0.46226
+    ],
+    [
+     0.42453,
+     0.34643,
+     0.20225
+    ],
+    [
+     0.68987,
+     0.63879,
+     0.82075
+    ]
+   ],
+   "view_offset": [
+    0.0,
+    0.1,
+    0.0,
+    -0.5
+   ],
+   "view_power": [
+    189.0,
+    9.0,
+    14.0,
+    256.0
+   ],
+   "view_strength": [
+    0.0,
+    0.2,
+    1.0,
+    0.1
+   ],
+   "view_edge": [
+    0.0,
+    1.0,
+    0.354,
+    0.44
+   ],
+   "inv_view_power": [
+    1.0,
+    1.0,
+    2.6,
+    8.2
+   ],
+   "inv_view_strength": [
+    0.0,
+    0.0,
+    0.0,
+    -0.4
+   ],
+   "base_brightness": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rim_area": [
+    5.0,
+    5.0,
+    5.0,
+    5.0
+   ],
+   "rim_strength": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "glow_tint": [
+    6.11991,
+    0.0,
+    8.39697
+   ],
+   "glow_strength": 0.8700000047683716,
+   "mask_g_sensitivity": 1.0,
+   "outline_tint": [
+    0.13208,
+    0.13208,
+    0.13208
+   ]
+  },
+  "hair": {
+   "shadow_tint": [
+    0.73664,
+    0.71645,
+    0.86792
+   ],
+   "shadow_threshold": 0.4300000071525574,
+   "spec_dir_mul": [
+    0.45,
+    -0.01,
+    0.0
+   ],
+   "spec_top_mul": 4.5,
+   "spec_top_level": 3.5,
+   "spec_bot_area": 0.29499998688697815,
+   "spec_bot_mul": 11.490951538085938,
+   "spec_strength": 0.7300000190734863,
+   "rim_area": 5.0,
+   "rim_level": 4.0,
+   "rim_strength": 1.0,
+   "glow_tint": [
+    2.0,
+    0.0,
+    1.81152
+   ],
+   "glow_strength": 0.6000000238418579,
+   "mask_g_sensitivity": 1.0,
+   "mask_r_apply": 0.0,
+   "outline_tint": [
+    0.49831,
+    0.34198,
+    0.5
+   ]
+  },
+  "face": {
+   "shadow_tint": [
+    1.0,
+    0.78824,
+    0.72157
+   ],
+   "shadow_threshold": 0.699999988079071,
+   "face_light_dir": [
+    -0.3419,
+    0.93974,
+    0.0
+   ],
+   "rim_area": 3.0,
+   "rim_level": 2.0,
+   "rim_strength": 1.0,
+   "mask_g_sensitivity": 1.0,
+   "mask_r_apply": 0.0,
+   "outline_tint": [
+    0.86792,
+    0.65913,
+    0.65913
+   ]
+  },
+  "halo": {
+   "tint": [
+    1.49804,
+    1.49804,
+    1.49804
+   ]
+  },
+  "eyebrow": {
+   "z_correction": 0.026599999517202377,
+   "tint": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "weapon": {
+   "outline_tint": [
+    0.28302,
+    0.28302,
+    0.28302
+   ],
+   "shadow_threshold": 0.5,
+   "shadow_col": [
+    0.44509,
+    0.41647,
+    0.46226
+   ]
+  }
+ },
+ "hoshino": {
+  "body": {
+   "shadow_threshold": [
+    0.13,
+    0.5,
+    0.4,
+    0.8
+   ],
+   "shadow_tints": [
+    [
+     0.96226,
+     0.70934,
+     0.69446
+    ],
+    [
+     0.23429,
+     0.42916,
+     0.61321
+    ],
+    [
+     0.84906,
+     0.7249,
+     0.74649
+    ],
+    [
+     0.26144,
+     0.39095,
+     0.4434
+    ]
+   ],
+   "view_offset": [
+    -0.45,
+    0.0,
+    0.4,
+    0.0
+   ],
+   "view_power": [
+    128.0,
+    1.0,
+    10.0,
+    7.0
+   ],
+   "view_strength": [
+    0.08,
+    0.0,
+    0.05,
+    1.2
+   ],
+   "view_edge": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "inv_view_power": [
+    1.0,
+    1.0,
+    1.0,
+    6.5
+   ],
+   "inv_view_strength": [
+    0.0,
+    0.0,
+    0.0,
+    0.7
+   ],
+   "base_brightness": [
+    0.0,
+    0.0,
+    0.0,
+    0.4
+   ],
+   "rim_area": [
+    5.0,
+    5.0,
+    5.0,
+    5.0
+   ],
+   "rim_strength": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "glow_tint": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "glow_strength": 0.0,
+   "mask_g_sensitivity": 1.0,
+   "outline_tint": [
+    0.5,
+    0.5,
+    0.5
+   ]
+  },
+  "hair": {
+   "shadow_tint": [
+    1.0,
+    0.6934,
+    0.7135
+   ],
+   "shadow_threshold": 0.4000000059604645,
+   "spec_dir_mul": [
+    0.3,
+    0.0,
+    0.0
+   ],
+   "spec_top_mul": 10.0,
+   "spec_top_level": 9.0,
+   "spec_bot_area": 0.7699999809265137,
+   "spec_bot_mul": 1.6866251230239868,
+   "spec_strength": 0.4000000059604645,
+   "rim_area": 5.0,
+   "rim_level": 4.0,
+   "rim_strength": 1.0,
+   "glow_tint": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "glow_strength": 1.0,
+   "mask_g_sensitivity": 1.2000000476837158,
+   "mask_r_apply": 0.0,
+   "outline_tint": [
+    0.70755,
+    0.32374,
+    0.32374
+   ]
+  },
+  "face": {
+   "shadow_tint": [
+    0.96226,
+    0.70934,
+    0.69446
+   ],
+   "shadow_threshold": 0.5699999928474426,
+   "face_light_dir": [
+    -0.34191,
+    0.93973,
+    -0.0
+   ],
+   "rim_area": 3.9000000953674316,
+   "rim_level": 2.9000000953674316,
+   "rim_strength": 0.0,
+   "mask_g_sensitivity": 2.0,
+   "mask_r_apply": 0.0,
+   "outline_tint": [
+    0.95283,
+    0.6258,
+    0.59777
+   ]
+  },
+  "halo": {
+   "tint": [
+    1.49804,
+    0.84706,
+    0.98039
+   ]
+  },
+  "eyebrow": {
+   "z_correction": 0.04600000008940697,
+   "tint": [
+    0.96226,
+    0.35858,
+    0.44771
+   ]
+  },
+  "weapon": {
+   "outline_tint": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "shadow_threshold": 0.5,
+   "shadow_col": [
+    0.83019,
+    0.82837,
+    0.81844
+   ]
+  }
+ }
+}

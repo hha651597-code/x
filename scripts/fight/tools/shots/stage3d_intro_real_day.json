@@ -1,0 +1,34 @@
+{
+ "timeout": 120,
+ "steps": [
+  {"session": {"mode": "versus2p", "stage": "gehenna-night", "stage_time": "day", "players": [
+    {"claimed": true, "device": "kb1", "fighter": 10004, "special": 10017},
+    {"claimed": true, "device": "kb2", "fighter": 10005, "special": 10017}]}},
+  {"intro_entry": true},
+  {"go": "fight", "style": "slam"},
+  {"stage_trace": 300},
+  {"frames": 1}, {"shot": ".dev/out/stage3d/introreal_day_001.png", "scale": 0.5},
+  {"frames": 7}, {"shot": ".dev/out/stage3d/introreal_day_008.png"},
+  {"frames": 40}, {"shot": ".dev/out/stage3d/introreal_day_048.png", "scale": 0.5},
+  {"frames": 48}, {"shot": ".dev/out/stage3d/introreal_day_096.png", "scale": 0.5},
+  {"frames": 1}, {"shot": ".dev/out/stage3d/introreal_day_097.png", "scale": 0.5},
+  {"frames": 3}, {"shot": ".dev/out/stage3d/introreal_day_100.png", "scale": 0.5},
+  {"frames": 4}, {"shot": ".dev/out/stage3d/introreal_day_104.png", "scale": 0.5},
+  {"frames": 4}, {"shot": ".dev/out/stage3d/introreal_day_108.png", "scale": 0.5},
+  {"frames": 4}, {"shot": ".dev/out/stage3d/introreal_day_112.png", "scale": 0.5},
+  {"frames": 2}, {"shot": ".dev/out/stage3d/introreal_day_114.png"},
+  {"frames": 2}, {"shot": ".dev/out/stage3d/introreal_day_116.png", "scale": 0.5},
+  {"frames": 4}, {"shot": ".dev/out/stage3d/introreal_day_120.png", "scale": 0.5},
+  {"frames": 4}, {"shot": ".dev/out/stage3d/introreal_day_124.png", "scale": 0.5},
+  {"frames": 4}, {"shot": ".dev/out/stage3d/introreal_day_128.png", "scale": 0.5},
+  {"frames": 4}, {"shot": ".dev/out/stage3d/introreal_day_132.png", "scale": 0.5},
+  {"frames": 1}, {"shot": ".dev/out/stage3d/introreal_day_133.png", "scale": 0.5},
+  {"frames": 47}, {"shot": ".dev/out/stage3d/introreal_day_180.png", "scale": 0.5},
+  {"frames": 48}, {"shot": ".dev/out/stage3d/introreal_day_228.png"},
+  {"frames": 1}, {"shot": ".dev/out/stage3d/introreal_day_229.png", "scale": 0.5},
+  {"frames": 1}, {"shot": ".dev/out/stage3d/introreal_day_230.png", "scale": 0.5},
+  {"frames": 30}, {"shot": ".dev/out/stage3d/introreal_day_260.png", "scale": 0.5},
+  {"frames": 40},
+  {"quit": true}
+ ]
+}

@@ -1,0 +1,105 @@
+{
+"timeout": 120,
+"steps": [
+{
+"session": {
+"mode": "versus2p",
+"players": [
+{
+"claimed": true,
+"device": "kb1",
+"fighter": 10004,
+"special": 20001
+},
+{
+"claimed": true,
+"device": "kb2",
+"fighter": 10005,
+"special": 23005,
+"cpu": false
+}
+],
+"stage": "gehenna-night"
+}
+},
+{
+"go": "fight",
+"style": "cut"
+},
+{
+"wait": 2.2
+},
+{
+"fighter": {
+"slot": 1,
+"pos": [
+-560,
+560
+],
+"vel": [
+0,
+0
+]
+}
+},
+{
+"fighter": {
+"slot": 2,
+"pos": [
+560,
+560
+],
+"vel": [
+0,
+0
+]
+}
+},
+{
+"fighter": {
+"slot": 1,
+"meter": 40
+}
+},
+{
+"frames": 30
+},
+{
+"tap": [
+[
+"kb1",
+"lb"
+],
+[
+"kb2",
+"lb"
+]
+],
+"frames": 3
+},
+{
+"frames": 3
+},
+{
+"shot": "/tmp/ba-hud-out/facade/assist_a.png"
+},
+{
+"frames": 8
+},
+{
+"shot": "/tmp/ba-hud-out/facade/assist_b.png"
+},
+{
+"frames": 30
+},
+{
+"shot": "/tmp/ba-hud-out/facade/assist_c.png"
+},
+{
+"frames": 40
+},
+{
+"shot": "/tmp/ba-hud-out/facade/assist_d.png"
+}
+]
+}

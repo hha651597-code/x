@@ -1,0 +1,43 @@
+{
+  "source": "Blue Archive PC client (Steam install), extracted with UnityPy 2026-10-14",
+  "extraction_scripts": "tools/ui_assets.py (copy and provenance) from the research export used by tools/hud_assets.py",
+  "files": [
+    {
+      "kind": "extracted",
+      "source_name": "Common_Icon_Close",
+      "atlas": "Common",
+      "bundle": "prologdepengroup-assets-_mx-uis-atlas-_mxprolog-2024-11-18_assets_all_1735253868.bundle",
+      "container": "Assets/_MX/UIs/Atlas/Common.png",
+      "runtime_path": "assets/ba/ui/Common__Common_Icon_Close.png",
+      "width": 60,
+      "height": 60,
+      "sha256": "ed74cac890e9043b0384d6168926c33a0fb4b258213487220732875b58a90c9f",
+      "bytes": 1219
+    },
+    {
+      "kind": "extracted",
+      "source_name": "Common_Option_Sound_Full",
+      "atlas": "Common",
+      "bundle": "prologdepengroup-assets-_mx-uis-atlas-_mxprolog-2024-11-18_assets_all_1735253868.bundle",
+      "container": "Assets/_MX/UIs/Atlas/Common.png",
+      "runtime_path": "assets/ba/ui/Common__Common_Option_Sound_Full.png",
+      "width": 86,
+      "height": 64,
+      "sha256": "917b46a61ac861bae9b421966006a30e5f9c4b9aa0f263fa7f183b75560a8d1c",
+      "bytes": 4713
+    },
+    {
+      "kind": "extracted",
+      "source_name": "Common_Option_Sound_Mute",
+      "atlas": "Common",
+      "bundle": "prologdepengroup-assets-_mx-uis-atlas-_mxprolog-2024-11-18_assets_all_1735253868.bundle",
+      "container": "Assets/_MX/UIs/Atlas/Common.png",
+      "runtime_path": "assets/ba/ui/Common__Common_Option_Sound_Mute.png",
+      "width": 84,
+      "height": 64,
+      "sha256": "18c4a2c0c899ada684e503a74c15eed3409dbcf2d24ac08aea4af0b4ea42e0a0",
+      "bytes": 3999
+    }
+  ],
+  "scope": "Local fan project. Redistribution permission is not inferred."
+}

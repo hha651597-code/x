@@ -1,0 +1,612 @@
+{
+  "source": "Kenney, Input Prompts 1.5A (CC0), downloaded from the page below",
+  "source_url": "https://kenney.nl/assets/input-prompts",
+  "archive_sha256": "ac2fcf599080b0f3ba2d174c9474db6df1a0e96ff0662580e2da79a122ab78a1",
+  "licence": "Creative Commons Zero, CC0 (http://creativecommons.org/publicdomain/zero/1.0/). License.txt: 'You can use this content for personal, educational, and commercial purposes. Support by crediting Kenney or www.kenney.nl (this is not a requirement)'. The full text is in LICENSE.txt next to this file.",
+  "extraction_scripts": "tools/glyph_assets.py",
+  "files": [
+    {
+      "kind": "copied",
+      "source_path": "Xbox Series/Double/xbox_button_a.png",
+      "runtime_path": "assets/glyphs/xbox/confirm.png",
+      "sha256": "8cb54cb79449712f2ef7d3c8344197378eb8ec2c31070d69266c5961223a077a",
+      "bytes": 864,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Xbox Series/Double/xbox_button_b.png",
+      "runtime_path": "assets/glyphs/xbox/back.png",
+      "sha256": "8fb40910582d1ebcdef9471aecef72ae5afad807a6232914f1df80c0bd338efd",
+      "bytes": 799,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Xbox Series/Double/xbox_button_x.png",
+      "runtime_path": "assets/glyphs/xbox/aux.png",
+      "sha256": "f7e01f4d530e4294fb3c79c51eaeb97229f03172678ca434465562245ff75c92",
+      "bytes": 922,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Xbox Series/Double/xbox_button_y.png",
+      "runtime_path": "assets/glyphs/xbox/aux2.png",
+      "sha256": "00d4b498e1aaa2c6712eaa0f350d7f1cf37a0423b1680e1e0e4f358dd777bd05",
+      "bytes": 845,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Xbox Series/Double/xbox_lb.png",
+      "runtime_path": "assets/glyphs/xbox/lb.png",
+      "sha256": "6ca8c3411823d389dd94c6fa7015299a93d58c7e67ad1831280b5901792b6755",
+      "bytes": 542,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Xbox Series/Double/xbox_rb.png",
+      "runtime_path": "assets/glyphs/xbox/rb.png",
+      "sha256": "2f3fa780da01cf7c48c91aaaa9a5d8da075c73a32cab32bb1497fd571ca134f8",
+      "bytes": 638,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Xbox Series/Double/xbox_button_menu.png",
+      "runtime_path": "assets/glyphs/xbox/start.png",
+      "sha256": "b0854e263e6b95b66f981b761f098f08bbea301540b79bea108d1f7ecb447ad7",
+      "bytes": 668,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Xbox Series/Double/xbox_dpad.png",
+      "runtime_path": "assets/glyphs/xbox/dpad.png",
+      "sha256": "8a8443c22a3f210a2634eda9e4704780b41b6d96325ee786d632a534edbb0a90",
+      "bytes": 323,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Xbox Series/Double/xbox_stick_l.png",
+      "runtime_path": "assets/glyphs/xbox/stick_l.png",
+      "sha256": "68edebe98e5efdbfc800154bcc523e67c6b6812df39ee45cf5a6362d6d670861",
+      "bytes": 1124,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "derived: viewBox cropped to the silhouette",
+      "source_path": "Xbox Series/Vector/controller_xboxseries.svg",
+      "runtime_path": "assets/glyphs/bodies/xbox.svg",
+      "sha256": "c44c00c5b764500c03d11d95c05e85b02fc3c7989fb49441c52edee3415eb7fc",
+      "bytes": 1901,
+      "width": 240.5,
+      "height": 165.0
+    },
+    {
+      "kind": "copied",
+      "source_path": "PlayStation Series/Double/playstation_button_cross.png",
+      "runtime_path": "assets/glyphs/playstation/confirm.png",
+      "sha256": "0db3b8a6395a5131c4bc5b0e76094a3ded08777b39147717285698d5f017d7e6",
+      "bytes": 903,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "PlayStation Series/Double/playstation_button_circle.png",
+      "runtime_path": "assets/glyphs/playstation/back.png",
+      "sha256": "823934cf4eda3b62bbf62b52efd7991fa6e426b7ae332a6ae4a52281492bcc23",
+      "bytes": 935,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "PlayStation Series/Double/playstation_button_square.png",
+      "runtime_path": "assets/glyphs/playstation/aux.png",
+      "sha256": "6572c66c06e754e1c87eb3fda259c0bcde2dd772d796aa455f1ea152ef1ee440",
+      "bytes": 691,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "PlayStation Series/Double/playstation_button_triangle.png",
+      "runtime_path": "assets/glyphs/playstation/aux2.png",
+      "sha256": "eb40679d71df16f6440dcad5e5080d0637ce5e49d64687a8a2ab4d65deec6cc3",
+      "bytes": 888,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "PlayStation Series/Double/playstation_trigger_l1.png",
+      "runtime_path": "assets/glyphs/playstation/lb.png",
+      "sha256": "adccfe75bc456d009988d74066b46bf42ccc5e4ec6ff1b37e43fc610ea6fc8e7",
+      "bytes": 543,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "PlayStation Series/Double/playstation_trigger_r1.png",
+      "runtime_path": "assets/glyphs/playstation/rb.png",
+      "sha256": "646a8861ea66c1f8d75290c5cfa9917282b49049f23817ee67cdd7212336010e",
+      "bytes": 655,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "PlayStation Series/Double/playstation5_button_options.png",
+      "runtime_path": "assets/glyphs/playstation/start.png",
+      "sha256": "927a6d97b1e08eff48eab825c9b85a12fc1e39c4e0be77c2cfa1f60976955c5d",
+      "bytes": 500,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "PlayStation Series/Double/playstation_dpad.png",
+      "runtime_path": "assets/glyphs/playstation/dpad.png",
+      "sha256": "f750067a14a4881485df3fee5377c8685ae7f519868841e59d320acdda075909",
+      "bytes": 571,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "PlayStation Series/Double/playstation_stick_l.png",
+      "runtime_path": "assets/glyphs/playstation/stick_l.png",
+      "sha256": "68edebe98e5efdbfc800154bcc523e67c6b6812df39ee45cf5a6362d6d670861",
+      "bytes": 1124,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "derived: viewBox cropped to the silhouette",
+      "source_path": "PlayStation Series/Vector/controller_playstation5.svg",
+      "runtime_path": "assets/glyphs/bodies/playstation.svg",
+      "sha256": "5503049c758a6b0423949c64931928ac494852ba7a23db555657cd49769ccd70",
+      "bytes": 1930,
+      "width": 242.5,
+      "height": 159.75
+    },
+    {
+      "kind": "copied",
+      "source_path": "Nintendo Switch/Double/switch_button_b.png",
+      "runtime_path": "assets/glyphs/switch/confirm.png",
+      "sha256": "8fb40910582d1ebcdef9471aecef72ae5afad807a6232914f1df80c0bd338efd",
+      "bytes": 799,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Nintendo Switch/Double/switch_button_a.png",
+      "runtime_path": "assets/glyphs/switch/back.png",
+      "sha256": "8cb54cb79449712f2ef7d3c8344197378eb8ec2c31070d69266c5961223a077a",
+      "bytes": 864,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Nintendo Switch/Double/switch_button_y.png",
+      "runtime_path": "assets/glyphs/switch/aux.png",
+      "sha256": "00d4b498e1aaa2c6712eaa0f350d7f1cf37a0423b1680e1e0e4f358dd777bd05",
+      "bytes": 845,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Nintendo Switch/Double/switch_button_x.png",
+      "runtime_path": "assets/glyphs/switch/aux2.png",
+      "sha256": "f7e01f4d530e4294fb3c79c51eaeb97229f03172678ca434465562245ff75c92",
+      "bytes": 922,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Nintendo Switch/Double/switch_button_l.png",
+      "runtime_path": "assets/glyphs/switch/lb.png",
+      "sha256": "599fc8174ed368e8114cf401d40da3f3211a52df8ef62610329d2da1502c7c0f",
+      "bytes": 452,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Nintendo Switch/Double/switch_button_r.png",
+      "runtime_path": "assets/glyphs/switch/rb.png",
+      "sha256": "7e4c973fe173c051188ec0a714d4e3f4dd4af4f60643fd7f2f18fcf26a888f33",
+      "bytes": 582,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Nintendo Switch/Double/switch_button_plus.png",
+      "runtime_path": "assets/glyphs/switch/start.png",
+      "sha256": "37c4b6e7cdeec5b0fffbd83101fe1dc5bcbb7e151ef9612eeb8c7c1da00a1174",
+      "bytes": 692,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Nintendo Switch/Double/switch_dpad.png",
+      "runtime_path": "assets/glyphs/switch/dpad.png",
+      "sha256": "c68b030f451e048c914b0b0f8f0685620bfaf7c61306998ff317ea3dc6e57df2",
+      "bytes": 663,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Nintendo Switch/Double/switch_stick_l.png",
+      "runtime_path": "assets/glyphs/switch/stick_l.png",
+      "sha256": "68edebe98e5efdbfc800154bcc523e67c6b6812df39ee45cf5a6362d6d670861",
+      "bytes": 1124,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "derived: viewBox cropped to the silhouette",
+      "source_path": "Nintendo Switch/Vector/controller_switch_pro.svg",
+      "runtime_path": "assets/glyphs/bodies/switch.svg",
+      "sha256": "5ca43fe252ec21cfa6e123268ba80c9d91c3a688bbf6f5c6461bd6eda1208a52",
+      "bytes": 1562,
+      "width": 243.0,
+      "height": 167.75
+    },
+    {
+      "kind": "copied",
+      "source_path": "Steam Deck/Double/steamdeck_button_a.png",
+      "runtime_path": "assets/glyphs/steamdeck/confirm.png",
+      "sha256": "8cb54cb79449712f2ef7d3c8344197378eb8ec2c31070d69266c5961223a077a",
+      "bytes": 864,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Steam Deck/Double/steamdeck_button_b.png",
+      "runtime_path": "assets/glyphs/steamdeck/back.png",
+      "sha256": "8fb40910582d1ebcdef9471aecef72ae5afad807a6232914f1df80c0bd338efd",
+      "bytes": 799,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Steam Deck/Double/steamdeck_button_x.png",
+      "runtime_path": "assets/glyphs/steamdeck/aux.png",
+      "sha256": "f7e01f4d530e4294fb3c79c51eaeb97229f03172678ca434465562245ff75c92",
+      "bytes": 922,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Steam Deck/Double/steamdeck_button_y.png",
+      "runtime_path": "assets/glyphs/steamdeck/aux2.png",
+      "sha256": "00d4b498e1aaa2c6712eaa0f350d7f1cf37a0423b1680e1e0e4f358dd777bd05",
+      "bytes": 845,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Steam Deck/Double/steamdeck_button_l1.png",
+      "runtime_path": "assets/glyphs/steamdeck/lb.png",
+      "sha256": "77e7410011cb17fe7aa93f73d886c2b80d78d79fd38383b75ae55245af9c7390",
+      "bytes": 511,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Steam Deck/Double/steamdeck_button_r1.png",
+      "runtime_path": "assets/glyphs/steamdeck/rb.png",
+      "sha256": "bb20c1db586f84bbc8b24e45d5688fb9a83fcc00d08e99cf2be85c2560a64734",
+      "bytes": 625,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Steam Deck/Double/steamdeck_button_options.png",
+      "runtime_path": "assets/glyphs/steamdeck/start.png",
+      "sha256": "c98d7de791ccecac11b411cfb1dbd41cc2b9f5932c9312e5fc0885860ecd80d5",
+      "bytes": 415,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Steam Deck/Double/steamdeck_dpad.png",
+      "runtime_path": "assets/glyphs/steamdeck/dpad.png",
+      "sha256": "8a8443c22a3f210a2634eda9e4704780b41b6d96325ee786d632a534edbb0a90",
+      "bytes": 323,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Steam Deck/Double/steamdeck_stick_l.png",
+      "runtime_path": "assets/glyphs/steamdeck/stick_l.png",
+      "sha256": "68edebe98e5efdbfc800154bcc523e67c6b6812df39ee45cf5a6362d6d670861",
+      "bytes": 1124,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "derived: viewBox cropped to the silhouette",
+      "source_path": "Steam Deck/Vector/controller_steamdeck.svg",
+      "runtime_path": "assets/glyphs/bodies/steamdeck.svg",
+      "sha256": "b90be08cebfee5d46a146b5479004ec65358cb46b989ed9d6a395ba4b913284f",
+      "bytes": 1139,
+      "width": 240.0,
+      "height": 120.0
+    },
+    {
+      "kind": "copied",
+      "source_path": "Steam Controller/Double/steam_button_a.png",
+      "runtime_path": "assets/glyphs/steam/confirm.png",
+      "sha256": "8cb54cb79449712f2ef7d3c8344197378eb8ec2c31070d69266c5961223a077a",
+      "bytes": 864,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Steam Controller/Double/steam_button_b.png",
+      "runtime_path": "assets/glyphs/steam/back.png",
+      "sha256": "8fb40910582d1ebcdef9471aecef72ae5afad807a6232914f1df80c0bd338efd",
+      "bytes": 799,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Steam Controller/Double/steam_button_x.png",
+      "runtime_path": "assets/glyphs/steam/aux.png",
+      "sha256": "f7e01f4d530e4294fb3c79c51eaeb97229f03172678ca434465562245ff75c92",
+      "bytes": 922,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Steam Controller/Double/steam_button_y.png",
+      "runtime_path": "assets/glyphs/steam/aux2.png",
+      "sha256": "00d4b498e1aaa2c6712eaa0f350d7f1cf37a0423b1680e1e0e4f358dd777bd05",
+      "bytes": 845,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Steam Controller/Double/steam_lb.png",
+      "runtime_path": "assets/glyphs/steam/lb.png",
+      "sha256": "5ba833435889f002b18adf518e737fa526d2da20dda166dfc56b6e445cf08fff",
+      "bytes": 487,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Steam Controller/Double/steam_rb.png",
+      "runtime_path": "assets/glyphs/steam/rb.png",
+      "sha256": "889aadb04d1419eda935a4e93e06d67a75676e7133c241f297d11460054756f1",
+      "bytes": 597,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Steam Controller/Double/steam_button_start_icon.png",
+      "runtime_path": "assets/glyphs/steam/start.png",
+      "sha256": "ca896ad8206731d9140b47908f2c8aab2420183ecbef200f6d2047021e447084",
+      "bytes": 602,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Steam Controller/Double/steam_dpad.png",
+      "runtime_path": "assets/glyphs/steam/dpad.png",
+      "sha256": "bf6ab9d04dc8908774f208e3072df46a52b190f2d30809312a4c618debac0462",
+      "bytes": 831,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Steam Controller/Double/steam_stick.png",
+      "runtime_path": "assets/glyphs/steam/stick_l.png",
+      "sha256": "80e364649fa402f96510c72ce6b69746a1bfbe8dabed82ff42518c679981d21e",
+      "bytes": 1096,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "derived: viewBox cropped to the silhouette",
+      "source_path": "Steam Controller/Vector/controller_steam_new.svg",
+      "runtime_path": "assets/glyphs/bodies/steam.svg",
+      "sha256": "190db11eb863a8548089f5d1d768c80d7bc41a8dff25c22bfb4b35405bbca585",
+      "bytes": 1398,
+      "width": 241.25,
+      "height": 174.0
+    },
+    {
+      "kind": "copied",
+      "source_path": "Keyboard & Mouse/Double/keyboard_w.png",
+      "runtime_path": "assets/glyphs/keyboard/w.png",
+      "sha256": "80afe8ada6813562b89433b7728222e5cf79076e07edb521144da74fa49bcb6f",
+      "bytes": 698,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Keyboard & Mouse/Double/keyboard_a.png",
+      "runtime_path": "assets/glyphs/keyboard/a.png",
+      "sha256": "1c0cd66c5e5874dc58178101079711092fad41afa61ba159cd8e76049efe2be0",
+      "bytes": 651,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Keyboard & Mouse/Double/keyboard_s.png",
+      "runtime_path": "assets/glyphs/keyboard/s.png",
+      "sha256": "b504d48f2b2452bc895fc03a243e83564ad01d7e9b6fdb11f044e85e6c3b9ff2",
+      "bytes": 636,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Keyboard & Mouse/Double/keyboard_d.png",
+      "runtime_path": "assets/glyphs/keyboard/d.png",
+      "sha256": "9d0425030c1abe92de4a80d679e08653e23b81508d626e95b152bff2e2b6f425",
+      "bytes": 566,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Keyboard & Mouse/Double/keyboard_f.png",
+      "runtime_path": "assets/glyphs/keyboard/f.png",
+      "sha256": "f674c5618bd569477fbd66cb718c836199e9c49ed4697b404458dc245e04a89d",
+      "bytes": 390,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Keyboard & Mouse/Double/keyboard_g.png",
+      "runtime_path": "assets/glyphs/keyboard/g.png",
+      "sha256": "b244e9a54311f6fec37d0984f76f1b2db07635fcef3f5521b0ba59657661be3d",
+      "bytes": 660,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Keyboard & Mouse/Double/keyboard_r.png",
+      "runtime_path": "assets/glyphs/keyboard/r.png",
+      "sha256": "2e682642a4e4369cc983613f54eac5c4f57dd5bffecd8abb4e6f997cb6743a0d",
+      "bytes": 531,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Keyboard & Mouse/Double/keyboard_t.png",
+      "runtime_path": "assets/glyphs/keyboard/t.png",
+      "sha256": "ce0eeb693cdb33d2209d846bb90e3e90dba6792970a131190a5d28b430d9b5e3",
+      "bytes": 388,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Keyboard & Mouse/Double/keyboard_arrow_up.png",
+      "runtime_path": "assets/glyphs/keyboard/up.png",
+      "sha256": "339fc70daa8c0aebc7957dfd4eecd1bc380ac99248919649d86221dd9f065aa8",
+      "bytes": 477,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Keyboard & Mouse/Double/keyboard_arrow_down.png",
+      "runtime_path": "assets/glyphs/keyboard/down.png",
+      "sha256": "e8797a9bdfc2e80fcea03f112e5cd0e1c016f855c8019c7f30f72f6bae6b3490",
+      "bytes": 470,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Keyboard & Mouse/Double/keyboard_arrow_left.png",
+      "runtime_path": "assets/glyphs/keyboard/left.png",
+      "sha256": "85eebf78f88eb458ff5d9ff5ddf4cb57875085ecec2b9a6e63744ed402405bbf",
+      "bytes": 470,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Keyboard & Mouse/Double/keyboard_arrow_right.png",
+      "runtime_path": "assets/glyphs/keyboard/right.png",
+      "sha256": "16a3a94fda511e7858a185686009da7b61fa2c4f92f3bf7dbc9a87cf87bf8b7c",
+      "bytes": 468,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Keyboard & Mouse/Double/keyboard_enter.png",
+      "runtime_path": "assets/glyphs/keyboard/enter.png",
+      "sha256": "6ea6de1a2fca79569f25e3c5bb7af5ff2ece6e6a4e416a22f573a17a21926b54",
+      "bytes": 685,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Keyboard & Mouse/Double/keyboard_backspace.png",
+      "runtime_path": "assets/glyphs/keyboard/backspace.png",
+      "sha256": "0717a8214837612e61cd50d52695f7d152d81347b375b93ea8e67e57a6e2de4e",
+      "bytes": 876,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Keyboard & Mouse/Double/keyboard_semicolon.png",
+      "runtime_path": "assets/glyphs/keyboard/semicolon.png",
+      "sha256": "65a18eb328badae58c9d216805d18a8691fa772e92639b4f2c106f8c8b4584fb",
+      "bytes": 475,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Keyboard & Mouse/Double/keyboard_apostrophe.png",
+      "runtime_path": "assets/glyphs/keyboard/apostrophe.png",
+      "sha256": "ef4fc48a043b6a15d76457d7fc5a2c6f0cfa4ce1b29fa07f176ff28a41b93be8",
+      "bytes": 421,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "kind": "copied",
+      "source_path": "Keyboard & Mouse/Double/keyboard_space.png",
+      "runtime_path": "assets/glyphs/keyboard/space.png",
+      "sha256": "7f25e4d93c3589ef947f03dd3e76f9b7cc17479a0b2e0040cf150be17279c6f4",
+      "bytes": 678,
+      "width": 128,
+      "height": 128
+    }
+  ]
+}

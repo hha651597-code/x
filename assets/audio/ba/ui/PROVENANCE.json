@@ -1,0 +1,700 @@
+{
+ "back_1.wav": {
+  "bundle": "audio-sfx_ui-_mxload-2025-07-25_001_assets_all_333679960.bundle",
+  "clip": "SFX_MiniGame_CCG_Hand_Close",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "fade": 0.08
+  },
+  "sha256": "8f37b8f9ee125f721337e1277021a2c529d2b988cfaaa3c16e0ea0043142c3be",
+  "sound": "back",
+  "source_sha256": "bb9db0dd3ad6dfcad2d5d8f95144e18fbc076efe8eae81d69add5670d6ff72cb"
+ },
+ "beam_1.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_JSD_Laser_01",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "fade": 0.25
+  },
+  "sha256": "e35d05bdf988363a9e2a90df1e9007a5b3624b78f4963e66899e45b245185d5a",
+  "sound": "beam",
+  "source_sha256": "c45092724b59e61cb3fe22e1dee645a80f2d7d3fb9d0679bba00b50dd794c0ba"
+ },
+ "beam_2.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_JSD_Laser_03",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "fade": 0.25
+  },
+  "sha256": "47b5c99ff9a42c663ed2522da17f97401d36c1030702b39c82a0ba564b8b90d8",
+  "sound": "beam",
+  "source_sha256": "358fdd69259f28dda1a4761b9575c6cd770c5d5daa6d4aaf4e5d3a5bb4941c8a"
+ },
+ "block_1.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_Common_Retro_Hit",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "fade": 0.1
+  },
+  "sha256": "164228dbf9470fb7f4e457361219f8246426a28add94d40333670af5052076c9",
+  "sound": "block",
+  "source_sha256": "c63a036196b54e62764c991cc5f15071de19057d33c39c77c010b0fd4c7b5b2e"
+ },
+ "boom_1.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_Explosion_Grenade_L_A_01",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "fade": 0.4
+  },
+  "sha256": "a6c52301480ca3452361430bd18660d55ba71714debea7671243184cbb5d3774",
+  "sound": "boom",
+  "source_sha256": "81b866f826979e9ab962c5f51c5f7ac5dd3e168dd6972e7596e08278cf9274d0"
+ },
+ "boom_2.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_Explosion_Grenade_L_A_02",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "fade": 0.4
+  },
+  "sha256": "896a976ba261879d4073cd95bcf4cdfea91936be9037c2c76f9b0a9dbaa33afa",
+  "sound": "boom",
+  "source_sha256": "15fa9c81ceb344d3a8751696e1726a286cce4480dc9be5d48fdfc0323837f12b"
+ },
+ "boom_3.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_Explosion_Grenade_L_A_03",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "fade": 0.4
+  },
+  "sha256": "d829f755b6a741f2823203e220ff1031eb5eed65858d5c05cf0a649b96df7e28",
+  "sound": "boom",
+  "source_sha256": "5494f6d48b10c8264ad1c03bc4fec935e8f03074047a130887dd7c8477b2b931"
+ },
+ "charge_1.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_Common_Buff_Provoke",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "fade": 0.25
+  },
+  "sha256": "f57c4585d91f58f929cf3dc39d83b87af8ba99ead37b18231cd56be3f54422bf",
+  "sound": "charge",
+  "source_sha256": "3bf340c2f0d7e3a5a98513b367f420360d39b3facedf609538daec03da2cae45"
+ },
+ "claim_1.wav": {
+  "bundle": "audio-sfx_ui-_mxload-2024-11-18_assets_all_976556550.bundle",
+  "clip": "UI_Chime_01",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "dur": 1.1,
+   "fade": 0.4
+  },
+  "sha256": "332d3722151dd1b1ca6dd2b0cd5222fc95388169d463d34b377a55b7a367e535",
+  "sound": "claim",
+  "source_sha256": "3897b1a8ca5a040aea01bb52d73fa6751744f4de54ee0ef00faf3952529a939d"
+ },
+ "claim_2.wav": {
+  "bundle": "audio-sfx_ui-_mxload-2024-11-18_assets_all_976556550.bundle",
+  "clip": "UI_Chime_02",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "dur": 1.1,
+   "fade": 0.4
+  },
+  "sha256": "c6b167478ac753fdedcfca46470f445c1f8b001b03e4434670e990d1f53e8816",
+  "sound": "claim",
+  "source_sha256": "6e43ed3e805c8159418953663d4d6d02b541b4922b105b1c497c1687aa9dc2a2"
+ },
+ "claim_3.wav": {
+  "bundle": "audio-sfx_ui-_mxload-2024-11-18_assets_all_976556550.bundle",
+  "clip": "UI_Chime_03",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "dur": 1.1,
+   "fade": 0.4
+  },
+  "sha256": "33fc67201d926347e7bc2607ec0d599aa01e25cf02d25931272c81fef4fbebc0",
+  "sound": "claim",
+  "source_sha256": "819cbff1777005c4bdc4f18565cebc6de62a308f8aad78e3b620f080a9e383ec"
+ },
+ "claim_4.wav": {
+  "bundle": "audio-sfx_ui-_mxload-2024-11-18_assets_all_976556550.bundle",
+  "clip": "UI_Chime_04",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "dur": 1.1,
+   "fade": 0.4
+  },
+  "sha256": "b0ae3d84b6b539464a4b61e3c1c14ab62b761ec46b959c2b2d2f116af1ed909d",
+  "sound": "claim",
+  "source_sha256": "963d8139b2c07d4a8b9075b8e08c65b93abcf4d818511cd48ed27412a8ff438b"
+ },
+ "confirm_1.wav": {
+  "bundle": "audio-sfx_ui-_mxload-2024-11-18_assets_all_976556550.bundle",
+  "clip": "UI_Button_Wood",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "fade": 0.05
+  },
+  "sha256": "1195a3f72c70db76fb86535f3e1e2642ab6a3626f8e44bc418939f29ea6f6138",
+  "sound": "confirm",
+  "source_sha256": "db92894f22a9c3af2340bf0f33b2a7af830047aa3b1a78108b74f9a086ab55f4"
+ },
+ "crest_1.wav": {
+  "bundle": "audio-sfx_ui-_mxload-2024-11-18_assets_all_976556550.bundle",
+  "clip": "UI_Chime_Sparkle",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "dur": 1.5,
+   "fade": 0.6
+  },
+  "sha256": "93ab0eb5fd3e6fd206ad4b1119984a986b37144cfda35ebaa4638c926bf6cf06",
+  "sound": "crest",
+  "source_sha256": "c6a8733e1506383dcfbce34571b1bc0228f09864618c09ae3fb56a5168d1654e"
+ },
+ "dash_1.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_JSD_Slide_06",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "dur": 0.36,
+   "fade": 0.15
+  },
+  "sha256": "ed8ffc489f322c874d6a985f1730571318e0dfc83b3a4f9bd3772b5074d69bb4",
+  "sound": "dash",
+  "source_sha256": "cad08ebf06c5800bd116160db757d9d99ce77fb936ace1df9dd0dfd01778a79c"
+ },
+ "dash_2.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_JSD_Slide_05",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "dur": 0.36,
+   "fade": 0.15
+  },
+  "sha256": "42e573ac128eb97f4cec84a74e454280fa727a70a2c5fc625df029c90fc1b311",
+  "sound": "dash",
+  "source_sha256": "aa9a6a036166255f09d5d98f0b990bbcc1814bc87c5f1452428f3b7d063128b0"
+ },
+ "error_1.wav": {
+  "bundle": "audio-sfx_ui-_mxload-2024-11-18_assets_all_976556550.bundle",
+  "clip": "SFX_MiniGame_TBG_Enemy_HeartDamaged",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "fade": 0.08
+  },
+  "sha256": "0158b51a61771c70ae0421618260ba38d559197e54fe0f2ee6577bc67415651b",
+  "sound": "error",
+  "source_sha256": "8c0a0f38270cd0fb60271561882c729c07e55cc048f0cf9e3ff9c51d1b58b278"
+ },
+ "ex_ready_1.wav": {
+  "bundle": "audio-sfx_ui-_mxload-2024-11-18_assets_all_976556550.bundle",
+  "clip": "UI_Chime_06",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "dur": 0.9,
+   "fade": 0.35
+  },
+  "sha256": "b4981b3746721dfd737fd876c83bd57c5c44be5d535ab5d16a3fc6b86dc2054a",
+  "sound": "ex_ready",
+  "source_sha256": "70a2dbb0f014f7b9ae44d65b5dee68db3584d3b7dc01a5fb8017e2249cc41a76"
+ },
+ "fight_1.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_Start_Public_Shing_03",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "fade": 0.15
+  },
+  "sha256": "babef9d0b216b48f9ca9b8187f80db28489bcd9f387005af7ae19851742e2053",
+  "sound": "fight",
+  "source_sha256": "334e90c3abbdf74717f89f23c2b156d2eea07033d03a87dfc9b5418622e8f212"
+ },
+ "flame_1.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_Common_Flame_T_CH0088_01",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "dur": 1.1,
+   "fade": 0.4
+  },
+  "sha256": "1f491613f6051d70d8f155f65be5232ae09b3bc964968a43eece3748be95a01f",
+  "sound": "flame",
+  "source_sha256": "08eb98fa485b7376a4a73c4c453b3acb0e16161b99ef2ef2eac5d89d54a897f7"
+ },
+ "grab_1.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2026-07-02_assets_all_1714410134.bundle",
+  "clip": "SFX_Common_Cloth_01",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "fade": 0.1
+  },
+  "sha256": "f3e85e01e60052bbeb7772c3182f6a84a1d6c08cfac109b872fd918c48c522b9",
+  "sound": "grab",
+  "source_sha256": "ada9a4c82a24566cc1f9cf2bfe68a0cb02bb3d92b452d68ba5ee1735b4fb4e79"
+ },
+ "grab_2.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2026-07-02_assets_all_1714410134.bundle",
+  "clip": "SFX_Common_Cloth_02",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "dur": 0.4,
+   "fade": 0.12
+  },
+  "sha256": "dbacd60b81c9090f0efdbe02910eb5952d0adffb9b06f3f57e5e9a2772870f6f",
+  "sound": "grab",
+  "source_sha256": "3e96575915e2797b0880774cb2960d7ab8ca9bd35c81e3c11c7bd9622aebf611"
+ },
+ "guard_crush_1.wav": {
+  "bundle": "audio-sfx_ui-_mxload-2024-11-18_assets_all_976556550.bundle",
+  "clip": "UI_Conquest_Boss_Shield_Broken",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "dur": 0.95,
+   "fade": 0.35
+  },
+  "sha256": "3678386da8bec95a1e38bc99551d3d17adfcd3dac1de39198b2d347ec0291ca8",
+  "sound": "guard_crush",
+  "source_sha256": "c3d1a2f49ec2d3ae5b2413b132364fc0bec1976f98da24a327ecf977172c94fd"
+ },
+ "hit_h_1.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_Common_Hit_Mech_Long_01",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "dur": 0.45,
+   "fade": 0.18
+  },
+  "sha256": "c2cb65b35e8e7592563c61dd43a672083ab80c4bed12102226bf3dc0324e64b6",
+  "sound": "hit_h",
+  "source_sha256": "845fd642bbc08f41792b3043c0e4e24b3fb73e21ad7b5350d651e8ddd63e5b6e"
+ },
+ "hit_h_2.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_Common_Hit_Mech_Long_02",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "dur": 0.45,
+   "fade": 0.18
+  },
+  "sha256": "3091b026a721adc5b0648ba862343d056fcda9f6bc25034c19488db1b490857d",
+  "sound": "hit_h",
+  "source_sha256": "d61a2220117582db6436fcb05c0f5186dd6c097e4a663932939f023bde83114f"
+ },
+ "hit_h_3.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_Common_Hit_Mech_Long_03",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "dur": 0.45,
+   "fade": 0.18
+  },
+  "sha256": "f4f0eaa554a98b980a83cf6df49e986348aef44fdc7cd896d8191c8566417869",
+  "sound": "hit_h",
+  "source_sha256": "d6c195cedb2a3edd398cbb4ca4d5f2509d306f8d841a0d30154f593f9a8a9ca3"
+ },
+ "hit_h_4.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_Common_Hit_Mech_Long_04",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "dur": 0.45,
+   "fade": 0.18
+  },
+  "sha256": "8546a0ada42ccc6e9e6e383001bd5bf4f553428bfd1dc4bf9d3446a704019408",
+  "sound": "hit_h",
+  "source_sha256": "56c02a684386afce2334d1a10d243c9464bf00bb8a7bd1c0f14894abc70442a0"
+ },
+ "hit_l_1.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_Common_Hit_Mech_Short_01",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "dur": 0.22,
+   "fade": 0.09
+  },
+  "sha256": "d9e7c7d5ecb0be87e3d2ddd5d9ae4ede290777e5124db81795ff41b34a603455",
+  "sound": "hit_l",
+  "source_sha256": "3fdb2509036684959b721ff2536e5c2ec1f3dc772bf24c2b189f7e9896fcd686"
+ },
+ "hit_l_2.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_Common_Hit_Mech_Short_02",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "dur": 0.22,
+   "fade": 0.09
+  },
+  "sha256": "c34cbe4881d264d477e025e750c114ac1c44018ad9a9a5e9703f90edc2ab8981",
+  "sound": "hit_l",
+  "source_sha256": "15266eaa4086c5026f5072963fa93bbcafbbda1b85cbd4f17c8a501f68e10060"
+ },
+ "hit_l_3.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_Common_Hit_Mech_Short_03",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "dur": 0.22,
+   "fade": 0.09
+  },
+  "sha256": "719722966c77eff56c9d9668613c1143c7851e19c4adf463dc45c90073ad6b15",
+  "sound": "hit_l",
+  "source_sha256": "6932071b4af93cbf4c904445f553c59d84449a231002793bb118e3216fa9ab29"
+ },
+ "hit_l_4.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_Common_Hit_Mech_Short_04",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "dur": 0.22,
+   "fade": 0.09
+  },
+  "sha256": "2be613f0906b6a5ebe5db67f87a8178d262d0d4ad1c96da79ad1a6f4435ad5f3",
+  "sound": "hit_l",
+  "source_sha256": "8cf4ead927aa70ba193299dbb4d970e15366eb76401e9b3748cd9b7b5d6f922e"
+ },
+ "jump_1.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_JSD_Jump",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "fade": 0.06
+  },
+  "sha256": "f6803cb2a3f4b02af52b986a5da42347959c3b2178a76217e01f930152aea7f6",
+  "sound": "jump",
+  "source_sha256": "9265070086ef96537a3ae71529df65bb8eb7cbe2c5eef72f2d4ff58d108fa762"
+ },
+ "just_guard_1.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_Start_Public_Shing_04",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "fade": 0.15
+  },
+  "sha256": "4f15f8511a146494cb8f538de74f7ffa87e8cd0b1a425d4ea807575ed1f51d5a",
+  "sound": "just_guard",
+  "source_sha256": "f731a33150c698facc1f05770ad7d4b46d1cdaae03be44f426f846051421152a"
+ },
+ "ko_1.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_Explosion_Blue_01",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "dur": 1.0,
+   "fade": 0.45
+  },
+  "sha256": "6487d630591fdb3d463ff1bedfa17e365845a04fdd05112f19602acbaa26b4e5",
+  "sound": "ko",
+  "source_sha256": "17517b363824f657ca01bdce3dd189a21ac4aeba0405972484a35331c00ef562"
+ },
+ "land_1.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_Down_03",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {},
+  "sha256": "600624ebed52e1ab5f4e971f467625bffe3133695ba05db268e51e232640bfd8",
+  "sound": "land",
+  "source_sha256": "dd40ce63d2fa8ed020c29b0ee2b72a6dee37e664cfe70c1b0f53c3f6e47d7765"
+ },
+ "land_2.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_Down_05",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {},
+  "sha256": "7a73506c557b348e1cb369a4a49c73672f1b709aeea096329fc32ab002fc70d2",
+  "sound": "land",
+  "source_sha256": "93b81c1f15e856524749f1240a9019ac6fccbadeeafacaf7e0e22cefc86dc8ab"
+ },
+ "land_3.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_Down_08",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {},
+  "sha256": "b084ad770acfc36867dd24c5bb8dc5a9df01a70f60a6ecf02710be7886592f48",
+  "sound": "land",
+  "source_sha256": "8c5f9a14b45d51f6c907b3aab016c0ce009e5f737654e92f76250d6097fcb342"
+ },
+ "land_4.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_Down_04",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {},
+  "sha256": "dffc31b2a7faeb5cf6477fd96d97fed879855faa00a683d4cf143de5e5b26ff2",
+  "sound": "land",
+  "source_sha256": "a8aae15b10c08a77d6bde636dc28c05ea34ed2764bf2fe8a3c95612a980ae06d"
+ },
+ "launch_1.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_Common_RL_01",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "dur": 0.9,
+   "fade": 0.35
+  },
+  "sha256": "d8a9a40f061627ca1935ec089116afcc94e4078e9aeed025bc4024a010a27482",
+  "sound": "launch",
+  "source_sha256": "63edee89f2df4fd6bf7ca20fbbe5a7f257fc638d452fa880fd652b722d33b8e6"
+ },
+ "launch_2.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_Common_RL_02",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "dur": 0.9,
+   "fade": 0.35
+  },
+  "sha256": "45a2220694780786c00dcaad92aad3cb165881de62de6fb35dff6cb2383e20a3",
+  "sound": "launch",
+  "source_sha256": "2ccd375fb984b3adfa90e69bb78cb3fd2c68415c8cb89e89b5b5b0f91935d68f"
+ },
+ "lock_1.wav": {
+  "bundle": "audio-sfx_ui-_mxload-2024-11-18_assets_all_976556550.bundle",
+  "clip": "UI_Notice",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "fade": 0.06
+  },
+  "sha256": "ddbbf1dd85d84e9bba31da6a96285eb0dfd6f1164210a603f8a932b733c01898",
+  "sound": "lock",
+  "source_sha256": "6273c8d0a77db4f95f546931d326c4c571a7c85968c843a0e05827df0b2b4cdc"
+ },
+ "pop_1.wav": {
+  "bundle": "audio-sfx_ui-_mxload-2025-02-18_assets_all_3840065021.bundle",
+  "clip": "SFX_Event_Pop_01",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "dur": 0.35,
+   "fade": 0.2
+  },
+  "sha256": "c0d523eb50b6afb66cb9c559e84af82a07303e7050d591c399315dc812e23f75",
+  "sound": "pop",
+  "source_sha256": "526c5bfe1fddcda9604c9a510af3c2ef6e1be41d8372530eadc6a23d8ad770da"
+ },
+ "pop_2.wav": {
+  "bundle": "audio-sfx_ui-_mxload-2025-02-18_assets_all_3840065021.bundle",
+  "clip": "SFX_Event_Pop_02",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "dur": 0.35,
+   "fade": 0.2
+  },
+  "sha256": "d593f6ee2d1fa82f9d66e00a45981f37db7b00624893446473874cc24cb20fe0",
+  "sound": "pop",
+  "source_sha256": "1b9566833f4a1cb4ad1e57be7d525d0fd1ba92513282e24e34e1649a376353f4"
+ },
+ "shot_1.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_Common_HG_01",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "dur": 0.35,
+   "fade": 0.15
+  },
+  "sha256": "092c14aec92153f967468988cb20e0fb1376b16a601bfd1c230a067892bcd4f0",
+  "sound": "shot",
+  "source_sha256": "836c2c6921d529e995a96fc3f111afc6c98d9ece8767770e785eb1e6313934cb"
+ },
+ "shot_2.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_Common_HG_02",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "dur": 0.35,
+   "fade": 0.15
+  },
+  "sha256": "57efeebde6dbdaf1aab0eebc1d5319259918b83d63ac57faffdd97dd32ebd07f",
+  "sound": "shot",
+  "source_sha256": "c1f9699fc58e0ddb87fc817d62c915e5c7ba2adb8235e8e9162e0d2608fb6988"
+ },
+ "shot_3.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_Common_HG_03",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "dur": 0.35,
+   "fade": 0.15
+  },
+  "sha256": "2c09c178113e5cb205dcc3b5e0522e729574cf0866811f138694559f132da97f",
+  "sound": "shot",
+  "source_sha256": "1290dca0e4ef1d98c052d9ecb7460ae61ce28cbbaf75d3e4e2041b11b817117d"
+ },
+ "shot_big_1.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_Common_SR_01",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "dur": 0.68,
+   "fade": 0.3
+  },
+  "sha256": "9840136fe85cc44b0e469053a2b22f577864d1ac5e8e546e9aa39ac5c7464ef4",
+  "sound": "shot_big",
+  "source_sha256": "9b50d6b2381504b41728af9cdb2413ce7ad2f5a0122122c2245945d7c438c1ef"
+ },
+ "shot_big_2.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_Common_SR_02",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "dur": 0.68,
+   "fade": 0.3
+  },
+  "sha256": "0d00eb71ab18551843046cd050fb19f6c94d07298cbad99765000cd83c38b09c",
+  "sound": "shot_big",
+  "source_sha256": "dd764907c287e2bfd8dfea8e8b9b1e1233ef0fdd6d9a39f1da86c55a1bc77afd"
+ },
+ "slam_1.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_scenarioeffect-_mxprolog-2024-11-18_assets_all_4093821869.bundle",
+  "clip": "SE_Boom_02",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "dur": 0.8,
+   "fade": 0.35
+  },
+  "sha256": "335dbd0a04624ba0e40bf96027a4e7674c530351d96dc408675d475bbc54b27f",
+  "sound": "slam",
+  "source_sha256": "d710db68b944057bbc95bbb8c83b0d2d78274e5cab8473730b407c4a1ebfc736"
+ },
+ "super_1.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_Start_Public_Shing_01",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "fade": 0.15
+  },
+  "sha256": "c8cf573c1624413a58ba864ea95b29757b2078ebbb2f2cd75cc1e4da2ea04cf9",
+  "sound": "super",
+  "source_sha256": "78b4723348e34f3d38e0dd2d788f1019ccdfd9cd0093e953222b858aed07c41d"
+ },
+ "swing_1.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_Swing_01",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "fade": 0.15
+  },
+  "sha256": "5247b3841eb62b1573ef42274c90092579ff62d573828cfa4afcf9a44052f619",
+  "sound": "swing",
+  "source_sha256": "aa44a4cb9cc61cea8116ac887085d4f62dde2f0d8314cdcbf6e67647bd3a5a0c"
+ },
+ "swing_2.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_Swing_02",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "fade": 0.15
+  },
+  "sha256": "2d0128ad70c43e9c14097380f7ccb91abf07abcd01ec708435d1910d43674b6d",
+  "sound": "swing",
+  "source_sha256": "ed00488cda3be56d6b5d6583711fc476f521b862a00c10ddefa0d5febc6226a0"
+ },
+ "tech_1.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_JSD_Roll_Breakfall",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "dur": 0.5,
+   "fade": 0.2
+  },
+  "sha256": "806c80898ca265c91dfe526fb47598c8e2aae17153a109a4bbf507ad759274b1",
+  "sound": "tech",
+  "source_sha256": "b3e02be386171eb294c2cc9634bd0c698f7a8d601ef870d6db9e579b066bf1b4"
+ },
+ "throw_1.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_Swing_03",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "fade": 0.15
+  },
+  "sha256": "12ef31b2cd13a44e8618b89224b7675ab2b5e3034bdfbaf89f5dde3600472ba1",
+  "sound": "throw",
+  "source_sha256": "8a1817b8b27dbeb7ce11a662228644896cdf1b0d02d468dc0e034e220ca845ba"
+ },
+ "tick_1.wav": {
+  "bundle": "audio-sfx_ui-_mxload-2024-11-18_assets_all_976556550.bundle",
+  "clip": "UI_EventCollection_Pin_MN_01",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "fade": 0.02
+  },
+  "sha256": "820d6ec061956b473282dc49d70c5fe1ce84b41db11ec6d153ec71bd89eef33f",
+  "sound": "tick",
+  "source_sha256": "d2dee65c26c2d1f28e9fb15f6377030af6a966672fce77f7887f5d237f126226"
+ },
+ "tick_2.wav": {
+  "bundle": "audio-sfx_ui-_mxload-2024-11-18_assets_all_976556550.bundle",
+  "clip": "UI_EventCollection_Pin_MN_02",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "fade": 0.02
+  },
+  "sha256": "4e9d01ace8118382ca82162d6b116da393656974846350c6e64ea0b3ea4347e9",
+  "sound": "tick",
+  "source_sha256": "9cc07004600de2de88914c0add8f321b5881c1374c845b366ddad57b6e448287"
+ },
+ "tick_3.wav": {
+  "bundle": "audio-sfx_ui-_mxload-2024-11-18_assets_all_976556550.bundle",
+  "clip": "UI_EventCollection_Pin_MN_04",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "fade": 0.02
+  },
+  "sha256": "372d6148583dd39d2eb6d539d719d12374e0c96f45e33ee71dfd4998678e23db",
+  "sound": "tick",
+  "source_sha256": "c457c5799935d3c2563fcfa2efe812ecd868aea41ca92ffd87754da8b9361738"
+ },
+ "ult_release_1.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_Explosion_Blue_L_01",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "dur": 1.0,
+   "fade": 0.45
+  },
+  "sha256": "768ffd7a521918f8024fe69f8eeba5f2f9be0fa81856b5be283e55b232834ae5",
+  "sound": "ult_release",
+  "source_sha256": "5a9a68817a93e4feed542ab19df6779190824dbf86f34298df94913cc513639a"
+ },
+ "ult_rise_1.wav": {
+  "bundle": "audio-sfx_ui-sfx_gacha-_mxload-2024-11-18_assets_all_2687945115.bundle",
+  "clip": "UI_Gacha_Normal_01",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "dur": 0.8,
+   "fade": 0.03,
+   "start": 1.2
+  },
+  "sha256": "edbf65cb4405f6d14c19c0532fd60cb24c9f204404f70ade1f3a3fd7d16b00fc",
+  "sound": "ult_rise",
+  "source_sha256": "1478e1bae9dcea01fda99982bb5719973ec921f416600e15ed013fc688efb450"
+ },
+ "ult_stamp_1.wav": {
+  "bundle": "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2024-11-18_assets_all_4207512370.bundle",
+  "clip": "SFX_Aris_Hit",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "dur": 0.45,
+   "fade": 0.2
+  },
+  "sha256": "aa5884e13e0a84da46ade2c8f05716a44804abc4939dc6c6d460666b5a0cf5b0",
+  "sound": "ult_stamp",
+  "source_sha256": "1e30037c8f9de71bfa0ce4fa3565c93c18d2622c6e2eb252849131983c803207"
+ },
+ "whoosh_1.wav": {
+  "bundle": "audio-sfx_ui-_mxload-2024-11-18_assets_all_976556550.bundle",
+  "clip": "UI_Fade",
+  "derived_from": "tools/sfx_ui_assets.py: mono 16 bit, trimmed and faded, peak -1 dBFS",
+  "edit": {
+   "fade": 0.25
+  },
+  "sha256": "b636ca7d9a4e8b6acf58dd6f6fa294c5058d91b75f8c23f5c8e8f1a365d978b2",
+  "sound": "whoosh",
+  "source_sha256": "6a6a1e25f19c4eee8711feb0fd436dc86ec5854a6ad0bbbcbe49677c0b41e5af"
+ }
+}

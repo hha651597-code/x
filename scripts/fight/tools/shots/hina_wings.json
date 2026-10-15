@@ -1,0 +1,35 @@
+{
+ "timeout": 60,
+ "steps": [
+  {"session": {"mode": "versus2p", "players": [
+   {"claimed": true, "device": "kb1", "fighter": 10004, "special": 10017},
+   {"claimed": true, "device": "kb2", "fighter": 10005, "special": 10017}
+  ], "stage": "gehenna-night"}},
+  {"go": "fight", "style": "cut"},
+  {"wait": 2.4},
+  {"tap": ["kb1", "up"], "frames": 3},
+  {"wait": 0.2},
+  {"tap": ["kb1", "rb"], "frames": 2},
+  {"wait": 0.1},
+  {"print": true},
+  {"wait": 1.0},
+  {"tap": ["kb1", "up"], "frames": 3},
+  {"wait": 0.2},
+  {"hold": ["kb1", "left"]},
+  {"tap": ["kb1", "rb"], "frames": 2},
+  {"wait": 0.1},
+  {"print": true},
+  {"wait": 0.4},
+  {"release": ["kb1", "left"]},
+  {"wait": 1.0},
+  {"fighter": {"slot": 1, "state": "JUMP", "pos": [-300, 200], "vel": [0, 0]}},
+  {"wait": 0.1},
+  {"hold": ["kb1", "up"]},
+  {"wait": 0.5},
+  {"print": true},
+  {"wait": 1.2},
+  {"print": true},
+  {"release": ["kb1", "up"]},
+  {"wait": 1.0}
+ ]
+}

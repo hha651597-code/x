@@ -1,0 +1,57 @@
+{
+ "timeout": 60,
+ "steps": [
+  {
+   "session": {
+    "mode": "versus2p",
+    "players": [
+     {
+      "claimed": true,
+      "device": "kb1",
+      "fighter": 10005,
+      "special": 20001
+     },
+     {
+      "claimed": true,
+      "device": "kb2",
+      "fighter": 10004,
+      "special": 23005,
+      "cpu": false
+     }
+    ],
+    "stage": "gehenna-night"
+   }
+  },
+  {
+   "go": "fight",
+   "style": "cut"
+  },
+  {
+   "wait": 2.6
+  },
+  {
+   "fighter": {
+    "slot": 1,
+    "hp": 250
+   }
+  },
+  {
+   "wait": 0.3
+  },
+  {
+   "print": true
+  },
+  {
+   "wait": 2.0
+  },
+  {
+   "print": true
+  },
+  {
+   "wait": 3.5
+  },
+  {
+   "print": true
+  }
+ ]
+}
