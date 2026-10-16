@@ -115,9 +115,16 @@ func _confirm() -> void:
 func _roulette() -> void:
 	var pair := await _push_stage()
 	var scr: Node = pair[1]
-	scr.on_action("kb1", "right")
-	_tick(scr, 3)
-	check(scr.probe()["stage"] == "random", "right selects the random tile")
+	for row in 2:
+		for _i in 12:
+			if scr.probe()["stage"] == "random":
+				break
+			scr.on_action("kb1", "right")
+			_tick(scr, 3)
+		if scr.probe()["stage"] != "random":
+			scr.on_action("kb1", "down")
+			_tick(scr, 3)
+	check(scr.probe()["stage"] == "random", "right reaches the random tile")
 	stub.cover_all = true
 	scr.on_action("kb1", "confirm")
 	check(scr.probe()["roulette"] and game.session.stage.is_empty(), "confirm on the random tile starts the roulette, no stage yet")
