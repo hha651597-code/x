@@ -1015,6 +1015,7 @@ func on_ko(def: Fighter) -> void:
 		return
 	phase = "ko"
 	phase_t = 0
+	_drop_buffers()
 	slowmo = 100
 	hud.banner("K.O.", "", Color("ff4a5c"), 1.6)
 	var ink := Fx.make(fx_layer, "impact", def.position + Vector2(0, -150), 0.05, {"z": 70, "seed": rng.randf() * 3.0})
@@ -1024,11 +1025,15 @@ func on_ko(def: Fighter) -> void:
 	def.voice("ko")
 	shake(10.0)
 
-func _time_up() -> void:
-	_buzzer = [f1.hp, f2.hp]
+## Nothing buffered may start a move, least of all a cut-in, under the K.O. or TIME UP banner.
+func _drop_buffers() -> void:
 	for f in fighters:
 		f._buf.clear()
 		f._age.clear()
+
+func _time_up() -> void:
+	_buzzer = [f1.hp, f2.hp]
+	_drop_buffers()
 	phase = "ko"
 	phase_t = 0
 	hud.banner("TIME UP", "", Color("ffd94a"), 1.4)

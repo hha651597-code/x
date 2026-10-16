@@ -75,6 +75,7 @@ func _run() -> void:
 	_time_up()
 	_trade()
 	_focus_out()
+	_ko_buffer()
 	_resume_from_pause()
 	_overkill_and_ko_time()
 	_ko_flash()
@@ -368,6 +369,19 @@ func _focus_out() -> void:
 	screen.match_over = false
 	sess.settings_path = real
 	check(not screen.paused, "a finished match does not pause on focus loss")
+
+## An EX buffered when the K.O. lands must not start the ult under the banner.
+func _ko_buffer() -> void:
+	_new_round()
+	f2.meter = 100.0
+	_press(f2, ["ex"])
+	_tick()
+	f1._ko()
+	var froze := false
+	for i in 12:
+		_tick()
+		froze = froze or screen.time_stop > 0 or screen.world_frozen
+	check(not froze and f2.meter >= 100.0, "a buffered EX at the K.O. starts no cut-in (frozen %s, meter %.1f)" % [str(froze), f2.meter])
 
 # ── the loser's assist ───────────────────────────────────────────────────────
 func _late_assist(kind: String, late: int) -> void:
