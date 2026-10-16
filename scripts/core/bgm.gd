@@ -11,7 +11,7 @@ extends Node
 ## The jukebox drives it with set_paused(b), step(1) / step(-1) (next and previous, random with Session.jukebox_shuffle) and, with
 ## Session.jukebox_repeat "all", the music hands over to the next track END_LEAD seconds before the file ends.
 ##
-## API: tracks(), track(id), current, paused, play_id(id), position(), length(), length_of(id), spectrum(bands), is_playing(), probe(), stop(), resume(),
+## API: tracks(), track(id), current, paused, play_id(id), position(), length(), length_of(id), spectrum(bands), is_playing(), probe(), stop(),
 ## set_paused(b), neighbour(from, dir, shuffle, roll), step(dir).
 
 const DIR := "res://assets/audio/bgm/"
@@ -332,13 +332,9 @@ func _hand_over() -> void:
 static func handover_due(pos: float, len: float) -> bool:
 	return len > 0.0 and pos >= len - END_LEAD
 
-## Fade everything out and stop following the session until resume() / play_id().
+## Fade everything out and stop following the session until play_id().
 func stop() -> void:
 	enabled = false
 	for i in POOL:
 		_tgt[i] = 0.0
 		_rate[i] = 1.0 / FADE_FAST
-
-func resume() -> void:
-	enabled = true
-	_wanted = ""

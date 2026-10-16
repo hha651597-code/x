@@ -37,7 +37,6 @@ const PAD_BUTTONS := {
 	JOY_BUTTON_DPAD_UP: "up", JOY_BUTTON_DPAD_DOWN: "down", JOY_BUTTON_DPAD_LEFT: "left", JOY_BUTTON_DPAD_RIGHT: "right",
 }
 
-var enabled := true
 var _held := {}          # "dev:act" -> seconds held
 var _src := {}           # "dev:act" -> {physical source: true}, so one source letting go keeps the action held
 var _axis := {}          # "dev:axis" -> -1 / 0 / 1
@@ -100,8 +99,6 @@ func _lookup_key(code: int, k: InputEventKey) -> Array:
 	return []
 
 func _press(dev: String, act: String, src: Variant) -> void:
-	if not enabled:
-		return
 	var key := dev + ":" + act
 	if not _src.has(key):
 		_src[key] = {}
@@ -126,8 +123,6 @@ func _emit(dev: String, act: String) -> void:
 	action.emit(dev, act)
 
 func _process(delta: float) -> void:
-	if not enabled:
-		return
 	for key in _held.keys():
 		var act: String = key.get_slice(":", 1)
 		if act not in DIRS:
