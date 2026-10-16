@@ -34,8 +34,14 @@ static func stage_ids() -> Array[String]:
 
 static func read_json(path: String) -> Variant:
 	var f := FileAccess.open(path, FileAccess.READ)
-	assert(f != null, "cannot open " + path)
-	return JSON.parse_string(f.get_as_text())
+	if f == null:
+		push_error("cannot open " + path)
+		return {}
+	var doc: Variant = JSON.parse_string(f.get_as_text())
+	if doc == null:
+		push_error("bad json in " + path)
+		return {}
+	return doc
 
 
 static func color3(a: Array) -> Vector3:
@@ -77,7 +83,7 @@ static func load_variant(stage_dir: String, variant: String, layers := ["map", "
 
 
 static func _load_map(w: World, files: Dictionary, ctx: Dictionary) -> void:
-	var side: Dictionary = read_json(w.dir.path_join(files["materials"]))["materials"]
+	var side: Dictionary = read_json(w.dir.path_join(files["materials"])).get("materials", {})
 	var lms := {}
 	for k: String in files["lightmaps"]:
 		lms[int(k)] = load(w.dir.path_join(files["lightmaps"][k]))

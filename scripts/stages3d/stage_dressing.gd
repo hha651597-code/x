@@ -4,8 +4,12 @@ extends RefCounted
 
 static func load_dressing(w: StageLoader.World, base: String, ctx: Dictionary, night: bool) -> void:
 	var d: Dictionary = StageLoader.read_json(w.dir.path_join(base + ".json"))
+	if d.is_empty():
+		return
 	var kit_base: String = d["kit"]
-	var side: Dictionary = StageLoader.read_json(w.dir.path_join(kit_base + ".materials.json"))["materials"]
+	var side: Dictionary = StageLoader.read_json(w.dir.path_join(kit_base + ".materials.json")).get("materials", {})
+	if side.is_empty():
+		return
 	var kit: Node = (load(w.dir.path_join(kit_base + ".glb")) as PackedScene).instantiate()
 	var src := {}
 	for mi: MeshInstance3D in kit.find_children("*", "MeshInstance3D", true, false):

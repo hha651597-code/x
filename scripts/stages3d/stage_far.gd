@@ -23,6 +23,8 @@ static func param(v: Variant) -> Variant:
 
 static func load_group(w: StageLoader.World, base: String, ctx: Dictionary) -> void:
 	var side: Dictionary = StageLoader.read_json(w.dir.path_join(base + ".json"))
+	if side.is_empty():
+		return
 	var root: Node3D = (load(w.dir.path_join(base + ".glb")) as PackedScene).instantiate()
 	w.add_child(root)
 	var g: Dictionary = w.info["sky"]["gradient"]

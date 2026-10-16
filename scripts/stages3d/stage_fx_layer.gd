@@ -8,6 +8,8 @@ const GLOW_SHADER := "res://shaders/stage_glow.gdshader"
 
 static func load_fx(w: StageLoader.World, base: String) -> void:
 	var doc: Dictionary = StageLoader.read_json(w.dir.path_join(base))
+	if doc.is_empty():
+		return
 	var root := Node3D.new()
 	root.name = "Fx"
 	w.add_child(root)

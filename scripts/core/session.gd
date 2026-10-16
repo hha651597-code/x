@@ -100,6 +100,12 @@ func _resolve_stage(src: Dictionary) -> Dictionary:
 		if out["time"] != stage_time:
 			push_warning("stage %s has no time %s, using %s" % [out.get("id", "?"), stage_time, out["time"]])
 		var full := _light(String(out["map"]), String(out["time"]))
+		if full.is_empty():
+			push_warning("stage %s: map %s has no usable light json, using its plate" % [out.get("id", "?"), out["map"]])
+			out.erase("map")
+			out.erase("times")
+			out.erase("time")
+			return out
 		out["light_full"] = full
 		out["light"] = _published(full)
 	return out
@@ -122,8 +128,11 @@ static func _light(map: String, time: String) -> Dictionary:
 	var key := map + "/" + time
 	if not _lights.has(key):
 		var dir := "res://assets/ba/stages/" + map
-		var variant: String = StageLoader.read_json(dir + "/stage.json")["times"][time]
-		_lights[key] = StageLoader.read_json("%s/%s.json" % [dir, variant])["light"]
+		var variant: String = StageLoader.read_json(dir + "/stage.json").get("times", {}).get(time, "")
+		var doc: Dictionary = StageLoader.read_json("%s/%s.json" % [dir, variant])
+		if not doc.has("light"):
+			return {}
+		_lights[key] = doc["light"]
 	return _lights[key].duplicate(true)
 
 ## Start a fresh setup for a mode (keeps option values).

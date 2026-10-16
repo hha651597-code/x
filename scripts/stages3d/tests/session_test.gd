@@ -55,8 +55,30 @@ func _initialize() -> void:
 	_is(s.stage["plate"] == ghost["plate"] and s.stage["id"] == "ghost", "and keeps its id and plate")
 	s.begin("training")
 	_is(s.stage.is_empty(), "begin() clears the stage")
+	_broken_files(s)
 	print("SESSION_TEST %s checks=%d failures=%d" % ["PASS" if failures == 0 else "FAIL", checks, failures])
 	quit(0 if failures == 0 else 1)
+
+
+func _broken_files(s: Session) -> void:
+	var dir := "res://assets/ba/stages/zz_broken"
+	DirAccess.make_dir_recursive_absolute(dir)
+	_is(StageLoader.read_json(dir + "/none.json").is_empty(), "a missing json reads as {}")
+	var f := FileAccess.open(dir + "/stage.json", FileAccess.WRITE)
+	f.store_string('{"times": {"day": "v"}}')
+	f.close()
+	var entry := {"id": "broken", "name": "Broken", "plate": "bg/BG_View_Kivotos.jpg", "map": "zz_broken", "times": ["day"]}
+	s.stage = entry
+	_is(not s.stage.has("map") and s.stage["plate"] == entry["plate"], "a map whose variant json is missing falls back to its plate")
+	f = FileAccess.open(dir + "/v.json", FileAccess.WRITE)
+	f.store_string("{not json")
+	f.close()
+	_is(StageLoader.read_json(dir + "/v.json").is_empty(), "a bad json reads as {}")
+	s.stage = entry
+	_is(not s.stage.has("map"), "a map whose variant json is bad falls back to its plate")
+	DirAccess.remove_absolute(dir + "/v.json")
+	DirAccess.remove_absolute(dir + "/stage.json")
+	DirAccess.remove_absolute(dir)
 
 
 func _is(ok: bool, what: String) -> void:
