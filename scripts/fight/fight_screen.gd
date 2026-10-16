@@ -1014,7 +1014,7 @@ func on_hit(att: Fighter, def: Fighter, h: Dictionary, combo: int) -> void:
 		hud.flash(Color(1, 1, 1), 0.5)
 
 func on_ko(def: Fighter) -> void:
-	if phase != "fight":
+	if phase != "fight" or training:
 		return
 	phase = "ko"
 	phase_t = 0

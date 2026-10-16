@@ -914,7 +914,7 @@ func _move_body() -> void:
 # ── receiving hits ───────────────────────────────────────────────────────────
 ## Returns "hit", "block" or "miss". `from` = world position of the hit (for knock direction).
 func receive_hit(att: Fighter, h: Dictionary, from: Vector2, is_projectile: bool) -> String:
-	if carrier != null or invuln > 0 or state in [S.KO, S.DOWN, S.GETUP, S.INTRO, S.WIN] or world.phase in ["ko", "round_end"]:
+	if hp <= 0.0 or carrier != null or invuln > 0 or state in [S.KO, S.DOWN, S.GETUP, S.INTRO, S.WIN] or world.phase in ["ko", "round_end"]:
 		return "miss"
 	if shield_frames > 0:
 		shield_frames = 0
@@ -1176,7 +1176,7 @@ func _do_hit(att: Fighter, h: Dictionary, dir: int, is_projectile: bool) -> void
 	hp -= dmg
 	combo_hits += 1
 	combo_dmg += dmg
-	combo_scale = maxf(0.35, combo_scale * 0.88)
+	combo_scale = maxf(0.1, combo_scale * 0.78)
 	att.stat_hits += 1
 	att.stat_max_combo = maxi(att.stat_max_combo, combo_hits)
 	var gain_mult := 1.5 if att.buff_frames > 0 else 1.0
@@ -1199,11 +1199,15 @@ func _do_hit(att: Fighter, h: Dictionary, dir: int, is_projectile: bool) -> void
 		var ly := launch.y if launch.y != 0.0 else -6.0 + float(mini(juggle, 4)) * 0.8
 		if airborne and launch.y == 0.0:
 			ly = -5.0 + float(mini(juggle, 4)) * 0.7
+		if juggle > 4:   # no more lift after the 4th hit, so the foe has to fall
+			ly = maxf(ly, 0.0)
 		vel = Vector2(float(dir) * lx, ly)
 		position.y = minf(position.y, Arena.GROUND - 2.0) if ly < 0.0 else position.y
 	else:
 		_set_state(S.HIT)
-		hitstun = int(h["hitstun"])
+		# stun shrinks after hit 6, but not for an EX: its hits are spaced by the full stun
+		var decay := 1.0 if att.move.get("cutin", false) else clampf(1.0 - 0.12 * float(combo_hits - 6), 0.25, 1.0)
+		hitstun = int(float(h["hitstun"]) * decay)
 		vel.x = float(dir) * float(h["push"])
 	if h.has("slow"):
 		slow_frames = int(h["slow"]["frames"])
@@ -1231,6 +1235,7 @@ func _do_hit(att: Fighter, h: Dictionary, dir: int, is_projectile: bool) -> void
 		else:
 			vel.x = float(dir) * maxf(absf(vel.x), 7.0)
 			vel.y = minf(vel.y, -9.0)
+		world.on_ko(self)   # juggling a dead fighter must not keep the round open until they land
 
 func _at_wall(dir: int) -> bool:
 	return absf(position.x + float(dir) * 70.0) >= Arena.HALF_W
