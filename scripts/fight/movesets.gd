@@ -14,7 +14,6 @@ extends RefCounted
 ##   cost           meter cost (the engine sets the ult and super costs);  cutin  true → super-freeze cinematic before the move starts
 ##   fx[]           [{frame, kind}] cues: "sight", "charge"
 
-const SdConfig := preload("res://scripts/models/sd_config.gd")
 const BULLET_COLORS := {
 	"Explosion": Color(1.0, 0.62, 0.22),
 	"Pierce": Color(0.62, 0.92, 1.0),
