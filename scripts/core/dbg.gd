@@ -27,6 +27,8 @@ var intro_entry := true   # the first round plays the 360 tick stage entry; a st
 var _script_path := ""
 
 func _ready() -> void:
+	if not OS.is_debug_build():
+		return
 	process_mode = Node.PROCESS_MODE_ALWAYS
 	for a in OS.get_cmdline_user_args():
 		if a.begins_with("--script="):

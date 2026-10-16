@@ -5,7 +5,7 @@ extends RefCounted
 
 static func apply(hud: Control) -> void:
 	var s := OS.get_environment("HUD_DEMO")
-	if s == "":
+	if s == "" or not OS.is_debug_build():
 		return
 	var w: Node = hud.world
 	var f1: Fighter = w.f1
@@ -39,6 +39,8 @@ static var _done := {}
 const SNAP_AT := {"ko": 0.5, "win": 0.8, "timeup": 0.5, "round": 0.45, "fight": 0.2}
 
 static func tick(hud: Control) -> void:
+	if not OS.is_debug_build():
+		return
 	var dir := OS.get_environment("HUD_SHOT")
 	if dir == "" or not hud._banner.active:
 		return
