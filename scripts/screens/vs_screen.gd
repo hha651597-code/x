@@ -157,7 +157,7 @@ func _centred(sz: Vector2, centre: Vector2, fn: Callable) -> Control:
 func _add_portrait(i: int) -> void:
 	var tex := UI.portrait(_ids[i])
 	var w := float(tex.get_width())
-	var head: Array = SelectFrames.HEADS.get(_ids[i], [w * 0.3, 60.0, w * 0.4])
+	var head := SelectFrames.head(_ids[i], tex)
 	var fit := HEAD_PX / float(head[2])
 	var head_x := float(head[0]) + float(head[2]) * 0.5
 	var centre := Vector2(w - head_x if i == 0 else head_x, float(head[1]) + float(head[2]) * 0.5) * fit   # i == 0 is mirrored

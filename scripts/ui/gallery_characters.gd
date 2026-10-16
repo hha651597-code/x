@@ -265,7 +265,7 @@ func _show(s: Dictionary, animate: bool) -> void:
 		_plate.show_art(tex, SPECIAL_ART, _dir, animate)
 	else:
 		var tex := UI.portrait(id)
-		var hd: Array = SelectFrames.HEADS.get(id, [tex.get_width() * 0.3, 60, tex.get_width() * 0.4])
+		var hd := SelectFrames.head(id, tex)
 		var sc := HEAD_PX / float(hd[2])
 		var centre := Vector2(float(hd[0]) + float(hd[2]) * 0.5, float(hd[1]) + float(hd[2]) * 0.5)
 		_plate.set_plate(FIGHTER_CARD, FIGHTER_CARD.position.y - 8.0)

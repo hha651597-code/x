@@ -159,8 +159,7 @@ func start(fighter: Fighter) -> void:
 	_age = 0.0
 	var tex: Texture2D = UI.portrait(int(f.data["id"]))
 	_art.texture = tex
-	var w := float(tex.get_width())
-	var h: Array = SelectFrames.HEADS.get(int(f.data["id"]), [w * 0.3, 60.0, w * 0.4])
+	var h := SelectFrames.head(int(f.data["id"]), tex)
 	var s := 255.0 / float(h[2])
 	var ctr := Vector2(float(h[0]) + float(h[2]) * 0.5, float(h[1]) + float(h[2]) * 0.5)
 	var anchor := Vector2(300, 262) if slot == 1 else Vector2(980, 262)

@@ -13,9 +13,13 @@ const HEADS := {
 	10004: [570, 117, 185],  # Hina
 }
 
+## The head square [x, y, side] of fighter `id` in its portrait `tex`; a portrait with no entry gets a guess from its width.
+static func head(id: int, tex: Texture2D) -> Array:
+	return HEADS.get(id, [tex.get_width() * 0.3, 60, tex.get_width() * 0.4])
+
 ## {scale, pos} to place `tex` (full portrait) so that fighter `id`'s head sits on the anchor of `slot` (1|2).
 static func frame(id: int, tex: Texture2D, slot: int) -> Dictionary:
-	var h: Array = HEADS.get(id, [tex.get_width() * 0.3, 60, tex.get_width() * 0.4])
+	var h := head(id, tex)
 	var s := HEAD_PX / float(h[2])
 	var centre := Vector2(float(h[0]) + float(h[2]) * 0.5, float(h[1]) + float(h[2]) * 0.5)
 	return {"scale": s, "pos": ANCHOR[slot - 1] - centre * s, "size": Vector2(tex.get_size()) * s}

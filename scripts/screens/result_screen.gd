@@ -100,8 +100,7 @@ func _build() -> void:
 
 ## Like SelectFrames.frame but with a chosen head size / anchor (the loser's smaller art).
 func _small_frame(id: int, tex: Texture2D, head_px: float, anchor: Vector2) -> Dictionary:
-	var w := float(tex.get_width())
-	var h: Array = SelectFrames.HEADS.get(id, [w * 0.3, 60.0, w * 0.4])
+	var h := SelectFrames.head(id, tex)
 	var sc := head_px / float(h[2])
 	var ctr := Vector2(float(h[0]) + float(h[2]) * 0.5, float(h[1]) + float(h[2]) * 0.5)
 	return {"scale": sc, "pos": anchor - ctr * sc, "size": Vector2(tex.get_size()) * sc}

@@ -360,7 +360,7 @@ func _mascot_texture() -> Texture2D:
 
 ## {scale, pos} that puts the head square of portrait `tex` at MASCOT_HEAD_AT with a constant head size (SelectFrames.HEADS).
 static func frame_for(id: int, tex: Texture2D) -> Dictionary:
-	var h: Array = SelectFrames.HEADS.get(id, [tex.get_width() * 0.3, 60, tex.get_width() * 0.4])
+	var h := SelectFrames.head(id, tex)
 	var sc := MASCOT_HEAD_PX / float(h[2])
 	var centre := Vector2(float(h[0]) + float(h[2]) * 0.5, float(h[1]) + float(h[2]) * 0.5)
 	return {"scale": sc, "pos": MASCOT_HEAD_AT - centre * sc}
