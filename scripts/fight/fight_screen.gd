@@ -296,6 +296,9 @@ func _start_round() -> void:
 	_after_round = false
 	f1.reset_round(-Arena.START_X, 1)
 	f2.reset_round(Arena.START_X, -1)
+	for b in brains:
+		if b:
+			b.reset()
 	f1.entry_cuts = entry
 	f2.entry_cuts = entry
 	for f in fighters:

@@ -165,6 +165,7 @@ func reset_round(x: float, face: int) -> void:
 	combo_hits = 0
 	combo_scale = 1.0
 	combo_dmg = 0.0
+	juggle = 0
 	buff_frames = 0
 	shield_frames = 0
 	heal_pool = 0.0

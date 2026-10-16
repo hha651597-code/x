@@ -77,6 +77,7 @@ func _run() -> void:
 	_focus_out()
 	_ko_buffer()
 	_cancelled_bullets()
+	_fresh_round()
 	_resume_from_pause()
 	_overkill_and_ko_time()
 	_ko_flash()
@@ -398,6 +399,22 @@ func _cancelled_bullets() -> void:
 	var at: Vector2 = shots[0].position
 	screen._tick_projectiles()
 	check(shots[0].position == at, "a cancelled round does not move again before it is freed (%s -> %s)" % [at, shots[0].position])
+
+## The next round starts clean: no juggle count, no half-played CPU plan.
+func _fresh_round() -> void:
+	_new_round()
+	var brain: RefCounted = (load("res://scripts/fight/cpu_brain.gd") as GDScript).new()
+	brain.setup(f1, f2, 2, 7)
+	screen.brains = [brain, null]
+	f1.juggle = 3
+	brain._taps.append({"btn": "heavy", "wait": 2})
+	brain._plan_t = 20
+	brain._block_t = 9
+	brain.prev.held["light"] = true
+	screen._start_round()
+	check(f1.juggle == 0, "a new round starts with no juggle count (%d)" % f1.juggle)
+	check(brain._taps.is_empty() and brain._plan_t == 0 and brain._block_t == 0 and not brain.prev.held["light"], "a new round clears the CPU brain's plan")
+	screen.brains = [null, null]
 
 # ── the loser's assist ───────────────────────────────────────────────────────
 func _late_assist(kind: String, late: int) -> void:

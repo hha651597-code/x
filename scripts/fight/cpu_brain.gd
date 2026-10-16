@@ -31,6 +31,17 @@ func setup(fighter: Fighter, opponent: Fighter, lvl: int, seed_value: int) -> vo
 	level = clampi(lvl, 0, 3)
 	rng.seed = seed_value
 
+## A new round starts without the last one's plan; the rng keeps its place.
+func reset() -> void:
+	_taps.clear()
+	_plan_t = 0
+	_block_t = 0
+	_react = 0
+	_jg = false
+	_hold_t = 0
+	_held_btns = []
+	prev = FightInput.new()
+
 func think() -> FightInput:
 	var btns: Array = []
 	var dist := absf(foe.position.x - me.position.x) - me.spacing_extra()   # the legacy distance every threshold below was tuned on
