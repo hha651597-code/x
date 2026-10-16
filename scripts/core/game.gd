@@ -51,6 +51,10 @@ func _load_roster() -> void:
 	for s in fighters + specials:
 		by_id[int(s["id"])] = s
 
+func _notification(what: int) -> void:
+	if what == NOTIFICATION_WM_CLOSE_REQUEST:
+		session.save_settings()
+
 # ── routing ──────────────────────────────────────────────────────────────────
 func current() -> Screen:
 	return stack.back() if not stack.is_empty() else null

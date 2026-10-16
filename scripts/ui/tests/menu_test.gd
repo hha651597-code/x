@@ -66,6 +66,10 @@ func _run() -> void:
 	await _assign_flow(1, "training")
 	await _assign_return()
 	_assign_text()
+	_wipe_scratch()
+	game.session.bgm_volume = 0.123
+	game.notification(Node.NOTIFICATION_WM_CLOSE_REQUEST)
+	check(is_equal_approx(SESS.new().bgm_volume, 0.123), "closing the window saves the settings")
 	SESS.settings_path = real_path
 	check(real_path == SESS.REAL_PATH and not SESS._persists(), "a scripted run with the default path neither reads nor writes the real settings file")
 	_wipe_scratch()
