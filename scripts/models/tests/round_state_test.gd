@@ -78,6 +78,7 @@ func _run() -> void:
 	_ko_buffer()
 	_cancelled_bullets()
 	_fresh_round()
+	_hitstop_press()
 	_resume_from_pause()
 	_overkill_and_ko_time()
 	_ko_flash()
@@ -415,6 +416,14 @@ func _fresh_round() -> void:
 	check(f1.juggle == 0, "a new round starts with no juggle count (%d)" % f1.juggle)
 	check(brain._taps.is_empty() and brain._plan_t == 0 and brain._block_t == 0 and not brain.prev.held["light"], "a new round clears the CPU brain's plan")
 	screen.brains = [null, null]
+
+## A button tapped while the fighter is held in hitstop still reaches the 7 tick buffer.
+func _hitstop_press() -> void:
+	_new_round()
+	f1.hitstop = 6
+	_press(f1, ["heavy"])
+	_tick(8)
+	check(f1.state == S.ATTACK, "a heavy tapped in hitstop starts when the hitstop ends (%s)" % f1.state_name())
 
 # ── the loser's assist ───────────────────────────────────────────────────────
 func _late_assist(kind: String, late: int) -> void:

@@ -296,6 +296,7 @@ func tick() -> void:
 		return
 	if hitstop > 0:
 		hitstop -= 1
+		_record_presses()     # the buffer holds still in hitstop, but a tap in it is not lost
 		return
 	_update_buffer()
 	if invuln > 0: invuln -= 1
@@ -350,6 +351,9 @@ func _update_buffer() -> void:
 		if _buf[b] <= 0:
 			_buf.erase(b)
 			_age.erase(b)
+	_record_presses()
+
+func _record_presses() -> void:
 	for b in FightInput.BUTTONS:
 		if input.was_pressed(b):
 			# mashing keeps a button's age; a press after a longer gap starts a new one
