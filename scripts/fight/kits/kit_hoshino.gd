@@ -34,9 +34,6 @@ const AID_HEAL := 0.018   # fraction of max HP per tick
 const SdSockets := preload("res://scripts/models/sd_sockets.gd")
 const PUMP_AFTER := 12   # ticks from her last shot frame to the pump
 
-func personality() -> String:
-	return "Sleepy old timer who would rather nap. When it counts, nobody gets past her."
-
 func build_stats() -> Dictionary:
 	var s := Movesets.stats_for(data)
 	s["taken"] = 0.86   # Foreclosure Task Force President: DEF up

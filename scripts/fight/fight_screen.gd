@@ -9,7 +9,6 @@ extends Screen
 
 const HudScript := preload("res://scripts/fight/fight_hud.gd")
 const BACKDROP_SHADER := preload("res://shaders/backdrop.gdshader")
-const CutinScript := preload("res://scripts/fight/hud_cutin.gd")
 
 ## ── EX ult freeze ("super freeze") ──────────────────────────────────────────
 ## Pressing EX alone at a full meter starts the EX move (Fighter._start_move → begin_cutin). At the end of that sim tick the
@@ -135,7 +134,6 @@ var _events: Array = []
 var _frame := 0
 var _last_shot := {}               # slot -> _frame of that fighter's last synthesised shot sound
 var _cut_fade := -1                # ticks since a cut-in with a sound set resumed; the clip fades at CUT_FADE_AFTER (-1: none pending)
-var _plate_tex: Texture2D
 var dummy_mode := "stand"
 var infinite_meter := false
 var match_over := false
@@ -151,7 +149,6 @@ func enter(p: Dictionary, _info: Dictionary) -> void:
 	_resolve_picks()
 	_build_stage()
 	_build_fighters()
-	CutinScript.ensure_sounds()
 	var ut := OS.get_environment("ULT_TEST")
 	if ut != "":
 		_ult_test = load("res://scripts/fight/tools/ult_probe.gd").new()
@@ -215,7 +212,7 @@ func _build_stage() -> void:
 	# plate + grade + particles live in StageFx (scripts/fight/stage_fx.gd); colours sampled from the plate tint the floor
 	var fx: Control = load("res://scripts/fight/stage_fx.gd").new()
 	bg_layer.add_child(fx)
-	_plate_tex = fx.build(Game.session.stage)
+	fx.build(Game.session.stage)
 	bg_layer.set_meta("fx", fx)
 	bg_layer.set_meta("colors", fx.colors)
 
@@ -486,8 +483,7 @@ func _tick_fight(live_input := true) -> void:
 	_tick_projectiles()
 	if live_input and phase == "fight":
 		if not training:
-			if _frame % 1 == 0:
-				timer_frames -= 1
+			timer_frames -= 1
 			if timer_frames <= 0 and f1.hp > 0.0 and f2.hp > 0.0:     # a lethal blow on the last tick is a K.O. when the loser lands
 				_time_up()
 		else:

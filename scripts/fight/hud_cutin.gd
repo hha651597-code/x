@@ -110,11 +110,6 @@ func _init() -> void:
 	_front = PainterScript.new().setup(Vector2(1280, 720), _draw_front)
 	add_child(_front)
 
-## The cut-in's sounds (ult_rise, ult_stamp, ult_release) and ex_ready are Blue Archive clips in assets/audio/ba/ui_map.json now.
-## Kept because FightScreen still calls it.
-static func ensure_sounds() -> void:
-	pass
-
 ## Creates the world-space layers (call once, after FightScreen built its world).
 func attach(w: Node) -> void:
 	world = w

@@ -8,9 +8,6 @@ const DIR := "res://scripts/fight/kits/"
 static func path_for(data: Dictionary) -> String:
 	return DIR + "kit_" + String(data.get("key", "")).to_lower() + ".gd"
 
-static func has_kit(data: Dictionary) -> bool:
-	return ResourceLoader.exists(path_for(data))
-
 static func make(data: Dictionary) -> Kit:
 	var k: Kit
 	var p := path_for(data)

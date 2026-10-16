@@ -15,12 +15,9 @@ extends RefCounted
 ##   on_block_dealt(f, def, h)               f's attack was blocked
 ##   on_hit_taken(f, att, h, dmg) -> float   f is about to take `dmg`; return the (possibly changed) damage
 ##   on_ko(f)                                f was KO'd
-## Plus data: personality() text, taunt/idle flavour and which sprite motion to use are handled elsewhere.
+## Plus data: taunt/idle flavour and which sprite motion to use are handled elsewhere.
 
 var data: Dictionary = {}
-
-func personality() -> String:
-	return ""
 
 # ── data ─────────────────────────────────────────────────────────────────────
 func build_stats() -> Dictionary:

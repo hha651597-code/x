@@ -31,9 +31,6 @@ func setup(fighter: Fighter, opponent: Fighter, lvl: int, seed_value: int) -> vo
 	level = clampi(lvl, 0, 3)
 	rng.seed = seed_value
 
-func _p(base: float) -> float:
-	return clampf(base * (0.55 + 0.3 * float(level)), 0.0, 0.98)
-
 func think() -> FightInput:
 	var btns: Array = []
 	var dist := absf(foe.position.x - me.position.x) - me.spacing_extra()   # the legacy distance every threshold below was tuned on

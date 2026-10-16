@@ -52,9 +52,6 @@ const GLIDE_FALL := 2.5         # glide: fall speed cap
 const GLIDE_TICKS := 90         # glide ticks per jump
 const SPOOL_IDLE := 45          # ticks since her last round before the gun spools up again
 
-func personality() -> String:
-	return "Composed, tired and ruthless. It's all so annoying, so she ends it fast, standing in the open behind an oversized machine gun."
-
 func build_stats() -> Dictionary:
 	var s := Movesets.stats_for(data)
 	s["walk"] = 3.4

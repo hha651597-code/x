@@ -48,7 +48,6 @@ var assist_calls := 0      # assists called this match (a kit reads the change a
 var buff_frames := 0
 var shield_frames := 0
 var heal_pool := 0.0
-var slide := 0                        # attacker pushed back by corner pressure
 var air_ok := true
 var carrier: Fighter = null           # the thrower holding this fighter: its own tick does nothing until the release
 var carrying: Fighter = null          # the fighter this one holds
@@ -96,10 +95,7 @@ var slow_mult := 1.0
 var view: Node2D                      # FighterView (all visuals)
 var rig: Node2D
 var body: Sprite2D
-var _mat: ShaderMaterial
 var _flash := 0.0
-var _t := 0.0
-var _ghosts: Array = []
 var dim := 1.0
 
 func _ready() -> void:
@@ -129,7 +125,6 @@ func setup(roster_entry: Dictionary, player_slot: int, assist_entry: Dictionary)
 	view.setup(self)
 	rig = view.rig
 	body = view.body
-	_mat = view.mat
 
 ## The meter tiers belong to the engine, not the kits: a cut-in move is the ult, a "super" move costs a super.
 func _assign_costs() -> void:
@@ -177,7 +172,6 @@ func reset_round(x: float, face: int) -> void:
 	_age.clear()
 	powered = false
 	input = FightInput.new()
-	_ghosts.clear()
 	_flash = 0.0
 	armor_hits_left = 0
 	charge_t = 0
@@ -315,8 +309,6 @@ func tick() -> void:
 		var h := minf(heal_pool, 0.9)
 		hp = minf(max_hp, hp + h)
 		heal_pool -= h
-	if slide > 0:
-		slide -= 1
 	if slow_frames > 0:
 		slow_frames -= 1
 	kit.on_tick(self)
@@ -1158,7 +1150,6 @@ func _do_block(att: Fighter, h: Dictionary, dir: int, is_projectile: bool) -> vo
 		att.move_hit = true
 		att.move_connected = true
 		if _at_wall(dir):
-			att.slide = 8
 			att.vel.x = -float(dir) * float(h["push"]) * 1.1
 	world.fx_spark(position + Vector2(float(-facing) * 22.0, -175), "block", facing)
 	if jg:
@@ -1193,7 +1184,6 @@ func _do_hit(att: Fighter, h: Dictionary, dir: int, is_projectile: bool) -> void
 		att.move_hit = true
 		att.move_connected = true
 		if _at_wall(dir):
-			att.slide = 8
 			att.vel.x = -float(dir) * float(h["push"]) * 1.0
 	var launch: Vector2 = h["launch"]
 	var airborne := not is_grounded()
@@ -1242,7 +1232,6 @@ func _at_wall(dir: int) -> bool:
 
 # ── drawing (all visuals live in FighterView; see scripts/fight/fighter_view.gd) ──
 func _process(delta: float) -> void:
-	_t += delta
 	if view:
 		view.step(delta)
 	_flash = maxf(0.0, _flash - delta * 9.0)     # after the view reads it, so a hit's first drawn frame is the full flash
