@@ -15,8 +15,6 @@
 </tr>
 </table>
 
-# Blue Archive Fighting Game
-
 A fan-made one-on-one fighting game set in the world of Blue Archive, played on a 2D side-view lane. It is built in Godot 4.7: open the folder in the editor, or run `godot --path .` from the project folder. Builds for macOS and Windows are attached to each release. This is an unofficial fan project. Blue Archive and its art belong to Nexon Games and Yostar. Credits are in `CREDITS.md`.
 
 ## The idea
