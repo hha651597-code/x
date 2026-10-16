@@ -27,7 +27,7 @@ const PROMPT_SIZE := 30
 const PROMPT_Y := 606.0            # baseline
 const PULSE_S := 1.6
 const FOOTER := "Fan Project by mattsumi on GitHub. Blue Archive and all material included relating to Blue Archive are property of NEXON and Yostar, and I do not claim any ownership."
-const CREDITS_RECT := Rect2(1124.0, 666.0, 132.0, 34.0)
+const CREDITS_RECT := Rect2(1116.0, 666.0, 140.0, 34.0)
 const FOOTER_SIZE := 13
 const MOTES := 56
 const REF := Vector2(1280.0, 720.0)
@@ -266,11 +266,11 @@ func _draw_credits_button(c: Control, a: float) -> void:
 	var hot := CREDITS_RECT.has_point(_over.get_local_mouse_position()) and _credits == null
 	var r := CREDITS_RECT
 	Menu.nine(c, "Combat__Common_Btn_BG", r, Menu.K, Color(BaTokens.CONFIRM if hot else BaTokens.CYAN_PLATE, a), BaTokens.SHEAR)
-	var disc := Rect2(r.position + Vector2(10.0, 4.0), Vector2(26.0, 26.0))
+	var disc := Rect2(r.position + Vector2(12.0, 4.0), Vector2(26.0, 26.0))
 	BaArt.blit(c, "Combat__Combat_CardBg_EX_CostTag", disc, Color(1, 1, 1, a))
 	Menu.label(c, "C", Vector2(disc.get_center().x, disc.get_center().y + 6.0), 16, Color(1, 1, 1, a), Color(0, 0, 0, 0), 0, 1, 800)
 	var ink := Color(BaTokens.CONFIRM_INK, a) if hot else Color(1, 1, 1, a)
-	Menu.label(c, "Credits", Vector2(r.position.x + 84.0, r.get_center().y + 7.0), 19, ink, Color(0, 0, 0, 0) if hot else Color(BaTokens.HEAD_OUTLINE, a), 0 if hot else 3, 1, 800)
+	Menu.label(c, "Credits", Vector2(r.position.x + 52.0, r.get_center().y + 7.0), 19, ink, Color(0, 0, 0, 0) if hot else Color(BaTokens.HEAD_OUTLINE, a), 0 if hot else 3, 0, 800)
 
 func logo_rect() -> Rect2:
 	var e := _ease((_t - 0.2) / 0.7)

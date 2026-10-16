@@ -215,6 +215,7 @@ func _layout() -> void:
 	check((p["tentative"] as Rect2).position.y >= (p["letters"] as Rect2).end.y, "the working title sits under the lettering")
 	check((p["footer"] as Rect2).position.y > (p["prompt"] as Rect2).end.y, "the fine print sits under the prompt")
 	check((p["footer"] as Rect2).end.x < (p["credits_button"] as Rect2).position.x - 8.0, "the fine print ends before the Credits button")
+	check(52.0 + preload("res://scripts/ui/ba_menu.gd").text_width("Credits", 19, 800) + 3.0 + 12.0 <= (p["credits_button"] as Rect2).size.x, "the word Credits fits inside its plate with room on the right")
 	check(not (p["credits_button"] as Rect2).intersects(p["prompt"]) and (p["credits_button"] as Rect2).end.x > 1200.0 and (p["credits_button"] as Rect2).end.y > 680.0, "the Credits button sits alone in the bottom right corner")
 
 # ── the credits ──────────────────────────────────────────────────────────────
