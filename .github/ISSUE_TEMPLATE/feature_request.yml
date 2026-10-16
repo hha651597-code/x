@@ -1,0 +1,18 @@
+name: Idea or request
+description: Suggest a fighter, a map, a mode or a change
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like to see
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it would help
+      description: What problem it solves, or what it would make more fun.
+  - type: markdown
+    attributes:
+      value: Check the to-do list in the README first. Online play, more fighters and maps, and more settings are already planned.

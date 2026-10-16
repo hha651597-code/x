@@ -1,0 +1,64 @@
+name: Bug report
+description: Something broke, looks wrong or plays wrong
+labels: ["bug"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Game version
+      description: The release you downloaded, for example v0.5.2
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - macOS (Apple Silicon)
+        - macOS (Intel)
+        - Windows
+        - Run from source in Godot
+    validations:
+      required: true
+  - type: dropdown
+    id: input
+    attributes:
+      label: Input
+      options:
+        - Keyboard
+        - Controller
+        - Both
+    validations:
+      required: true
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened
+      description: Say what you saw. A screenshot or a short clip helps a lot.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to make it happen
+      description: Which mode, fighters and map, and what you pressed. Say if it happens every time.
+      placeholder: |
+        1. Versus 2P, Hina against Hoshino
+        2. ...
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Log (optional)
+      description: |
+        For a crash or an error, paste the end of `logs/godot.log` from the game's data folder.
+        macOS: `~/Library/Application Support/Godot/app_userdata/Blue Archive Fighting Game`
+        Windows: `%APPDATA%\Godot\app_userdata\Blue Archive Fighting Game`
+      render: text
