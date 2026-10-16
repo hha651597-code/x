@@ -40,15 +40,17 @@ static var settings_path := REAL_PATH
 func _init() -> void:
 	load_settings()
 
+## A scripted run is a step file (--script= after --) or a SceneTree test (--script / -s).
+static func scripted() -> bool:
+	for a in OS.get_cmdline_args() + OS.get_cmdline_user_args():
+		if a == "--script" or a == "-s" or a.begins_with("--script="):
+			return true
+	return false
+
 static func _persists() -> bool:
 	if settings_path == "":
 		return false
-	if settings_path != REAL_PATH:
-		return true
-	for a in OS.get_cmdline_args() + OS.get_cmdline_user_args():
-		if a == "--script" or a == "-s" or a.begins_with("--script="):
-			return false
-	return true
+	return settings_path != REAL_PATH or not scripted()
 
 func load_settings() -> void:
 	var cf := ConfigFile.new()

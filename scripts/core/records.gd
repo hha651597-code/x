@@ -10,12 +10,7 @@ const PATH := "user://records.json"
 static var path := PATH
 
 static func _writes() -> bool:
-	if path != PATH:
-		return true
-	for a in OS.get_cmdline_args() + OS.get_cmdline_user_args():
-		if a == "--script" or a == "-s" or a.begins_with("--script="):
-			return false
-	return true
+	return path != PATH or not Session.scripted()
 
 static func load_all() -> Dictionary:
 	var base := {"matches": 0, "human_wins": 0, "best_combo": 0, "total_damage": 0.0, "arcade_clears": 0, "per_fighter": {}, "by_mode": {}}
