@@ -12,7 +12,6 @@ const VP := 1.5
 const CENTER := Vector2(640, 360)
 
 const RED := Color(0.91, 0.26, 0.34)
-const RED_HI := Color(1.0, 0.45, 0.52)
 const MAROON := Color(0.17, 0.02, 0.05, 0.95)
 const GOLD_HI := Color(1.0, 0.93, 0.66)
 const GOLD := Color(0.98, 0.78, 0.29)
@@ -49,13 +48,6 @@ static func _chaikin(pts: PackedVector2Array, rounds: int) -> PackedVector2Array
 			nxt.append(a.lerp(b, 0.75))
 		cur = nxt
 	return cur
-
-static func _circle_pts(r: float, n := 96) -> PackedVector2Array:
-	var pts := PackedVector2Array()
-	for i in n + 1:
-		var a := TAU * float(i) / float(n)
-		pts.append(Vector2(cos(a), sin(a)) * r)
-	return pts
 
 static func _ease_out(x: float) -> float:
 	x = clampf(x, 0.0, 1.0)

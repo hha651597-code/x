@@ -107,9 +107,6 @@ func start() -> void:
 	_started = true
 	_in = 0.0
 
-func is_started() -> bool:
-	return _started
-
 ## Show fighter `id` (a roster id); `random` shows the "?" tile's mystery card instead.
 func show_fighter(id: int) -> void:
 	if id == fighter_id:

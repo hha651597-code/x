@@ -214,9 +214,6 @@ func close() -> void:
 func current_id() -> int:
 	return int(items[index]["id"]) if index < items.size() else -1
 
-func is_visible_now() -> bool:
-	return _shown
-
 ## CPU roulette: hop the highlight around, ending on `target` (an index), then emit chosen.
 func auto_pick(target: int, hops := 9) -> void:
 	_auto = {"target": clampi(target, 0, items.size() - 1), "hops": hops, "wait": 0.0, "n": 0}

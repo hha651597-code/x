@@ -40,7 +40,7 @@ const LINTED := [
 ]
 const EXEMPT := {
 	"res://scripts/ui/ba_tokens.gd": "the token file itself",
-	"res://scripts/ui/ui.gd": "the original palette, named constants that the older screens read",
+	"res://scripts/ui/ui.gd": "the few palette constants the preview screen reads",
 	"res://scripts/ui/special_panel.gd": "the Special Select popup's own palette, read off BA's popup and used once each",
 	"res://scripts/ui/gallery_kit.gd": "the per-school facet tints are data keyed by school",
 	"res://scripts/screens/stage_screen.gd": "the stage screen keeps its own colours",

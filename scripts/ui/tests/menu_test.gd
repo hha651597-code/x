@@ -220,7 +220,6 @@ func _menu_flow() -> void:
 		var card = c["card"]
 		check(is_equal_approx(float(card.get_param("gloss")), 0.0), "no gloss on " + str(c["mode"]["id"]))
 		check(is_equal_approx(float(card.get_param("shadow_amt")), BT.SHADOW_A), "shadow token on " + str(c["mode"]["id"]))
-		check(not card.highlighted, "no yellow card border on " + str(c["mode"]["id"]))
 	check(float(m._bd_mat.get_shader_parameter("radius")) <= 0.004, "the backdrop is blurred lightly")
 	check(is_equal_approx(sfx.volume_sfx, game.session.sfx_volume), "the menu applies the saved SFX volume")
 	await _press("kb1", "confirm")

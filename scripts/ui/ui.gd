@@ -3,18 +3,9 @@ extends RefCounted
 ## Shared look: palette, fonts, labels and texture access. Everything is authored in the
 ## 1280×720 coordinates of the reference stills (the project stretches it to any window size).
 
-const SKY_TOP := Color("7ec4f2")
-const SKY := Color("2d7fd0")
-const SKY_DEEP := Color("1f5aa6")
-const TEAL := Color("3b8f9b")
-const TEAL_LIGHT := Color("8cc9cf")
 const WHITE := Color("ffffff")
 const ICE := Color("e8f3fa")
-const YELLOW := Color("f6d44a")
-const P1 := Color("e0314b")
-const P2 := Color("2f6bff")
 const INK := Color("1b2a3a")
-const SHADOW := Color("0b1624")
 
 const BA := "res://assets/ba/"
 const NOTO := "res://assets/fonts/NotoSans-Variable.ttf"
@@ -107,17 +98,6 @@ static func label_shadow(l: Label, color := Color(0, 0, 0, 0.5), offset := Vecto
 	l.add_theme_constant_override("shadow_offset_x", int(offset.x))
 	l.add_theme_constant_override("shadow_offset_y", int(offset.y))
 	return l
-
-## Place a control by its top-left and size in reference pixels.
-static func place(c: Control, x: float, y: float, w := -1.0, h := -1.0) -> Control:
-	c.position = Vector2(x, y)
-	if w >= 0.0 and h >= 0.0:
-		c.size = Vector2(w, h)
-	return c
-
-## A rect in the reference stills, given as pixel corners.
-static func rect(x0: float, y0: float, x1: float, y1: float) -> Rect2:
-	return Rect2(x0, y0, x1 - x0, y1 - y0)
 
 ## Under-damped spring 0 → 1 (overshoots): the bouncy settle used by every entrance.
 static func spring(t: float, k := 6.5, w := 10.5) -> float:
