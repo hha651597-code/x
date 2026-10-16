@@ -481,9 +481,10 @@ func _tick_fight(live_input := true) -> void:
 		# an EX started this tick (both fighters have had their tick, so a same-frame double EX is caught): the world
 		# stops right here — hits, push, projectiles and the timer of this tick wait for the resume
 		return
+	var down := fighters.filter(func(f: Fighter) -> bool: return f.hp <= 0.0)     # judged before any swing or round lands, so mutual hits still trade
 	_resolve_hits()
 	_push_apart()
-	_tick_projectiles()
+	_tick_projectiles(down)
 	if live_input and phase == "fight":
 		if not training:
 			timer_frames -= 1
@@ -532,9 +533,8 @@ func _push_apart() -> void:
 			for f in fighters:
 				f.position.x = clampf(f.position.x, -Arena.HALF_W, Arena.HALF_W)
 
-func _tick_projectiles() -> void:
+func _tick_projectiles(down: Array) -> void:
 	var keep: Array = []
-	var down := fighters.filter(func(f: Fighter) -> bool: return f.hp <= 0.0)     # judged before any round lands, so mutual hits still trade
 	for p in projectiles:
 		if not is_instance_valid(p) or p.dead:     # a cancelled round lives on until the engine flushes its free
 			continue

@@ -353,8 +353,22 @@ func _trade() -> void:
 		screen.spawn_projectile(f, M._spawn(0, Vector2(0, -150.0), Vector2(20, 0), h, {"size": Vector2(30, 10)}))
 	screen.projectiles[0].position = Vector2(f2.position.x - 50.0, A.GROUND - 150.0)
 	screen.projectiles[1].position = Vector2(f1.position.x + 50.0, A.GROUND - 150.0)
-	screen._tick_projectiles()
+	screen._tick_projectiles([])
 	check(f1.hp <= 0.0 and f2.hp <= 0.0, "two lethal rounds that land on the same tick trade (f1 %.1f, f2 %.1f)" % [f1.hp, f2.hp])
+
+	# a lethal swing and a lethal round on one tick trade too
+	_new_round()
+	f1.hp = 5.0
+	f2.hp = 5.0
+	_press(f1, ["light"])
+	var n := 0
+	while not (f1.state == S.ATTACK and f1.mf == int(f1.move["startup"]) - 1) and n < 60:
+		_tick()
+		n += 1
+	screen.spawn_projectile(f2, M._spawn(0, Vector2(0, -150.0), Vector2(20, 0), h, {"size": Vector2(30, 10)}))
+	screen.projectiles[0].position = Vector2(f1.position.x + 50.0, A.GROUND - 150.0)
+	_tick()
+	check(f1.hp <= 0.0 and f2.hp <= 0.0, "a lethal swing and a lethal round on the same tick trade (f1 %.1f, f2 %.1f)" % [f1.hp, f2.hp])
 
 ## Losing the window focus pauses a played match; a scripted run (tests, step files) and a finished match are left alone.
 func _focus_out() -> void:
@@ -395,10 +409,10 @@ func _cancelled_bullets() -> void:
 	screen.projectiles[0].position = Vector2(-10.0, A.GROUND - 150.0)
 	screen.projectiles[1].position = Vector2(10.0, A.GROUND - 150.0)
 	var shots: Array = screen.projectiles.duplicate()
-	screen._tick_projectiles()
+	screen._tick_projectiles([])
 	check(shots[0].dead and shots[1].dead, "setup: two opposing rounds cancel")
 	var at: Vector2 = shots[0].position
-	screen._tick_projectiles()
+	screen._tick_projectiles([])
 	check(shots[0].position == at, "a cancelled round does not move again before it is freed (%s -> %s)" % [at, shots[0].position])
 
 ## The next round starts clean: no juggle count, no half-played CPU plan.
@@ -753,7 +767,7 @@ func _lands(att: Node, foe: Node, key: String, d: float) -> bool:
 		foe.tick()
 		screen._resolve_hits()
 		screen._push_apart()
-		screen._tick_projectiles()
+		screen._tick_projectiles([])
 		if att.stat_hits > 0:
 			break
 	var hit: bool = att.stat_hits > 0
