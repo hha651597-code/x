@@ -270,7 +270,7 @@ func _draw_credits_button(c: Control, a: float) -> void:
 	BaArt.blit(c, "Combat__Combat_CardBg_EX_CostTag", disc, Color(1, 1, 1, a))
 	Menu.label(c, "C", Vector2(disc.get_center().x, disc.get_center().y + 5.0), 14, Color(1, 1, 1, a), Color(0, 0, 0, 0), 0, 1, 800)
 	var ink := Color(BaTokens.CONFIRM_INK, a) if hot else Color(1, 1, 1, a)
-	Menu.label(c, "Credits", Vector2(r.position.x + 50.0, r.get_center().y + 7.0), 19, ink, Color(0, 0, 0, 0) if hot else Color(BaTokens.HEAD_OUTLINE, a), 0 if hot else 3, 0, 800)
+	Menu.label(c, "Credits", Vector2(r.position.x + 86.0, r.get_center().y + 4.0), 19, ink, Color(0, 0, 0, 0) if hot else Color(BaTokens.HEAD_OUTLINE, a), 0 if hot else 3, 1, 800)
 
 func logo_rect() -> Rect2:
 	var e := _ease((_t - 0.2) / 0.7)
