@@ -61,31 +61,27 @@ func _dir(az_deg: float, el_deg: float) -> Vector3:
 	return Vector3(cos(el) * cos(az), sin(el), cos(el) * sin(az))
 
 
-func _v3(a: Array) -> Vector3:
-	return Vector3(a[0], a[1], a[2])
-
-
 func _build_dome(env: Environment) -> void:
 	var g: Dictionary = cfg["gradient"]
 	sky_mat = ShaderMaterial.new()
 	sky_mat.shader = load(SKY_SHADER)
-	sky_mat.set_shader_parameter("_SkyColor", _v3(g["sky_color"]))
-	sky_mat.set_shader_parameter("_EquatorColor", _v3(g["equator_color"]))
+	sky_mat.set_shader_parameter("_SkyColor", StageLoader.color3(g["sky_color"]))
+	sky_mat.set_shader_parameter("_EquatorColor", StageLoader.color3(g["equator_color"]))
 	sky_mat.set_shader_parameter("_SkyGradient", g["sky_gradient"])
 	sky_mat.set_shader_parameter("_EquatorOffset", g["equator_offset"])
 	var h: Dictionary = pal["haze"]
-	sky_mat.set_shader_parameter("haze_color", _v3(h["color"]))
+	sky_mat.set_shader_parameter("haze_color", StageLoader.color3(h["color"]))
 	sky_mat.set_shader_parameter("haze_height", h["height"])
 	sky_mat.set_shader_parameter("haze_strength", h["strength"])
 	var gl: Dictionary = pal["glow"]
 	sky_mat.set_shader_parameter("sun_dir", sun_dir)
-	sky_mat.set_shader_parameter("glow_color", _v3(gl["color"]))
+	sky_mat.set_shader_parameter("glow_color", StageLoader.color3(gl["color"]))
 	sky_mat.set_shader_parameter("glow_strength", gl["strength"])
 	sky_mat.set_shader_parameter("glow_size", gl["size"])
 	sky_mat.set_shader_parameter("horizon_glow_strength", gl["horizon"])
 	sky_mat.set_shader_parameter("stars_amount", pal["stars"])
 	if pal.has("star_color"):
-		sky_mat.set_shader_parameter("star_color", _v3(pal["star_color"]))
+		sky_mat.set_shader_parameter("star_color", StageLoader.color3(pal["star_color"]))
 	var sky := Sky.new()
 	sky.sky_material = sky_mat
 	sky.radiance_size = Sky.RADIANCE_SIZE_32
@@ -102,11 +98,11 @@ func _cloud_mat(layer: Dictionary, baked: bool) -> ShaderMaterial:
 	m.shader = load(CLOUD_SHADER)
 	m.render_priority = int(layer["priority"])
 	m.set_shader_parameter("tint_alpha", c["alpha"])
-	m.set_shader_parameter("lit_color", _v3(c["lit"]))
-	m.set_shader_parameter("mid_color", _v3(c["mid"]))
-	m.set_shader_parameter("shade_color", _v3(c["shade"]))
-	m.set_shader_parameter("sun_color", _v3(c["sun"]))
-	m.set_shader_parameter("haze_color", _v3(pal["haze"]["color"]))
+	m.set_shader_parameter("lit_color", StageLoader.color3(c["lit"]))
+	m.set_shader_parameter("mid_color", StageLoader.color3(c["mid"]))
+	m.set_shader_parameter("shade_color", StageLoader.color3(c["shade"]))
+	m.set_shader_parameter("sun_color", StageLoader.color3(c["sun"]))
+	m.set_shader_parameter("haze_color", StageLoader.color3(pal["haze"]["color"]))
 	m.set_shader_parameter("haze_height", pal["haze"]["height"])
 	m.set_shader_parameter("sun_dir", sun_dir)
 	m.set_shader_parameter("layer_alpha", layer["alpha"])
@@ -139,8 +135,8 @@ func _build_layer(l: Dictionary, dir: String) -> void:
 			var src := _mesh(b["mesh"])
 			var mi := _instance(node, src, _cloud_mat(l, false))
 			var q: Array = b["quat"]
-			var s := _v3(b["scale"])
-			mi.transform = Transform3D(Basis(Quaternion(q[0], q[1], q[2], q[3])) * Basis.from_scale(s), _v3(b["pos"]))
+			var s := StageLoader.color3(b["scale"])
+			mi.transform = Transform3D(Basis(Quaternion(q[0], q[1], q[2], q[3])) * Basis.from_scale(s), StageLoader.color3(b["pos"]))
 			mi.set_instance_shader_parameter("up_half_world", src.mesh.get_aabb().size.z * 0.5 * absf(s.z))
 		return
 	var i := 0
@@ -200,7 +196,7 @@ func _build_celestial() -> void:
 	var m := ShaderMaterial.new()
 	m.shader = load(DISC_SHADER)
 	m.render_priority = -10
-	m.set_shader_parameter("color", _v3(pal["moon_disc"] if night else pal["sun_disc"]))
+	m.set_shader_parameter("color", StageLoader.color3(pal["moon_disc"] if night else pal["sun_disc"]))
 	m.set_shader_parameter("kind", 1 if night else 0)
 	var mi := _instance(node, _mesh(mesh_name), m)
 	_place(mi, mesh_name, cel["az"], cel["el"], cel["dist"], cel["moon_deg"] if night else cel["sun_deg"], false, 0.0)

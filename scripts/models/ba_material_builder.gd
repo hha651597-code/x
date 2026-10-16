@@ -30,9 +30,6 @@ const KO_TINT := Color(0.72, 0.76, 0.9)
 
 static var _params := {}
 
-static func _v3(a: Array) -> Vector3:
-	return Vector3(a[0], a[1], a[2])
-
 static func _v4(a: Array) -> Vector4:
 	return Vector4(a[0], a[1], a[2], a[3])
 
@@ -96,7 +93,7 @@ static func build(meshes: Array[MeshInstance3D], model_dir: String, halo_overlay
 				var f: Dictionary = p["face"]
 				m.shader = FACE
 				m.set_shader_parameter("shadow_tint", _c(f["shadow_tint"]))
-				m.set_shader_parameter("face_light_dir", _v3(f["face_light_dir"]))
+				m.set_shader_parameter("face_light_dir", StageLoader.color3(f["face_light_dir"]))
 				for k in ["shadow_threshold", "rim_area", "rim_level", "rim_strength", "mask_g_sensitivity", "mask_r_apply"]:
 					m.set_shader_parameter(k, f[k])
 				m.set_shader_parameter("view_bias", FACE_VIEW_BIAS)
@@ -106,8 +103,8 @@ static func build(meshes: Array[MeshInstance3D], model_dir: String, halo_overlay
 				var h: Dictionary = p["hair"]
 				m.shader = HAIR
 				m.set_shader_parameter("shadow_tint", _c(h["shadow_tint"]))
-				m.set_shader_parameter("spec_dir_mul", _v3(h["spec_dir_mul"]))
-				m.set_shader_parameter("glow_tint", _v3(h["glow_tint"]))
+				m.set_shader_parameter("spec_dir_mul", StageLoader.color3(h["spec_dir_mul"]))
+				m.set_shader_parameter("glow_tint", StageLoader.color3(h["glow_tint"]))
 				for k in ["shadow_threshold", "spec_top_mul", "spec_top_level", "spec_bot_area", "spec_bot_mul", "spec_strength", "rim_area", "rim_level",
 						"rim_strength", "glow_strength", "mask_g_sensitivity", "mask_r_apply"]:
 					m.set_shader_parameter(k, h[k])
@@ -123,10 +120,10 @@ static func build(meshes: Array[MeshInstance3D], model_dir: String, halo_overlay
 				m.shader = BODY
 				m.set_shader_parameter("shadow_threshold", Vector4(0.5, 0.5, 0.5, 0.5) if weapon else _v4(b["shadow_threshold"]))
 				for li in 4:
-					m.set_shader_parameter("shadow_tint_%d" % li, _v3(p["weapon"]["shadow_col"]) if weapon else _v3(b["shadow_tints"][li]))
+					m.set_shader_parameter("shadow_tint_%d" % li, StageLoader.color3(p["weapon"]["shadow_col"]) if weapon else StageLoader.color3(b["shadow_tints"][li]))
 				for k in ["view_offset", "view_power", "view_strength", "view_edge", "inv_view_power", "inv_view_strength", "base_brightness", "rim_area", "rim_strength"]:
 					m.set_shader_parameter(k, _v4(b[k]))
-				m.set_shader_parameter("glow_tint", _v3(b["glow_tint"]))
+				m.set_shader_parameter("glow_tint", StageLoader.color3(b["glow_tint"]))
 				m.set_shader_parameter("glow_strength", b["glow_strength"])
 				m.set_shader_parameter("mask_g_sensitivity", b["mask_g_sensitivity"])
 				m.set_shader_parameter("fallback_layer", 1)
