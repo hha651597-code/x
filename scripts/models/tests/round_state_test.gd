@@ -98,7 +98,7 @@ func _run() -> void:
 	print("ROUND_STATE ", "PASS" if failures.is_empty() else "FAIL", " checks=", checks, " failures=", failures.size())
 	quit(0 if failures.is_empty() else 1)
 
-# ── helpers ──────────────────────────────────────────────────────────────────
+# helpers
 func _boot(mode: String, p1: int, p2: int, sp1: int, sp2: int) -> void:
 	game.session.begin(mode)
 	game.session.players[0]["fighter"] = p1
@@ -192,7 +192,7 @@ func _wins() -> String:
 func _flash_alpha() -> float:
 	return (screen.hud.get("_flash_col") as Color).a
 
-# ── Restart Round ────────────────────────────────────────────────────────────
+# Restart Round
 func _restart_round() -> void:
 	_new_round()
 	_kill_f2()
@@ -264,7 +264,7 @@ func _restart_round() -> void:
 	check(screen.phase == "fight", "the ready beat after the restart ends in FIGHT")
 	dbg.intro_entry = false
 
-# ── TIME UP ──────────────────────────────────────────────────────────────────
+# Time up
 func _time_up() -> void:
 	# a swing that is active after the buzzer
 	_new_round()
@@ -341,7 +341,7 @@ func _time_up() -> void:
 		check(String(f2.receive_hit(f1, h, f1.position, false)) == "miss" and f2.hp == hp, "no hit lands in the %s phase" % ph)
 	screen.phase = "fight"
 
-# ── rounds that land on the same tick ────────────────────────────────────────
+# rounds that land on the same tick
 ## Two lethal rounds that reach their targets on one tick are a trade: both fighters go down. Only a fighter who was already down
 ## when the tick began stops firing.
 func _trade() -> void:
@@ -439,7 +439,7 @@ func _hitstop_press() -> void:
 	_tick(8)
 	check(f1.state == S.ATTACK, "a heavy tapped in hitstop starts when the hitstop ends (%s)" % f1.state_name())
 
-# ── the loser's assist ───────────────────────────────────────────────────────
+# the loser's assist
 func _late_assist(kind: String, late: int) -> void:
 	# P2 calls the assist and P1 lands the lethal light `blow` ticks later: at 2 nothing has left yet, at `late` it is on its way
 	for blow in [2, late]:
@@ -475,7 +475,7 @@ func _late_assist(kind: String, late: int) -> void:
 	check(f1.position.y >= A.GROUND - 0.5, "%s: the winner stands on the floor in the win pose (y %.1f, state %s)" % [kind, f1.position.y, f1.state_name()])
 	check(screen.projectiles.is_empty() and screen._events.is_empty(), "%s: nothing of the loser's is left to land (%d rounds, %d events)" % [kind, screen.projectiles.size(), screen._events.size()])
 
-# ── a heal pool on a fighter who is dying ────────────────────────────────────
+# a heal pool on a fighter who is dying
 func _heal_revive() -> void:
 	# f1 is Hoshino, f2 is Hina with the Healer assist
 	_new_round()
@@ -525,7 +525,7 @@ func _heal_revive() -> void:
 	check(f1.hp > 500.0, "a lifesteal hit still heals a living attacker (%.1f)" % f1.hp)
 
 
-# ── resuming from pause ──────────────────────────────────────────────────────
+# resuming from pause
 func _resume_from_pause() -> void:
 	f1.human = true
 	for act in ["confirm", "back", "aux"]:
@@ -555,7 +555,7 @@ func _resume_from_pause() -> void:
 	check(f1.input.held == before, "resuming leaves a non-human fighter's input alone")
 	f1.human = false
 
-# ── TIME UP against K.O., overkill ───────────────────────────────────────────
+# TIME UP against K.O., overkill
 func _overkill_and_ko_time() -> void:
 	_new_round()
 	f1.hp = 5.0
@@ -573,16 +573,17 @@ func _overkill_and_ko_time() -> void:
 	var slow := 0
 	for i in 80:
 		_tick()
-		if f2.state == S.KO:
+		if screen.phase == "ko":
 			landed = true
 			slow = screen.slowmo
 			break
-	check(landed, "setup: the killing blow lands (f2 %s)" % f2.state_name())
+	check(landed, "setup: the killing blow ends the fight phase on the hit (f2 %s)" % f2.state_name())
+	check(f2.state != S.KO, "the round ends before the loser lands (f2 %s)" % f2.state_name())
 	check(slow > 0, "a lethal blow in the last ticks plays the K.O. slow-mo, not TIME UP (slowmo %d)" % slow)
 	_to_phase("round_end")
 	check(screen.wins == [1, 0], "a lethal blow in the last ticks still takes the round (wins %s)" % _wins())
 
-# ── the K.O. flash and its impact frame ──────────────────────────────────────
+# the K.O. flash and its impact frame
 func _ko_flash() -> void:
 	game.session.reduce_flashes = false
 	FlashScript.set("_last_impact_ms", -100000)
@@ -621,7 +622,7 @@ func _impact() -> Node:
 			found = c
 	return found
 
-# ── match stats across a restart ─────────────────────────────────────────────
+# match stats across a restart
 func _stats_restart() -> void:
 	_new_round()
 	_press(f1, ["light"])
@@ -646,7 +647,7 @@ func _stats_restart() -> void:
 	_restart()
 	check(is_equal_approx(f1.stat_damage_dealt, dmg) and f1.stat_hits == hits, "a restarted round 2 returns to round 1's totals (%.1f of %.1f, %d of %d hits)" % [f1.stat_damage_dealt, dmg, f1.stat_hits, hits])
 
-# ── infinite EX in training ──────────────────────────────────────────────────
+# infinite EX in training
 func _training_cutin() -> void:
 	_new_round()
 	screen.infinite_meter = true
@@ -670,7 +671,7 @@ func _training_cutin() -> void:
 	_tick(12)
 	check(screen.time_stop > 0 and f1.meter == 0.0, "without infinite EX the ult spends the meter (%.1f)" % f1.meter)
 
-# ── every kit's projectile moves against a foe at every distance ─────────────
+# every kit's projectile moves against a foe at every distance
 func _sweep() -> void:
 	screen.phase = "fight"
 	var foes: Dictionary = {}

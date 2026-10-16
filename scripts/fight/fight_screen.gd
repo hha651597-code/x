@@ -485,6 +485,11 @@ func _tick_fight(live_input := true) -> void:
 	_resolve_hits()
 	_push_apart()
 	_tick_projectiles(down)
+	if not training:     # training refills the dummy instead; the check runs after every hit of the tick so a mutual lethal hit still trades
+		for f in fighters:
+			if f.hp <= 0.0:
+				on_ko(f)     # a juggled corpse must not keep the round open until it lands
+				break
 	if live_input and phase == "fight":
 		if not training:
 			timer_frames -= 1
@@ -1014,7 +1019,7 @@ func on_hit(att: Fighter, def: Fighter, h: Dictionary, combo: int) -> void:
 		hud.flash(Color(1, 1, 1), 0.5)
 
 func on_ko(def: Fighter) -> void:
-	if phase != "fight" or training:
+	if phase != "fight":
 		return
 	phase = "ko"
 	phase_t = 0

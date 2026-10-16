@@ -1235,7 +1235,6 @@ func _do_hit(att: Fighter, h: Dictionary, dir: int, is_projectile: bool) -> void
 		else:
 			vel.x = float(dir) * maxf(absf(vel.x), 7.0)
 			vel.y = minf(vel.y, -9.0)
-		world.on_ko(self)   # juggling a dead fighter must not keep the round open until they land
 
 func _at_wall(dir: int) -> bool:
 	return absf(position.x + float(dir) * 70.0) >= Arena.HALF_W
