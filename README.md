@@ -81,9 +81,13 @@ A fighter counts as finished when it has a complete 3D model, its animations and
 
 ---
 
-Made by Matthew. Find me here:
+<p align="center">Made with love by konekurosawa</p>
 
-- Website: [konekurosawa.org](https://konekurosawa.org/)
-- Twitter: [@konekokurosawa](https://twitter.com/konekokurosawa)
-- Discord: konekurosawa
-- Ko-fi: [ko-fi.com/konekurosawa](https://ko-fi.com/konekurosawa)
+<p align="center">
+<a href="https://konekurosawa.org/"><img src="https://img.shields.io/badge/Website-konekurosawa.org-00AEEF?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website: konekurosawa.org"></a>
+<a href="https://twitter.com/konekokurosawa"><img src="https://img.shields.io/badge/Twitter-@konekokurosawa-000000?style=for-the-badge&logo=x&logoColor=white" alt="Twitter: @konekokurosawa"></a>
+<img src="https://img.shields.io/badge/Discord-konekurosawa-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord: konekurosawa">
+</p>
+
+<p align="center">Leave a buck if you want. It incentivizes me to work on this.<br>
+<a href="https://ko-fi.com/konekurosawa"><img src="https://img.shields.io/badge/Ko--fi-Support%20me-FF5E5B?style=for-the-badge&logo=kofi&logoColor=white" alt="Ko-fi: ko-fi.com/konekurosawa"></a></p>
