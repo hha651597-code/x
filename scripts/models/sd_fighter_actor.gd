@@ -333,10 +333,6 @@ func sync(f: Fighter) -> void:
 	_seen_x = f.position.x
 	_seen_frame = f.frame
 
-## Forget where the body was at the last sync (a fighter placed by hand, a new round), so the next one reads it as standing.
-func forget_motion() -> void:
-	_seen_frame = -1
-
 ## Walking into a foe the push already holds at the minimum spacing (within PRESSED_SLACK px of it): the run clip leans the
 ## trunk far past the feet and no width fixes that, so sync() stands instead. Presentation only; the walk clip is untouched.
 func _pressed_on_foe(f: Fighter) -> bool:

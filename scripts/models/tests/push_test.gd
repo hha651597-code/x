@@ -311,7 +311,7 @@ func _shown(att: Node, gap: float, state: int, dir: int) -> String:
 	att.input = FI.from_held(att.input, dir * att.facing, 0, [])
 	att.vel.x = float(dir * att.facing) * 3.0
 	att.view.sd_actor.blending = false
-	att.view.sd_actor.forget_motion()
+	att.view.sd_actor._seen_frame = -1
 	att.view.sd_actor.sync(att)
 	return String(att.view.sd_actor.anim_name)
 
@@ -336,7 +336,7 @@ func _glide_anims(att: Node, gap: float, foe_setup: Callable, foe_move: Callable
 	foe_setup.call(foe)
 	var actor: Node = att.view.sd_actor
 	actor.blending = false
-	actor.forget_motion()
+	actor._seen_frame = -1
 	var seen: Array = []
 	for t in 12:
 		att.input = FI.from_held(att.input, att.facing, 0, [])
@@ -377,7 +377,7 @@ func _glide(pair: Array) -> void:
 		att.foe.position.x = att.position.x + float(att.facing) * 400.0
 		var actor: Node = att.view.sd_actor
 		actor.blending = false
-		actor.forget_motion()
+		actor._seen_frame = -1
 		var wall: Array = []
 		for t in 12:
 			att.input = FI.from_held(att.input, -att.facing, 0, [])
