@@ -533,7 +533,7 @@ func _tick_projectiles() -> void:
 	var keep: Array = []
 	var down := fighters.filter(func(f: Fighter) -> bool: return f.hp <= 0.0)     # judged before any round lands, so mutual hits still trade
 	for p in projectiles:
-		if not is_instance_valid(p):
+		if not is_instance_valid(p) or p.dead:     # a cancelled round lives on until the engine flushes its free
 			continue
 		if p.owner_f in down:     # a fighter who is down fires no more rounds
 			p.queue_free()

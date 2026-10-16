@@ -76,6 +76,7 @@ func _run() -> void:
 	_trade()
 	_focus_out()
 	_ko_buffer()
+	_cancelled_bullets()
 	_resume_from_pause()
 	_overkill_and_ko_time()
 	_ko_flash()
@@ -382,6 +383,21 @@ func _ko_buffer() -> void:
 		_tick()
 		froze = froze or screen.time_stop > 0 or screen.world_frozen
 	check(not froze and f2.meter >= 100.0, "a buffered EX at the K.O. starts no cut-in (frozen %s, meter %.1f)" % [str(froze), f2.meter])
+
+## A cancelled round is dead for the rest of the step: two sim steps in one engine frame must not move it again.
+func _cancelled_bullets() -> void:
+	_new_round([0, 0], 1, -300.0, 300.0)
+	var h: Dictionary = M.H(Rect2(), 50.0, 14, 10, 3.0, {"hitstop": 0})
+	for f in [f1, f2]:
+		screen.spawn_projectile(f, M._spawn(0, Vector2(0, -150.0), Vector2(20, 0), h, {"size": Vector2(30, 10)}))
+	screen.projectiles[0].position = Vector2(-10.0, A.GROUND - 150.0)
+	screen.projectiles[1].position = Vector2(10.0, A.GROUND - 150.0)
+	var shots: Array = screen.projectiles.duplicate()
+	screen._tick_projectiles()
+	check(shots[0].dead and shots[1].dead, "setup: two opposing rounds cancel")
+	var at: Vector2 = shots[0].position
+	screen._tick_projectiles()
+	check(shots[0].position == at, "a cancelled round does not move again before it is freed (%s -> %s)" % [at, shots[0].position])
 
 # ── the loser's assist ───────────────────────────────────────────────────────
 func _late_assist(kind: String, late: int) -> void:
