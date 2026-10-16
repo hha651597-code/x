@@ -19,7 +19,6 @@ const SCREEN_PATHS := {
 	"fight": "res://scripts/fight/fight_screen.gd",
 	"result": "res://scripts/screens/result_screen.gd",
 	"gallery": "res://scripts/screens/gallery_screen.gd",
-	"rigtest": "res://scripts/sprites/rig_test_screen.gd",
 	"sdpreview": "res://scripts/models/sd_preview_screen.gd",
 }
 

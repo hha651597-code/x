@@ -1,8 +1,0 @@
-{"timeout": 240, "steps": [
- {"session": {"mode": "versus-cpu", "players": [{"claimed": true, "device": "kb1", "fighter": 10005, "special": 10017}, {"claimed": false, "fighter": 10004, "special": 10005}]}},
- {"cpu_vs_cpu": true}, {"sim_mult": 8},
- {"go": "fight", "style": "cut"},
- {"wait": 4.0}, {"print": true},
- {"until_screen": "result", "max": 200},
- {"print": true}
-]}

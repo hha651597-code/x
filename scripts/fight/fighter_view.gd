@@ -6,13 +6,6 @@ extends Node2D
 ##  * Pose channels are driven by critically/under-damped springs: the state machine only sets TARGETS (anticipation ->
 ##    snap -> follow-through per move) and events (hit, land, shot) kick the springs, which gives overshoot and weight.
 ##  * Also: ground shadow, EX-ready halo, super/buff/shield auras, afterimage pool, casings, swish arcs, KO / win effects.
-##  * SPRITE MODE (a student whose frame set exists, see scripts/sprites/sprite_sets.gd): real frame-by-frame
-##    drawings played by SpriteMotion (state / move frame -> frame) through a SpriteActor (frame + smear + official halo).
-##    The drawings are never warped: the springs only add whole-body squash, breathing, shove and hit jitter around the feet.
-##    PIXEL ART sets (SpriteSet.pixel): not even that — no squash / breathing / stretch (it would make art pixels uneven),
-##    the body sits on a world grid of whole art pixels (shove / jitter / hops move it in whole pixels), ghosts and the
-##    smear are nearest-sampled copies on the same grid, and SpritePixel.apply_camera keeps the camera zoom on levels
-##    where an art pixel is a whole number of device pixels.
 
 const SHADER := preload("res://shaders/fighter.gdshader")
 const SD_ACTOR := preload("res://scripts/models/sd_fighter_actor.gd")
@@ -49,15 +42,6 @@ var rig: Node2D
 var body: Sprite2D
 var back: DrawProxy
 var mat: ShaderMaterial
-var rig_mode := false                 # true when the student has a real sprite rig (scripts/sprites/)
-var sprite_rig: SpriteRig
-var motion: RigMotion
-var _native := 1
-var sprite_mode := false              # true when the student plays real baked sprite frames (scripts/sprites/)
-var actor: SpriteActor
-var smotion: SpriteMotion
-var sset: SpriteSet
-var _ko_t := 0.0
 var sd_mode := false
 var sd_actor: Node2D
 var _shield_fx := true                # sd.json "hide_shield_fx" turns off the shield dome and glow
@@ -137,9 +121,6 @@ func setup(fighter: Fighter) -> void:
 		_shield_fx = not bool(sd_actor.cfg["hide_shield_fx"])
 		sd_mode = true
 		return
-	if SpriteSets.has_set(int(f.data["id"])):
-		_setup_sprite_mode(int(f.data["id"]))
-		return
 	body = Sprite2D.new()
 	var tex: Texture2D = UI.portrait(int(f.data["id"]))
 	var tw := float(tex.get_width())
@@ -147,21 +128,6 @@ func setup(fighter: Fighter) -> void:
 	body.texture = mip_texture(tex)
 	_tex_scale = Arena.SPRITE_H / th
 	_glow_col = Color(f.stats["color"]).lerp(Color.WHITE, 0.35)
-	var rid := int(f.data["id"])
-	if Rigs.has_rig(rid):
-		# real sprite rig: skeleton + the official Spine parts / expressions (see scripts/sprites/)
-		var info := Rigs.info(rid)
-		sprite_rig = SpriteRig.load_rig(String(info["rig"]))
-		_native = int(info["native"])
-		var rs := Arena.SPRITE_H / sprite_rig.height
-		sprite_rig.scale = Vector2(rs * float(_native), rs)
-		rig.add_child(sprite_rig)
-		motion = Rigs.make_motion(rid)
-		motion.setup(sprite_rig, f, _native)
-		body.visible = false      # kept only so the HUD / VS screens can still read the portrait texture
-		rig.add_child(body)
-		rig_mode = true
-		return
 	_setup_sprite(body, tw, th)
 	mat = ShaderMaterial.new()
 	mat.shader = SHADER
@@ -169,38 +135,6 @@ func setup(fighter: Fighter) -> void:
 	body.material = mat
 	rig.add_child(body)
 	_build_ghosts(tw, th)
-
-## Real sprite frames: SpriteActor under `rig` (flipped by facing), `body` = the displayed frame, `mat` = its material.
-func _setup_sprite_mode(rid: int) -> void:
-	sset = SpriteSets.for_id(rid)
-	actor = SpriteActor.new()
-	actor.name = "Sprite"
-	actor.setup(sset, Color(1, 1, 1, 0.95) if f.slot == 1 else Color(0.92, 0.96, 1.0, 0.95), float(f.slot) * 1.7)
-	rig.add_child(actor)
-	smotion = SpriteMotion.new()
-	smotion.setup(sset, f)
-	smotion.update()
-	actor.show_frame(smotion.frame, smotion.opts)
-	body = actor.spr
-	mat = actor.mat
-	sprite_mode = true
-	if sset.pixel and SpritePixel.harness():
-		print("PIXELSPRITE %s P%d: pixel art, %.1f world px per art px, halo %s, origin on a %.0f px grid" % [
-			sset.key, f.slot, sset.art_px, String(actor.halo.get_meta("pixel_png", "(hi-res layers)")), sset.art_px])
-	var parent := f.get_parent()
-	if parent == null:
-		return
-	for i in GHOSTS:
-		var sp := SpriteActor.new_sprite(sset.pixel)
-		var gm := ShaderMaterial.new()
-		gm.shader = SpriteActor.SHADER
-		gm.set_shader_parameter("pixel_art", sset.pixel)
-		gm.set_shader_parameter("outline_px", 0.0)
-		sp.material = gm
-		sp.z_index = 2
-		sp.visible = false
-		parent.add_child(sp)
-		_ghosts.append({"spr": sp, "mat": gm, "age": 0.0, "life": 0.3, "alpha": 0.5})
 
 func _setup_sprite(sp: Sprite2D, tw: float, th: float) -> void:
 	var px := th * PAD_X
@@ -238,8 +172,6 @@ func _build_ghosts(tw: float, th: float) -> void:
 func step(delta: float) -> void:
 	delta = minf(delta, 0.05)
 	_time += delta
-	if sprite_mode and sset.pixel:
-		SpritePixel.apply_camera(f.world)
 	if sd_mode:
 		sd_actor.sync(f)          # before the events, so shots, flashes and casings read this tick's pose
 	if f.state == Fighter.S.ATTACK:
@@ -262,8 +194,6 @@ func _parts() -> FxParticles:
 func _muzzle_pos() -> Vector2:
 	if sd_mode:
 		return f.position + rig.transform * sd_actor.anchor_local("muzzle")
-	if sprite_mode and actor.has_fx():
-		return f.position + rig.transform * actor.fx_local()
 	return f.position + Vector2(float(f.facing) * 54.0, -176.0)
 
 ## The muzzle for effects the sim starts mid-tick (a projectile, a charge cue), before this view's own step: an SD
@@ -273,12 +203,10 @@ func shot_origin() -> Vector2:
 		sd_actor.sync(f)
 	return _muzzle_pos()
 
-## World position of the head (sprite mode: the frame's halo anchor), for effects that want it.
+## World position of the head, for effects that want it.
 func head_pos() -> Vector2:
 	if sd_mode:
 		return f.position + rig.transform * sd_actor.anchor_local("head")
-	if sprite_mode:
-		return f.position + rig.transform * actor.head_local()
 	return f.position + Vector2(0.0, -Arena.SPRITE_H * 0.9)
 
 # ── events: detect sim-state changes and turn them into spring kicks / effects ─
@@ -342,8 +270,6 @@ func _on_state(old: int, new: int) -> void:
 		for g in _ghosts:
 			g["spr"].visible = false
 		_super = 0.0
-		if sprite_mode:
-			actor.halo.snap()
 		return
 	if old == S.AIRHIT and (new == S.DOWN or new == S.KO):
 		# a carried throw's tumble has turned the roll spring past whole turns: lie down the short way round, not backwards through them
@@ -398,10 +324,6 @@ func _land_squash(k: float) -> void:
 func _on_hit() -> void:
 	_flash_col = Color(1.0, 0.97, 0.9)
 	var s := clampf(float(f.hitstop) / 9.0, 0.5, 1.6)
-	if rig_mode:
-		s *= 0.5
-	elif sprite_mode:
-		s *= 0.4
 	_hit_shake = s
 	_vel[LEAN] -= 5.5 * s
 	_vel[ROT] -= 4.0 * s
@@ -414,7 +336,7 @@ func _on_hit() -> void:
 func _on_block() -> void:
 	_flash_col = Color(0.62, 0.95, 1.0)
 	_hit_shake = 0.5
-	_vel[PX] -= 520.0 * (0.4 if sprite_mode else 1.0)
+	_vel[PX] -= 520.0
 	_vel[LEAN] -= 1.5
 	_val[SYL] = 0.92
 	_val[SX] = 1.05
@@ -422,10 +344,6 @@ func _on_block() -> void:
 func _on_shot(count: int) -> void:
 	var k: Array = KICK.get(_weapon, KICK["AR"])
 	var amp := 1.0 if f.state == Fighter.S.ATTACK else 0.5
-	if rig_mode:
-		amp *= 0.3
-	elif sprite_mode:
-		amp *= 0.12
 	if f.move.get("cutin", false):
 		amp *= 1.0 if f.move.get("frames", 0) < 60 else 0.55
 	_vel[PX] -= float(k[0]) * amp
@@ -435,7 +353,7 @@ func _on_shot(count: int) -> void:
 	var p := _parts()
 	if p and not _weapon in NO_CASING and (count == 1 or _weapon == "SG"):
 		var o := f.position + Vector2(float(f.facing) * 30.0, -176.0)
-		if sd_mode or (sprite_mode and actor.has_fx()):
+		if sd_mode:
 			o = _muzzle_pos() - Vector2(float(f.facing) * 40.0, 0.0)
 		p.casing(o, f.facing, 1.0 if _weapon != "SG" else 1.4)
 
@@ -565,10 +483,6 @@ func add_ghost(col := Color(0.7, 0.9, 1.0), life := 0.28) -> void:
 	gm.set_shader_parameter("flash_color", col)
 	gm.set_shader_parameter("glow", 0.0)
 	gm.set_shader_parameter("dim", 1.0)
-	if sprite_mode:
-		sp.texture = body.texture
-		sp.offset = body.offset
-		gm.set_shader_parameter("desat", 0.0)
 	sp.global_transform = body.global_transform
 	sp.visible = true
 	g["age"] = 0.0
@@ -586,8 +500,6 @@ func _update_ghosts(delta: float) -> void:
 			sp.visible = false
 			continue
 		var op := float(g["alpha"]) * (1.0 - k) * (1.0 - k)
-		if sprite_mode and sset.pixel:
-			op = ceilf(op * 4.0) / 4.0           # pixel art: the afterimage fades in visible steps
 		(g["mat"] as ShaderMaterial).set_shader_parameter("opacity", op)
 
 # ── pose targets ─────────────────────────────────────────────────────────────
@@ -608,9 +520,6 @@ static func _ease(x: float) -> float:
 	return x * x * (3.0 - 2.0 * x)
 
 func _targets(delta: float) -> void:
-	if sprite_mode:
-		_targets_sprite()
-		return
 	var S := Fighter.S
 	for i in NCH:
 		_tg[i] = NEUTRAL[i]
@@ -739,58 +648,6 @@ func _targets(delta: float) -> void:
 				_t(SYT, 1.012)
 				_t(PX, -2.0)
 	# dim / flash / tint are applied in _apply
-
-## Sprite mode: the drawings do the acting. The springs rest at neutral (events still kick them: hit shove, landing
-## squash…); only when a lying / flying slot fell back to a standing drawing do we borrow the puppet's whole-body pose.
-func _targets_sprite() -> void:
-	for i in NCH:
-		_tg[i] = NEUTRAL[i]
-	_fmul = 1.0
-	smotion.update()
-	var S := Fighter.S
-	if f.state == S.BACKDASH:
-		# the back-dash drawing is a hop: lift the whole body on an arc (the sim keeps her on the floor)
-		_t(PY, 14.0 * sin(PI * clampf(float(f.sf) / 18.0, 0.0, 1.0)))
-	if not smotion.needs_body_pose():
-		return
-	match f.state:
-		S.DOWN, S.KO:
-			_t(PIVOT, 0.26)
-			_t(ROT, -1.52)
-			_t(PY, -42.0)
-			_t(PX, 62.0)
-			_fmul = 0.9
-		S.GETUP:
-			var g := _ease(float(f.sf) / 12.0)
-			_t(PIVOT, 0.26)
-			_t(ROT, -1.52 * (1.0 - g))
-			_t(PY, -42.0 * (1.0 - g))
-			_t(PX, 62.0 * (1.0 - g))
-			_fmul = 1.25
-		S.AIRHIT:
-			var held := f.carry_anim != ""
-			_t(PIVOT, 0.23 if held else 0.34)
-			_t(ROT, deg_to_rad(f.carry_roll) * float(f.facing) if held else (-0.65 if f.vel.y < 0.0 else -1.15))
-			_fmul = 0.8
-
-## Rig mode: the bone poses do the acting; the spring channels only add a little lunge / hop.
-func _pose_attack_rig() -> void:
-	var m: Dictionary = f.move
-	if m.is_empty():
-		return
-	var p: Dictionary = m["pose"]
-	var st := float(m["startup"])
-	var ac := float(m["active"])
-	var rc := float(m["recovery"])
-	var fr := _mff
-	var s := 0.0
-	if fr >= st and fr < st + ac + 1.0:
-		s = 1.0
-	elif fr >= st + ac + 1.0:
-		s = 1.0 - _ease((fr - st - ac - 1.0) / maxf(rc * 0.8, 1.0))
-	_ta(PX, float(p.get("lunge", 0.0)) * 0.5 * s)
-	_ta(PY, float(p.get("hop", 0.0)) * s)
-	_fmul = 1.35 if s > 0.5 else 1.0
 
 func _pose_air(_attacking: bool) -> void:
 	var asc := clampf(-f.vel.y / 17.0, -1.0, 1.0)
@@ -979,9 +836,6 @@ func _apply(delta: float) -> void:
 		if f._flash <= 0.01:
 			_flash_col = Color.WHITE
 		return
-	if sprite_mode:
-		_apply_sprite(delta)
-		return
 	var rot := _val[ROT] * fc
 	var anchor := Vector2(_val[PX] * fc, -_val[PY]) + _jit
 	var pv := Vector2(0.0, -_val[PIVOT] * Arena.SPRITE_H)
@@ -1008,102 +862,10 @@ func _apply(delta: float) -> void:
 		"sx": clampf(_val[SX], 0.7, 1.4), "puff": _val[PUFF], "wob": _val[WOB], "wob_ph": _time * 16.0,
 	}
 	_u = u
-	if rig_mode:
-		_apply_rig(delta, op, glow, gcol)
-		if f._flash <= 0.01:
-			_flash_col = Color.WHITE
-		return
 	for k in u:
 		mat.set_shader_parameter(k, u[k])
 	if f._flash <= 0.01:
 		_flash_col = Color.WHITE
-
-## Sprite mode: place the frame (feet on the fighter's position, flipped by facing), whole-body squash / breathing /
-## smear stretch around the feet, hit jitter, then the shader look and the halo.
-func _apply_sprite(delta: float) -> void:
-	var S := Fighter.S
-	var fc := float(f.facing)
-	var px := sset.pixel
-	var lying := smotion.needs_body_pose()
-	var rot := _val[ROT] * fc if lying else 0.0
-	if px:
-		rot = snappedf(rot, PI * 0.5)            # pixel art turns only in quarter turns (exact on the pixel grid)
-	var sy := 1.0 + (clampf(_val[SYL], 0.5, 1.4) - 1.0) * 0.45
-	var sx := 1.0 + (clampf(_val[SX], 0.7, 1.4) - 1.0) * 0.45
-	if smotion.breathing():
-		var br := sin(_time * 2.4 + float(f.slot) * 1.3)
-		sy *= 1.0 + 0.007 * br
-		sx *= 1.0 - 0.003 * br
-	if smotion.smear > 0.0:
-		sx *= 1.0 + 0.06 * smotion.smear
-		sy *= 1.0 - 0.02 * smotion.smear
-	if px:
-		sx = 1.0                                 # pixel art is never squashed / stretched (uneven pixels)
-		sy = 1.0
-	var anchor := Vector2(_val[PX] * fc, -_val[PY]) + _jit
-	if lying:
-		var pv := Vector2(0.0, -_val[PIVOT] * Arena.SPRITE_H)
-		var tr := Transform2D(rot, Vector2(fc, 1.0), 0.0, Vector2.ZERO)
-		anchor += pv - tr * pv
-	if px:
-		# one world grid of whole art pixels for both fighters, their halos, ghosts and smears: the feet land on a pixel
-		# corner, shove / hit jitter / hops move the body in whole pixels
-		var ap := sset.art_px
-		anchor = (f.position + anchor).snapped(Vector2(ap, ap)) - f.position
-	rig.position = anchor
-	rig.rotation = rot
-	rig.scale = Vector2(fc * sx, sy)
-	if is_instance_valid(_swish_fx):
-		_swish_fx.data["foff"] = Vector2(_val[PX] * fc, -_val[PY])
-	actor.show_frame(smotion.frame, smotion.opts)
-	if SpriteActor._TRACE2 and String(get_meta("_trace_slot", "")) != smotion.slot:       # SPRITE_TRACE=2: print every slot change
-		set_meta("_trace_slot", smotion.slot)
-		print("SPRITESLOT ", sset.key, " ", Fighter.STATE_NAMES[f.state], " ", smotion.slot, " ", smotion.frame)
-	# KO: the halo fades away once she is down (a knocked-out student loses her halo)
-	_ko_t = _ko_t + delta if f.state == S.KO else 0.0
-	actor.update_fx(delta, smotion.smear, 1.0 - clampf((_ko_t - 0.5) / 0.7, 0.0, 1.0))
-	var is_ko := f.state == S.KO
-	var glow := maxf(_ex_ready * (0.22 + 0.1 * sin(_time * 4.0)), _super * (0.75 + 0.2 * sin(_time * 18.0)))
-	var gcol := _glow_col
-	if f.buff_frames > 0:
-		glow = maxf(glow, 0.45)
-		gcol = Color(1.0, 0.85, 0.35)
-	if f.shield_frames > 0 and _shield_fx:
-		glow = maxf(glow, 0.4)
-		gcol = Color(0.55, 0.88, 1.0)
-	var op := 1.0
-	if f.invuln > 0 and (f.frame / 3) % 2 == 0 and f.state == S.GETUP:
-		op = 0.55
-	actor.set_look(f._flash, _flash_col, f.dim, 0.45 if is_ko else 0.0, op, glow, gcol)
-	_u = {"dim": f.dim}
-	if f._flash <= 0.01:
-		_flash_col = Color.WHITE
-
-## Rig mode: the spring channels still drive the whole-body transform (above); lean/twist/wobble become extra bone
-## rotations, and the character's RigMotion supplies the keyed bone poses + expression.
-func _apply_rig(delta: float, op: float, glow: float, gcol: Color) -> void:
-	var lean_deg := rad_to_deg(_val[LEAN]) * float(_native)
-	var tw_deg := rad_to_deg(_val[TWIST]) * float(_native)
-	var wob := _val[WOB] * sin(_time * 16.0)
-	var extra := {
-		"spine": [lean_deg * 0.45 + tw_deg * 0.3, 0.0, 0.0],
-		"chest": [lean_deg * 0.3 - tw_deg * 0.2, 0.0, 0.0],
-		"head": [lean_deg * 0.25 + tw_deg * 0.1, 0.0, 0.0],
-		"hairL": [wob * 14.0, 0.0, 0.0],
-		"hairR": [-wob * 14.0, 0.0, 0.0],
-	}
-	motion.extra = extra
-	motion.update(delta, _time, _mff)
-	# hit flash / tint / dim / opacity on the whole sprite
-	var tint := Color.WHITE
-	if f.dim < 1.0:
-		tint = Color(f.dim, f.dim, f.dim, 1.0)
-	if f._flash > 0.01:
-		tint = tint.lerp(_flash_col, clampf(f._flash, 0.0, 1.0) * 0.8)
-	if f.state == Fighter.S.KO:
-		tint = tint.lerp(Color(0.6, 0.62, 0.7), 0.5)
-	sprite_rig.modulate = Color(tint.r, tint.g, tint.b, op)
-	sprite_rig.glow_scale = 1.0 + glow
 
 # ── back layer (behind the sprite): shadow, halo, auras, shield ──────────────
 func _draw_back(ci: Node2D) -> void:
