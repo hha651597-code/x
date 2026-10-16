@@ -86,7 +86,7 @@ A fighter counts as finished when it has a complete 3D model, its animations and
 <p align="center">
 <a href="https://konekurosawa.org/"><img src="https://img.shields.io/badge/Website-konekurosawa.org-00AEEF?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website: konekurosawa.org"></a>
 <a href="https://twitter.com/konekokurosawa"><img src="https://img.shields.io/badge/Twitter-@konekokurosawa-000000?style=for-the-badge&logo=x&logoColor=white" alt="Twitter: @konekokurosawa"></a>
-<img src="https://img.shields.io/badge/Discord-konekurosawa-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord: konekurosawa">
+<a href="https://discord.gg/Wf2jtBuNnb"><img src="https://img.shields.io/badge/Discord-Join%20the%20server-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord: join the server"></a>
 </p>
 
 <p align="center">Leave a buck if you want. It incentivizes me to work on this.<br>
