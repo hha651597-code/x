@@ -266,11 +266,11 @@ func _draw_credits_button(c: Control, a: float) -> void:
 	var hot := CREDITS_RECT.has_point(_over.get_local_mouse_position()) and _credits == null
 	var r := CREDITS_RECT
 	Menu.nine(c, "Combat__Common_Btn_BG", r, Menu.K, Color(BaTokens.CONFIRM if hot else BaTokens.CYAN_PLATE, a), BaTokens.SHEAR)
-	var disc := Rect2(r.position + Vector2(12.0, 4.0), Vector2(26.0, 26.0))
+	var disc := Rect2(r.position + Vector2(14.0, 3.0), Vector2(22.0, 22.0))   # the plate art is shorter than the rect: it spans y 1 to 27
 	BaArt.blit(c, "Combat__Combat_CardBg_EX_CostTag", disc, Color(1, 1, 1, a))
-	Menu.label(c, "C", Vector2(disc.get_center().x, disc.get_center().y + 6.0), 16, Color(1, 1, 1, a), Color(0, 0, 0, 0), 0, 1, 800)
+	Menu.label(c, "C", Vector2(disc.get_center().x, disc.get_center().y + 5.0), 14, Color(1, 1, 1, a), Color(0, 0, 0, 0), 0, 1, 800)
 	var ink := Color(BaTokens.CONFIRM_INK, a) if hot else Color(1, 1, 1, a)
-	Menu.label(c, "Credits", Vector2(r.position.x + 52.0, r.get_center().y + 7.0), 19, ink, Color(0, 0, 0, 0) if hot else Color(BaTokens.HEAD_OUTLINE, a), 0 if hot else 3, 0, 800)
+	Menu.label(c, "Credits", Vector2(r.position.x + 50.0, r.get_center().y + 7.0), 19, ink, Color(0, 0, 0, 0) if hot else Color(BaTokens.HEAD_OUTLINE, a), 0 if hot else 3, 0, 800)
 
 func logo_rect() -> Rect2:
 	var e := _ease((_t - 0.2) / 0.7)
