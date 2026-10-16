@@ -66,7 +66,7 @@ func _run() -> void:
 func _fake(info: Dictionary, name: String, id := 0) -> void:
 	CG.fake = {id: {"info": info, "name": name}}
 
-# ── the decision table ───────────────────────────────────────────────────────
+# the decision table
 func _classify() -> void:
 	# label, info as Godot 4.7.2 builds it (Strings), joy name, expected family
 	var cases := [
@@ -113,7 +113,7 @@ func _seam() -> void:
 	CG.fake = {}
 	CG.forget()
 
-# ── the pictures ─────────────────────────────────────────────────────────────
+# the pictures
 func _files() -> void:
 	for fam in CG.FAMILIES:
 		for a in ACTIONS:
@@ -186,7 +186,7 @@ func _by_position() -> void:
 	CG.fake = {}
 	CG.forget()
 
-# ── settings ─────────────────────────────────────────────────────────────────
+# settings
 func _settings(sess: GDScript) -> void:
 	var s: Session = sess.new()
 	check(s.glyphs == "auto", "Glyphs defaults to Auto")
@@ -262,7 +262,7 @@ func _options() -> void:
 	game.session.glyphs = "auto"
 	check(not (game.stack.back() == o), "Options closes")
 
-# ── the assign screen ────────────────────────────────────────────────────────
+# the assign screen
 func _assign() -> void:
 	_fake({"vendor_id": "1356", "product_id": "3302", "raw_name": "DualSense Wireless Controller"}, "PS5 Controller")
 	game.session.reset()
@@ -335,7 +335,7 @@ func _ink(img: Image) -> int:
 				n += 1
 	return n
 
-# ── the HUD ──────────────────────────────────────────────────────────────────
+# the HUD
 func _hud() -> void:
 	var Bottom: GDScript = load("res://scripts/fight/hud_bottom.gd")
 	var Training: GDScript = load("res://scripts/fight/hud_training.gd")

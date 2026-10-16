@@ -56,7 +56,7 @@ func _run() -> void:
 	print("HUD_FACADE_TEST ", "PASS" if failures.is_empty() else "FAIL", " checks=", checks, " failures=", failures.size())
 	quit(0 if failures.is_empty() else 1)
 
-# ── what the facade builds ───────────────────────────────────────────────────
+# what the facade builds
 func _layers() -> void:
 	var kids := hud.get_children()
 	var names: Array = kids.map(func(n: Node) -> String: return n.get_script().resource_path.get_file())
@@ -74,7 +74,7 @@ func _layers() -> void:
 	for node in [hud._top, hud._bottom, hud._feed, hud._train]:
 		check(node in hud._dim_nodes, "%s ducks under the cut-in" % node.get_script().resource_path.get_file())
 
-# ── one writer per effect ────────────────────────────────────────────────────
+# one writer per effect
 func _chimes() -> void:
 	screen.f1.meter = 0.0
 	screen.f2.meter = 0.0
@@ -99,7 +99,7 @@ func _chimes() -> void:
 	check(int(sfx.played.get("ex_ready", 0)) == before + 2, "and nothing while it stays full")
 	screen.f1.meter = 0.0
 
-# ── the winner of a banner ───────────────────────────────────────────────────
+# the winner of a banner
 ## A Hina against a Hina: the name cannot tell the sides apart, so the side that just gained a win is the winner.
 func _winner() -> void:
 	game.session.players[1]["cpu"] = false
@@ -125,7 +125,7 @@ func _winner() -> void:
 	screen.wins = [0, 0]
 	hud._wins_banner = [0, 0]
 
-# ── ducking under the EX cut-in ──────────────────────────────────────────────
+# ducking under the EX cut-in
 func _ducking() -> void:
 	await process_frame
 	for node in hud._dim_nodes:
@@ -144,7 +144,7 @@ func _ducking() -> void:
 	for node in hud._dim_nodes:
 		check(near((node as Control).modulate.a, 1.0), "%s comes back when the freeze ends" % node.get_script().resource_path.get_file())
 
-# ── the round-start entrance ─────────────────────────────────────────────────
+# the round-start entrance
 func _entrance() -> void:
 	hud.set_process(false)
 	hud._entered = false
@@ -169,7 +169,7 @@ func _entrance() -> void:
 	hud.set_process(true)
 	await process_frame
 
-# ── the HUD clock stands still while the game is paused ──────────────────────
+# the HUD clock stands still while the game is paused
 func _paused_clock() -> void:
 	hud.banner("K.O.", "", Color.WHITE, 0.8)
 	for i in 3:
@@ -199,7 +199,7 @@ func _paused_clock() -> void:
 	screen.set_paused(false)
 	screen.f2.hp = screen.f2.max_hp
 
-# ── Reduce Flashes caps the hud's full-screen flash ──────────────────────────
+# Reduce Flashes caps the hud's full-screen flash
 func _flash_cap() -> void:
 	var live: Object = game.session
 	live.reduce_flashes = true
@@ -210,7 +210,7 @@ func _flash_cap() -> void:
 	check(is_equal_approx(hud._flash_col.a, 0.8), "with it off the flash is untouched")
 	hud._flash_col.a = 0.0
 
-# ── the pause scrim blurs the whole battle ───────────────────────────────────
+# the pause scrim blurs the whole battle
 ## Without a BackBufferCopy ahead of it the blur shader reads the screen as an earlier shader saw it: the stage, no fighters, no hud.
 func _pause_sees_battle() -> void:
 	for i in 3:
@@ -232,7 +232,7 @@ func _pause_sees_battle() -> void:
 	screen.set_paused(false)
 	await process_frame
 
-# ── HUD_DEMO ─────────────────────────────────────────────────────────────────
+# Hud_demo
 func _demo() -> void:
 	var f1: Node = screen.f1
 	var f2: Node = screen.f2

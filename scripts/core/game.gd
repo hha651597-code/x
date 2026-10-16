@@ -54,7 +54,7 @@ func _notification(what: int) -> void:
 	if what == NOTIFICATION_WM_CLOSE_REQUEST:
 		session.save_settings()
 
-# ── routing ──────────────────────────────────────────────────────────────────
+# routing
 func current() -> Screen:
 	return stack.back() if not stack.is_empty() else null
 
@@ -161,7 +161,7 @@ func pop() -> bool:
 	screen_changed.emit(below.screen_name if below else "")
 	return true
 
-# ── debug ────────────────────────────────────────────────────────────────────
+# debug
 func probe() -> Dictionary:
 	var names := []
 	var screens := {}

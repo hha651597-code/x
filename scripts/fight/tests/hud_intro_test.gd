@@ -92,7 +92,7 @@ func _open_match(mode: String) -> void:
 func _gone() -> void:
 	check(hud.get("_intro") == null and not ResourceLoader.exists("res://scripts/fight/hud_intro.gd"), "the stage entry has no HUD layer of its own")
 
-# ── the real first round ─────────────────────────────────────────────────────
+# the real first round
 func _fresh() -> void:
 	screen.set("_entered", false)
 	screen.f1.human = true
@@ -220,7 +220,7 @@ func _probe() -> Dictionary:
 	hud.visible = true
 	return {"diff": _differ(on, off1), "noise": _differ(off1, off2)}
 
-# ── the whip-in under the falling cover ──────────────────────────────────────
+# the whip-in under the falling cover
 func _whip_in() -> void:
 	_fresh()
 	_to_round_intro()
@@ -249,7 +249,7 @@ func _whip_in() -> void:
 	check(falls and ramp <= RAMP_MAX, "the cover only falls, over %d ticks after round_intro (limit %d)" % [ramp, RAMP_MAX])
 	check(screen.phase == "fight" and hud._top.position.y == 0.0 and hud._bottom.position.y == 0.0 and _rails_alpha_all(1.0), "FIGHT!: the rails are home and fully shown")
 
-# ── the facade against a stub world ──────────────────────────────────────────
+# the facade against a stub world
 ## alpha = (1 - 0.82 x cut-in) x (1 - cover), whatever the cut fields say.
 func _stub_world() -> void:
 	var real_world: Node = hud.world
@@ -303,7 +303,7 @@ func _stub_world() -> void:
 	w.free()
 	fake.free()
 
-# ── pause, skip, restart ─────────────────────────────────────────────────────
+# pause, skip, restart
 func _pause() -> void:
 	_fresh()
 	_tick(shots / 2)
@@ -365,7 +365,7 @@ func _restart() -> void:
 		var n := _to_fight()
 		check(screen.phase == "fight" and n < shots, "restart at %d: a plain intro, shorter than the entry, then the fight (%d ticks)" % [at, n])
 
-# ── later rounds and training ────────────────────────────────────────────────
+# later rounds and training
 func _later_rounds() -> void:
 	_fresh()
 	_to_fight()

@@ -77,7 +77,7 @@ func _key(code: Key, ctrl := false) -> InputEventKey:
 	ev.ctrl_pressed = ctrl
 	return ev
 
-# ── which screen a launch opens ──────────────────────────────────────────────
+# which screen a launch opens
 func _boot() -> void:
 	var dbg: Node = root.get_node("Dbg")
 	var saved_screen: String = dbg.start_screen
@@ -94,7 +94,7 @@ func _boot() -> void:
 	dbg._script_path = saved_script
 	check(game.SCREEN_PATHS.has("title"), "the router knows the title")
 
-# ── the random film ──────────────────────────────────────────────────────────
+# the random film
 func _pick() -> void:
 	var avail: Array = T.available_films()
 	check(avail.size() == 8, "all eight films are in the build (%d)" % avail.size())
@@ -109,7 +109,7 @@ func _pick() -> void:
 	check(seen.size() == avail.size(), "every film can be picked (%d of %d)" % [seen.size(), avail.size()])
 	check(T.pick_film(["only"], "only", 0.5) == "only" and T.pick_film([], "x", 0.5) == "", "one film repeats, none gives an empty pick")
 
-# ── what starts the game ─────────────────────────────────────────────────────
+# what starts the game
 func _flow() -> void:
 	T._last_film = ""
 	var scr: Node = await _open("title")
@@ -173,7 +173,7 @@ func _press(scr: Node, way: String) -> void:
 		_:
 			scr.on_action("kb2", "start")
 
-# ── Reduce Flashes ───────────────────────────────────────────────────────────
+# Reduce Flashes
 func _flashes() -> void:
 	var scr: Node = await _open("title")
 	var lo := 9.0
@@ -198,7 +198,7 @@ func _flashes() -> void:
 	check(vals.size() > 10 and vals.all(func(v: float) -> bool: return is_equal_approx(v, vals[0])), "the prompt holds steady")
 	game.session.reduce_flashes = false
 
-# ── layout ───────────────────────────────────────────────────────────────────
+# layout
 func _layout() -> void:
 	var scr: Node = await _open("title")
 	_tick_to(scr, 2.5)
@@ -219,7 +219,7 @@ func _layout() -> void:
 	check(86.0 - credits_w * 0.5 >= 44.0 and 86.0 + credits_w * 0.5 + 15.0 <= (p["credits_button"] as Rect2).size.x, "the word Credits is centred right of the C disc with room on both sides")
 	check(not (p["credits_button"] as Rect2).intersects(p["prompt"]) and (p["credits_button"] as Rect2).end.x > 1200.0 and (p["credits_button"] as Rect2).end.y > 680.0, "the Credits button sits alone in the bottom right corner")
 
-# ── the credits ──────────────────────────────────────────────────────────────
+# the credits
 func _credits() -> void:
 	var CP: GDScript = load("res://scripts/ui/credits_panel.gd")
 	var text: String = CP.all_text()
@@ -323,7 +323,7 @@ func _credits() -> void:
 	check(scr.probe()["going"], "after closing, any other key starts the game again")
 	CP.opener = Callable()
 
-# ── the art ──────────────────────────────────────────────────────────────────
+# the art
 func _assets() -> void:
 	var logo: Texture2D = load(DIR + "Title_Logo.png")
 	var letters: Texture2D = load(DIR + "Title_FightingGame.png")
@@ -343,7 +343,7 @@ func _assets() -> void:
 		var s := load(DIR + "video/%s.ogv" % f)
 		check(s is VideoStreamTheora, "%s loads as a Theora stream" % f)
 
-# ── pixels ───────────────────────────────────────────────────────────────────
+# pixels
 func _pixels() -> void:
 	game.session.reduce_flashes = true   # the still backdrop: the same pixels every run
 	var scr: Node = await _open("title")

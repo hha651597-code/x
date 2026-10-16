@@ -69,7 +69,7 @@ func setup(w: Node) -> void:
 	_pause = PauseScript.new().setup(self)
 	add_child(_pause)
 
-# ── API used by FightScreen ──────────────────────────────────────────────────
+# API used by FightScreen
 func round_intro(n: int) -> void:
 	DemoScript.apply(self)
 	_train.reset()
@@ -127,7 +127,7 @@ func show_pause(p: bool) -> void:
 func refresh() -> void:
 	_train.sample(world)
 
-# ── pause menu ───────────────────────────────────────────────────────────────
+# pause menu
 func pause_items() -> Array:
 	var items: Array = [
 		{"id": "resume", "label": "Resume", "value": ""},
@@ -187,7 +187,7 @@ static func meter_label(meter: float) -> String:
 		return "SUPER"
 	return "EX"
 
-# ── per-frame ────────────────────────────────────────────────────────────────
+# per-frame
 func _process(delta: float) -> void:
 	if not _paused:
 		_time += delta

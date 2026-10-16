@@ -1,5 +1,5 @@
 extends Kit
-## HINA (Sorasaki Hina): Gehenna's head prefect. Heavy armour, MG "Destroyer of Denouement", back-line damage dealer.
+## Hina (Sorasaki Hina): Gehenna's head prefect. Heavy armour, MG "Destroyer of Denouement", back-line damage dealer.
 ## Every move names its source in the "source" field; look at relevant docs.
 ##
 ## Personality -> style: composed, tired, and ruthless the moment rules are broken. Everything is "so annoying", so she
@@ -17,7 +17,7 @@ extends Kit
 ##  throw      Takedown (light + heavy, foe within 120 px): beats block; she lifts the foe one-armed by the collar, holds it a
 ##             beat overhead and drops it in front of her, a knockdown that lands at the drop. Two throws clash.
 ##  jL / jH    Air Burst / Heavy Air Burst: level bursts in mid-jump; a machine gun this heavy does not point down.
-##  skill      Sustained Burst: a 3-round burst; HOLD to keep a flat, fast stream going. In the air it fires angled down.
+##  skill      Sustained Burst: a 3-round burst; hold to keep a flat, fast stream going. In the air it fires angled down.
 ##  EX         Denouement: Ishbosheth (the ult, a full meter): grounded, 10 rounds swept across a narrow 30 degree fan.
 ##             Ends Lock & Load.
 ##  super      Lock & Load (skill + EX, 50 meter; Basic skill): she reloads on the spot, which starts the damage window,

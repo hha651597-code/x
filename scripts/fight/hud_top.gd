@@ -119,7 +119,7 @@ func _span_hp(i: int) -> void:
 func rects(i: int) -> Dictionary:
 	return {"portrait": _m(PORTRAIT, i), "card": _m(CARD, i), "bar": _m(BAR, i), "guard": _m(GUARD, i), "plate": PLATE}
 
-# ── state ────────────────────────────────────────────────────────────────────
+# state
 func _process(delta: float) -> void:
 	if world != null and world.get("paused") == true:
 		return
@@ -241,7 +241,7 @@ static func spark(age: float) -> float:
 		return 1.25 * age / 0.083
 	return lerpf(1.25, 1.0, clampf((age - 0.083) / 0.3, 0.0, 1.0))
 
-# ── drawing: back layer ──────────────────────────────────────────────────────
+# drawing: back layer
 func _draw() -> void:
 	if world == null:
 		return
@@ -273,7 +273,7 @@ static func _tape(c: CanvasItem, art: String, r: Rect2, scroll: float, a: float)
 		c.draw_texture_rect_region(t, Rect2(r.position.x + x0, r.position.y, x1 - x0, r.size.y), src, Color(1, 1, 1, a))
 		x += tw
 
-# ── drawing: front layer ─────────────────────────────────────────────────────
+# drawing: front layer
 func _draw_ink(c: Control) -> void:
 	if world == null or world.fighters.size() < 2:
 		return

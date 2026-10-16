@@ -28,7 +28,7 @@ const POSITION_NAMES := {"Front": "Front line", "Middle": "Mid line", "Back": "B
 
 static var _art := {}
 
-# ── art ──────────────────────────────────────────────────────────────────────
+# art
 ## A sprite or texture under assets/ba/gallery by its stem ("Common__...", "UIs__..."). null with one warning when missing.
 static func art(stem: String) -> Texture2D:
 	if _art.has(stem):
@@ -61,7 +61,7 @@ static func tint_of(s: Dictionary) -> Color:
 	var c: Color = SCHOOL_TINT.get(String(s.get("school", "")).to_lower(), SCHOOL_TINT["abydos"])
 	return c.lerp(Color.WHITE, 0.4)
 
-# ── tiles ────────────────────────────────────────────────────────────────────
+# tiles
 ## The collection tile: BA's facet card (Card_Item_Bg_N, rim and all) in the school's tint, BA's baked portrait over it (its hair breaks the card's top edge),
 ## and a role chip coloured by attack type on the lower right, as on the fight HUD's portrait card.
 static func draw_tile(ci: CanvasItem, size: Vector2, s: Dictionary, dim := 1.0, origin := Vector2.ZERO, foot := 0.0) -> void:
@@ -88,7 +88,7 @@ static func draw_tile(ci: CanvasItem, size: Vector2, s: Dictionary, dim := 1.0, 
 static func draw_bracket(ci: CanvasItem, rect: Rect2, pulse: float, a := 1.0) -> void:
 	Menu.nine(ci, "Common__Card_Select_Line", rect, 0.55, Color(1, 1, 1, pulse * a), SHEAR, 0.4)
 
-# ── plates and chips ─────────────────────────────────────────────────────────
+# plates and chips
 static func plate(ci: CanvasItem, rect: Rect2, tint := Color.WHITE) -> void:
 	Menu.nine(ci, "Combat__Common_Btn_BG", rect, Menu.K, tint, SHEAR)
 
@@ -158,7 +158,7 @@ static func popup(ci: CanvasItem, rect: Rect2, head_h := 54.0) -> void:
 	var th := float(BaArt.info("Common__Common_Top_Menu_Bg")["h"])
 	Menu.nine(ci, "Common__Common_Top_Menu_Bg", Rect2(rect.position, Vector2(rect.size.x, head_h)), head_h / th)
 
-# ── numbers ──────────────────────────────────────────────────────────────────
+# numbers
 ## [[text, is_digits]]: BaNumerals draws digits only and silently skips everything else, so commas, percent signs, colons and
 ## the multiplication sign are cut out and drawn as live text between the digit runs.
 static func runs(text: String) -> Array:
@@ -229,7 +229,7 @@ static func draw_gauge(ci: CanvasItem, r: Rect2, frac: float, fill: Color, track
 	ci.draw_colored_polygon(PackedVector2Array([Vector2(x + lean - 2.5, inner.position.y), Vector2(x + lean, inner.position.y),
 			Vector2(x - lean, inner.end.y), Vector2(x - lean - 2.5, inner.end.y)]), Color(BaTokens.THUMB_A, 0.85))
 
-# ── text ─────────────────────────────────────────────────────────────────────
+# text
 static var _white := {}
 
 ## A white copy of a coloured icon (its own alpha), for glyphs on a coloured tile. Cached by texture.
@@ -283,7 +283,7 @@ static func draw_name(ci: CanvasItem, text: String, pos: Vector2, size: int, max
 	unlean(ci)
 	return s
 
-# ── a tab ────────────────────────────────────────────────────────────────────
+# a tab
 ## A leaned tab or button. Tabs: the selected one is a yellow plate with BA's facet overlay and a brown label, the others navy
 ## ribbons with a white label at 0.85. The notched bracket shows on the selected tab while `focused` (the tab bar holds the
 ## cursor). Buttons (variant 1) are white plates with a navy label that turn yellow under the pointer.

@@ -83,7 +83,7 @@ func _build_3d(stage: Dictionary) -> void:
 	view.load_stage(dir, times[stage.get("time", stage["times"][0])])
 	set_process(false)
 
-# ── colour sampling ──────────────────────────────────────────────────────────
+# colour sampling
 static func _boost(c: Color, s: float) -> Color:
 	return Color.from_hsv(c.h, clampf(c.s * s, 0.0, 1.0), c.v)
 
@@ -121,7 +121,7 @@ static func sample_colors(tex: Texture2D) -> Dictionary:
 	out["bottom"] = Color(bot.r / nb, bot.g / nb, bot.b / nb)
 	return out
 
-# ── particles ────────────────────────────────────────────────────────────────
+# particles
 func _seed_particles(sid: String) -> void:
 	var rng := RandomNumberGenerator.new()
 	rng.seed = hash(sid) & 0x7fffffff
@@ -199,7 +199,7 @@ func _draw_motes(c: Control) -> void:
 				var d := PackedVector2Array([pos + Vector2(0, -rs * 1.7), pos + Vector2(rs * 0.5, 0), pos + Vector2(0, rs * 1.7), pos + Vector2(-rs * 0.5, 0)])
 				c.draw_colored_polygon(d, Color(col.r, col.g, col.b, 0.7 * tw * fade * depth))
 
-# ── camera hook ──────────────────────────────────────────────────────────────
+# camera hook
 ## cam_x / zoom as FightScreen computes them; shake = screen-space shake offset; horizon_y = screen y of the floor lip.
 func update_camera(cam_x: float, zoom: float, shake: Vector2, horizon_y: float) -> void:
 	_cam_x = cam_x
@@ -220,7 +220,7 @@ func update_camera(cam_x: float, zoom: float, shake: Vector2, horizon_y: float) 
 	_grade_mat.set_shader_parameter("horizon_v", horizon_y / 720.0)
 	_grade_mat.set_shader_parameter("shift", -cam_x * 0.00006)
 
-# ── floor ────────────────────────────────────────────────────────────────────
+# floor
 ## The floor + edge markers + fighter reflections, in world space. `colors` from sample_colors().
 func make_floor(world: Node, cols: Dictionary) -> Node2D:
 	if view != null:

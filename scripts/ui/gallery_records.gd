@@ -34,7 +34,7 @@ func _ready() -> void:
 	_paint = PainterScript.new().setup(Vector2(1280, 720), _draw_all)
 	add_child(_paint)
 
-# ── page API ─────────────────────────────────────────────────────────────────
+# page API
 func begin(first: bool) -> void:
 	_t = 0.0
 	_first = first
@@ -59,7 +59,7 @@ func probe() -> Dictionary:
 	return {"empty": _m.get("empty", true), "matches": int(_m.get("matches", 0)), "human_wins": int(_m.get("wins", 0)),
 			"best_combo": int(_m.get("best_combo", 0)), "fighters": int(_m.get("fighters", 0))}
 
-# ── data ─────────────────────────────────────────────────────────────────────
+# data
 ## What the page shows, from a Records dictionary: the six totals, the mode counts (most played first, four at most) and the
 ## top three fighters by games and by win rate. `roster` maps roster id -> fighter; ids it lacks are skipped.
 static func model(d: Dictionary, roster: Dictionary) -> Dictionary:
@@ -95,7 +95,7 @@ static func model(d: Dictionary, roster: Dictionary) -> Dictionary:
 	m["best"] = best.slice(0, 3)
 	return m
 
-# ── frame ────────────────────────────────────────────────────────────────────
+# frame
 func _process(delta: float) -> void:
 	_t += delta
 	if _t < 2.2:
@@ -109,7 +109,7 @@ func _enter(i: int, dir: int) -> Vector2:
 func _count() -> float:
 	return Motion.whip(_t - 0.45, 0.3, 0.7, 0.8)
 
-# ── drawing ──────────────────────────────────────────────────────────────────
+# drawing
 func _draw_all(c: Control) -> void:
 	if _m.is_empty():
 		return

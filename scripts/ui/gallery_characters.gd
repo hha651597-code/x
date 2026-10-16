@@ -92,7 +92,7 @@ func _ready() -> void:
 func items() -> Array:
 	return Game.fighters if _mode == 0 else Game.specials
 
-# ── construction ─────────────────────────────────────────────────────────────
+# construction
 func _build() -> void:
 	for i in 2:
 		var tb := GalleryKit.Tab.new().setup(SUB_SIZE, ["Fighters  %d" % Game.fighters.size(), "Specials  %d" % Game.specials.size()][i], 15)
@@ -137,7 +137,7 @@ func _build_grid(mode: int) -> void:
 		tiles.append({"node": h, "base": h.position, "bump": 0.0, "sc": 1.0})
 	_grids[mode] = {"holder": holder, "tiles": tiles}
 
-# ── page API ─────────────────────────────────────────────────────────────────
+# page API
 func begin(first: bool) -> void:
 	_t = 0.0
 	_first = first
@@ -203,7 +203,7 @@ func probe() -> Dictionary:
 	return {"mode": "specials" if _mode == 1 else "fighters", "index": _sel[_mode], "id": s["id"], "name": Fighters.display_name(s),
 			"scroll": snappedf(_scroll, 0.1), "count": items().size()}
 
-# ── selection ────────────────────────────────────────────────────────────────
+# selection
 func _set_mode(m: int) -> void:
 	if m == _mode:
 		return
@@ -251,7 +251,7 @@ func _max_scroll() -> float:
 	var rows := int((items().size() - 1) / COLS) + 1
 	return maxf(0.0, TILE_Y0 + float(rows - 1) * PITCH.y + TILE.y + 8.0 - VIEW.size.y)
 
-# ── detail ───────────────────────────────────────────────────────────────────
+# detail
 func _show(s: Dictionary, animate: bool) -> void:
 	var special := _mode == 1
 	_s = s
@@ -356,7 +356,7 @@ static func _damage_of(m: Dictionary) -> Array:
 		return [int(round(float((m.get("hit", {}) as Dictionary).get("dmg", 0.0)))), 1]
 	return [int(round(shots[0])), shots.size()]
 
-# ── drawing the popup ────────────────────────────────────────────────────────
+# drawing the popup
 func _draw_info(c: Control) -> void:
 	if _lay.is_empty():
 		return
@@ -488,7 +488,7 @@ func _draw_assist(c: Control) -> void:
 	BaArt.blit(c, "Common__Card_Role_Bg", Rect2(IX + 14.0, my - 15.0, 20.0, 19.0), a["color"], GalleryKit.SHEAR)
 	Menu.label(c, String(a["kind"]).to_upper(), Vector2(IX + 44.0, my), 13, BaTokens.LABEL_INK, Color(0, 0, 0, 0), 0, 0, 800)
 
-# ── frame ────────────────────────────────────────────────────────────────────
+# frame
 func _process(delta: float) -> void:
 	_t += delta
 	var g: Dictionary = _grids[_mode]
@@ -547,7 +547,7 @@ func _draw_bar(c: Control) -> void:
 	var ty := (h - th) * (_scroll / maxf(_max_scroll(), 1.0))
 	Menu.nine(c, "Combat__Common_Bg_Raius5px", Rect2(0, ty, 7, th), Menu.K, BaTokens.COST)
 
-# ── mouse ────────────────────────────────────────────────────────────────────
+# mouse
 func _can_mouse() -> bool:
 	return active and not Game.busy and _t > 0.4
 

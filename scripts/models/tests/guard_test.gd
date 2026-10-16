@@ -56,7 +56,7 @@ func _run() -> void:
 	print("GUARD_TEST ", "PASS" if failures.is_empty() else "FAIL", " checks=", checks, " failures=", failures.size())
 	quit(0 if failures.is_empty() else 1)
 
-# ── helpers ──────────────────────────────────────────────────────────────────
+# helpers
 func _reset() -> void:
 	att.reset_round(-100.0, 1)
 	def.reset_round(100.0, -1)
@@ -102,7 +102,7 @@ func _feed_word(id: String) -> bool:
 func _played(name: String) -> int:
 	return int(root.get_node("Sfx").played.get(name, 0))
 
-# ── the class table ──────────────────────────────────────────────────────────
+# the class table
 func _profile(weapon: String, role: String, armor: String) -> Dictionary:
 	return M.stats_for({"weapon": weapon, "bullet": "Pierce", "role": role, "armor": armor})
 
@@ -131,7 +131,7 @@ func _classes(game: Node) -> void:
 	check(hp_free, "no kit sets hp")
 	check(is_equal_approx(att.max_hp, A.MAX_HP) and is_equal_approx(def.max_hp, A.MAX_HP), "every fighter has the universal hp")
 
-# ── blocking on the ground and in the air ────────────────────────────────────
+# blocking on the ground and in the air
 func _ground() -> void:
 	_reset()
 	_hold_back(10)
@@ -195,7 +195,7 @@ func _air() -> void:
 	def.input = FI.from_held(def.input, 1, 0, [])
 	check(_hit(50.0) == "hit", "air: no air block while attacking")
 
-# ── just guard ───────────────────────────────────────────────────────────────
+# just guard
 func _just_guard() -> void:
 	var window := int(def.stats["guard_jg"])
 	for k in [window, window + 1]:
@@ -230,7 +230,7 @@ func _just_guard() -> void:
 	_hit(50.0)
 	check(def.last_block_jg, "just guard: a press made in hitstop counts")
 
-# ── refill ───────────────────────────────────────────────────────────────────
+# refill
 func _refill() -> void:
 	_reset()
 	_hold_back(10)
@@ -251,7 +251,7 @@ func _refill() -> void:
 		def.tick()
 	check(is_equal_approx(float(def.guard), float(def.stats["guard_max"])), "refill: never above the guard size")
 
-# ── crush ────────────────────────────────────────────────────────────────────
+# crush
 func _crush() -> void:
 	_reset()
 	_hold_back(10)
@@ -295,7 +295,7 @@ func _misc() -> void:
 	def.reset_round(100.0, -1)
 	check(is_equal_approx(float(def.guard), float(def.stats["guard_max"])), "a new round restores the guard")
 
-# ── HUD bar ──────────────────────────────────────────────────────────────────
+# HUD bar
 func _hud() -> void:
 	_reset()
 	await process_frame
@@ -324,7 +324,7 @@ func _hud() -> void:
 	check(is_equal_approx(float(bar.mat.get_shader_parameter("fill")), 1.0 - 20.0 / float(att.stats["guard_crush"])), "hud: a crush sweeps the bar")
 	att.crush_t = 0
 
-# ── CPU ──────────────────────────────────────────────────────────────────────
+# CPU
 ## One scripted exchange: Hina's 5L against a CPU Hoshino. Returns the guarded hit's last_block_jg, or -1 when no block happened.
 func _cpu_exchange(level: int, seed_value: int, air: bool) -> int:
 	_reset()

@@ -1,5 +1,5 @@
 extends Kit
-## HOSHINO (Takanashi Hoshino): Abydos Foreclosure Task Force president. Tank, Heavy armor, semi-auto shotgun (Eye of Horus).
+## Hoshino (Takanashi Hoshino): Abydos Foreclosure Task Force president. Tank, Heavy armor, semi-auto shotgun (Eye of Horus).
 ## Research, sources and the move table: look at relevant docs.
 ##
 ## Personality -> style: a sleepy "old man" who would rather nap than work, and says so. Once a fight starts she snaps
@@ -16,7 +16,7 @@ extends Kit
 ##  throw      Shoulder Toss (light + heavy, foe within 120 px): beats block; she hoists the foe beside her head and heaves it
 ##             forward with a tumble, a knockdown that lands at the heave. Two throws clash.
 ##  jL / jH    Air Shot / Downward Blast.
-##  skill      Buckshot: HOLD to load more shells (3 pellets each). j.skill fires one shell from the air.
+##  skill      Buckshot: Hold to load more shells (3 pellets each). j.skill fires one shell from the air.
 ##  EX         Tactical Suppression (the ult, a full meter): advances while firing 5 blasts into a 45 degree fan,
 ##             armored throughout.
 ##  super      Emergency First Aid (skill + EX, 50 meter; Basic skill): she stops to heal, armored.
@@ -132,7 +132,7 @@ func build_moves(st: Dictionary) -> Dictionary:
 		"sfx": [{"frame": 12, "name": "swing", "pitch": 0.9}, {"frame": 15, "name": "swing", "pitch": 1.2}],
 		"source": "adaptation: no melee in any base clip or skill (look at relevant docs); a shoulder toss, the front-liner hoisting the foe beside her head and heaving them clear with a tumble"})
 
-	# Buckshot: HOLD to load shells, 3 pellets each. 0-14 raise the gun, hold at 14 (max 36), then fire.
+	# Buckshot: Hold to load shells, 3 pellets each. 0-14 raise the gun, hold at 14 (max 36), then fire.
 	var pel := hit(Rect2(), 22 * dm, 17, 12, 7.0, {"meter": 2.5, "hitstop": 5})
 	var big := hit(Rect2(), 25 * dm, 20, 14, 10.0, {"meter": 3.0, "hitstop": 6, "spark": "heavy", "launch": Vector2(5, -7), "kd": true})
 	var sk := mv("skill", 16, 3, 22, {"hold": {"btn": "skill", "at": 14, "max": 36}, "cancel": [], "fx": [{"frame": 4, "kind": "charge"}],

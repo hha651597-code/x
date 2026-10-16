@@ -56,7 +56,7 @@ static func _scale(s: Sprite2D, sx: float, sy := -1.0) -> void:
 static func _steps(left: float, steps: int) -> float:
 	return floorf(clampf(left, 0.0, 1.0) * float(steps) + 0.001) / float(steps)
 
-# ── spark ─────────────────────────────────────────────────────────────────────
+# spark
 # BA's gun hit (FX_Common_Hit_*): FX_TEX_Hit_06's four comic stars played as a flipbook over the life, a white core, a few
 # streaks, and on heavy hits a star accent. The star sheet has baked colour (a yellow body, a pale ring and a white centre that
 # differ only in blue) and a flat fill, and it leaves by stepping its size down instead of eroding. Cool tints (the ex cyan)
@@ -116,7 +116,7 @@ static func _update_spark(fx: Fx, k: float) -> void:
 		x.modulate = Color(1.0, 1.0, 1.0, clampf(1.0 - k / 0.5, 0.0, 1.0))
 		_scale(x, 0.6 + 0.6 * k)
 
-# ── muzzle ────────────────────────────────────────────────────────────────────
+# muzzle
 # BA's muzzle flash: a comic flash from FX_TEX_Muzzle_01, two poses, a small white core, two thin tracer sparks past the flame.
 # Frame 0 of the sheet is a round blob; frames 1 and 2 are solid flames and 3 breaks into shards, all pointing along +x, so
 # the first pose is one of the two flames and the second is the shards; flip_h turns them for dir -1. The sheet is a flat
@@ -181,7 +181,7 @@ static func _update_muzzle(fx: Fx, k: float) -> void:
 		_scale(s, ln / 256.0 * (1.0 - 0.6 * k), maxf(3.0, 0.035 * d) / 64.0)
 		s.modulate = Color(tracer.r, tracer.g, tracer.b, 1.0 if k < 0.7 else 0.0)
 
-# ── ring ──────────────────────────────────────────────────────────────────────
+# ring
 # BA's ring: a solid circle eroded against Circle_Ring_Wave (bright rim, dark centre), so the visible ring thins as it
 # expands. The mask's rim only averages 0.2 to 0.45 and is uneven, so past an erode power of about 0.25 it alone leaves broken
 # arcs; the sheet's ring_w floors it with a radial ramp, which makes the band thickness (1 - power) * 0.4 of the half width and
@@ -243,7 +243,7 @@ static func _update_ring(fx: Fx, k: float) -> void:
 		_scale(edge, 2.0 * r / RING_BASE * 0.9 * 1.08)
 		edge.modulate = Color(dark.r, dark.g, dark.b, blade_a)
 
-# ── block ─────────────────────────────────────────────────────────────────────
+# block
 # BA's shield start: a blue glow disc under a neon shield card, an expanding hex outline, deflected sparks. The generic
 # FX_Common_Effect_Shield recipe only: Hoshino's own shield effects stay out of the kit. Everything but the disc is alpha-mix
 # so it shows on a bright stage. The card and the hex take a deeper blue than the sparks (their white edge is invisible on
@@ -290,7 +290,7 @@ static func _update_block(fx: Fx, k: float) -> void:
 		_scale(s, ln * (1.0 - 0.5 * k) / 256.0, 0.06)
 		s.modulate = Color(SHIELD.r, SHIELD.g, SHIELD.b, 1.0 if k < 0.7 else 0.0)
 
-# ── text (damage numbers) ─────────────────────────────────────────────────────
+# text (damage numbers)
 # A text Fx that opts in with data["digits"] and holds only digits draws BA's bitmap numerals: the "weak" set (yellow, red
 # outline) for big hits (fsize >= 44), "normal" otherwise. Every other text (move names, labels) keeps Fx._d_text in the
 # display face. fight_screen's damage numbers pass "digits": true.

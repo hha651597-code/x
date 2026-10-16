@@ -329,7 +329,7 @@ func _sync_pose(f: Fighter) -> void:
 	elif f.state == Fighter.S.IDLE and f.input.y > 0:
 		anim = "crouch"   # blockstun, a move or hitstun ends in one IDLE tick before CROUCH; the model stays down
 	elif f.state == Fighter.S.JUMP:
-		# frames into the arc, read off its velocity: an air move that ends mid-air restarts JUMP at sf 0, which would
+		# frames into the arc, read off its velocity: an air move that ends mid-air restarts jump at sf 0, which would
 		# replay the takeoff
 		sf = maxi(0, roundi((f.vel.y + float(f.stats["jump"])) / Arena.GRAVITY))
 	var stride: Variant = cfg["anims"].get(anim, {}).get("stride")

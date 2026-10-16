@@ -69,7 +69,7 @@ func _run() -> void:
 	print("HOOKS_TEST ", "PASS" if failures.is_empty() else "FAIL", " checks=", checks, " failures=", failures.size())
 	quit(0 if failures.is_empty() else 1)
 
-# ── helpers ──────────────────────────────────────────────────────────────────
+# helpers
 func _match(p1: int, p2: int) -> void:
 	game.session.begin("training")
 	game.session.players[0]["fighter"] = p1
@@ -148,7 +148,7 @@ func _hit(att: Node, def: Node, opts := {}) -> String:
 	var h: Dictionary = M.H(Rect2(), 20.0, 12, 10, 4.0, opts.merged({"hitstop": 0}))
 	return String(def.receive_hit(att, h, att.position, false))
 
-# ── Hina: gun normals, streams, EX, supers ───────────────────────────────────
+# Hina: gun normals, streams, EX, supers
 func _hina_normals() -> void:
 	_fresh()
 	var swings := _played("swing")
@@ -244,7 +244,7 @@ func _hina_supers() -> void:
 	_run_move(a, "5H")
 	check(_lines("skill_auto").size() == 2, "hina auto Lock & Load: speaks again after 600 ticks")
 
-# ── Hoshino ──────────────────────────────────────────────────────────────────
+# Hoshino
 func _hoshino_normals() -> void:
 	_fresh()
 	var swings := _played("swing")
@@ -313,7 +313,7 @@ func _hoshino_heal() -> void:
 	check(_clips("heal_tick", "hoshino").size() == 5, "hoshino auto First Aid: heal_tick on each of the five ticks (%d)" % _clips("heal_tick", "hoshino").size())
 	check(_lines("skill_auto", 2).size() == 1 and _lines("skill").is_empty(), "hoshino auto First Aid: the skill_auto voice once")
 
-# ── hits ─────────────────────────────────────────────────────────────────────
+# hits
 func _hits() -> void:
 	_fresh()
 	var hl := _played("hit_l")
@@ -464,7 +464,7 @@ func _cross_check() -> void:
 	check(scanned > 40 and crossed == 0, "no HMG clip played for Hoshino and no SG clip for Hina (%d of %d)" % [crossed, scanned])
 
 
-# ── the voice clock, offsets, long clips, stop_all, quit paths ───────────────
+# the voice clock, offsets, long clips, stop_all, quit paths
 ## An EX freeze stalls Fighter.frame but not the screen's _vis_frame, and a line plays in real time.
 func _clocks() -> void:
 	_fresh()
@@ -551,7 +551,7 @@ func _quit_paths() -> void:
 		var body := src.substr(i, src.find("\nfunc ", i + 1) - i)
 		check(i >= 0 and body.contains("Sfx.stop_all()"), fn + " stops every sound")
 
-# ── fighters with no sound set keep today's sounds ──────────────────────────
+# fighters with no sound set keep today's sounds
 ## The fighters stay Hina and Hoshino (only they are simulated) but their key names no set, as a sprite kit's does.
 var _keys := []
 func _no_set(on: bool) -> void:

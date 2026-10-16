@@ -107,7 +107,7 @@ static func _spawn(frame: int, offset: Vector2, vel: Vector2, hit: Dictionary, o
 	sp.merge(opts, true)
 	return sp
 
-# ── the full move list ───────────────────────────────────────────────────────
+# the full move list
 static func moves_for(d: Dictionary, st: Dictionary) -> Dictionary:
 	var r: float = st["reach"]
 	var dm: float = st["dmg"]
@@ -195,7 +195,7 @@ static func _throw_path(base: Array, shift: int, extra: int, k: float) -> Array:
 		prev = t
 	return path
 
-# ── weapon-class skills (the aux button) ─────────────────────────────────────
+# weapon-class skills (the aux button)
 static func _skill(d: Dictionary, st: Dictionary, air: bool) -> Dictionary:
 	var dm: float = st["dmg"]
 	var ps: float = st["proj_speed"]
@@ -277,7 +277,7 @@ static func _skill(d: Dictionary, st: Dictionary, air: bool) -> Dictionary:
 	m["cancel"] = ["ex"]
 	return m
 
-# ── EX skill (the super, aux2) ───────────────────────────────────────────────
+# EX skill (the super, aux2)
 static func _ex(d: Dictionary, st: Dictionary) -> Dictionary:
 	var dm: float = st["dmg"] * 1.0
 	var col: Color = st["color"]
@@ -322,7 +322,7 @@ static func _ex(d: Dictionary, st: Dictionary) -> Dictionary:
 	m["frames"] = int(m["startup"]) + int(m["active"]) + int(m["recovery"])
 	return m
 
-# ── assists (the "Special" student) ──────────────────────────────────────────
+# assists (the "Special" student)
 ## kind: volley | guard | heal | buff | strike.  Returns {kind, name, color, cooldown_scale, spawns[]}
 static func assist_for(sp: Dictionary) -> Dictionary:
 	var role: String = sp.get("role", "DamageDealer")

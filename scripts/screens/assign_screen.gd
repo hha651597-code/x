@@ -71,7 +71,7 @@ func enter(p: Dictionary, info: Dictionary) -> void:
 	_refresh_texts()
 	Input.joy_connection_changed.connect(_on_pads)
 
-# ── build ────────────────────────────────────────────────────────────────────
+# build
 func _build() -> void:
 	if not _overlay:
 		_backdrop = TextureRect.new()
@@ -147,7 +147,7 @@ func _snap_to_dock(i: int) -> void:
 	(s["glyph"] as Control).position = DOCK_POS[i]
 	s["fly_t"] = 99.0
 
-# ── per-frame motion ─────────────────────────────────────────────────────────
+# per-frame motion
 func _process(delta: float) -> void:
 	_t += delta
 	var out := 0.0
@@ -235,7 +235,7 @@ func _refresh_panels() -> void:
 	for i in 2:
 		(_panels[i] as AssignPanel).set_ready(on[i], any)
 
-# ── claiming ─────────────────────────────────────────────────────────────────
+# claiming
 func _claimed_devices() -> Array:
 	var out := []
 	for s in _slots:
@@ -360,7 +360,7 @@ func _on_pads(_id: int, _connected: bool) -> void:
 	for s in _slots:
 		(s["glyph"] as ControllerGlyph).queue_redraw()
 
-# ── input ────────────────────────────────────────────────────────────────────
+# input
 func on_action(dev: String, act: String) -> void:
 	if _finishing or _closing or _t < READY_AT:
 		return

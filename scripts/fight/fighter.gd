@@ -75,7 +75,7 @@ var powered := false                  # the generic super: this skill runs power
 var _paid := {}                        # kv values on_move_start changed, as they were before; a late throw press refunds them
 var _cancelled := false               # the running move began as a cancel, so a late second button never turns it into a throw
 
-# combo bookkeeping (stored on the DEFENDER)
+# combo bookkeeping (stored on the defender)
 var combo_hits := 0
 var big_voiced := false               # this combo already drew a big-hit line
 var combo_dmg := 0.0
@@ -87,7 +87,7 @@ var stat_hits := 0
 
 var guard_all := false                # training dummy: always blocks
 var kit: Kit                          # this student's fighting style (scripts/fight/kits/)
-var kv := {}                          # kit-private state (stacks, timers…) — reset every round by the kit
+var kv := {}                          # kit-private state (stacks, timers…), reset every round by the kit
 var armor_hits_left := 0              # hits the current move can still absorb (move["armor"])
 var charge_t := 0                     # frames the current move's hold button was held (move["hold"])
 var slow_frames := 0                  # movement debuff (hit["slow"])
@@ -181,7 +181,7 @@ func reset_round(x: float, face: int) -> void:
 	kv = {}
 	kit.on_round_start(self)
 
-# ── queries ──────────────────────────────────────────────────────────────────
+# queries
 func is_grounded() -> bool:
 	return position.y >= Arena.GROUND - 0.5
 
@@ -288,7 +288,7 @@ func sfx(event: String, pitch := 1.0, vol := 1.0) -> bool:
 func voice(line: String, max_s := 0.0) -> bool:
 	return Sfx.voice(String(data.get("key", "")), slot, world._vis_frame, line, world.time_stop > 0, max_s)
 
-# ── per-frame simulation ─────────────────────────────────────────────────────
+# per-frame simulation
 func tick() -> void:
 	frame += 1
 	_track_back()
@@ -368,7 +368,7 @@ func _consume(b: String) -> bool:
 		return true
 	return false
 
-# ── meter tiers: skill + EX is the super, EX alone at a full meter the ult ──────
+# meter tiers: skill + EX is the super, EX alone at a full meter the ult
 func _chord() -> bool:
 	return _buf.has("skill") and _buf.has("ex") and meter >= Arena.SUPER_COST \
 		and absi(int(_age.get("skill", 0)) - int(_age.get("ex", 0))) <= Arena.CHORD
@@ -911,7 +911,7 @@ func _move_body() -> void:
 		if state not in [S.JUMP, S.ATTACK, S.AIRHIT, S.KO]:
 			vel.y = 0.0
 
-# ── receiving hits ───────────────────────────────────────────────────────────
+# receiving hits
 ## Returns "hit", "block" or "miss". `from` = world position of the hit (for knock direction).
 func receive_hit(att: Fighter, h: Dictionary, from: Vector2, is_projectile: bool) -> String:
 	if hp <= 0.0 or carrier != null or invuln > 0 or state in [S.KO, S.DOWN, S.GETUP, S.INTRO, S.WIN] or world.phase in ["ko", "round_end"]:
@@ -1239,7 +1239,7 @@ func _do_hit(att: Fighter, h: Dictionary, dir: int, is_projectile: bool) -> void
 func _at_wall(dir: int) -> bool:
 	return absf(position.x + float(dir) * 70.0) >= Arena.HALF_W
 
-# ── drawing (all visuals live in FighterView; see scripts/fight/fighter_view.gd) ──
+# drawing (all visuals live in FighterView; see scripts/fight/fighter_view.gd)
 func _process(delta: float) -> void:
 	if view:
 		view.step(delta)

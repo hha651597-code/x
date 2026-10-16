@@ -53,7 +53,7 @@ func _process(delta: float) -> void:
 	if not parts.is_empty():
 		FxKinds.update(self, clampf(age / life, 0.0, 1.0))
 
-# ── shared helpers ───────────────────────────────────────────────────────────
+# shared helpers
 ## Soft white radial blob (alpha 1 in the centre, 0 at the rim). Tint with the draw colour.
 static func glow_tex() -> Texture2D:
 	if _t_glow == null:
@@ -141,7 +141,7 @@ static func hexagon(ci: CanvasItem, p: Vector2, r: float, c: Color, width := 3.0
 		ci.draw_colored_polygon(pts.slice(0, 6), Color(c.r, c.g, c.b, c.a * fill))
 	ci.draw_polyline(pts, c, width, true)
 
-# ── drawing ──────────────────────────────────────────────────────────────────
+# drawing
 func _draw() -> void:
 	var k := clampf(age / life, 0.0, 1.0)
 	match kind:
@@ -212,7 +212,7 @@ func _d_flare(k: float) -> void:
 	glow(self, Vector2.ZERO, 60.0 * size * (1.0 - 0.5 * k), Color(1, 1, 1, inv))
 	star4(self, Vector2.ZERO, 130.0 * size * (1.0 - 0.5 * k), Color(1, 1, 1, inv * 0.9), 0.0, 0.1)
 
-# ── convenience factories used by FightScreen / Fighter ──────────────────────
+# convenience factories used by FightScreen / Fighter
 static func spark(parent: Node, pos: Vector2, spark_kind: String, face: int, sd := 0.0) -> void:
 	var col := Color(1.0, 0.93, 0.55)
 	var sz := 1.0

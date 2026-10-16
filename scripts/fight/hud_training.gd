@@ -103,7 +103,7 @@ func _draw() -> void:
 	if a > 0.0:
 		draw_tip(self, TIP_AT, a)
 
-# ── input history ────────────────────────────────────────────────────────────
+# input history
 func _draw_history(world: Node) -> void:
 	var k := Motion.whip(_t - 0.2, 0.2, 0.45)
 	var card := Rect2(CARD.position + Vector2(-(1.0 - k) * 280.0, 0.0), CARD.size)
@@ -143,7 +143,7 @@ func _arrow(ctr: Vector2, dir: Vector2i, col: Color) -> void:
 	BaArt.blit(self, ARROW_ART, Rect2(-9.0, -11.5, 18.0, 23.0), col)
 	draw_set_transform_matrix(Transform2D.IDENTITY)
 
-# ── last and best combo ──────────────────────────────────────────────────────
+# last and best combo
 func _draw_combo(now: float) -> void:
 	var k := Motion.whip(_t - 0.3, 0.2, 0.45)
 	var x := 1262.0 + (1.0 - k) * 300.0
@@ -170,7 +170,7 @@ func _draw_combo(now: float) -> void:
 		var s := lerpf(1.5, 1.0, clampf(age / 0.3, 0.0, 1.0))
 		BaWords.draw(self, "best_record", Vector2(x - 130.0, top + 178.0), 190.0 * s, Color(1, 1, 1, clampf((BEST_FLASH - age) / 0.4, 0.0, 1.0)))
 
-# ── key hints ────────────────────────────────────────────────────────────────
+# key hints
 ## The tip bubble: BA's operator text bubble with the P1 key hints in two columns, each key on a navy ribbon chip. origin is
 ## the bubble's top-left. Returns its size.
 static func draw_tip(ci: CanvasItem, origin: Vector2, a := 1.0) -> Vector2:

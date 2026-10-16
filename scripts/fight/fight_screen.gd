@@ -10,9 +10,9 @@ extends Screen
 const HudScript := preload("res://scripts/fight/fight_hud.gd")
 const BACKDROP_SHADER := preload("res://shaders/backdrop.gdshader")
 
-## ── EX ult freeze ("super freeze") ──────────────────────────────────────────
+## EX ult freeze ("super freeze")
 ## Pressing EX alone at a full meter starts the EX move (Fighter._start_move → begin_cutin). At the end of that sim tick the
-## WHOLE world stops: no fighter / projectile / assist-event / kit tick, no timer, no CPU thinking, no hit-stop countdown,
+## Whole world stops: no fighter / projectile / assist-event / kit tick, no timer, no CPU thinking, no hit-stop countdown,
 ## and every world node (stage, floor, fighters + their views, projectiles, effects, particles, kit nodes) has its
 ## processing disabled, so nothing moves, spawns, animates or plays a sound. Only the HUD cut-in runs, on the SIM clock
 ## (freeze_t), so the overlay and the freeze cannot drift apart and pausing holds both. After FREEZE_FRAMES the world
@@ -107,7 +107,7 @@ var round_intro_at := -1             # phase_t when this round's ROUND band was 
 var round_no := 1
 var wins := [0, 0]
 var timer_frames := Arena.ROUND_SECONDS * 60
-var time_stop := 0                 # sim frames left in the CURRENT cut-in; the world is frozen while > 0
+var time_stop := 0                 # sim frames left in the current cut-in; the world is frozen while > 0
 var freeze_t := 0                  # sim frames since the current cut-in started
 var freeze_caster: Fighter = null  # whose cut-in is playing (null = not frozen)
 var release_t := -1                # sim frames since the world resumed (-1 = no release effect running)
@@ -158,7 +158,7 @@ func enter(p: Dictionary, _info: Dictionary) -> void:
 	hud.setup(self)
 	_start_round()
 
-# ── setup ────────────────────────────────────────────────────────────────────
+# setup
 func _setup_arcade() -> void:
 	var sess: Session = Game.session
 	var p1 := int(sess.players[0]["fighter"])
@@ -324,7 +324,7 @@ func _start_round() -> void:
 		_call_round_intro()
 	Sfx.play("whoosh", 0.9, 0.6)
 
-# ── fixed-step simulation ────────────────────────────────────────────────────
+# fixed-step simulation
 func _physics_process(_delta: float) -> void:
 	var n := Dbg.sim_mult if Dbg.sim_mult > 1 else 1   # test harness can run many sim ticks per physics frame
 	for i in n:
@@ -336,7 +336,7 @@ func _sim_step() -> void:
 	if paused or Game.busy or match_over:
 		return
 	_vis_frame += 1
-	# EX freeze gate FIRST: nothing below (events, slow-mo, fighters, projectiles, timer, CPU) runs while frozen
+	# EX freeze gate first: nothing below (events, slow-mo, fighters, projectiles, timer, CPU) runs while frozen
 	if time_stop > 0:
 		_tick_freeze()
 		_update_visual_only()
@@ -479,7 +479,7 @@ func _tick_fight(live_input := true) -> void:
 	f2.tick()
 	if _freeze_pending:
 		# an EX started this tick (both fighters have had their tick, so a same-frame double EX is caught): the world
-		# stops right here — hits, push, projectiles and the timer of this tick wait for the resume
+		# stops right here: hits, push, projectiles and the timer of this tick wait for the resume
 		return
 	var down := fighters.filter(func(f: Fighter) -> bool: return f.hp <= 0.0)     # judged before any swing or round lands, so mutual hits still trade
 	_resolve_hits()
@@ -499,7 +499,7 @@ func _tick_fight(live_input := true) -> void:
 			_training_upkeep()
 
 func _resolve_hits() -> void:
-	# Collect both fighters' connections BEFORE applying either, so simultaneous hits trade fairly.
+	# Collect both fighters' connections before applying either, so simultaneous hits trade fairly.
 	var connects: Array = []
 	for att in fighters:
 		var h: Dictionary = att.active_hit()
@@ -595,7 +595,7 @@ func _sort_fighters() -> void:
 	f1.z_index = 3 if p2_front else 4
 	f2.z_index = 4 if p2_front else 3
 
-# ── world services used by fighters / projectiles ────────────────────────────
+# world services used by fighters / projectiles
 func spawn_projectile(owner_fighter: Fighter, spec: Dictionary) -> void:
 	var p := Projectile.new()
 	p.owner_f = owner_fighter
@@ -814,7 +814,7 @@ func _enter_freeze() -> void:
 		return
 	_set_world_frozen(true)
 	for c in _freeze_queue:
-		_pose_caster(c)          # show the EX start pose now — the view is not processed again until the resume
+		_pose_caster(c)          # show the EX start pose now, the view is not processed again until the resume
 	_freeze_presses = [{}, {}]
 	_shake = 0.0                 # no leftover world shake: the camera move during the freeze is the cut-in's own
 	release_t = -1
@@ -1104,14 +1104,14 @@ func _finish_match() -> void:
 		],
 	}, "fade")
 
-# ── camera ───────────────────────────────────────────────────────────────────
+# camera
 func _apply_camera() -> void:
 	var intro := phase == "intro"
 	var dist := 2.0 * Arena.START_X if intro else absf(f1.position.x - f2.position.x)
 	var target_zoom := clampf(1280.0 / (dist + 640.0), 0.7, 1.0)
 	var mid := 0.0 if intro else (f1.position.x + f2.position.x) * 0.5
 	if time_stop > 0 and freeze_caster != null:
-		# EX freeze: push in on the caster (cornered or mid-air included — the clamp + lift below keep her framed)
+		# EX freeze: push in on the caster (cornered or mid-air included, the clamp + lift below keep her framed)
 		target_zoom = minf(1.24, target_zoom * 1.18)
 		mid = lerpf(mid, freeze_caster.position.x, 0.6)
 	elif phase == "ko" and slowmo > 0:
@@ -1191,7 +1191,7 @@ func _entry_shot() -> Array:
 		x = xb
 	return [z, x, float(k["face_up"]) - (612.0 - float(k["face_y"])) / z]
 
-# ── input: pause + menu ──────────────────────────────────────────────────────
+# input: pause + menu
 ## A claimed pad that unplugs pauses the match. Session.device_of already hands its slot back to the keyboard.
 func _on_joy_connection(id: int, connected: bool) -> void:
 	if connected or paused or match_over:

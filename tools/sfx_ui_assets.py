@@ -26,7 +26,7 @@ OUT = ROOT / "assets/audio/ba"
 FADE_IN = 0.003
 
 SOUNDS = {
-    # ── the menus ─────────────────────────────────────────────────────────────
+    # the menus
     "tick": (-13.0, [("UI_EventCollection_Pin_MN_01", {"fade": 0.02}), ("UI_EventCollection_Pin_MN_02", {"fade": 0.02}), ("UI_EventCollection_Pin_MN_04", {"fade": 0.02})]),
     "confirm": (-7.0, [("UI_Button_Wood", {"fade": 0.05})]),
     "back": (-9.0, [("SFX_MiniGame_CCG_Hand_Close", {"fade": 0.08})]),
@@ -38,7 +38,7 @@ SOUNDS = {
     "lock": (-9.0, [("UI_Notice", {"fade": 0.06})]),
     "slam": (-4.0, [("SE_Boom_02", {"dur": 0.8, "fade": 0.35})]),
     "fight": (-4.0, [("SFX_Start_Public_Shing_03", {"fade": 0.15})]),
-    # ── the fight ─────────────────────────────────────────────────────────────
+    # the fight
     "hit_l": (-6.0, [("SFX_Common_Hit_Mech_Short_01", {"dur": 0.22, "fade": 0.09}), ("SFX_Common_Hit_Mech_Short_02", {"dur": 0.22, "fade": 0.09}),
                      ("SFX_Common_Hit_Mech_Short_03", {"dur": 0.22, "fade": 0.09}), ("SFX_Common_Hit_Mech_Short_04", {"dur": 0.22, "fade": 0.09})]),
     "hit_h": (-3.0, [("SFX_Common_Hit_Mech_Long_01", {"dur": 0.45, "fade": 0.18}), ("SFX_Common_Hit_Mech_Long_02", {"dur": 0.45, "fade": 0.18}),
@@ -62,7 +62,7 @@ SOUNDS = {
     "tech": (-9.0, [("SFX_JSD_Roll_Breakfall", {"dur": 0.5, "fade": 0.2})]),
     "grab": (-10.0, [("SFX_Common_Cloth_01", {"fade": 0.1}), ("SFX_Common_Cloth_02", {"dur": 0.4, "fade": 0.12})]),
     "swing": (-8.0, [("SFX_Swing_01", {"fade": 0.15}), ("SFX_Swing_02", {"fade": 0.15})]),
-    # ── the ultimate's cut-in and the EX READY cue ────────────────────────────
+    # the ultimate's cut-in and the EX READY cue
     "ex_ready": (-8.0, [("UI_Chime_06", {"dur": 0.9, "fade": 0.35})]),
     "ult_rise": (-6.0, [("UI_Gacha_Normal_01", {"start": 1.2, "dur": 0.8, "fade": 0.03})]),
     "ult_stamp": (-3.0, [("SFX_Aris_Hit", {"dur": 0.45, "fade": 0.2})]),

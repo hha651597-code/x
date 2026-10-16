@@ -130,7 +130,7 @@ func _fighter(f: Node, cfg: Dictionary) -> void:
 				_air_dash(f, a, key, face, mode, "airdash_back")
 		_walk(f, a, key, face, "buff", "walk")
 
-# ── driving the sim ──────────────────────────────────────────────────────────
+# driving the sim
 
 func _place(f: Node, a: Node, face: int, x: float, mode: String) -> void:
 	var foe: Node = f.foe
@@ -167,7 +167,7 @@ func _hold(f: Node, a: Node, x: int, y: int, btns: Array, n: int, into: Array) -
 	for i in n:
 		into.append(_tick(f, a, x, y, btns))
 
-# ── ground runs ──────────────────────────────────────────────────────────────
+# ground runs
 
 ## Stances of the feet over segments (arrays of consecutive ticks): [{n, d}] with the ground distance d the foot covered while planted.
 func _stances(segments: Array) -> Array:
@@ -264,7 +264,7 @@ func _backdash(f: Node, a: Node, key: String, face: int, mode: String) -> void:
 	check(n >= 10, "%s backdash f%+d %s: the run has moving backdash ticks (%d)" % [key, face, mode, n])
 	check(low >= AIR_PX, "%s backdash f%+d %s: no foot within %.0f px of the floor while it moves (lowest %.1f)" % [key, face, mode, AIR_PX, low])
 
-# ── air runs ─────────────────────────────────────────────────────────────────
+# air runs
 
 func _jump(f: Node, a: Node, key: String, face: int, mode: String, sc: String) -> void:
 	_place(f, a, face, -float(face) * 200.0, mode)

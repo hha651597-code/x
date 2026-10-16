@@ -63,7 +63,7 @@ func _run() -> void:
 	print("HUD_MENUS_TEST ", "PASS" if failures.is_empty() else "FAIL", " checks=", checks, " failures=", failures.size())
 	quit(0 if failures.is_empty() else 1)
 
-# ── helpers ──────────────────────────────────────────────────────────────────
+# helpers
 func _viewport(bg: Color) -> SubViewport:
 	var vp := SubViewport.new()
 	vp.size = Vector2i(1280, 720)
@@ -103,7 +103,7 @@ func _items() -> Array:
 		{"id": "menu", "label": "Main Menu", "value": ""},
 	]
 
-# ── the 9-slice at half scale never tears ────────────────────────────────────
+# the 9-slice at half scale never tears
 func _nine_slice() -> void:
 	await _tear([["Combat__Common_Btn_BG", Rect2(20, 10, 84, 35)], ["Combat__Common_Btn_BG", Rect2(20, 60, 400, 42)],
 			["Combat__Common_Btn_BG", Rect2(20, 120, 262, 52)], ["Combat__Common_Btn_BG", Rect2(20, 190, 100, 30)],
@@ -136,7 +136,7 @@ func _tear(rects: Array) -> void:
 				break
 		check(gap < 0, "%s at %dx%d has no gap along its middle (x=%d)" % [e[0], int(r.size.x), int(r.size.y), gap])
 
-# ── the pause popup, drawn ───────────────────────────────────────────────────
+# the pause popup, drawn
 func _pause_pixels() -> void:
 	var vp := _viewport(Color.WHITE)
 	var h := _stub_hud(vp, true, _items())
@@ -210,7 +210,7 @@ func _pause_pixels() -> void:
 	check(tips[0].r > 0.6, "the training pause draws the key tip (%s)" % tips[0].to_html(false))
 	check(tips[1].r < 0.4, "the versus pause draws none (%s)" % tips[1].to_html(false))
 
-# ── the real facade: navigation and actions through the new pause ────────────
+# the real facade: navigation and actions through the new pause
 func _fight(mode: String) -> void:
 	game.session.begin(mode)
 	game.session.players[0]["fighter"] = 10004
@@ -263,7 +263,7 @@ func _facade_pause(mode: String, rows: int) -> void:
 	hud.pause_action("back")
 	check(not screen.paused and not p.visible, "%s: back resumes and hides the pause" % mode)
 
-# ── training overlay ─────────────────────────────────────────────────────────
+# training overlay
 func _feed(tr: Control, x: int, y: int, btns: Array, frames: int) -> void:
 	screen.f1.input = FI.from_held(screen.f1.input, x, y, btns)
 	screen._frame += frames
@@ -334,7 +334,7 @@ func _training_logic() -> void:
 	check(TRAIN.CARD.position.x >= 0.0 and TRAIN.CARD.end.x <= 260.0, "the input card stays at the left edge")
 	check(TRAIN.ROWS * TRAIN.ROW_PITCH + 46.0 <= TRAIN.CARD.size.y, "the card holds its rows")
 
-# ── result screen ────────────────────────────────────────────────────────────
+# result screen
 func _result_logic() -> void:
 	game.session.begin("versus2p")
 	game.session.players[0]["fighter"] = 10004

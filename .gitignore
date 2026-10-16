@@ -15,3 +15,5 @@ tmp/*
 !tmp/.gdignore
 __pycache__/
 *.pyc
+docs/
+.claude/

@@ -61,7 +61,7 @@ func _run() -> void:
 	print("VS_SELECT_TEST ", "PASS" if failures.is_empty() else "FAIL", " checks=", checks, " failures=", failures.size())
 	quit(0 if failures.is_empty() else 1)
 
-# ── helpers ──────────────────────────────────────────────────────────────────
+# helpers
 func _session(mode: String, f1: Variant, f2: Variant, sp1: Variant = -1, sp2: Variant = -1) -> void:
 	var s = game.session
 	s.begin(mode)
@@ -106,7 +106,7 @@ func _px(img: Image, x: float, y: float) -> Color:
 func _sfx(name: String) -> int:
 	return int(root.get_node("Sfx").played.get(name, 0))
 
-# ── VS screen: the flow the fight depends on ─────────────────────────────────
+# VS screen: the flow the fight depends on
 func _vs_flow() -> void:
 	game.session.stage = {}
 	_session("versus2p", 10004, 10005, 10017, 10040)
@@ -200,7 +200,7 @@ func _vs_resolve() -> void:
 	check(p["fighters"][0] == 10004 and p["fighters"][1] == 10004, "the same fighter on both sides is kept")
 	check(p["specials"][0] != 10004 and p["specials"][1] != 10004, "a special equal to its fighter is re-rolled")
 
-# ── select: the state machine and the grid ───────────────────────────────────
+# select: the state machine and the grid
 func _grid_model() -> Dictionary:
 	var rows: Array = load("res://scripts/core/fighters.gd").build_grid(game.fighters)
 	var tiles: Array = []
@@ -413,7 +413,7 @@ func _select_mouse() -> void:
 	_tick(scr, 3)
 	check(scr.probe()["state"][0] == "special" and scr.probe()["players"][0]["fighter"] == scr._tiles[0]["id"], "clicking a tile locks it for P1")
 
-# ── fixes ────────────────────────────────────────────────────────────────────
+# fixes
 ## Every portrait file has its own size: the VS art keeps its proportions and every head is drawn the same width on the same spot.
 func _vs_portraits() -> void:
 	var ui: GDScript = load("res://scripts/ui/ui.gd")
@@ -592,7 +592,7 @@ func _select_random_art() -> void:
 		side.process(DT)
 	check(is_equal_approx(side._ink, 0.0), "the new art comes back to full colour")
 
-# ── VS screen: the stage-start beat ──────────────────────────────────────────
+# VS screen: the stage-start beat
 func _vs_beat() -> void:
 	var VL: GDScript = load("res://scripts/ui/vs_layout.gd")
 	check(VL.band_k(0.0) == 0.0 and VL.band_k(VL.BAND_OPEN) == 1.0 and VL.band_k(1.0) == 1.0, "band: 0 at the start, open after 11 frames")
@@ -651,7 +651,7 @@ func _vs_beat() -> void:
 	var out_px := _px(img, 640.0 * k, (VL.BAND.position.y - 14.0) * k)
 	check(band_px.get_luminance() < 0.2 and band_px.get_luminance() < out_px.get_luminance() + 0.001, "the open band is dark (%s) against the stage plate above it (%s)" % [band_px.to_html(false), out_px.to_html(false)])
 
-# ── VS screen: every name fits ───────────────────────────────────────────────
+# VS screen: every name fits
 func _vs_fit() -> void:
 	var VL: GDScript = load("res://scripts/ui/vs_layout.gd")
 	var FI: GDScript = load("res://scripts/core/fighters.gd")
@@ -713,7 +713,7 @@ func _vs_fit() -> void:
 	var random_plate: Dictionary = VL.stage("Random", "Kivotos", false)
 	check(not random_plate["has_thumb"], "a stage with no plate art draws no thumbnail")
 
-# ── select: the roster, the frames, the name block ───────────────────────────
+# select: the roster, the frames, the name block
 func _select_roster() -> void:
 	var SC: GDScript = load("res://scripts/screens/select_screen.gd")
 	_session("versus2p", -1, -1)

@@ -104,7 +104,7 @@ func _render(actor: Node) -> Dictionary:
 		var_sum += (l - mean) * (l - mean)
 	return {"n": n, "mean": mean, "std": sqrt(var_sum / maxf(float(n), 1.0)), "rgb": Vector3(sum.r, sum.g, sum.b) / maxf(float(n), 1.0)}
 
-# ── assets ───────────────────────────────────────────────────────────────────
+# assets
 
 func _assets() -> void:
 	var prov: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://assets/ba/sd/PROVENANCE.json"))
@@ -140,7 +140,7 @@ func _assets() -> void:
 	var names := uniforms.map(func(u: Dictionary) -> String: return u["name"])
 	check(not names.has("outline_px") and not names.has("outline_color"), "the composite has no alpha-dilation outline")
 
-# ── stage light ──────────────────────────────────────────────────────────────
+# stage light
 
 func _light_globals() -> void:
 	var names := ["ba_light_dir", "ba_light_tone", "ba_shadow_tone", "ba_light_data", "ba_ambient"]
@@ -205,7 +205,7 @@ func _stage_hookup() -> void:
 	check(((odd["rgb"] as Vector3) - (plain_ref["rgb"] as Vector3)).length() < 0.002, "a light that is not a Dictionary renders the fixed values")
 	game.session.stage = {}
 
-# ── materials ────────────────────────────────────────────────────────────────
+# materials
 
 func _v3(a: Array) -> Vector3:
 	return Vector3(a[0], a[1], a[2])
@@ -291,7 +291,7 @@ func _no_masks(key: String) -> void:
 			masked += 1
 	check(masked > 0, key + ": the maskless build has masked-kind surfaces to check")
 
-# ── rendering ────────────────────────────────────────────────────────────────
+# rendering
 
 func _set_masks(actor: Node, on: bool) -> void:
 	for m in actor.ba_mats:
@@ -519,7 +519,7 @@ func _window_scale(actor: Node) -> void:
 	actor._fit_viewport()
 	check(actor.viewport.size == base_size, "the viewport goes back to its size with the window")
 
-# ── composite fringe ─────────────────────────────────────────────────────────
+# composite fringe
 
 func lum(c: Color) -> float:
 	return 0.2126 * c.r + 0.7152 * c.g + 0.0722 * c.b

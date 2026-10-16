@@ -47,7 +47,7 @@ func think() -> FightInput:
 	var dist := absf(foe.position.x - me.position.x) - me.spacing_extra()   # the legacy distance every threshold below was tuned on
 	var grounded := me.is_grounded()
 	var away := -me.facing if grounded else (-1 if foe.position.x > me.position.x else 1)   # in the air, away from the foe
-	# ── defence: react to an incoming attack / projectile ───────────────────
+	# defence: react to an incoming attack / projectile
 	if _jg:
 		var t := _ticks_to_hit()
 		if t <= 0 or t > 12 or not (me.actionable() or me.state == Fighter.S.JUMP):
@@ -82,7 +82,7 @@ func think() -> FightInput:
 	else:
 		_react = maxi(0, _react - 1)
 
-	# ── continue an attack string ────────────────────────────────────────────
+	# continue an attack string
 	if me.state == Fighter.S.ATTACK and me.move_connected:
 		var nxt := _next_in_string()
 		if nxt != "":
@@ -107,7 +107,7 @@ func think() -> FightInput:
 	if me.state == Fighter.S.ATTACK or not (me.actionable() or me.state == Fighter.S.JUMP):
 		return _out(0 if me.state != Fighter.S.JUMP else _x, 0, [])
 
-	# ── choose a plan ────────────────────────────────────────────────────────
+	# choose a plan
 	if _plan_t > 0:
 		_plan_t -= 1
 	else:

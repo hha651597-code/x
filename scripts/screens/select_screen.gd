@@ -5,7 +5,7 @@ extends Screen
 ## (scripts/ui/special_panel.gd). When both players are locked in -> Game.push("stage").
 ##
 ##   versus2p   both humans, each on their own device      versus-cpu / training   P2 is auto-picked after P1 locks
-## Writes Game.session.players[i].fighter / .special; `.locked` is true once fighter AND special are chosen.
+## Writes Game.session.players[i].fighter / .special; `.locked` is true once fighter and special are chosen.
 
 const PLATE_SHADER := preload("res://shaders/select_plate.gdshader")
 const BAND_SHADER := preload("res://shaders/select_band.gdshader")
@@ -103,7 +103,7 @@ func exit() -> void:
 			ResourceLoader.load_threaded_get(item["path"])
 	_pending.clear()
 
-# ── construction ─────────────────────────────────────────────────────────────
+# construction
 func _build() -> void:
 	_plate = ColorRect.new()
 	_plate.size = Vector2(1280, 720)
@@ -204,7 +204,7 @@ func _tile_of_fighter(id: int) -> int:
 			return i
 	return -1
 
-# ── frame ────────────────────────────────────────────────────────────────────
+# frame
 func _process(delta: float) -> void:
 	_t += minf(delta, 0.05) if _t < 0.0 else delta   # the crest wipe clamps its clock the same way
 	_plate_mat.set_shader_parameter("pulse", 0.5 + 0.5 * sin(_t * 2.1))
@@ -280,7 +280,7 @@ func _process_random_cycle(delta: float) -> void:
 				_rand_id[s] = int(Game.fighters[_rng.randi() % Game.fighters.size()]["id"])
 				(_sides[s] as SelectSide).show_random(_rand_id[s])
 
-# ── cursor movement ──────────────────────────────────────────────────────────
+# cursor movement
 func _neighbour(i: int, dx: int, dy: int) -> int:
 	var t: Dictionary = _tiles[i]
 	if dx != 0:
@@ -318,7 +318,7 @@ func _show_tile_art(s: int) -> void:
 		side.clear_random()
 		side.show_fighter(id)
 
-# ── input ────────────────────────────────────────────────────────────────────
+# input
 func on_action(dev: String, act: String) -> void:
 	if not _entered or _t < _input_at or _leaving:
 		return
@@ -378,7 +378,7 @@ func _on_tile_input(ev: InputEvent, k: int) -> void:
 		_move_cursor(0, k, false)
 		_confirm_tile(0)
 
-# ── random roulette ──────────────────────────────────────────────────────────
+# random roulette
 func _start_roll(s: int, fid: int, cpu: bool) -> void:
 	var target := _tile_of_fighter(fid)
 	var seq := []
@@ -412,7 +412,7 @@ func _process_rolls(delta: float) -> void:
 				_roll[s] = {}
 				_lock_fighter(s, int(r["fid"]))
 
-# ── locking ──────────────────────────────────────────────────────────────────
+# locking
 func _lock_fighter(s: int, fid: int) -> void:
 	var p: Dictionary = Game.session.players[s]
 	p["fighter"] = fid

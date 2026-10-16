@@ -13,7 +13,7 @@
 </tr>
 </table>
 
-A fan-made one-on-one fighting game set in the world of Blue Archive, played on a 2D side-view lane. It is built in Godot 4.7. Builds for macOS and Windows are attached to each release. This is an unofficial fan project. Blue Archive and its art belong to Nexon Games and Yostar. Credits are in `CREDITS.md`.
+A fan-made one-on-one fighting game set in the world of Blue Archive, played on a 2D side-view lane. It is built in Godot 4.7. Builds for macOS, Windows and Linux are attached to each release. From a checkout on Linux, including SteamOS and Bazzite, `./play_linux.sh` starts the game: it uses the Godot you have installed (native or Flatpak) or downloads Godot 4.7.2 into `~/Tools` first, and it goes fullscreen on a Steam Deck. This is an unofficial fan project. Blue Archive and its art belong to Nexon Games and Yostar. Credits are in `CREDITS.md`.
 
 Direct Inspiration goes to [@ThatKirbo](https://x.com/ThatKirbo) On Twitter. They inspired me to start this project.
 

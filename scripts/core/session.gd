@@ -1,6 +1,6 @@
 class_name Session
 extends RefCounted
-## The match being set up — one object every screen reads and writes, printed by Dbg and handed to
+## The match being set up: one object every screen reads and writes, printed by Dbg and handed to
 ## the (future) fight as `match_config()`.
 ##
 ##   mode    "versus2p" | "versus-cpu" | "arcade" | "training" | ""

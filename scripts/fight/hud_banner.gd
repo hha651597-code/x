@@ -150,7 +150,7 @@ func draw(c: CanvasItem, now: float) -> void:
 			_band(c, age)
 	_glow_flush(c)
 
-# ── the additive layer ───────────────────────────────────────────────────────
+# the additive layer
 func _light(tex_name: String, rect: Rect2, a: float, angle := 0.0) -> void:
 	if a > 0.001:
 		_glow_items.append([tex_name, rect, a, angle])
@@ -179,7 +179,7 @@ static func _fit(t: Texture2D, centre: Vector2, h: float, k := 1.0) -> Rect2:
 	var size := Vector2(h * float(t.get_width()) / float(t.get_height()), h) * k
 	return Rect2(centre - size * 0.5, size)
 
-# ── FIGHT! and START! ────────────────────────────────────────────────────────
+# FIGHT! and START!
 func _call(c: CanvasItem, age: float) -> void:
 	var t := BaWords.tex(word)
 	if t == null:
@@ -192,7 +192,7 @@ func _call(c: CanvasItem, age: float) -> void:
 	var size := Vector2(412.0, 396.0) * flare_of(age)
 	_light(FLARE, Rect2(r.position + Vector2(r.size.x * 0.1, r.size.y * 0.36) - size * 0.5, size), fa, deg_to_rad(100.0 + 50.0 * minf(age / 1.2, 1.0)))
 
-# ── ROUND n, TRAINING, TIME UP, DRAW: the stage-start band ───────────────────
+# ROUND n, TRAINING, TIME UP, DRAW: the stage-start band
 func _band_colour() -> Color:
 	match kind:
 		"timeup": return BaTokens.INK
@@ -220,7 +220,7 @@ func _band(c: CanvasItem, age: float) -> void:
 	var size := Vector2(412.0, 396.0) * flare_of(age) * open
 	_light(FLARE, Rect2(r.position + Vector2(r.size.x * 0.04, r.size.y * 0.2) - size * 0.5, size), open, deg_to_rad(100.0))
 
-# ── K.O. ─────────────────────────────────────────────────────────────────────
+# K.o.
 func _ko(c: CanvasItem, age: float) -> void:
 	var out := clampf((age - (dur - 0.3)) / 0.3, 0.0, 1.0)
 	var a := 1.0 - out
@@ -237,7 +237,7 @@ func _ko(c: CanvasItem, age: float) -> void:
 	c.draw_texture_rect(burst, Rect2(centre - bs * 0.5, bs), false, Color(1, 1, 1, a))
 	c.draw_texture_rect(ko, _fit(ko, centre + Vector2(0, -4), 162.0, lerpf(1.5, 1.0, k)), false, Color(1, 1, 1, a * clampf(age / 0.05, 0.0, 1.0)))
 
-# ── "<NAME> WINS" ────────────────────────────────────────────────────────────
+# "<name> wins"
 func _result(c: CanvasItem, age: float) -> void:
 	var out := clampf((age - (dur - 0.3)) / 0.3, 0.0, 1.0)
 	var a := minf(age / 0.4, 1.0) * (1.0 - out)
@@ -268,7 +268,7 @@ func _result(c: CanvasItem, age: float) -> void:
 		if st != null:
 			c.draw_texture_rect(st, _fit(st, Vector2(CX, yc + (136.0 if lost else 128.0)), 40.0), false, Color(1, 1, 1, a))
 
-# ── WARNING: UIAni_Battle_BossWarning ────────────────────────────────────────
+# WARNING: UIAni_Battle_BossWarning
 ## A texture drawn into r, cut off at the edges of clip.
 static func _clip(c: CanvasItem, t: Texture2D, r: Rect2, clip: Rect2, tint: Color) -> void:
 	var cut := r.intersection(clip)

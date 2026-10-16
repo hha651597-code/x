@@ -87,7 +87,7 @@ func _run() -> void:
 	print("MELEE_TEST ", "PASS" if failures.is_empty() else "FAIL", " checks=", checks, " failures=", failures.size())
 	quit(0 if failures.is_empty() else 1)
 
-# ── helpers ──────────────────────────────────────────────────────────────────
+# helpers
 ## `who` attacks from the left, its foe defends from the right.
 func _as(who: Node) -> void:
 	att = who
@@ -166,7 +166,7 @@ func _hit_of(f: Node, key: String) -> Dictionary:
 func _connect(key: String) -> String:
 	return String(def.receive_hit(att, _hit_of(att, key), att.position, false))
 
-# ── constants and data ───────────────────────────────────────────────────────
+# constants and data
 func _constants() -> void:
 	check(is_equal_approx(_const("CLOSE_RANGE"), 96.0), "Arena.CLOSE_RANGE is 96")
 	check(is_equal_approx(_const("THROW_RANGE"), 120.0), "Arena.THROW_RANGE is 120")
@@ -234,7 +234,7 @@ func _no_dead_zone() -> void:
 		var wr3: Rect2 = att.melee_rect(_hit_of(att, k)["rect"])
 		check(wr3.intersects(def.hurtbox()), "%s %s: connects at the 96 px close range" % [who, k])
 
-# ── which key a press starts ─────────────────────────────────────────────────
+# which key a press starts
 func _selection() -> void:
 	var who := _name()
 	for d in [[95.0, "close"], [96.0, "close"], [97.0, "5"]]:
@@ -285,7 +285,7 @@ func _selection() -> void:
 	_press(att, ["skill"])
 	check(att.move_key == "skill", who + ": close_H cancels into the skill")
 
-# ── the light + heavy chord ──────────────────────────────────────────────────
+# the light + heavy chord
 ## Presses `first`, then `second` `gap` ticks later (0 = the same tick); returns the move started.
 func _late(first: String, second: String, gap: int, dist := 100.0) -> String:
 	_place(dist)
@@ -444,7 +444,7 @@ func _chord() -> void:
 	_press(att, ["light", "heavy"])
 	check(att.move_key == "5H", who + ": a far button mash is a normal")
 
-# ── the throw ────────────────────────────────────────────────────────────────
+# the throw
 func _start_throw() -> void:
 	_place(110.0)
 	att._start_move("throw")
@@ -577,7 +577,7 @@ func _throw() -> void:
 	check(ticks == frames and int(att.moves["throw"]["recovery"]) >= 28, who + " throw: a whiff takes the whole move (%d of %d ticks)" % [ticks, frames])
 	check(is_equal_approx(def.hp, def.max_hp), who + " throw: a whiff does nothing")
 
-# ── the tech ─────────────────────────────────────────────────────────────────
+# the tech
 func _both_throw(def_head_start: int) -> void:
 	_place(100.0)
 	def._start_move("throw")
@@ -650,7 +650,7 @@ func _clash() -> void:
 	att.mf = int(att.move["startup"])
 	check(_connect("throw") == "hit" and def.state == states.AIRHIT, who + " tech: a whiffing throw in recovery is punished")
 
-# ── strikes against a blocking foe ───────────────────────────────────────────
+# strikes against a blocking foe
 func _strikes() -> void:
 	var who := _name()
 	for key in ["close_L", "close_H", "6L"]:
@@ -713,7 +713,7 @@ func _hoshino_armor() -> void:
 	res = String(def.receive_hit(att, h, att.position, false))
 	check(def.state != states.ATTACK, "hoshino close_H: no armor after frame 11")
 
-# ── sound hooks ──────────────────────────────────────────────────────────────
+# sound hooks
 func _sounds() -> void:
 	var who := _name()
 	for k in [["close_L", "swing"], ["6L", "swing"], ["close_H", "swing"], ["6H", "swing"], ["throw", "throw"]]:
@@ -730,7 +730,7 @@ func _sounds() -> void:
 	_connect("close_H")
 	check(_played("hit_h") == hi + 1, who + " close_H: the hit plays hit_h")
 
-# ── the CPU ──────────────────────────────────────────────────────────────────
+# the CPU
 func _brain(level: int, seed_value: int) -> Object:
 	var b = load("res://scripts/fight/cpu_brain.gd").new()
 	b.setup(def, att, level, seed_value)
@@ -810,7 +810,7 @@ func _cpu() -> void:
 			air += 1
 	check(air == 0, "cpu: never plans a throw against a foe who is not actionable")
 
-# ── the generic throw and the audit ──────────────────────────────────────────
+# the generic throw and the audit
 func _generic() -> void:
 	if not M.get_script_method_list().any(func(m: Dictionary) -> bool: return m["name"] == "throw_for"):
 		check(false, "Movesets.throw_for exists")

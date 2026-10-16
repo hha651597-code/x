@@ -44,7 +44,7 @@ static func _rim(c: Color) -> Color:
 static func _tint(c: Color, a := 1.0) -> Color:
 	return Color(c.r, c.g, c.b, a)
 
-# ── dust ──────────────────────────────────────────────────────────────────────
+# dust
 # BA's ground puff: FX_TEX_Smoke_02, white cartoon puffs with a flat grey rim, three held positions and six held sizes (grow,
 # hold, shrink out), no alpha fade. The sheet has real alpha, so the tint multiplies a white puff and its grey rim stays a shade
 # darker, which is what keeps it readable on snow. Three puffs per node, each smaller than the last; Fx.make's seed picks the side
@@ -75,7 +75,7 @@ static func _update_dust(fx: Fx, k: float) -> void:
 		FxKinds._scale(s, DUST_SIZES[pose])
 		s.modulate = _tint(fx.color)
 
-# ── sparkle ───────────────────────────────────────────────────────────────────
+# sparkle
 # BA's twinkle: small, big, mid, small over four held poses. The body is Hit_12's fat four-point star tinted with the colour on a
 # darker rim a quarter larger (a pale star on snow is invisible), and Flare_05's long thin four-point star on top in white, which
 # is BA's own sparkle and gives it the long arms. Layers: 0 rim, 1 body, 2 flare.
@@ -105,7 +105,7 @@ static func _update_sparkle(fx: Fx, k: float) -> void:
 	flare.rotation = tilt
 	flare.modulate = Color.WHITE
 
-# ── heal ──────────────────────────────────────────────────────────────────────
+# heal
 # BA's heal: rising plus signs (FX_TEX_Health_01), twinkling Flare_05 stars and a ring on the ground. The plus signs come up
 # the body one after another, each held on four poses (small, full, full, small) and gone, with a dark rim under each; the ring is
 # the ring kind's circle eroded against Circle_Ring_Wave, flattened to a ground ellipse and stepping out in three radii.
@@ -175,7 +175,7 @@ static func _update_heal(fx: Fx, k: float) -> void:
 		FxKinds._scale(s, [0.3, 1.0, 0.6, 0.3][Fx.pose(u2, 4)])
 		s.modulate = _tint(Color(1.0, 1.0, 0.95).lerp(g, 0.25), 1.0 if on2 else 0.0)
 
-# ── boom ──────────────────────────────────────────────────────────────────────
+# boom
 # A cel explosion from BA's Boom textures: Boom_02's spiky silhouette is the fireball (a dark rim, the colour, a pale core on
 # top), the 16 frames of Boom_01 are the smoke, played every third frame, three puffs behind the fire, and Shock_Wave_06's spikes
 # are eroded against their mask for the blast ring. A comic star flashes on the first pose and eight streaks fly out. size =
@@ -256,7 +256,7 @@ static func _update_boom(fx: Fx, k: float) -> void:
 		FxKinds._scale(s2, ln * (1.0 - 0.7 * k) / 256.0, 0.1)
 		s2.modulate = _tint(FIRE_CORE.lerp(c, 0.3), 1.0 if k < 0.7 else 0.0)
 
-# ── ko ────────────────────────────────────────────────────────────────────────
+# ko
 # The K.O. burst at the loser's chest. BA's common set has no KO effect, so this is a stand-in built from its parts: Boom_02's
 # spike silhouette in white on a coloured rim for the first poses and in the colour after, eight FocusLine bursts radiating, the
 # ring kind's spikes and band, and an eight-point star flash. Everything is held on six poses and leaves by stepping down.
@@ -322,7 +322,7 @@ static func _update_ko(fx: Fx, k: float) -> void:
 		FxKinds._scale(s, 0.9, ln / 256.0)
 		s.modulate = _tint(c.lightened(0.1), 1.0 if k < 0.7 else 0.0)
 
-# ── swish and slash ───────────────────────────────────────────────────────────
+# swish and slash
 # A melee swing. BA's common set has no melee effect, so this is a stand-in from its blade shape: Stretch_Line's diamond with long
 # points (frame 2 of the blade sheet) is bent along the swing's arc as a textured strip, in three layers (a dark rim, the colour, a
 # white core), with a four-point star on the head. The arc is data["r"], ["a0"], ["a1"], ["thick"], ["squash"], ["off"] (swish)
@@ -434,7 +434,7 @@ static func drawn_reach(fx: Fx) -> Vector2:
 			return Vector2.ONE * maxf(float(fx.data.get("field", 6000.0)), 1160.0 * fx.size)
 	return Vector2.ZERO
 
-# ── impact ────────────────────────────────────────────────────────────────────
+# impact
 # An impact frame: for two or three ticks the world goes to a flat ink field with a white spike burst and white focus lines. It is
 # a flat overlay, so it reads no screen texture. Only the K.O. and EX stamp ask for it; with Reduce Flashes on, or inside 340 ms
 # of the last one (FxFlash), it is not built at all. Layers: 0 burst, 1..n focus lines.

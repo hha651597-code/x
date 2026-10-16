@@ -66,7 +66,7 @@ func _run() -> void:
 	print("MOOD_TEST ", "PASS" if failures.is_empty() else "FAIL", " checks=", checks, " failures=", failures.size())
 	quit(0 if failures.is_empty() else 1)
 
-# ── the pure state machine ───────────────────────────────────────────────────
+# the pure state machine
 func _levels() -> void:
 	check(M.level(0, 1.0) == 0 and M.level(0, 0.80) == 0, "full hp and exactly 0.80 are calm")
 	check(M.level(0, 0.7999) == 1 and M.level(1, 0.55) == 1, "below 0.80 scratched, exactly 0.55 still scratched")
@@ -110,7 +110,7 @@ func _precedence() -> void:
 	for s in STATES:
 		check(M.CHAIN[s].back() == "calm" and M.CHAIN[s][0] == s, "the chain of %s starts at itself and ends at calm" % s)
 
-# ── hud_top's card ───────────────────────────────────────────────────────────
+# hud_top's card
 func _rail() -> Array:
 	var a := StubFighter.new()
 	var b := StubFighter.new()
@@ -318,7 +318,7 @@ func _is_calm(c: Color) -> bool:
 			return false
 	return true
 
-# ── BaArt's fallback chain ───────────────────────────────────────────────────
+# BaArt's fallback chain
 func _chain() -> void:
 	var saved_faces: Dictionary = ART._faces.duplicate()
 	var saved_expr: Dictionary = ART._expr.duplicate(true)
@@ -340,7 +340,7 @@ func _chain() -> void:
 	ART._faces = saved_faces
 	ART._expr = saved_expr
 
-# ── the roster against the tiles on disk ─────────────────────────────────────
+# the roster against the tiles on disk
 func _roster() -> void:
 	ART._faces.clear()
 	var ex: Dictionary = ART.expressions()
@@ -391,7 +391,7 @@ func _roster() -> void:
 	print("MOOD_COVERAGE json=%d of %d fighters, own tiles %d of %d, result images %d of %d, %s" % [ex.size(), fighters.size(), own, total,
 		wins, fighters.size() * 2, "full set" if full else "partial set, the rest falls back"])
 
-# ── the result screen ────────────────────────────────────────────────────────
+# the result screen
 func _result() -> void:
 	root.add_child((load("res://scenes/main.tscn") as PackedScene).instantiate())
 	await process_frame

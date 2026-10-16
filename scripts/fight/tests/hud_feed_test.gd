@@ -72,7 +72,7 @@ func _run() -> void:
 	print("HUD_FEED_TEST ", "PASS" if failures.is_empty() else "FAIL", " checks=", checks, " failures=", failures.size())
 	quit(0 if failures.is_empty() else 1)
 
-# ── banners: what each text fight_screen sends becomes ───────────────────────
+# banners: what each text fight_screen sends becomes
 func _banner_mapping() -> void:
 	var sent := {
 		"ROUND 1": ["round", "round_1"], "ROUND 2": ["round", "round_2"], "ROUND 3": ["round", "round_3"], "FINAL ROUND": ["round", "final"],
@@ -157,7 +157,7 @@ func _banner_lose_rule() -> void:
 	check(b.word == "win", "P2 beating P1 in versus shows WIN")
 	s.players[1]["cpu"] = true
 
-# ── feed: tiers, visibility, mirror ──────────────────────────────────────────
+# feed: tiers, visibility, mirror
 func _tiers() -> void:
 	var T = Num.Tier
 	check(Feed.hit_tier("light", 36.0) == T.NORMAL, "a light hit is NORMAL")
@@ -403,7 +403,7 @@ func _ramp(feed: Control, a: Node, d: Node, n: int, per: float, spark: String) -
 		d.combo_dmg += per
 		feed.on_combo(a, d, hits, {"spark": spark})
 
-# ── pixels ───────────────────────────────────────────────────────────────────
+# pixels
 func _shot() -> Image:
 	for i in 4:
 		await process_frame
@@ -571,7 +571,7 @@ func _render() -> void:
 	feed.queue_free()
 	await process_frame
 
-# ── the unchanged FightHud still drives the new banner ───────────────────────
+# the unchanged FightHud still drives the new banner
 func _legacy_hud() -> void:
 	var hud: Control = screen.hud
 	hud.visible = true

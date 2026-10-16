@@ -413,7 +413,7 @@ func probe() -> Dictionary:
 		"descriptor": actor.anim_name, "clip": actor.current_clip, "time": actor.current_time, "facing": face,
 		"playing": playing, "overlay": show_overlay, "blending": blend, "failures": failures}
 
-# ── sheets ───────────────────────────────────────────────────────────────────
+# sheets
 
 func _render_sheets(key: String, anim: String) -> void:
 	lists.visible = false

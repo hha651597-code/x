@@ -1,5 +1,5 @@
 extends Screen
-## Stage + BGM Select — an overlay pushed by the select screen. The screen below is blurred and
+## Stage + BGM Select: an overlay pushed by the select screen. The screen below is blurred and
 ## darkened (shaders/screen_blur.gdshader), a big parallelogram preview shows the stage plate (changing stage
 ## crossfades with a visible ghost), the stage name sits on a hairline with a yellow bar, a white BGM bar cycles
 ## the music (live preview through Game.session.bgm) and a row of thumbnails (the stages + a "?" random
@@ -66,7 +66,7 @@ var _x_glyph: Control
 var _chev: Array = []
 var _thumbs: Array = []                                # {holder, card, hl, delay}
 
-# ── enter ────────────────────────────────────────────────────────────────────
+# enter
 func enter(_p: Dictionary, _info: Dictionary) -> void:
 	z_index = 30                                    # above the covered select screen's z-indexed tiles
 	_bgm_before = Game.session.bgm
@@ -96,7 +96,7 @@ func _row_of(i: int) -> int:
 func _thumb_center(i: int) -> Vector2:
 	return (ROW_ORIGIN[_row_of(i)] as Vector2) + Vector2((i % COLS) * PITCH, 0.0)
 
-# ── build ────────────────────────────────────────────────────────────────────
+# build
 func _build() -> void:
 	_blur = ColorRect.new()
 	_blur.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
@@ -206,7 +206,7 @@ func _build_thumbs() -> void:
 		var row := _row_of(i)
 		_thumbs.append({"holder": holder, "card": card, "hl": 0.0, "delay": 0.1 + float(row) * 0.03 + float(i % COLS) * 0.009})
 
-# ── selection / preview ──────────────────────────────────────────────────────
+# selection / preview
 func _stage_of(i: int) -> Dictionary:
 	return Stages.LIST[i] if i < RANDOM_INDEX else Stages.RANDOM
 
@@ -293,7 +293,7 @@ func _on_thumb_input(ev: InputEvent, i: int) -> void:
 func _usable() -> bool:
 	return not covered and not Game.busy and not _leaving and _roll.is_empty() and _t > INTRO_LOCK
 
-# ── BGM bar ──────────────────────────────────────────────────────────────────
+# BGM bar
 func _bgm_text(i: int) -> String:
 	var track: Dictionary = Stages.BGM[i]
 	return BGM_SHOWN.get(track["id"], track["name"])
@@ -341,7 +341,7 @@ func _on_chevron_input(ev: InputEvent, side: int) -> void:
 	if _usable() and _bar_focus and ev is InputEventMouseButton and ev.pressed and ev.button_index == MOUSE_BUTTON_LEFT:
 		_cycle_bgm(side)
 
-# ── input ────────────────────────────────────────────────────────────────────
+# input
 func on_action(_dev: String, act: String) -> void:
 	if _t < INTRO_LOCK or _leaving or not _roll.is_empty():
 		return
@@ -387,7 +387,7 @@ func on_action(_dev: String, act: String) -> void:
 			Game.session.bgm = _bgm_before
 			Game.pop()
 
-# ── choosing ─────────────────────────────────────────────────────────────────
+# choosing
 func _choose() -> void:
 	if _leaving or not _roll.is_empty():
 		return
@@ -446,7 +446,7 @@ func _update_leave(delta: float) -> void:
 		_went = true
 		Game.go("vs", {}, "fade")
 
-# ── per-frame animation ──────────────────────────────────────────────────────
+# per-frame animation
 func _process(delta: float) -> void:
 	_t += delta
 	_update_backdrop()
@@ -579,7 +579,7 @@ func _update_bar(delta: float) -> void:
 		node.modulate.a = clampf(_bar_hl * 1.6, 0.0, 1.0) * enter_a
 		node.mouse_filter = Control.MOUSE_FILTER_STOP if _bar_focus else Control.MOUSE_FILTER_IGNORE
 
-# ── debug ────────────────────────────────────────────────────────────────────
+# debug
 func probe() -> Dictionary:
 	return {
 		"t": snappedf(_t, 0.01),

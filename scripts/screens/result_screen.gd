@@ -73,7 +73,7 @@ func enter(p: Dictionary, _info: Dictionary) -> void:
 	_build()
 	Sfx.play("claim", 0.9)
 
-# ── construction ─────────────────────────────────────────────────────────────
+# construction
 func _build() -> void:
 	add_child(PainterScript.new().setup(Vector2(1280, 720), _draw_field))
 	var wid := int(_fighter.get("id", 10005))
@@ -124,7 +124,7 @@ func _make_art(tex: Texture2D, f: Dictionary) -> TextureRect:
 	add_child(r)
 	return r
 
-# ── motion ───────────────────────────────────────────────────────────────────
+# motion
 func _process(delta: float) -> void:
 	_t += delta
 	var fw: Dictionary = _frame_w
@@ -159,7 +159,7 @@ func _stamp(delay: float) -> Vector2:
 	var s := lerpf(2.0, 0.95, t / 0.267) if t < 0.267 else lerpf(0.95, 1.0, clampf((t - 0.267) / 0.133, 0.0, 1.0))
 	return Vector2(s, lerpf(0.05, 1.0, clampf(t / 0.4, 0.0, 1.0)))
 
-# ── drawing ──────────────────────────────────────────────────────────────────
+# drawing
 func _draw_field(c: Control) -> void:
 	BaArt.blit(c, BG, Rect2(0, 0, 1280, 720))
 	BaArt.blit(c, PATTERN, Rect2(-120, 60, 760, 760), Color(1, 1, 1, 0.5))
@@ -249,7 +249,7 @@ func _who_text() -> String:
 func _loser_text() -> String:
 	return "DEFEATED"
 
-# ── input ────────────────────────────────────────────────────────────────────
+# input
 func _select(i: int, sound := true) -> void:
 	if i == _sel:
 		return

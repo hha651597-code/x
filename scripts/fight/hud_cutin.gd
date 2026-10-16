@@ -1,6 +1,6 @@
 extends Control
 ## The EX ult cut-in, played while FightScreen freezes the whole world (see fight_screen.gd, "EX ult freeze").
-## It runs on the SIM clock — FightScreen.freeze_age() / release_age(), in seconds — so it can never drift from the freeze,
+## It runs on the SIM clock, FightScreen.freeze_age() / release_age(), in seconds, so it can never drift from the freeze,
 ## it holds while the game is paused, and a queued second cut-in (both players EX on the same frame) restarts it.
 ##
 ## Timeline of one cut-in (1.2 s of frozen world). Layers whip in (Motion.whip: 88 percent of the travel in 7 frames, then a
@@ -292,7 +292,7 @@ func _update_veil() -> void:
 	_veil_mat.set_shader_parameter("impact", impact)
 	_veil_mat.set_shader_parameter("focus", fp / Vector2(1280.0, 720.0))
 
-# ── screen space: band, shards, halo, speed lines ────────────────────────────
+# screen space: band, shards, halo, speed lines
 const SPAN := 1800.0          # the band's wipe covers this much of x, so the whip's 88 percent clears the screen
 
 func _draw_back(c: Control) -> void:
@@ -370,7 +370,7 @@ func _draw_shards(c: Control, left: bool, on: float, yc: float, hh: float, light
 		var tip := Vector2(x + dirs * len_ * 0.6, y)
 		c.draw_colored_polygon(PackedVector2Array([tip, Vector2(x - dirs * len_ * 0.4, y - size * 0.5), Vector2(x - dirs * len_ * 0.4, y + size * 0.5)]), BaTokens.alpha(col, a))
 
-# ── world space (under the caster): radial speed lines in her accent colour ──
+# world space (under the caster): radial speed lines in her accent colour
 const RAYS := 46
 const BOLTS := 6
 
@@ -419,7 +419,7 @@ func _draw_rays(ci: Node2D) -> void:
 		ci.draw_polyline(pts, BaTokens.alpha(accent, 0.8 * k), 9.0 / zoom, true)
 		ci.draw_polyline(pts, BaTokens.alpha(Color.WHITE, 0.95 * k), 3.5 / zoom, true)
 
-# ── screen space: tag, stamped skill name, caster name plate, flashes ────────
+# screen space: tag, stamped skill name, caster name plate, flashes
 func _draw_front(c: Control) -> void:
 	if live:
 		_draw_text(c)
@@ -475,7 +475,7 @@ func _draw_text(c: Control) -> void:
 		c.draw_colored_polygon(PackedVector2Array([Vector2(0, -34), Vector2(tag_w, -34), Vector2(tag_w - 12, 6), Vector2(-12, 6)]), BaTokens.alpha(BaTokens.CONFIRM, tag_a))
 		Kit.text(c, font, Vector2(tag_w * 0.5 - 6.0, -4.0), "EX SKILL", 34, BaTokens.alpha(BaTokens.INK, tag_a), Color(0, 0, 0, 0), 0, 1)
 		Kit.unlean(c)
-	# the skill name STAMPS in: big and transparent → slammed to size with a white impact plate behind it
+	# the skill name stamps in: big and transparent → slammed to size with a white impact plate behind it
 	var land := float(_consts.get("stamp_s", 0.333))
 	var st := clampf((_age - (land - STAMP_LEN)) / STAMP_LEN, 0.0, 1.0)
 	if st > 0.0:
@@ -506,7 +506,7 @@ func _draw_text(c: Control) -> void:
 	Kit.base = Transform2D.IDENTITY
 	c.draw_set_transform_matrix(Transform2D.IDENTITY)
 
-# ── world space (additive): aura behind the caster ───────────────────────────
+# world space (additive): aura behind the caster
 func _draw_aura(ci: Node2D) -> void:
 	if not live or f == null or not is_instance_valid(f):
 		return
@@ -556,7 +556,7 @@ func _draw_aura(ci: Node2D) -> void:
 			var r := lerpf(420.0, 36.0, q * q)
 			ci.draw_arc(mid, r, 0.0, TAU, 72, Color(1, 1, 1, 0.75 * sin(q * PI)), 6.0, true)
 
-# ── world space (additive): trigger burst + release shockwave in front ───────
+# world space (additive): trigger burst + release shockwave in front
 func _draw_burst(ci: Node2D) -> void:
 	if live and f != null and is_instance_valid(f) and _age < 0.32:
 		var q := _age / 0.32

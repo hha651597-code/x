@@ -50,7 +50,7 @@ var _vs_flare: Control
 var _hint: Control
 var _bg_t := 0.0
 
-# ── enter ────────────────────────────────────────────────────────────────────
+# enter
 func enter(p: Dictionary, _info: Dictionary) -> void:
 	_hold = bool(p.get("hold", false))
 	_resolve()
@@ -89,7 +89,7 @@ static func _num(v: Variant) -> int:
 		return int(v)
 	return -1
 
-# ── build ────────────────────────────────────────────────────────────────────
+# build
 func _painter(parent: Control, rect: Rect2, fn: Callable) -> Control:
 	var c: Control = Painter.new().setup(rect.size, fn)
 	c.position = rect.position
@@ -184,7 +184,7 @@ func _add_portrait(i: int) -> void:
 	_world.add_child(holder)
 	_holders.append(holder)
 
-# ── drawing ──────────────────────────────────────────────────────────────────
+# drawing
 func _draw_band(c: Control) -> void:
 	BaArt.nine(c, "Combat__Combat_Gauge_Hp", Rect2(Vector2.ZERO, c.size), Color(BaTokens.GAUGE_EMPTY, 0.9))
 	c.draw_rect(Rect2(0.0, 0.0, c.size.x, 1.5), Color(1, 1, 1, 0.45))
@@ -281,7 +281,7 @@ func _draw_flare(c: Control) -> void:
 func _draw_hint(c: Control) -> void:
 	Menu.ribbon(c, Rect2(Vector2.ZERO, c.size), "Match would start here. Press back to return.")
 
-# ── input ────────────────────────────────────────────────────────────────────
+# input
 func on_action(_dev: String, act: String) -> void:
 	match act:
 		"confirm", "start":
@@ -314,7 +314,7 @@ func _handoff() -> void:
 	else:
 		_end_hold = true
 
-# ── per-frame animation ──────────────────────────────────────────────────────
+# per-frame animation
 func _process(delta: float) -> void:
 	_t += delta
 	_events()
@@ -398,7 +398,7 @@ func _update_strip() -> void:
 	_strip.position.y = (1.0 - k) * 70.0
 	_strip.modulate.a = clampf((_t - T_STRIP) * 10.0, 0.0, 1.0)
 
-# ── debug ────────────────────────────────────────────────────────────────────
+# debug
 func probe() -> Dictionary:
 	return {
 		"t": snappedf(_t, 0.01),

@@ -1,7 +1,7 @@
 class_name Kits
 extends RefCounted
 ## Kit registry: a bespoke kit is simply a file scripts/fight/kits/kit_<roster key>.gd (class extends Kit).
-## No registration needed — drop the file in. Students without one get the generic weapon-class Kit.
+## No registration needed: drop the file in. Students without one get the generic weapon-class Kit.
 
 const DIR := "res://scripts/fight/kits/"
 

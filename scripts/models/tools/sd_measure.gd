@@ -107,7 +107,7 @@ static func measure(moves: Dictionary, actor: Node) -> Dictionary:
 		hurtbox = {"w": roundi((stand[1] + stand[-1]) * 0.5), "h": roundi(-stand["top"]), "crouch_h": roundi(-low["top"])}
 	return {"hurtbox": hurtbox, "push": push_width(actor), "muzzle": muzzle}
 
-# ── push width ───────────────────────────────────────────────────────────────
+# push width
 ## What counts as the trunk, and from what height: the stance spread and the coat hem below it do not.
 const TRUNK := ["torso", "hips", "skirt", "head"]
 const TRUNK_FROM := 60.0

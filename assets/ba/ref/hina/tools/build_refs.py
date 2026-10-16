@@ -95,7 +95,7 @@ def clean_parts(assembly):
 def assemble(assembly, parts, face_png='00_defalt__01_nomal.png', only=None):
     """Paint the setup pose at native texel scale. Returns RGBA image and the transform (assembly->image)."""
     k = 1.0 / parts['hina_04'][1][0]            # assembly units -> texels (hina_04's u scale)
-    # bounds over EVERY slot (assembly['bounds'] leaves the halo out)
+    # bounds over every slot (assembly['bounds'] leaves the halo out)
     pts = [p for s in assembly['slots'] for a in s['atts'].values() for p in (a.get('verts') or a.get('corners'))]
     x0, x1 = min(p[0] for p in pts), max(p[0] for p in pts)
     y0, y1 = min(p[1] for p in pts), max(p[1] for p in pts)

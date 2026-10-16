@@ -73,7 +73,7 @@ var _scrim: ColorRect
 var _scrim_mat: ShaderMaterial
 var _paint: Control
 
-# ── enter / build ────────────────────────────────────────────────────────────
+# enter / build
 func enter(_p: Dictionary, _info: Dictionary) -> void:
 	z_index = 30                                    # above the covered screen's own z-indexed cards
 	_vals["bgm"] = Game.session.bgm_volume
@@ -105,7 +105,7 @@ static func icon(name: String) -> Texture2D:
 		_icons[name] = load(ICONS + name + ".png")
 	return _icons[name]
 
-# ── geometry ─────────────────────────────────────────────────────────────────
+# geometry
 func _row_h(i: int) -> float:
 	return SLIDER_H if i < 2 else ROW_H
 
@@ -148,7 +148,7 @@ func close_rect() -> Rect2:
 static func _on_tint() -> Color:
 	return BaTokens.COST.lerp(Color.WHITE, 0.45)
 
-# ── drawing ──────────────────────────────────────────────────────────────────
+# drawing
 func _draw_panel(c: Control) -> void:
 	var p := popup_rect()
 	Menu.nine(c, "Common__Common_Popup_Bg", p)
@@ -295,7 +295,7 @@ static func token_width(key: Variant) -> float:
 		return TOKEN_H
 	return maxf(TOKEN_H, Menu.text_width(key, 14, 800) + 22.0)
 
-# ── input ────────────────────────────────────────────────────────────────────
+# input
 func on_action(_dev: String, act: String) -> void:
 	if _closing or _t < 0.12:
 		return
@@ -428,7 +428,7 @@ func _close() -> void:
 	_close_t = 0.0
 	Sfx.play("back")
 
-# ── per-frame animation ──────────────────────────────────────────────────────
+# per-frame animation
 func _process(delta: float) -> void:
 	_t += delta
 	_open_t += delta

@@ -3,7 +3,7 @@
 # Writes assets/ba/sd/<key>/sockets.json for every SD fighter (scripts/models/tools/sd_measure.gd: muzzle per kit spawn and
 # shot frame, hurtbox from torso bones) in a small real window. Re-run it after changing a kit's frames,
 # an sd.json or a model; tools/sd_test.sh fails while a sockets.json is stale.
-# Fails on a non-zero exit, on ANY "SCRIPT ERROR" line in Godot's output, or on a run that never prints SD_MEASURE PASS.
+# Fails on a non-zero exit, on any "SCRIPT ERROR" line in Godot's output, or on a run that never prints SD_MEASURE pass.
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 GODOT="${GODOT:-$HOME/Tools/godot-4.7.2/Godot.app/Contents/MacOS/Godot}"
 cd "$ROOT" || exit 1

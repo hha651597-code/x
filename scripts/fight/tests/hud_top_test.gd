@@ -93,7 +93,7 @@ func _run() -> void:
 	print("HUD_TOP_TEST ", "PASS" if failures.is_empty() else "FAIL", " checks=", checks, " failures=", failures.size())
 	quit(0 if failures.is_empty() else 1)
 
-# ── helpers ──────────────────────────────────────────────────────────────────
+# helpers
 ## Renders what make(viewport) adds into a transparent viewport and returns the image.
 func _render(size: Vector2i, make: Callable) -> Image:
 	var vp := SubViewport.new()
@@ -137,7 +137,7 @@ func _step(t: Control, seconds: float) -> void:
 	for i in int(round(seconds / DT)):
 		t._process(DT)
 
-# ── the bar's own pixels ─────────────────────────────────────────────────────
+# the bar's own pixels
 # A 480x42 bar at (10, 8), lean 7.4: the frame's left edge is x 13.7, the fill's range 19.7 to 487.7 (468 wide), centre row y 29.
 func _bar_pixels() -> void:
 	var img: Image = await _render(Vector2i(520, 60), func(vp: Node) -> void:
@@ -250,7 +250,7 @@ func _bar_api() -> void:
 	old.free()
 	neg.free()
 
-# ── HP ghost ─────────────────────────────────────────────────────────────────
+# HP ghost
 func _hp_ghost() -> void:
 	var a := StubFighter.new()
 	var w := _world([a, StubBare.new()])
@@ -280,7 +280,7 @@ func _hp_ghost() -> void:
 	t.queue_free()
 	w.queue_free()
 
-# ── the card's face follows hp (PortraitMood has its own suite: portrait_mood_test) ──
+# the card's face follows hp (PortraitMood has its own suite: portrait_mood_test)
 func _portrait_face() -> void:
 	var a := StubFighter.new()
 	var w := _world([a, StubBare.new()])
@@ -302,7 +302,7 @@ func _portrait_face() -> void:
 	t.queue_free()
 	w.queue_free()
 
-# ── guard bar, read the way guard_test.gd reads it ───────────────────────────
+# guard bar, read the way guard_test.gd reads it
 func _guard() -> void:
 	var a := StubFighter.new()
 	var w := _world([a, StubBare.new()])
@@ -358,7 +358,7 @@ func _guard() -> void:
 	t.queue_free()
 	w.queue_free()
 
-# ── timer plate ──────────────────────────────────────────────────────────────
+# timer plate
 func _timer() -> void:
 	var w := _world([StubFighter.new(), StubFighter.new()])
 	var t := _top(w)
@@ -462,7 +462,7 @@ func _centre() -> void:
 	check(bare_img.get_pixel(640, 52).a > 0.9, "fighters with none of the fields still draw the plate and raise no error")
 	bare.queue_free()
 
-# ── school crests in the name item ───────────────────────────────────────────
+# school crests in the name item
 ## Bounding box of the white ink inside r on the red or cyan bar.
 func _ink_box(img: Image, r: Rect2i) -> Rect2i:
 	var box := Rect2i()
@@ -500,7 +500,7 @@ func _crests() -> void:
 		check(sz.x <= box.x + 0.5 and sz.y <= box.y + 0.5 and maxf(sz.x / box.x, sz.y / box.y) > 0.95, "%s's crest is cut to its ink and fills the HUD box (%s of %s)" % [school, sz, box])
 	w.queue_free()
 
-# ── round words, tags, names, sparkle ────────────────────────────────────────
+# round words, tags, names, sparkle
 func _words_and_names() -> void:
 	var w := _world([StubFighter.new(), StubFighter.new()])
 	var t := _top(w)
@@ -542,7 +542,7 @@ func _words_and_names() -> void:
 	t.queue_free()
 	w.queue_free()
 
-# ── geometry for the facade ──────────────────────────────────────────────────
+# geometry for the facade
 func _geometry() -> void:
 	var w := _world([StubFighter.new(), StubFighter.new()])
 	var t := _top(w)
@@ -565,7 +565,7 @@ func _geometry() -> void:
 	t.queue_free()
 	w.queue_free()
 
-# ── status badges ────────────────────────────────────────────────────────────
+# status badges
 func _hue(img: Image) -> float:
 	var sum := Vector2.ZERO
 	var n := 0.0
@@ -671,7 +671,7 @@ func _status() -> void:
 	row.queue_free()
 	w.queue_free()
 
-# ── a real training fight ────────────────────────────────────────────────────
+# a real training fight
 func _real_fight() -> void:
 	var game: Node = root.get_node("Game")
 	root.add_child((load("res://scenes/main.tscn") as PackedScene).instantiate())

@@ -34,7 +34,7 @@ static func apply(hud: Control) -> void:
 			"time10":
 				w.timer_frames = 10 * 60 + 30     # half a second before the last ten seconds, so the WARNING fires
 
-## HUD_SHOT=<dir>: the HUD saves a PNG a moment into each banner kind (once per round) — for KO / wins / pips shots in CPU-vs-CPU runs.
+## HUD_SHOT=<dir>: the HUD saves a PNG a moment into each banner kind (once per round), for KO / wins / pips shots in CPU-vs-CPU runs.
 static var _done := {}
 const SNAP_AT := {"ko": 0.5, "win": 0.8, "timeup": 0.5, "round": 0.45, "fight": 0.2}
 

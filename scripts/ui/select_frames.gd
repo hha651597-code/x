@@ -1,6 +1,6 @@
 class_name SelectFrames
 extends RefCounted
-## Framing of the big select-screen art. HEADS maps a fighter id to the head square [x, y, side] inside
+## Framing of the big select-screen art. Heads maps a fighter id to the head square [x, y, side] inside
 ## its portrait (pixels of the portrait file, found by matching the 120px head icon against the portrait).
 ## Every portrait is then scaled so its head square is HEAD_PX wide and the head lands on the side's anchor,
 ## which keeps the face size constant across differently-drawn portraits (like the video).

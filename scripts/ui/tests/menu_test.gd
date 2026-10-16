@@ -76,7 +76,7 @@ func _run() -> void:
 	print("MENU_TEST ", "PASS" if failures.is_empty() else "FAIL", " checks=", checks, " failures=", failures.size())
 	quit(0 if failures.is_empty() else 1)
 
-# ── helpers ──────────────────────────────────────────────────────────────────
+# helpers
 func _wipe_scratch() -> void:
 	if FileAccess.file_exists(SCRATCH):
 		DirAccess.remove_absolute(ProjectSettings.globalize_path(SCRATCH))
@@ -99,7 +99,7 @@ func _mouse(screen: Node, pos: Vector2, pressed: bool) -> void:
 	b.pressed = pressed
 	screen._on_mouse(b)
 
-# ── settings ─────────────────────────────────────────────────────────────────
+# settings
 func _settings() -> void:
 	var a = SESS.new()
 	check(a.reduce_flashes == false, "Reduce Flashes is off by default")
@@ -149,7 +149,7 @@ func _assets() -> void:
 		var img := Image.new()
 		check(img.load_png_from_buffer(bytes) == OK and img.get_width() == int(e["width"]) and img.get_height() == int(e["height"]), "dimensions of " + path)
 
-# ── menu ─────────────────────────────────────────────────────────────────────
+# menu
 func _menu_entrance() -> void:
 	game.session.reset()
 	await game.go("menu", {}, "cut")
@@ -350,7 +350,7 @@ func _menu_text() -> void:
 		check(cap_w <= 640.0, "%s caption ribbon (%.0f) fits under the tile grid" % [m["id"], cap_w])
 	check(KIT.pop(0.0) == 0.8 and is_equal_approx(KIT.pop(0.25), 1.0), "selection pop runs 0.8 to 1.0 in a quarter second")
 
-# ── options ──────────────────────────────────────────────────────────────────
+# options
 func _options_flow() -> void:
 	game.session.bgm_volume = 0.7
 	game.session.sfx_volume = 0.8
@@ -477,7 +477,7 @@ func _controls_page() -> void:
 			caption = m["caption"]
 	check(caption != "" and not caption.to_lower().contains("display"), "the Options caption does not promise display settings (%s)" % caption)
 
-# ── assign ───────────────────────────────────────────────────────────────────
+# assign
 func _assign_flow(humans: int, mode: String) -> void:
 	game.session.reset()
 	game.session.begin(mode)

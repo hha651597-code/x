@@ -312,7 +312,7 @@ func _ex_hue() -> void:
 func FlashH() -> GDScript:
 	return load("res://scripts/fight/fx_flash.gd")
 
-# ── measuring helpers ─────────────────────────────────────────────────────────
+# measuring helpers
 const SNOW := Color(0.91, 0.95, 0.97)
 const NAVY := Color(0.07, 0.14, 0.23)
 
@@ -408,7 +408,7 @@ func _ring_thickness() -> void:
 	check(blades >= 2500, "the spikes of a heavy ring show on snow (%d px)" % blades)
 	vp2.queue_free()
 
-# ── a hit's star and its ring ─────────────────────────────────────────────────
+# a hit's star and its ring
 ## The hits that pair a ring with a star: Fx.spark's heavy and ex, and fight_screen's explosions (the ring first, then the star,
 ## sized from the blast radius).
 const PAIRS := ["heavy", "ex", "boom60", "boom80", "boom120"]
@@ -861,7 +861,7 @@ func _text() -> void:
 	check((n.parts[0] as Sprite2D).modulate.a < 0.6, "numerals fade at the end")
 	holder.queue_free()
 
-# ── the second set: dust, sparkle, heal, boom, ko, swish and slash, impact ───
+# the second set: dust, sparkle, heal, boom, ko, swish and slash, impact
 ## One effect at `holder`, stepped by hand with no processing of its own.
 func _make(holder: Node, kind: String, life: float, opts: Dictionary) -> Node2D:
 	var FX: GDScript = load("res://scripts/fight/fx.gd")

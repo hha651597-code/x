@@ -72,7 +72,7 @@ func _ready() -> void:
 	_scroll = _scroll_to
 	_cursor_changed(false)
 
-# ── data ─────────────────────────────────────────────────────────────────────
+# data
 ## assets/ba/jukebox/albums.json: {albums: {id: {name, subtitle, cover}}, tracks: {track id: album id or null}}.
 static func albums() -> Dictionary:
 	if _albums.is_empty():
@@ -142,7 +142,7 @@ func _track_data_id(row: int) -> String:
 func _wanted_scroll() -> float:
 	return window_for(_cursor, _scroll_to, _items.size())
 
-# ── construction ─────────────────────────────────────────────────────────────
+# construction
 func _build() -> void:
 	_strip = Control.new()
 	_strip.position = STRIP.position
@@ -177,7 +177,7 @@ func _build() -> void:
 		_panel.add_child(b)
 		_btns.append(b)
 
-# ── page API ─────────────────────────────────────────────────────────────────
+# page API
 func begin(first: bool) -> void:
 	_t = 0.0
 	_first = first
@@ -232,7 +232,7 @@ func probe() -> Dictionary:
 			"scroll": snappedf(_scroll_to, 0.1), "cards": _items.size(), "title": String(_items[_cursor]["name"]).to_upper(),
 			"composer": String(Bgm.track(shown).get("composer", "")), "album": String(alb["name"]), "subtitle": String(alb["subtitle"]), "cover": String(alb["cover"])}
 
-# ── actions ──────────────────────────────────────────────────────────────────
+# actions
 func _move(i: int) -> void:
 	i = clampi(i, 0, _items.size() - 1)
 	if i == _cursor:
@@ -310,7 +310,7 @@ func _play(row: int) -> void:
 	_last_play_row = _playing_row()
 	_cursor_changed(false)
 
-# ── frame ────────────────────────────────────────────────────────────────────
+# frame
 func _process(delta: float) -> void:
 	_t += delta
 	if _items[_cursor]["id"] == "auto" and _track_data_id(_cursor) != _shown_id:
@@ -359,7 +359,7 @@ func _update_music() -> void:
 	_pos = Bgm.position() if _live else 0.0
 	_len = maxf(Bgm.length() if _live else Bgm.length_of(_shown_id), 1.0)
 
-# ── drawing ──────────────────────────────────────────────────────────────────
+# drawing
 ## Chevrons at the strip's ends when more cards lie beyond them.
 func _draw_edges(c: Control) -> void:
 	var more_l := _scroll > 0.05
@@ -472,7 +472,7 @@ static func draw_icon(c: CanvasItem, kind: String, r: Rect2, col: Color, one := 
 			if one:
 				Menu.label(c, "1", p.call(0.5, 0.64), 15, col, Color(0, 0, 0, 0), 0, 1, 800)
 
-# ── mouse ────────────────────────────────────────────────────────────────────
+# mouse
 func _can_mouse() -> bool:
 	return active and not Game.busy and _t > 0.5
 
@@ -514,7 +514,7 @@ func _on_button_input(ev: InputEvent, i: int) -> void:
 		_ctl = i
 		_press(KEYS[i])
 
-# ── one card of the strip ────────────────────────────────────────────────────
+# one card of the strip
 class _Card extends Control:
 	var page: GalleryJukebox
 	var index := 0

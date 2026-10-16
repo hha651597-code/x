@@ -158,7 +158,7 @@ func _build(p: Dictionary) -> void:
 	_toast.modulate.a = 0.0
 	add_child(_toast)
 
-# ── drawing ──────────────────────────────────────────────────────────────────
+# drawing
 ## The strip sits where the old label did and is only as wide as its text, so the picture stays visible.
 static func label_rect(m: Dictionary) -> Rect2:
 	var size := label_size(m)
@@ -197,7 +197,7 @@ func _draw_toast(c: Control) -> void:
 	Menu.nine(c, "Common__Common_Nonoutline_W_Bg", r, Menu.K, BaTokens.WHITE, BaTokens.SHEAR)
 	Menu.label(c, "Coming soon", Vector2(r.get_center().x, r.get_center().y + 8.0), 22, BaTokens.LABEL_INK, Color(0, 0, 0, 0), 0, 1, 800)
 
-# ── per-frame ────────────────────────────────────────────────────────────────
+# per-frame
 func _process(delta: float) -> void:
 	_t += delta
 	_sel_age += delta
@@ -314,7 +314,7 @@ func probe() -> Dictionary:
 	return {"selected": MODES[_selected]["id"], "t": snappedf(_t, 0.01), "cover": snappedf(_cover, 0.01), "caption": _caption_text, "who": _who}
 
 
-# ── the student on the menu ─────────────────────────────────────────────────
+# the student on the menu
 ## A student that is not the last one shown, a portrait mood and a line to match. p may force them: {"mascot": id, "mood": "win"}.
 func _pick_mascot(p: Dictionary) -> void:
 	var ids: Array = []

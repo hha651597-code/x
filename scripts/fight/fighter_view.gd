@@ -3,7 +3,7 @@ extends Node2D
 ## Fighters with assets/ba/sd/<key>/sd.json use SD actors with texture-preserving toon materials; others keep the paths below.
 ##  * The portrait is drawn through shaders/fighter.gdshader (soft-body warp: lean from the hips, S-bend, feet swing,
 ##    per-segment squash/stretch, breathing, jelly wobble) so the torso whips while the feet stay planted.
-##  * Pose channels are driven by critically/under-damped springs: the state machine only sets TARGETS (anticipation ->
+##  * Pose channels are driven by critically/under-damped springs: the state machine only sets targets (anticipation ->
 ##    snap -> follow-through per move) and events (hit, land, shot) kick the springs, which gives overshoot and weight.
 ##  * Also: ground shadow, EX-ready halo, super/buff/shield auras, afterimage pool, casings, swish arcs, KO / win effects.
 
@@ -168,7 +168,7 @@ func _build_ghosts(tw: float, th: float) -> void:
 		parent.add_child(sp)
 		_ghosts.append({"spr": sp, "mat": gm, "age": 0.0, "life": 0.3, "alpha": 0.5})
 
-# ── per-frame ────────────────────────────────────────────────────────────────
+# per-frame
 func step(delta: float) -> void:
 	delta = minf(delta, 0.05)
 	_time += delta
@@ -209,7 +209,7 @@ func head_pos() -> Vector2:
 		return f.position + rig.transform * sd_actor.anchor_local("head")
 	return f.position + Vector2(0.0, -Arena.SPRITE_H * 0.9)
 
-# ── events: detect sim-state changes and turn them into spring kicks / effects ─
+# events: detect sim-state changes and turn them into spring kicks / effects
 func _track_events(_delta: float) -> void:
 	# round restart / state change
 	if f.state != _prev_state:
@@ -435,7 +435,7 @@ func _ko_fx() -> void:
 			p.emit(FxParticles.K.STAR, c + Vector2(Fx.h(float(i), 3.0) * 160.0 - 80.0, Fx.h(float(i), 5.0) * 120.0 - 70.0),
 				Vector2(0, -30), 0.8 + 0.5 * Fx.h(float(i), 1.0), 22.0 + 12.0 * Fx.h(float(i), 7.0), Color(1.0, 0.8, 0.5), 0.0, 0.0, 0.0, Fx.h(float(i), 8.0))
 
-# ── ambient effects (auras, ghosts during supers, win sparkles) ──────────────
+# ambient effects (auras, ghosts during supers, win sparkles)
 func _ambient_fx(delta: float) -> void:
 	var S := Fighter.S
 	var is_ex: bool = f.state == S.ATTACK and not f.move.is_empty() and (bool(f.move.get("cutin", false)) or f.in_super())
@@ -469,7 +469,7 @@ func _ambient_fx(delta: float) -> void:
 		var bd := -signf(f.vel.x)
 		p.emit(FxParticles.K.PUFF, f.position + Vector2(bd * 18.0, -5.0), Vector2(bd * 28.0, -14.0), 0.35, 6.5, Color.WHITE, 0.0, 2.0)
 
-# ── ghosts (afterimages) ─────────────────────────────────────────────────────
+# ghosts (afterimages)
 func add_ghost(col := Color(0.7, 0.9, 1.0), life := 0.28) -> void:
 	if _ghosts.is_empty():
 		return
@@ -502,7 +502,7 @@ func _update_ghosts(delta: float) -> void:
 		var op := float(g["alpha"]) * (1.0 - k) * (1.0 - k)
 		(g["mat"] as ShaderMaterial).set_shader_parameter("opacity", op)
 
-# ── pose targets ─────────────────────────────────────────────────────────────
+# pose targets
 func _t(c: int, v: float) -> void:
 	_tg[c] = v
 
@@ -793,7 +793,7 @@ func _skill_defs(ex: bool, _pl: float) -> Array:
 			sd[k] = float(sd[k]) * 1.3
 	return [wd, sd]
 
-# ── spring integration + applying to the nodes / shader ──────────────────────
+# spring integration + applying to the nodes / shader
 func _integrate(delta: float) -> void:
 	var n := maxi(1, int(ceil(delta / (1.0 / 120.0))))
 	var hstep := delta / float(n)
@@ -867,7 +867,7 @@ func _apply(delta: float) -> void:
 	if f._flash <= 0.01:
 		_flash_col = Color.WHITE
 
-# ── back layer (behind the sprite): shadow, halo, auras, shield ──────────────
+# back layer (behind the sprite): shadow, halo, auras, shield
 func _draw_back(ci: Node2D) -> void:
 	var S := Fighter.S
 	# ground shadow

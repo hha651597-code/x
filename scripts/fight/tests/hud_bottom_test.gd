@@ -85,7 +85,7 @@ func _meters(a: float, b: float) -> void:
 	f1.meter = a
 	f2.meter = b
 
-# ── geometry ─────────────────────────────────────────────────────────────────
+# geometry
 func _geometry() -> void:
 	var screen_rect := Rect2(0, 0, 1280, 720)
 	_meters(100.0, 100.0)
@@ -137,7 +137,7 @@ func _geometry() -> void:
 	check(near(bottom.rect_plate(0).end.y, 636.0), "plate bottom sits 4 px above the strip")
 	check(bottom.rect_plate(0).end.y < bottom.rect_cell(0, 0).position.y, "plate stays above the cells")
 
-# ── values ───────────────────────────────────────────────────────────────────
+# values
 func _values() -> void:
 	var table := [[0.0, 0, "", false, false], [9.99, 0, "", false, false], [10.0, 1, "", false, false], [49.9, 4, "", false, false],
 			[50.0, 5, "super", true, false], [99.9, 9, "super", true, false], [100.0, 10, "ex", true, true]]
@@ -155,7 +155,7 @@ func _values() -> void:
 	_meters(35.0, 35.0)
 	check(near(bottom.cells_filled(0), 3.5), "a half cell reads 3.5")
 
-# ── assist ───────────────────────────────────────────────────────────────────
+# assist
 func _assist() -> void:
 	var m := _module(screen)
 	for pair in [[0, "ready", 0], [90, "cooldown", 2], [61, "cooldown", 2], [60, "cooldown", 1], [1, "cooldown", 1]]:
@@ -195,7 +195,7 @@ func _assist() -> void:
 	screen.mode = "training"
 	m.free()
 
-# ── the meter edges and their sounds ─────────────────────────────────────────
+# the meter edges and their sounds
 func _chimes() -> int:
 	return int(sfx.played.get("ex_ready", 0))
 
@@ -264,7 +264,7 @@ func _edges() -> void:
 	m.free()
 	screen.phase = "intro"
 
-# ── the call-out ─────────────────────────────────────────────────────────────
+# the call-out
 func _callout() -> void:
 	var m := _module(screen)
 	_step(m, 1)
@@ -305,7 +305,7 @@ func _callout() -> void:
 	f2.assist_data = saved
 	m.free()
 
-# ── real pixels ──────────────────────────────────────────────────────────────
+# real pixels
 func _render(m: Control) -> Image:
 	var vp := SubViewport.new()
 	vp.size = Vector2i(1280, 720)
@@ -427,7 +427,7 @@ func _pixels() -> void:
 	check(_is_bg(_px(bare, bottom.rect_bracket(0).position.x + 4.0, bottom.rect_bracket(0).get_center().y)), "without an assist the bracket is hidden")
 	check(not _is_bg(_px(bare, bottom.rect_disc(0).get_center().x, bottom.rect_disc(0).get_center().y)), "without an assist the COST disc stays")
 
-# ── missing fields ───────────────────────────────────────────────────────────
+# missing fields
 func _missing() -> void:
 	var w := FakeWorld.new()
 	w.fighters = [Bare.new(), Bare.new()]

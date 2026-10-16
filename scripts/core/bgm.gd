@@ -45,7 +45,7 @@ const TRACKS := [
 	{"id": "fury-of-set", "name": "Fury of Set", "file": "fury-of-set.ogg", "composer": "KARUT", "no": 212, "role": "Fight theme", "loop": LOOP_OFFSET, "len": 125.79},
 ]
 
-## AUTO in a fight: a flavour pairing per stage; anything else hashes into BATTLE.
+## Auto in a fight: a flavour pairing per stage; anything else hashes into battle.
 const STAGE_TRACKS := {"gehenna-night": "out-of-control"}
 const BATTLE := ["pachad", "out-of-control", "step-of-terror", "dark-shadows", "mechanical-jungle", "virtual-storm", "alert",
 		"crossfire", "final-destination-of-ark", "fury-of-set"]
@@ -115,7 +115,7 @@ func _setup_bus() -> void:
 		fx = AudioServer.get_bus_effect_count(_bus) - 1
 	_spec = AudioServer.get_bus_effect_instance(_bus, fx) as AudioEffectSpectrumAnalyzerInstance
 
-# ── queries ──────────────────────────────────────────────────────────────────
+# queries
 ## Every track as {id, name, file, composer, no, role, loop}; the order is the jukebox / stage-select order.
 func tracks() -> Array:
 	return TRACKS
@@ -175,7 +175,7 @@ func probe() -> Dictionary:
 			"volume": snappedf(Game.session.bgm_volume, 0.01), "bus": _bus, "bus_db": snappedf(AudioServer.get_bus_volume_db(_bus), 0.1),
 			"players": _pid.duplicate(), "gains": Array(_gain).map(func(g): return snappedf(g, 0.01))}
 
-# ── playback ─────────────────────────────────────────────────────────────────
+# playback
 func _process(delta: float) -> void:
 	if enabled:
 		var want := _desired()
@@ -189,14 +189,14 @@ func _process(delta: float) -> void:
 	AudioServer.set_bus_mute(_bus, v <= 0.001)
 	AudioServer.set_bus_volume_db(_bus, linear_to_db(maxf(v, 0.001)) + MAKEUP_DB)
 
-## What the session asks for right now: its track id, or the AUTO pick.
+## What the session asks for right now: its track id, or the auto pick.
 func _desired() -> String:
 	var id := String(Game.session.bgm)
 	if id == "auto" or not _by_id.has(id):
 		return _auto_track()
 	return id
 
-## AUTO: the bright main theme on menus / select / results; a stage-dependent battle track during a fight.
+## Auto: the bright main theme on menus / select / results; a stage-dependent battle track during a fight.
 func _auto_track() -> String:
 	if Game.current_name() == "fight":
 		var key := str(Game.session.stage.get("id", "x"))

@@ -77,7 +77,7 @@ func _stop() -> void:
 	await process_frame
 	await process_frame
 
-# ── the Reduce Flashes helper ────────────────────────────────────────────────
+# the Reduce Flashes helper
 func _flash_helper() -> void:
 	var on := StubSession.new()
 	var off := Session.new()
@@ -97,7 +97,7 @@ func _flash_helper() -> void:
 	check(not Flash.reduced(not_bool), "an object without the property is off, not an error")
 	not_bool.free()
 
-# ── the caster's accent ──────────────────────────────────────────────────────
+# the caster's accent
 func _accent() -> void:
 	var hina: Color = Cutin.accent_for({"id": 10004, "bullet": "Explosion"})
 	var hoshino: Color = Cutin.accent_for({"id": 10005, "bullet": "Pierce"})
@@ -114,7 +114,7 @@ func _roster() -> Array:
 	var f := FileAccess.open("res://assets/ba/roster.json", FileAccess.READ)
 	return JSON.parse_string(f.get_as_text())["fighters"]
 
-# ── the plate ────────────────────────────────────────────────────────────────
+# the plate
 func _name_fit() -> void:
 	var F: GDScript = load("res://scripts/core/fighters.gd")
 	var worst := 99
@@ -199,7 +199,7 @@ func side_light() -> Color:
 func shear() -> float:
 	return (load("res://scripts/ui/ba_tokens.gd") as GDScript).SHEAR
 
-# ── whip timing and the duck ─────────────────────────────────────────────────
+# whip timing and the duck
 func _timing() -> void:
 	check(near(Cutin.ART_T, 5.0 / 60.0, 0.0001) and near(Cutin.TAG_T, 9.0 / 60.0, 0.0001) and near(Cutin.PLATE_T, 11.0 / 60.0, 0.0001), "layers start 5, 9 and 11 frames after the band")
 	check(near(Cutin.EXIT_T, 0.86, 0.0001) and near(Cutin.EXIT_LEN, 0.16, 0.0001), "the exit keeps its constants, so the HUD duck is unchanged")
@@ -239,7 +239,7 @@ func _timing() -> void:
 	check(float(sx[0]) < float(sx[1]) - 100.0 and float(sx[2]) - float(sx[1]) < 40.0, "the art slides in from its side and has settled by tick 20 (%s)" % str(sx))
 	await _stop()
 
-# ── the impact frame on the stamp ────────────────────────────────────────────
+# the impact frame on the stamp
 func _veil_impact() -> void:
 	var land := 20
 	var seen := {}
@@ -257,7 +257,7 @@ func _veil_impact() -> void:
 	game.session = real
 	await _stop()
 
-# ── flashes, and the strobe, respect Reduce Flashes ──────────────────────────
+# flashes, and the strobe, respect Reduce Flashes
 func _flash_caps() -> void:
 	await _at(0)
 	var full := float(cutin._mat.get_shader_parameter("flash"))
@@ -280,7 +280,7 @@ func _flash_caps() -> void:
 	check(not near(pa, float(cutin._mat.get_shader_parameter("glow_amt")), 0.0001), "and pulses otherwise")
 	await _stop()
 
-# ── the cut-in follows the sim clock, not the wall clock ─────────────────────
+# the cut-in follows the sim clock, not the wall clock
 func _sim_clock() -> void:
 	await _at(33)
 	var a: float = cutin._age

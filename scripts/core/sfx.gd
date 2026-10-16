@@ -80,7 +80,7 @@ func _exit_tree() -> void:
 	_streams.clear()
 	OS.delay_msec(60)
 
-# ── clips ────────────────────────────────────────────────────────────────────
+# clips
 ## Plays `event` from `who`'s set (data["key"], "hina"). No set, or an event the set lacks, plays the map's `event`;
 ## a null entry is silent. `tick` is the fighter's frame, `move` its current move key (for mute_in). True when a clip started.
 func play_for(who: String, slot: int, tick: int, event: String, pitch := 1.0, vol := 1.0, move := "") -> bool:
@@ -227,7 +227,7 @@ func _log(into: Array, entry: Dictionary) -> void:
 	if into.size() > LOG_MAX:
 		into.pop_front()
 
-# ── players ──────────────────────────────────────────────────────────────────
+# players
 ## Each slot has a move, a voice and a cut channel of two players: a new clip starts on the idle one while the old fades.
 func _on_channel(slot: int, chan: String, stream: AudioStream, pitch: float, db: float) -> void:
 	var k := "%d.%s" % [slot, chan]
@@ -274,7 +274,7 @@ func _kill_fade(p: AudioStreamPlayer) -> void:
 		_fades.erase(p)
 
 
-# ── the sound map ────────────────────────────────────────────────────────────
+# the sound map
 ## Loads ui_map.json and every clip it names, so the first call never waits on a disk read.
 func _build() -> void:
 	var f := FileAccess.open(BASE + "ui_map.json", FileAccess.READ)

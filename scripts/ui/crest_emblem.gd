@@ -6,7 +6,7 @@ extends Control
 ##   kind   "red" (three rings + spinning cube) | "gold" (winged spiked halo) | "sakura" (petals in a circle)
 ##   t      seconds since the emblem appeared (spins, bobs, spinner)
 ##   enter  0..1 draw-in progress          pop  spring 0..~1.15 (scale / stagger overshoot)
-##   zoom   extra camera push-in (1 = rest) — multiplies everything
+##   zoom   extra camera push-in (1 = rest), multiplies everything
 
 const VP := 1.5
 const CENTER := Vector2(640, 360)
@@ -32,7 +32,7 @@ func _init() -> void:
 	size = Vector2(1280, 720)
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
 
-# ── helpers ──────────────────────────────────────────────────────────────────
+# helpers
 ## Set the draw transform: reference px → viewport px (VP×), then centre/rotation/scale.
 func _xf(center: Vector2, rot: float, scl: Vector2) -> void:
 	draw_set_transform_matrix(Transform2D(0.0, Vector2(VP, VP), 0.0, Vector2.ZERO) * Transform2D(rot, scl, 0.0, center))
@@ -59,7 +59,7 @@ func _draw() -> void:
 		"sakura": _draw_sakura()
 		_: _draw_red()
 
-# ── red: three double rings on a tilted disc + spinning cube ─────────────────
+# red: three double rings on a tilted disc + spinning cube
 func _draw_red() -> void:
 	var sc := lerpf(0.35, 1.0, minf(pop, 1.25)) * zoom
 	var c := CENTER + Vector2(-8, 0)
@@ -127,7 +127,7 @@ func _draw_cube(c: Vector2, s: float, spin: float) -> void:
 			var tip := PackedVector2Array([pl, pl.lerp(pa, 0.42), pl.lerp(pb, 0.42)])
 			draw_colored_polygon(tip, Color(0.95, 0.27, 0.38).lerp(Color(0.6, 0.1, 0.2), 1.0 - minf(k, 1.0)))
 
-# ── gold: winged halo with radiating spikes ──────────────────────────────────
+# gold: winged halo with radiating spikes
 func _draw_gold() -> void:
 	var base_sc := 0.97
 	var sc := lerpf(0.22, base_sc, minf(pop, 1.2)) * zoom
@@ -200,7 +200,7 @@ func _draw_wing(_k: float) -> void:
 		draw_colored_polygon(poly, GOLD)
 	draw_polyline(top, Color(1, 0.96, 0.75, 0.75), 3.5, true)
 
-# ── sakura: five petals inside a ring, with a loading spinner ────────────────
+# sakura: five petals inside a ring, with a loading spinner
 static func petal() -> PackedVector2Array:
 	if _petal.is_empty():
 		var up := PackedVector2Array([Vector2(66, 0), Vector2(120, 26), Vector2(190, 66), Vector2(270, 106), Vector2(340, 136),

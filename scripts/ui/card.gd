@@ -2,7 +2,7 @@ class_name Card
 extends Control
 ## The house card (white rounded border + picture + shadow), optionally a parallelogram.
 ## A Control: position/size/scale/rotation/modulate work as usual; the look lives in
-## shaders/card.gdshader. `size` is the CARD; the shadow/glow draw outside it (up to `margin` px).
+## shaders/card.gdshader. `size` is the card; the shadow/glow draw outside it (up to `margin` px).
 
 const SHADER := preload("res://shaders/card.gdshader")
 
@@ -30,7 +30,7 @@ func _on_resized() -> void:
 func _draw() -> void:
 	draw_rect(Rect2(Vector2(-margin, -margin), size + Vector2(margin, margin) * 2.0), Color.WHITE)
 
-# ── configuration (chainable) ────────────────────────────────────────────────
+# configuration (chainable)
 func setup(card_size: Vector2, radius := 18.0, border := 5.0) -> Card:
 	size = card_size
 	custom_minimum_size = card_size

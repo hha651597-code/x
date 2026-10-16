@@ -78,7 +78,7 @@ func _run() -> void:
 	print("INTRO_TEST ", "PASS" if failures.is_empty() else "FAIL", " checks=", checks, " failures=", failures.size())
 	quit(0 if failures.is_empty() else 1)
 
-# ── helpers ──────────────────────────────────────────────────────────────────
+# helpers
 func _match(mode: String, p1: int, p2: int) -> void:
 	game.session.begin(mode)
 	game.session.players[0]["fighter"] = p1
@@ -170,7 +170,7 @@ func _end_state() -> Array:
 		out.append([f.position, f.vel, f.state, f.input.held, f.input.pressed, f.facing, f.visible])
 	return out
 
-# ── the entry decision, the constants, the shot table ────────────────────────
+# the entry decision, the constants, the shot table
 func _data() -> void:
 	check(screen.get("intro_len") == FULL, "a versus2p first round plays the entry: 360 ticks (got %s)" % str(screen.get("intro_len")))
 	check(K.get("INTRO_SHOT") == SHOT and K.get("INTRO_PAN") == PAN and K.get("INTRO_WIDE_AT") == WIDE and K.get("INTRO_FULL") == FULL, "the constants: shot 96, pan 36, wide block from 229, 360 in all")
@@ -198,7 +198,7 @@ func _data() -> void:
 		check(float(k["z0"]) > 1.5 and float(k["zb"]) > 1.5 and float(k["z1"]) <= 1.75, "every shot zoom is in (1.5, 1.75], one viewport scale of 1.75, never over 1.8")
 		check(float(k["face_y"]) == 380.0 and float(k["face_up"]) == 177.0, "the face is held at screen y 380 from a face height of 177")
 
-# ── the whole timeline, tick by tick ─────────────────────────────────────────
+# the whole timeline, tick by tick
 func _timeline(label: String) -> void:
 	_first_round()
 	var f1: Node = screen.f1
@@ -365,7 +365,7 @@ func _pause() -> void:
 	_steps(1)
 	check(_voices(screen.f1).size() == v + 1, "and not again")
 
-# ── held buttons, skip ───────────────────────────────────────────────────────
+# held buttons, skip
 func _held_buttons() -> void:
 	_first_round()
 	controls.set_held("kb1", "confirm", true)
@@ -437,7 +437,7 @@ func _ignored_skips() -> void:
 	check(screen.phase == "intro", "with both fighters on the CPU nobody can skip")
 	_steps(FULL)
 
-# ── rounds 2 and 3, a restart and training ───────────────────────────────────
+# rounds 2 and 3, a restart and training
 func _later_rounds() -> void:
 	var voices := _voices(screen.f1).size() + _voices(screen.f2).size()
 	# round 2 after a finished round: the 120 tick wide block

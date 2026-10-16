@@ -1,6 +1,6 @@
 extends CanvasLayer
 ## Screen transitions. `await Game.transition.play(style, opts, on_cover)`:
-## on_cover() runs once, while the old screen is fully hidden — that is where Game swaps screens.
+## on_cover() runs once, while the old screen is fully hidden, that is where Game swaps screens.
 ## Styles:
 ##   "cut"    instant
 ##   "fade"   quick dip to dark

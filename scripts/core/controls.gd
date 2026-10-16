@@ -1,6 +1,6 @@
 extends Node
 ## One input path for every screen. Turns keyboard clusters and gamepads into logical actions
-## per DEVICE and emits `action(device, name)` on press (directions also auto-repeat).
+## per device and emits `action(device, name)` on press (directions also auto-repeat).
 ##
 ##   actions : up down left right confirm back aux aux2 lb rb start
 ##   devices : "kb1"  left-hand cluster   W A S D · F confirm · G back · R aux · T aux2 · Q/E shoulders

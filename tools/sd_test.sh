@@ -1,7 +1,7 @@
 #!/bin/zsh
 # usage: [TEST=res://scripts/models/tests/<test>.gd] tools/sd_test.sh
 # Runs the SD fighter animation suite (scripts/models/tests/sd_anim_test.gd) in a small real window.
-# Fails on a non-zero exit or on ANY "SCRIPT ERROR" line in Godot's output.
+# Fails on a non-zero exit or on any "SCRIPT ERROR" line in Godot's output.
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 GODOT="${GODOT:-$HOME/Tools/godot-4.7.2/Godot.app/Contents/MacOS/Godot}"
 cd "$ROOT" || exit 1

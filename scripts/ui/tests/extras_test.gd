@@ -82,7 +82,7 @@ func _open(tab: String, extra := {}) -> Node:
 	await _wait(0.6)
 	return _screen()
 
-# ── assets ───────────────────────────────────────────────────────────────────
+# assets
 func _assets() -> void:
 	var f := FileAccess.open("res://assets/ba/gallery/PROVENANCE.json", FileAccess.READ)
 	check(f != null, "gallery PROVENANCE.json opens")
@@ -101,7 +101,7 @@ func _assets() -> void:
 	for stem in ["Common__Card_Item_Bg_N", "Common__Common_Icon_Formation_Star", "Common__Common_Icon_Formation_Star_Disable", "Common__Common_Deco_DotLine", "UIs__00_Images__Image_Normal_Empty2"]:
 		check(K.art(stem) != null, "kit loads " + stem)
 
-# ── helpers ──────────────────────────────────────────────────────────────────
+# helpers
 func _kit() -> void:
 	var rs: Array = K.runs("83,240")
 	check(rs == [["83", true], [",", false], ["240", true]], "runs split a grouped number into digits and a comma")
@@ -156,7 +156,7 @@ func _statics() -> void:
 		check(Rect2(Vector2.ZERO, JB.PLAYER.size).encloses(br), "transport button %d sits inside the player box" % i)
 	check(not (seen[0] as Rect2).intersects(seen[1]) and not (seen[1] as Rect2).intersects(seen[2]) and not (seen[2] as Rect2).intersects(seen[3]) and not (seen[3] as Rect2).intersects(seen[4]), "the transport buttons do not touch")
 
-# ── tabs and focus ───────────────────────────────────────────────────────────
+# tabs and focus
 func _tabs() -> void:
 	var scr := await _open("characters")
 	check(scr.probe()["tab"] == "characters" and scr.probe()["focus"] == "page", "opens on the Characters page with the page focused")
@@ -191,7 +191,7 @@ func _tabs() -> void:
 	check((scr._tabs[2] as GalleryKit.Tab).focused, "the selected tab shows its bracket while the tab bar has focus")
 	scr.on_action("kb1", "down")
 
-# ── characters ───────────────────────────────────────────────────────────────
+# characters
 func _characters() -> void:
 	var scr := await _open("characters")
 	var pg: Control = scr._page(0)
@@ -335,7 +335,7 @@ func _grab() -> Image:
 	await RenderingServer.frame_post_draw
 	return root.get_texture().get_image()
 
-# ── jukebox ──────────────────────────────────────────────────────────────────
+# jukebox
 func _jukebox() -> void:
 	game.session.bgm = "auto"
 	game.session.jukebox_shuffle = false
@@ -586,7 +586,7 @@ func _header_fit() -> void:
 		check(face.encloses(rr[0]) and face.encloses(rr[1]), "tab %d: the title and the subtitle sit inside the bar's face (%s, %s)" % [tab, rr[0], rr[1]])
 		check(rr[0].end.y < rr[1].position.y - 2.0, "tab %d: the subtitle clears the title" % tab)
 
-# ── records ──────────────────────────────────────────────────────────────────
+# records
 func _records() -> void:
 	check(not RC.COUNTED_MODES.has("Training") and RC.COUNTED_MODES.size() == 3, "the empty page lists only the modes whose matches can finish")
 	var by_id: Dictionary = game.by_id
@@ -644,7 +644,7 @@ func _records() -> void:
 				ink += 1
 	check(ink > 20, "the first figure is drawn in D_Font blue (%d px)" % ink)
 
-# ── fixes ────────────────────────────────────────────────────────────────────
+# fixes
 ## The move table reads each fighter's own kit, and a kit move with no damage or decorative spawns cannot break it.
 func _moves_from_kits() -> void:
 	var kits: GDScript = load("res://scripts/fight/kits.gd")
@@ -704,7 +704,7 @@ func _bgm_lengths() -> void:
 	check(is_equal_approx(bgm.length_of(id), float(bgm.track(id)["len"])) and bgm._streams.size() == loaded, "length_of reads the table and loads nothing")
 	check(bgm.length_of("nope") == 0.0, "an unknown track has no length")
 
-# ── copy and colours ─────────────────────────────────────────────────────────
+# copy and colours
 func _lint() -> void:
 	var rx := RegEx.new()
 	rx.compile("Color\\(\\s*\"#?[0-9a-fA-F]{3,8}\"")

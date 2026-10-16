@@ -54,7 +54,7 @@ func reset() -> void:
 	_warn.active = false
 	_frames = 1 << 30
 
-# ── tiers ────────────────────────────────────────────────────────────────────
+# tiers
 ## BA's numeral colour of one hit: yellow for a big hit or an EX, orange for a hit flagged counter (the engine sets none yet), white otherwise.
 static func hit_tier(spark: String, dmg: float, counter := false) -> int:
 	if spark == "ex" or spark == "heavy" or dmg >= BIG:
@@ -70,7 +70,7 @@ static func louder(a: int, b: int) -> int:
 static func fade_of(age: float) -> float:
 	return clampf((HOLD - age) * 3.5, 0.0, 1.0)
 
-# ── combo feed ───────────────────────────────────────────────────────────────
+# combo feed
 func on_combo(att: Object, def: Object, hits: int, h := {}) -> void:
 	var idx := int(_val(att, "slot", 0)) - 1
 	if idx < 0 or idx > 1:
@@ -144,7 +144,7 @@ func _draw_chip(i: int) -> void:
 		return
 	_draw_icon_row(i, "Common__Common_Defense_Icon", "%d" % int(round(float(ch["dmg"]))), BaNumerals.Tier.RESIST, float(_chip_y[i]), fade_of(_time - float(ch["t0"])), _slide(i, float(ch["first"])))
 
-# ── hit and guard words ──────────────────────────────────────────────────────
+# hit and guard words
 func _screen(world_pos: Vector2) -> Vector2:
 	var root = world.get("world_root") if world != null else null
 	if root == null:
@@ -179,7 +179,7 @@ func _draw_word(w: Dictionary) -> void:
 	if int(w["chip"]) > 0:
 		BaNumerals.draw(self, "%d" % int(w["chip"]), Vector2(centre.x + size.x * 0.5 + 6.0, centre.y - 15.0), 29.0 * pop, BaNumerals.Tier.RESIST, Color(1, 1, 1, a))
 
-# ── watching the fighters ────────────────────────────────────────────────────
+# watching the fighters
 static func _val(f: Object, name: String, fallback: Variant) -> Variant:
 	var v = f.get(name)
 	return fallback if v == null else v

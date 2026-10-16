@@ -1,6 +1,6 @@
 extends Control
 ## Boot: creates the screen host + transition layer, hands them to Game and opens the title (the menu under a step file or a test).
-## (The debug harness — scripts/core/dbg.gd — can start somewhere else with --screen=name.)
+## (The debug harness, scripts/core/dbg.gd, can start somewhere else with --screen=name.)
 
 func _ready() -> void:
 	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)

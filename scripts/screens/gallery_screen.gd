@@ -69,7 +69,7 @@ func exit() -> void:
 		if pg != null:
 			pg.call("exit")
 
-# ── construction ─────────────────────────────────────────────────────────────
+# construction
 func _build() -> void:
 	add_child(PainterScript.new().setup(Vector2(1280, 720), _draw_backdrop))
 	_head = PainterScript.new().setup(Vector2(1280, 80), _draw_head)
@@ -148,7 +148,7 @@ func _show_page(i: int, on: bool) -> void:
 	if on:
 		pg.call("set_page_focus", _focus == "page")
 
-# ── frame ────────────────────────────────────────────────────────────────────
+# frame
 func _process(delta: float) -> void:
 	_t += delta
 	if _t < 0.9:
@@ -172,7 +172,7 @@ func _process(delta: float) -> void:
 			cur.position.x = 0.0
 			_prev = -1
 
-# ── tabs / focus ─────────────────────────────────────────────────────────────
+# tabs / focus
 func _goto(i: int, sound := true) -> void:
 	i = clampi(i, 0, TABS.size() - 1)
 	if i == _tab:
@@ -254,7 +254,7 @@ func _on_back_input(ev: InputEvent) -> void:
 	if ev is InputEventMouseButton and ev.pressed and ev.button_index == MOUSE_BUTTON_LEFT:
 		_leave()
 
-# ── footer hint ──────────────────────────────────────────────────────────────
+# footer hint
 func _dir_label() -> Variant:
 	if _last_dev == "kb1":
 		return "WASD"

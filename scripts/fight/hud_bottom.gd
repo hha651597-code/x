@@ -128,7 +128,7 @@ func _process(delta: float) -> void:
 	_ink.queue_redraw()
 	_light.queue_redraw()
 
-# ── what the fighters say ────────────────────────────────────────────────────
+# what the fighters say
 func _f(i: int) -> Object:
 	var fs = world.get("fighters") if world != null else null
 	return fs[i] if fs is Array and fs.size() > i else null
@@ -217,7 +217,7 @@ func key_glyph(i: int) -> Texture2D:
 	var dev := hint_dev(i + 1)
 	return Controls.glyph_for(dev, "lb") if dev.begins_with("pad") else null
 
-# ── geometry ─────────────────────────────────────────────────────────────────
+# geometry
 ## A P1 rect on side i: P2 mirrors across the screen centre.
 func _m(i: int, r: Rect2) -> Rect2:
 	return r if i == 0 else Rect2(1280.0 - r.end.x, r.position.y, r.size.x, r.size.y)
@@ -273,13 +273,13 @@ func callout_rect(i: int) -> Rect2:
 	var at := Motion.whip(age) if out == 0.0 else 1.0 - out * out
 	return Rect2(home.position + Vector2(off * (1.0 - at), 0.0), home.size)
 
-# ── cooldown art ─────────────────────────────────────────────────────────────
+# cooldown art
 ## The portrait with its colour mostly gone.
 static func _gray(id: int) -> Texture2D:
 	var src := BaArt.portrait(id)
 	return BaArt.gray(src, 0.15) if src != null else null
 
-# ── drawing ──────────────────────────────────────────────────────────────────
+# drawing
 func _draw_ink(c: Control) -> void:
 	for i in 2:
 		if _f(i) == null:

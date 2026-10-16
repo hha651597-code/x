@@ -5,7 +5,7 @@
 # fighter <key> and <anim> (a state anim from sd.json, a kit move key or a raw clip name). Extra args go to the game after
 # "--", e.g. --script=steps.json for scripts/core/dbg.gd. --sheet renders filmstrips (both facings as rows, overlay on)
 # to export/sd_preview/<key>/<anim>.png and quits. Fails on a non-zero exit or ANY "SCRIPT ERROR" line
-# (sheets: also on any ERROR line or a run that never prints SD_PREVIEW PASS).
+# (sheets: also on any ERROR line or a run that never prints SD_PREVIEW pass).
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 GODOT="${GODOT:-$HOME/Tools/godot-4.7.2/Godot.app/Contents/MacOS/Godot}"
 cd "$ROOT" || exit 1

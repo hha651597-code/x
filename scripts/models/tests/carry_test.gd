@@ -90,7 +90,7 @@ func _boot(p1: int, p2: int) -> void:
 	screen.phase = "fight"
 	states = screen.f1.get_script().S
 
-# ── helpers ──────────────────────────────────────────────────────────────────
+# helpers
 func _as(who: Node) -> void:
 	att = who
 	def = who.foe
@@ -202,7 +202,7 @@ func _trace() -> Dictionary:
 	m["recoil"] = absf(att.position.x - m["x0"])
 	return {"rows": rows, "m": m}
 
-# ── the audit ────────────────────────────────────────────────────────────────
+# the audit
 ## What a throw's carry dict must satisfy; the problems, empty when it is sound. `foe_anims` are the anims of the fighter it holds.
 func _audit(m: Dictionary, foe_anims: Array) -> Array:
 	var bad: Array = []
@@ -261,7 +261,7 @@ func _audit_selftest() -> void:
 		(cases[name] as Callable).call(m)
 		check(name in _audit(m, ["carried"]), "audit: flags '%s'" % name)
 
-# ── data ─────────────────────────────────────────────────────────────────────
+# data
 func _data() -> void:
 	var who := _name()
 	var s: Array = SPEC[who]
@@ -290,7 +290,7 @@ func _data() -> void:
 		check(int(e["frame"]) > int(m["startup"]) and int(e["frame"]) <= int(c["release"]), who + " throw: swing at frame %d is inside the carry" % int(e["frame"]))
 	check(sfx_names.has("swing"), who + " throw: swings during the hoist")
 
-# ── the grab ─────────────────────────────────────────────────────────────────
+# the grab
 func _grab() -> void:
 	var t := _tag()
 	var hp := 0.0
@@ -325,7 +325,7 @@ func _to_grab_from_placed() -> int:
 			return i + 1
 	return -1
 
-# ── the path ─────────────────────────────────────────────────────────────────
+# the path
 func _path() -> void:
 	var t := _tag()
 	_to_grab()
@@ -361,7 +361,7 @@ func _path() -> void:
 	check(key_hits.size() == c["path"].size(), t + " path: every key frame was visited (%d of %d)" % [key_hits.size(), c["path"].size()])
 	check(moved == int(c["release"]) - int(att.moves["throw"]["startup"]), t + " path: one step per move frame from startup to the release (%d)" % moved)
 
-# ── the release ──────────────────────────────────────────────────────────────
+# the release
 func _release() -> void:
 	var t := _tag()
 	_place()
@@ -403,7 +403,7 @@ func _release() -> void:
 		_step()
 	check(_played("slam") == slams + 1, t + " release: slam is not played again")
 
-# ── recoil, landing, advantage ───────────────────────────────────────────────
+# recoil, landing, advantage
 func _recoil_and_landing() -> void:
 	var t := _tag()
 	var r := _trace()
@@ -421,7 +421,7 @@ func _recoil_and_landing() -> void:
 	var turn := fposmod(float(m["land_roll"]) + 180.0, 360.0) - 180.0
 	check(absf(turn) <= SPIN_LEAN, t + " landing: the roll at touchdown is near a whole turn (%.1f deg, %.1f off)" % [float(m["land_roll"]), turn])
 
-# ── the view ─────────────────────────────────────────────────────────────────
+# the view
 func _view() -> void:
 	var t := _tag()
 	_to_grab()
@@ -467,7 +467,7 @@ func _view() -> void:
 	v._val[r] = val0
 	v._vel[r] = vel0
 
-# ── the hand fit ─────────────────────────────────────────────────────────────
+# the hand fit
 func _px(actor: Node, bone: String) -> Vector2:
 	var sk: Skeleton3D = actor.grip_skeleton
 	var i := sk.find_bone(bone)
@@ -518,7 +518,7 @@ func _fit() -> void:
 	check(float(g["mean"]) <= FIT_MEAN, t + " fit: the foe's chest rides the free hand, mean %.1f px of %.0f" % [float(g["mean"]), FIT_MEAN])
 	check(float(g["steady"]) <= FIT_STEADY, t + " fit: and stays on it after the pull-in, steady %.1f px of %.0f" % [float(g["steady"]), FIT_STEADY])
 
-# ── a whiff ──────────────────────────────────────────────────────────────────
+# a whiff
 func _whiff() -> void:
 	var who := _name()
 	_place(300.0)
@@ -531,7 +531,7 @@ func _whiff() -> void:
 	check(ticks == int(att.moves["throw"]["frames"]), who + " whiff: the whole move runs (%d of %d ticks)" % [ticks, int(att.moves["throw"]["frames"])])
 	check(is_equal_approx(def.hp, def.max_hp) and def.carry_anim == "", who + " whiff: nothing happens to the foe")
 
-# ── a held foe cannot be touched ─────────────────────────────────────────────
+# a held foe cannot be touched
 func _untouchable() -> void:
 	var who := _name()
 	_to_grab()
@@ -564,7 +564,7 @@ func _untouchable() -> void:
 		_step()
 	check(is_equal_approx(att.position.x, ax), who + " held: push-apart does not shove the thrower (moved %.3f px)" % (att.position.x - ax))
 
-# ── aborts ───────────────────────────────────────────────────────────────────
+# aborts
 func _mid_carry() -> void:
 	_to_grab()
 	var c := _carry()
@@ -641,7 +641,7 @@ func _aborts() -> void:
 	check(def.carrier == null and att.carrying == null and def.carry_anim == "" and def.carry_roll == 0.0 and def.carry_spin == 0.0 and def.carry_t == 0, who + " round start: no link and no view field is left")
 	check(is_equal_approx(def.hp, def.max_hp), who + " round start: nobody is hurt")
 
-# ── a foe caught in a move of its own, facing away ───────────────────────────
+# a foe caught in a move of its own, facing away
 func _crossup() -> void:
 	var who := _name()
 	_place()
@@ -653,7 +653,7 @@ func _crossup() -> void:
 	check(def.move.is_empty() and def.state == states.AIRHIT, who + " cross-up: its move is dropped")
 	check(def.facing == -att.facing, who + " cross-up: and it faces the thrower, so the pose and the landing read the right way round")
 
-# ── the thrower is struck on the connect tick ────────────────────────────────
+# the thrower is struck on the connect tick
 func _trade() -> void:
 	var who := _name()
 	for strike_first in [true, false]:
@@ -680,7 +680,7 @@ func _trade() -> void:
 			_step()
 		check(def.carrier == null and att.carrying == null and def.combo_hits <= 1, who + " trade: and nothing lands twice (strike first %s)" % str(strike_first))
 
-# ── a hit on the tumbling foe ────────────────────────────────────────────────
+# a hit on the tumbling foe
 func _juggle() -> void:
 	var who := _name()
 	_to_grab()
@@ -697,7 +697,7 @@ func _juggle() -> void:
 		_step()
 	check(def.carry_anim == "", who + " juggle: and it stays ended")
 
-# ── a throw that kills ───────────────────────────────────────────────────────
+# a throw that kills
 func _kill() -> void:
 	var who := _name()
 	_to_grab()
@@ -742,7 +742,7 @@ func _banner() -> void:
 	screen.phase = "fight"
 	screen.slowmo = 0
 
-# ── walls ────────────────────────────────────────────────────────────────────
+# walls
 func _walls() -> void:
 	var who := _name()
 	for f in [1, -1]:
@@ -759,7 +759,7 @@ func _walls() -> void:
 		check(absf(att.position.x) <= A.HALF_W, who + " wall f%+d: nor does the thrower" % f)
 	face = 1
 
-# ── sounds ───────────────────────────────────────────────────────────────────
+# sounds
 func _sounds() -> void:
 	var who := _name()
 	_place()
@@ -777,7 +777,7 @@ func _sounds() -> void:
 	check(_played("swing") == swings + want, who + " sounds: %d swing(s) during the carry (%d)" % [want, _played("swing") - swings])
 	check(_played("land") == lands + 1, who + " sounds: the foe's landing plays land once")
 
-# ── an EX freeze in the middle ───────────────────────────────────────────────
+# an EX freeze in the middle
 func _freeze_run(frozen: bool) -> Array:
 	_place()
 	att._start_move("throw")
@@ -803,7 +803,7 @@ func _freeze() -> void:
 	check(plain == frozen, _name() + " freeze: the carry resumes tick for tick after a freeze")
 	screen.time_stop = 0
 
-# ── determinism, facings, both tick orders ───────────────────────────────────
+# determinism, facings, both tick orders
 func _both_orders() -> void:
 	face = 1
 	for who in [screen.f1, screen.f2]:

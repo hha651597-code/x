@@ -131,7 +131,7 @@ static func all_urls() -> Array:
 			out.append(l[1])
 	return out
 
-# ── actions ──────────────────────────────────────────────────────────────────
+# actions
 ## Returns true: the window takes every action while it is open.
 func handle(act: String) -> bool:
 	match act:
@@ -189,7 +189,7 @@ func probe() -> Dictionary:
 	return {"focus": _focus, "links": _links.size(), "url": String(_rows[_links[_focus]]["url"]) if not _links.is_empty() else "",
 			"scroll": snappedf(_scroll_to, 0.1), "content": _content_h, "box": BOX, "body": Rect2(BOX.position + BODY.position, BODY.size)}
 
-# ── frame ────────────────────────────────────────────────────────────────────
+# frame
 func _process(delta: float) -> void:
 	_t += delta
 	_scroll = lerpf(_scroll, _scroll_to, 1.0 - exp(-delta * 14.0))
@@ -203,7 +203,7 @@ func _process(delta: float) -> void:
 	_body.queue_redraw()
 	queue_redraw()
 
-# ── drawing ──────────────────────────────────────────────────────────────────
+# drawing
 func _draw() -> void:
 	draw_rect(Rect2(Vector2.ZERO, Vector2(1280, 720)), Color(BaTokens.NAVY, 0.7))
 
@@ -244,7 +244,7 @@ func _draw_body(c: Control) -> void:
 				if sel:
 					GalleryKit.draw_bracket(c, rect.grow_individual(4.0, 1.0, 4.0, 1.0), Motion.pulse(_t))
 
-# ── mouse ────────────────────────────────────────────────────────────────────
+# mouse
 func _row_at(local_y: float) -> int:
 	var y := local_y + _scroll
 	for k in _links.size():

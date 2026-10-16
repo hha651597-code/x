@@ -1,5 +1,5 @@
 extends Control
-## A Control whose _draw is a Callable — for one-off glyphs (chevrons, the X button, key caps, icons)
+## A Control whose _draw is a Callable, for one-off glyphs (chevrons, the X button, key caps, icons)
 ## so a screen does not need a file per little shape.  Usage:
 ##   const Painter := preload("res://scripts/ui/painter.gd")
 ##   var g := Painter.new().setup(Vector2(24, 24), func(c: Control): c.draw_circle(c.size * 0.5, 10.0, Color.WHITE))

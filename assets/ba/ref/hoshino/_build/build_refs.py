@@ -155,7 +155,7 @@ for name, (src, box) in crops.items():
     save(im, name, CROPS)
 
 # ---------------------------------------------------------------- the official art at the sprite's target size
-# crown (top of the hair on the skull, NOT the ahoge) y=80, ground y=1015 in portrait px -> 935 px = 165 sprite px.
+# crown (top of the hair on the skull, not the ahoge) y=80, ground y=1015 in portrait px -> 935 px = 165 sprite px.
 CROWN, SOLE, TARGET = 80, 1015, 165
 k = TARGET / (SOLE - CROWN)
 small = P.resize((round(P.width * k), round(P.height * k)), Image.LANCZOS)

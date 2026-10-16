@@ -85,7 +85,7 @@ func _run() -> void:
 	print("PUSH_TEST ", "PASS" if failures.is_empty() else "FAIL", " checks=", checks, " failures=", failures.size())
 	quit(0 if failures.is_empty() else 1)
 
-# ── helpers ──────────────────────────────────────────────────────────────────
+# helpers
 ## A fresh training fight with `left` as player 1 and `right` as player 2.
 func _boot(left: String, right: String) -> void:
 	game.session.begin("training")
@@ -125,7 +125,7 @@ func _stats_of(key: String) -> Dictionary:
 			return load("res://scripts/fight/kits.gd").make(e).build_stats()
 	return {}
 
-# ── the number ───────────────────────────────────────────────────────────────
+# the number
 func _data() -> void:
 	for f in [f1, f2]:
 		var key := String(f.data["key"])
@@ -169,7 +169,7 @@ func _sprites() -> void:
 		for f in made[k]:
 			f.free()
 
-# ── the push ─────────────────────────────────────────────────────────────────
+# the push
 func _push(pair: Array) -> void:
 	var tag := "%s v %s" % pair
 	var want := _want(pair)
@@ -236,7 +236,7 @@ func _corner(pair: Array) -> void:
 			check(absf(f1.position.x) <= A.HALF_W and absf(f2.position.x) <= A.HALF_W, label + ": both stay inside the arena")
 	_place(-200.0, 300.0)
 
-# ── ranges, snap, teleports: legacy distance + the spacing extra ─────────────
+# ranges, snap, teleports: legacy distance + the spacing extra
 ## `att` presses `btns` (forward held when `fwd`, down when `down`) with the foe `legacy` px away: the legacy distance the
 ## ranges were authored against, so centres are legacy + extra. Returns the move that started.
 func _key(att: Node, legacy: float, btns: Array, fwd := false, down := false, foe_air := false) -> String:
@@ -303,7 +303,7 @@ func _cpu(pair: Array) -> void:
 				throws += 1
 		check((throws > 0) == (legacy < A.THROW_RANGE), "%s v %s: the CPU plans a throw only inside legacy 120 (%d of 600 at %.1f)" % [pair[0], pair[1], throws, legacy])
 
-# ── the walk at the minimum, and the Dbg gap key ─────────────────────────────
+# the walk at the minimum, and the Dbg gap key
 ## The anim sync() shows for `att` walking (state WALK) with the foe `gap` px past the pair minimum.
 func _shown(att: Node, gap: float, state: int, dir: int) -> String:
 	_place(-300.0, _want([att.data["key"], att.foe.data["key"]]) + gap)
@@ -406,7 +406,7 @@ func _dbg_gap(pair: Array) -> void:
 	check(absf(f2.position.x - (f1.position.x + float(f1.facing) * want)) < 0.01, "%s v %s: gap wins over pos in one step" % [pair[0], pair[1]])
 	_place(-300.0, 300.0)
 
-# ── how far the trunks overlap at the minimum spacing ────────────────────────
+# how far the trunks overlap at the minimum spacing
 ## Poses a fighter's can have, as {name, face, ext}: every state anim (10 samples), every kit move (every third frame, a held
 ## move also at its parking frame), both facings, blending off, with the trunk's (left, right) edge from the feet origin.
 func _trunk_poses(f: Node) -> Array:
@@ -474,7 +474,7 @@ func _overlap() -> void:
 			check(CAPS.has(tag) and worst[tag] <= float(CAPS[tag]), "%s: the trunks overlap by %.1f px, cap %s" % [tag, worst[tag], str(CAPS.get(tag, "none: look at this pose and add one"))])
 	check(names.size() >= 60 and "idle" in seen and "move:throw" in seen, "the overlap test saw %d poses" % names.size())
 
-# ── what a rect reaches ──────────────────────────────────────────────────────
+# what a rect reaches
 ## Bare fighters face to face: `att` (hina or hoshino, with its real moves) against a foe of `foe_key`.
 func _duel(att_key: String, foe_key: String, d: float, att_left: bool) -> Array:
 	var att: Node = _bare(_stats_of(att_key))

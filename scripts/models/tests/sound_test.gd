@@ -41,7 +41,7 @@ func _run() -> void:
 	print("SOUND_TEST ", "PASS" if failures.is_empty() else "FAIL", " checks=", checks, " failures=", failures.size())
 	quit(0 if failures.is_empty() else 1)
 
-# ── helpers ──────────────────────────────────────────────────────────────────
+# helpers
 func _fresh() -> void:
 	sfx.stop_all()
 	sfx.clips_played.clear()
@@ -78,7 +78,7 @@ func _all_clip_refs() -> Array:
 					out.append_array(e["clips"])
 	return out
 
-# ── manifest and clips ───────────────────────────────────────────────────────
+# manifest and clips
 func _resolve() -> void:
 	check(sfx.manifest.has("sets") and sfx.manifest.has("clips"), "the manifest loaded")
 	check(sfx.manifest["clips"].size() == 67, "67 clips: 43 sfx and 24 voices (%d)" % sfx.manifest["clips"].size())
@@ -128,7 +128,7 @@ func _sets() -> void:
 	check(not FileAccess.file_exists(BASE + "sfx/SFX_Skill_Hoshino_Ex_Shield_Drop.wav"), "the shield drop clip is not shipped")
 	check(String(hoshino["voice"]["ult"]["clips"][1]).ends_with("Hoshino_ExSkill_2.ogg"), "Hoshino keeps her ExSkill_2 line")
 
-# ── fallback and the old API ─────────────────────────────────────────────────
+# fallback and the old API
 func _fallback() -> void:
 	_fresh()
 	var tick_n := _count("tick")
@@ -154,7 +154,7 @@ func _fallback() -> void:
 	check(not sfx.play_for("hina", 0, 10, "tick") and sfx._next == next and _count("tick") == tick_before + 1, "a null entry is silent, counted, and does not fall back")
 	sfx.manifest["sets"]["hina"]["sfx"].erase("tick")
 
-# ── variants ─────────────────────────────────────────────────────────────────
+# variants
 func _variants() -> void:
 	_fresh()
 	for i in 60:
@@ -193,7 +193,7 @@ func _variants() -> void:
 	check(runs[0] == runs[1], "a seeded rng gives the same clips and pitches twice")
 	check(sfx.rng is RandomNumberGenerator, "Sfx has its own rng")
 
-# ── gaps, mute_in, channels ──────────────────────────────────────────────────
+# gaps, mute_in, channels
 func _gaps() -> void:
 	_fresh()
 	check(_shot("hina", 0, 100), "gap: the first shot plays")
@@ -218,7 +218,7 @@ func _gaps() -> void:
 	check(sfx.play_for("hina", 0, 0, "lock_and_load") and not sfx.play_for("hina", 0, 60, "lock_and_load") and sfx.play_for("hina", 0, 120, "lock_and_load"), "gap: one lock and load per 120 ticks")
 	check(sfx.clips_played.back()["channel"] == "long", "channel: lock and load is on the long pool")
 
-# ── volume, pitch, gain ──────────────────────────────────────────────────────
+# volume, pitch, gain
 func _levels() -> void:
 	_fresh()
 	sfx.play_for("hina", 0, 0, "ult")
@@ -264,7 +264,7 @@ func _levels() -> void:
 		fixed = fixed and p2 >= pow(2.0, -1.0 / 12.0) - 0.0001 and p2 <= 1.0001
 	check(fixed, "pitch: Hoshino's shot stays within -1..0 semitones")
 
-# ── voices ───────────────────────────────────────────────────────────────────
+# voices
 func _voice(who: String, slot: int, tick: int, event: String, frozen := false, max_s := 0.0) -> bool:
 	return sfx.voice(who, slot, tick, event, frozen, max_s)
 
@@ -407,7 +407,7 @@ func _playback() -> void:
 	check(lock_player.playing, "playback: a shot does not cut Hina's Lock & Load clip")
 	_fresh()
 
-# ── provenance ───────────────────────────────────────────────────────────────
+# provenance
 func _provenance() -> void:
 	var prov := _json(BASE + "PROVENANCE.json")
 	check(String(prov.get("scope", "")) == "Local fan project. Redistribution permission is not inferred.", "provenance: the scope line")
@@ -457,7 +457,7 @@ func _provenance() -> void:
 	check(tabled, "provenance: every gun clip names its AudioAnimatorExcel row")
 	check(by_path["assets/audio/ba/sfx/SFX_Common_SG_01.wav"]["confirmed_by"].size() == 2, "provenance: SG_01 names both its Normal and Stand rows")
 
-# ── loudness ─────────────────────────────────────────────────────────────────
+# loudness
 func _loudness() -> void:
 	var prov := _json(BASE + "PROVENANCE.json")
 	var over := 0

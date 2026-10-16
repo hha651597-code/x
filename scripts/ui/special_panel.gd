@@ -3,7 +3,7 @@ extends Control
 ## The Special Select panel: a light rounded panel that slides in from the player's
 ## side after their fighter is locked. Header "Special Select" with a yellow underline, a scrolling 4-column
 ## grid of the assist/special head icons (a partial row peeks at the bottom), a yellow-bordered highlight and
-## a footer strip with the school, the NAME and a cropped face of the highlighted special.
+## a footer strip with the school, the name and a cropped face of the highlighted special.
 ##
 ##   var p := SpecialPanel.new().setup(slot, Game.specials)   add_child(p)
 ##   p.open(start_id)    p.on_action(act)    p.close()    p.auto_pick(index)   (CPU roulette)
@@ -67,7 +67,7 @@ func _start_x() -> float:
 func _home_x() -> float:
 	return HOME_X[slot - 1]
 
-# ── construction ─────────────────────────────────────────────────────────────
+# construction
 func _flat(col: Color, r_tl := 0, r_tr := 0, r_br := 0, r_bl := 0) -> StyleBoxFlat:
 	var sb := StyleBoxFlat.new()
 	sb.bg_color = col
@@ -182,7 +182,7 @@ func _face_rect() -> TextureRect:
 	r.modulate.a = 0.0
 	return r
 
-# ── open / close ─────────────────────────────────────────────────────────────
+# open / close
 ## Slide in; the highlight starts on `start_id` (or the first special).
 func open(start_id := -1) -> void:
 	index = 0
@@ -218,7 +218,7 @@ func current_id() -> int:
 func auto_pick(target: int, hops := 9) -> void:
 	_auto = {"target": clampi(target, 0, items.size() - 1), "hops": hops, "wait": 0.0, "n": 0}
 
-# ── input ────────────────────────────────────────────────────────────────────
+# input
 func on_action(act: String) -> void:
 	if not is_open or _t < 0.2 or not _auto.is_empty():
 		return
@@ -288,7 +288,7 @@ func _on_tile_input(ev: InputEvent, i: int) -> void:
 			_set_index(i, 0.0, false)
 		_confirm()
 
-# ── footer ───────────────────────────────────────────────────────────────────
+# footer
 func _set_footer(instant: bool) -> void:
 	var it: Dictionary = items[index]
 	_school.text = String(it["schoolName"]).to_upper()
@@ -307,7 +307,7 @@ func _place_face(r: TextureRect, off: float) -> void:
 	var x := -14.0 + off if slot == 1 else FOOT.size.x + 12.0 - w + off
 	r.position = Vector2(x, -52.0)
 
-# ── frame ────────────────────────────────────────────────────────────────────
+# frame
 func _process(delta: float) -> void:
 	if not _shown:
 		return
@@ -383,7 +383,7 @@ func _process(delta: float) -> void:
 	_place_face(_face_ghost, inward * _ghost_t * 22.0)
 	_name.modulate.a = minf(1.0, 0.35 + fe * 0.65)
 
-# ── little drawing helpers ───────────────────────────────────────────────────
+# little drawing helpers
 class _CornerMask extends Control:
 	var rects: Array = []
 	var radius := 14.0

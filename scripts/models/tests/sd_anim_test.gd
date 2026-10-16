@@ -31,7 +31,7 @@ const LEVEL_TOL := 6.0
 const KICK_FRAMES := 3
 const KICK_DEG := 6.0
 ## Between two fire frames the gun holds steady: once a shot's kick has passed, nothing pulls the weapon back along its
-## barrel RECOIL model units (11 px) or more within KICK_FRAMES until the next shot. Hoshino's EX once played the Exs
+## barrel recoil model units (11 px) or more within KICK_FRAMES until the next shot. Hoshino's EX once played the Exs
 ## clip's 4.6 s shot, which has no blast, from mf 57 (0.13); Hina's MG judder between rounds stays under 0.05.
 const RECOIL := 0.08
 ## Hips (pelvis bone, projected) against idle's in the same facing, fight px, over every sampled frame of every ground
@@ -49,7 +49,7 @@ const IDLE_HIPS := 3.0
 const HIPS_ALLOW := {"win": 30.0, "ex": 30.0}
 ## getup rises from down's lying pose, whose hips lie a body length from the feet (Hina's Vital_Death backwards).
 const HIPS_EXEMPT := ["getup"]
-## Hips motion per tick across the crouch family's transitions (SLIDES), blending on, fight px. Aligned poses step up
+## Hips motion per tick across the crouch family's transitions (slides), blending on, fight px. Aligned poses step up
 ## to 4.5 (a 3-tick crossfade covers a quarter of the gap a tick); the displaced kneel stepped 20 to 39.
 const HIPS_STEP := 8.0
 const SLIDES := [["crouch", "attack:2L"], ["crouch", "attack:2H"], ["crouch", "block_low"], ["attack:2L", "crouch"]]
@@ -75,7 +75,7 @@ const NO_FLOOR := ["jump", "airhit", "down", "ko", "block_air", "dash_air", "das
 ## LYING_TOL model units (1.4 px) below the floor line. Hoshino's Vital_Death put her right shoulder 0.048 under it.
 const LYING := ["down", "ko", "getup"]
 const LYING_TOL := 0.01
-## A guard stands on both feet: in GUARDS no layer lifts a foot more than FOOT_LIFT model units (4 fight px) above where
+## A guard stands on both feet: in guards no layer lifts a foot more than FOOT_LIFT model units (4 fight px) above where
 ## the raw clip puts it. A tilt rolls the body over the rear foot and lifts the front one: 1.8 px a degree on Hoshino's
 ## 104 px stance, so her old 6 degree lean back lifted it 11.
 const GUARDS := ["block", "block_low"]
@@ -302,7 +302,7 @@ func _watchdog() -> void:
 	print("SD_ANIM FAIL watchdog timeout")
 	quit(3)
 
-# ── setup, materials, config ─────────────────────────────────────────────────
+# setup, materials, config
 
 func _check_setup(fighter: Node, cfg: Dictionary) -> void:
 	var actor: Node = fighter.view.sd_actor
@@ -440,7 +440,7 @@ func _muzzles(fighter: Node, actor: Node) -> void:
 func _span_text(r: Array) -> String:
 	return "%+.0f" % r[0] if roundi(r[0]) == roundi(r[1]) else "%+.0f..%+.0f" % [r[0], r[1]]
 
-# ── descriptor features on a synthetic config ────────────────────────────────
+# descriptor features on a synthetic config
 
 ## Each descriptor feature on its own, against the raw clips: reverse, fit, hold, phases, overlays, tilt, turn, crouch, blend.
 func _features(fighter: Node, ref: Node) -> void:
@@ -583,7 +583,7 @@ func _feet_world(a: Node) -> Array:
 		list.append(_bone_world(a, a.grip_skeleton, leg[2]))
 	return list
 
-# ── every anim, both facings ─────────────────────────────────────────────────
+# every anim, both facings
 
 func _sweep(fighter: Node, actor: Node, ref: Node, cfg: Dictionary) -> void:
 	var runs: Array = []
@@ -741,7 +741,7 @@ func _aim(fighter: Node, actor: Node) -> void:
 			cells.append(cell)
 		aim_report.append("%s %s | %s" % [name, key, " | ".join(cells)])
 
-## The gun holds steady between fire frames more than KICK_FRAMES + 1 apart (see RECOIL), in moves without a hold.
+## The gun holds steady between fire frames more than KICK_FRAMES + 1 apart (see recoil), in moves without a hold.
 ## Startup, recovery and closer shots are not covered.
 func _steady(fighter: Node, actor: Node) -> void:
 	var name := String(fighter.data["key"])
@@ -1110,7 +1110,7 @@ func _pose_sig(actor: Node, cfg: Dictionary) -> float:
 		s += g.origin.x + 2.0 * g.origin.y + 3.0 * g.origin.z + g.basis.x.x + g.basis.y.y + g.basis.z.z
 	return s
 
-# ── sequential stepping across state changes, blending on ────────────────────
+# sequential stepping across state changes, blending on
 
 ## A sequence step may name an anim only another fighter's kit has. Any other missing name is a real failure.
 func _is_other_kit_anim(anim: String, fighter_key: String) -> bool:
@@ -1186,7 +1186,7 @@ func _sequences(fighter: Node, actor: Node, ref: Node) -> void:
 func ground_key(key: String) -> bool:
 	return key not in NO_FLOOR and key not in ["moves/jL", "moves/jH", "moves/skill_air"]
 
-## SLIDES stepped tick by tick with blending on, both facings: 12 ticks of a state, a whole move. The hips may not
+## Slides stepped tick by tick with blending on, both facings: 12 ticks of a state, a whole move. The hips may not
 ## slide across the screen between ticks (HIPS_STEP).
 func _slides(fighter: Node, actor: Node) -> void:
 	var name := String(fighter.data["key"])
@@ -1276,7 +1276,7 @@ func _reactions(fighter: Node, actor: Node) -> void:
 ## sync()'s state-to-anim mapping on the live fighter: walking backwards plays walk_back, blocking with down held plays
 ## block_low, idle with down held plays crouch (blockstun, a move or hitstun ends in one IDLE tick before CROUCH), and a
 ## jump's frame is its time in the arc read off vel.y, which equals sf on a plain jump and keeps the legs mid-arc when an
-## air move ends and JUMP restarts at sf 0.
+## air move ends and jump restarts at sf 0.
 func _sync(fighter: Node, actor: Node, ref: Node) -> void:
 	var name := String(fighter.data["key"])
 	var gravity: float = load("res://scripts/fight/arena.gd").GRAVITY
@@ -1554,7 +1554,7 @@ func _pose_reattaches(bent: Node, ref: Node, cfg: Dictionary) -> void:
 			check(bent.gap > 0.02, tag + ": pose() re-attaches after the arm moves (the bend pulled the gun %.3f off the hand)" % bent.gap)
 			_check_drift(bent, ref, cfg, tag)
 
-# ── source clips, morphs, hitstop, EX ────────────────────────────────────────
+# source clips, morphs, hitstop, EX
 
 func _source_clips(actor: Node, cfg: Dictionary) -> void:
 	for clip in actor.player.get_animation_list():
