@@ -75,6 +75,7 @@ var _blend_start := 0.0
 var _clock := 0.0                     # distance clock: clip ticks at 1.0x walked since this walk or dash began (sd.json "stride")
 var _seen_x := 0.0                    # position and tick at the previous sync(), for how far the body travelled
 var _seen_frame := -1
+var _sync_key := []                   # everything sync() read at its last pose; any pose or sample_clip() since clears it
 var _clock_x := 0.0                   # position, state and state tick at the previous clock update
 var _clock_state := -1
 var _clock_sf := 0
@@ -265,6 +266,7 @@ func fit_zoom(z: float) -> void:
 
 ## Raw source sample: baselines reset, one clip at `seconds`, configured meshes hidden.
 func sample_clip(clip: String, seconds: float) -> void:
+	_sync_key = []
 	raw_time = seconds
 	player.stop(true)
 	for item in baseline_nodes:
@@ -289,6 +291,15 @@ func sample_clip(clip: String, seconds: float) -> void:
 func sync(f: Fighter) -> void:
 	if f.world != null:
 		fit_zoom(f.world.cam_zoom)
+	var key := [f.frame, f.state, f.sf, f.move_key, f.mf, f.charge_t, f.facing, f.carry_anim, f.carry_t, f.position, f.vel,
+		f.input.x, f.input.y, f.crush_t, f.stats.get("guard_crush"), f.stats["jump"], f.kv.get("anim"), f.kv.get("anim_t"),
+		f.entry_cuts, f.ready_at, f._flash, f.dim, f.foe.position if f.foe else Vector2.ZERO, f.foe.state if f.foe else -1]
+	if key == _sync_key:
+		return
+	_sync_pose(f)
+	_sync_key = key
+
+func _sync_pose(f: Fighter) -> void:
 	if f.carry_anim != "" and cfg["anims"].has(f.carry_anim):
 		pose(f.carry_anim, f.carry_t, "", {}, 0, 0, f.facing)
 		if not look_driven:

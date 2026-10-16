@@ -1325,6 +1325,59 @@ func _sync(fighter: Node, actor: Node, ref: Node) -> void:
 	fighter.state = states.IDLE
 	fighter.vel = Vector2.ZERO
 	fighter.sf = 0
+	_sync_once(fighter, actor)
+
+## sync() poses once for one set of inputs: a repeat (the frame drawn again before the next tick) leaves the pose alone, and a
+## change of any input it reads poses again. A pose resets raw_time, so a value parked there shows whether one happened.
+func _sync_once(fighter: Node, actor: Node) -> void:
+	var name := String(fighter.data["key"])
+	fighter.facing = 1
+	fighter.input.y = 0
+	fighter.input.x = 0
+	fighter.move_key = ""
+	actor.sync(fighter)
+	actor.raw_time = -1.0
+	actor.sync(fighter)
+	check(actor.raw_time == -1.0, name + ": a second sync() with the same inputs does not pose again")
+	var changes := {
+		"frame": func(): fighter.frame += 1,
+		"state": func(): fighter.state = states.CROUCH if fighter.state != states.CROUCH else states.IDLE,
+		"sf": func(): fighter.sf += 1,
+		"move_key": func(): fighter.move_key = "5L" if fighter.move_key != "5L" else "",
+		"mf": func(): fighter.mf += 1,
+		"charge_t": func(): fighter.charge_t += 1,
+		"facing": func(): fighter.facing = -fighter.facing,
+		"carry_t": func(): fighter.carry_t += 1,
+		"position": func(): fighter.position.x += 1.0,
+		"vel": func(): fighter.vel.x += 1.0,
+		"input": func(): fighter.input.y = 1 - fighter.input.y,
+		"crush_t": func(): fighter.crush_t += 1,
+	}
+	for what: String in changes:
+		changes[what].call()
+		actor.raw_time = -1.0
+		actor.sync(fighter)
+		check(actor.raw_time != -1.0, name + ": sync() poses again when " + what + " changes")
+	actor._seen_frame = -1
+	actor._sync_key = []
+	actor.raw_time = -1.0
+	actor.sync(fighter)
+	check(actor.raw_time != -1.0, name + ": clearing the last pose makes the next sync() pose")
+	actor.sample_clip("Normal_Idle", 0.0)
+	actor.raw_time = -1.0
+	actor.sync(fighter)
+	check(actor.raw_time != -1.0, name + ": a pose taken behind sync()'s back makes the next sync() pose")
+	fighter.state = states.IDLE
+	fighter.vel = Vector2.ZERO
+	fighter.position.x = 0.0
+	fighter.move_key = ""
+	fighter.input.y = 0
+	fighter.facing = 1
+	fighter.crush_t = 0
+	fighter.charge_t = 0
+	fighter.mf = 0
+	fighter.carry_t = 0
+	fighter.sf = 0
 
 ## The backdash is a hop (sd.json "lift" and the jump's leg overlay): it moves 0.8 x the dash stat, decaying 0.95 a tick, and no foot is
 ## within HOP_PX of the floor on any tick after the first while |vx| > 1.
@@ -1571,6 +1624,7 @@ func _hitstop_and_ex_end(fighter: Node) -> void:
 		fighter.input.y = down
 		fighter.view.step(1.0 / 60.0)
 		check(actor.current_clip == ex_clip and is_equal_approx(actor.current_time, ex_end), "natural EX completion presents the endpoint once (down %d)" % down)
+		fighter.frame += 1      # the next sim tick: a repeat draw of the same tick keeps the endpoint
 		fighter.view.step(1.0 / 60.0)
 		check(actor.anim_name == ("crouch" if down else "idle"), "EX completion returns to %s" % ("crouch" if down else "idle"))
 	fighter.input.y = 0
