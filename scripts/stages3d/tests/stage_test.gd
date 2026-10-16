@@ -23,7 +23,6 @@ func check(ok: bool, what: String) -> void:
 
 func _run() -> void:
 	await process_frame
-	_test_lights()
 	_test_plate_cover()
 	for dir in _stage_dirs():
 		var sj: Dictionary = StageLoader.read_json(dir + "/stage.json")
@@ -51,31 +50,6 @@ func _stage_dirs() -> Array[String]:
 			out.append(STAGES + n)
 	out.sort()
 	return out
-
-
-func _test_lights() -> void:
-	check(absf(StageLights.falloff(0.0, 10.0) - 1.0) < 1e-6 and StageLights.falloff(10.0, 10.0) == 0.0 and StageLights.falloff(20.0, 10.0) == 0.0, "falloff ends")
-	check(absf(StageLights.falloff(5.0, 10.0) - 0.5625) < 1e-6, "falloff middle")
-	check(StageLights.falloff(1.0, 0.0) == 0.0, "falloff zero radius")
-	var d := StageLights.toon_dir(Vector3(-0.444, 0.895, 0.042), 0.5)
-	check(absf(d.length() - 1.0) < 1e-5 and absf(d.z - 0.5) < 1e-5 and d.x < 0.0 and d.y > 0.0, "toon_dir raises the front part and keeps the sides")
-	var lit := Vector3(0.3, 0.5, 0.81).normalized()
-	check(StageLights.toon_dir(lit, 0.5).is_equal_approx(lit), "toon_dir leaves a front lit key alone")
-	check(StageLights.front_lit(Vector3(0.596, 0.44, 0.672)) and not StageLights.front_lit(Vector3(-0.444, 0.895, -0.036)), "front_lit")
-	var pts := [{"x": 100.0, "y": 120.0, "z": 0.0, "radius": 300.0, "gain": 0.9, "color": [1.0, 0.5, 0.2], "flicker": 0.12, "seed": 2}]
-	var near := StageLights.point_light(pts, Vector3(150.0, 120.0, 0.0), 1.25)
-	var far := StageLights.point_light(pts, Vector3(900.0, 120.0, 0.0), 1.25)
-	check(near["weight"] > 0.5 and far["weight"] == 0.0, "point light weight by distance")
-	check(is_equal_approx(maxf(near["color"].x, maxf(near["color"].y, near["color"].z)), 1.0) and near["color"].x > near["color"].z, "point light hue is normalised and warm")
-	check(StageLights.point_light(pts, Vector3(150.0, 120.0, 0.0), 1.25) == near, "point light is a pure function of stage_time")
-	check(StageLights.point_light(pts, Vector3(150.0, 120.0, 0.0), 1.30)["weight"] != near["weight"], "point light flickers with stage_time")
-	var dir := StageLights.point_dir(pts, Vector3(0.0, 120.0, 0.0))
-	check(absf(dir.length() - 1.0) < 1e-5 and dir.x > 0.9, "point_dir points toward the light in view space")
-	check(StageLights.point_dir([], Vector3.ZERO) == Vector3(0.0, 0.0, 1.0), "point_dir without lights faces the viewer")
-	var fb := StageLights.descriptor({})
-	check(fb["key_dir"] == [-0.35, 0.75, 0.6] and fb["points"].is_empty(), "descriptor falls back to the fixed values")
-	var fp := StageLights.fighter_params(fb, 0.0)
-	check(fp["lit_color"] == Vector3.ONE and fp["point_weight"] == 0.0, "fighter_params without points")
 
 
 func _test_plate_cover() -> void:
@@ -159,9 +133,6 @@ func _test_loader(view: StageView, tag: String) -> void:
 	view.set_shadow_blobs([])
 	check(view.env.sky != null and view.env.background_mode == Environment.BG_SKY, "%s sky is set" % tag)
 	check(view.env.tonemap_mode == Environment.TONE_MAPPER_LINEAR and view.env.ambient_light_source == Environment.AMBIENT_SOURCE_DISABLED, "%s linear tonemap, no ambient" % tag)
-	var desc := StageLights.descriptor(view.info)
-	check(desc.has("key_dir") and desc.has("key_color") and desc.has("shadow") and desc.has("under") and desc.has("points"), "%s light descriptor present" % tag)
-	check(view.info["night"] == (desc["night"] == true), "%s descriptor night flag matches the variant" % tag)
 
 
 func _world_box(mi: MeshInstance3D) -> AABB:

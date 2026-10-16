@@ -29,8 +29,6 @@ var _cam_x := 0.0
 var _zoom := 1.0
 var _horizon_y := 616.0
 var _world: Node
-var _light := {}
-var _toon_uniforms := {}
 
 func _init() -> void:
 	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
@@ -78,7 +76,6 @@ func build(stage: Dictionary) -> Texture2D:
 	return tex
 
 func _build_3d(stage: Dictionary) -> void:
-	_light = StageLights.descriptor({"light": stage["light_full"]})
 	var dir := "res://assets/ba/stages/" + String(stage["map"])
 	var times: Dictionary = StageLoader.read_json(dir + "/stage.json")["times"]
 	view = StageView.new()
@@ -213,7 +210,6 @@ func update_camera(cam_x: float, zoom: float, shake: Vector2, horizon_y: float) 
 			return
 		view.set_camera(cam_x, zoom, shake, (horizon_y - shake.y - FEET_ROW) / zoom + FLOOR_LIP)
 		_feed_blobs()
-		_tint_fighters()
 		return
 	var pz := minf(zoom, PLATE_MAX_ZOOM)
 	var s := 1.0 + (1.0 - pz) * 0.2
@@ -280,25 +276,3 @@ func _feed_blobs() -> void:
 		var p := StageCamera.feet(lane, cam, f.position.x)
 		blobs.append(Vector4(p.x, p.y, p.z, BLOB_RADIUS * clampf(1.0 - up / BLOB_FADE, 0.0, 1.0)))
 	view.set_shadow_blobs(blobs)
-
-# not fully functional. the merged fighter shader declares none of these uniforms, so this is inert until a fighter shader reads them.
-func _tint_fighters() -> void:
-	if _world == null or _world.fighters.size() < 2:
-		return
-	for f: Fighter in _world.fighters:
-		if f.view == null or f.view.get("sd_actor") == null:
-			continue
-		var params := StageLights.fighter_params(_light, f.position.x, view.stage_time)
-		for mesh: MeshInstance3D in f.view.sd_actor.meshes:
-			for i in mesh.mesh.get_surface_count():
-				var m := mesh.get_surface_override_material(i) as ShaderMaterial
-				if m == null:
-					continue
-				if not _toon_uniforms.has(m.shader):
-					var names := {}
-					for u in m.shader.get_shader_uniform_list():
-						names[u["name"]] = true
-					_toon_uniforms[m.shader] = names
-				for k in params:
-					if _toon_uniforms[m.shader].has(k):
-						m.set_shader_parameter(k, params[k])
