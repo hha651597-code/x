@@ -25,7 +25,7 @@ One or two players pick a student and a map, then fight a best-of-three. Student
 
 Fighters are the game's own chibi 3D models standing on the 2D lane, and each map is a Blue Archive battle map rebuilt as a 3D scene behind it. The menus follow the look of the original game.
 
-A fighter counts as finished when it has a complete 3D model, its animations and a checked move set. A map counts as finished when it is a complete 3D scene. This branch, `main`, holds only finished content. The `dev` branch holds everything else, including the rest of the roster and the other stages.
+A fighter counts as finished when it has a complete 3D model, its animations and a checked move set. A map counts as finished when it is a complete 3D scene. This repository holds only finished content. Fighters and maps still in progress are developed elsewhere and are added once they are done.
 
 ## What works today
 
