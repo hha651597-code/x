@@ -1,3 +1,20 @@
+<p align="center"><img src=".github/images/banner.png" alt="Blue Archive Fighting Game" width="640"></p>
+
+<table>
+<tr>
+<td><img src=".github/images/select.jpg" alt="Character select"></td>
+<td><img src=".github/images/day-hit.jpg" alt="A hit on the Gehenna map by day"></td>
+</tr>
+<tr>
+<td><img src=".github/images/day-combo.jpg" alt="A 17 hit combo by day"></td>
+<td><img src=".github/images/night-hit.jpg" alt="A hit on the Gehenna map at night"></td>
+</tr>
+<tr>
+<td><img src=".github/images/night-guard-crush.jpg" alt="A guard crush at night"></td>
+<td><img src=".github/images/night-combo.jpg" alt="A 15 hit combo at night"></td>
+</tr>
+</table>
+
 # Blue Archive Fighting Game
 
 A fan-made one-on-one fighting game set in the world of Blue Archive, played on a 2D side-view lane. It is built in Godot 4.7: open the folder in the editor, or run `godot --path .` from the project folder. Builds for macOS and Windows are attached to each release. This is an unofficial fan project. Blue Archive and its art belong to Nexon Games and Yostar. Credits are in `CREDITS.md`.
