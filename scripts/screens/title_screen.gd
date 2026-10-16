@@ -31,6 +31,7 @@ const CREDITS_RECT := Rect2(1116.0, 666.0, 140.0, 34.0)
 const FOOTER_SIZE := 13
 const MOTES := 56
 const REF := Vector2(1280.0, 720.0)
+const CREDITS_KEYS := [KEY_C, KEY_T, KEY_APOSTROPHE, KEY_KP_3]   # C, plus the keys Controls maps to aux2
 const KEYS_IGNORED := [KEY_ESCAPE, KEY_SHIFT, KEY_CTRL, KEY_ALT, KEY_META, KEY_CAPSLOCK, KEY_NUMLOCK, KEY_SCROLLLOCK]
 const ACTIONS := ["confirm", "start", "aux", "lb", "rb"]   # directions and back do nothing here; aux2 (Y, T) and the C key open the credits
 
@@ -146,8 +147,9 @@ func _input(ev: InputEvent) -> void:
 		return
 	if ev is InputEventKey and ev.pressed and not ev.echo:
 		if not (ev.keycode in KEYS_IGNORED or ev.ctrl_pressed or ev.alt_pressed or ev.meta_pressed):
-			if ev.keycode == KEY_C:
+			if ev.keycode in CREDITS_KEYS:
 				_open_credits()
+				get_viewport().set_input_as_handled()   # Controls would turn T and ' into aux2 and the new panel would answer it
 			else:
 				_start()
 	elif ev is InputEventJoypadButton and ev.pressed:
@@ -158,6 +160,7 @@ func _input(ev: InputEvent) -> void:
 	elif ev is InputEventMouseButton and ev.pressed and ev.button_index == MOUSE_BUTTON_LEFT:
 		if CREDITS_RECT.has_point((ev as InputEventMouseButton).position):
 			_open_credits()
+			get_viewport().set_input_as_handled()   # else the same click reaches the new panel's backdrop and closes it
 		else:
 			_start()
 

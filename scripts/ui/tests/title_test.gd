@@ -300,6 +300,17 @@ func _credits() -> void:
 	scr._credits._on_scrim_input(click)
 	await process_frame
 	check(not scr.probe()["credits_open"], "a click outside the window closes it")
+	# the same click through the engine's own input path: the panel's click-to-close layer must not take the click that opened it
+	var real := on_button.duplicate() as InputEventMouseButton
+	real.position = on_button.position * Vector2(root.size) / Vector2(1280.0, 720.0)   # the test window is smaller than the 1280x720 canvas
+	real.global_position = real.position
+	Input.parse_input_event(real)
+	await process_frame
+	await process_frame
+	check(scr.probe()["credits_open"] and not scr.probe()["going"], "a real click on the Credits button leaves the credits open")
+	scr.on_action("kb1", "back")
+	await process_frame
+	await process_frame
 	var jb := InputEventJoypadButton.new()
 	jb.button_index = JOY_BUTTON_Y
 	jb.pressed = true
