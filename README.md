@@ -78,3 +78,12 @@ A fighter counts as finished when it has a complete 3D model, its animations and
 - [ ] More video settings
 - [ ] More audio settings
 - [ ] Remappable controls
+
+---
+
+Made by Matthew. Find me here:
+
+- Website: [konekurosawa.org](https://konekurosawa.org/)
+- Twitter: [@konekokurosawa](https://twitter.com/konekokurosawa)
+- Discord: konekurosawa
+- Ko-fi: [ko-fi.com/konekurosawa](https://ko-fi.com/konekurosawa)
