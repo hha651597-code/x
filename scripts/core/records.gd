@@ -25,19 +25,42 @@ static func load_all() -> Dictionary:
 	if f == null:
 		return base
 	var data = JSON.parse_string(f.get_as_text())
+	f = null
 	if typeof(data) != TYPE_DICTIONARY:
+		if _writes():
+			DirAccess.copy_absolute(path, path + ".bad")
 		return base
 	for k in base:
-		if not data.has(k):
+		var v = data.get(k)
+		if not (v is Dictionary if base[k] is Dictionary else (v is float or v is int)):
 			data[k] = base[k]
+	for key in data["per_fighter"].keys():
+		var row = data["per_fighter"][key]
+		if not row is Dictionary:
+			data["per_fighter"].erase(key)
+			continue
+		for w in ["wins", "losses"]:
+			if not (row.get(w) is float or row.get(w) is int):
+				row[w] = 0
 	return data
 
+## Writes a .tmp file and renames it over the real one, so a crash mid-write cannot leave an empty records file.
 static func save_all(d: Dictionary) -> void:
 	if not _writes():
 		return
-	var f := FileAccess.open(path, FileAccess.WRITE)
-	if f:
-		f.store_string(JSON.stringify(d))
+	var tmp := path + ".tmp"
+	var f := FileAccess.open(tmp, FileAccess.WRITE)
+	if f == null:
+		push_warning("records not saved to %s: %s" % [tmp, error_string(FileAccess.get_open_error())])
+		return
+	var stored := f.store_string(JSON.stringify(d))
+	f = null
+	if not stored:
+		push_warning("records not saved: could not write " + tmp)
+		return
+	var err := DirAccess.rename_absolute(tmp, path)
+	if err != OK:
+		push_warning("records not saved to %s: %s" % [path, error_string(err)])
 
 ## Record one finished match. winner_id / loser_id are roster ids; human_won = a human beat the CPU
 ## (or in versus2p always true); stats = {combo, damage}.

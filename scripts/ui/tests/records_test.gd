@@ -37,10 +37,33 @@ func _run() -> void:
 	check(int(d["best_combo"]) == 7 and int(d["arcade_clears"]) == 1, "best combo and arcade clears")
 	check(int(d["per_fighter"]["10004"]["wins"]) == 1 and int(d["per_fighter"]["10004"]["losses"]) == 1, "per fighter rows")
 	check(_stamp(real) == before, "the scratch run still leaves the real file alone")
-	DirAccess.remove_absolute(ProjectSettings.globalize_path(SCRATCH))
+	check(not FileAccess.file_exists(SCRATCH + ".tmp"), "a save leaves no .tmp file behind")
+
+	_put(SCRATCH, "{\"matches\": 5, \"per_fig")
+	R.add_match("versus-cpu", 10004, 10005, true, {})
+	check(int(R.load_all()["matches"]) == 1, "a truncated file starts history again")
+	check(FileAccess.get_file_as_string(SCRATCH + ".bad").begins_with("{\"matches\": 5"), "the truncated file is kept as .bad")
+
+	_put(SCRATCH, "{\"matches\": 4, \"per_fighter\": []}")
+	R.add_match("versus-cpu", 10004, 10005, true, {})
+	d = R.load_all()
+	check(int(d["matches"]) == 5 and int(d["per_fighter"]["10004"]["wins"]) == 1, "a wrong-typed per_fighter is reset, the rest kept")
+
+	_put(SCRATCH, "{\"per_fighter\": {\"10004\": {\"losses\": 2}, \"10005\": 7}}")
+	R.add_match("versus-cpu", 10004, 10005, true, {})
+	d = R.load_all()
+	check(int(d["per_fighter"]["10004"]["wins"]) == 1 and int(d["per_fighter"]["10004"]["losses"]) == 2, "a row missing wins gets 0 and keeps its losses")
+	check(int(d["per_fighter"]["10005"]["losses"]) == 1, "a row that is not a dictionary starts over")
+
+	for ext in ["", ".bad", ".tmp"]:
+		DirAccess.remove_absolute(ProjectSettings.globalize_path(SCRATCH + ext))
 	R.path = real
 	print("RECORDS_TEST ", "PASS" if failures.is_empty() else "FAIL", " checks=", checks, " failures=", failures.size())
 	quit(0 if failures.is_empty() else 1)
+
+func _put(path: String, text: String) -> void:
+	var f := FileAccess.open(path, FileAccess.WRITE)
+	f.store_string(text)
 
 ## Content hash of a user:// file (empty when absent): "not written" without reading the player's data into the log.
 func _stamp(path: String) -> String:
