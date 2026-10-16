@@ -10,8 +10,6 @@
 <td><img src=".github/images/night-hit.jpg" alt="A hit on the Gehenna map at night"></td>
 </tr>
 <tr>
-<td><img src=".github/images/night-guard-crush.jpg" alt="A guard crush at night"></td>
-<td><img src=".github/images/night-combo.jpg" alt="A 15 hit combo at night"></td>
 </tr>
 </table>
 
