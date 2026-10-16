@@ -150,7 +150,7 @@ func enter(p: Dictionary, _info: Dictionary) -> void:
 	_build_stage()
 	_build_fighters()
 	var ut := OS.get_environment("ULT_TEST")
-	if ut != "":
+	if OS.is_debug_build() and ut != "":
 		_ult_test = load("res://scripts/fight/tools/ult_probe.gd").new()
 		_ult_test.setup(ut)
 	hud = HudScript.new()
