@@ -1187,6 +1187,11 @@ func _on_joy_connection(id: int, connected: bool) -> void:
 		if pl["claimed"] and pl["device"] == "pad%d" % id:
 			set_paused(true)
 
+## A window that loses focus pauses the match: Controls drops the held keys, so nobody could steer. Scripted runs (tests, step files, --screen) keep going.
+func _notification(what: int) -> void:
+	if what == NOTIFICATION_APPLICATION_FOCUS_OUT and not paused and not match_over and Dbg.start_screen == "" and Session._persists():
+		set_paused(true)
+
 func on_action(dev: String, act: String) -> void:
 	if act == "start" or (act == "back" and dev == "shared"):
 		if match_over:

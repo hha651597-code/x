@@ -74,6 +74,7 @@ func _run() -> void:
 	_restart_round()
 	_time_up()
 	_trade()
+	_focus_out()
 	_resume_from_pause()
 	_overkill_and_ko_time()
 	_ko_flash()
@@ -350,6 +351,23 @@ func _trade() -> void:
 	screen.projectiles[1].position = Vector2(f1.position.x + 50.0, A.GROUND - 150.0)
 	screen._tick_projectiles()
 	check(f1.hp <= 0.0 and f2.hp <= 0.0, "two lethal rounds that land on the same tick trade (f1 %.1f, f2 %.1f)" % [f1.hp, f2.hp])
+
+## Losing the window focus pauses a played match; a scripted run (tests, step files) and a finished match are left alone.
+func _focus_out() -> void:
+	var sess: GDScript = game.session.get_script()
+	var real: String = sess.settings_path
+	_new_round()
+	screen.notification(NOTIFICATION_APPLICATION_FOCUS_OUT)
+	check(not screen.paused, "a scripted run does not pause on focus loss")
+	sess.settings_path = "user://zz_focus.cfg"
+	screen.notification(NOTIFICATION_APPLICATION_FOCUS_OUT)
+	check(screen.paused, "losing the window focus pauses the fight")
+	screen.set_paused(false)
+	screen.match_over = true
+	screen.notification(NOTIFICATION_APPLICATION_FOCUS_OUT)
+	screen.match_over = false
+	sess.settings_path = real
+	check(not screen.paused, "a finished match does not pause on focus loss")
 
 # ── the loser's assist ───────────────────────────────────────────────────────
 func _late_assist(kind: String, late: int) -> void:
